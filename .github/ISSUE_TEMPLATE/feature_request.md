@@ -7,14 +7,21 @@ assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+<!-- 不具合対応テンプレート -->
+## 概要
+<!-- どのような不具合か WHAT -->
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## 再現手順
+<!-- どうすれば不具合を確認できるのか WHAT -->
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## 修正しないとどう困るか
+<!-- なぜ修正しないといけないのか WHY -->
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## 原因
+<!-- 想定される原因など WHERE -->
+
+## 修正案
+<!-- どのように修正するのか HOW -->
+
+## タスク
+- [ ]
