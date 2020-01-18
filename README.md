@@ -2,20 +2,20 @@
 
 > AIESEC in Japan official website
 
-## Build Setup
+ぶち上げてこ
+
+## 環境構築手順
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
+# 初回だけ実行してね
+$ yarn install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# ローカルで見れるようにするよ
+$ yarn run dev
+```
 
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
+### 静的サイトジェネレータを使いたいとき
+```bash
 $ npm run generate
 ```
 
