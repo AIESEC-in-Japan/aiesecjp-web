@@ -1,3 +1,9 @@
+# general
+.DS_Store
+.envrc
+.vscode/
+.Rhistory
+
 # dependencies
 node_modules
 
