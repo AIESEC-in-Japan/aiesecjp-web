@@ -8,18 +8,23 @@
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
+      <div class="Button">
+        <Button/>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
 import AppLogo from "~/components/AppLogo.vue";
+import Button from "~/components/Button.vue";
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    Button
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -58,4 +63,3 @@ export default {
   padding-top: 15px;
 }
 </style>
-
