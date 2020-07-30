@@ -1,85 +1,126 @@
 <template>
   <div class="footer-container">
-    <nav class="footer-nav">
-      <div class="nav-content">
-        <h3>AIESEC</h3>
-        <ul>
-          <li>トップ</li>
-          <li>学生の方</li>
-          <li>企業の方</li>
-          <li>プレスルーム</li>
-        </ul>
-      </div>
-      <div class="nav-content">
-        <h3>ABOUT</h3>
-        <ul>
-          <li>アイセックとは</li>
-          <li>安全への取り組み</li>
-          <li>個人情報</li>
-          <li>Join AIESEC</li>
-        </ul>
-      </div>
-      <div class="nav-content">
-        <h3>CONTACT</h3>
-        <ul>
-          <li>お問い合わせ</li>
-          <li>新歓と採用</li>
-          <li>理事会</li>
-        </ul>
-      </div>
-    </nav>
-    <div class="copyright">
-      <p>
-        <small>© 2019 @andmohiko</small>
-      </p>
+    <div class="footer-desc">
+      <h3>AIESEC</h3>
+      <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
+    </div>
+    <div class="nav-content">
+      <h3>About</h3>
+      <ul>
+        <li>
+          <a href="#">AIESECについて</a>
+        </li>
+        <li>
+          <a href="#">パートナーシップについて</a>
+        </li>
+        <li>
+          <a href="#">団体情報</a>
+        </li>
+        <li>
+          <a href="#">安全への取り組み</a>
+        </li>
+        <li>
+          <a href="#">個人情報の取り扱い</a>
+        </li>
+        <li>
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <h3>For Students</h3>
+      <ul>
+        <li>
+          <a href="#">海外インターンシップに参加する</a>
+        </li>
+        <li>
+          <a href="#">海外ボランティアに参加する</a>
+        </li>
+        <li>
+          <a href="#">体験記を見る</a>
+        </li>
+        <li>
+          <a href="#">参加の流れと費用</a>
+        </li>
+        <li>
+          <a href="#">危機管理サポート</a>
+        </li>
+        <li>
+          <a href="#">話を聞いてみる</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <h3>For Companies</h3>
+      <ul>
+        <li>
+          <a href="#">海外インターン生を受け入れる</a>
+        </li>
+        <li>
+          <a href="#">受け入れ事例を見る</a>
+        </li>
+        <li>
+          <a href="#">受け入れの流れと費用</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <h3>Press & Alumni</h3>
+      <ul>
+        <li>
+          <a href="#">プレスルーム</a>
+        </li>
+        <li>
+          <a href="#">アルムナイの方</a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .footer-container {
-  height: 500px;
-  line-height: 60px;
-  position: relative;
-  background-color: #f2f2f2;
+  height: 360px;
+  line-height: 36px;
+  background-color: #F3F4F7;
 
-  color: #aaa;
-  // color: #000;
   font-size: 12px;
+  color: #52565E;
   display: flex;
+  padding-top: 40px;
   justify-content: center;
-  align-items: center;
-  // justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  h3 {
+    color: #037Ef3;
+    font-size: 16px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 40px;
+  }
+  a {
+    text-decoration: none;
+    color: #52565E;
+  }
 }
 
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+.footer-desc {
+  height: 300px;
+  width: 180px;
+  line-height: 24px;
+  margin: 0px 40px;
+  h3 {
+    padding: 10px 0px;
+    left: 0px;
+  }
+  p {
+    // color: #52565E;
+  }
 }
 
 .nav-content {
-  height: 400px;
-  width: 150px;
-  // display: flex;
-  // justify-content: center;
-  // justify-content: space-between;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  h3 {
-    position: relative;
-    left: 40px;
-    // justify-content: right;
-  }
-
-  ul {
-    // display: flex;
-  }
+  height: 300px;
+  width: 220px;
   li {
-    // margin-left: 30px;
     list-style-type: none;
   }
 }
