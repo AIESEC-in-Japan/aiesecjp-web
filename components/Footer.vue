@@ -89,7 +89,6 @@
   display: flex;
   padding-top: 40px;
   justify-content: center;
-  // flex-wrap: wrap;
   h3 {
     color: #037Ef3;
     font-size: 16px;
@@ -111,9 +110,6 @@
   h3 {
     padding: 10px 0px;
     left: 0px;
-  }
-  p {
-    // color: #52565E;
   }
 }
 
