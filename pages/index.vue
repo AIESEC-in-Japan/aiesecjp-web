@@ -8,6 +8,12 @@
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
+      <div>
+        <AboutAiesec/>
+      </div>
+      <div>
+        <ICXpage/>
+      </div>
       <div class="Button">
         <Button/>
       </div>
@@ -18,11 +24,15 @@
 <script>
 import AppLogo from "~/components/AppLogo.vue";
 import Button from "~/components/Button.vue";
+import AboutAiesec from "~/components/AboutAiesec.vue";
+import ICXpage from "~/components/ICXpage.vue";
 
 export default {
   components: {
     AppLogo,
-    Button
+    Button,
+    AboutAiesec,
+    ICXpage
   }
 }
 </script>
