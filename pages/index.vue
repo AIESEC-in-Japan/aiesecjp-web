@@ -12,7 +12,7 @@
         <AboutAiesec/>
       </div>
       <div>
-        <ICXpage/>
+        <IcxIncomingInternship/>
       </div>
       <div class="Button">
         <Button/>
@@ -25,14 +25,14 @@
 import AppLogo from "~/components/AppLogo.vue";
 import Button from "~/components/Button.vue";
 import AboutAiesec from "~/components/AboutAiesec.vue";
-import ICXpage from "~/components/ICXpage.vue";
+import IcxIncomingInternship from "~/components/IcxIncomingInternship.vue";
 
 export default {
   components: {
     AppLogo,
     Button,
     AboutAiesec,
-    ICXpage
+    IcxIncomingInternship
   }
 }
 </script>

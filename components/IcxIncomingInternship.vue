@@ -46,7 +46,7 @@
 .about-content{
     float: left;
     margin: 0 40px;
-    font-family: "Lato","游ゴシック";
+    font-family: "游ゴシック","Lato";
     h5{
       font-size: 16px;
       color:#6ab4bd;
@@ -55,6 +55,7 @@
     }
     p{
       font-size: 12px;
+      letter-spacing: 2px;
     }
     img{
       width: 200px;
