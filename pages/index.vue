@@ -8,6 +8,7 @@
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
+      <OurPrograms />
       <div class="Button">
         <Button/>
       </div>
@@ -18,11 +19,13 @@
 <script>
 import AppLogo from "~/components/AppLogo.vue";
 import Button from "~/components/Button.vue";
+import OurPrograms from "~/components/OurPrograms.vue"
 
 export default {
   components: {
     AppLogo,
-    Button
+    Button,
+    OurPrograms
   }
 }
 </script>
