@@ -9,23 +9,21 @@
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
       <OurPrograms />
-      <div class="Button">
-        <Button/>
-      </div>
+      <OurPartners />
     </div>
   </section>
 </template>
 
 <script>
 import AppLogo from "~/components/AppLogo.vue";
-import Button from "~/components/Button.vue";
-import OurPrograms from "~/components/OurPrograms.vue"
+import OurPrograms from "~/components/OurPrograms.vue";
+import OurPartners from "~/components/OurPartners.vue";
 
 export default {
   components: {
     AppLogo,
-    Button,
-    OurPrograms
+    OurPrograms,
+    OurPartners
   }
 }
 </script>
