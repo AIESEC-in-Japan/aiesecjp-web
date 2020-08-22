@@ -2,11 +2,11 @@
   <div class="detail-container">
     <div class="detail-bg">
     <div class="detail">
-    <button class="button1">受け入れ実例をもっと見る</button>
-    <button class="button2">インターンシップの詳細を見る</button>
+    <button href="#" class="button1">受け入れ実例をもっと見る</button>
+    <button href="#" class="button2">インターンシップの詳細を見る</button>
     　<p>アイセックの海外インターンシップ受け⼊れに興味のある団体様は、お気軽にお問い合わせください。<br>
     　   弊団体のメンバーが、疑問解消のお⼿伝いや詳しい⼿続きのご案内をさせていただきます。</p>
-    <button class="button3">話を聞いて見る</button>
+    <button href="#" class="button3">話を聞いて見る</button>
       <p>▶ お問い合わせページに遷移</p>
     </div>
     </div>
