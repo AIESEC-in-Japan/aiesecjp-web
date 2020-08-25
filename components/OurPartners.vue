@@ -32,7 +32,7 @@
 .partners-container {
     width: 100%;
     h2 {
-        color: #037Ef3;
+        color: $blue;
         font-size: 24px;
         letter-spacing: 2px;
         font-family: "Lato";
