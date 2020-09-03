@@ -83,7 +83,6 @@
   height: 360px;
   line-height: 36px;
   background-color: $light-gray;
-
   font-size: 12px;
   color: $dark-gray;
   display: flex;
@@ -101,7 +100,6 @@
     color: $dark-gray;
   }
 }
-
 .footer-desc {
   height: 300px;
   width: 180px;
@@ -112,7 +110,6 @@
     left: 0px;
   }
 }
-
 .nav-content {
   height: 300px;
   width: 220px;
@@ -120,4 +117,5 @@
     list-style-type: none;
   }
 }
+
 </style>
