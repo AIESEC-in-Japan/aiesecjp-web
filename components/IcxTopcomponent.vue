@@ -1,48 +1,42 @@
 <template>
- <div class="top-component">
-  <img src="https://drive.google.com/file/d/13m4V5FvxbQeE_u6FfBa_mtB7FijYXGOe/view?usp=sharing">
-  <div class="top-component-container">
-   <h1>
-      Globalize your company with AIESEC
-   </h1>
-   <h2>
-    　アイセックのインターンシップで、グローバルな組織作りを
-   </h2>
-  </div>
+ <div class="icx-top-container">
+  <img src="assets/GT-logp-white.png">
+  <h1>
+    Globalize your company with AIESEC
+  </h1>
+  <h2>
+    アイセックのインターンシップで、グローバルな組織作りを
+  </h2>
  </div>
 </template>
 
 
 <style scoped lang="scss">
- .top-component{
-     max-width: 1000px;
+ .icx-top-container{
      filter: brightness(50%);
      letter-spacing: 2px;
-     background-image: "https://drive.google.com/file/d/1qr8apaNtmJQJKbUECzfA4S7vz-Y5_v7E/view?usp=sharing";
+     background-image: "assets/icx-top.jpg";
      background-position: center;
      background-repeat: none;
-     background-size:cover;    
+     background-size:cover;  
+     height: 200px;
+     justify-content: center;
+     color: #fff;  
+     align-items: center;
  }
  img{
      margin: 20px 20px;
  }
- .top-component-container{
-      height: 200px;
-     display: flex;
-     justify-content: center;
-     color: #fff;
 
- }
  h1{
      font-family: "Lato";
      font-size: 40px;
-     display: block;
-     
+     font-style: oblique;
  }
+
  h2{
      font-family: "游ゴシック";
      font-size: 20px;
-     display: block;
  }
 
 </style>
