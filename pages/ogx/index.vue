@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <OgxDetail/>
+    <OgxDetail />
   </div>
 </template>
 
