@@ -9,9 +9,7 @@ import OgxDetail from '~/components/OgxDetail.vue'
 
 export default {
   components: {
-  OgxDetail
+    OgxDetail
   }
 }
 </script>
-
-<style></style>
