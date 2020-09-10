@@ -13,30 +13,36 @@
 
 <style scoped lang="scss">
  .icx-top-container{
-     filter: brightness(50%);
+     width: 100%;
+     filter: brightness(55%);
      letter-spacing: 2px;
-     background-image: "assets/icx-top.jpg";
+     background-image: url('../assets/icx-top.jpg');
      background-position: center;
      background-repeat: none;
      background-size:cover;  
-     height: 200px;
+     height: 100vh;
+     display: flex;
      justify-content: center;
-     color: #fff;  
+     flex-direction: column;
+     color: white;  
      align-items: center;
  }
- img{
+ .product-logo{
      margin: 20px 20px;
+     display: flex;
  }
 
  h1{
      font-family: "Lato";
-     font-size: 40px;
+     font-size: 30px;
      font-style: oblique;
+     display: flex;
  }
 
  h2{
      font-family: "游ゴシック";
-     font-size: 20px;
+     font-size: 15px;
+     display: flex;
  }
 
 </style>
