@@ -11,9 +11,6 @@
       <div>
         <AboutAiesec/>
       </div>
-      <div>
-        <IcxInternFeature/>
-      </div>
     </div>
   </section>
 </template>
@@ -22,14 +19,13 @@
 import AppLogo from "~/components/AppLogo.vue";
 import Button from "~/components/Button.vue";
 import AboutAiesec from "~/components/AboutAiesec.vue";
-import IcxInternFeature from "~/components/IcxInternFeature.vue";
+
 
 export default {
   components: {
     AppLogo,
     Button,
     AboutAiesec,
-    IcxInternFeature
   }
 }
 </script>

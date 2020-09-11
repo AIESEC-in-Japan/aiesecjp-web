@@ -3,26 +3,30 @@
       <h2 class="about-ICX">アイセックのインターンシップの受け入れ</h2>
         <div class="about-contents">
             <div class="about-content">
-                <img src="https://dora-world.com/uassets/c53/c489eeb54ec6357ff9133d1f01f4c/553_09.jpeg" alt="">
-                
-                  <h3>海外からのインターン生受け入れに際しての<br>アイセックメンバーによるサポート</h3>
-                <div class="about-text">  
-                  <p>アイセックのメンバーがそれぞれのインターンシップのサポートをマネージャーとして担当させていただきます。インターン生の選定の支援、空港への送迎などインターンシップ前後のサポート、そして企業様とインターン生と三者での定期的なミーティングの実施などインターンシップ中のサポートも行っています。</p>
-                </div>
+              <img src="https://dora-world.com/uassets/c53/c489eeb54ec6357ff9133d1f01f4c/553_09.jpeg" alt="">
+                <h3>海外からのインターン生受け入れに際しての<br>アイセックメンバーによるサポート</h3>
+              <div class="about-text">  
+                <p>アイセックのメンバーがそれぞれのインターンシップの<br>サポートをマネージャーとして担当させていただきます。<br>インターン生の選定の支援、空港への送迎などインターン<br>シップ前後のサポート、そして企業様とインターン生と三<br>者での定期的なミーティングの実施などインターンシップ<br>中のサポートも行っています。</p>
+              </div>
             </div>
             <div class="about-content">
-                <img src="https://stat.ameba.jp/user_images/20170223/07/milestonecanada-toronto/80/21/j/o0300030013875149788.jpg" alt="">
-                
-                  <h3>世界中の学生がインターン候補生となる<br>独自のプラットフォーム</h3>
-                <div class="about-text">  
-                  <p>アイセック独自のプラットフォームにて、世界110以上の国と地域のインターン候補生に貴社のインターンシップの情報を提示していただくことが可能です。近年は特にアジア圏の学生とのマッチング件数が多くなっておりますが、他の地域であっても応募者の中から最適な人材を選定するマッチングをサポートさせていただきます。</p>
-                </div>
+              <img src="https://stat.ameba.jp/user_images/20170223/07/milestonecanada-toronto/80/21/j/o0300030013875149788.jpg" alt="">
+                <h3>世界中の学生がインターン候補生となる<br>独自のプラットフォーム</h3>
+              <div class="about-text">  
+                <p>アイセック独自のプラットフォームにて、<br>世界110以上の国と地域のインターン候補生に貴社のイン<br>ターンシップの情報を提示していただくことが可能です。<br>近年は特にアジア圏の学生とのマッチング件数が多くなっ<br>ておりますが、他の地域であっても応募者の中から最適な<br>人材を選定するマッチングをサポートさせていただきます。</p>
+              </div>
             </div>
         </div>
    </div>
 </template>
 
 <style lang="scss">
+.ICX-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 .about-ICX{
     color: #6ab4bd;
     font-size: 24px;
@@ -31,9 +35,9 @@
     font-family: "游ゴシック","Lato";
 }
 .about-contents{
-  display: flex;
-  justify-content: center;
-  padding: 0px,60px;
+    display: flex;
+    justify-content: center;
+    padding: 0px,60px;
 }
 .about-content{
     margin: 0 40px;
@@ -63,3 +67,4 @@
   // padding: 20px 520px;
 // }
 </style>
+
