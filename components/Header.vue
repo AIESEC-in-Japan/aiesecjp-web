@@ -28,7 +28,7 @@
   padding: 0px 5%;
   border-bottom-style: solid; 
   border-bottom-width: 0.5px;
-  border-bottom-color: #caccd1;
+  border-bottom-color: $gray;
 
   ul {
     display: flex;
@@ -39,7 +39,7 @@
     list-style-type: none;
   }
   a {
-    color: #caccd1;
+    color: $gray;
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;

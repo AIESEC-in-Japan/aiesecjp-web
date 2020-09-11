@@ -82,15 +82,15 @@
 .footer-container {
   height: 360px;
   line-height: 36px;
-  background-color: #F3F4F7;
+  background-color: $light-gray;
 
   font-size: 12px;
-  color: #52565E;
+  color: $dark-gray;
   display: flex;
   padding-top: 40px;
   justify-content: center;
   h3 {
-    color: #037Ef3;
+    color: $blue;
     font-size: 16px;
     letter-spacing: 2px;
     position: relative;
@@ -98,7 +98,7 @@
   }
   a {
     text-decoration: none;
-    color: #52565E;
+    color: $dark-gray;
   }
 }
 
