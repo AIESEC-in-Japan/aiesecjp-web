@@ -39,48 +39,48 @@
 </template>
 
 <style scoped lang="scss">
-  .bg{
+.bg {
     height: 100vh;
-    width: 100%;
+     width: 100%;
     background-image:url('../assets/icx-corporation-internship.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 55%;
-  }
-  .container{
+}
+.container {
     display: flex;
     justify-content: center;
     background-color :rgba(0,0,0,0.5);
-  }
-  img{
+}
+img {
    height: 65px;
    width: 230px;
-  }
+}
   
   
-  .detail{ 
-    padding-right: 40px;
-    padding-left: 40px;
-    height: 100vh;
-    text-align: center;
-    padding-top: 220px;
+.detail { 
+  padding-right: 40px;
+  padding-left: 40px;
+  height: 100vh;
+  text-align: center;
+  padding-top: 220px;
     
-    p{
-      margin-top: 40px;
-      font-size: 14px;
-      font-weight: bold;
-      color: white;
-      font-family: "游ゴシック";
-      line-height: 25px;
-    }
-    
-    a{
-     margin-top: 40px;
-     display: inline-block;
-     font-weight: normal;
-     font-size: 16px;
-     color: white;
-     border-bottom: solid 1.5px;
-    }
+  p {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    font-family: "游ゴシック";
+    line-height: 25px;
   }
+    
+  a{
+    margin-top: 40px;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    border-bottom: solid 1.5px;
+  }
+}
 </style>
