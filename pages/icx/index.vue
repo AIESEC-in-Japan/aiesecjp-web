@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import IcxCorporationInternship from '~/components/IcxCorporationInternship.vue'
-import IcxInternFeature from '~/components/IcxInternFeature.vue'
+  import IcxCorporationInternship from '~/components/IcxCorporationInternship.vue'
+  import IcxInternFeature from '~/components/IcxInternFeature.vue'
 
 export default {
   components: {
