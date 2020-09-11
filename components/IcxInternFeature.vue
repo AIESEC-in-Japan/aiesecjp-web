@@ -39,6 +39,7 @@
   justify-content: center;
   padding: 0px,60px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .about-content{
   margin: 0 40px;
