@@ -8,19 +8,22 @@
       <div class="about-content">
         <img src="" alt="">
         <p>
-          114の国と地域<span>の支部</span>
+          <span>114の国と地域</span>
+          <span>の支部</span>
         </p>
       </div>
       <div class="about-content">
         <img src="" alt="">
         <p>
-          7000以上の<span>パートナー団体</span>
+          <span>7000以上の</span>
+          <span>パートナー団体</span>
         </p>
       </div>
       <div class="about-content">
         <img src="" alt="">
         <p>
-          年間30000件以上の<span>経験を提供</span>
+          <span>年間30000件以上の</span>
+          <span>経験を提供</span>
         </p>
       </div>
     </div>
