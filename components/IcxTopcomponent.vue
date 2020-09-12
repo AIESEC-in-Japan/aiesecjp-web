@@ -32,7 +32,7 @@
  }
 
  img {
-     margin-bottom: 24px;
+     margin-bottom: 25px;
      margin-left: 18px;
      margin-right: 18px;
      margin-top: 18px;
@@ -42,16 +42,17 @@
 
  h1 {
      font-family: "Lato";
-     font-size: 24px;
+     font-size: 25px;
      font-style: oblique;
      display: flex;
-     letter-spacing: 1px;
-     color: white;  
+     letter-spacing: 0.5px;
+     color: white; 
+     margin-bottom: 10px;
  }
 
  span {
      font-family: "游ゴシック";
-     font-size: 10px;
+     font-size: 14px;
      display: flex;
      letter-spacing: 5px;
      color: white; 

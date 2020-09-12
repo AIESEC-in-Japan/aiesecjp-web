@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-   <IcxTopcomponent />
-   <IcxCorporationInternship />
-   <IcxCorporationMerit />
-   <IcxDetail />
+    <IcxTopcomponent />
+    <IcxCorporationInternship />
+    <IcxCorporationMerit />
+    <IcxDetail />
   </div>
 </template>
 
@@ -15,10 +15,10 @@ import IcxTopcomponent from '~/components/IcxTopcomponent.vue'
 
 export default {
   components: {
-  IcxCorporationInternship, 
-  IcxCorporationMerit,
-  IcxDetail,
-  IcxTopcomponent
+    IcxCorporationInternship, 
+    IcxCorporationMerit,
+    IcxDetail,
+    IcxTopcomponent
   }
 }
 </script>
