@@ -14,8 +14,7 @@
 <style scoped lang="scss">
  .icx-top-container{
      width: 100%;
-     filter: brightness(55%);
-     letter-spacing: 2px;
+     filter: brightness(55%) saturate(120%);
      background-image: url('../assets/icx-top.jpg');
      background-position: center;
      background-repeat: none;
@@ -24,25 +23,29 @@
      display: flex;
      justify-content: center;
      flex-direction: column;
-     color: white;  
      align-items: center;
  }
  img{
-     margin: 20px 20px;
+     margin: 18px 18px;
      display: flex;
+     width: 400px;
  }
 
  h1{
      font-family: "Lato";
-     font-size: 30px;
+     font-size: 20px;
      font-style: oblique;
      display: flex;
+     letter-spacing: 1px;
+     color: white;  
  }
 
  h2{
      font-family: "游ゴシック";
-     font-size: 15px;
+     font-size: 10px;
      display: flex;
+     letter-spacing: 5px;
+     color: white;  
  }
 
 </style>
