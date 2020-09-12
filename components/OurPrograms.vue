@@ -12,12 +12,14 @@
 <style scoped lang="scss">
 .programs-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   h2 {
     color: $blue;
     font-size: 24px;
     letter-spacing: 2px;
-    font-family: "Lato";
     padding-top: 150px;
   }
 }
@@ -32,5 +34,4 @@
     padding: 30px;
   }
 }
-
 </style>

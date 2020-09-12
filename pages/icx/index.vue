@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
-   <IcxCorporationInternship />
-   <IcxCorporationMerit />
-   <IcxDetail />
+    <IcxCorporationInternship />
+    <IcxCorporationMerit />
+    <IcxDetail />
   </div>
 </template>
 
@@ -13,9 +13,9 @@ import IcxDetail from '~/components/IcxDetail.vue'
 
 export default {
   components: {
-  IcxCorporationInternship, 
-  IcxCorporationMerit,
-  IcxDetail
+    IcxCorporationInternship, 
+    IcxCorporationMerit,
+    IcxDetail
   }
 }
 </script>

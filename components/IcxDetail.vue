@@ -2,13 +2,12 @@
   <div class="detail-container">
     <div class="detail-bg">
       <div class="detail">
-        <button href="#" class="button1">受け入れ実例をもっと見る</button>
-        <button href="#" class="button2">インターンシップの詳細を見る</button>
+        <button href="#" class="button-examples">受け入れ実例をもっと見る</button>
+        <button href="#" class="button-detail">インターンシップの詳細を見る</button>
         <p>
-          アイセックの海外インターンシップ受け⼊れに興味のある団体様は、お気軽にお問い合わせください。<br>
-          弊団体のメンバーが、疑問解消のお⼿伝いや詳しい⼿続きのご案内をさせていただきます。
+          <span>アイセックの海外インターンシップ受け⼊れに</span><span>興味のある団体様は、</span><span>お気軽にお問い合わせください。</span><span>弊団体のメンバーが、疑問解消のお⼿伝いや詳しい⼿続きの</span><span>ご案内をさせていただきます。</span>
         </p>
-        <button href="#" class="button3">話を聞いて見る</button>
+        <button href="#" class="button-contact">話を聞いて見る</button>
       </div>
     </div>
   </div>
@@ -26,7 +25,7 @@
 .detail-bg {
   width: 100%;
   height: 50vh;
-  background-color: white;
+  background-color: $white;
 }
 .detail {
   width: 100%;
@@ -39,15 +38,18 @@
   justify-content: center;
   text-align: center;
   p {
-    color: white;
+    color: $white;
     font-size: 14px;
     padding-top: 50px;
     padding-bottom: 50px;
     letter-spacing: 2px;
-    font-family: "游ゴシック";
+    max-width: 800px;
+    span {
+      display: inline-block;
+    }
   }
 }
-.button1 {
+.button-examples {
   padding: 15px 90px;
   color: $mint;
   background-color: transparent;
@@ -55,11 +57,10 @@
   border: solid 2px;
   font-weight: bold;
   font-size: 18px;
-  font-family: "游ゴシック";
   letter-spacing: 2px;
   margin-top: 80px;
 }
-.button2 {
+.button-detail {
   margin-top: 35px;
   margin-bottom: 140px;
   padding: 15px 68px;
@@ -69,19 +70,16 @@
   border: solid 2px;
   font-weight: bold;
   font-size: 18px;
-  font-family: "游ゴシック";
   letter-spacing: 2px;
 }
-.button3 {
+.button-contact {
   padding: 15px 90px;
-  color: white;
+  color: $white;
   background-color: transparent;
   border-radius: 40px;
   border: solid 2px;
   font-weight: bold;
   font-size: 16px;
-  font-family: "游ゴシック";
   letter-spacing: 2px;
 }
-
 </style>
