@@ -18,18 +18,16 @@
 
 <style scoped lang="scss">
 .header-container {
-  position:fixed;
+  position: fixed;
   top: 0;
-  background-color:transparent;
+  background-color: transparent;
   width: 100%;
   height: 80px;
   line-height: 80px;
-
   padding: 0px 5%;
   border-bottom-style: solid; 
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
-
   ul {
     display: flex;
     float: right;
