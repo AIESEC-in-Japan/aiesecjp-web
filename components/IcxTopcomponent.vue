@@ -1,6 +1,6 @@
 <template>
  <div class="icx-top-container">
-  <img src="assets/GT-logp-white.png">
+  <img src="../assets/product_GT-horizontal-white.png">
   <h1>
     Globalize your company with AIESEC
   </h1>
@@ -27,7 +27,7 @@
      color: white;  
      align-items: center;
  }
- .product-logo{
+ img{
      margin: 20px 20px;
      display: flex;
  }
