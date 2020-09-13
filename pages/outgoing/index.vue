@@ -1,18 +1,18 @@
 <template>
   <div class="wrapper">
     <OgxDetail />
-    <PathToDetail />
+    <PathOfOgxDetail />
   </div>
 </template>
 
 <script>
 import OgxDetail from '~/components/OgxDetail.vue'
-import PathToDetail from '~/components/pathToDetail.vue'
+import PathToDetail from '~/components/PathOfOgxDetail.vue'
 
 export default {
   components: {
     OgxDetail,
-    PathToDetail
+    PathOfOgxDetail
   }
 }
 </script>
