@@ -7,7 +7,7 @@
 
 <script>
 import OgxDetail from '~/components/OgxDetail.vue'
-import PathToDetail from '~/components/PathOfOgxDetail.vue'
+import PathOfOgxDetail from '~/components/PathOfOgxDetail.vue'
 
 export default {
   components: {
