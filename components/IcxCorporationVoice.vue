@@ -13,7 +13,6 @@
         <p>インターンの概要</p>
         <p>インターンの概要</p>
         <p>インターンの概要</p>
-        <br />
       </div>
       <div class="icxcorporationvoice-content-detail">
         <img
@@ -24,7 +23,6 @@
         <p>インターンの概要</p>
         <p>インターンの概要</p>
         <p>インターンの概要</p>
-        <br />
       </div>
       <div class="icxcorporationvoice-content-detail">
         <img
@@ -35,7 +33,6 @@
         <p>インターンの概要</p>
         <p>インターンの概要</p>
         <p>インターンの概要</p>
-        <br />
       </div>
     </div>
   </div>
