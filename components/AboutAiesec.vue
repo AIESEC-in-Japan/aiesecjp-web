@@ -32,7 +32,7 @@
 
 <style scoped lang="scss">
 .about-aiesec{
-    color: #037Ef3;
+    color: $blue;
     font-size: 24px;
     padding: 20px;
     letter-spacing: 2px;
@@ -52,7 +52,7 @@
     img{
         padding: 100px 100px;
         margin: 2em 0;
-        background: #ebecf1;
+        background: $gray;
         border-radius: 10px;/*角の丸み*/
     }
 }

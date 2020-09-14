@@ -9,7 +9,9 @@
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
       <div>
-        <AboutAiesec/>
+        <!-- <AboutAiesec/> -->
+        <OurPrograms />
+        <OurPartners />
       </div>
     </div>
   </section>
@@ -18,14 +20,18 @@
 <script>
 import AppLogo from "~/components/AppLogo.vue";
 import Button from "~/components/Button.vue";
-import AboutAiesec from "~/components/AboutAiesec.vue";
+// import AboutAiesec from "~/components/AboutAiesec.vue";
 
+import OurPrograms from "~/components/OurPrograms.vue";
+import OurPartners from "~/components/OurPartners.vue";
 
 export default {
   components: {
     AppLogo,
     Button,
-    AboutAiesec,
+    // AboutAiesec,
+    OurPrograms,
+    OurPartners
   }
 }
 </script>

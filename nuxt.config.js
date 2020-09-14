@@ -34,6 +34,14 @@ module.exports = {
         })
       }
     }
-  }
+    
+  },
+  /**style-resources */
+  modules: ['@nuxtjs/style-resources'],
+  styleResources: {
+    scss: [
+      './assets/scss/main.scss'
+    ],
+  },
 }
 
