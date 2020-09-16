@@ -77,5 +77,8 @@
     border-bottom-width: 0.5px;
     border-bottom-color: $gray;
   }
+  th {
+    text-align: left;
+  }
 }
 </style>
