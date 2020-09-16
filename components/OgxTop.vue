@@ -28,16 +28,18 @@
   .title {
     text-align: center;
     font-style: oblique;
+    font-weight: bold;
     letter-spacing: 0px;
     font-family:"Lato";
     font-size: 24px;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
   }
   .catchcopy {
     text-align: center;
     font-family: "游ゴシック";
     font-size: 16px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    line-height: 32px;
     span {
       display: block;
     }
