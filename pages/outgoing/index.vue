@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <Og />
+    <OgxFeature />
     <OgxGVGTDetail />
     <OgxDetail />
   </div>
@@ -8,13 +8,13 @@
 
 <script>
 
-import Og from '~/components/Og.vue'
+import OgxFeature from '~/components/OgxFeature.vue'
 import OgxGVGTDetail from '~/components/OgxGVGTDetail.vue'
 import OgxDetail from '~/components/OgxDetail.vue'
 
 export default {
   components: {
-    Og,
+    OgxFeature,
     OgxGVGTDetail,
     OgxDetail
   }
