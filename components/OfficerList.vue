@@ -72,7 +72,7 @@
   letter-spacing: 2px;
   margin-top: 30px;
   th, td {
-    padding: 16px;
+    padding: 24px 16px;
     border-bottom-style: solid; 
     border-bottom-width: 0.5px;
     border-bottom-color: $gray;
