@@ -1,11 +1,13 @@
 <template>
-    <div class="wrapper">
-        <OrganizationInfo />
-    </div>
+    <section class="container">
+        <div>
+            <OrganizationInfo />
+        </div>
+    </section>
 </template>
 
 <script>
-import OrganizationInfo from '~/components/OrganizationInfo.vue'
+import OrganizationInfo from "~/components/OrganizationInfo.vue"
 
 export default {
     components: {

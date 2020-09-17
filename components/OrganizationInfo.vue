@@ -76,7 +76,7 @@
         padding: 24px 16px;
         border-bottom-style: solid;
         border-bottom-width: 0.5px;
-        border-bottom-color: $gray;
+        border-bottom-color:  #CACCD1;
     }
     th {
         text-align: left;
