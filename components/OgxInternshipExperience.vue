@@ -1,35 +1,35 @@
 <template>
-  <div class="about-container">
-    <h2 class="about-internship-experience">インターシップ体験記</h2>
-    <div class="about-contents">
-      <div class="about-content">
+  <div class="experience-container">
+    <h2 class="experience-title">インターシップ体験記</h2>
+    <div class="experience-articles">
+      <article class="internship-experience">
         <img src="https://via.placeholder.com/200x80">
         <p>
           <span>記事タイトル記事タイトル</span>
           <span>記事タイトル記事タイトル</span>
         </p>
-      </div>
-      <div class="about-content">
+      </article>
+      <article class="internship-experience">
         <img src="https://via.placeholder.com/200x80">
         <p>
           <span>記事タイトル記事タイトル</span>
           <span>記事タイトル記事タイトル</span>
         </p>
-      </div>
-      <div class="about-content">
+      </article>
+      <article class="internship-experience">
         <img src="https://via.placeholder.com/200x80">
         <p>
           <span>記事タイトル記事タイトル</span>
           <span>記事タイトル記事タイトル</span>
         </p>
-      </div>
+      </article>
     </div>
      <button href="#" class="button-experience-detail">体験記をもっと見る</button>
   </div>
 </template>
 
 <style scoped lang="scss">
-.about-container {
+.experience-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,26 +37,28 @@
   text-align: center;
   align-items: center;
 }
-.about-internship-experience {
+.experience-title {
   color: $blue;
   font-size: 24px;
   font-weight: bold;
   padding-top: 100px;
   letter-spacing: 2px;
 }
-.about-contents {
+.experience-articles {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 50px;
 }
-.about-content {
+.internship-experience {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
   img {
     padding: 100px;
+    width: 300px;
+    height: 80px;
     margin: 2em 0;
     background: $gray;
   }
