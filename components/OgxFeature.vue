@@ -23,36 +23,37 @@
           丁寧なサポート
         </h2>
         <p>
-         　<span>参加者には問おう先選定時から渡航中、渡航後</span>
-    　　 　<span>まで、インターン生の皆様を専属マネー</span>
-      　 　<span>ジャーがサポートします。渡航前の準備や渡</span>
-         　<span>航中の壁打ち、渡航後の振り返りなど、参加</span>
-         　<span>者の成長を二人三脚で最大化します。</span>
+          <span>参加者には問おう先選定時から渡航中、渡航後</span>
+          <span>まで、インターン生の皆様を専属マネー</span>
+          <span>ジャーがサポートします。渡航前の準備や渡</span>
+          <span>航中の壁打ち、渡航後の振り返りなど、参加</span>
+          <span>者の成長を二人三脚で最大化します。</span>
         </p>
       </div>
       <div class="detail">  
-      <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
-      <h2>
-        渡航しただけ、で終わらない<br>
-        事前・事後プログラム
-      </h2>
-      <p>
-        <span>渡航前には成長計画の明確化や行動設計を行</span>
-        <span>い、渡航後は学びの言語化などを通じて、</span>
-        <span>「渡航しただけ」で終わらない機会を提供し</span>
-        <span>ます。パートナー企業様と共同開催の事前事</span>
-        <span>後のプログラムもご用意しております。</span>
-      </p>
+        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <h2>
+          渡航しただけ、で終わらない<br>
+          事前・事後プログラム
+        </h2>
+        <p>
+          <span>渡航前には成長計画の明確化や行動設計を行い、</span>
+          <span>渡航後は学びの言語化などを通じて、</span>
+          <span>「渡航しただけ」で終わらない機会を提供し</span>
+          <span>ます。パートナー企業様と共同開催の事前事</span>
+          <span>後のプログラムもご用意しております。</span>
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.container {
+.container  {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
     h1  {
-      display: flex;
-      justify-content: center;
       color: #037Ef3;
       letter-spacing: 2px;
       font-family: "Lato";
@@ -61,26 +62,27 @@
       font-size: 24px;
     }
 }
-.feature  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.feature  {   
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 .detail  {
   text-align: center;
   padding: 20px;
-  img{
+  width: 360px;
+  img  {
     border-radius: 30px;
   }
   h2  {
-      font-size: 16px;
-      line-height: 30px;
-      color: #037Ef3;
-      letter-spacing: 2px;
-      font-family: "Lato";
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+    font-size: 16px;
+    line-height: 30px;
+    color: #037Ef3;
+    letter-spacing: 2px;
+    font-family: "Lato";
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   p  {
     font-size: 12px;
     letter-spacing: 2px;
@@ -89,7 +91,7 @@
     margin-bottom: 50px;
 
     span{
-      display: block;
+      display: inline-block;
     }
   }
 }
