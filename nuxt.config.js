@@ -1,3 +1,6 @@
+require("dotenv").config();
+const { API_KEY } = process.env;
+
 module.exports = {
   /*
   ** Headers of the page
@@ -50,6 +53,9 @@ module.exports = {
     scss: [
       './assets/scss/main.scss'
     ],
+  },
+  env: {
+    API_KEY
   },
 }
 
