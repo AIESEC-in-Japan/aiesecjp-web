@@ -3,6 +3,7 @@
     <OgxTop />
     <OgxGVGTDetail />
     <OgxDetail />
+    <OgxInternshipExperience />
   </div>
 </template>
 
@@ -11,12 +12,14 @@
 import OgxTop from '~/components/OgxTop.vue'
 import OgxGVGTDetail from '~/components/OgxGVGTDetail.vue'
 import OgxDetail from '~/components/OgxDetail.vue'
+import OgxInternshipExperience from '~/components/OgxInternshipExperience.vue'
 
 export default {
   components: {
     OgxTop,
     OgxGVGTDetail,
-    OgxDetail
+    OgxDetail,
+    OgxInternshipExperience
   }
 }
 </script>
