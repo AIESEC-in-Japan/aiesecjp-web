@@ -1,12 +1,13 @@
 <template>
-  <div>
+  <div class="container">
     <div v-for="item in items" v-bind:key="item.id">
-      <nuxt-link :to="'careers/' + item.id">
+      <nuxt-link :to="'press/' + item.slug">
         <h2>
           {{ item.title }}
         </h2>
         <p>
           {{ item.body }}
+          {{item.slug}}
         </p>
       </nuxt-link>
     </div>
@@ -35,3 +36,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.container {
+  margin-top: 150px;
+}
+</style>
