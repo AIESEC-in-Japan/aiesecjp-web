@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <h2>キャリア</h2>
+  <div class="container">
     <div>
-        <h2>
-          {{ item.title }}
-          {{ item.body }}
-        </h2>
+      <h2>
+        {{ item.title }}
+      </h2>
+      <p>
+        {{ item.body }}
+      </p>
     </div>
   </div>
 </template>
@@ -22,7 +23,7 @@ export default {
 
   async asyncData({ params }) {
     const { data } = await axios.get(
-      `https://aiesecjp.microcms.io/api/v1/posts?filters=slug[equals]${params.slug}`,
+      `https://aiesecjp.microcms.io/api/v1/press?filters=slug[equals]${params.slug}`,
       {
         headers: { "X-API-KEY": process.env.API_KEY }
       }
@@ -34,3 +35,9 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+.container {
+  margin-top: 150px;
+}
+</style>

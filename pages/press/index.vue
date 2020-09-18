@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div v-for="item in items" v-bind:key="item.id">
-      <nuxt-link :to="'press/' + item.slug">
+      <nuxt-link :to="item.slug">
         <h2>
           {{ item.title }}
         </h2>
