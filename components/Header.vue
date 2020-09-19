@@ -20,8 +20,10 @@
 .header-container {
   position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   background-color: transparent;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   line-height: 80px;
   padding: 0px 5%;
@@ -30,7 +32,7 @@
   border-bottom-color: $gray;
   ul {
     display: flex;
-    float: right;
+    justify-content: flex-end;
   }
   li {
     margin-left: 90px;

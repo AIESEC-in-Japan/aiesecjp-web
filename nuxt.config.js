@@ -1,3 +1,6 @@
+require("dotenv").config();
+const { API_KEY } = process.env;
+
 module.exports = {
   /*
   ** Headers of the page
@@ -36,12 +39,23 @@ module.exports = {
     }
     
   },
-  /**style-resources */
+  /*
+  ** Global CSS
+  */
+  css: [
+    './assets/resetcss/reset.css'
+  ],
+  /*
+  ** style-resources
+  */
   modules: ['@nuxtjs/style-resources'],
   styleResources: {
     scss: [
       './assets/scss/main.scss'
     ],
+  },
+  env: {
+    API_KEY
   },
 }
 
