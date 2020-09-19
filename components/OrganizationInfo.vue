@@ -21,7 +21,7 @@
               </tr>
               <tr>
                   <th>専務理事</th>
-                  <td>森原正希 (早稲田大学創造理工学部建築学科3年)</td>
+                  <td>森原正希 （早稲田大学創造理工学部建築学科3年）</td>
               </tr>
               <tr>
                   <th>所在地</th>
@@ -82,7 +82,7 @@
       text-align: left;
     }
   td {
-      max-width: 100vh;
+      max-width: 660px;
     }
 }
 </style>
