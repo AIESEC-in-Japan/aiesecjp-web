@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div v-for="item in items" v-bind:key="item.id">
+    <!-- <div v-for="item in items" v-bind:key="item.id">
       <nuxt-link :to="item.slug">
         <h2>
           {{ item.title }}
@@ -10,7 +10,8 @@
           {{item.slug}}
         </p>
       </nuxt-link>
-    </div>
+    </div> -->
+    <h2 class="comingsoon">Coming Soon...</h2>
   </div>
 </template>
 
@@ -37,8 +38,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
 .container {
   margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.comingsoon {
+  font-size: 24px;
+  color: $gray;
+  padding-top: 50px;
+  padding-bottom: 200px;
 }
 </style>
