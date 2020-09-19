@@ -36,7 +36,15 @@ module.exports = {
     }
     
   },
-  /**style-resources */
+  /*
+  ** Global CSS
+  */
+  css: [
+    './assets/resetcss/reset.css'
+  ],
+  /*
+  ** style-resources
+  */
   modules: ['@nuxtjs/style-resources'],
   styleResources: {
     scss: [

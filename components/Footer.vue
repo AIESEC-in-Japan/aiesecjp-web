@@ -80,20 +80,20 @@
 
 <style scoped lang="scss">
 .footer-container {
-  height: 360px;
+  min-height: 360px;
+  width: 100%;
+  word-break: break-all;
   line-height: 36px;
   background-color: $light-gray;
   font-size: 12px;
   color: $dark-gray;
   display: flex;
   padding-top: 40px;
-  justify-content: center;
+  justify-content: space-around;
   h3 {
     color: $blue;
     font-size: 16px;
     letter-spacing: 2px;
-    position: relative;
-    left: 40px;
   }
   a {
     text-decoration: none;
@@ -101,18 +101,17 @@
   }
 }
 .footer-desc {
-  height: 300px;
-  width: 180px;
+  min-height: 300px;
+  max-width: 180px;
   line-height: 24px;
-  margin: 0px 40px;
   h3 {
     padding: 10px 0px;
     left: 0px;
   }
 }
 .nav-content {
-  height: 300px;
-  width: 220px;
+  min-height: 300px;
+  max-width: 220px;
   li {
     list-style-type: none;
   }
