@@ -1,10 +1,10 @@
 <template>
   <div class="info-container">
       <div class="info-items">
-          <h2>団体情報</h2>
+        <h2>団体情報</h2>
           <table class="info-list">
               <tr>
-                  <th>団体名</th>
+                	<th>団体名</th>
                   <td>特定非営利活動法人アイセック・ジャパン （AIESEC in Japan）</td>
               </tr>
               <tr>
