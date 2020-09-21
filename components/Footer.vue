@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-container" v-if="width>900">
+  <div v-if="isWideMenu" class="footer-container">
     <div class="footer-desc">
       <h3>AIESEC</h3>
       <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
@@ -76,23 +76,45 @@
       </ul>
     </div>
   </div>
-  <div class="sp-footer-container" v-else>
+  <div v-else class="sp-footer-container">
     <div class="sp-footer-content">
-      <button type="button" class="sp-footer-title" :class="{ '_state-open': isOpened[0] }" @click="openItems(0)">
+      <button
+        type="button"
+        class="sp-footer-title"
+        :class="{ '_state-open': isOpened[0] }"
+        @click="openItems(0)"
+      >
         AIESECについて
       </button>
-      <transition name="sp-footer-item" @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
-        <div class="sp-footer-item" :class="{ '_state-open': isOpened[0] }" v-if="isOpened[0]">
+      <transition
+        name="sp-footer-item"
+        @before-enter="beforeEnter"
+        @enter="enter"
+        @before-leave="beforeLeave"
+        @leave="leave"
+      >
+        <div v-if="isOpened[0]" class="sp-footer-item">
           <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
         </div>
       </transition>
     </div>
     <div class="sp-footer-content">
-      <button type="button" class="sp-footer-title" :class="{ '_state-open': isOpened[1] }" @click="openItems(1)">
+      <button
+        type="button"
+        class="sp-footer-title"
+        :class="{ '_state-open': isOpened[1] }"
+        @click="openItems(1)"
+      >
         About
       </button>
-      <transition name="sp-footer-item" @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
-        <ul class="sp-footer-item" :class="{ '_state-open': isOpened[1] }" v-if="isOpened[1]">
+      <transition
+        name="sp-footer-item"
+        @before-enter="beforeEnter"
+        @enter="enter"
+        @before-leave="beforeLeave"
+        @leave="leave"
+      >
+        <ul v-if="isOpened[1]" class="sp-footer-item">
           <li>
             <a href="#">AIESECについて</a>
           </li>
@@ -115,11 +137,22 @@
       </transition>
     </div>
     <div class="sp-footer-content">
-      <button type="button" class="sp-footer-title" :class="{ '_state-open': isOpened[2] }" @click="openItems(2)">
+      <button
+        type="button"
+        class="sp-footer-title"
+        :class="{ '_state-open': isOpened[2] }"
+        @click="openItems(2)"
+      >
         For Students
       </button>
-      <transition name="sp-footer-item" @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
-        <ul class="sp-footer-item" :class="{ '_state-open': isOpened[2] }" v-if="isOpened[2]">
+      <transition
+        name="sp-footer-item"
+        @before-enter="beforeEnter"
+        @enter="enter"
+        @before-leave="beforeLeave"
+        @leave="leave"
+      >
+        <ul v-if="isOpened[2]" class="sp-footer-item">
           <li>
             <a href="#">海外インターンシップに参加する</a>
           </li>
@@ -142,11 +175,22 @@
       </transition>
     </div>
     <div class="sp-footer-content">
-      <button type="button" class="sp-footer-title" :class="{ '_state-open': isOpened[3] }" @click="openItems(3)">
+      <button
+        type="button"
+        class="sp-footer-title"
+        :class="{ '_state-open': isOpened[3] }"
+        @click="openItems(3)"
+      >
         For Companies
       </button>
-      <transition name="sp-footer-item" @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
-        <ul class="sp-footer-item" :class="{ '_state-open': isOpened[3] }" v-if="isOpened[3]">
+      <transition
+        name="sp-footer-item"
+        @before-enter="beforeEnter"
+        @enter="enter"
+        @before-leave="beforeLeave"
+        @leave="leave"
+      >
+        <ul v-if="isOpened[3]" class="sp-footer-item">
           <li>
             <a href="#">海外インターン生を受け入れる</a>
           </li>
@@ -160,11 +204,22 @@
       </transition>
     </div>
     <div class="sp-footer-content">
-      <button type="button" class="sp-footer-title" :class="{ '_state-open': isOpened[4] }" @click="openItems(4)">
+      <button
+        type="button"
+        class="sp-footer-title"
+        :class="{ '_state-open': isOpened[4] }"
+        @click="openItems(4)"
+      >
         Press & Alumni
       </button>
-      <transition name="sp-footer-item" @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave">
-        <ul class="sp-footer-item" :class="{ '_state-open': isOpened[4] }" v-if="isOpened[4]">
+      <transition
+        name="sp-footer-item"
+        @before-enter="beforeEnter"
+        @enter="enter"
+        @before-leave="beforeLeave"
+        @leave="leave"
+      >
+        <ul v-if="isOpened[4]" class="sp-footer-item">
           <li>
             <a href="#">プレスルーム</a>
           </li>
@@ -187,22 +242,30 @@ export default {
       isOpened: [false,false,false,false,false]
     };
   },
+  computed: {
+    isWideMenu() {
+      if (this.width < 900) {
+        return false
+      }
+      return true
+    }
+  },
   methods: {
-    openItems: function(index) {
-      this.isOpened.splice(index,1,!this.isOpened[index]);
+    openItems(index) {
+      this.isOpened.splice(index,1,!this.isOpened[index])
     },
-    beforeEnter: function(el) {
-      el.style.height = '0';
+    beforeEnter(el) {
+      el.style.height = '0'
     },
-    enter: function(el) {
-      el.style.height = el.scrollHeight + 'px';
+    enter(el) {
+      el.style.height = el.scrollHeight + 'px'
     },
-    beforeLeave: function(el) {
-      el.style.height = el.scrollHeight + 'px';
+    beforeLeave(el) {
+      el.style.height = el.scrollHeight + 'px'
     },
-    leave: function(el) {
-      el.style.height = '0';
-  }
+    leave(el) {
+      el.style.height = '0'
+    }
   }
 }
 </script>
@@ -320,8 +383,5 @@ export default {
   100% {
     opacity: 0;
   }
-}
-._state-open {
-  max-height: 500px;
 }
 </style>
