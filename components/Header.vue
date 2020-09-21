@@ -3,13 +3,13 @@
     <nav>
       <ul>
         <li>
-          <a href="#">海外インターンシップに参加する</a>
+          <a href="outgoing">海外インターンシップに参加する</a>
         </li>
         <li>
-          <a href="#">海外インターン生を受け入れる</a>
+          <a href="incoming">海外インターン生を受け入れる</a>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <a href="about">About Us</a>
         </li>
       </ul>
     </nav>
