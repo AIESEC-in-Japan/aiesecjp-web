@@ -1,8 +1,8 @@
 <template>
-  <div class="Advisor-container">
-    <div class="Advisor-detail">
+  <div class="advisor-container">
+    <div class="advisor-detail">
       <h1>諮問一覧</h1>
-      <table class="Advisor-table">
+      <table class="advisor-table">
       <tr>
         <th>諮問</th>
         <td>田中伸男（公共財団法人笹川平和財団　会長）</td>
@@ -33,7 +33,7 @@
 </template>
 
 <style scoped lang="scss">
-.Advisor-container  {
+.advisor-container  {
   width: 100%;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@
     letter-spacing: 2px;
   }
 }
-.Advisor-table  {
+.advisor-table  {
   font-size: 16px;
   letter-spacing: 2px;
   margin-top: 30px;
