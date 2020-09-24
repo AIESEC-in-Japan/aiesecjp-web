@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import OfficerList from "~/components/OfficerList.vue"
-import OrganizationInfo from "~/components/OrganizationInfo.vue"
+import OfficerList from "~/components/about/OfficerList.vue"
+import OrganizationInfo from "~/components/about/OrganizationInfo.vue"
 
 export default {
   components: {

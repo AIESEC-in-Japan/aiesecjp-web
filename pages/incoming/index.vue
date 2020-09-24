@@ -1,24 +1,24 @@
 <template>
   <div class="wrapper">
-    <IcxTopcomponent />
-    <IcxCorporationInternship />
-    <IcxCorporationMerit />
-    <IcxDetail />
+    <Topcomponent />
+    <CorporationInternship />
+    <CorporationMerit />
+    <Detail />
   </div>
 </template>
 
 <script>
-import IcxCorporationInternship from '~/components/IcxCorporationInternship.vue'
-import IcxCorporationMerit from '~/components/IcxCorporationMerit.vue'
-import IcxDetail from '~/components/IcxDetail.vue'
-import IcxTopcomponent from '~/components/IcxTopcomponent.vue'
+import CorporationInternship from '~/components/incoming/CorporationInternship.vue'
+import CorporationMerit from '~/components/incoming/CorporationMerit.vue'
+import Detail from '~/components/incoming/Detail.vue'
+import Topcomponent from '~/components/incoming/Topcomponent.vue'
 
 export default {
   components: {
-    IcxCorporationInternship, 
-    IcxCorporationMerit,
-    IcxDetail,
-    IcxTopcomponent
+    CorporationInternship, 
+    CorporationMerit,
+    Detail,
+    Topcomponent
   }
 }
 </script>
