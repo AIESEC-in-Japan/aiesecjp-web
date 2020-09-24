@@ -11,7 +11,7 @@
 </template>
 <style scoped lang="scss">
 .container {
-  background-image: url("@/assets/ogx_top_background.jpg");
+  background-image: url(`@/assets/pages/ogx_top_background.jpg`);
   background-position: center;
   background-repeat: none;
   background-size: cover;

@@ -16,7 +16,7 @@
 <style scoped lang="scss">
  .icx-top-container {
      width: 100%;
-     background-image: url('@/assets/icx-top.jpg');
+     background-image: url(`@/assets/pages/icx-top.jpg`);
      background-position: center;
      background-repeat: none;
      background-size:cover;  

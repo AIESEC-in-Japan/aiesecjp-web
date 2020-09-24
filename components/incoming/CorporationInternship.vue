@@ -14,7 +14,7 @@
 .corporation-internship-container {
   width: 100%;
   height: 100vh;
-  background-image: url('@/assets/icx-corporation-internship.jpg');
+  background-image: url(`@/assets/pages/icx-corporation-internship.jpg`);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 50%;

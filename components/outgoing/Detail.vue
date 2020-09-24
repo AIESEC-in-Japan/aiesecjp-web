@@ -17,7 +17,7 @@
 <style scoped lang="scss">
 .container {
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('@/assets/49684036457_9a4b210c9d_k.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url(`@/assets/pages/ogx-detail.jpg`);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 30%;

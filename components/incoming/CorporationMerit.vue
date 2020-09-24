@@ -21,7 +21,7 @@
 .corporation-merit-container {
   width: 100%;
   height: 100vh;
-  background-image: url('@/assets/icx-corporation-merit.jpg');
+  background-image: url(`@/assets/pages/icx-corporation-merit.jpg`);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 50%;
