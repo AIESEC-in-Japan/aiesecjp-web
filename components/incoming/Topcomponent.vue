@@ -1,7 +1,7 @@
 <template>
  <div class="icx-top-container">
    <div class="icx-top">
-      <img src="@/assets/product_GT-horizontal-white.png" alt="GT-logo">
+      <img src="@/assets/images/product_GT-horizontal-white.png" alt="GT-logo">
       <h1>
         Globalize your company with AIESEC
       </h1>
@@ -16,7 +16,7 @@
 <style scoped lang="scss">
  .icx-top-container {
      width: 100%;
-     background-image: url(`@/assets/pages/icx-top.jpg`);
+     background-image: url("~@/assets/images/icx-top.jpg");
      background-position: center;
      background-repeat: none;
      background-size:cover;  

@@ -2,7 +2,7 @@
   <div class="bg">
     <div class="container">
       <div class="detail">
-        <img src="@/assets/product_GV-horizontal-white.png">
+        <img src="@/assets/images/product_GV-horizontal-white.png">
         <p>
         期間：6～8週間<br>
         インターン先：NPO/NGOなど<br>
@@ -18,7 +18,7 @@
         <a>詳しく見る</a>
       </div>
       <div class="detail">
-        <img src="@/assets/product_GT-horizontal-white.png">
+        <img src="@/assets/images/product_GT-horizontal-white.png">
         <p>
         期間：6～7.8週間<br>
         インターン先：海外企業・ベンチャーなど<br>
@@ -41,7 +41,7 @@
 .bg {
     min-height: 100vh;
     width: 100%;
-    background-image:url('@/assets/icx-corporation-internship.jpg');
+    background-image:url("~@/assets/images/icx-corporation-internship.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 55%;
