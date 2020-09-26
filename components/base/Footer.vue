@@ -1,120 +1,13 @@
 <template>
-  <div v-if="isWideMenu" class="footer-container">
-    <div class="footer-desc">
-      <h3>AIESEC</h3>
-      <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
-    </div>
-    <div class="nav-content">
-      <h3>About</h3>
-      <ul>
-        <li>
-          <a href="#">AIESECについて</a>
-        </li>
-        <li>
-          <a href="#">パートナーシップについて</a>
-        </li>
-        <li>
-          <a href="#">団体情報</a>
-        </li>
-        <li>
-          <a href="#">安全への取り組み</a>
-        </li>
-        <li>
-          <a href="#">個人情報の取り扱い</a>
-        </li>
-        <li>
-          <a href="#">お問い合わせ</a>
-        </li>
-      </ul>
-    </div>
-    <div class="nav-content">
-      <h3>For Students</h3>
-      <ul>
-        <li>
-          <a href="#">海外インターンシップに参加する</a>
-        </li>
-        <li>
-          <a href="#">海外ボランティアに参加する</a>
-        </li>
-        <li>
-          <a href="#">体験記を見る</a>
-        </li>
-        <li>
-          <a href="#">参加の流れと費用</a>
-        </li>
-        <li>
-          <a href="#">危機管理サポート</a>
-        </li>
-        <li>
-          <a href="#">話を聞いてみる</a>
-        </li>
-      </ul>
-    </div>
-    <div class="nav-content">
-      <h3>For Companies</h3>
-      <ul>
-        <li>
-          <a href="#">海外インターン生を受け入れる</a>
-        </li>
-        <li>
-          <a href="#">受け入れ事例を見る</a>
-        </li>
-        <li>
-          <a href="#">受け入れの流れと費用</a>
-        </li>
-      </ul>
-    </div>
-    <div class="nav-content">
-      <h3>Press & Alumni</h3>
-      <ul>
-        <li>
-          <a href="#">プレスルーム</a>
-        </li>
-        <li>
-          <a href="#">アルムナイの方</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div v-else class="sp-footer-container">
-    <div class="sp-footer-content">
-      <button
-        type="button"
-        class="sp-footer-title"
-        :class="{ '_state-open': isOpened[0] }"
-        @click="openItems(0)"
-      >
-        AIESECについて
-      </button>
-      <transition
-        name="sp-footer-item"
-        @before-enter="beforeEnter"
-        @enter="enter"
-        @before-leave="beforeLeave"
-        @leave="leave"
-      >
-        <div v-if="isOpened[0]" class="sp-footer-item">
-          <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
-        </div>
-      </transition>
-    </div>
-    <div class="sp-footer-content">
-      <button
-        type="button"
-        class="sp-footer-title"
-        :class="{ '_state-open': isOpened[1] }"
-        @click="openItems(1)"
-      >
-        About
-      </button>
-      <transition
-        name="sp-footer-item"
-        @before-enter="beforeEnter"
-        @enter="enter"
-        @before-leave="beforeLeave"
-        @leave="leave"
-      >
-        <ul v-if="isOpened[1]" class="sp-footer-item">
+  <client-only>
+    <div v-if="isWideMenu" class="footer-container">
+      <div class="footer-desc">
+        <h3>AIESEC</h3>
+        <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
+      </div>
+      <div class="nav-content">
+        <h3>About</h3>
+        <ul>
           <li>
             <a href="#">AIESECについて</a>
           </li>
@@ -134,25 +27,10 @@
             <a href="#">お問い合わせ</a>
           </li>
         </ul>
-      </transition>
-    </div>
-    <div class="sp-footer-content">
-      <button
-        type="button"
-        class="sp-footer-title"
-        :class="{ '_state-open': isOpened[2] }"
-        @click="openItems(2)"
-      >
-        For Students
-      </button>
-      <transition
-        name="sp-footer-item"
-        @before-enter="beforeEnter"
-        @enter="enter"
-        @before-leave="beforeLeave"
-        @leave="leave"
-      >
-        <ul v-if="isOpened[2]" class="sp-footer-item">
+      </div>
+      <div class="nav-content">
+        <h3>For Students</h3>
+        <ul>
           <li>
             <a href="#">海外インターンシップに参加する</a>
           </li>
@@ -172,25 +50,10 @@
             <a href="#">話を聞いてみる</a>
           </li>
         </ul>
-      </transition>
-    </div>
-    <div class="sp-footer-content">
-      <button
-        type="button"
-        class="sp-footer-title"
-        :class="{ '_state-open': isOpened[3] }"
-        @click="openItems(3)"
-      >
-        For Companies
-      </button>
-      <transition
-        name="sp-footer-item"
-        @before-enter="beforeEnter"
-        @enter="enter"
-        @before-leave="beforeLeave"
-        @leave="leave"
-      >
-        <ul v-if="isOpened[3]" class="sp-footer-item">
+      </div>
+      <div class="nav-content">
+        <h3>For Companies</h3>
+        <ul>
           <li>
             <a href="#">海外インターン生を受け入れる</a>
           </li>
@@ -201,25 +64,10 @@
             <a href="#">受け入れの流れと費用</a>
           </li>
         </ul>
-      </transition>
-    </div>
-    <div class="sp-footer-content">
-      <button
-        type="button"
-        class="sp-footer-title"
-        :class="{ '_state-open': isOpened[4] }"
-        @click="openItems(4)"
-      >
-        Press & Alumni
-      </button>
-      <transition
-        name="sp-footer-item"
-        @before-enter="beforeEnter"
-        @enter="enter"
-        @before-leave="beforeLeave"
-        @leave="leave"
-      >
-        <ul v-if="isOpened[4]" class="sp-footer-item">
+      </div>
+      <div class="nav-content">
+        <h3>Press & Alumni</h3>
+        <ul>
           <li>
             <a href="#">プレスルーム</a>
           </li>
@@ -227,9 +75,163 @@
             <a href="#">アルムナイの方</a>
           </li>
         </ul>
-      </transition>
+      </div>
     </div>
-  </div>
+    <div v-else class="sp-footer-container">
+      <div class="sp-footer-content">
+        <button
+          type="button"
+          class="sp-footer-title"
+          :class="{ '_state-open': isOpened[0] }"
+          @click="openItems(0)"
+        >
+          AIESECについて
+        </button>
+        <transition
+          name="sp-footer-item"
+          @before-enter="beforeEnter"
+          @enter="enter"
+          @before-leave="beforeLeave"
+          @leave="leave"
+        >
+          <div v-if="isOpened[0]" class="sp-footer-item">
+            <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
+          </div>
+        </transition>
+      </div>
+      <div class="sp-footer-content">
+        <button
+          type="button"
+          class="sp-footer-title"
+          :class="{ '_state-open': isOpened[1] }"
+          @click="openItems(1)"
+        >
+          About
+        </button>
+        <transition
+          name="sp-footer-item"
+          @before-enter="beforeEnter"
+          @enter="enter"
+          @before-leave="beforeLeave"
+          @leave="leave"
+        >
+          <ul v-if="isOpened[1]" class="sp-footer-item">
+            <li>
+              <a href="#">AIESECについて</a>
+            </li>
+            <li>
+              <a href="#">パートナーシップについて</a>
+            </li>
+            <li>
+              <a href="#">団体情報</a>
+            </li>
+            <li>
+              <a href="#">安全への取り組み</a>
+            </li>
+            <li>
+              <a href="#">個人情報の取り扱い</a>
+            </li>
+            <li>
+              <a href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </transition>
+      </div>
+      <div class="sp-footer-content">
+        <button
+          type="button"
+          class="sp-footer-title"
+          :class="{ '_state-open': isOpened[2] }"
+          @click="openItems(2)"
+        >
+          For Students
+        </button>
+        <transition
+          name="sp-footer-item"
+          @before-enter="beforeEnter"
+          @enter="enter"
+          @before-leave="beforeLeave"
+          @leave="leave"
+        >
+          <ul v-if="isOpened[2]" class="sp-footer-item">
+            <li>
+              <a href="#">海外インターンシップに参加する</a>
+            </li>
+            <li>
+              <a href="#">海外ボランティアに参加する</a>
+            </li>
+            <li>
+              <a href="#">体験記を見る</a>
+            </li>
+            <li>
+              <a href="#">参加の流れと費用</a>
+            </li>
+            <li>
+              <a href="#">危機管理サポート</a>
+            </li>
+            <li>
+              <a href="#">話を聞いてみる</a>
+            </li>
+          </ul>
+        </transition>
+      </div>
+      <div class="sp-footer-content">
+        <button
+          type="button"
+          class="sp-footer-title"
+          :class="{ '_state-open': isOpened[3] }"
+          @click="openItems(3)"
+        >
+          For Companies
+        </button>
+        <transition
+          name="sp-footer-item"
+          @before-enter="beforeEnter"
+          @enter="enter"
+          @before-leave="beforeLeave"
+          @leave="leave"
+        >
+          <ul v-if="isOpened[3]" class="sp-footer-item">
+            <li>
+              <a href="#">海外インターン生を受け入れる</a>
+            </li>
+            <li>
+              <a href="#">受け入れ事例を見る</a>
+            </li>
+            <li>
+              <a href="#">受け入れの流れと費用</a>
+            </li>
+          </ul>
+        </transition>
+      </div>
+      <div class="sp-footer-content">
+        <button
+          type="button"
+          class="sp-footer-title"
+          :class="{ '_state-open': isOpened[4] }"
+          @click="openItems(4)"
+        >
+          Press & Alumni
+        </button>
+        <transition
+          name="sp-footer-item"
+          @before-enter="beforeEnter"
+          @enter="enter"
+          @before-leave="beforeLeave"
+          @leave="leave"
+        >
+          <ul v-if="isOpened[4]" class="sp-footer-item">
+            <li>
+              <a href="#">プレスルーム</a>
+            </li>
+            <li>
+              <a href="#">アルムナイの方</a>
+            </li>
+          </ul>
+        </transition>
+      </div>
+    </div>
+  </client-only>
 </template>
 
 <script>
