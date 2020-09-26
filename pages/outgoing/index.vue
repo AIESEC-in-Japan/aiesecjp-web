@@ -1,27 +1,27 @@
 <template>
   <div class="wrapper">
-    <OgxTop />
-    <OgxFeature />
-    <OgxGVGTDetail />
-    <OgxDetail />
-    <OgxInternshipExperience />
+    <Top />
+    <Feature />
+    <GVGTDetail />
+    <Detail />
+    <InternshipExperience />
   </div>
 </template>
 
 <script>
-import OgxTop from '~/components/OgxTop.vue'
-import OgxFeature from '~/components/OgxFeature.vue'
-import OgxGVGTDetail from '~/components/OgxGVGTDetail.vue'
-import OgxDetail from '~/components/OgxDetail.vue'
-import OgxInternshipExperience from '~/components/OgxInternshipExperience.vue'
+import Top from '@/components/outgoing/Top.vue'
+import Feature from '@/components/outgoing/Feature.vue'
+import GVGTDetail from '@/components/outgoing/GVGTDetail.vue'
+import Detail from '@/components/outgoing/Detail.vue'
+import InternshipExperience from '@/components/outgoing/InternshipExperience.vue'
 
 export default {
   components: {
-    OgxTop,
-    OgxFeature,
-    OgxGVGTDetail,
-    OgxDetail,
-    OgxInternshipExperience
+    Top,
+    Feature,
+    GVGTDetail,
+    Detail,
+    InternshipExperience
   }
 }
 </script>
