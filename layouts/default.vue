@@ -2,17 +2,38 @@
   <div>
     <Header/>
     <nuxt/>
-    <Footer/>
+    <Footer :width="width" />
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
+import Header from "@/components/base/Header.vue";
+import Footer from "@/components/base/Footer.vue";
 export default {
   components: {
     Header,
     Footer
+  },
+  data () {
+    return {
+      width: 0
+    }
+  },
+  created () {
+    if (process.client) {
+      window.addEventListener('resize', this.handleResize)
+      this.handleResize()
+    }
+  },
+  destroyed () {
+    if (process.client) {
+      window.removeEventListener('resize', this.handleResize)
+    }
+  },
+  methods: {
+    handleResize () {
+      this.width = window.innerWidth
+    }
   }
 }
 </script>
