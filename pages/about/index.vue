@@ -10,6 +10,7 @@
 
 <script>
 import OfficerList from "@/components/about/OfficerList.vue"
+import AdvisorList from "@/components/about/AdvisorList.vue"
 import OrganizationInfo from "@/components/about/OrganizationInfo.vue"
 
 export default {
