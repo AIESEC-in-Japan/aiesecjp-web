@@ -12,7 +12,7 @@
 <style scoped lang="scss">
 .programs-container {
   width: 100%;
-  min-height: 100vh;
+  min-height:500px;
   display: flex;
   flex-direction: column;
   text-align: center;
