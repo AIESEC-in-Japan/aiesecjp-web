@@ -2,14 +2,25 @@
   <header class="header-container">
     <nav>
       <ul>
-        <li>
+        <li class="pc-header-item">
           <a href="/outgoing">海外インターンシップに参加する</a>
         </li>
-        <li>
+        <li class="pc-header-item">
           <a href="/incoming">海外インターン生を受け入れる</a>
         </li>
-        <li>
+        <li class="pc-header-item">
           <a href="/about">About Us</a>
+        </li>
+      </ul>
+      <ul class="sp-header">
+        <li class="sp-header-item">
+          <a href="/outgoing">Outgoing</a>
+        </li>
+        <li class="sp-header-item">
+          <a href="/incoming">Incoming</a>
+        </li>
+        <li class="sp-header-item">
+          <a href="/about">About</a>
         </li>
       </ul>
     </nav>
@@ -34,7 +45,7 @@
     display: flex;
     justify-content: flex-end;
   }
-  li {
+  .pc-header-item {
     margin-left: 90px;
     list-style-type: none;
   }
@@ -47,6 +58,18 @@
   }
   a:hover {
     opacity: 0.7;
+  }
+}
+.sp-header-item {
+  display: none;
+}
+@media only screen and (max-width : 980px) {
+  .pc-header-item {
+    display: none;
+  }
+  .sp-header-item {
+    display: block;
+    margin-left: 50px;
   }
 }
 </style>
