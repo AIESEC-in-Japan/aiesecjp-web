@@ -32,7 +32,7 @@
 
 <style scoped lang="scss">
 .about-container {
-  min-height: 100vh;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;

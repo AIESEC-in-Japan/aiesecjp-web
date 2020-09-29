@@ -24,7 +24,7 @@
 
 <style scoped lang="scss">
 .partners-container {
-  min-height: 100vh;
+  min-height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
