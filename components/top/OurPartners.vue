@@ -62,15 +62,16 @@
   padding-top: 75px;
 }
 .partners-content {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   margin: 60px;
+  object-fit: contain;
 }
 .partners-content-empty {
-  width: 240px;
+  width: 200px;
   height: 0;
   padding-top: 0;
   padding-bottom: 0;
-  margin: 0 20px 0;
+  margin: 0 60px 0;
 }
 </style>
