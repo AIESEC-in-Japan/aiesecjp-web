@@ -23,5 +23,6 @@ export default {
     Detail,
     InternshipExperience
   }
-}
+};
+
 </script>
