@@ -64,7 +64,7 @@
 .partners-content {
   width: 200px;
   height: 200px;
-  margin: 60px;
+  margin: 30px;
   object-fit: contain;
 }
 .partners-content-empty {
@@ -72,6 +72,6 @@
   height: 0;
   padding-top: 0;
   padding-bottom: 0;
-  margin: 0 60px 0;
+  margin: 0 30px 0;
 }
 </style>
