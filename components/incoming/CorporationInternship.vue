@@ -1,4 +1,3 @@
-<!--
 <template>
   <div class="corporation-internship-container">
     <div class="corporation-internship">
@@ -10,9 +9,7 @@
     </div> 
   </div>
 </template>
--->
 
-/*
 <style scoped lang="scss">
 .corporation-internship-container {
   width: 100%;
@@ -61,4 +58,4 @@
   letter-spacing: 2px;
 }
 </style>
-*/
+

@@ -1,4 +1,3 @@
-<!--
 <template>
   <div class="container">
     <h1>アイセックの海外インターンシップの特徴</h1>
@@ -48,9 +47,7 @@
     </div>
   </div>
 </template>
--->
 
-/*
 <style scoped lang="scss">
 .container  {
   flex-direction: column;
@@ -99,4 +96,4 @@
   }
 }
 </style>
-*/
+

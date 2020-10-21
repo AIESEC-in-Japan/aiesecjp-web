@@ -1,4 +1,3 @@
-<!--
 <template>
   <div class="bg">
     <div class="container">
@@ -37,9 +36,7 @@
     </div>
   </div>
 </template>
--->
 
-/*
 <style scoped lang="scss">
 .bg {
     min-height: 100vh;
@@ -85,4 +82,4 @@ img {
   }
 }
 </style>
-*/
+

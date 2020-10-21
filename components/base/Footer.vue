@@ -1,3 +1,4 @@
+<!--
 <template>
   <client-only>
     <div v-if="isWideMenu" class="footer-container">
@@ -233,7 +234,9 @@
     </div>
   </client-only>
 </template>
+-->
 
+/*
 <script>
 export default {
   props: [
@@ -387,3 +390,4 @@ export default {
   }
 }
 </style>
+*/
