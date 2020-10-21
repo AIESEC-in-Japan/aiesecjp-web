@@ -1,3 +1,4 @@
+<!--
 <template>
   <div class="corporation-merit-container">
     <div class="corporation-merit">
@@ -16,7 +17,9 @@
     </div>
   </div>
 </template>
+-->
 
+/*
 <style scoped lang="scss">
 .corporation-merit-container {
   width: 100%;
@@ -58,3 +61,4 @@
   }
 }
 </style>
+*/

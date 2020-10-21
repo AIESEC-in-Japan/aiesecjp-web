@@ -1,3 +1,4 @@
+<!--
 <template>
   <div class="detail-container">
     <div class="detail-bg">
@@ -12,7 +13,9 @@
     </div>
   </div>
 </template>
+-->
 
+/*
 <style scoped lang="scss">
 .detail-container {
   width: 100%;
@@ -83,3 +86,4 @@
   letter-spacing: 2px;
 }
 </style>
+*/
