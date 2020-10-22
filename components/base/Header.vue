@@ -1,7 +1,7 @@
 <template>
   <header class="header-container">
     <nav>
-      <ul>
+      <ul class="pc-header">
         <li class="pc-header-item">
           <a href="/outgoing">海外インターンシップに参加する</a>
         </li>
@@ -12,20 +12,66 @@
           <a href="/about">About Us</a>
         </li>
       </ul>
-      <ul class="sp-header">
-        <li class="sp-header-item">
-          <a href="/outgoing">Outgoing</a>
-        </li>
-        <li class="sp-header-item">
-          <a href="/incoming">Incoming</a>
-        </li>
-        <li class="sp-header-item">
-          <a href="/about">About</a>
-        </li>
-      </ul>
+      <div class="sp-header">
+        <div
+          class="burger-button"
+          :class="{ '_state-open': isMenuActive }"
+          @click="toggleMenu"
+        >
+          <span class="burger-parts"></span>
+          <span class="burger-parts"></span>
+          <span class="burger-parts"></span>
+        </div>
+        <transition
+          name="sp-header-list"
+          @before-enter="beforeEnter"
+          @enter="enter"
+          @before-leave="beforeLeave"
+          @leave="leave"
+        >
+          <ul v-show="isMenuActive" class="sp-header-list">
+            <li class="sp-header-item">
+              <a href="/outgoing">海外インターンシップに参加する</a>
+            </li>
+            <li class="sp-header-item">
+              <a href="/incoming">海外インターン生を受け入れる</a>
+            </li>
+            <li class="sp-header-item">
+              <a href="/about">About Us</a>
+            </li>
+          </ul>
+        </transition>
+      </div>
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isMenuActive: false
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuActive = !this.isMenuActive
+    },
+    beforeEnter(el) {
+      el.style.height = '0'
+    },
+    enter(el) {
+      el.style.height = el.scrollHeight + 'px'
+    },
+    beforeLeave(el) {
+      el.style.height = el.scrollHeight + 'px'
+    },
+    leave(el) {
+      el.style.height = '0'
+    }
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .header-container {
@@ -41,7 +87,7 @@
   border-bottom-style: solid; 
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
-  ul {
+  .pc-header {
     display: flex;
     justify-content: flex-end;
   }
@@ -68,8 +114,85 @@
     display: none;
   }
   .sp-header-item {
+    display: inline;
+  }
+  .burger-button {
+    width: 40px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    position: relative;
+  }
+  .burger-parts {
+    background-color: $gray;
+    width: 100%;
+    height: 2px;
     display: block;
-    margin-left: 50px;
+    transition: 0.6s;
+    position: absolute;
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 14px;
+    }
+    &:last-child {
+      bottom: 0;
+    }
+  }
+  // バーガーアイコンの変化
+  ._state-open {
+    .burger-parts {
+      transform-origin: left;
+      &:first-child {
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .sp-header-list {
+    background-color: rgba($color: $light-gray, $alpha: 0.95);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    &-enter-active {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-name: sp-header-list--anime__opened;
+    }
+    &-leave-active {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-name: sp-header-list--anime__closed;
+    }
+  }
+  .sp-header-item {
+    padding-right: 50px;
+    line-height: 60px;
+    border-bottom: solid 0.5px $gray;
+    color: $dark-gray;
+  }
+  @keyframes sp-header-list--anime__opened {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes sp-header-list--anime__closed {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
 </style>
