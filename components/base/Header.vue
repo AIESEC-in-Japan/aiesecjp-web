@@ -1,21 +1,22 @@
 <template>
   <header class="header-container">
     <nav>
-      <ul class="pc-header">
-        <li class="pc-header-item">
-          <a href="/outgoing">海外インターンシップに参加する</a>
-        </li>
-        <li class="pc-header-item">
-          <a href="/incoming">海外インターン生を受け入れる</a>
-        </li>
-        <li class="pc-header-item">
-          <a href="/about">About Us</a>
-        </li>
-      </ul>
-      <div class="sp-header">
+      <div>
+        <ul class="pc-header">
+          <li class="pc-header-item">
+            <a href="/outgoing">海外インターンシップに参加する</a>
+          </li>
+          <li class="pc-header-item">
+            <a href="/incoming">海外インターン生を受け入れる</a>
+          </li>
+          <li class="pc-header-item">
+            <a href="/about">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sp-header" :class="{ '_state-open': isMenuActive }">
         <div
           class="burger-button"
-          :class="{ '_state-open': isMenuActive }"
           @click="toggleMenu"
         >
           <span class="burger-parts"></span>
@@ -83,11 +84,11 @@ export default {
   width: 100vw;
   height: 80px;
   line-height: 80px;
-  padding: 0px 5%;
   border-bottom-style: solid; 
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
   .pc-header {
+    padding: 0 5%;
     display: flex;
     justify-content: flex-end;
   }
@@ -119,7 +120,6 @@ export default {
   .burger-button {
     width: 40px;
     height: 30px;
-    margin-top: 25px;
     margin-bottom: 25px;
     margin-left: auto;
     position: relative;
@@ -141,8 +141,9 @@ export default {
       bottom: 0;
     }
   }
-  // バーガーアイコンの変化
   ._state-open {
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.8);
     .burger-parts {
       transform-origin: left;
       &:first-child {
@@ -155,6 +156,9 @@ export default {
         transform: rotate(-45deg);
       }
     }
+  }
+  .sp-header {
+    padding: 25px 5% 0;
   }
   .sp-header-list {
     background-color: rgba($color: $light-gray, $alpha: 0.95);
