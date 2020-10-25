@@ -274,7 +274,9 @@ export default {
   }
 }
 </script>
+*/
 
+/*
 <style scoped lang="scss">
 .footer-container {
   min-height: 360px;
