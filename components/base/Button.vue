@@ -14,9 +14,6 @@ export default {
 
 <style scoped lang="scss">
 button {
-  margin-top: 35px;
-  margin-bottom: 140px;
-  padding: 15px;
   background-color: transparent;
   border-radius: 40px;
   border: solid 2px;

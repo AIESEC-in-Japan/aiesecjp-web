@@ -24,9 +24,24 @@
         </p>
       </article>
     </div>
-     <button href="#" class="button-experience-detail">体験記をもっと見る</button>
+     <Button href="#" class="button-experience-detail" name="体験記をもっと見る" color="#0000FF"></Button>
   </div>
 </template>
+
+<script>
+import Button from '@/components/base/Button.vue'
+
+export default {
+  components: {
+    Button
+  },
+  props: {
+    name: String,
+    color: String,
+    width: String
+  }
+};
+</script>
 
 <style scoped lang="scss">
 .experience-container {
@@ -76,7 +91,6 @@
 .button-experience-detail{
   margin: 60px;
   padding: 15px 90px;
-  color: $blue;
   background-color: transparent;
   border-radius: 40px;
   border: solid 2px;

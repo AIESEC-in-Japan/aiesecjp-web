@@ -5,10 +5,25 @@
       <p>
         <span>42⽇以上、3ヶ⽉未満の短期インターンシップです。</span><span>豊富な知識とスキルの持った</span><span>海外の若者をインターン⽣として</span><span>受け⼊れていただくことで、</span><span>企業様の課題や挑戦に新たな視点をもたらし、</span><span>世界を舞台にした発展に寄与いたします。</span>
       </p>
-      <button class="button">インターンシップの詳細はこちら</button>
+      <Button class="button" name="インターンシップの詳細はこちら" color="#FFFFFF"></Button>
     </div> 
   </div>
 </template>
+
+<script>
+import Button from '@/components/base/Button.vue'
+
+export default {
+  components: {
+    Button
+  },
+  props: {
+    name: String,
+    color: String,
+    width: String
+  }
+};
+</script>
 
 <style scoped lang="scss">
 .corporation-internship-container {
@@ -50,7 +65,6 @@
 .button {
   margin-top: 60px;
   padding: 20px 40px;
-  color: $white;
   background-color: transparent;
   border: solid 3px;
   font-weight: bold;

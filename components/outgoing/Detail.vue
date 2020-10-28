@@ -3,16 +3,32 @@
     <div class="detail">
       <p>
       海外インターンシップへの参加の流れや費用などの詳細は<br>
-      以下のページからご覧ください。</p>
-      <button>参加の流れや費用</button>
+      以下のページからご覧ください。
+      </p>
+      <Button class="button" name="参加の流れや費用" color="#FFFFFF"></Button>
       <p>
       また、アイセックの海外インターンシップへの参加に興味のある方は、お気軽にお問い合わせください。<br>
       閉団体のメンバーが、詳しい手続きのご案内をさせていただきます。
       </p>
-      <button>話を聞いてみる。</button><br>
+      <Button class="button" name="話を聞いてみる。" color="#FFFFFF"></Button><br>
     </div>
   </div>
 </template>
+
+<script>
+import Button from '@/components/base/Button.vue'
+
+export default {
+  components: {
+    Button
+  },
+  props: {
+    name: String,
+    color: String,
+    width: String
+  }
+};
+</script>
 
 <style scoped lang="scss">
 .container {
@@ -43,7 +59,6 @@
     font-weight: bolder;
     font-family: "游ゴシック";
     letter-spacing: 2px;
-    color:white;
   }
   p {
     padding: 24px 0;
