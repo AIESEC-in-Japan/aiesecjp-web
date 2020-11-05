@@ -1,4 +1,3 @@
-<!--
 <template>
   <client-only>
     <div v-if="isWideMenu" class="footer-container">
@@ -9,16 +8,16 @@
       <div class="nav-content">
         <h3>About</h3>
         <ul>
-          <li>
+          <!-- <li>
             <a href="#">AIESECについて</a>
           </li>
           <li>
             <a href="#">パートナーシップについて</a>
-          </li>
+          </li> -->
           <li>
             <a href="#">団体情報</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">安全への取り組み</a>
           </li>
           <li>
@@ -26,7 +25,7 @@
           </li>
           <li>
             <a href="#">お問い合わせ</a>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="nav-content">
@@ -35,7 +34,7 @@
           <li>
             <a href="#">海外インターンシップに参加する</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">海外ボランティアに参加する</a>
           </li>
           <li>
@@ -48,8 +47,8 @@
             <a href="#">危機管理サポート</a>
           </li>
           <li>
-            <a href="#">話を聞いてみる</a>
-          </li>
+            <a href="#">話を聞いてみる</a> 
+          </li>  -->
         </ul>
       </div>
       <div class="nav-content">
@@ -58,23 +57,23 @@
           <li>
             <a href="#">海外インターン生を受け入れる</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">受け入れ事例を見る</a>
           </li>
           <li>
             <a href="#">受け入れの流れと費用</a>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="nav-content">
         <h3>Press & Alumni</h3>
         <ul>
-          <li>
+          <!-- <li>
             <a href="#">プレスルーム</a>
           </li>
           <li>
             <a href="#">アルムナイの方</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -117,24 +116,24 @@
           @leave="leave"
         >
           <ul v-if="isOpened[1]" class="sp-footer-item">
-            <li>
+            <!-- <li>
               <a href="#">AIESECについて</a>
             </li>
             <li>
               <a href="#">パートナーシップについて</a>
-            </li>
+            </li>  -->
             <li>
               <a href="#">団体情報</a>
             </li>
-            <li>
+             <!-- <li>
               <a href="#">安全への取り組み</a>
             </li>
             <li>
               <a href="#">個人情報の取り扱い</a>
             </li>
             <li>
-              <a href="#">お問い合わせ</a>
-            </li>
+              <a href="#">お問い合わせ</a> 
+            </li> -->
           </ul>
         </transition>
       </div>
@@ -158,7 +157,7 @@
             <li>
               <a href="#">海外インターンシップに参加する</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">海外ボランティアに参加する</a>
             </li>
             <li>
@@ -171,8 +170,8 @@
               <a href="#">危機管理サポート</a>
             </li>
             <li>
-              <a href="#">話を聞いてみる</a>
-            </li>
+              <a href="#">話を聞いてみる</a> 
+            </li> -->
           </ul>
         </transition>
       </div>
@@ -196,12 +195,12 @@
             <li>
               <a href="#">海外インターン生を受け入れる</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">受け入れ事例を見る</a>
             </li>
             <li>
               <a href="#">受け入れの流れと費用</a>
-            </li>
+            </li>  -->
           </ul>
         </transition>
       </div>
@@ -222,21 +221,20 @@
           @leave="leave"
         >
           <ul v-if="isOpened[4]" class="sp-footer-item">
-            <li>
+            <!-- <li>
               <a href="#">プレスルーム</a>
             </li>
             <li>
               <a href="#">アルムナイの方</a>
-            </li>
+            </li>  -->
           </ul>
         </transition>
       </div>
     </div>
   </client-only>
 </template>
--->
 
-/*
+
 <script>
 export default {
   props: [
@@ -274,9 +272,8 @@ export default {
   }
 }
 </script>
-*/
 
-/*
+
 <style scoped lang="scss">
 .footer-container {
   min-height: 360px;
@@ -392,4 +389,3 @@ export default {
   }
 }
 </style>
-*/
