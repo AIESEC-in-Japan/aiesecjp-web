@@ -66,7 +66,7 @@
         </ul>
       </div>
       <div class="nav-content">
-        <h3>Press & Alumni</h3>
+        <!-- <h3>Press & Alumni</h3> -->
         <ul>
           <!-- <li>
             <a href="#">プレスルーム</a>
