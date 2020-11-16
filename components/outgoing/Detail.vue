@@ -49,16 +49,8 @@ export default {
   text-align: center;
   color: white;
   font-weight: bold;
-    
   button {
     padding: 15px 70px;
-    border-radius:20px;
-    border: solid 1.5px;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: bolder;
-    font-family: "游ゴシック";
-    letter-spacing: 2px;
   }
   p {
     padding: 24px 0;

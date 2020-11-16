@@ -65,10 +65,5 @@ export default {
 .button {
   margin-top: 60px;
   padding: 20px 40px;
-  background-color: transparent;
-  border: solid 3px;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 2px;
 }
 </style>

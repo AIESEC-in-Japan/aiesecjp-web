@@ -86,11 +86,5 @@ export default {
 }
 .button-contact {
   padding: 15px 90px;
-  background-color: transparent;
-  border-radius: 40px;
-  border: solid 2px;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 2px;
 }
 </style>

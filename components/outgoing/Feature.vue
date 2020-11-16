@@ -53,14 +53,14 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-    h1  {
-      color: #037Ef3;
-      letter-spacing: 2px;
-      font-family: "Lato";
-      margin-top: 100px;
-      margin-bottom: 30px;
-      font-size: 24px;
-    }
+  h1  {
+    color: #037Ef3;
+    letter-spacing: 2px;
+    font-family: "Lato";
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
 }
 .feature  {   
   flex-wrap: wrap;

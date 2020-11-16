@@ -24,7 +24,7 @@
         </p>
       </article>
     </div>
-     <Button href="#" class="button-experience-detail" name="体験記をもっと見る" color="#0000FF"></Button>
+     <Button class="button-experience-detail" name="体験記をもっと見る" color="#0000FF"></Button>
   </div>
 </template>
 
@@ -91,11 +91,5 @@ export default {
 .button-experience-detail{
   margin: 60px;
   padding: 15px 90px;
-  background-color: transparent;
-  border-radius: 40px;
-  border: solid 2px;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 2px;
 }
 </style>
