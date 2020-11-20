@@ -143,7 +143,7 @@ export default {
   }
   ._state-open {
     height: 100vh;
-    background-color: rgba($color: #000000, $alpha: 0.8);
+    background-color: rgba($color: #000000, $alpha: 0.9);
     .burger-parts {
       transform-origin: left;
       &:first-child {
@@ -161,7 +161,7 @@ export default {
     padding: 25px 5% 0;
   }
   .sp-header-list {
-    background-color: rgba($color: $light-gray, $alpha: 0.95);
+    background-color: rgba($color: $gray, $alpha: 0.85);
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -179,8 +179,10 @@ export default {
   .sp-header-item {
     padding-right: 50px;
     line-height: 60px;
-    border-bottom: solid 0.5px $gray;
-    color: $dark-gray;
+    border-bottom: solid 0.5px $dark-gray;
+    a {
+      color: rgba($color: $dark-gray, $alpha: 0.85);
+    }
   }
   @keyframes sp-header-list--anime__opened {
     0% {
