@@ -2,10 +2,20 @@
   <div class="container">
     <div>
       <h2>
-        {{ item.title }}
+        タイトル：{{ item.title }}
       </h2>
       <p>
-        {{ item.body }}
+        作成日時：{{ item.createdAt }}
+        更新日時：{{ item.updatedAt }}
+        公開日時：{{ item.publishedAt }}
+      </p>
+      <p>
+        本文：{{ item.body }}
+      </p>
+      <p>
+        タグ：{{ item.tag }}
+        執筆者：{{ item.writer }}
+        LC：{{ item.lc }}
       </p>
     </div>
   </div>
