@@ -60,6 +60,7 @@
       font-family: $fonts;
       font-weight: bold;
       border-radius: 10px;
+      margin: 8px;
 
       h3 {
         font-style: italic;
