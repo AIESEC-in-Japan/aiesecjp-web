@@ -25,7 +25,7 @@ video {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: -1; //todo z-indexのブランチがマージされたら移動
+  z-index: $backgroundVideoIndex;
   height: 100vh;
 }
 
