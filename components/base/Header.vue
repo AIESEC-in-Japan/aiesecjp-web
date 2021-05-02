@@ -113,13 +113,9 @@ export default {
   methods: {
     mouseOverAction(){
       this.isShowNestedItems = true
-      console.log('hover')
-      console.log(this.isShowNestedItems)
     },
     mouseLeaveAction(){
       this.isShowNestedItems = false
-      console.log('leave')
-      console.log(this.isShowNestedItems)
     }
   }
 }
