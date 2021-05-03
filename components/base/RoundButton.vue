@@ -50,7 +50,7 @@ export default {
     },
     computedBaseColor() {
       if (this.baseColor === null) {
-        return this.isHover ? this.textColor : '#fff'
+        return this.isHover ? this.textColor : 'transparent'
       }
       return this.isHover ? this.textColor : this.baseColor
     },
