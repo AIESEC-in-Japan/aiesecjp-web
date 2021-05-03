@@ -1,5 +1,5 @@
 <template>
-  <button :style="{ width: width,color:color }">{{name}}</button>
+  <button :style="{ width: width,color:color }">{{ name }}</button>
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 button {
   margin-top: 35px;
   margin-bottom: 140px;
