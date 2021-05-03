@@ -13,8 +13,8 @@
 export default {
   props: {
     label: String,
-    color: String,
-    backgroundColor: String || undefined,
+    textColor: String,
+    baseColor: String || undefined,
     size: {
       type: String,
       default: 'medium',
