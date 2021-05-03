@@ -62,8 +62,8 @@
   padding-top: 75px;
 }
 .partners-content {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   margin: 30px;
   object-fit: contain;
 }
