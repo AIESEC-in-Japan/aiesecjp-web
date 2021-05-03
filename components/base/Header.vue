@@ -2,9 +2,9 @@
   <header class="header-container">
     <nav>
       <ul>
-        <li class="pc-header-item" v-on:mouseover="mouseOverAction" v-on:mouseleave="mouseLeaveAction">
+        <li class="pc-header-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
           <a href="">海外インターンシップについて</a>
-          <ul class="pc-header-nested" v-show="isShowNestedItems">
+          <ul v-show="isShowNestedItems" class="pc-header-nested">
             <li class="pc-header-nested-item">
               <a href="/outgoing">海外インターンシップに参加する</a>
             </li>
@@ -38,7 +38,26 @@
   </header>
 </template>
 
-<style scoped lang="scss">
+<script>
+export default {
+  data() {
+    return {
+      isShowNestedItems: false
+    }
+  },
+  methods: {
+    mouseOverAction() {
+      this.isShowNestedItems = true
+    },
+    mouseLeaveAction() {
+      this.isShowNestedItems = false
+    }
+  }
+}
+
+</script>
+
+<style lang="scss" scoped>
 
 .header-container {
   position: fixed;
@@ -53,20 +72,24 @@
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
+
   ul {
     display: flex;
     justify-content: flex-end;
   }
-  .pc-header{
+
+  .pc-header {
     &-item {
       margin-left: 90px;
       list-style-type: none;
     }
-    &-nested{
+
+    &-nested {
       position: absolute;
-      top:85px;
+      top: 85px;
       flex-flow: column;
       border-left: $gray solid 1px;
+
       &-item {
         margin-left: 10px;
         list-style-type: none;
@@ -83,6 +106,7 @@
     font-size: 16px;
     letter-spacing: 2px;
   }
+
   a:hover {
     opacity: 0.7;
   }
@@ -92,7 +116,7 @@
   display: none;
 }
 
-@media only screen and (max-width : 980px) {
+@media only screen and (max-width: 980px) {
   .pc-header-item {
     display: none;
   }
@@ -103,21 +127,3 @@
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      isShowNestedItems: false
-    }
-  },
-  methods: {
-    mouseOverAction(){
-      this.isShowNestedItems = true
-    },
-    mouseLeaveAction(){
-      this.isShowNestedItems = false
-    }
-  }
-}
-
-</script>
