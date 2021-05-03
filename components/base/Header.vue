@@ -4,17 +4,19 @@
       <ul>
         <li class="pc-header-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
           <a href="">海外インターンシップについて</a>
-          <ul v-show="isShowNestedItems" class="pc-header-nested">
-            <li class="pc-header-nested-item">
-              <a href="/outgoing">海外インターンシップに参加する</a>
-            </li>
-            <li class="pc-header-nested-item">
-              <a href="/incoming">海外インターン生を受け入れる</a>
-            </li>
-            <li class="pc-header-nested-item">
-              <a href="">安全への取り組み</a>
-            </li>
-          </ul>
+          <div v-show="isShowNestedItems" class="pc-header-nested">
+            <ul class="pc-header-nested-list">
+              <li class="pc-header-nested-item">
+                <a href="/outgoing">海外インターンシップに参加する</a>
+              </li>
+              <li class="pc-header-nested-item">
+                <a href="/incoming">海外インターン生を受け入れる</a>
+              </li>
+              <li class="pc-header-nested-item">
+                <a href="">安全への取り組み</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="pc-header-item">
           <a href="">オンラインイベントについて</a>
@@ -86,9 +88,13 @@ export default {
 
     &-nested {
       position: absolute;
-      top: 85px;
-      flex-flow: column;
-      border-left: $gray solid 1px;
+      top: 80px;
+
+      &-list {
+        margin-top: 5px;
+        flex-flow: column;
+        border-left: $gray solid 1px;
+      }
 
       &-item {
         margin-left: 10px;
