@@ -1,5 +1,12 @@
 <template>
-  <button :class="classes" :style="style">{{ label }}</button>
+  <button
+    :class="classes"
+    :style="style"
+    v-on:mouseleave="mouseLeaveAction"
+    v-on:mouseover="mouseOverAction"
+  >
+    {{ label }}
+  </button>
 </template>
 
 <script>
@@ -16,6 +23,19 @@ export default {
       },
     },
   },
+  data() {
+    return {
+      isHover: false
+    }
+  },
+  methods: {
+    mouseOverAction() {
+      this.isHover = true;
+    },
+    mouseLeaveAction() {
+      this.isHover = false;
+    }
+  },
   computed: {
     classes() {
       return {
@@ -24,10 +44,22 @@ export default {
     },
     style() {
       return {
-        backgroundColor: this.backgroundColor || 'transparent',
-        color: this.color
+        backgroundColor: this.computedBaseColor,
+        color: this.computedTextColor
       };
     },
+    computedBaseColor() {
+      if (this.baseColor === null) {
+        return this.isHover ? this.textColor : '#fff'
+      }
+      return this.isHover ? this.textColor : this.baseColor
+    },
+    computedTextColor() {
+      if (this.baseColor === null) {
+        return this.isHover ? '#fff' : this.textColor
+      }
+      return this.isHover ? this.baseColor : this.textColor
+    }
   },
 };
 </script>
@@ -35,8 +67,6 @@ export default {
 <style lang="scss" scoped>
 
 button {
-  margin-top: 35px;
-  margin-bottom: 140px;
   padding: 15px;
   background-color: transparent;
   border-radius: 40px;
@@ -48,16 +78,17 @@ button {
 
 .button {
 
+  // 今のところ使い道はなさそうだけど、sample codeの役割で追加
   &-small {
-    width: 10px;
-  }
-
-  &-medium {
     width: 100px;
   }
 
-  &-large {
+  &-medium {
     width: 200px;
+  }
+
+  &-large {
+    width: 400px;
   }
 }
 </style>
