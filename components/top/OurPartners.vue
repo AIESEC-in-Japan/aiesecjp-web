@@ -32,11 +32,6 @@
       <img src="@/assets/2020corporation-logo/リクルートマネジメントソリューションズ.jpg" alt="" class="partners-content">
       <img src="@/assets/2020corporation-logo/legaseed.jpg" alt="" class="partners-content">
       <img src="@/assets/2020corporation-logo/wacul.png" alt="" class="partners-content">
-      <div class="partners-content-empty"></div>
-      <div class="partners-content-empty"></div>
-      <div class="partners-content-empty"></div>
-      <div class="partners-content-empty"></div>
-      <div class="partners-content-empty"></div>
     </div>
   </div>
 </template>
