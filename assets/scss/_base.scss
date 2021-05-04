@@ -1,3 +1,13 @@
-h1,h2,h3,h4,h5,h6,p,a,button {
+h1, h2, h3, h4, h5, h6, p, a, button {
   font-family: $fonts;
+}
+
+p {
+  color:$dark-gray;
+}
+
+
+section {
+  height: 100vh;
+  max-height: 800px;
 }
