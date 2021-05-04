@@ -31,7 +31,6 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  color: white;
   font-weight: bold;
 
   button {
@@ -41,8 +40,6 @@
     background-color: transparent;
     font-size: 14px;
     font-weight: bolder;
-
-    font-family: "游ゴシック";
     letter-spacing: 2px;
     color:white;
   }
@@ -51,6 +48,7 @@
     line-height: 40px;
     font-size: 14px;
     letter-spacing: 2px;
+    color: white;
   }
 }
 </style>
