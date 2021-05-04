@@ -3,11 +3,11 @@
     <div class="detail-bg">
       <div class="detail">
         <RoundButton
-          v-bind='this.ButtonPropsMint'
+          v-bind='this.MintButtonProps'
           v-bind:label='"受け入れ実例をもっと見る"'
         />
         <RoundButton
-          v-bind='this.ButtonPropsMint'
+          v-bind='this.MintButtonProps'
           v-bind:label='"インターンシップの詳細を見る"'
         />
         <p>
@@ -18,7 +18,7 @@
           <span>ご案内をさせていただきます。</span>
         </p>
         <RoundButton
-          v-bind='this.ButtonPropsWhite'
+          v-bind='this.WhiteButtonProps'
           v-bind:label='"話を聞いて見る"'
         />
       </div>
@@ -32,11 +32,11 @@ import {basic_color} from "@/components/base/CommonColor";
 export default {
   data() {
     return {
-      ButtonPropsMint: {
+      MintButtonProps: {
         textColor: basic_color.mint,
         size: 'large'
       },
-      ButtonPropsWhite: {
+      WhiteButtonProps: {
         textColor: basic_color.white,
         baseColor: 'transparent',
         size: 'large'
