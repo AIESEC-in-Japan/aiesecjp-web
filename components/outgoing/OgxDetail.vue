@@ -33,7 +33,7 @@
   text-align: center;
   color: white;
   font-weight: bold;
-    
+
   button {
     padding: 15px 70px;
     border-radius:20px;
@@ -41,6 +41,7 @@
     background-color: transparent;
     font-size: 14px;
     font-weight: bolder;
+
     font-family: "游ゴシック";
     letter-spacing: 2px;
     color:white;
