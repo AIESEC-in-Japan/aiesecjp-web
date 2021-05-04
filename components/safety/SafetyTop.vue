@@ -49,7 +49,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 
-    color: white;
     font-weight: bold;
     letter-spacing: 2px;
   }
@@ -57,6 +56,7 @@
   &-title {
     margin: 20px auto;
     font-size: 28px;
+    color: white;
   }
 
   &-text {
@@ -64,6 +64,7 @@
     margin: 10px auto;
     font-size: 16px;
     line-height: 32px;
+    color: white;
   }
 }
 
