@@ -44,8 +44,6 @@
       <h3 class="policy-content-title">お問い合わせ</h3>
       <p>個人情報保護方針(プライバシーポリシー)に関するお問い合わせについては、<span class="policy-content__underline"> info@aiesec.jp</span>
         までお問い合わせください。</p>
-
-
     </div>
   </div>
 </template>

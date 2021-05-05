@@ -3,7 +3,8 @@
     <div v-if="isWideMenu" class="footer-container">
       <div class="footer-desc">
         <h3>AIESEC</h3>
-        <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
+        <p>
+          AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
       </div>
       <div class="nav-content">
         <h3>About</h3>
@@ -19,11 +20,11 @@
           </li>
           <!-- <li>
             <a href="#">安全への取り組み</a>
-          </li>
+          </li> -->
           <li>
-            <a href="#">個人情報の取り扱い</a>
+            <router-link to="/privacy-policy">個人情報の取り扱い</router-link>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">お問い合わせ</a>
           </li> -->
         </ul>
@@ -47,7 +48,7 @@
             <a href="#">危機管理サポート</a>
           </li>
           <li>
-            <a href="#">話を聞いてみる</a> 
+            <a href="#">話を聞いてみる</a>
           </li>  -->
         </ul>
       </div>
@@ -80,40 +81,41 @@
     <div v-else class="sp-footer-container">
       <div class="sp-footer-content">
         <button
-          type="button"
-          class="sp-footer-title"
           :class="{ '_state-open': isOpened[0] }"
+          class="sp-footer-title"
+          type="button"
           @click="openItems(0)"
         >
           AIESECについて
         </button>
         <transition
           name="sp-footer-item"
-          @before-enter="beforeEnter"
           @enter="enter"
-          @before-leave="beforeLeave"
           @leave="leave"
+          @before-enter="beforeEnter"
+          @before-leave="beforeLeave"
         >
           <div v-if="isOpened[0]" class="sp-footer-item">
-            <p>AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
+            <p>
+              AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
           </div>
         </transition>
       </div>
       <div class="sp-footer-content">
         <button
-          type="button"
-          class="sp-footer-title"
           :class="{ '_state-open': isOpened[1] }"
+          class="sp-footer-title"
+          type="button"
           @click="openItems(1)"
         >
           About
         </button>
         <transition
           name="sp-footer-item"
-          @before-enter="beforeEnter"
           @enter="enter"
-          @before-leave="beforeLeave"
           @leave="leave"
+          @before-enter="beforeEnter"
+          @before-leave="beforeLeave"
         >
           <ul v-if="isOpened[1]" class="sp-footer-item">
             <!-- <li>
@@ -125,33 +127,33 @@
             <li>
               <a href="#">団体情報</a>
             </li>
-             <!-- <li>
-              <a href="#">安全への取り組み</a>
-            </li>
-            <li>
-              <a href="#">個人情報の取り扱い</a>
-            </li>
-            <li>
-              <a href="#">お問い合わせ</a> 
-            </li> -->
+            <!-- <li>
+             <a href="#">安全への取り組み</a>
+           </li>
+           <li>
+             <a href="#">個人情報の取り扱い</a>
+           </li>
+           <li>
+             <a href="#">お問い合わせ</a>
+           </li> -->
           </ul>
         </transition>
       </div>
       <div class="sp-footer-content">
         <button
-          type="button"
-          class="sp-footer-title"
           :class="{ '_state-open': isOpened[2] }"
+          class="sp-footer-title"
+          type="button"
           @click="openItems(2)"
         >
           For Students
         </button>
         <transition
           name="sp-footer-item"
-          @before-enter="beforeEnter"
           @enter="enter"
-          @before-leave="beforeLeave"
           @leave="leave"
+          @before-enter="beforeEnter"
+          @before-leave="beforeLeave"
         >
           <ul v-if="isOpened[2]" class="sp-footer-item">
             <li>
@@ -170,26 +172,26 @@
               <a href="#">危機管理サポート</a>
             </li>
             <li>
-              <a href="#">話を聞いてみる</a> 
+              <a href="#">話を聞いてみる</a>
             </li> -->
           </ul>
         </transition>
       </div>
       <div class="sp-footer-content">
         <button
-          type="button"
-          class="sp-footer-title"
           :class="{ '_state-open': isOpened[3] }"
+          class="sp-footer-title"
+          type="button"
           @click="openItems(3)"
         >
           For Companies
         </button>
         <transition
           name="sp-footer-item"
-          @before-enter="beforeEnter"
           @enter="enter"
-          @before-leave="beforeLeave"
           @leave="leave"
+          @before-enter="beforeEnter"
+          @before-leave="beforeLeave"
         >
           <ul v-if="isOpened[3]" class="sp-footer-item">
             <li>
@@ -206,19 +208,19 @@
       </div>
       <div class="sp-footer-content">
         <button
-          type="button"
-          class="sp-footer-title"
           :class="{ '_state-open': isOpened[4] }"
+          class="sp-footer-title"
+          type="button"
           @click="openItems(4)"
         >
           Press & Alumni
         </button>
         <transition
           name="sp-footer-item"
-          @before-enter="beforeEnter"
           @enter="enter"
-          @before-leave="beforeLeave"
           @leave="leave"
+          @before-enter="beforeEnter"
+          @before-leave="beforeLeave"
         >
           <ul v-if="isOpened[4]" class="sp-footer-item">
             <!-- <li>
@@ -242,7 +244,7 @@ export default {
   ],
   data() {
     return {
-      isOpened: [false,false,false,false,false]
+      isOpened: [false, false, false, false, false]
     };
   },
   computed: {
@@ -255,7 +257,7 @@ export default {
   },
   methods: {
     openItems(index) {
-      this.isOpened.splice(index,1,!this.isOpened[index])
+      this.isOpened.splice(index, 1, !this.isOpened[index])
     },
     beforeEnter(el) {
       el.style.height = '0'
@@ -274,7 +276,7 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .footer-container {
   min-height: 360px;
   width: 100%;
@@ -286,38 +288,46 @@ export default {
   display: flex;
   padding-top: 40px;
   justify-content: space-around;
+
   h3 {
     color: $blue;
     font-size: 16px;
     letter-spacing: 2px;
   }
+
   a {
     text-decoration: none;
     color: $dark-gray;
   }
 }
+
 .footer-desc {
   min-height: 300px;
   max-width: 180px;
   line-height: 24px;
+
   h3 {
     padding: 10px 0px;
     left: 0px;
   }
 }
+
 .nav-content {
   min-height: 300px;
   max-width: 220px;
+
   li {
     list-style-type: none;
   }
 }
+
 .sp-footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $light-gray;
 }
+
 .sp-footer-content {
   width: 100%;
   display: flex;
@@ -325,6 +335,7 @@ export default {
   text-align: center;
   align-items: center;
 }
+
 .sp-footer-title {
   width: 100%;
   font-size: 16px;
@@ -333,6 +344,7 @@ export default {
   letter-spacing: 2px;
   padding: 20px;
 }
+
 .sp-footer-title::after {
   content: "+";
   font-size: 24px;
@@ -342,11 +354,13 @@ export default {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
+
 ._state-open::after {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .sp-footer-item {
   color: $dark-gray;
   width: 80%;
@@ -355,34 +369,39 @@ export default {
   font-size: 12px;
   overflow: hidden;
   transition: height 0.4s ease-in-out;
+
   a {
     color: $dark-gray;
     text-decoration: none;
     display: block;
     margin: 10px auto;
   }
-  &-enter-active{
+
+  &-enter-active {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: sp-footer-item--anime__opend;
   }
-  &-leave-active{
+
+  &-leave-active {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: sp-footer-item--anime__closed;
   }
 }
+
 @keyframes sp-footer-item--anime__opend {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-   }
+  }
 }
+
 @keyframes sp-footer-item--anime__closed {
   0% {
-   opacity: 1;
+    opacity: 1;
   }
   100% {
     opacity: 0;
