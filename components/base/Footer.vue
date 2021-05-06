@@ -19,7 +19,7 @@
             <a href="#">団体情報</a>
           </li>
           <li>
-            <router-link to="/safety">安全への取り組み</router-link>
+            <nuxt-link to="/safety">安全への取り組み</nuxt-link>
           </li>
           <!-- <li>
             <a href="#">個人情報の取り扱い</a>
@@ -127,15 +127,15 @@
             <li>
               <a href="#">団体情報</a>
             </li>
+            <li>
+              <nuxt-link to="/safety">安全への取り組み</nuxt-link>
+            </li>
             <!-- <li>
-             <a href="#">安全への取り組み</a>
-           </li>
-           <li>
-             <a href="#">個人情報の取り扱い</a>
-           </li>
-           <li>
-             <a href="#">お問い合わせ</a>
-           </li> -->
+              <a href="#">個人情報の取り扱い</a>
+            </li>
+            <li>
+              <a href="#">お問い合わせ</a>
+            </li> -->
           </ul>
         </transition>
       </div>
