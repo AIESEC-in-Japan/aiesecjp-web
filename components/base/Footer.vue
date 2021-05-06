@@ -22,7 +22,7 @@
             <a href="#">安全への取り組み</a>
           </li> -->
           <li>
-            <router-link to="/privacy-policy">個人情報の取り扱い</router-link>
+            <nuxt-link to="/privacy-policy">個人情報の取り扱い</nuxt-link>
           </li>
           <!-- <li>
             <a href="#">お問い合わせ</a>
