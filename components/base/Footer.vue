@@ -21,10 +21,10 @@
           <li>
             <nuxt-link to="/safety">安全への取り組み</nuxt-link>
           </li>
-          <!-- <li>
-            <a href="#">個人情報の取り扱い</a>
-          </li>
           <li>
+            <nuxt-link to="/privacy-policy">個人情報の取り扱い</nuxt-link>
+          </li>
+          <!-- <li>
             <a href="#">お問い合わせ</a>
           </li> -->
         </ul>
@@ -130,10 +130,10 @@
             <li>
               <nuxt-link to="/safety">安全への取り組み</nuxt-link>
             </li>
+           <li>
+            <nuxt-link to="/privacy-policy">個人情報の取り扱い</nuxt-link>
+          </li>
             <!-- <li>
-              <a href="#">個人情報の取り扱い</a>
-            </li>
-            <li>
               <a href="#">お問い合わせ</a>
             </li> -->
           </ul>
