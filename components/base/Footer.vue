@@ -11,7 +11,7 @@
       <h3 class="footer-content-title">About</h3>
       <ul>
         <li>
-          <nuxt-link class="footer-content-link" to="#">団体情報</nuxt-link>
+          <nuxt-link class="footer-content-link" to="/about">団体情報</nuxt-link>
         </li>
         <li>
           <nuxt-link class="footer-content-link" to="/privacy-policy">個人情報の取り扱い</nuxt-link>
@@ -22,7 +22,7 @@
       <h3 class="footer-content-title">For Students</h3>
       <ul>
         <li>
-          <nuxt-link class="footer-content-link" to="#">海外インターンシップに参加する</nuxt-link>
+          <nuxt-link class="footer-content-link" to="/outgoing">海外インターンシップに参加する</nuxt-link>
         </li>
       </ul>
     </div>
@@ -36,7 +36,7 @@
     </div>
     <div class="footer-content">
       <h3 class="footer-content-title">Press & Alumni</h3>
-      <nuxt-link class="footer-content-link" to="">sample text</nuxt-link>
+      <nuxt-link class="footer-content-link" to="incoming">sample text</nuxt-link>
     </div>
   </div>
 </template>
