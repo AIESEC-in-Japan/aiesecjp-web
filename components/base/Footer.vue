@@ -30,7 +30,7 @@
       <h3 class="footer-content-title">For Companies</h3>
       <ul>
         <li>
-          <nuxt-link class="footer-content-link" to="/icx">海外インターン生を受け入れる</nuxt-link>
+          <nuxt-link class="footer-content-link" to="/incoming">海外インターン生を受け入れる</nuxt-link>
         </li>
       </ul>
     </div>
