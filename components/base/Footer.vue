@@ -36,7 +36,11 @@
     </div>
     <div class="footer-content">
       <h3 class="footer-content-title">Press & Alumni</h3>
-      <nuxt-link class="footer-content-link" to="incoming">sample text</nuxt-link>
+      <ul>
+        <li>
+          <nuxt-link class="footer-content-link" to="incoming">sample text</nuxt-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
