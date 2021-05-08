@@ -38,7 +38,7 @@
       <h3 class="footer-content-title">Press & Alumni</h3>
       <ul>
         <li>
-          <nuxt-link class="footer-content-link" to="incoming">sample text</nuxt-link>
+          <nuxt-link class="footer-content-link" to="">sample text</nuxt-link>
         </li>
       </ul>
     </div>
