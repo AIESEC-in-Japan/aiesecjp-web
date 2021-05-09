@@ -29,11 +29,3 @@ Vue.use({
   }
 })
 
-
-// コンポーネントから使用したい場合はこのように呼び出せます
-//watch: {
-//     '$window.width'() {
-//       console.log(`width: ${this.$window.width}`)
-//     }
-//   }
-
