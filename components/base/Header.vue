@@ -55,7 +55,7 @@ export default {
       this.isShowNestedItems = false
     },
     handleScroll(evt, el) {
-      if (window.scrollY > this.$basicSectionSize()) {
+      if (this.$window.scrollY > this.$basicSectionSize()) {
         el.setAttribute(
           'style',
           'background-color: black;'
@@ -66,7 +66,7 @@ export default {
           'background-color: transparent;'
         )
       }
-      return window.scrollY > this.$basicSectionSize();
+      return this.$window.scrollY > this.$basicSectionSize();
     }
   }
 }
