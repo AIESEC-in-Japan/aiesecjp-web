@@ -1,5 +1,5 @@
 <template>
-  <header class="header-container">
+  <header v-scroll="handleScroll" class="header-container">
     <nav>
       <ul>
         <li class="pc-header-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
@@ -53,6 +53,20 @@ export default {
     },
     mouseLeaveAction() {
       this.isShowNestedItems = false
+    },
+    handleScroll(evt, el) {
+      if (window.scrollY > this.$basicSectionSize()) {
+        el.setAttribute(
+          'style',
+          'background-color: black;'
+        )
+      } else {
+        el.setAttribute(
+          'style',
+          'background-color: transparent;'
+        )
+      }
+      return window.scrollY > this.$basicSectionSize();
     }
   }
 }
@@ -75,6 +89,9 @@ export default {
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
+
+
+  transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
 
   ul {
     display: flex;
