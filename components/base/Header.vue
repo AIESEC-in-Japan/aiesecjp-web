@@ -1,30 +1,38 @@
 <template>
-  <header v-scroll="handleScroll" class="header-container">
+  <!--  <header v-scroll="handleScroll" class="header-container">-->
+  <!--         TODO : 冗長だけど、classが変わるタイミングが違うが解決されるのでこっちの方がよい？ -->
+  <header
+    class="header-container"
+    v-bind:class="[isScrollOverTopSection? 'header-container__white' : 'header-container']">
     <nav>
       <ul>
         <li class="pc-header-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
-          <a href="">海外インターンシップについて</a>
+          <!--         TODO : 毎回これ書くのは頭悪いのでやり方考える -->
+          <nuxt-link to="" v-bind:class="[isScrollOverTopSection? 'pc-header-link__white' : 'pc-header-link']">
+            海外インターンシップについて
+          </nuxt-link>
           <div v-show="isShowNestedItems" class="pc-header-nested">
             <ul class="pc-header-nested-list">
               <li class="pc-header-nested-item">
-                <a href="/outgoing">海外インターンシップに参加する</a>
+                <nuxt-link class="pc-header-link" to="/outgoing">海外インターンシップに参加する</nuxt-link>
               </li>
               <li class="pc-header-nested-item">
-                <a href="/incoming">海外インターン生を受け入れる</a>
+                <nuxt-link class="pc-header-link" to="/incoming">海外インターン生を受け入れる</nuxt-link>
               </li>
               <li class="pc-header-nested-item">
-                <a href="">安全への取り組み</a>
+                <nuxt-link class="pc-header-link" to="">安全への取り組み</nuxt-link>
               </li>
             </ul>
           </div>
         </li>
         <li class="pc-header-item">
-          <a href="">オンラインイベントについて</a>
+          <nuxt-link class="pc-header-link" to="">オンラインイベントについて</nuxt-link>
         </li>
         <li class="pc-header-item">
-          <a href="/about">About Us</a>
+          <nuxt-link class="pc-header-link" to="/about">About Us</nuxt-link>
         </li>
       </ul>
+      <!--      TODO : ここもHTMLが別れているので修正する -->
       <ul class="sp-header">
         <li class="sp-header-item">
           <a href="/outgoing">Outgoing</a>
@@ -55,18 +63,17 @@ export default {
       this.isShowNestedItems = false
     },
     handleScroll(evt, el) {
-      if (this.$window.scrollY > this.$basicSectionSize()) {
-        el.setAttribute(
-          'style',
-          'background-color: black;'
-        )
+      if (this.isScrollOverTopSection) {
+        el.className = el.className + '__white';
       } else {
-        el.setAttribute(
-          'style',
-          'background-color: transparent;'
-        )
+        el.className = 'header-container';
       }
-      return this.$window.scrollY > this.$basicSectionSize();
+      return this.isScrollOverTopSection;
+    }
+  },
+  computed: {
+    isScrollOverTopSection() {
+      return this.$window.pageYOffset > this.$basicSectionSize();
     }
   }
 }
@@ -85,13 +92,19 @@ export default {
   width: 100vw;
   height: 80px;
   line-height: 80px;
-  padding: 0px 5%;
+  padding: 0 5%;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
 
-
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  &__white {
+    @extend .header-container;
+    background-color: white;
+    border-bottom: none;
+
+  }
 
   ul {
     display: flex;
@@ -123,16 +136,22 @@ export default {
   }
 
 
-  a {
-    color: $gray;
+  // todo : 名前がイケテナイので直す
+  .pc-header-link {
+    color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 2px;
-  }
 
-  a:hover {
-    opacity: 0.7;
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &__white {
+      @extend .pc-header-link;
+      color: $gray;
+    }
   }
 }
 
