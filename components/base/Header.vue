@@ -6,42 +6,30 @@
     v-bind:class="[isScrollOverTopSection? 'header-container__white' : 'header-container']">
     <nav>
       <ul>
-        <li class="pc-header-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
+        <li class="navigation-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
           <!--         TODO : 毎回これ書くのは頭悪いのでやり方考える -->
-          <nuxt-link to="" v-bind:class="[isScrollOverTopSection? 'pc-header-link__white' : 'pc-header-link']">
+          <nuxt-link to="" v-bind:class="[isScrollOverTopSection? 'navigation-link__white' : 'navigation-link']">
             海外インターンシップについて
           </nuxt-link>
-          <div v-show="isShowNestedItems" class="pc-header-nested">
-            <ul class="pc-header-nested-list">
-              <li class="pc-header-nested-item">
-                <nuxt-link class="pc-header-link" to="/outgoing">海外インターンシップに参加する</nuxt-link>
+          <div v-show="isShowNestedItems" class="navigation-nested">
+            <ul class="navigation-nested-list">
+              <li class="navigation-nested-item">
+                <nuxt-link class="navigation-link" to="/outgoing">海外インターンシップに参加する</nuxt-link>
               </li>
-              <li class="pc-header-nested-item">
-                <nuxt-link class="pc-header-link" to="/incoming">海外インターン生を受け入れる</nuxt-link>
+              <li class="navigation-nested-item">
+                <nuxt-link class="navigation-link" to="/incoming">海外インターン生を受け入れる</nuxt-link>
               </li>
-              <li class="pc-header-nested-item">
-                <nuxt-link class="pc-header-link" to="">安全への取り組み</nuxt-link>
+              <li class="navigation-nested-item">
+                <nuxt-link class="navigation-link" to="">安全への取り組み</nuxt-link>
               </li>
             </ul>
           </div>
         </li>
-        <li class="pc-header-item">
-          <nuxt-link class="pc-header-link" to="">オンラインイベントについて</nuxt-link>
+        <li class="navigation-item">
+          <nuxt-link class="navigation-link" to="">オンラインイベントについて</nuxt-link>
         </li>
-        <li class="pc-header-item">
-          <nuxt-link class="pc-header-link" to="/about">About Us</nuxt-link>
-        </li>
-      </ul>
-      <!--      TODO : ここもHTMLが別れているので修正する -->
-      <ul class="sp-header">
-        <li class="sp-header-item">
-          <a href="/outgoing">Outgoing</a>
-        </li>
-        <li class="sp-header-item">
-          <a href="/incoming">Incoming</a>
-        </li>
-        <li class="sp-header-item">
-          <a href="/about">About</a>
+        <li class="navigation-item">
+          <nuxt-link class="navigation-link" to="/about">About Us</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -103,7 +91,6 @@ export default {
     @extend .header-container;
     background-color: white;
     border-bottom: none;
-
   }
 
   ul {
@@ -111,7 +98,7 @@ export default {
     justify-content: flex-end;
   }
 
-  .pc-header {
+  .navigation {
     &-item {
       margin-left: 90px;
       list-style-type: none;
@@ -136,8 +123,7 @@ export default {
   }
 
 
-  // todo : 名前がイケテナイので直す
-  .pc-header-link {
+  .navigation-link {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -149,24 +135,11 @@ export default {
     }
 
     &__white {
-      @extend .pc-header-link;
+      @extend .navigation-link;
       color: $gray;
     }
   }
 }
 
-.sp-header-item {
-  display: none;
-}
-
-@media only screen and (max-width: 980px) {
-  .pc-header-item {
-    display: none;
-  }
-  .sp-header-item {
-    display: block;
-    margin-left: 50px;
-  }
-}
 </style>
 
