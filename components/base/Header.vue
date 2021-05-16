@@ -1,35 +1,32 @@
 <template>
-  <!--  <header v-scroll="handleScroll" class="header-container">-->
-  <!--         TODO : 冗長だけど、classが変わるタイミングが違うが解決されるのでこっちの方がよい？ -->
   <header
     class="header-container"
-    v-bind:class="[isScrollOverTopSection? 'header-container__white' : 'header-container']">
+    v-bind:class="headerContainerClass">
     <nav>
       <ul>
         <li class="navigation-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
-          <!--         TODO : 毎回これ書くのは頭悪いのでやり方考える -->
-          <nuxt-link to="" v-bind:class="[isScrollOverTopSection? 'navigation-link__white' : 'navigation-link']">
+          <nuxt-link to="" v-bind:class="navigationLinkClass">
             海外インターンシップについて
           </nuxt-link>
           <div v-show="isShowNestedItems" class="navigation-nested">
             <ul class="navigation-nested-list">
               <li class="navigation-nested-item">
-                <nuxt-link class="navigation-link" to="/outgoing">海外インターンシップに参加する</nuxt-link>
+                <nuxt-link to="/outgoing" v-bind:class="navigationLinkClass">海外インターンシップに参加する</nuxt-link>
               </li>
               <li class="navigation-nested-item">
-                <nuxt-link class="navigation-link" to="/incoming">海外インターン生を受け入れる</nuxt-link>
+                <nuxt-link to="/incoming" v-bind:class="navigationLinkClass">海外インターン生を受け入れる</nuxt-link>
               </li>
               <li class="navigation-nested-item">
-                <nuxt-link class="navigation-link" to="">安全への取り組み</nuxt-link>
+                <nuxt-link to="" v-bind:class="navigationLinkClass">安全への取り組み</nuxt-link>
               </li>
             </ul>
           </div>
         </li>
         <li class="navigation-item">
-          <nuxt-link class="navigation-link" to="">オンラインイベントについて</nuxt-link>
+          <nuxt-link to="" v-bind:class="navigationLinkClass">オンラインイベントについて</nuxt-link>
         </li>
         <li class="navigation-item">
-          <nuxt-link class="navigation-link" to="/about">About Us</nuxt-link>
+          <nuxt-link to="/about" v-bind:class="navigationLinkClass">About Us</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -49,20 +46,19 @@ export default {
     },
     mouseLeaveAction() {
       this.isShowNestedItems = false
-    },
-    handleScroll(evt, el) {
-      if (this.isScrollOverTopSection) {
-        el.className = el.className + '__white';
-      } else {
-        el.className = 'header-container';
-      }
-      return this.isScrollOverTopSection;
     }
   },
   computed: {
     isScrollOverTopSection() {
       return this.$window.pageYOffset > this.$basicSectionSize();
-    }
+    },
+    // vueの標準的な動的classの実装です。 https://jp.vuejs.org/v2/guide/class-and-style.html
+    headerContainerClass() {
+      return this.isScrollOverTopSection ? 'header-container__white' : 'header-container';
+    },
+    navigationLinkClass() {
+      return this.isScrollOverTopSection ? 'navigation-link__white' : 'navigation-link';
+    },
   }
 }
 
@@ -121,7 +117,6 @@ export default {
       }
     }
   }
-
 
   .navigation-link {
     color: white;
