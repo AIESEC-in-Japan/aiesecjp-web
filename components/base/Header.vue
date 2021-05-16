@@ -3,6 +3,11 @@
     class="header-container"
     v-bind:class="headerContainerClass">
     <nav>
+      <div class="navigation-logo">
+        <nuxt-link to="/">
+          <img alt="logo" src="@/assets/images/logo/blue-logo.png">
+        </nuxt-link>
+      </div>
       <ul>
         <li class="navigation-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
           <nuxt-link to="" v-bind:class="navigationLinkClass">
@@ -96,7 +101,7 @@ export default {
 
   .navigation {
     &-item {
-      margin-left: 90px;
+      margin-left: 15px;
       list-style-type: none;
     }
 
@@ -116,22 +121,34 @@ export default {
         line-height: 30px;
       }
     }
-  }
 
-  .navigation-link {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-    letter-spacing: 2px;
+    &-logo {
+      position: absolute;
+      top: 10px;
+      bottom: 0;
+      left: 10px;
 
-    &:hover {
-      opacity: 0.7;
+      img {
+        width: 300px;
+        max-height: 60px;
+      }
     }
 
-    &__white {
-      @extend .navigation-link;
-      color: $gray;
+    &-link {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      letter-spacing: 2px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &__white {
+        @extend .navigation-link;
+        color: $gray;
+      }
     }
   }
 }
