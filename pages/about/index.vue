@@ -4,6 +4,7 @@
       <OfficerList />
       <AdvisorList />
       <OrganizationInfo />
+      <Kadai />
     </div>
   </section>
 </template>
