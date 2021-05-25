@@ -47,21 +47,6 @@
   }
 }
 .advisor-table  {
-  font-size: 16px;
-  letter-spacing: 2px;
   margin-top: 30px;
-  th, td  {
-    padding: 24px 16px;
-    border-bottom-style: solid; 
-    border-bottom-width: 0.5px;
-    border-bottom-color: $gray;
-  }
-  th  {
-    text-align: left;
-  }
-  td  {
-    padding-right: 160px;
-    padding-left: 50px;
-  }
 }
 </style>
