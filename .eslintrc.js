@@ -12,7 +12,6 @@ module.exports = {
   },
   extends: [
     // see this https://eslint.vuejs.org/user-guide/#usage
-    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
     'plugin:vue/strongly-recommended',
     "eslint:recommended",
   ],
