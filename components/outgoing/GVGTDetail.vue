@@ -71,7 +71,6 @@ img {
     font-size: 14px;
     font-weight: bold;
     color: $white;
-    font-family: "游ゴシック";
     line-height: 25px;
   }
 

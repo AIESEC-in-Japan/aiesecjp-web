@@ -42,7 +42,6 @@
     background-color: transparent;
     font-size: 14px;
     font-weight: bolder;
-    font-family: "游ゴシック";
     letter-spacing: 2px;
     color: white;
   }

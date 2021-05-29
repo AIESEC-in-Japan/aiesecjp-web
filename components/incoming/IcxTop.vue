@@ -42,7 +42,6 @@ img {
 }
 
 h1 {
-  font-family: "Lato";
   font-size: 25px;
   font-style: oblique;
   display: flex;
@@ -52,7 +51,6 @@ h1 {
 }
 
 span {
-  font-family: "游ゴシック";
   font-size: 14px;
   display: flex;
   letter-spacing: 5px;
