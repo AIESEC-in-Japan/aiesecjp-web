@@ -9,8 +9,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:css": "stylelint './**/*.{css,scss,vue}'  ",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore . && stylelint './**/*.{css,scss,vue}' ",
+    "lint:es": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:css": "stylelint './**/*.{css,scss,vue}' ",
     "precommit": "npm run lint"
   },
   "dependencies": {
