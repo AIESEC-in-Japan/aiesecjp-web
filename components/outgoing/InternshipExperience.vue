@@ -1,6 +1,8 @@
 <template>
   <div class="experience-container">
-    <h2 class="experience-title">インターシップ体験記</h2>
+    <h2 class="experience-title">
+      インターシップ体験記
+    </h2>
     <div class="experience-articles">
       <article class="internship-experience">
         <img src="https://via.placeholder.com/200x80">
@@ -24,7 +26,12 @@
         </p>
       </article>
     </div>
-     <button href="#" class="button-experience-detail">体験記をもっと見る</button>
+    <button
+      href="#"
+      class="button-experience-detail"
+    >
+      体験記をもっと見る
+    </button>
   </div>
 </template>
 

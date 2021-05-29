@@ -1,10 +1,14 @@
 <template>
   <client-only>
-    <div v-if="isWideMenu" class="footer-container">
+    <div
+      v-if="isWideMenu"
+      class="footer-container"
+    >
       <div class="footer-desc">
         <h3>AIESEC</h3>
         <p>
-          AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
+          AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。
+        </p>
       </div>
       <div class="nav-content">
         <h3>About</h3>
@@ -22,7 +26,9 @@
             <a href="#">安全への取り組み</a>
           </li> -->
           <li>
-            <nuxt-link to="/privacy-policy">個人情報の取り扱い</nuxt-link>
+            <nuxt-link to="/privacy-policy">
+              個人情報の取り扱い
+            </nuxt-link>
           </li>
           <!-- <li>
             <a href="#">お問い合わせ</a>
@@ -78,7 +84,10 @@
         </ul>
       </div>
     </div>
-    <div v-else class="sp-footer-container">
+    <div
+      v-else
+      class="sp-footer-container"
+    >
       <div class="sp-footer-content">
         <button
           :class="{ '_state-open': isOpened[0] }"
@@ -95,9 +104,13 @@
           @before-enter="beforeEnter"
           @before-leave="beforeLeave"
         >
-          <div v-if="isOpened[0]" class="sp-footer-item">
+          <div
+            v-if="isOpened[0]"
+            class="sp-footer-item"
+          >
             <p>
-              AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。</p>
+              AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに25の委員会が活動をしています。
+            </p>
           </div>
         </transition>
       </div>
@@ -117,7 +130,10 @@
           @before-enter="beforeEnter"
           @before-leave="beforeLeave"
         >
-          <ul v-if="isOpened[1]" class="sp-footer-item">
+          <ul
+            v-if="isOpened[1]"
+            class="sp-footer-item"
+          >
             <!-- <li>
               <a href="#">AIESECについて</a>
             </li>
@@ -130,9 +146,11 @@
             <!-- <li>
              <a href="#">安全への取り組み</a>
            </li>-->
-           <li>
-            <nuxt-link to="/privacy-policy">個人情報の取り扱い</nuxt-link>
-          </li>
+            <li>
+              <nuxt-link to="/privacy-policy">
+                個人情報の取り扱い
+              </nuxt-link>
+            </li>
             <!-- <li>
               <a href="#">お問い合わせ</a>
             </li> -->
@@ -155,7 +173,10 @@
           @before-enter="beforeEnter"
           @before-leave="beforeLeave"
         >
-          <ul v-if="isOpened[2]" class="sp-footer-item">
+          <ul
+            v-if="isOpened[2]"
+            class="sp-footer-item"
+          >
             <li>
               <a href="#">海外インターンシップに参加する</a>
             </li>
@@ -193,7 +214,10 @@
           @before-enter="beforeEnter"
           @before-leave="beforeLeave"
         >
-          <ul v-if="isOpened[3]" class="sp-footer-item">
+          <ul
+            v-if="isOpened[3]"
+            class="sp-footer-item"
+          >
             <li>
               <a href="#">海外インターン生を受け入れる</a>
             </li>
@@ -222,7 +246,10 @@
           @before-enter="beforeEnter"
           @before-leave="beforeLeave"
         >
-          <ul v-if="isOpened[4]" class="sp-footer-item">
+          <ul
+            v-if="isOpened[4]"
+            class="sp-footer-item"
+          >
             <!-- <li>
               <a href="#">プレスルーム</a>
             </li>

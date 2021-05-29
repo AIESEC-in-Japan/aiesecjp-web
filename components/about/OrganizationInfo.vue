@@ -4,7 +4,7 @@
       <h2>団体情報</h2>
       <table class="info-list">
         <tr>
-        	<th>団体名</th>
+          <th>団体名</th>
           <td>特定非営利活動法人アイセック・ジャパン （AIESEC in Japan）</td>
         </tr>
         <tr>
@@ -42,7 +42,7 @@
         <tr>
           <th>FAX番号</th>
           <td>03-6457-5809</td>
-          </tr>
+        </tr>
         <tr>
           <th>E-mail</th>
           <td>info@aiesec.jp</td>
