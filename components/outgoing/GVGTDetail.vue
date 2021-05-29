@@ -59,7 +59,6 @@ img {
   width: 230px;
 }
 
-
 .detail {
   padding-right: 40px;
   padding-left: 40px;
