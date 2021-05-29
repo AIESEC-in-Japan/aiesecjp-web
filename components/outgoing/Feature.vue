@@ -49,48 +49,54 @@
 </template>
 
 <style scoped lang="scss">
-.container  {
+.container {
   flex-direction: column;
   display: flex;
   align-items: center;
-    h1  {
-      color: #037Ef3;
-      letter-spacing: 2px;
-      font-family: "Lato";
-      margin-top: 100px;
-      margin-bottom: 30px;
-      font-size: 24px;
-    }
+
+  h1 {
+    color: #037ef3;
+    letter-spacing: 2px;
+    font-family: "Lato";
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
 }
-.feature  {   
+
+.feature {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
-.detail  {
+
+.detail {
   text-align: center;
   padding: 20px;
   width: 360px;
-  img  {
+
+  img {
     border-radius: 30px;
   }
-  h2  {
+
+  h2 {
     font-size: 16px;
     line-height: 30px;
-    color: #037Ef3;
+    color: #037ef3;
     letter-spacing: 2px;
     font-family: "Lato";
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  p  {
+
+  p {
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 20px;
     font-family: "Lato";
     margin-bottom: 50px;
 
-    span{
+    span {
       display: inline-block;
     }
   }
