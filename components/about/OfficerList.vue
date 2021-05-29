@@ -60,7 +60,6 @@
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-
   h2 {
     color: $blue;
     font-size: 24px;
@@ -68,19 +67,16 @@
     letter-spacing: 2px;
   }
 }
-
 .officers-list {
   font-size: 16px;
   letter-spacing: 2px;
   margin-top: 30px;
-
   th, td {
     padding: 24px 16px;
-    border-bottom-style: solid;
+    border-bottom-style: solid; 
     border-bottom-width: 0.5px;
     border-bottom-color: $gray;
   }
-
   th {
     text-align: left;
   }

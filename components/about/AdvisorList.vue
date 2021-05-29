@@ -33,38 +33,33 @@
 </template>
 
 <style scoped lang="scss">
-.advisor-container {
+.advisor-container  {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 50px auto;
-
-  h1 {
-    color: $blue;
+  h1  {
+   color: $blue;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
   }
 }
-
-.advisor-table {
+.advisor-table  {
   font-size: 16px;
   letter-spacing: 2px;
   margin-top: 30px;
-
-  th, td {
+  th, td  {
     padding: 24px 16px;
-    border-bottom-style: solid;
+    border-bottom-style: solid; 
     border-bottom-width: 0.5px;
     border-bottom-color: $gray;
   }
-
-  th {
+  th  {
     text-align: left;
   }
-
-  td {
+  td  {
     padding-right: 160px;
     padding-left: 50px;
   }

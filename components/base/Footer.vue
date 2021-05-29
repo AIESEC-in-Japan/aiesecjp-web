@@ -307,8 +307,8 @@ export default {
   line-height: 24px;
 
   h3 {
-    padding: 10px 0;
-    left: 0;
+    padding: 10px 0px;
+    left: 0px;
   }
 }
 
@@ -394,7 +394,6 @@ export default {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -404,7 +403,6 @@ export default {
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }

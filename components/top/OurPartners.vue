@@ -43,7 +43,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   h2 {
     color: $blue;
     font-size: 24px;
@@ -51,21 +50,18 @@
     padding-top: 150px;
   }
 }
-
 .partners-contents {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 75px;
 }
-
 .partners-content {
   width: 120px;
   height: 120px;
   margin: 30px;
   object-fit: contain;
 }
-
 .partners-content-empty {
   width: 200px;
   height: 0;

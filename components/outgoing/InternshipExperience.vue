@@ -37,7 +37,6 @@
   text-align: center;
   align-items: center;
 }
-
 .experience-title {
   color: $blue;
   font-size: 24px;
@@ -45,20 +44,17 @@
   padding-top: 100px;
   letter-spacing: 2px;
 }
-
 .experience-articles {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 50px;
 }
-
 .internship-experience {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
-
   img {
     padding: 100px;
     width: 300px;
@@ -66,21 +62,18 @@
     margin: 2em 0;
     background: $gray;
   }
-
   p {
     max-width: 250px;
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: bold;
-
     span {
       display: inline-block;
       padding: 5px;
     }
   }
 }
-
-.button-experience-detail {
+.button-experience-detail{
   margin: 60px;
   padding: 15px 90px;
   color: $blue;

@@ -60,31 +60,26 @@
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-
   h2 {
-    color: $blue;
+		color: $blue;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
   }
 }
-
 .info-list {
   font-size: 16px;
   letter-spacing: 2px;
   margin-top: 30px;
-
   th, td {
     padding: 24px 16px;
     border-bottom-style: solid;
     border-bottom-width: 0.5px;
-    border-bottom-color: #caccd1;
+    border-bottom-color:  #CACCD1;
   }
-
   th {
     text-align: left;
   }
-
   td {
     max-width: 660px;
     line-height: 21px;

@@ -71,7 +71,7 @@ export default {
   width: 100vw;
   height: 80px;
   line-height: 80px;
-  padding: 0 5%;
+  padding: 0px 5%;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
@@ -105,6 +105,7 @@ export default {
     }
   }
 
+
   a {
     color: $gray;
     font-weight: bold;
@@ -126,7 +127,6 @@ export default {
   .pc-header-item {
     display: none;
   }
-
   .sp-header-item {
     display: block;
     margin-left: 50px;

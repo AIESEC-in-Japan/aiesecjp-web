@@ -17,18 +17,16 @@
 .detail-container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/icx-detail.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("~@/assets/images/icx-detail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 70%;
 }
-
 .detail-bg {
   width: 100%;
   height: 50vh;
   background-color: $white;
 }
-
 .detail {
   width: 100%;
   height: 100vh;
@@ -39,7 +37,6 @@
   align-content: space-between;
   justify-content: center;
   text-align: center;
-
   p {
     color: $white;
     font-size: 14px;
@@ -47,13 +44,11 @@
     padding-bottom: 50px;
     letter-spacing: 2px;
     max-width: 800px;
-
     span {
       display: inline-block;
     }
   }
 }
-
 .button-examples {
   padding: 15px 90px;
   color: $mint;
@@ -65,7 +60,6 @@
   letter-spacing: 2px;
   margin-top: 80px;
 }
-
 .button-detail {
   margin-top: 35px;
   margin-bottom: 140px;
@@ -78,7 +72,6 @@
   font-size: 18px;
   letter-spacing: 2px;
 }
-
 .button-contact {
   padding: 15px 90px;
   color: $white;

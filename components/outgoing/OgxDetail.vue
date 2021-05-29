@@ -17,14 +17,13 @@
 <style scoped lang="scss">
 .container {
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/ogx-detail.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url("~@/assets/images/ogx-detail.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 30%;
   display: flex;
   justify-content: center;
 }
-
 .detail {
   height: 450px;
   display: flex;
@@ -37,16 +36,16 @@
 
   button {
     padding: 15px 70px;
-    border-radius: 20px;
+    border-radius:20px;
     border: solid 1.5px;
     background-color: transparent;
     font-size: 14px;
     font-weight: bolder;
+
     font-family: "游ゴシック";
     letter-spacing: 2px;
-    color: white;
+    color:white;
   }
-
   p {
     padding: 24px 0;
     line-height: 40px;

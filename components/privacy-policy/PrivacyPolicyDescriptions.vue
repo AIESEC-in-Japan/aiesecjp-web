@@ -56,6 +56,7 @@
   }
 
   &-content {
+
     &-title {
       color: $dark-gray;
       font-size: 24px;
@@ -84,5 +85,6 @@
       margin: 10px auto;
     }
   }
+
 }
 </style>

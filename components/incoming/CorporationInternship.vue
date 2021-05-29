@@ -19,18 +19,16 @@
   background-size: cover;
   background-position: center 50%;
 }
-
 .corporation-internship {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-between;
   justify-content: center;
   text-align: center;
-
   h2 {
     color: $white;
     font-size: 24px;
@@ -38,20 +36,17 @@
     padding-bottom: 60px;
     letter-spacing: 2px;
   }
-
   p {
     color: $white;
     font-size: 16px;
     padding: 4px;
     letter-spacing: 2px;
     max-width: 630px;
-
     span {
       display: inline-block;
     }
   }
 }
-
 .button {
   margin-top: 60px;
   padding: 20px 40px;

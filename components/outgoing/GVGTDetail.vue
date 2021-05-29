@@ -39,34 +39,31 @@
 
 <style scoped lang="scss">
 .bg {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url("~@/assets/images/icx-corporation-internship.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 55%;
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("~@/assets/images/icx-corporation-internship.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 55%;
 }
-
 .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color :rgba(0,0,0,0.5);
 }
-
 img {
-  height: 65px;
-  width: 230px;
+   height: 65px;
+   width: 230px;
 }
-
-
-.detail {
+  
+  
+.detail { 
   padding-right: 40px;
   padding-left: 40px;
   min-height: 100vh;
   text-align: center;
-  padding-top: 220px;
-
+  padding-top: 220px;  
   p {
     margin-top: 40px;
     font-size: 14px;
@@ -75,8 +72,7 @@ img {
     font-family: "游ゴシック";
     line-height: 25px;
   }
-
-  a {
+  a{
     margin-top: 40px;
     display: inline-block;
     font-weight: normal;
