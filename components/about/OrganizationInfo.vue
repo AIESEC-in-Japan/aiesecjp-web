@@ -1,8 +1,7 @@
 <template>
   <div class="info-container">
-    <div class="info-items">
-      <h2>団体情報</h2>
-      <table class="info-list">
+      <h2 class="info-title">団体情報</h2>
+      <table class="info-table">
         <tr>
           <th>団体名</th>
           <td>特定非営利活動法人アイセック・ジャパン （AIESEC in Japan）</td>
@@ -54,30 +53,28 @@
           <td>info@aiesec.jp</td>
         </tr>
       </table>
-    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.info-container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-  h2 {
+.info{
+  &-container{
+    width: 800px;
+    margin: 50px auto;
+  }
+
+  &-title{
     color: $blue;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
-}
-ul {
+  
+  ul {
   list-style-type: square;
   list-style-position: inside;
-}
-.info-list {
-  margin-top: 30px;
+  }
 }
 </style>

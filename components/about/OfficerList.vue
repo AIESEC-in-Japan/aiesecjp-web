@@ -1,8 +1,7 @@
 <template>
   <div class="officers-container">
-    <div class="officers-items">
-      <h2>役員一覧</h2>
-      <table class="officers-list">
+      <h2 class="officers-title">役員一覧</h2>
+      <table class="officers-table">
         <tr>
           <th>会長</th>
           <td>
@@ -12,7 +11,7 @@
         </tr>
         <tr>
           <th>専務理事</th>
-          <td>森原正希（早稲田大学 創造理工学部建築学科 3年）</td>
+          <td>菅家周平（早稲田大学 3年）</td>
         </tr>
         <tr>
           <th>副会長</th>
@@ -24,7 +23,7 @@
         </tr>
         <tr>
           <th>常務理事</th>
-          <td>山内駿介（大阪大学 経済学部 4年）</td>
+          <td>余越優（東京大学 4年）</td>
         </tr>
         <tr>
           <th>理事</th>
@@ -52,25 +51,23 @@
         </tr>
       </table>
     </div>
-  </div>
 </template>
 
 <style scoped lang="scss">
-.officers-container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-  h2 {
+.officers{
+  &-container{
+    width: 800px;
+    margin: 50px auto;
+  }
+
+  &-title{
     color: $blue;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
-}
-.officers-list {
-  margin-top: 30px;
+
 }
 </style>

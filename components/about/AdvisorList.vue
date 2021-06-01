@@ -1,7 +1,6 @@
 <template>
   <div class="advisor-container">
-    <div class="advisor-detail">
-      <h1>諮問一覧</h1>
+      <h2 class="advisor-title">諮問一覧</h2>
       <table class="advisor-table">
       <tr>
         <th>諮問</th>
@@ -25,28 +24,27 @@
       </tr>
       <tr>
         <th>諮問</th>
-        <td>渋谷 直毅（みずほ証券株式会社　ディレクター）</td>
+        <td>渋谷 直毅（クレディ・スイス証券株式会社 インターネット・メディア部長）</td>
       </tr>
       </table>
-    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.advisor-container  {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 50px auto;
-  h1  {
-   color: $blue;
+.advisor{
+  &-container{
+    width: 800px;
+    margin: 50px auto;
+  }
+  
+  &-title{
+    color: $blue;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
-}
-.advisor-table  {
-  margin-top: 30px;
+
 }
 </style>
