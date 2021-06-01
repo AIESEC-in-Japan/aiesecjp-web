@@ -1,6 +1,6 @@
 <template>
-  <div class="info-container">
-      <h2 class="info-title">団体情報</h2>
+  <div class="aboutus-table-container">
+      <h2 class="aboutus-table-title">団体情報</h2>
       <table class="info-table">
         <tr>
           <th>団体名</th>
@@ -57,24 +57,27 @@
 </template>
 
 <style scoped lang="scss">
-.info{
-  &-container{
-    width: 800px;
-    margin: 50px auto;
-  }
+// TODO いずれtable componentを作ってここのstyleを消す。
+// 以下を消すと、原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
 
-  &-title{
-    color: $blue;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-  list-style-type: square;
-  list-style-position: inside;
-  }
-}
+  // .info{
+  //   &-container{
+  //     width: 800px;
+  //     margin: 50px auto;
+  //   }
+
+  //   &-title{
+  //     color: $blue;
+  //     font-size: 24px;
+  //     font-weight: bold;
+  //     letter-spacing: 2px;
+  //     margin-top: 40px;
+  //     margin-bottom: 20px;
+  //   }
+    
+  //   ul {
+  //   list-style-type: square;
+  //   list-style-position: inside;
+  //   }
+  // }
 </style>

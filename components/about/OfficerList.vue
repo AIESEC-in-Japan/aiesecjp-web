@@ -1,6 +1,6 @@
 <template>
-  <div class="officers-container">
-      <h2 class="officers-title">役員一覧</h2>
+  <div class="aboutus-table-container">
+      <h2 class="aboutus-table-title">役員一覧</h2>
       <table class="officers-table">
         <tr>
           <th>会長</th>
@@ -54,20 +54,20 @@
 </template>
 
 <style scoped lang="scss">
-.officers{
-  &-container{
-    width: 800px;
-    margin: 50px auto;
-  }
+// .officers{
+//   &-container{
+//     width: 800px;
+//     margin: 50px auto;
+//   }
 
-  &-title{
-    color: $blue;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
+//   &-title{
+//     color: $blue;
+//     font-size: 24px;
+//     font-weight: bold;
+//     letter-spacing: 2px;
+//     margin-top: 40px;
+//     margin-bottom: 20px;
+//   }
 
-}
+// }
 </style>
