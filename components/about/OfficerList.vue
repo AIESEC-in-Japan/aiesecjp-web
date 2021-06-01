@@ -54,20 +54,23 @@
 </template>
 
 <style scoped lang="scss">
-// .officers{
-//   &-container{
-//     width: 800px;
-//     margin: 50px auto;
-//   }
+// TODO いずれtable componentを作ってここのstyleを消す。
+// 以下を消すと、原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
 
-//   &-title{
-//     color: $blue;
-//     font-size: 24px;
-//     font-weight: bold;
-//     letter-spacing: 2px;
-//     margin-top: 40px;
-//     margin-bottom: 20px;
-//   }
+  // .officers{
+  //   &-container{
+  //     width: 800px;
+  //     margin: 50px auto;
+  //   }
 
-// }
+  //   &-title{
+  //     color: $blue;
+  //     font-size: 24px;
+  //     font-weight: bold;
+  //     letter-spacing: 2px;
+  //     margin-top: 40px;
+  //     margin-bottom: 20px;
+  //   }
+
+  // }
 </style>
