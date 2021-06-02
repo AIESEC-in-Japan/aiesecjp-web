@@ -50,46 +50,38 @@
 
 <style scoped lang="scss">
 .container  {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-    h1  {
-      color: #037Ef3;
-      letter-spacing: 2px;
-      font-family: "Lato";
-      margin-top: 100px;
-      margin-bottom: 30px;
-      font-size: 24px;
-    }
-}
-.feature  {   
-  flex-wrap: wrap;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 1rem;
+}
+h1  {
+  color: $blue;
+}
+.feature  {   
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .detail  {
-  text-align: center;
-  padding: 20px;
-  width: 360px;
+  width: 25rem;
+  margin-bottom: 4rem;
   img  {
     border-radius: 30px;
   }
   h2  {
-    font-size: 16px;
-    line-height: 30px;
-    color: #037Ef3;
+    font-weight: bold;
+    line-height: 1.5;
+    color: $blue;
     letter-spacing: 2px;
-    font-family: "Lato";
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 1rem 0;
   }
   p  {
-    font-size: 12px;
     letter-spacing: 2px;
-    line-height: 20px;
-    font-family: "Lato";
-    margin-bottom: 50px;
-
+    line-height: 1.5;
     span{
       display: inline-block;
     }
