@@ -1,6 +1,7 @@
 <template>
-  <div class="bg">
-    <div class="container">
+  <div class="container">
+    <h1>アイセックが提供するインターンシッププログラム</h1>
+    <div class="program">
       <div class="detail">
         <img src="@/assets/images/product_GV-horizontal-white.png">
         <p>
@@ -59,49 +60,47 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
-.bg {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url("~@/assets/images/icx-corporation-internship.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 55%;
-}
-
+<style scoped lang="scss">
 .container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url("~@/assets/images/icx-corporation-internship.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h1 {
+  color: $white;
+}
+.program {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.5);
 }
-
-img {
-  height: 65px;
-  width: 230px;
-}
-
 .detail {
-  padding-right: 40px;
-  padding-left: 40px;
-  min-height: 100vh;
+  padding-right: 3rem;
+  padding-left: 3rem;
   text-align: center;
-  padding-top: 220px;
-
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  img {
+   height: 65px;
+   width: 230px;
+  }
   p {
-    margin-top: 40px;
-    font-size: 14px;
+    margin-top: 2rem;
     font-weight: bold;
     color: $white;
-    font-family: "游ゴシック";
-    line-height: 25px;
+    line-height: 2;
   }
-
-  a {
-    margin-top: 40px;
+  a{
+    margin-top: 2rem;
     display: inline-block;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 1rem;
     color: $white;
     border-bottom: solid 1.5px;
   }
