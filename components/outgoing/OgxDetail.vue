@@ -55,7 +55,7 @@
       line-height: 2;
       letter-spacing: 2px;
     }
-  }  
+  }
 }
 </style>
 

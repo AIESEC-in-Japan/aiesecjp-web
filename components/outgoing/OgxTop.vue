@@ -9,12 +9,13 @@
     </section>
   </div>
 </template>
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .container {
   background-image: url("~@/assets/images/ogx_top_background.jpg");
   background-position: center;
   background-size: cover;
 }
+
 .ogx-top {
   display: flex;
   flex-direction: column;
@@ -23,6 +24,7 @@
   color: $white;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.4);
+
   .title {
     text-align: center;
     font-style: oblique;
