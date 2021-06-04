@@ -18,9 +18,9 @@
           <li>
             <a href="#">団体情報</a>
           </li>
-          <!-- <li>
-            <a href="#">安全への取り組み</a>
-          </li> -->
+          <li>
+            <nuxt-link to="/safety">安全への取り組み</nuxt-link>
+          </li>
           <li>
             <nuxt-link to="/privacy-policy">個人情報の取り扱い</nuxt-link>
           </li>
@@ -127,9 +127,9 @@
             <li>
               <a href="#">団体情報</a>
             </li>
-            <!-- <li>
-             <a href="#">安全への取り組み</a>
-           </li>-->
+            <li>
+              <nuxt-link to="/safety">安全への取り組み</nuxt-link>
+            </li>
            <li>
             <nuxt-link to="/privacy-policy">個人情報の取り扱い</nuxt-link>
           </li>

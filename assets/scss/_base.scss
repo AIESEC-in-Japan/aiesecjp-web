@@ -1,13 +1,22 @@
-h1, h2, h3, h4, h5, h6, p, a, button {
+h1, h2, h3, h4, h5, h6, p, a, button, li {
   font-family: $fonts;
 }
 
+h1 {
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 3rem 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
 p {
-  color:$dark-gray;
+  color: $dark-gray;
+  font-size: 0.875rem;
 }
 
 
 section {
   height: 100vh;
-  max-height: 800px;
+  max-height: 50rem;
 }
