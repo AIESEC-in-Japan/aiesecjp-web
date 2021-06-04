@@ -16,7 +16,10 @@
         捉え、考え、行動し、試行錯誤する。<br>
         世界に挑戦するための、第一歩。
         </p>
-        <a>詳しく見る</a>
+        <RoundButton
+          v-bind='this.ButtonProps'
+          v-bind:label='"詳しく見る"'
+        />
       </div>
       <div class="detail">
         <img src="@/assets/images/product_GT-horizontal-white.png">
@@ -32,11 +35,28 @@
         世界で通用する専門性を武器に、<br>
         社会を変えるリーダーへ。
         </p>
-        <a>詳しく見る</a>
+        <RoundButton
+          v-bind='this.ButtonProps'
+          v-bind:label='"話を聞いてみる。"'
+        />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import {basic_color} from "@/components/base/CommonColor";
+export default {
+  data() {
+    return {
+      ButtonProps: {
+        textColor: basic_color.blue,
+        size: 'large'
+      }
+    }
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .container {
@@ -58,11 +78,11 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
-.detail { 
+.detail {
   padding-right: 3rem;
   padding-left: 3rem;
   text-align: center;
-  padding-top: 3rem;  
+  padding-top: 3rem;
   padding-bottom: 3rem;
   img {
    height: 65px;
