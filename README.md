@@ -1,5 +1,7 @@
 # aiesecjp-web
 
+[コーディングの心構え](docs/coding-rules.md)
+
 > AIESEC in Japan official website
 
 ぶち上げてこ
