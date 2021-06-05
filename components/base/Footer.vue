@@ -56,7 +56,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
 
-    @include sp {
+    @include tab {
       padding: 5px;
     }
   }
@@ -67,7 +67,7 @@
     line-height: 20px;
     word-break: break-all;
 
-    @include sp {
+    @include tab {
       width: 100%;
     }
   }
@@ -75,7 +75,7 @@
   &-content {
     width: 220px;
 
-    @include sp {
+    @include tab {
       width: 80%;
       margin: 20px auto;
     }
