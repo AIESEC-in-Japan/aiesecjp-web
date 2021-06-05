@@ -117,10 +117,48 @@ WIP
 - stylelint
 
 
+### ディレクトリ構成
+
+```
+.
+├── assets
+│   ├── 2020corporation-logo # ロゴを格納する場所らしい
+│   ├── images
+│   ├── resetcss # resetcss意外はおかない
+│   ├── scss
+│   └── videos
+├── components
+│   ├── about
+│   ├── base
+│   ├── incoming
+│   ├── outgoing
+│   ├── privacy-policy
+│   ├── safety
+│   └── top
+├── dist
+├── docs # ドキュメント周り
+├── layouts
+├── middleware
+├── pages
+│   ├── about
+│   ├── incoming
+│   ├── outgoing
+│   ├── press
+│   ├── privacy-policy
+│   └── safety
+├── plugins
+├── static
+├── store
+└── stories # ここはまだ追加してない
+    └── assets
+```
+
+ちなみにこのコマンド
+`tree -d -L 2 -I node_modules | pbcopy`
+
 ## 参考
 
 - [Git-flowって何？](https://qiita.com/KosukeSone/items/514dd24828b485c69a05)
 - [vue 公式ドキュメント](https://v3.ja.vuejs.org/)
 - [Nuxt 公式ドキュメント](https://ja.nuxtjs.org/)
 - [CSSやJavaScriptなどの詳しい情報が書いてあるサイト](https://developer.mozilla.org/ja/docs/Web)
-- itoくんが作ってくれているチュートリアル
