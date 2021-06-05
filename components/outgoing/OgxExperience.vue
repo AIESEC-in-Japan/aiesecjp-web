@@ -37,38 +37,45 @@
   text-align: center;
   align-items: center;
 }
+
 h1 {
   color: $blue;
 }
+
 .articles {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .article-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem 2rem;
+
   img {
     padding: 100px;
     width: 300px;
     height: 80px;
     background: $gray;
   }
+
   p {
     margin-top: 1rem;
     max-width: 15rem;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 2px;
+
     span {
       display: inline-block;
       padding: 0.25rem;
     }
   }
 }
-button{
+
+button {
   margin: 3rem;
   padding: 1rem 4rem;
   color: $blue;

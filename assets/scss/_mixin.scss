@@ -6,6 +6,7 @@ $sp: 480px; // iphone 6,7,8 plus 411px pixel2 XL 411 をカバーしているの
     @content;
   }
 }
+
 @mixin sp {
   @media (max-width: ($sp)) {
     @content;

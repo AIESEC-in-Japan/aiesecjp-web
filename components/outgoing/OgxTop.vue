@@ -32,11 +32,13 @@
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
+
   .catchphrase {
     font-size: 1rem;
     text-align: center;
     letter-spacing: 4px;
     line-height: 1.5;
+
     span {
       display: block;
       color: $white;
