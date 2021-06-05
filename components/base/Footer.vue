@@ -50,21 +50,21 @@
 .footer {
   &-container {
     width: 100%;
-    padding: 40px 0;
+    padding: 2.5rem 0;
     background-color: $light-gray;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
     @include tab {
-      padding: 5px;
+      padding: 0.3rem;
     }
   }
 
   &-description {
-    font-size: 12px;
-    width: 180px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    width: 11.25rem;
+    line-height: 1.5;
     word-break: break-all;
 
     @include tab {
@@ -73,30 +73,30 @@
   }
 
   &-content {
-    width: 220px;
+    width: 13.75rem;
 
     @include tab {
       width: 80%;
-      margin: 20px auto;
+      margin: 1rem auto;
     }
   ;
 
     &-title {
       color: $blue;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: bold;
       font-style: italic;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
     }
 
     &-link {
-      font-size: 12px;
+      font-size: 0.75rem;
       text-decoration: none;
       color: $dark-gray;
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
   }
 }
