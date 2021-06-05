@@ -14,6 +14,9 @@
           <nuxt-link class="footer-content-link" to="/about">団体情報</nuxt-link>
         </li>
         <li>
+          <nuxt-link class="footer-content-link" to="/safety">安全への取り組み</nuxt-link>
+        </li>
+        <li>
           <nuxt-link class="footer-content-link" to="/privacy-policy">個人情報の取り扱い</nuxt-link>
         </li>
       </ul>
