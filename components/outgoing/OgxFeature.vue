@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <h1>アイセックの海外インターンシップの特徴</h1>
-    <div class ="feature">
-      <div class="detail">
+    <div class ="feature">   
+      <div class="detail">  
         <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
         <h2>
           実践的な<br>
           世界への挑戦機会
-        </h2>
+        </h2>  
         <p>
           <span>6週間の間、参加者は現地に存在する社会課題</span>
           <span>や企業課題に自らアプローチします。異国の</span>
@@ -16,7 +16,7 @@
           <span>密度の高い成長経験を提供します。</span>
         </p>
       </div>
-      <div class="detail">
+      <div class="detail">  
         <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
         <h2>
           マネージャーによる<br>
@@ -30,7 +30,7 @@
           <span>者の成長を二人三脚で最大化します。</span>
         </p>
       </div>
-      <div class="detail">
+      <div class="detail">  
         <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
         <h2>
           渡航しただけ、で終わらない<br>
@@ -49,51 +49,40 @@
 </template>
 
 <style scoped lang="scss">
-.container {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-
-  h1 {
-    color: #037ef3;
-    letter-spacing: 2px;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    font-size: 24px;
-  }
-}
-
-.feature {
-  flex-wrap: wrap;
+.container  {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-}
-
-.detail {
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 20px;
-  width: 360px;
-
-  img {
+  margin: 0 1rem;
+}
+h1  {
+  color: $blue;
+}
+.feature  {   
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.detail  {
+  width: 25rem;
+  margin-bottom: 4rem;
+  img  {
     border-radius: 30px;
   }
-
-  h2 {
-    font-size: 16px;
-    line-height: 30px;
-    color: #037ef3;
+  h2  {
+    font-weight: bold;
+    line-height: 1.5;
+    color: $blue;
     letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 1rem 0;
   }
-
-  p {
-    font-size: 12px;
+  p  {
     letter-spacing: 2px;
-    line-height: 20px;
-    margin-bottom: 50px;
-
-    span {
+    line-height: 1.5;
+    span{
       display: inline-block;
     }
   }

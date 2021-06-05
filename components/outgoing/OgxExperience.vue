@@ -1,22 +1,22 @@
 <template>
-  <div class="experience-container">
-    <h2 class="experience-title">インターシップ体験記</h2>
-    <div class="experience-articles">
-      <article class="internship-experience">
+  <div class="container">
+    <h1>インターシップ体験記</h1>
+    <div class="articles">
+      <article class="article-item">
         <img src="https://via.placeholder.com/200x80">
         <p>
           <span>記事タイトル記事タイトル</span>
           <span>記事タイトル記事タイトル</span>
         </p>
       </article>
-      <article class="internship-experience">
+      <article class="article-item">
         <img src="https://via.placeholder.com/200x80">
         <p>
           <span>記事タイトル記事タイトル</span>
           <span>記事タイトル記事タイトル</span>
         </p>
       </article>
-      <article class="internship-experience">
+      <article class="article-item">
         <img src="https://via.placeholder.com/200x80">
         <p>
           <span>記事タイトル記事タイトル</span>
@@ -24,71 +24,59 @@
         </p>
       </article>
     </div>
-     <button href="#" class="button-experience-detail">体験記をもっと見る</button>
+     <button href="#">体験記をもっと見る</button>
   </div>
 </template>
 
 <style scoped lang="scss">
-.experience-container {
-  min-height: 100vh;
+.container {
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
-
-.experience-title {
+h1 {
   color: $blue;
-  font-size: 24px;
-  font-weight: bold;
-  padding-top: 100px;
-  letter-spacing: 2px;
 }
-
-.experience-articles {
+.articles {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 50px;
 }
-
-.internship-experience {
+.article-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
-
+  margin: 1rem 2rem;
   img {
     padding: 100px;
     width: 300px;
     height: 80px;
-    margin: 2em 0;
     background: $gray;
   }
-
   p {
-    max-width: 250px;
-    font-size: 16px;
-    letter-spacing: 2px;
+    margin-top: 1rem;
+    max-width: 15rem;
+    font-size: 1rem;
     font-weight: bold;
-
+    letter-spacing: 2px;
     span {
       display: inline-block;
-      padding: 5px;
+      padding: 0.25rem;
     }
   }
 }
-
-.button-experience-detail {
-  margin: 60px;
-  padding: 15px 90px;
+button{
+  margin: 3rem;
+  padding: 1rem 4rem;
   color: $blue;
   background-color: transparent;
   border-radius: 40px;
   border: solid 2px;
+  font-size: 1rem;
   font-weight: bold;
-  font-size: 16px;
   letter-spacing: 2px;
 }
 </style>
