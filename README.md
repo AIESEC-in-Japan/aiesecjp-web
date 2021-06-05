@@ -43,6 +43,7 @@ $ brew upgrade
 
 # なければこれを参考にインストールしてください homebrew https://brew.sh/index_ja
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ source ~/.bash_profile
 
 # gitが入っているかの確認
 $ git --version
@@ -61,6 +62,7 @@ $ brew install nodenv
 $ nodenv install 12.15.0
 $ nodenv global 12.15.0
 $ echo 'eval "$(nodenv init -)"' >> ~/.bash_profile
+$ source ~/.bash_profile
 $ npm install -g yarn
 
 ```
