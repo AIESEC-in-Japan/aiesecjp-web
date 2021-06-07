@@ -49,16 +49,12 @@ export default {
       };
     },
     computedBaseColor() {
-      if (this.baseColor === null) {
-        return this.isHover ? this.textColor : 'transparent'
-      }
-      return this.isHover ? this.textColor : this.baseColor
+      const buttonBasementColor = this.baseColor ?? 'transparent';
+      return this.isHover ? this.textColor : buttonBasementColor
     },
     computedTextColor() {
-      if (this.baseColor === null) {
-        return this.isHover ? '#fff' : this.textColor
-      }
-      return this.isHover ? this.baseColor : this.textColor
+      const buttonBasementColor = this.baseColor ?? '#fff';
+      return this.isHover ? buttonBasementColor : this.textColor
     }
   },
 };
@@ -74,14 +70,17 @@ button {
   font-size: 18px;
   letter-spacing: 2px;
 }
+
 .button {
   // 今のところ使い道はなさそうだけど、sample codeの役割で追加
   &-small {
     width: 100px;
   }
+
   &-medium {
     width: 200px;
   }
+
   &-large {
     width: 400px;
   }
