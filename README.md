@@ -15,8 +15,8 @@
 
 > 以下色々コマンド書きますが、理解してから使って欲しいです。何も考えずにコピペするとPC壊れる可能性があります。 わからなければわかる人に聞いてください
 
-初めてgithubを使う場合 以下参考にSSH keyを登録しておくと楽です。
-https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+> ※ 初めてgithubを使う場合 以下参考にSSH keyを登録しておくと楽です。
+> https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
 ```shell
 # 作業用ディレクトリに移動
@@ -30,8 +30,10 @@ $ git clone git@github.com:AIESEC-in-Japan/aiesecjp-web.git
 
 ```
 
-また以下を参考にして、user nameを設定しておいて欲しいです。
-https://docs.github.com/en/github/getting-started-with-github/setting-your-username-in-git
+
+> 時間ある時に…
+> また以下を参考にして、user nameを設定しておいて欲しいです。
+> https://docs.github.com/en/github/getting-started-with-github/setting-your-username-in-git
 
 ## もしgit コマンドが使えなかったら（Mac編）
 
