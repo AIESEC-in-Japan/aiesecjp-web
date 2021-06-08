@@ -1,7 +1,10 @@
 <template>
   <div class="partners-container">
     <h2>Our Partners</h2>
-    <div class="partners-contents">
+    <CorporateLogo 
+      
+    />
+    <!-- <div class="partners-contents">
       <img src="@/assets/2020corporation-logo/accenture.png" alt="" class="partners-content">
       <img src="@/assets/2020corporation-logo/enjapan.png" alt="" class="partners-content">
       <img src="@/assets/2020corporation-logo/endroll.jpg" alt="" class="partners-content">
@@ -32,9 +35,25 @@
       <img src="@/assets/2020corporation-logo/リクルートマネジメントソリューションズ.jpg" alt="" class="partners-content">
       <img src="@/assets/2020corporation-logo/legaseed.jpg" alt="" class="partners-content">
       <img src="@/assets/2020corporation-logo/wacul.png" alt="" class="partners-content">
-    </div>
+    </div> -->
   </div>
 </template>
+
+<script>
+const corporatelogo = [
+  {name: accenture.png, alt: ""},
+  {name: enjapan.png, alt: ""},
+  {name: endroll.jpg, alt: ""},
+  {name: オースビー.png, alt: ""},
+  {name: gaiax.png, alt: ""},
+]
+
+
+
+
+</script>
+
+
 
 <style scoped lang="scss">
 .partners-container {
