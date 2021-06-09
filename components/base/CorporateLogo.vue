@@ -1,24 +1,21 @@
 <template>
-    <div class="partners-contents">
-        <div class="partners-content"></div>
-    </div>
+    <ul id="partners-contents">
+        <li v-for="logo in logos" :key="logo.src">
+            <img v-bind:src="logo.src">
+        </li>
+    </ul>
 </template>
 
 <script>
 export default {
-  props: {
-    logos: {
-        name: String,
-        alt: String
-    }
-  },
-
-  data: function(logos) {
-      logos.forEach(logo => {
+    data() {
         return {
-
-        })
-  }
+            logos: [
+                // { src: '../../assets/2020corporation-logo/accenture.png' }, 相対パスではなさげ
+                { src: require('@/assets/2020corporation-logo/accenture.png') }, //これでいけるかと思ったができなかった
+            ]
+        }
+    }
 };
 
 </script>

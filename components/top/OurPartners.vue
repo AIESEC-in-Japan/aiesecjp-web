@@ -2,7 +2,6 @@
   <div class="partners-container">
     <h2>Our Partners</h2>
     <CorporateLogo 
-      
     />
     <!-- <div class="partners-contents">
       <img src="@/assets/2020corporation-logo/accenture.png" alt="" class="partners-content">
@@ -40,13 +39,13 @@
 </template>
 
 <script>
-const corporatelogo = [
-  {name: accenture.png, alt: ""},
-  {name: enjapan.png, alt: ""},
-  {name: endroll.jpg, alt: ""},
-  {name: オースビー.png, alt: ""},
-  {name: gaiax.png, alt: ""},
-]
+// const corporatelogo = [
+//   {name: accenture.png, alt: ""},
+//   {name: enjapan.png, alt: ""},
+//   {name: endroll.jpg, alt: ""},
+//   {name: オースビー.png, alt: ""},
+//   {name: gaiax.png, alt: ""},
+// ]
 
 
 
