@@ -1,36 +1,10 @@
 <template>
   <div>
-    <Header />
-    <nuxt />
-    <Footer :width="width" />
+    <Header/>
+    <nuxt/>
+    <Footer/>
   </div>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      width: 0
-    }
-  },
-  created () {
-    if (process.client) {
-      window.addEventListener('resize', this.handleResize)
-      this.handleResize()
-    }
-  },
-  destroyed () {
-    if (process.client) {
-      window.removeEventListener('resize', this.handleResize)
-    }
-  },
-  methods: {
-    handleResize () {
-      this.width = window.innerWidth
-    }
-  }
-}
-</script>
 
 <style>
 html {

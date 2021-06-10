@@ -65,7 +65,6 @@
     &-card {
       width: 380px;
       height: 450px;
-      color: white;
       font-family: $fonts;
       font-weight: bold;
       border-radius: 10px;
@@ -77,17 +76,20 @@
         line-height: 60px;
         margin: 20px;
         border-bottom: $white solid 2px;
+        color: white;
       }
 
       p {
         text-align: center;
         padding: 20px;
         font-size: 16px;
+        color: white;
       }
 
       &-text {
         line-height: 32px;
         margin-bottom: 20px;
+        color: white;
       }
 
       &-link {
