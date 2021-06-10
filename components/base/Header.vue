@@ -2,9 +2,16 @@
   <header class="header-container">
     <nav>
       <ul>
-        <li class="pc-header-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
+        <li
+          class="pc-header-item"
+          @mouseleave="mouseLeaveAction"
+          @mouseover="mouseOverAction"
+        >
           <a href="">海外インターンシップについて</a>
-          <div v-show="isShowNestedItems" class="pc-header-nested">
+          <div
+            v-show="isShowNestedItems"
+            class="pc-header-nested"
+          >
             <ul class="pc-header-nested-list">
               <li class="pc-header-nested-item">
                 <a href="/outgoing">海外インターンシップに参加する</a>

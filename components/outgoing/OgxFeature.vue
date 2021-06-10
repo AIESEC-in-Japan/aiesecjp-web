@@ -1,9 +1,13 @@
 <template>
   <div class="container">
     <h1>アイセックの海外インターンシップの特徴</h1>
-    <div class ="feature">   
+    <div class="feature">   
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           実践的な<br>
           世界への挑戦機会
@@ -17,7 +21,11 @@
         </p>
       </div>
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           マネージャーによる<br>
           丁寧なサポート
@@ -31,7 +39,11 @@
         </p>
       </div>
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           渡航しただけ、で終わらない<br>
           事前・事後プログラム

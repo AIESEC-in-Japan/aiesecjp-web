@@ -11,7 +11,9 @@
         </p>
       </nuxt-link>
     </div> -->
-    <h2 class="comingsoon">Coming Soon...</h2>
+    <h2 class="comingsoon">
+      Coming Soon...
+    </h2>
   </div>
 </template>
 

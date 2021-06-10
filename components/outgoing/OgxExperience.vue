@@ -24,7 +24,9 @@
         </p>
       </article>
     </div>
-     <button href="#">体験記をもっと見る</button>
+    <button href="#">
+      体験記をもっと見る
+    </button>
   </div>
 </template>
 
