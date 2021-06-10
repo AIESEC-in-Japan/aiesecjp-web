@@ -19,7 +19,7 @@ html {
   overflow-x: hidden;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
 }

@@ -122,7 +122,6 @@
       width: 80%;
       margin: 1rem auto;
     }
-  ;
 
     &-title {
       color: $blue;

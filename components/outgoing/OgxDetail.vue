@@ -23,13 +23,14 @@
 <style scoped lang="scss">
 .container {
   min-height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url("~@/assets/images/ogx-detail.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/ogx-detail.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 30%;
   display: flex;
   justify-content: center;
 }
+
 .detail {
   display: flex;
   justify-content: center;
@@ -38,8 +39,10 @@
   color: white;
   font-weight: bold;
   margin: 0 1rem;
+
   .detail-item {
     margin-bottom: 3rem;
+
     button {
       margin-top: 1rem;
       padding: 1rem 4rem;
@@ -51,6 +54,7 @@
       letter-spacing: 2px;
       color: $white;
     }
+
     p {
       color: $white;
       line-height: 2;

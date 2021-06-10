@@ -46,10 +46,9 @@
       letter-spacing: 2px;
       margin: 40px auto;
     }
-
   }
 
-  &-main{
+  &-main {
     display: flex;
     justify-content: space-evenly;
   }
@@ -61,11 +60,11 @@
     letter-spacing: 2px;
     margin: 20px auto;
     line-height: 32px;
-
   }
 
   &-content {
     width: 450px;
+
     p {
       font-size: 14px;
       line-height: 28px;

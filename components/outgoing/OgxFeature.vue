@@ -61,7 +61,7 @@
 </template>
 
 <style scoped lang="scss">
-.container  {
+.container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -70,31 +70,38 @@
   text-align: center;
   margin: 0 1rem;
 }
-h1  {
+
+h1 {
   color: $blue;
 }
-.feature  {   
+
+.feature {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.detail  {
+
+.detail {
   width: 25rem;
   margin-bottom: 4rem;
-  img  {
+
+  img {
     border-radius: 30px;
   }
-  h2  {
+
+  h2 {
     font-weight: bold;
     line-height: 1.5;
     color: $blue;
     letter-spacing: 2px;
     margin: 1rem 0;
   }
-  p  {
+
+  p {
     letter-spacing: 2px;
     line-height: 1.5;
-    span{
+
+    span {
       display: inline-block;
     }
   }

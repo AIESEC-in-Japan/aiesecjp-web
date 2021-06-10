@@ -27,8 +27,8 @@
     background-size: cover;
   }
 
-  /*半透明のフィルターをかける*/
-  &-container:before {
+  /* 半透明のフィルターをかける */
+  &-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -51,7 +51,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
     font-weight: bold;
     letter-spacing: 2px;
   }

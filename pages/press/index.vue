@@ -46,6 +46,7 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 .comingsoon {
   font-size: 24px;
   color: $gray;
