@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <section class="ogx-top">
-      <h1 class="title">Experience the world with AIESEC</h1>
+      <h1 class="title">
+        Experience the world with AIESEC
+      </h1>
       <p class="catchphrase">
         <span>アイセックの海外インターンシップで、</span>
         <span>きっと、変わる。自分も、世界も。</span>

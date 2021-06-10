@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <SafetyTop/>
-    <SafetyDescriptions/>
+    <SafetyTop />
+    <SafetyDescriptions />
   </div>
 </template>

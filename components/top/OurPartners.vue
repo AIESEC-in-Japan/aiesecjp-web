@@ -2,36 +2,156 @@
   <div class="partners-container">
     <h2>Our Partners</h2>
     <div class="partners-contents">
-      <img src="@/assets/2020corporation-logo/accenture.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/enjapan.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/endroll.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/オースビー.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/gaiax.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/givery.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/sairu.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/sansan.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/sunstar.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/cuc.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/schneiderelectric.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/johnsonandjohnson.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/spartaenglishmethod.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/softbank.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/dentsu.gif" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/toyobo.svg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/nissan.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/nissha.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/panasonic.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/prtable.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/bizreach.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/florence.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/mizuho.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/langoo.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/lifull.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/RIZAP.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/realworld.png" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/リクルートマネジメントソリューションズ.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/legaseed.jpg" alt="" class="partners-content">
-      <img src="@/assets/2020corporation-logo/wacul.png" alt="" class="partners-content">
+      <img
+        src="@/assets/2020corporation-logo/accenture.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/enjapan.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/endroll.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/オースビー.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/gaiax.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/givery.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/sairu.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/sansan.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/sunstar.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/cuc.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/schneiderelectric.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/johnsonandjohnson.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/spartaenglishmethod.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/softbank.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/dentsu.gif"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/toyobo.svg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/nissan.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/nissha.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/panasonic.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/prtable.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/bizreach.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/florence.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/mizuho.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/langoo.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/lifull.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/RIZAP.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/realworld.png"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/リクルートマネジメントソリューションズ.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/legaseed.jpg"
+        alt=""
+        class="partners-content"
+      >
+      <img
+        src="@/assets/2020corporation-logo/wacul.png"
+        alt=""
+        class="partners-content"
+      >
     </div>
   </div>
 </template>

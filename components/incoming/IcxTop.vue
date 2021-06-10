@@ -1,15 +1,18 @@
 <template>
- <div class="icx-top-container">
-   <div class="icx-top">
-      <img src="@/assets/images/product_GT-horizontal-white.png" alt="GT-logo">
+  <div class="icx-top-container">
+    <div class="icx-top">
+      <img
+        src="@/assets/images/product_GT-horizontal-white.png"
+        alt="GT-logo"
+      >
       <h1>
         Globalize your company with AIESEC
       </h1>
       <span>
         アイセックのインターンシップで、グローバルな組織作りを
       </span>
-   </div>
- </div>
+    </div>
+  </div>
 </template>
 
 
