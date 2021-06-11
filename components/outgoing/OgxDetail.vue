@@ -4,21 +4,22 @@
       <h1>参加までの手続き</h1>
       <div class="detail-item">
         <p>
-        海外インターンシップへの参加の流れや費用などの詳細は<br>
-        以下のページからご覧ください。</p>
+          海外インターンシップへの参加の流れや費用などの詳細は<br>
+          以下のページからご覧ください。
+        </p>
         <RoundButton
-          v-bind='this.ButtonProps'
-          v-bind:label='"参加の流れや費用"'
+          v-bind="this.ButtonProps"
+          :label="&quot;参加の流れや費用&quot;"
         />
       </div>
       <div class="detail-item">
         <p>
-        海外インターンシップへの参加に興味のある方は、お気軽にお問い合わせください。<br>
-        弊団体のメンバーが、詳しい手続きのご案内をさせていただきます。
+          海外インターンシップへの参加に興味のある方は、お気軽にお問い合わせください。<br>
+          弊団体のメンバーが、詳しい手続きのご案内をさせていただきます。
         </p>
         <RoundButton
-          v-bind='this.ButtonProps'
-          v-bind:label='"話を聞いてみる。"'
+          v-bind="this.ButtonProps"
+          :label="&quot;話を聞いてみる。&quot;"
         />
       </div>
     </div>

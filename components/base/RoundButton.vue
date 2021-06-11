@@ -2,8 +2,8 @@
   <button
     :class="classes"
     :style="style"
-    v-on:mouseleave="mouseLeaveAction"
-    v-on:mouseover="mouseOverAction"
+    @mouseleave="mouseLeaveAction"
+    @mouseover="mouseOverAction"
   >
     {{ label }}
   </button>
@@ -12,9 +12,19 @@
 <script>
 export default {
   props: {
-    label: String,
-    textColor: String,
-    baseColor: String || undefined,
+    label: {
+      type: String,
+      default: ""
+    },
+    textColor: {
+      type: String,
+      default: "#333"
+    },
+    baseColor: {
+      type: String,
+      // todo default undefはダメっぽい。確かにそっちの方が綺麗なコードになるので考える。
+      default: undefined
+    },
     size: {
       type: String,
       default: 'medium',

@@ -3,19 +3,19 @@
     <div class="detail-bg">
       <div class="detail">
         <RoundButton
-          v-bind='this.MintButtonProps'
-          v-bind:label='"受け入れ実例をもっと見る"'
+          v-bind="this.MintButtonProps"
+          :label="&quot;受け入れ実例をもっと見る&quot;"
         />
         <RoundButton
-          v-bind='this.MintButtonProps'
-          v-bind:label='"インターンシップの詳細を見る"'
+          v-bind="this.MintButtonProps"
+          :label="&quot;インターンシップの詳細を見る&quot;"
         />
         <p>
           <span>アイセックの海外インターンシップ受け⼊れに</span><span>興味のある団体様は、</span><span>お気軽にお問い合わせください。</span><span>弊団体のメンバーが、疑問解消のお⼿伝いや詳しい⼿続きの</span><span>ご案内をさせていただきます。</span>
         </p>
         <RoundButton
-          v-bind='this.WhiteButtonProps'
-          v-bind:label='"話を聞いて見る"'
+          v-bind="this.WhiteButtonProps"
+          :label="&quot;話を聞いて見る&quot;"
         />
       </div>
     </div>
