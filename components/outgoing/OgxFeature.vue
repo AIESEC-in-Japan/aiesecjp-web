@@ -1,9 +1,13 @@
 <template>
   <div class="container">
     <h1>アイセックの海外インターンシップの特徴</h1>
-    <div class ="feature">   
+    <div class="feature">   
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           実践的な<br>
           世界への挑戦機会
@@ -17,7 +21,11 @@
         </p>
       </div>
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           マネージャーによる<br>
           丁寧なサポート
@@ -31,7 +39,11 @@
         </p>
       </div>
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           渡航しただけ、で終わらない<br>
           事前・事後プログラム
@@ -49,7 +61,7 @@
 </template>
 
 <style scoped lang="scss">
-.container  {
+.container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -58,31 +70,38 @@
   text-align: center;
   margin: 0 1rem;
 }
-h1  {
+
+h1 {
   color: $blue;
 }
-.feature  {   
+
+.feature {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.detail  {
+
+.detail {
   width: 25rem;
   margin-bottom: 4rem;
-  img  {
+
+  img {
     border-radius: 30px;
   }
-  h2  {
+
+  h2 {
     font-weight: bold;
     line-height: 1.5;
     color: $blue;
     letter-spacing: 2px;
     margin: 1rem 0;
   }
-  p  {
+
+  p {
     letter-spacing: 2px;
     line-height: 1.5;
-    span{
+
+    span {
       display: inline-block;
     }
   }
