@@ -14,7 +14,7 @@ export default {
   props: {
     label: {
       type: String,
-      default: "click"
+      required: true
     },
     textColor: {
       type: String,
