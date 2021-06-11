@@ -1,37 +1,76 @@
 <template>
   <header
     class="header-container"
-    v-bind:class="headerContainerClass">
+    :class="headerContainerClass"
+  >
     <nav>
       <div class="navigation-logo">
         <nuxt-link to="/">
-          <img alt="logo" src="@/assets/images/logo/blue-logo.png">
+          <img
+            alt="logo"
+            src="@/assets/images/logo/blue-logo.png"
+          >
         </nuxt-link>
       </div>
       <ul>
-        <li class="navigation-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
-          <nuxt-link to="" v-bind:class="navigationLinkClass">
+        <li
+          class="navigation-item"
+          @mouseleave="mouseLeaveAction"
+          @mouseover="mouseOverAction"
+        >
+          <nuxt-link
+            to=""
+            :class="navigationLinkClass"
+          >
             海外インターンシップについて
           </nuxt-link>
-          <div v-show="isShowNestedItems" class="navigation-nested">
+          <div
+            v-show="isShowNestedItems"
+            class="navigation-nested"
+          >
             <ul class="navigation-nested-list">
               <li class="navigation-nested-item">
-                <nuxt-link to="/outgoing" v-bind:class="navigationLinkClass">海外インターンシップに参加する</nuxt-link>
+                <nuxt-link
+                  to="/outgoing"
+                  :class="navigationLinkClass"
+                >
+                  海外インターンシップに参加する
+                </nuxt-link>
               </li>
               <li class="navigation-nested-item">
-                <nuxt-link to="/incoming" v-bind:class="navigationLinkClass">海外インターン生を受け入れる</nuxt-link>
+                <nuxt-link
+                  to="/incoming"
+                  :class="navigationLinkClass"
+                >
+                  海外インターン生を受け入れる
+                </nuxt-link>
               </li>
               <li class="navigation-nested-item">
-                <nuxt-link to="" v-bind:class="navigationLinkClass">安全への取り組み</nuxt-link>
+                <nuxt-link
+                  to=""
+                  :class="navigationLinkClass"
+                >
+                  安全への取り組み
+                </nuxt-link>
               </li>
             </ul>
           </div>
         </li>
         <li class="navigation-item">
-          <nuxt-link to="" v-bind:class="navigationLinkClass">オンラインイベントについて</nuxt-link>
+          <nuxt-link
+            to=""
+            :class="navigationLinkClass"
+          >
+            オンラインイベントについて
+          </nuxt-link>
         </li>
         <li class="navigation-item">
-          <nuxt-link to="/about" v-bind:class="navigationLinkClass">About Us</nuxt-link>
+          <nuxt-link
+            to="/about"
+            :class="navigationLinkClass"
+          >
+            About Us
+          </nuxt-link>
         </li>
       </ul>
     </nav>
@@ -85,11 +124,11 @@ export default {
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
-
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
 
   &__white {
     @extend .header-container;
+
     background-color: white;
     border-bottom: none;
   }
@@ -147,6 +186,7 @@ export default {
 
       &__white {
         @extend .navigation-link;
+
         color: $gray;
       }
     }

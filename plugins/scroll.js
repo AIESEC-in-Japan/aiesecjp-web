@@ -7,7 +7,7 @@ import Vue from 'vue'
 // by komatsu
 
 Vue.directive('scroll', {
-  bind(el, binding, vnode) {
+  bind(el, binding) {
     let f = function (evt) {
       if (binding.value(evt, el)) {
         window.removeEventListener('scroll', f)
