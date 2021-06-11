@@ -14,7 +14,7 @@ export default {
   props: {
     label: {
       type: String,
-      default: ""
+      default: "click"
     },
     textColor: {
       type: String,
@@ -22,8 +22,7 @@ export default {
     },
     baseColor: {
       type: String,
-      // todo default undefはダメっぽい。確かにそっちの方が綺麗なコードになるので考える。
-      default: undefined
+      default: 'transparent'
     },
     size: {
       type: String,
@@ -54,17 +53,10 @@ export default {
     },
     style() {
       return {
-        backgroundColor: this.computedBaseColor,
-        color: this.computedTextColor
+        // todo background colorのデフォルトセットしたので、色考える
+        backgroundColor: this.isHover ? this.textColor : this.baseColor,
+        color: this.isHover ? this.baseColor : this.textColor
       };
-    },
-    computedBaseColor() {
-      const buttonBasementColor = this.baseColor ?? 'transparent';
-      return this.isHover ? this.textColor : buttonBasementColor
-    },
-    computedTextColor() {
-      const buttonBasementColor = this.baseColor ?? '#fff';
-      return this.isHover ? buttonBasementColor : this.textColor
     }
   },
 };
