@@ -1,7 +1,9 @@
 <template>
   <section class="policy-container">
     <div class="policy-wrapper">
-      <h1 class="policy-title">アイセック・ジャパンのプライバシーポリシー</h1>
+      <h1 class="policy-title">
+        アイセック・ジャパンのプライバシーポリシー
+      </h1>
       <p class="policy-text">
         特定非営利活動法人アイセック・ジャパンは、<br>
         海外インターンシップに参加される皆様をはじめとする関係者の皆様のプライバシーを尊重し、<br>
@@ -22,8 +24,8 @@
     background-size: cover;
   }
 
-  /*半透明のフィルターをかける*/
-  &-container:before {
+  /* 半透明のフィルターをかける */
+  &-container::before {
     content: '';
     position: absolute;
     top: 0;

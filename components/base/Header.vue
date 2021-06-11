@@ -2,9 +2,16 @@
   <header class="header-container">
     <nav>
       <ul>
-        <li class="pc-header-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
+        <li
+          class="pc-header-item"
+          @mouseleave="mouseLeaveAction"
+          @mouseover="mouseOverAction"
+        >
           <a href="">海外インターンシップについて</a>
-          <div v-show="isShowNestedItems" class="pc-header-nested">
+          <div
+            v-show="isShowNestedItems"
+            class="pc-header-nested"
+          >
             <ul class="pc-header-nested-list">
               <li class="pc-header-nested-item">
                 <a href="/outgoing">海外インターンシップに参加する</a>
@@ -71,7 +78,7 @@ export default {
   width: 100vw;
   height: 80px;
   line-height: 80px;
-  padding: 0px 5%;
+  padding: 0 5%;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
@@ -105,7 +112,6 @@ export default {
     }
   }
 
-
   a {
     color: $gray;
     font-weight: bold;
@@ -127,6 +133,7 @@ export default {
   .pc-header-item {
     display: none;
   }
+
   .sp-header-item {
     display: block;
     margin-left: 50px;
