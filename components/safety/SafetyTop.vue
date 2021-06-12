@@ -1,24 +1,27 @@
 <template>
-  <section class="policy-container">
-    <div class="policy-wrapper">
-      <h1 class="policy-title">
-        アイセック・ジャパンのプライバシーポリシー
+  <section class="safety-container">
+    <div class="safety-wrapper">
+      <h1 class="safety-title">
+        海外インターンシップ参加に際しての安全管理サポートについて
       </h1>
-      <p class="policy-text">
-        特定非営利活動法人アイセック・ジャパンは、<br>
-        海外インターンシップに参加される皆様をはじめとする関係者の皆様のプライバシーを尊重し、<br>
-        個人情報の取り扱いに関して以下のような指針を定め、<br>
-        それに従ってその保護に努めております。
+      <p class="safety-text">
+        アイセックでは、災害やテロなどの海外での予測できない事態に備え、<br>
+        国内でも有数の海外危機管理に関する実績と経験を持つ安全サポート株式会社と提携し、<br>
+        24時間365日体制で海外インターンシップに参加される方々の危機管理サポートを行っております
+      </p>
+      <p class="safety-text">
+        また、渡航中は参加者一人一人に委員会メンバーが一人ついてサポートを行う「マネージャー制度」を<br>
+        導入しており、どんな悩みもいつでも気軽に相談できるような体制を整えております。
       </p>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-.policy {
+.safety {
   &-container {
     position: relative;
-    background-image: url("~@/assets/images/privacy-policy-top-bg.jpg");
+    background-image: url("~@/assets/images/safety/safery-top-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +46,7 @@
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
+
     // 内部を縦方向配置
     display: flex;
     flex-direction: column;
@@ -65,4 +69,5 @@
     color: white;
   }
 }
+
 </style>

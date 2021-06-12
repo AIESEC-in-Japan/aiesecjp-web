@@ -11,7 +11,9 @@
         </p>
       </nuxt-link>
     </div> -->
-    <h2 class="comingsoon">Coming Soon...</h2>
+    <h2 class="comingsoon">
+      Coming Soon...
+    </h2>
   </div>
 </template>
 
@@ -44,6 +46,7 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 .comingsoon {
   font-size: 24px;
   color: $gray;

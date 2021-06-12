@@ -1,9 +1,13 @@
 <template>
   <div class="container">
     <h1>アイセックの海外インターンシップの特徴</h1>
-    <div class ="feature">   
+    <div class="feature">   
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           実践的な<br>
           世界への挑戦機会
@@ -17,7 +21,11 @@
         </p>
       </div>
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           マネージャーによる<br>
           丁寧なサポート
@@ -31,7 +39,11 @@
         </p>
       </div>
       <div class="detail">  
-        <img src="https://placehold.jp/240x240.png" alt="" class="partners-content">
+        <img
+          src="https://placehold.jp/240x240.png"
+          alt=""
+          class="partners-content"
+        >
         <h2>
           渡航しただけ、で終わらない<br>
           事前・事後プログラム
@@ -49,48 +61,47 @@
 </template>
 
 <style scoped lang="scss">
-.container  {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-    h1  {
-      color: #037Ef3;
-      letter-spacing: 2px;
-      font-family: "Lato";
-      margin-top: 100px;
-      margin-bottom: 30px;
-      font-size: 24px;
-    }
-}
-.feature  {   
-  flex-wrap: wrap;
+.container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-}
-.detail  {
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 20px;
-  width: 360px;
-  img  {
+  margin: 0 1rem;
+}
+
+h1 {
+  color: $blue;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.detail {
+  width: 25rem;
+  margin-bottom: 4rem;
+
+  img {
     border-radius: 30px;
   }
-  h2  {
-    font-size: 16px;
-    line-height: 30px;
-    color: #037Ef3;
-    letter-spacing: 2px;
-    font-family: "Lato";
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  p  {
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 20px;
-    font-family: "Lato";
-    margin-bottom: 50px;
 
-    span{
+  h2 {
+    font-weight: bold;
+    line-height: 1.5;
+    color: $blue;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+  }
+
+  p {
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+    span {
       display: inline-block;
     }
   }

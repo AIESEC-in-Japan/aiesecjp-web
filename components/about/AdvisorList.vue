@@ -2,6 +2,7 @@
   <div class="aboutus-table-container">
       <h2 class="aboutus-table-title">諮問一覧</h2>
       <table class="advisor-table">
+
       <tr>
         <th>諮問</th>
         <td>田中伸男（公共財団法人笹川平和財団　会長）</td>
@@ -26,11 +27,13 @@
         <th>諮問</th>
         <td>渋谷 直毅（クレディ・スイス証券株式会社 インターネット・メディア部長）</td>
       </tr>
+
       </table>
   </div>
 </template>
 
 <style scoped lang="scss">
+
 // TODO いずれtable componentを作ってここのstyleを消す。
 // 以下を消すと、原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
   // .advisor{
@@ -49,4 +52,5 @@
   //   }
 
   // }
+
 </style>

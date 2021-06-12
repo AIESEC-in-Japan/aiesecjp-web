@@ -1,4 +1,5 @@
 <template>
+
   <div class="aboutus-table-container">
       <h2 class="aboutus-table-title">役員一覧</h2>
       <table class="officers-table">
@@ -12,6 +13,7 @@
         <tr>
           <th>専務理事</th>
           <td>菅家周平（早稲田大学 3年）</td>
+
         </tr>
         <tr>
           <th>副会長</th>
@@ -24,6 +26,7 @@
         <tr>
           <th>常務理事</th>
           <td>余越優（東京大学 4年）</td>
+
         </tr>
         <tr>
           <th>理事</th>
@@ -51,6 +54,7 @@
         </tr>
       </table>
     </div>
+
 </template>
 
 <style scoped lang="scss">
@@ -73,4 +77,5 @@
   //   }
 
   // }
+
 </style>
