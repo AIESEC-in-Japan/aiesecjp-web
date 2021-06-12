@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header/>
-    <nuxt/>
-    <Footer/>
+    <Header />
+    <nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ html {
   overflow-x: hidden;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
 }

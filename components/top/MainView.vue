@@ -1,7 +1,12 @@
 <template>
   <div class="main-view-container">
-    <div class="pattern"></div>
-    <video autoplay loop muted src="~@/assets/videos/withAiesecVideo.mp4">
+    <div class="pattern" />
+    <video
+      autoplay
+      loop
+      muted
+      src="~@/assets/videos/withAiesecVideo.mp4"
+    >
       <!-- FIXME: 動画が再生されなかった場合の画像置いておく,スマホの場合の対応など -->
     </video>
   </div>

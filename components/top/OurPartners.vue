@@ -59,6 +59,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h2 {
     color: $blue;
     font-size: 1.5rem;
@@ -66,12 +67,14 @@ export default {
     padding-top: 10rem;
   }
 }
+
 .partners-contents {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 2rem;
 }
+
 .partners-content {
   width: 7.5rem;
   height: 7.5rem;

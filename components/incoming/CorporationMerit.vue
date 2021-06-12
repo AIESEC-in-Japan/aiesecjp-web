@@ -26,16 +26,18 @@
   background-size: cover;
   background-position: center 50%;
 }
+
 .corporation-merit {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-between;
   justify-content: center;
   text-align: center;
+
   h2 {
     width: 40%;
     color: $white;
@@ -46,12 +48,14 @@
     letter-spacing: 2px;
     border-bottom: solid 0.5px white;
   }
+
   p {
     color: $white;
     font-size: 14px;
     padding: 2px;
     letter-spacing: 2px;
     max-width: 700px;
+
     span {
       display: inline-block;
     }

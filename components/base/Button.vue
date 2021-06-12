@@ -1,5 +1,7 @@
 <template>
-  <button :style="{ width: width,color:color }">{{name}}</button>
+  <button :style="{ width: width,color:color }">
+    {{ name }}
+  </button>
 </template>
 
 <script>

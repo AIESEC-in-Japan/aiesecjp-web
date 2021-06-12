@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <PrivacyPolicyTop/>
-    <PrivacyPolicyDescriptions/>
+    <PrivacyPolicyTop />
+    <PrivacyPolicyDescriptions />
   </div>
 </template>

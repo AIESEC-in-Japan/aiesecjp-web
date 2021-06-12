@@ -1,39 +1,76 @@
 <template>
-  <header class="header-container">
+  <header
+    class="header-container"
+    :class="headerContainerClass"
+  >
     <nav>
+      <div class="navigation-logo">
+        <nuxt-link to="/">
+          <img
+            alt="logo"
+            src="@/assets/images/logo/blue-logo.png"
+          >
+        </nuxt-link>
+      </div>
       <ul>
-        <li class="pc-header-item" v-on:mouseleave="mouseLeaveAction" v-on:mouseover="mouseOverAction">
-          <a href="">海外インターンシップについて</a>
-          <div v-show="isShowNestedItems" class="pc-header-nested">
-            <ul class="pc-header-nested-list">
-              <li class="pc-header-nested-item">
-                <a href="/outgoing">海外インターンシップに参加する</a>
+        <li
+          class="navigation-item"
+          @mouseleave="mouseLeaveAction"
+          @mouseover="mouseOverAction"
+        >
+          <nuxt-link
+            to=""
+            :class="navigationLinkClass"
+          >
+            海外インターンシップについて
+          </nuxt-link>
+          <div
+            v-show="isShowNestedItems"
+            class="navigation-nested"
+          >
+            <ul class="navigation-nested-list">
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  to="/outgoing"
+                  :class="navigationLinkClass"
+                >
+                  海外インターンシップに参加する
+                </nuxt-link>
               </li>
-              <li class="pc-header-nested-item">
-                <a href="/incoming">海外インターン生を受け入れる</a>
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  to="/incoming"
+                  :class="navigationLinkClass"
+                >
+                  海外インターン生を受け入れる
+                </nuxt-link>
               </li>
-              <li class="pc-header-nested-item">
-                <a href="">安全への取り組み</a>
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  to=""
+                  :class="navigationLinkClass"
+                >
+                  安全への取り組み
+                </nuxt-link>
               </li>
             </ul>
           </div>
         </li>
-        <li class="pc-header-item">
-          <a href="">オンラインイベントについて</a>
+        <li class="navigation-item">
+          <nuxt-link
+            to=""
+            :class="navigationLinkClass"
+          >
+            オンラインイベントについて
+          </nuxt-link>
         </li>
-        <li class="pc-header-item">
-          <a href="/about">About Us</a>
-        </li>
-      </ul>
-      <ul class="sp-header">
-        <li class="sp-header-item">
-          <a href="/outgoing">Outgoing</a>
-        </li>
-        <li class="sp-header-item">
-          <a href="/incoming">Incoming</a>
-        </li>
-        <li class="sp-header-item">
-          <a href="/about">About</a>
+        <li class="navigation-item">
+          <nuxt-link
+            to="/about"
+            :class="navigationLinkClass"
+          >
+            About Us
+          </nuxt-link>
         </li>
       </ul>
     </nav>
@@ -54,6 +91,18 @@ export default {
     mouseLeaveAction() {
       this.isShowNestedItems = false
     }
+  },
+  computed: {
+    isScrollOverTopSection() {
+      return this.$window.pageYOffset > this.$basicSectionSize();
+    },
+    // vueの標準的な動的classの実装です。 https://jp.vuejs.org/v2/guide/class-and-style.html
+    headerContainerClass() {
+      return this.isScrollOverTopSection ? 'header-container__white' : 'header-container';
+    },
+    navigationLinkClass() {
+      return this.isScrollOverTopSection ? 'navigation-link__white' : 'navigation-link';
+    },
   }
 }
 
@@ -71,19 +120,27 @@ export default {
   width: 100vw;
   height: 80px;
   line-height: 80px;
-  padding: 0px 5%;
+  padding: 0 5%;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
+  transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  &__white {
+    @extend .header-container;
+
+    background-color: white;
+    border-bottom: none;
+  }
 
   ul {
     display: flex;
     justify-content: flex-end;
   }
 
-  .pc-header {
+  .navigation {
     &-item {
-      margin-left: 90px;
+      margin-left: 15px;
       list-style-type: none;
     }
 
@@ -103,34 +160,38 @@ export default {
         line-height: 30px;
       }
     }
-  }
 
+    &-logo {
+      position: absolute;
+      top: 10px;
+      bottom: 0;
+      left: 10px;
 
-  a {
-    color: $gray;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-    letter-spacing: 2px;
-  }
+      img {
+        width: 300px;
+        max-height: 60px;
+      }
+    }
 
-  a:hover {
-    opacity: 0.7;
+    &-link {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      letter-spacing: 2px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &__white {
+        @extend .navigation-link;
+
+        color: $gray;
+      }
+    }
   }
 }
 
-.sp-header-item {
-  display: none;
-}
-
-@media only screen and (max-width: 980px) {
-  .pc-header-item {
-    display: none;
-  }
-  .sp-header-item {
-    display: block;
-    margin-left: 50px;
-  }
-}
 </style>
 
