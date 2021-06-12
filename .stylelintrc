@@ -7,10 +7,35 @@
     "selector-list-comma-newline-after": "always-multi-line",
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
-    "scss/selector-no-redundant-nesting-selector": true
+    "scss/selector-no-redundant-nesting-selector": true,
+    "unit-disallowed-list": [
+      [
+        "px",
+        "em",
+        "deg",
+        "cm",
+        "mm",
+        "Q",
+        "in",
+        "pc",
+        "pt"
+      ],
+      {
+        "ignoreProperties": {
+          "px": [
+            "/^border/"
+          ]
+        },
+        "ignoreMediaFeatureNames": {
+          "px": [
+            "min-width",
+            "/height$/"
+          ]
+        }
+      }
+    ]
   },
   "ignoreFiles": [
     "assets/resetcss/reset.css"
   ]
 }
-
