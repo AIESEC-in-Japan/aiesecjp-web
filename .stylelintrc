@@ -24,7 +24,8 @@
         "ignoreProperties": {
           "px": [
             "/^border/",
-            "word-spacing"
+            "word-spacing",
+            "text-underline-offset"
           ]
         },
         "ignoreMediaFeatureNames": {
