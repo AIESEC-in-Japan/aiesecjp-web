@@ -25,7 +25,10 @@
           "px": [
             "/^border/",
             "word-spacing",
-            "text-underline-offset"
+            "text-underline-offset",
+            "letter-spacing",
+            "$sp",
+            "$tab"
           ]
         },
         "ignoreMediaFeatureNames": {
