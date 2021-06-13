@@ -52,20 +52,19 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-weight: bold;
-    letter-spacing: 2px;
   }
 
   &-title {
-    margin: 20px auto;
-    font-size: 28px;
+    margin: 1rem auto;
+    font-size: 2rem;
     color: white;
   }
 
   &-text {
     text-align: center;
-    margin: 10px auto;
-    font-size: 16px;
-    line-height: 32px;
+    margin: 1rem auto;
+    font-size: 1rem;
+    line-height: 2;
     color: white;
   }
 }
