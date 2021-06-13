@@ -23,7 +23,8 @@
       {
         "ignoreProperties": {
           "px": [
-            "/^border/"
+            "/^border/",
+            "word-spacing"
           ]
         },
         "ignoreMediaFeatureNames": {
