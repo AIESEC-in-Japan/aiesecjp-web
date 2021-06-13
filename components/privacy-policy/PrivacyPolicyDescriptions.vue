@@ -81,18 +81,17 @@
 <style lang="scss" scoped>
 .policy {
   &-container {
-    margin: 20px auto;
+    margin: 1.5rem auto;
     max-width: 80%;
   }
 
   &-content {
     &-title {
       color: $dark-gray;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: bold;
-      letter-spacing: 2px;
-      margin-top: 40px;
-      margin-bottom: 20px;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
     }
 
     &__underline {
@@ -100,18 +99,17 @@
     }
 
     p {
-      font-size: 16px;
-      letter-spacing: 1px;
-      line-height: 32px;
+      font-size: 1rem;
+      line-height: 2;
     }
 
     ul {
       list-style: circle;
-      margin-left: 20px;
+      margin-left: 1.5rem;
     }
 
     li {
-      margin: 10px auto;
+      margin: 0.5rem auto;
     }
   }
 }
