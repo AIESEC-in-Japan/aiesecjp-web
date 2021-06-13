@@ -1,7 +1,7 @@
 <template>
   <img
     :alt="data.alt"
-    :src="require(`~/assets/2020corporation-logo/${data.src}`)"
+    :src="require(`~/assets/${data.src}`)"
   >
 </template>
 
