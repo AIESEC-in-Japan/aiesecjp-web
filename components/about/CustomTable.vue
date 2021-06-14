@@ -1,8 +1,8 @@
 <template>
     <table class='officer-table'>
-    <tr>
-        <th>{{position}}</th>
-        <td>{{name}}</td>
+    <tr v-for="(item, index) in listdata" :key="index">
+        <th>{{item.position}}</th>
+        <td>{{item.name}}</td>
     </tr>
     </table>
 
@@ -11,8 +11,7 @@
 <script>
 export default {
     props:{
-        position: String,
-        name: String
+        listdata: Array
     }
 };
 </script>

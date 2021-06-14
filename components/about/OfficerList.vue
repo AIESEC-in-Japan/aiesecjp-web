@@ -1,17 +1,13 @@
 <template>
   <div class="aboutus-table-container">
       <h2 class="aboutus-table-title">役員一覧</h2>
-      <CustomTable v-bind:position="items.position" v-bind:name="items.name" />
+      <CustomTable v-bind:listdata="items" />
   </div>
 </template>
 
 <script>
-  import CustomTable from '@/components/about/CustomTable.vue';
-
   export default{
-    components:{
-      CustomTable,
-    },
+
     data: () => {
       return{
         items:[
