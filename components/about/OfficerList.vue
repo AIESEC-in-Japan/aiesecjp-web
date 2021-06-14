@@ -1,57 +1,94 @@
 <template>
   <div class="aboutus-table-container">
       <h2 class="aboutus-table-title">役員一覧</h2>
-      <table class="officers-table">
-        <tr>
-          <th>会長</th>
-          <td>
-            各務茂夫（東京大学 大学院工学系研究科 教授 産学協創推進本部
-            副本部長）
-          </td>
-        </tr>
-        <tr>
-          <th>専務理事</th>
-          <td>菅家周平（早稲田大学 3年）</td>
-        </tr>
-        <tr>
-          <th>副会長</th>
-          <td>松塚ゆかり（一橋大学森有礼高等教育国際流動化機構 教授）</td>
-        </tr>
-        <tr>
-          <th>副会長</th>
-          <td>菊地端夫（明治大学 経営学部 准教授）</td>
-        </tr>
-        <tr>
-          <th>常務理事</th>
-          <td>余越優（東京大学 4年）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>伊藤友章（北海学園大学 経営学部 教授）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>江夏幾太郎（神戸大学 経済経営研究所 准教授）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>椙山泰生（京都大学 経済学部 教授）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>横田一彦（早稲田大学 商学部 教授）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>米田邦彦（広島修道大学 商学部 教授）</td>
-        </tr>
-        <tr>
-          <th>監事</th>
-          <td>太田康広（慶應義塾大学ビジネス・スクール教授）</td>
-        </tr>
-      </table>
-    </div>
+      <CustomTable v-bind:position="items.position" v-bind:name="items.name" />
+  </div>
 </template>
+
+<script>
+  import CustomTable from '@/components/about/CustomTable.vue';
+
+  export default{
+    components:{
+      CustomTable,
+    },
+    data: () => {
+      return{
+        items:[
+          {position :  '会長',
+            name : '各務 茂夫（東京大学 大学院工学系研究科 教授 産学協創推進本部 副本部長）'},
+
+          {position :  "専務理事",
+            name : "菅家 周平（早稲田大学 3年）"},
+
+          {position :  "副会長",
+          name : "松塚 ゆかり（一橋大学森有礼高等教育国際流動化機構 教授）"},
+
+          {position :  "副会長",
+          name : "菊地 端夫（明治大学 経営学部 准教授）"},
+
+          {position :  "常務理事",
+          name : "余越 優（東京大学 4年）"},
+
+          {position :  "理事",
+          name : "伊藤 友章（北海学園大学 経営学部 教授）"},
+
+          {position :  "理事",
+          name : "江夏 幾太郎（神戸大学 経済経営研究所 准教授）"},
+
+          {position :  "理事",
+          name : "椙山 泰生（京都大学 経済学部 教授）"},
+
+          {position :  "理事",
+          name : "横田 一彦（早稲田大学 商学部 教授）"},
+
+          {position :  "理事",
+          name : "米田 邦彦（広島修道大学 商学部 教授）"},
+
+          {position :  "監事",
+          name : "太田 康広（慶應義塾大学ビジネス・スクール教授）"}
+        ],
+      };
+    },
+  };
+</script>
+
+   // {position :  "副会長",
+   // name : "松塚 ゆかり（一橋大学森有礼高等教育国際流動化機構 教授）"
+   // },
+
+   // {position :  "副会長",
+   // name : "菊地 端夫（明治大学 経営学部 准教授）"
+   // },
+
+   // {position :  "常務理事",
+   // name : "余越 優（東京大学 4年）"
+   // },
+
+   // {position :  "理事",
+    //name : "伊藤 友章（北海学園大学 経営学部 教授）"
+   // },
+
+   // {position :  "理事",
+   // name : "江夏 幾太郎（神戸大学 経済経営研究所 准教授）"
+   // },
+
+   // {position :  "理事",
+   // name : "椙山 泰生（京都大学 経済学部 教授）"
+   // },
+
+   // {position :  "理事",
+   // name : "横田 一彦（早稲田大学 商学部 教授）"
+    //},
+
+   /// {position :  "理事",
+   // name : "米田 邦彦（広島修道大学 商学部 教授）"
+   // },
+
+   // {position :  "監事",
+   // name : "太田 康広（慶應義塾大学ビジネス・スクール教授）"
+   // }
+
 
 <style scoped lang="scss">
 // TODO いずれtable componentを作ってここのstyleを消す。
