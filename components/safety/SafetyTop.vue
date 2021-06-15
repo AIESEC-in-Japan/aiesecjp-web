@@ -58,7 +58,7 @@
     margin: 1rem auto;
     font-size: 2rem;
     color: $white;
-    text-align: center
+    text-align: center;
   }
 
   &-text {
