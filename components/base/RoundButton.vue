@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import {basic_color} from "@/components/base/CommonColor";
+
 export default {
   props: {
     label: {
@@ -18,7 +20,7 @@ export default {
     },
     textColor: {
       type: String,
-      default: "#333"
+      default: basic_color.white
     },
     baseColor: {
       type: String,
@@ -65,12 +67,12 @@ export default {
 <style lang="scss" scoped>
 button {
   padding: 15px;
-  background-color: transparent;
   border-radius: 40px;
   border: solid 2px;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 2px;
+  transition: 0.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .button {
