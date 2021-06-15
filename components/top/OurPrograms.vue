@@ -1,9 +1,9 @@
 <template>
-  <div class="programs-container">
-    <h2>Our Programs</h2>
+  <section class="programs-container">
+    <h1>Our Programs</h1>
     <div class="programs-contents">
       <div class="programs-contents-card global-talent">
-        <h3>Global Talent</h3>
+        <h2>Global Talent</h2>
         <p class="programs-contents-card-text">
           海外のビジネス界に飛び込む <br>インターンシッププログラム。 <br>海外の企業で力を伸ばし、<br> 世界を、自分を、前進させる経験を。
         </p>
@@ -16,7 +16,7 @@
       </div>
 
       <div class="programs-contents-card global-volunteer">
-        <h3>Global Volunteer</h3>
+        <h2>Global Volunteer</h2>
         <p class="programs-contents-card-text">
           海外の社会課題解決に挑戦する <br>ボランティアプログラム。 <br>世界を見て、考えて、行動する。<br> 世界に挑戦するための一歩目を。
         </p>
@@ -26,7 +26,7 @@
       </div>
 
       <div class="programs-contents-card online-events">
-        <h3>Online Events</h3>
+        <h2>Online Events</h2>
         <p class="programs-contents-card-text">
           世界を身近に感じることのできる<br> オンラインイベント。 <br>国内外の様々な話を聞いて、 <br>知らなかった自分や世界を見つけよう。
         </p>
@@ -36,59 +36,55 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 .programs {
   &-container {
-    width: 100%;
-    min-height: 500px;
     display: flex;
     flex-direction: column;
     text-align: center;
 
-    h2 {
+    h1 {
       color: $dark-gray;
-      font-size: 24px;
-      letter-spacing: 2px;
-      padding-top: 150px;
+      font-size: 1.5rem;
+      padding-top: 9rem;
     }
   }
 
   &-contents {
+    padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 100px;
 
     &-card {
-      width: 380px;
-      height: 450px;
+      width: 23rem;
       font-family: $fonts;
       font-weight: bold;
       border-radius: 10px;
-      margin: 8px;
+      margin: 0.5rem;
+      padding-bottom: 2rem;
 
-      h3 {
+      h2 {
         font-style: italic;
-        font-size: 30px;
-        line-height: 60px;
-        margin: 20px;
+        font-size: 2rem;
+        margin: 1rem;
         border-bottom: $white solid 2px;
         color: white;
       }
 
       p {
         text-align: center;
-        padding: 20px;
-        font-size: 16px;
+        padding: 1rem;
+        font-size: 1rem;
         color: white;
       }
 
       &-text {
-        line-height: 32px;
-        margin-bottom: 20px;
+        line-height: 2;
+        margin-bottom: 1rem;
         color: white;
       }
 

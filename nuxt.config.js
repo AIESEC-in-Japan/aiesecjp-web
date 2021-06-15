@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { API_KEY } = process.env;
+const {API_KEY} = process.env;
 
 module.exports = {
   /*
@@ -20,7 +20,7 @@ module.exports = {
   ** Customize the progress bar color
   */
   components: true,
-  loading: { color: '#3B8070' },
+  loading: {color: '#3B8070'},
   /*
   ** Build configuration
   */
@@ -50,6 +50,12 @@ module.exports = {
   ** style-resources
   */
   modules: ['@nuxtjs/style-resources'],
+  plugins: [
+    './plugins/scroll.js',
+    './plugins/windowSize.js',
+    './plugins/isMobile.js',
+    './plugins/basicSectionSize'
+  ],
   styleResources: {
     scss: [
       './assets/scss/main.scss'

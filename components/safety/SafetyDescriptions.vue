@@ -160,7 +160,7 @@
 <style lang="scss" scoped>
 .safety {
   &-container {
-    margin: 20px auto;
+    margin: 1rem auto;
     max-width: 80%;
   }
 
@@ -169,56 +169,52 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin: 30px auto;
+      margin: 2rem auto;
     }
 
     &-icon {
-      width: 120px;
-      height: 120px;
+      width: 7rem;
+      height: 7rem;
     }
 
     &-title {
-      font-size: 28px;
+      font-size: 2rem;
       font-weight: bold;
       color: $mint;
-      margin-left: 20px;
-      letter-spacing: 2px;
+      margin-left: 1.5rem;
     }
 
     &-description {
-      font-size: 16px;
-      letter-spacing: 1px;
-      line-height: 32px;
+      font-size: 1rem;
+      line-height: 2;
     }
 
     &-main {
-      padding-left: 120px;
+      padding-left: 7rem;
     }
 
     &-items {
       &-title {
         color: $dark-gray;
-        font-size: 24px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        margin-top: 40px;
-        margin-bottom: 20px;
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
       }
 
       ul {
         list-style: circle;
-        margin-left: 20px;
+        margin-left: 1.5rem;
       }
 
       li {
-        margin: 10px auto;
+        margin: 0.5rem auto;
+        color: $dark-gray;
       }
     }
 
     p {
-      font-size: 16px;
-      letter-spacing: 1px;
-      line-height: 32px;
+      font-size: 1rem;
+      line-height: 2;
     }
   }
 }

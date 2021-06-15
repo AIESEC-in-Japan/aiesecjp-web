@@ -1,8 +1,7 @@
 <template>
-  <div class="info-container">
-    <div class="info-items">
-      <h2>団体情報</h2>
-      <table class="info-list">
+  <div class="aboutus-table-container">
+      <h2 class="aboutus-table-title">団体情報</h2>
+      <table class="info-table">
         <tr>
           <th>団体名</th>
           <td>特定非営利活動法人アイセック・ジャパン （AIESEC in Japan）</td>
@@ -17,7 +16,10 @@
         </tr>
         <tr>
           <th>代表</th>
-          <td>各務 茂夫 （東京大学 大学院工学系研究科教授 産学協創推進本部 副本部長）</td>
+          <td>
+            各務茂夫 （東京大学 大学院工学系研究科教授 産学協創推進本部
+            副本部長）
+          </td>
         </tr>
         <tr>
           <th>専務理事</th>
@@ -30,9 +32,12 @@
         <tr>
           <th>活動内容</th>
           <td>
-            社会教育の推進を図る活動<br>
-            国際協力の活動<br>
-            前各号の掲げる活動を行う団体の運営又は活動に関する連絡、助言又は援助の活動
+            <ul style="margin-left: 1 em">
+              <li>社会教育の推進を図る活動</li>
+              <li>国際協力の活動</li>
+            </ul>
+            前各号の掲げる活動を行う団体の運営 <br />
+            又は活動に関する連絡、助言又は援助の活動
           </td>
         </tr>
         <tr>
@@ -48,46 +53,32 @@
           <td>info@aiesec.jp</td>
         </tr>
       </table>
-    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.info-container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
+// TODO いずれtable componentを作ってここのstyleを消す。
+// 以下を消すと、原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
 
-  h2 {
-    color: $blue;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-}
+  // .info{
+  //   &-container{
+  //     width: 800px;
+  //     margin: 50px auto;
+  //   }
 
-.info-list {
-  font-size: 16px;
-  letter-spacing: 2px;
-  margin-top: 30px;
+  //   &-title{
+  //     color: $blue;
+  //     font-size: 24px;
+  //     font-weight: bold;
+  //     letter-spacing: 2px;
+  //     margin-top: 40px;
+  //     margin-bottom: 20px;
+  //   }
+    
+  //   ul {
+  //   list-style-type: square;
+  //   list-style-position: inside;
+  //   }
+  // }
 
-  th, td {
-    padding: 24px 16px;
-    border-bottom-style: solid;
-    border-bottom-width: 0.5px;
-    border-bottom-color: #caccd1;
-  }
-
-  th {
-    text-align: left;
-  }
-
-  td {
-    max-width: 660px;
-    line-height: 21px;
-  }
-}
 </style>
