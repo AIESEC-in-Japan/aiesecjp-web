@@ -2,6 +2,7 @@
 
 1. [環境構築手順](#環境構築手順)
 1. [テストやコードチェックのためのコマンド](#テストやコードチェックのためのコマンド)
+1. [ローカルでの動かし方](#ローカルでの動かし方)
 1. [使用している技術と背景](#使用している技術と背景)
 1. [参考](#参考)
 
@@ -35,7 +36,7 @@ $ git clone git@github.com:AIESEC-in-Japan/aiesecjp-web.git
 > また以下を参考にして、user nameを設定しておいて欲しいです。
 > https://docs.github.com/en/github/getting-started-with-github/setting-your-username-in-git
 
-## もしgit コマンドが使えなかったら（Mac編）
+#### もしgit コマンドが使えなかったら（Mac編）
 
 `git command not found` 的なことを言われてしまったら
 
@@ -54,7 +55,7 @@ $ git --version
 $ brew install git
 ```
 
-## もしyarn コマンドが使えなかったら（Mac編）
+#### もしyarn コマンドが使えなかったら（Mac編）
 
 ```shell
 # nodeとyarn のインストール https://classic.yarnpkg.com/en/docs/install/#mac-stable
@@ -77,11 +78,13 @@ $ npm install -g yarn
 $ brew install yarn
 ```
 
-### 静的サイトジェネレータを使いたいとき
+## ローカルでの動かし方
 
 git cloneができ,yarnが使えるようになったら
 
-必要なモジュールをインストール。 ※モジュールが追加される度に実施する必要がありますが、その時はなにかしらエラーメッセージが出るのでわかると思います
+必要なモジュールをインストール。
+※モジュールが追加される度に実施する必要がありますが、その時はなにかしらエラーメッセージが出るのでわかると思います
+
 
 ```shell
 $ yarn install
@@ -94,6 +97,8 @@ $ yarn run dev
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+
 
 ## テストやコードチェックのためのコマンド
 
@@ -112,6 +117,8 @@ $ yarn lint:css
 $ yarn lint:css
 ```
 
+
+
 ## 使用している技術と背景
 
 WIP
@@ -119,6 +126,9 @@ WIP
 - Nuxt.js
 - eslint
 - stylelint
+
+状況はかわるので、この通りにはなっていないと思うけど
+[創始者の思想](https://qiita.com/andmohiko/private/a461157904ee078003e0)
 
 
 ### ディレクトリ構成
@@ -166,3 +176,4 @@ WIP
 - [vue 公式ドキュメント](https://v3.ja.vuejs.org/)
 - [Nuxt 公式ドキュメント](https://ja.nuxtjs.org/)
 - [CSSやJavaScriptなどの詳しい情報が書いてあるサイト](https://developer.mozilla.org/ja/docs/Web)
+- [lintについて](https://zenn.dev/yukikoma/articles/bf02bb407a878e)
