@@ -57,7 +57,8 @@
   &-title {
     margin: 1rem auto;
     font-size: 2rem;
-    color: white;
+    color: $white;
+    text-align: center
   }
 
   &-text {

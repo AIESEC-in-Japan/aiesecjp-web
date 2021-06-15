@@ -62,7 +62,6 @@
     color: $blue;
     font-size: 1.5rem;
     padding-top: 6rem;
-    font-weight: bold;
     font-style: italic;
 
     &-explain {

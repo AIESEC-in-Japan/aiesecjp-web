@@ -197,7 +197,6 @@
       &-title {
         color: $dark-gray;
         font-size: 1.5rem;
-        font-weight: bold;
         margin-top: 2.5rem;
         margin-bottom: 1.5rem;
       }
@@ -209,6 +208,7 @@
 
       li {
         margin: 0.5rem auto;
+        color: $dark-gray;
       }
     }
 
