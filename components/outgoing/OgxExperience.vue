@@ -56,12 +56,15 @@ h1 {
   align-items: center;
   margin: 1rem 2rem;
 
+  /* stylelint-disable */
+  // todo 実際のデータに置き換える時にちゃんと直す
   img {
     padding: 100px;
     width: 300px;
     height: 80px;
     background: $gray;
   }
+  /* stylelint-enable */
 
   p {
     margin-top: 1rem;

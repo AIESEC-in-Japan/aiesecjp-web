@@ -68,10 +68,13 @@ h1 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 
+  /* stylelint-disable unit-disallowed-list */
   img {
     height: 65px;
     width: 230px;
   }
+
+  /* stylelint-enable unit-disallowed-list */
 
   p {
     margin-top: 2rem;

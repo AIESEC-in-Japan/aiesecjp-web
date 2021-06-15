@@ -109,6 +109,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/* stylelint-disable unit-disallowed-list */
+// ここは細かく指定したいので、許容
 
 .header-container {
   z-index: $headerIndex;
@@ -140,22 +142,22 @@ export default {
 
   .navigation {
     &-item {
-      margin-left: 15px;
+      margin-left: 1rem;
       list-style-type: none;
     }
 
     &-nested {
       position: absolute;
-      top: 80px;
+      top: 5rem;
 
       &-list {
-        margin-top: 5px;
+        margin-top: 0.5rem;
         flex-flow: column;
         border-left: $gray solid 1px;
       }
 
       &-item {
-        margin-left: 10px;
+        margin-left: 0.5rem;
         list-style-type: none;
         line-height: 30px;
       }
@@ -177,7 +179,7 @@ export default {
       color: white;
       font-weight: bold;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 1rem;
       letter-spacing: 2px;
 
       &:hover {
