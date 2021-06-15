@@ -78,8 +78,6 @@ export default {
 }
 
 .partners-content {
-  width: 7.5rem;
-  height: 7.5rem;
   margin: 2rem;
   object-fit: contain;
 }
