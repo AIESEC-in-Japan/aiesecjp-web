@@ -1,10 +1,10 @@
 <template>
-    <table class='officer-table'>
+    <div class='officer-table'>
     <tr v-for="(item, index) in listdata" :key="index">
         <th>{{item.position}}</th>
         <td>{{item.name}}</td>
     </tr>
-    </table>
+    </div>
 
 </template>
 
