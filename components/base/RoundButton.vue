@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import {basic_color} from "@/components/base/CommonColor";
+import {basic_color, hexToRgb} from "@/components/base/CommonColor";
 
 export default {
   props: {
@@ -55,10 +55,16 @@ export default {
     },
     style() {
       return {
-        // todo background colorのデフォルトセットしたので、色考える
-        backgroundColor: this.isHover ? this.textColor : this.baseColor,
+        backgroundColor: this.convertToHexWithOpacity,
         color: this.isHover ? this.baseColor : this.textColor
       };
+    },
+    convertToHexWithOpacity() {
+      // ここは背景と文字色が同化してしまうため、背景だけ透過したいがそのためには変換が必要なので
+      // ちょっと綺麗じゃないけど、変換処理を描いています。
+      const hex = this.isHover ? this.textColor : this.baseColor;
+      const rgb = hexToRgb(hex);
+      return "rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + ",0.6)";
     }
   },
 };
