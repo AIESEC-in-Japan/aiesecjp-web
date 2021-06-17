@@ -9,7 +9,7 @@
         </p>
         <RoundButton
           v-bind="this.ButtonProps"
-          :label="&quot;参加の流れや費用&quot;"
+          :label="'参加の流れや費用'"
         />
       </div>
       <div class="detail-item">
@@ -19,7 +19,7 @@
         </p>
         <RoundButton
           v-bind="this.ButtonProps"
-          :label="&quot;話を聞いてみる。&quot;"
+          :label="'話を聞いてみる。'"
         />
       </div>
     </div>
