@@ -56,15 +56,27 @@ export default {
     style() {
       return {
         backgroundColor: this.convertToHexWithOpacity,
-        color: this.isHover ? this.baseColor : this.textColor
+        color: this.textColor
       };
     },
     convertToHexWithOpacity() {
       // ここは背景と文字色が同化してしまうため、背景だけ透過したいがそのためには変換が必要なので
       // ちょっと綺麗じゃないけど、変換処理を描いています。
-      const hex = this.isHover ? this.textColor : this.baseColor;
-      const rgb = hexToRgb(hex);
-      return "rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + ",0.6)";
+      if (this.baseColor !== 'transparent') {
+        return this.isHover ? "rgba(255,255,255,0.6)" : this.baseColor;
+      }else {
+        const hex = this.isHover ? this.textColor : this.baseColor;
+        const rgb = hexToRgb(hex);
+        return "rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + ",0.6)";
+      }
+
+
+
+      // hov
+
+      // trans
+
+
     }
   },
 };
