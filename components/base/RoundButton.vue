@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import {basic_color, hexToRgb} from "@/components/base/CommonColor";
+import {basic_color} from "@/components/base/CommonColor";
 
 export default {
   props: {
@@ -55,28 +55,10 @@ export default {
     },
     style() {
       return {
-        backgroundColor: this.convertToHexWithOpacity,
-        color: this.textColor
+        backgroundColor: this.baseColor,
+        color: this.textColor,
+        opacity: this.isHover ? 0.6 : this.baseColor
       };
-    },
-    convertToHexWithOpacity() {
-      // ここは背景と文字色が同化してしまうため、背景だけ透過したいがそのためには変換が必要なので
-      // ちょっと綺麗じゃないけど、変換処理を描いています。
-      if (this.baseColor !== 'transparent') {
-        return this.isHover ? "rgba(255,255,255,0.6)" : this.baseColor;
-      }else {
-        const hex = this.isHover ? this.textColor : this.baseColor;
-        const rgb = hexToRgb(hex);
-        return "rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + ",0.6)";
-      }
-
-
-
-      // hov
-
-      // trans
-
-
     }
   },
 };
