@@ -57,7 +57,7 @@ export default {
       return {
         backgroundColor: this.baseColor,
         color: this.textColor,
-        opacity: this.isHover ? 0.6 : this.baseColor
+        opacity: this.isHover ? 0.6 : 1
       };
     }
   },
