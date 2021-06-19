@@ -24,11 +24,27 @@
         </p>
       </article>
     </div>
-    <button href="#">
-      体験記をもっと見る
-    </button>
+    <RoundButton
+      v-bind="this.ButtonProps"
+      :label="'体験記をもっと見る'"
+      class="button__margin"
+    />
   </div>
 </template>
+
+<script>
+import {basic_color} from "@/components/base/CommonColor";
+export default {
+  data() {
+    return {
+      ButtonProps: {
+        textColor: basic_color.blue,
+        size: 'large'
+      }
+    }
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .container {
@@ -80,16 +96,8 @@ h1 {
   }
 }
 
-button {
+.button__margin {
   margin: 3rem;
-  padding: 1rem 4rem;
-  color: $blue;
-  background-color: transparent;
-  border-radius: 40px;
-  border: solid 2px;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 </style>
 

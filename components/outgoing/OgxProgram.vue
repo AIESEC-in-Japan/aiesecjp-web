@@ -40,27 +40,24 @@
 
 <style scoped lang="scss">
 .container {
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/icx-corporation-internship.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url("~@/assets/images/icx-corporation-internship.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-
 h1 {
   color: $white;
 }
-
 .program {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .detail {
   padding-right: 3rem;
   padding-left: 3rem;
@@ -70,8 +67,8 @@ h1 {
 
   /* stylelint-disable unit-disallowed-list */
   img {
-    height: 65px;
-    width: 230px;
+   height: 65px;
+   width: 230px;
   }
 
   /* stylelint-enable unit-disallowed-list */
@@ -82,8 +79,7 @@ h1 {
     color: $white;
     line-height: 2;
   }
-
-  a {
+  a{
     margin-top: 2rem;
     display: inline-block;
     font-weight: bold;
