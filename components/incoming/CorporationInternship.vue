@@ -41,7 +41,7 @@
     color: $white;
     font-size: 1rem;
     letter-spacing: 2px;
-    max-width: 630px;
+    max-width: 40rem;
     line-height: 1.5;
 
     span {
