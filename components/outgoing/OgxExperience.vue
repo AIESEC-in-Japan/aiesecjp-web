@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="ogxExperience-container">
     <h1>インターシップ体験記</h1>
     <div class="articles">
       <article class="article-item">
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.container {
+.ogxExperience-container {
   min-height: 80vh;
   display: flex;
   flex-direction: column;

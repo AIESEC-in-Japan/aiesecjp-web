@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="ogxFeature-container">
     <h1>アイセックの海外インターンシップの特徴</h1>
-    <div class="feature">   
-      <div class="detail">  
+    <div class="feature">
+      <div class="detail">
         <img
           src="https://placehold.jp/240x240.png"
           alt=""
@@ -11,7 +11,7 @@
         <h2>
           実践的な<br>
           世界への挑戦機会
-        </h2>  
+        </h2>
         <p>
           <span>6週間の間、参加者は現地に存在する社会課題</span>
           <span>や企業課題に自らアプローチします。異国の</span>
@@ -20,7 +20,7 @@
           <span>密度の高い成長経験を提供します。</span>
         </p>
       </div>
-      <div class="detail">  
+      <div class="detail">
         <img
           src="https://placehold.jp/240x240.png"
           alt=""
@@ -38,7 +38,7 @@
           <span>者の成長を二人三脚で最大化します。</span>
         </p>
       </div>
-      <div class="detail">  
+      <div class="detail">
         <img
           src="https://placehold.jp/240x240.png"
           alt=""
@@ -61,7 +61,7 @@
 </template>
 
 <style scoped lang="scss">
-.container {
+.ogxFeature-container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
