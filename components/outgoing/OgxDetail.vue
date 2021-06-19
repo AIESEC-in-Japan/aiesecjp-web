@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="ogxDetail-container">
     <div class="detail">
       <h1>参加までの手続き</h1>
       <div class="detail-item">
@@ -21,7 +21,7 @@
 </template>
 
 <style scoped lang="scss">
-.container {
+.ogxDetail-container {
   min-height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/ogx-detail.jpg");
   background-size: cover;
