@@ -1,8 +1,19 @@
 <template>
-  <section class="detail-container">
+  <div class="detail-container">
     <div class="detail-bg">
       <div class="detail">
-        <h2>お問い合わせ</h2>
+        <button
+          href="#"
+          class="button-examples"
+        >
+          受け入れ実例をもっと見る
+        </button>
+        <button
+          href="#"
+          class="button-detail"
+        >
+          インターンシップの詳細を見る
+        </button>
         <p>
           <span>アイセックの海外インターンシップ受け⼊れに</span><span>興味のある団体様は、</span><span>お気軽にお問い合わせください。</span><span>弊団体のメンバーが、疑問解消のお⼿伝いや詳しい⼿続きの</span><span>ご案内をさせていただきます。</span>
         </p>
@@ -10,18 +21,18 @@
           href="#"
           class="button-contact"
         >
-          話を聞いてみる
+          話を聞いて見る
         </button>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <style scoped lang="scss">
 .detail-container {
   width: 100%;
-  min-height: 60vh;
-  background-image: url("~@/assets/images/icx/icx-detail.jpg");
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/icx-detail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 70%;
@@ -29,12 +40,13 @@
 
 .detail-bg {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 50vh;
+  background-color: $white;
 }
 
 .detail {
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -43,20 +55,13 @@
   justify-content: center;
   text-align: center;
 
-  h2 {
-    color: $white;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-    letter-spacing: 2px;
-  }
-
   p {
     color: $white;
-    font-size: 1rem;
-    padding: 0 0 3rem;
+    font-size: 14px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     letter-spacing: 2px;
     max-width: 800px;
-    line-height: 1.5;
 
     span {
       display: inline-block;

@@ -41,7 +41,7 @@
 <style scoped lang="scss">
 .container {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/icx/icx-corporation-internship.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/icx-corporation-internship.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 55%;
