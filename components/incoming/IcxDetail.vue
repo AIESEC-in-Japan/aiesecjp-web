@@ -3,44 +3,19 @@
     <div class="detail-bg">
       <div class="detail">
         <h2>お問い合わせ</h2>
-        <RoundButton
-          v-bind="this.MintButtonProps"
-          :label="'受け入れ実例をもっと見る'"
-        />
-        <RoundButton
-          v-bind="this.MintButtonProps"
-          :label="'インターンシップの詳細を見る'"
-        />
         <p>
           <span>アイセックの海外インターンシップ受け⼊れに</span><span>興味のある団体様は、</span><span>お気軽にお問い合わせください。</span><span>弊団体のメンバーが、疑問解消のお⼿伝いや詳しい⼿続きの</span><span>ご案内をさせていただきます。</span>
         </p>
-        <RoundButton
-          v-bind="this.WhiteButtonProps"
-          :label="'話を聞いて見る'"
-        />
+        <button
+          href="#"
+          class="button-contact"
+        >
+          話を聞いてみる
+        </button>
       </div>
     </div>
   </section>
 </template>
-
-<script>
-import {basic_color} from "@/components/base/CommonColor";
-export default {
-  data() {
-    return {
-      MintButtonProps: {
-        textColor: basic_color.mint,
-        size: 'large'
-      },
-      WhiteButtonProps: {
-        textColor: basic_color.white,
-        baseColor: 'transparent',
-        size: 'large'
-      }
-    }
-  }
-}
-</script>
 
 <style scoped lang="scss">
 .detail-container {
@@ -51,10 +26,12 @@ export default {
   background-size: cover;
   background-position: center 70%;
 }
+
 .detail-bg {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .detail {
   width: 100%;
   height: 60vh;
@@ -86,8 +63,16 @@ export default {
     }
   }
 }
-button {
-  margin: 1rem;
+
+.button-contact {
+  padding: 15px 90px;
+  color: $white;
+  background-color: transparent;
+  border-radius: 40px;
+  border: solid 2px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 </style>
 

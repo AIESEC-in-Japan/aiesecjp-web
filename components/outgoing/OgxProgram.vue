@@ -1,5 +1,5 @@
 <template>
-  <div class="ogxProgram-container">
+  <div class="container">
     <h1>アイセックが提供するインターンシッププログラム</h1>
     <div class="program">
       <div class="detail">
@@ -39,9 +39,9 @@
 </template>
 
 <style scoped lang="scss">
-.ogxProgram-container {
+.container {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("~@/assets/images/icx/icx-corporation-internship.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/icx/icx-corporation-internship.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 55%;
@@ -50,22 +50,28 @@
   justify-content: center;
   text-align: center;
 }
+
 h1 {
   color: $white;
 }
+
 .program {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .detail {
+  padding-right: 3rem;
+  padding-left: 3rem;
   text-align: center;
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   /* stylelint-disable unit-disallowed-list */
   img {
-   height: 65px;
-   width: 230px;
+    height: 65px;
+    width: 230px;
   }
 
   /* stylelint-enable unit-disallowed-list */
@@ -76,7 +82,8 @@ h1 {
     color: $white;
     line-height: 2;
   }
-  a{
+
+  a {
     margin-top: 2rem;
     display: inline-block;
     font-weight: bold;
