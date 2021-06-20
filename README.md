@@ -126,6 +126,7 @@ WIP
 - Nuxt.js
 - eslint
 - stylelint
+- [vuetify](https://vuetifyjs.com/)
 
 状況はかわるので、この通りにはなっていないと思うけど
 [創始者の思想](https://qiita.com/andmohiko/private/a461157904ee078003e0)
