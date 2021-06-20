@@ -38,12 +38,12 @@
   align-items: center;
   justify-content: center;
 
-  .merit-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.merit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  } 
 
   h3 {
     width: 75%;

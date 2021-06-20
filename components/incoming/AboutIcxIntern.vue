@@ -4,7 +4,8 @@
     <div class="about-main">
       <div class="about-content">
         <IconInAssetsPath
-          :data="icon_support"
+          :data="icons[0]"
+          :key="icons.src"
         />
         <h3 class="about-sub-title">
           海外からのインターン生受け入れに際しての<br>アイセックメンバーによるサポート
@@ -15,7 +16,8 @@
       </div>
       <div class="about-content">
         <IconInAssetsPath
-          :data="icon_globe"
+          :data="icons[1]"
+          :key="icons.src"
         />
         <h3 class="about-sub-title">
           世界中の学生がインターン候補生となる<br>独自のプラットフォーム
@@ -34,10 +36,10 @@
   export default {
     data() {
       return {
-        icon_support: 
+        icons: [
           {src: "images/icx/tech-support.svg", alt: ""},
-        icon_globe:
           {src: "images/icx/globe.svg", alt: ""}
+        ]
       }
     }
   }

@@ -55,13 +55,38 @@
     font-size: 1rem;
     padding: 0 0 3rem;
     letter-spacing: 2px;
-    max-width: 50rem;
+    max-width: 800px;
     line-height: 1.5;
 
     span {
       display: inline-block;
     }
   }
+}
+
+.button-examples {
+  padding: 15px 90px;
+  color: $mint;
+  background-color: transparent;
+  border-radius: 40px;
+  border: solid 2px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 80px;
+}
+
+.button-detail {
+  margin-top: 35px;
+  margin-bottom: 140px;
+  padding: 15px 68px;
+  color: $mint;
+  background-color: transparent;
+  border-radius: 40px;
+  border: solid 2px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
 .button-contact {
