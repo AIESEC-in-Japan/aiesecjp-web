@@ -1,5 +1,5 @@
 <template>
-  <section class="corporation-internship-container">
+  <div class="corporation-internship-container">
     <div class="corporation-internship">
       <h2>アイセックの企業インターンシップ</h2>
       <p>
@@ -9,40 +9,44 @@
         インターンシップの詳細はこちら
       </button>
     </div> 
-  </section>
+  </div>
 </template>
 
 <style scoped lang="scss">
 .corporation-internship-container {
   width: 100%;
-  background-image: url("~@/assets/images/icx/icx-corporation-internship.jpg");
+  height: 100vh;
+  background-image: url("~@/assets/images/icx-corporation-internship.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center 50%;
 }
 
 .corporation-internship {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
   justify-content: center;
   text-align: center;
 
   h2 {
     color: $white;
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
+    font-size: 24px;
+    padding-top: 80px;
+    padding-bottom: 60px;
     letter-spacing: 2px;
   }
 
   p {
     color: $white;
-    font-size: 1rem;
+    font-size: 16px;
+    padding: 4px;
     letter-spacing: 2px;
-    max-width: 40rem;
-    line-height: 1.5;
+    max-width: 630px;
 
     span {
       display: inline-block;
