@@ -49,7 +49,7 @@ module.exports = {
   /*
   ** style-resources
   */
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/vuetify'],
   plugins: [
     './plugins/scroll.js',
     './plugins/windowSize.js',
