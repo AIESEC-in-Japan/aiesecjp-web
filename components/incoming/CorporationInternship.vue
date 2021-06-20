@@ -5,12 +5,28 @@
       <p>
         <span>42⽇以上、3ヶ⽉未満の短期インターンシップです。</span><span>豊富な知識とスキルの持った</span><span>海外の若者をインターン⽣として</span><span>受け⼊れていただくことで、</span><span>企業様の課題や挑戦に新たな視点をもたらし、</span><span>世界を舞台にした発展に寄与いたします。</span>
       </p>
-      <button class="button">
-        インターンシップの詳細はこちら
-      </button>
+      <RoundButton
+          v-bind="this.WhiteButtonProps"
+          :label="'インターンシップの詳細を見る'"
+        />
     </div> 
   </section>
 </template>
+
+<script>
+import {basic_color} from "@/components/base/CommonColor";
+export default {
+  data() {
+    return {
+      WhiteButtonProps: {
+        textColor: basic_color.white,
+        baseColor: 'transparent',
+        size: 'large'
+      }
+    }
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .corporation-internship-container {
@@ -33,7 +49,6 @@
   h2 {
     color: $white;
     font-size: 1.5rem;
-    padding-bottom: 2rem;
     letter-spacing: 2px;
   }
 
@@ -43,6 +58,7 @@
     letter-spacing: 2px;
     max-width: 40rem;
     line-height: 1.5;
+    margin: 2rem 0;
 
     span {
       display: inline-block;
