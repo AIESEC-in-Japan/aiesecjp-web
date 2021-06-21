@@ -2,13 +2,11 @@
 
 1. [環境構築手順](#環境構築手順)
 1. [テストやコードチェックのためのコマンド](#テストやコードチェックのためのコマンド)
+1. [開発時に知しっていて欲しいこと](#開発時)
 1. [ローカルでの動かし方](#ローカルでの動かし方)
 1. [使用している技術と背景](#使用している技術と背景)
 1. [参考](#参考)
 
-
-開発する時に読んでください
-- [コーディングの心構え](docs/coding-rules.md)
 
 ## 環境構築手順
 
@@ -116,6 +114,132 @@ $ yarn lint:css
 # css only 自動で直せるところ修正
 $ yarn lint:css
 ```
+
+
+## 開発時
+
+開発する時に読んでください
+- [コーディングの心構え](docs/coding-rules.md)
+
+### git
+
+ブランチ戦略は[github Flow](https://nvie.com/posts/a-successful-git-branching-model/) に従います。
+この辺、わからなければ調べればいい記事が出てくると思います。
+[そもそも前提わからない人はこっち](https://guides.github.com/introduction/flow/)
+
+
+#### ブランチの命名規則
+
+そんなに厳密に守らなくてもいいと思いますが、できれば意識して欲しいです
+
+```shell
+# 本番環境 リリースversion と一致
+master
+
+# 開発していくブランチ
+develop
+
+# 新機能追加
+feature/{ここは規則ないです}
+
+# ドキュメント
+docs/{ここはわかりやすければ}
+
+# バグ修正
+bugfix/{任意の文字列}
+
+# 緊急対応（マージ先はmaster） 
+hotfix/{任意の文字列}
+ 
+# リリース用（マージ先はmaster）
+relase/{Date} 
+
+```
+
+#### コンフリクト解消方法
+
+github上でもできますが、基本ローカルのエディタの中で対応してください。
+
+```shell
+# まずdevelopに戻る
+git checkout develop
+
+# 最新のdevelopに更新
+git pull
+
+# 作業ブランチへ戻る
+git checkout {自分の作業ブランチ} 
+
+# コンフリクト解消、最新のdevelop取り込み
+git merge develop 
+
+```
+
+このあとコンフリクトしたファイルがこんな感じで表示されるので
+
+```shell
+Here are lines that are either unchanged from the common
+ancestor, or cleanly resolved because only one side changed.
+<<<<<<< yours:sample.txt
+Conflict resolution is hard;
+let's go shopping.
+=======
+Git makes conflict resolution easy.
+>>>>>>> theirs:sample.txt
+And here is another line that is cleanly resolved or unmodified.
+```
+
+エディタで対象ファイルを開きコンフリクトを解消したら
+対象のファイルを`git add `してください。
+
+全てのファイルでコンフリクトが解消できたら`git commit`をしましょう。
+もし英語がたくさん書いてある画面に切り替わったら、何も入力せずにエスケープボタンを押してから`:qw`で大丈夫です。（これはvimというエディタが開いているだけです。詳しくは調べてみていただきたいです。）[Vim初心者に捧ぐ実践的入門](https://qiita.com/okamos/items/c97970ab34ff55ff3167)
+
+参考
+[git merge](https://git-scm.com/docs/git-merge)
+
+
+### yarn 
+
+開発環境を整える時に使っていただいた[yarnコマンド](https://yarnpkg.com/) ですが他にもつかう場面がたくさんあります。
+
+とりあえず`package.json`に変更が加えられたときはとりえあえず`yarn`コマンドは実行する必要があると思って差し支えないです。
+
+なんかよくわからないエラーが出てきたらまずはyarn installのコマンドを実行してみてください。
+
+
+#### dependabotの対応
+脆弱性の対応でdependabotが頑張ってくれています。
+その影響範囲を調べるためのコマンドを紹介します。
+
+
+```shell
+$ yarn why ws
+yarn why v1.22.10
+[1/4] 🤔 Why do we have the module "ws"...?
+[2/4] 🚚 Initialising dependency graph...
+[3/4] 🔍 Finding dependency...
+[4/4] 🚡 Calculating file sizes...
+=> Found "ws@6.2.2"
+info Reasons this module exists
+
+"nuxt#@nuxt#webpack#webpack-bundle-analyzer" depends on it
+Hoisted from "nuxt#@nuxt#webpack#webpack-bundle-analyzer#ws"
+info Disk size without dependencies: "136KB"
+info Disk size with unique dependencies: "164KB"
+info Disk size with transitive dependencies: "164KB"
+info Number of shared dependencies: 1
+✨ Done in 0.74s.
+```
+
+このように `yarn why`のコマンドを実行すると、影響範囲を出してくれるので、それをみて検証すべき動作を判断すればいいと思います。
+
+
+#### Nuxtフレームワークのアップグレード
+以下参考にしてみてください。
+yarn,node module周りが壊れた時も同様に対処することができるので覚えていて損はないです。
+[nuxt upgrade](https://ja.nuxtjs.org/docs/2.x/get-started/upgrading/)
+
 
 
 
