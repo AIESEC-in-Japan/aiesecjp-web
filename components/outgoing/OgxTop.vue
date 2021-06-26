@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="ogxTop-container">
     <section class="ogx-top">
       <h1 class="title">
         Experience the world with AIESEC
@@ -12,7 +12,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-.container {
+.ogxTop-container {
   background-image: url("~@/assets/images/ogx_top_background.jpg");
   background-position: center;
   background-size: cover;
