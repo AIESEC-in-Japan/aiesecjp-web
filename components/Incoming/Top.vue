@@ -21,7 +21,7 @@
   width: 100%;
   background-image: url("~@/assets/images/icx/icx-top.jpg");
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 

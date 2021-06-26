@@ -41,7 +41,7 @@
 <style scoped lang="scss">
 .ogxProgram-container {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("~@/assets/images/icx/icx-corporation-internship.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/icx/icx-corporation-internship.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 55%;
@@ -50,22 +50,25 @@
   justify-content: center;
   text-align: center;
 }
+
 h1 {
   color: $white;
 }
+
 .program {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .detail {
   text-align: center;
   padding: 3rem;
 
   /* stylelint-disable unit-disallowed-list */
   img {
-   height: 65px;
-   width: 230px;
+    height: 65px;
+    width: 230px;
   }
 
   /* stylelint-enable unit-disallowed-list */
@@ -76,7 +79,8 @@ h1 {
     color: $white;
     line-height: 2;
   }
-  a{
+
+  a {
     margin-top: 2rem;
     display: inline-block;
     font-weight: bold;

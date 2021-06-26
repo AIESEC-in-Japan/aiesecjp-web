@@ -24,7 +24,7 @@
         </p>
       </article>
     </div>
-    <RoundButton
+    <BaseRoundButton
       v-bind="this.ButtonProps"
       :label="'体験記をもっと見る'"
       class="button__margin"
