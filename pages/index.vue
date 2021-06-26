@@ -1,10 +1,10 @@
 <template>
   <section class="container">
     <div>
-      <MainView />
-      <AboutAiesec />
-      <OurPrograms />
-      <OurPartners />
+      <TopMainView />
+      <TopAboutAiesec />
+      <TopOurPrograms />
+      <TopOurPartners />
     </div>
   </section>
 </template>

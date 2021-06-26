@@ -103,6 +103,8 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 ```shell
 # js & css
 $ yarn lint
+# js & css 自動で直せるところ修正
+$ yarn lint:fix
 
 # js only
 $ yarn lint:es
@@ -112,7 +114,14 @@ $ yarn lint:es --fix
 # css only
 $ yarn lint:css
 # css only 自動で直せるところ修正
-$ yarn lint:css
+$ yarn lint:css --fix
+```
+
+## UI test tool
+UIテストようのツールとして[storybook](https://storybook.js.org/docs/vue/get-started)を使用しています。
+
+```shell
+$ yarn storybook
 ```
 
 

@@ -3,7 +3,7 @@
     <h2>アイセックのインターンシップの受け入れ</h2>
     <div class="about-main">
       <div class="about-content">
-        <IconInAssetsPath
+        <BaseIconInAssetsPath
           :data="icon_support"
         />
         <h3 class="about-sub-title">
@@ -14,7 +14,7 @@
         </p>
       </div>
       <div class="about-content">
-        <IconInAssetsPath
+        <BaseIconInAssetsPath
           :data="icon_globe"
         />
         <h3 class="about-sub-title">
@@ -34,7 +34,7 @@
   export default {
     data() {
       return {
-        icon_support: 
+        icon_support:
           {src: "images/icx/tech-support.svg", alt: ""},
         icon_globe:
           {src: "images/icx/globe.svg", alt: ""}

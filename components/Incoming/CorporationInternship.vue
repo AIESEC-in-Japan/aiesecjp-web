@@ -5,11 +5,11 @@
       <p>
         <span>42⽇以上、3ヶ⽉未満の短期インターンシップです。</span><span>豊富な知識とスキルの持った</span><span>海外の若者をインターン⽣として</span><span>受け⼊れていただくことで、</span><span>企業様の課題や挑戦に新たな視点をもたらし、</span><span>世界を舞台にした発展に寄与いたします。</span>
       </p>
-      <RoundButton
-          v-bind="this.WhiteButtonProps"
-          :label="'インターンシップの詳細を見る'"
-        />
-    </div> 
+      <BaseRoundButton
+        v-bind="this.WhiteButtonProps"
+        :label="'インターンシップの詳細を見る'"
+      />
+    </div>
   </section>
 </template>
 

@@ -6,7 +6,7 @@
         v-for="logo in logos"
         :key="logo.src"
       >
-        <LazyIconInAssetsPath
+        <BaseIconInAssetsPath
           :data="logo"
           class="partners-content"
         />
