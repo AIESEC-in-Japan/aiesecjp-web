@@ -17,7 +17,7 @@
 
 
 <style scoped lang="scss">
-.icxTop{
+.icxTop {
   &-container {
     width: 100%;
     background-image: url("~@/assets/images/icx/icx-top.jpg");
@@ -25,6 +25,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   &-wrapper {
     display: flex;
     justify-content: center;
@@ -35,13 +36,12 @@
   }
 }
 
-
 img {
   margin: 1rem;
   display: flex;
   width: 25rem;
 
-  @include sp{
+  @include sp {
     width: 80%;
   }
 }
