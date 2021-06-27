@@ -36,7 +36,7 @@
                   class="navigation-link"
                   to="/outgoing"
                 >
-                  Students
+                  For Students
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
@@ -44,7 +44,7 @@
                   class="navigation-link"
                   to="/incoming"
                 >
-                  Companies
+                  For Companies
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
@@ -154,11 +154,12 @@ export default {
         right: 0;
         transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
         line-height: 2.5rem;
+        width: 100vh;
       }
     }
 
     &-item {
-      margin-left: 1rem;
+      margin-left: 3rem;
       list-style-type: none;
 
       @include sp {
@@ -175,16 +176,20 @@ export default {
     &-nested {
       position: absolute;
       top: 5rem;
+      padding: 1rem;
+      background-color: $white;
+      box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
 
       @include sp {
         position: relative;
         top: 0;
+        padding: 0.5rem;
+        box-shadow: none;
       }
 
       &-list {
-        margin-top: 0.5rem;
         flex-flow: column;
-        border-left: $gray solid 1px;
+        padding-left: 0;
 
         @include sp {
           border-left: none;
@@ -193,7 +198,7 @@ export default {
       }
 
       &-item {
-        margin-left: 0.5rem;
+        padding: 0.5rem;
         list-style-type: none;
         line-height: 2rem;
       }
