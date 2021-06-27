@@ -60,8 +60,8 @@
         </li>
         <li class="navigation-item">
           <nuxt-link
+            to="/global-youth-dialogue"
             class="navigation-link"
-            to=""
           >
             Events
           </nuxt-link>

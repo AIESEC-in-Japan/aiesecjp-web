@@ -53,6 +53,14 @@
             海外インターンシップに参加する
           </nuxt-link>
         </li>
+        <li>
+          <nuxt-link
+            class="footer-content-link"
+            to="/global-youth-dialogue"
+          >
+            Global Youth Dialogue
+          </nuxt-link>
+        </li>
       </ul>
     </div>
     <div class="footer-content">
