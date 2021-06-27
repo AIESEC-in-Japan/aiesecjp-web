@@ -1,19 +1,20 @@
 <template>
-  <div class="global-youth-dialogue-container">
+  <section class="global-youth-dialogue-container ">
     <h1>About Global Youth Dialogue</h1>
     <p class="explain-text">
-      海外の学生との様々ない会話を通じて。世界を広く、自分をより深く知ることのできる、主に大学生を対象にした５日間のオンラインイベントです。
+      海外の学生との様々ない会話を通じて。<br>
+      世界を広く、自分をより深く知ることのできる、主に大学生を対象にした５日間のオンラインイベントです。<br>
       海外の学生とペアを組み、日替わりで設定される会話のトピックに基づいて自分や世界のことを話すことができます。
     </p>
     <div class="feature">
       <div class="detail">
         <img
+          alt="topics"
           src="@/assets/images/global-youth-dialogue/notification.svg"
-          alt=""
-          class="partners-content"
         >
         <h2>
-          毎日トピックが設定されるので、話題には困りません。
+          毎日トピックが設定されるので、<br>
+          話題には困りません。
         </h2>
         <p>
           滝に渡るトピックが毎日用意されているので、「海外の学生と話してみたいけど、何を話したらいいのかわからない！」という方もご心配なく。
@@ -21,12 +22,12 @@
       </div>
       <div class="detail">
         <img
+          alt="conversation"
           src="@/assets/images/global-youth-dialogue/message.svg"
-          alt=""
-          class="partners-content"
         >
         <h2>
-          自分のことから社会のことまで、英語で様々な会話ができます。
+          自分のことから社会のことまで、<br>
+          英語で様々な会話ができます。
         </h2>
         <p>
           会話をする上でのちょっとしたアドバイスやお役立ち会話表現なども提供しているので、普段は英語であまり話さない方も、ぜひ参加をご検討ください！
@@ -34,60 +35,75 @@
       </div>
       <div class="detail">
         <img
+          alt="global"
           src="@/assets/images/global-youth-dialogue/global.svg"
-          alt=""
-          class="partners-content"
         >
         <h2>
-          オンラインでも、外国の「今」に触れられます。
+          オンラインでも、<br>
+          外国の「今」に触れられます。
         </h2>
         <p>
           海外にはなかなか行きずらい時代ですが、global youth dialogueでは海外の大学生の生の声を聞くことができます！海外の「今」を聞いてみませんか？
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .global-youth-dialogue-container {
-  min-height: 100vh;
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 1rem;
+  margin: 0 auto;
+  width: 80%;
 }
 
 h1 {
   color: $deep-blue;
 }
 
-.explain-text{
+.explain-text {
   font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
 
 .feature {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  @include sp {
+    flex-direction: column;
+  }
 }
 
 .detail {
   width: 25rem;
-  margin-bottom: 4rem;
+  margin: 4rem 1rem;
+
+  @include sp {
+    width: 90%;
+    margin: 1rem;
+  }
 
   img {
-    border-radius: 30px;
+    width: 12rem;
+
+    @include sp {
+      width: 6rem;
+    }
   }
 
   h2 {
     font-weight: bold;
     line-height: 1.5;
     color: $deep-blue;
-    letter-spacing: 2px;
     margin: 1rem 0;
   }
 
