@@ -47,7 +47,7 @@
               <li class="navigation-nested-item">
                 <nuxt-link
                   class="navigation-link"
-                  to=""
+                  to="/safety"
                 >
                   安全への取り組み
                 </nuxt-link>
@@ -114,7 +114,7 @@ export default {
   right: 0;
   left: 0;
   width: 100vw;
-  height: 80px;
+  height: 5rem;
   line-height: 80px;
   padding: 0 5%;
   border-bottom-style: solid;
@@ -147,7 +147,7 @@ export default {
       &-item {
         margin-left: 0.5rem;
         list-style-type: none;
-        line-height: 30px;
+        line-height: 2rem;
       }
     }
 

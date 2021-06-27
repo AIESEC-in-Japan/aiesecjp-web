@@ -1,7 +1,7 @@
 <template>
   <div>
     <BaseHeader />
-    <nuxt />
+    <nuxt class="nuxt-with-header" />
     <BaseFooter />
   </div>
 </template>
@@ -22,6 +22,10 @@ html {
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
+}
+/* header の分 下げる*/
+.nuxt-with-header {
+  margin-top: 5rem;
 }
 
 </style>
