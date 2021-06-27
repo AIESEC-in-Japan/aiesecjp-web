@@ -58,7 +58,7 @@
         </li>
         <li class="navigation-item">
           <nuxt-link
-            to=""
+            to="/global-youth-dialogue"
             :class="navigationLinkClass"
           >
             オンラインイベントについて
