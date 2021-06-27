@@ -178,7 +178,7 @@ export default {
       top: 5rem;
       padding: 1rem;
       background-color: $white;
-      box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
 
       @include sp {
         position: relative;
