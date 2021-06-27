@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <v-app>
     <BaseHeader />
     <nuxt class="nuxt-with-header" />
     <BaseFooter />
-  </div>
+  </v-app>
 </template>
 
 <style>
@@ -23,7 +23,8 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-/* header の分 下げる*/
+
+/* header の分 下げる */
 .nuxt-with-header {
   margin-top: 5rem;
 }

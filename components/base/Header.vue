@@ -11,7 +11,10 @@
           >
         </nuxt-link>
       </div>
-      <ul>
+      <ul
+        v-show="!this.$isMobile() || drawer"
+        class="navigation-list"
+      >
         <li
           class="navigation-item"
           @mouseleave="mouseLeaveAction"
@@ -24,7 +27,7 @@
             Services
           </nuxt-link>
           <div
-            v-show="isShowNestedItems"
+            v-show="!this.$isMobile() ? isShowNestedItems : drawer"
             class="navigation-nested"
           >
             <ul class="navigation-nested-list">
@@ -33,7 +36,7 @@
                   class="navigation-link"
                   to="/outgoing"
                 >
-                  海外インターンシップに参加する
+                  Students
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
@@ -41,7 +44,7 @@
                   class="navigation-link"
                   to="/incoming"
                 >
-                  海外インターン生を受け入れる
+                  Companies
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
@@ -49,7 +52,7 @@
                   class="navigation-link"
                   to="/safety"
                 >
-                  安全への取り組み
+                  Safety
                 </nuxt-link>
               </li>
             </ul>
@@ -80,6 +83,11 @@
           </nuxt-link>
         </li>
       </ul>
+      <v-app-bar-nav-icon
+        v-show="this.$isMobile()"
+        class="navigation-mobile-icon"
+        @click.stop="drawer = !drawer"
+      />
     </nav>
   </header>
 </template>
@@ -88,7 +96,8 @@
 export default {
   data() {
     return {
-      isShowNestedItems: false
+      isShowNestedItems: false,
+      drawer: false,
     }
   },
   methods: {
@@ -97,8 +106,8 @@ export default {
     },
     mouseLeaveAction() {
       this.isShowNestedItems = false
-    }
-  },
+    },
+  }
 }
 
 </script>
@@ -115,7 +124,7 @@ export default {
   left: 0;
   width: 100vw;
   height: 5rem;
-  line-height: 80px;
+  line-height: 5rem;
   padding: 0 5%;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
@@ -123,25 +132,64 @@ export default {
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
   background-color: white;
 
-  ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .navigation {
+    &-mobile {
+      &-icon {
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: flex-end;
+
+      @include sp {
+        z-index: $headerDrawerIndex;
+        background-color: $white;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+        line-height: 2.5rem;
+      }
+    }
+
     &-item {
       margin-left: 1rem;
       list-style-type: none;
+
+      @include sp {
+        padding-right: 1rem;
+        border-top: $gray dashed 1px;
+        line-height: 2.5rem;
+
+        &:first-child {
+          border-top: none;
+        }
+      }
     }
 
     &-nested {
       position: absolute;
       top: 5rem;
 
+      @include sp {
+        position: relative;
+        top: 0;
+      }
+
       &-list {
         margin-top: 0.5rem;
         flex-flow: column;
         border-left: $gray solid 1px;
+
+        @include sp {
+          border-left: none;
+          margin-top: 0;
+        }
       }
 
       &-item {
@@ -160,11 +208,15 @@ export default {
       img {
         width: 300px;
         max-height: 60px;
+
+        @include sp {
+          width: 40vw;
+        }
       }
     }
 
     &-link {
-      color: $gray;
+      color: $dark-gray;
       font-weight: bold;
       text-decoration: none;
       font-size: 1rem;
