@@ -50,6 +50,11 @@ export default {
   width: 80%;
 }
 
+section {
+  min-height: min-content;
+  padding: 3rem 1rem;
+}
+
 h1 {
   color: $deep-blue;
 }
@@ -68,6 +73,5 @@ img {
   margin-bottom: 1rem;
   line-height: 1.5rem;
 }
-
 
 </style>

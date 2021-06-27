@@ -86,6 +86,10 @@ button {
 
   &-large {
     width: 25rem;
+
+    @include sp {
+      width: 90%;
+    }
   }
 }
 </style>
