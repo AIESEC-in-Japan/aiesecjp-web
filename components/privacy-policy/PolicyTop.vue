@@ -63,7 +63,6 @@
       letter-spacing: 0;
       text-align: center;
     }
-
   }
 
   &-text {
