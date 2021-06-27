@@ -7,7 +7,7 @@
       </p>
       <BaseRoundButton
         v-bind="this.WhiteButtonProps"
-        :label="'インターンシップの詳細を見る'"
+        :label="'お問い合わせはこちら'"
       />
     </div>
   </section>
