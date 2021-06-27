@@ -1,8 +1,9 @@
 export const basic_color = {
   'blue': '#037Ef3',
-  'light-gray': '#F3F4F7',
+  'deepBlue': '#0070bf',
+  'lightGray': '#F3F4F7',
   'gray': '#CACCD1',
-  'dark-gray': '#52565E',
+  'darkGray': '#52565E',
   'yellow': '#FFC845',
   'orange': '#F48924',
   'red': '#F85A40',
