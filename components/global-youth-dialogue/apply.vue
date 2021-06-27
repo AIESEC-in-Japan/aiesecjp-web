@@ -15,7 +15,7 @@
       ご不明点などは、お気軽に公式LINEからお問い合わせください！
     </p>
     <BaseRoundButton
-      v-bind="this.WhiteButtonProps"
+      v-bind="this.ButtonProps"
       :label="'公式ラインはこちらから'"
       @click="window.open('https://lin.ee/GaZkjsN')"
     />
@@ -28,7 +28,7 @@ import {basic_color} from "@/components/base/CommonColor";
 export default {
   data() {
     return {
-      WhiteButtonProps: {
+      ButtonProps: {
         textColor: basic_color.white,
         baseColor: basic_color.deepBlue,
         size: 'large'
