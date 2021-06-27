@@ -22,4 +22,8 @@ p {
 section {
   min-height: 80vh;
   max-height: 50rem;
+
+  @include tab {
+    max-height: max-content;
+  }
 }
