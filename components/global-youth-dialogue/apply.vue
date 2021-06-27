@@ -17,7 +17,6 @@
     <BaseRoundButton
       v-bind="this.ButtonProps"
       :label="'公式ラインはこちらから'"
-      @click="window.open('https://lin.ee/GaZkjsN')"
     />
   </section>
 </template>
@@ -31,7 +30,8 @@ export default {
       ButtonProps: {
         textColor: basic_color.white,
         baseColor: basic_color.deepBlue,
-        size: 'large'
+        size: 'large',
+        url: 'https://lin.ee/GaZkjsN'
       }
     }
   }

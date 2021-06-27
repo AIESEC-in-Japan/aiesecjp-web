@@ -2,6 +2,7 @@
   <button
     :class="classes"
     :style="style"
+    @click="openExtraLink"
     @mouseleave="mouseLeaveAction"
     @mouseover="mouseOverAction"
   >
@@ -14,6 +15,12 @@ import {basic_color} from "@/components/base/CommonColor";
 
 export default {
   props: {
+    // 一旦ボタンの挙動は外部への遷移とする。モーダルが開くとかも想定されるが
+    // 今回は考慮せず。必要になったら実装する方針。
+    url: {
+      type: String,
+      default: '/'
+    },
     label: {
       type: String,
       required: true
@@ -45,6 +52,9 @@ export default {
     },
     mouseLeaveAction() {
       this.isHover = false;
+    },
+    openExtraLink(){
+      window.open(this.url, '_blank');
     }
   },
   computed: {

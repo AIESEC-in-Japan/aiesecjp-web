@@ -4,5 +4,6 @@
     <GlobalYouthDialogueDetail />
     <GlobalYouthDialogueVoice />
     <GlobalYouthDialogueApply />
+    <GlobalYouthDialogueFixedFooter />
   </div>
 </template>

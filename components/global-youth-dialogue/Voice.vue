@@ -3,7 +3,6 @@
     <BaseRoundButton
       v-bind="this.ButtonProps"
       :label="'参加者の声はこちら'"
-      @click="window.open('https://note.com/aiesec_japan/n/n507bb45b442a')"
     />
   </div>
 </template>
@@ -17,7 +16,8 @@ export default {
       ButtonProps: {
         textColor: basic_color.white,
         baseColor: basic_color.deepBlue,
-        size: 'large'
+        size: 'large',
+        url:'https://note.com/aiesec_japan/n/n507bb45b442a'
       }
     }
   }
