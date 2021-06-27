@@ -2,12 +2,12 @@
   <section class="policy-container">
     <div class="policy-wrapper">
       <h1 class="policy-title">
-        アイセック・ジャパンのプライバシーポリシー
+        アイセック・ジャパン<br v-show="this.$isMobile()">の<br v-show="this.$isMobile()">プライバシーポリシー
       </h1>
       <p class="policy-text">
         特定非営利活動法人アイセック・ジャパンは、<br>
-        海外インターンシップに参加される皆様をはじめとする関係者の皆様のプライバシーを尊重し、<br>
-        個人情報の取り扱いに関して以下のような指針を定め、<br>
+        海外インターンシップに参加される<br v-show="this.$isMobile()">皆様をはじめとする 関係者の皆様の<br v-show="this.$isMobile()">プライバシーを尊重し、<br>
+        個人情報の取り扱いに関して<br v-show="this.$isMobile()">以下のような指針を定め、<br>
         それに従ってその保護に努めております。
       </p>
     </div>
@@ -48,12 +48,22 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-weight: bold;
+
+    @include sp {
+      width: 90%;
+    }
   }
 
   &-title {
     margin: 1.5rem auto;
     font-size: 2rem;
     color: white;
+
+    @include sp {
+      letter-spacing: 0;
+      text-align: center;
+    }
+
   }
 
   &-text {
