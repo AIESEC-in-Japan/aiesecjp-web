@@ -67,6 +67,11 @@ h1 {
   color: $deep-blue;
 }
 
+section {
+  min-height: min-content;
+  padding: 3rem 1rem;
+}
+
 .explain-text {
   font-weight: bold;
   font-size: 1rem;
