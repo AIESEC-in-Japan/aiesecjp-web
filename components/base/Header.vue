@@ -1,7 +1,6 @@
 <template>
   <header
     class="header-container"
-    :class="headerContainerClass"
   >
     <nav>
       <div class="navigation-logo">
@@ -19,10 +18,10 @@
           @mouseover="mouseOverAction"
         >
           <nuxt-link
+            class="navigation-link"
             to=""
-            :class="navigationLinkClass"
           >
-            海外インターンシップについて
+            Services
           </nuxt-link>
           <div
             v-show="isShowNestedItems"
@@ -31,24 +30,24 @@
             <ul class="navigation-nested-list">
               <li class="navigation-nested-item">
                 <nuxt-link
+                  class="navigation-link"
                   to="/outgoing"
-                  :class="navigationLinkClass"
                 >
                   海外インターンシップに参加する
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
                 <nuxt-link
+                  class="navigation-link"
                   to="/incoming"
-                  :class="navigationLinkClass"
                 >
                   海外インターン生を受け入れる
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
                 <nuxt-link
+                  class="navigation-link"
                   to=""
-                  :class="navigationLinkClass"
                 >
                   安全への取り組み
                 </nuxt-link>
@@ -58,18 +57,26 @@
         </li>
         <li class="navigation-item">
           <nuxt-link
+            class="navigation-link"
             to=""
-            :class="navigationLinkClass"
           >
-            オンラインイベントについて
+            Events
           </nuxt-link>
         </li>
         <li class="navigation-item">
           <nuxt-link
+            class="navigation-link"
             to="/about"
-            :class="navigationLinkClass"
           >
             About Us
+          </nuxt-link>
+        </li>
+        <li class="navigation-item">
+          <nuxt-link
+            class="navigation-link"
+            to="/about"
+          >
+            Contact Us
           </nuxt-link>
         </li>
       </ul>
@@ -92,18 +99,6 @@ export default {
       this.isShowNestedItems = false
     }
   },
-  computed: {
-    isScrollOverTopSection() {
-      return this.$window.pageYOffset > this.$basicSectionSize();
-    },
-    // vueの標準的な動的classの実装です。 https://jp.vuejs.org/v2/guide/class-and-style.html
-    headerContainerClass() {
-      return this.isScrollOverTopSection ? 'header-container__white' : 'header-container';
-    },
-    navigationLinkClass() {
-      return this.isScrollOverTopSection ? 'navigation-link__white' : 'navigation-link';
-    },
-  }
 }
 
 </script>
@@ -118,7 +113,6 @@ export default {
   top: 0;
   right: 0;
   left: 0;
-  background-color: transparent;
   width: 100vw;
   height: 80px;
   line-height: 80px;
@@ -127,13 +121,7 @@ export default {
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-
-  &__white {
-    @extend .header-container;
-
-    background-color: white;
-    border-bottom: none;
-  }
+  background-color: white;
 
   ul {
     display: flex;
@@ -176,7 +164,7 @@ export default {
     }
 
     &-link {
-      color: white;
+      color: $gray;
       font-weight: bold;
       text-decoration: none;
       font-size: 1rem;
@@ -184,12 +172,6 @@ export default {
 
       &:hover {
         opacity: 0.7;
-      }
-
-      &__white {
-        @extend .navigation-link;
-
-        color: $gray;
       }
     }
   }
