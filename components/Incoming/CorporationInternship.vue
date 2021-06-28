@@ -87,7 +87,7 @@ export default {
   }
 
   .button__wrapper {
-    margin-top: 4rem;
+    margin-top: 2rem;
 
     @include sp {
       width: 90vw;
