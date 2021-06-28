@@ -1,9 +1,9 @@
 <template>
   <section class="container">
     <div>
-      <OfficerList />
-      <AdvisorList />
-      <OrganizationInfo />
+      <AboutOfficerList />
+      <AboutAdvisorList />
+      <AboutOrganizationInfo />
     </div>
   </section>
 </template>

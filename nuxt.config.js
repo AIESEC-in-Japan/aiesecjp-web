@@ -16,10 +16,11 @@ module.exports = {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
+  // auto import
+  components: true,
   /*
   ** Customize the progress bar color
   */
-  components: true,
   loading: {color: '#3B8070'},
   /*
   ** Build configuration
@@ -49,7 +50,7 @@ module.exports = {
   /*
   ** style-resources
   */
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/vuetify'],
   plugins: [
     './plugins/scroll.js',
     './plugins/windowSize.js',
@@ -64,5 +65,12 @@ module.exports = {
   env: {
     API_KEY
   },
+  // see https://storybook.nuxtjs.org
+  storybook: {
+    stories: [
+      '~/stories/**/*.stories.js',
+      "~/components/**/stories/**/*.stories.@(js|vue)"
+    ],
+  }
 }
 

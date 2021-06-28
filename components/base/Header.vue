@@ -1,7 +1,6 @@
 <template>
   <header
     class="header-container"
-    :class="headerContainerClass"
   >
     <nav>
       <div class="navigation-logo">
@@ -12,45 +11,48 @@
           >
         </nuxt-link>
       </div>
-      <ul>
+      <ul
+        v-show="!this.$isMobile() || drawer"
+        class="navigation-list"
+      >
         <li
           class="navigation-item"
           @mouseleave="mouseLeaveAction"
           @mouseover="mouseOverAction"
         >
           <nuxt-link
+            class="navigation-link"
             to=""
-            :class="navigationLinkClass"
           >
-            海外インターンシップについて
+            Services
           </nuxt-link>
           <div
-            v-show="isShowNestedItems"
+            v-show="!this.$isMobile() ? isShowNestedItems : drawer"
             class="navigation-nested"
           >
             <ul class="navigation-nested-list">
               <li class="navigation-nested-item">
                 <nuxt-link
+                  class="navigation-link"
                   to="/outgoing"
-                  :class="navigationLinkClass"
                 >
-                  海外インターンシップに参加する
+                  For Students
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
                 <nuxt-link
+                  class="navigation-link"
                   to="/incoming"
-                  :class="navigationLinkClass"
                 >
-                  海外インターン生を受け入れる
+                  For Companies
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
                 <nuxt-link
-                  to=""
-                  :class="navigationLinkClass"
+                  class="navigation-link"
+                  to="/safety"
                 >
-                  安全への取り組み
+                  Safety
                 </nuxt-link>
               </li>
             </ul>
@@ -58,21 +60,34 @@
         </li>
         <li class="navigation-item">
           <nuxt-link
-            to=""
-            :class="navigationLinkClass"
+            to="/global-youth-dialogue"
+            class="navigation-link"
           >
-            オンラインイベントについて
+            Events
           </nuxt-link>
         </li>
         <li class="navigation-item">
           <nuxt-link
+            class="navigation-link"
             to="/about"
-            :class="navigationLinkClass"
           >
             About Us
           </nuxt-link>
         </li>
+        <li class="navigation-item">
+          <nuxt-link
+            class="navigation-link"
+            to="/about"
+          >
+            Contact Us
+          </nuxt-link>
+        </li>
       </ul>
+      <v-app-bar-nav-icon
+        v-show="this.$isMobile()"
+        class="navigation-mobile-icon"
+        @click.stop="drawer = !drawer"
+      />
     </nav>
   </header>
 </template>
@@ -81,7 +96,8 @@
 export default {
   data() {
     return {
-      isShowNestedItems: false
+      isShowNestedItems: false,
+      drawer: false,
     }
   },
   methods: {
@@ -90,18 +106,6 @@ export default {
     },
     mouseLeaveAction() {
       this.isShowNestedItems = false
-    }
-  },
-  computed: {
-    isScrollOverTopSection() {
-      return this.$window.pageYOffset > this.$basicSectionSize();
-    },
-    // vueの標準的な動的classの実装です。 https://jp.vuejs.org/v2/guide/class-and-style.html
-    headerContainerClass() {
-      return this.isScrollOverTopSection ? 'header-container__white' : 'header-container';
-    },
-    navigationLinkClass() {
-      return this.isScrollOverTopSection ? 'navigation-link__white' : 'navigation-link';
     },
   }
 }
@@ -109,6 +113,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/* stylelint-disable unit-disallowed-list */
+// ここは細かく指定したいので、許容
 
 .header-container {
   z-index: $headerIndex;
@@ -116,48 +122,85 @@ export default {
   top: 0;
   right: 0;
   left: 0;
-  background-color: transparent;
   width: 100vw;
-  height: 80px;
-  line-height: 80px;
+  height: 5rem;
+  line-height: 5rem;
   padding: 0 5%;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
   border-bottom-color: $gray;
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-
-  &__white {
-    @extend .header-container;
-
-    background-color: white;
-    border-bottom: none;
-  }
-
-  ul {
-    display: flex;
-    justify-content: flex-end;
-  }
+  background-color: white;
 
   .navigation {
+    &-mobile {
+      &-icon {
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: flex-end;
+
+      @include sp {
+        z-index: $headerDrawerIndex;
+        background-color: $white;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+        line-height: 2.5rem;
+        width: 100vw;
+      }
+    }
+
     &-item {
-      margin-left: 15px;
+      margin-left: 3rem;
       list-style-type: none;
+
+      @include sp {
+        padding-right: 1rem;
+        border-top: $gray dashed 1px;
+        line-height: 2.5rem;
+
+        &:first-child {
+          border-top: none;
+        }
+      }
     }
 
     &-nested {
       position: absolute;
-      top: 80px;
+      top: 5rem;
+      padding: 1rem;
+      background-color: $white;
+      box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+
+      @include sp {
+        position: relative;
+        top: 0;
+        padding: 0.5rem;
+        box-shadow: none;
+      }
 
       &-list {
-        margin-top: 5px;
         flex-flow: column;
-        border-left: $gray solid 1px;
+        padding-left: 0;
+
+        @include sp {
+          border-left: none;
+          margin-top: 0;
+        }
       }
 
       &-item {
-        margin-left: 10px;
+        padding: 0.5rem;
         list-style-type: none;
-        line-height: 30px;
+        line-height: 2rem;
       }
     }
 
@@ -170,24 +213,22 @@ export default {
       img {
         width: 300px;
         max-height: 60px;
+
+        @include sp {
+          width: 40vw;
+        }
       }
     }
 
     &-link {
-      color: white;
+      color: $dark-gray;
       font-weight: bold;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 1rem;
       letter-spacing: 2px;
 
       &:hover {
         opacity: 0.7;
-      }
-
-      &__white {
-        @extend .navigation-link;
-
-        color: $gray;
       }
     }
   }

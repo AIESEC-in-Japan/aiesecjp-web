@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: '新機能追加'
-labels: 'new feature'
+title: 新機能追加
+labels: new feature
 assignees: ''
 
 ---
@@ -16,4 +16,3 @@ assignees: ''
 ## タスク
 - [ ] aa
 - [ ] aa
-
