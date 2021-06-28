@@ -4,7 +4,10 @@
       <div class="detail">
         <h2>お問い合わせ</h2>
         <p>
-          <span>アイセックの海外インターンシップ受け⼊れに</span><span>興味のある団体様は、</span><span>お気軽にお問い合わせください。</span><span>弊団体のメンバーが、疑問解消のお⼿伝いや詳しい⼿続きの</span><span>ご案内をさせていただきます。</span>
+          アイセックの海外インターンシップ受け⼊れに<br>興味のある団体様は、<br>お気軽にお問い合わせください。
+        </p>
+        <p>
+          弊団体のメンバーが、疑問解消のお⼿伝いや詳しい⼿続きの<br>ご案内をさせていただきます。
         </p>
         <BaseRoundButton
           v-bind="this.WhiteButtonProps"
@@ -17,6 +20,7 @@
 
 <script>
 import {basic_color} from "@/components/base/CommonColor";
+
 export default {
   data() {
     return {
@@ -30,7 +34,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .detail-container {
   width: 100%;
   min-height: 60vh;
@@ -67,19 +71,24 @@ export default {
     color: $white;
     font-size: 1rem;
     font-weight: bold;
-    padding-bottom: 1rem;
     letter-spacing: 2px;
     max-width: 50rem;
     line-height: 1.5;
 
-    span {
-      display: inline-block;
+    @include sp {
+      width: 90%;
     }
   }
 }
 
 button {
   margin: 1rem;
+}
+
+@include sp {
+  br {
+    display: none;
+  }
 }
 </style>
 

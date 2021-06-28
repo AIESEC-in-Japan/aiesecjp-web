@@ -80,10 +80,6 @@ export default {
     letter-spacing: 2px;
     max-width: 40rem;
     line-height: 1.5;
-
-    span {
-      display: inline-block;
-    }
   }
 
   .button__wrapper {
