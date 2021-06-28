@@ -23,11 +23,11 @@ SingleRow.args = {
 export const ToolongRow = Template.bind({});
 ToolongRow.args = {
     listdata: [{
-        caption: '私の名前は何だろな！！！！！！！！！！！！！！！',
+        caption: 'テストです。長い文字列だったらどう反応するのかをみています',
         description: 'wertyuiolkjhgfdxcvbnm,jbvftyuiknbgyuiovklmbfgjhjokflbmgjsllsolmojihubjnkjihugyvhhugyftcgvyftcfgftrdseewaaSZdxfcgvhbjnkml,,;lppkoijhuygtfrdessxcfvgbhnjmk,l'
     },
     {
-        caption: '諮問🐥',
+        caption: '絵文字に反応するかのテストです🐥',
         description: '田中伸男（公共財団法人笹川平和財団 会長）'
     }]
 };
