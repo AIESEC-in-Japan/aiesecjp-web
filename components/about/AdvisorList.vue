@@ -1,5 +1,6 @@
 <template>
   <div class="aboutus-table-container">
+
       <h2 class="aboutus-table-title">諮問一覧</h2>
       <CustomTable v-bind:listdata="items" />
   </div>
@@ -36,22 +37,25 @@
 
 <style scoped lang="scss">
 
+
 // TODO いずれtable componentを作ってここのstyleを消す。
 // 以下を消すと、原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
-  // .advisor{
-  //   &-container{
-  //     width: 800px;
-  //     margin: 50px auto;
-  //   }
-    
-  //   &-title{
-  //     color: $blue;
-  //     font-size: 24px;
-  //     font-weight: bold;
-  //     letter-spacing: 2px;
-  //     margin-top: 40px;
-  //     margin-bottom: 20px;
-  //   }
+// .advisor{
+//   &-container{
+//     width: 800px;
+//     margin: 50px auto;
+//   }
+
+//   &-title{
+//     color: $blue;
+//     font-size: 24px;
+//     font-weight: bold;
+//     letter-spacing: 2px;
+//     margin-top: 40px;
+//     margin-bottom: 20px;
+//   }
+
+// }
 
   // }
 

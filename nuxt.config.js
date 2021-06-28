@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { API_KEY } = process.env;
+const {API_KEY} = process.env;
 
 module.exports = {
   /*
@@ -16,11 +16,12 @@ module.exports = {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
+  // auto import
+  components: true,
   /*
   ** Customize the progress bar color
   */
-  components: true,
-  loading: { color: '#3B8070' },
+  loading: {color: '#3B8070'},
   /*
   ** Build configuration
   */
@@ -49,7 +50,13 @@ module.exports = {
   /*
   ** style-resources
   */
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/vuetify'],
+  plugins: [
+    './plugins/scroll.js',
+    './plugins/windowSize.js',
+    './plugins/isMobile.js',
+    './plugins/basicSectionSize'
+  ],
   styleResources: {
     scss: [
       './assets/scss/main.scss'
@@ -58,5 +65,12 @@ module.exports = {
   env: {
     API_KEY
   },
+  // see https://storybook.nuxtjs.org
+  storybook: {
+    stories: [
+      '~/stories/**/*.stories.js',
+      "~/components/**/stories/**/*.stories.@(js|vue)"
+    ],
+  }
 }
 

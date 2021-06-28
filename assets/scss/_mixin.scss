@@ -1,0 +1,14 @@
+$tab: 1100px; // 対応するかわからないけど、タブレット
+$sp: 480px; // iphone 6,7,8 plus 411px pixel2 XL 411 をカバーしているのでこの程度でよいかと
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

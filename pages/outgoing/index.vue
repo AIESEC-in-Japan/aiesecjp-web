@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-    <OgxTop />
-    <Feature />
-    <GVGTDetail />
-    <OgxDetail />
-    <InternshipExperience />
+    <OutgoingTop />
+    <OutgoingFeature />
+    <OutgoingProgram />
+    <OutgoingDetail />
+    <OutgoingExperience />
   </div>
 </template>

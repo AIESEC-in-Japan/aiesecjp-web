@@ -1,41 +1,15 @@
 <template>
-  <div>
-    <Header/>
-    <nuxt/>
-    <Footer :width="width" />
-  </div>
+  <v-app>
+    <BaseHeader />
+    <nuxt class="nuxt-with-header" />
+    <BaseFooter />
+  </v-app>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      width: 0
-    }
-  },
-  created () {
-    if (process.client) {
-      window.addEventListener('resize', this.handleResize)
-      this.handleResize()
-    }
-  },
-  destroyed () {
-    if (process.client) {
-      window.removeEventListener('resize', this.handleResize)
-    }
-  },
-  methods: {
-    handleResize () {
-      this.width = window.innerWidth
-    }
-  }
-}
-</script>
 
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -45,9 +19,14 @@ html {
   overflow-x: hidden;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+/* header の分 下げる */
+.nuxt-with-header {
+  margin-top: 5rem;
 }
 
 </style>

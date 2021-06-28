@@ -18,3 +18,7 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+# ui test tool
+.nuxt-storybook
+storybook-static

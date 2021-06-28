@@ -1,9 +1,9 @@
 <template>
-  <div class="wrapper">
-    <IcxTop />
-    <AboutIcxIntern />
-    <CorporationInternship />
-    <CorporationMerit />
-    <IcxDetail />
+  <div>
+    <IncomingTop />
+    <IncomingAboutIntern />
+    <IncomingCorporationInternship />
+    <IncomingCorporationMerit />
+    <IncomingDetail />
   </div>
 </template>
