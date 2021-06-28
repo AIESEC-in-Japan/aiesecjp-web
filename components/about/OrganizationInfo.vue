@@ -1,7 +1,7 @@
 <template>
   <div class="aboutus-table-container">
     <h2 class="aboutus-table-title">団体情報</h2>
-    <CustomTable :listdata="items" />
+    <AboutCustomTable :listdata="items" />
   </div>
 </template>
 
