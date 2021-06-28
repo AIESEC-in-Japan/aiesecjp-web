@@ -1,8 +1,8 @@
 <template>
     <div class='officer-table'>
     <tr v-for="(item, index) in listdata" :key="index">
-        <th>{{item.position}}</th>
-        <td>{{item.name}}</td>
+        <th>{{item.caption}}</th>
+        <td>{{item.description}}</td>
     </tr>
     </div>
 
