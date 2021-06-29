@@ -16,7 +16,6 @@
           捉え、考え、行動し、試行錯誤する。<br>
           世界に挑戦するための、第一歩。
         </p>
-        <a>詳しく見る</a>
       </div>
       <div class="detail">
         <img src="@/assets/images/product_GT-horizontal-white.png">
@@ -32,7 +31,6 @@
           世界で通用する専門性を武器に、<br>
           社会を変えるリーダーへ。
         </p>
-        <a>詳しく見る</a>
       </div>
     </div>
   </div>
@@ -70,7 +68,6 @@ h1 {
     height: 65px;
     width: 230px;
   }
-
   /* stylelint-enable unit-disallowed-list */
 
   p {
@@ -78,15 +75,6 @@ h1 {
     font-weight: bold;
     color: $white;
     line-height: 2;
-  }
-
-  a {
-    margin-top: 2rem;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1rem;
-    color: $white;
-    border-bottom: solid 1.5px;
   }
 }
 </style>
