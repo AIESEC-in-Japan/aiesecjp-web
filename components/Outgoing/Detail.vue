@@ -62,6 +62,7 @@ export default {
       color: $white;
       line-height: 2;
       letter-spacing: 2px;
+
       @include sp() {
         letter-spacing: 0;
       }
