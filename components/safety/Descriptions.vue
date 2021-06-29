@@ -175,6 +175,11 @@
     &-icon {
       width: 7rem;
       height: 7rem;
+
+      @include sp {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
     }
 
     &-title {
@@ -191,6 +196,10 @@
 
     &-main {
       padding-left: 7rem;
+
+      @include sp {
+        padding-left: 1rem;
+      }
     }
 
     &-items {
