@@ -17,6 +17,7 @@
 
 <script>
 import {basic_color} from "@/components/base/CommonColor";
+
 export default {
   data() {
     return {
@@ -29,15 +30,20 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .ogxDetail-container {
-  min-height: 80vh;
+  min-height: 40vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~@/assets/images/ogx-detail.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
   display: flex;
   justify-content: center;
+
+  @include sp() {
+    min-height: min-content;
+    height: 20rem;
+  }
 }
 
 .detail {
@@ -56,6 +62,9 @@ export default {
       color: $white;
       line-height: 2;
       letter-spacing: 2px;
+      @include sp() {
+        letter-spacing: 0;
+      }
     }
   }
 }
