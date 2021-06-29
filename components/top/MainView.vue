@@ -30,7 +30,7 @@ video {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: $backgroundVideoIndex;
+  z-index: $backgroundIndex;
   height: 100vh;
 }
 

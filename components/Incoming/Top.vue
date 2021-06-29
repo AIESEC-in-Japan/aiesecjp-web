@@ -1,43 +1,49 @@
 <template>
-  <section class="icx-top-container">
-    <div class="icx-top">
+  <section class="icxTop-container">
+    <div class="icxTop-wrapper">
       <img
         src="@/assets/images/product_GT-horizontal-white.png"
         alt="GT-logo"
       >
       <h1>
-        Globalize your company with AIESEC
+        Globalize your company<br v-show="this.$isMobile()"> with AIESEC
       </h1>
-      <span>
-        アイセックのインターンシップで、グローバルな組織作りを
-      </span>
+      <p>
+        アイセックのインターンシップで、<br v-show="this.$isMobile()">グローバルな組織作りを
+      </p>
     </div>
   </section>
 </template>
 
 
 <style scoped lang="scss">
-.icx-top-container {
-  width: 100%;
-  background-image: url("~@/assets/images/icx/icx-top.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.icxTop {
+  &-container {
+    width: 100%;
+    background-image: url("~@/assets/images/icx/icx-top.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.icx-top {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 80vh;
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80vh;
+  }
 }
 
 img {
   margin: 1rem;
   display: flex;
-  width: 400px;
+  width: 25rem;
+
+  @include sp {
+    width: 80%;
+  }
 }
 
 h1 {
@@ -48,7 +54,7 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-span {
+p {
   font-size: 0.875rem;
   display: flex;
   letter-spacing: 5px;
