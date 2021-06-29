@@ -4,6 +4,5 @@
     <OutgoingFeature />
     <OutgoingProgram />
     <OutgoingDetail />
-    <OutgoingExperience />
   </div>
 </template>
