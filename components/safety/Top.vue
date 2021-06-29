@@ -27,7 +27,8 @@
     background-size: cover;
 
     @include sp {
-      height: 100vh;
+      min-height: min-content;
+      height: 50rem;
     }
   }
 
