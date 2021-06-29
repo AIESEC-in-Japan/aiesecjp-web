@@ -25,6 +25,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include sp {
+      height: 100vh;
+    }
   }
 
   /* 半透明のフィルターをかける */
@@ -67,6 +71,12 @@
     font-size: 1rem;
     line-height: 2;
     color: white;
+  }
+}
+
+@include sp {
+  br {
+    display: none;
   }
 }
 
