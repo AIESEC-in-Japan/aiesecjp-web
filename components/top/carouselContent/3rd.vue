@@ -11,5 +11,9 @@ h1, h2 {
   font-weight: bold;
   color: $white;
   text-align: center;
+
+  @include sp {
+    font-size: 1.5rem;
+  }
 }
 </style>

@@ -1,113 +1,141 @@
 <template>
   <section class="programs-container">
     <h1>Our Programs</h1>
-    <div class="programs-contents">
-      <div class="programs-contents-card global-talent">
-        <h2>Global Talent</h2>
-        <p class="programs-contents-card-text">
-          海外のビジネス界に飛び込む <br>インターンシッププログラム。 <br>海外の企業で力を伸ばし、<br> 世界を、自分を、前進させる経験を。
+    <div class="contents-wrapper">
+      <div class="programs">
+        <div class="logo-wrapper">
+          <BaseIconInAssetsPath
+            :data="productGV"
+            :is-wide="true"
+          />
+        </div>
+        <div class="logo-wrapper">
+          <BaseIconInAssetsPath
+            :data="productGT"
+            :is-wide="true"
+          />
+        </div>
+        <h2>海外インターンシップ</h2>
+        <p>
+          日本人大学生を海外の企業、教育機関やNPO法人などへ送り出す海外インターンシップと、
+          海外の大学生を日本の企業様などに受け入れていただく海外インターンシップを運営しています。
         </p>
-        <p class="programs-contents-card-link">
-          学生の方は <a href="/outgoing">こちらから</a>
-        </p>
-        <p class="programs-contents-card-link">
-          企業の方は <a href="/incoming">こちらから</a>
-        </p>
+        <div class="link-wrapper">
+          <nuxt-link
+            class="link-text"
+            to="/outgoing"
+          >
+            学生の方はこちらから
+          </nuxt-link>
+          <nuxt-link
+            class="link-text"
+            to="/incoming"
+          >
+            企業の方はこちらから
+          </nuxt-link>
+        </div>
       </div>
 
-      <div class="programs-contents-card global-volunteer">
-        <h2>Global Volunteer</h2>
-        <p class="programs-contents-card-text">
-          海外の社会課題解決に挑戦する <br>ボランティアプログラム。 <br>世界を見て、考えて、行動する。<br> 世界に挑戦するための一歩目を。
+      <div class="programs">
+        <div class="logo-wrapper">
+          <BaseIconInAssetsPath
+            :data="globalYouthDialogue"
+            :is-wide="true"
+          />
+        </div>
+        <h2>Global Youth Dialogue</h2>
+        <p>
+          海外の学生との様々な会話を通じて、世界をより広く、
+          自分をより深く知ることのできるオンラインイベントです。
+          海外の学生とペアを組み、
+          日替わりで設定される会話のトピックに基づいて自分や世界のことを話すことができます。
         </p>
-        <p class="programs-contents-card-link">
-          参加については <a href="/outgoing">こちらから</a>
-        </p>
-      </div>
-
-      <div class="programs-contents-card online-events">
-        <h2>Online Events</h2>
-        <p class="programs-contents-card-text">
-          世界を身近に感じることのできる<br> オンラインイベント。 <br>国内外の様々な話を聞いて、 <br>知らなかった自分や世界を見つけよう。
-        </p>
-        <!--        FIXME : リンク先あとで入れる -->
-        <p class="programs-contents-card-link">
-          参加については <a href="">こちらから</a>
-        </p>
+        <nuxt-link
+          class="link-text"
+          to="/incoming"
+        >
+          企業の方はこちらから
+        </nuxt-link>
       </div>
     </div>
   </section>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      globalYouthDialogue:
+        {src: "images/top/global-youth-dialogue.png", alt: ""},
+      productGT:
+        {src: "images/top/product-GT.png", alt: ""},
+      productGV:
+        {src: "images/top/product-GV.png", alt: ""}
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
+/* todo スピードを優先してだいぶ汚いCSS書いてます…そのうち直す。 */
+
+.programs-container {
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+h1 {
+  color: $blue;
+  font-size: 2rem;
+}
+
+h2 {
+  color: $blue;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+
+.contents-wrapper {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .programs {
-  &-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
 
-    h1 {
-      color: $dark-gray;
-      font-size: 1.5rem;
-      padding-top: 9rem;
-    }
-  }
+.logo-wrapper {
+  margin: 1rem auto;
+}
 
-  &-contents {
-    padding: 0 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+p {
+  width: 60%;
 
-    &-card {
-      width: 23rem;
-      font-family: $fonts;
-      font-weight: bold;
-      border-radius: 10px;
-      margin: 0.5rem;
-      padding-bottom: 2rem;
-
-      h2 {
-        font-style: italic;
-        font-size: 2rem;
-        margin: 1rem;
-        border-bottom: $white solid 2px;
-        color: white;
-      }
-
-      p {
-        text-align: center;
-        padding: 1rem;
-        font-size: 1rem;
-        color: white;
-      }
-
-      &-text {
-        line-height: 2;
-        margin-bottom: 1rem;
-        color: white;
-      }
-
-      &-link {
-        a {
-          color: white;
-          text-underline-offset: 2px;
-        }
-      }
-    }
+  @include sp {
+    width: 90%;
+    text-align: left;
   }
 }
 
-.online-events {
-  background-color: $green;
-}
+.link-text {
+  font-weight: bold;
+  text-decoration: none;
+  color: $blue;
+  border-bottom: 1px solid $blue;
+  padding-bottom: 0.5rem;
+  margin: auto 3rem;
 
-.global-volunteer {
-  background-color: $red;
+  @include sp {
+    display: block;
+    margin: 1rem auto;
+  }
 }
-
-.global-talent {
-  background-color: $mint;
-}
-
 </style>

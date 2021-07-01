@@ -2,15 +2,12 @@
   <div class="partners-container">
     <h2>Our Partners</h2>
     <div class="partners-contents">
-      <span
+      <BaseIconInAssetsPath
         v-for="logo in logos"
         :key="logo.src"
-      >
-        <BaseIconInAssetsPath
-          :data="logo"
-          class="partners-content"
-        />
-      </span>
+        :data="logo"
+        class="partners-content"
+      />
     </div>
   </div>
 </template>
@@ -61,12 +58,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 4rem;
 
   h2 {
     color: $blue;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 2px;
-    padding-top: 10rem;
   }
 }
 
@@ -80,5 +77,11 @@ export default {
 .partners-content {
   margin: 2rem;
   object-fit: contain;
+
+  @include sp {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+  }
 }
 </style>
