@@ -70,7 +70,7 @@ export default {
 
   &-aiesec {
     color: $blue;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-top: 6rem;
     font-style: italic;
 

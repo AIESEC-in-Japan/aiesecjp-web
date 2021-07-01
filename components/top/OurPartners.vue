@@ -64,7 +64,7 @@ export default {
 
   h2 {
     color: $blue;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     padding-top: 10rem;
   }
