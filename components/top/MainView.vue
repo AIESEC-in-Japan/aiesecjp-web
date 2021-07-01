@@ -4,6 +4,7 @@
     class="main-view-container"
     cycle
     hide-delimiters
+    interval="10000"
   >
     <v-carousel-item
       v-for="(item,i) in items"

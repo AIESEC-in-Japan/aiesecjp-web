@@ -2,15 +2,12 @@
   <div class="partners-container">
     <h2>Our Partners</h2>
     <div class="partners-contents">
-      <span
+      <BaseIconInAssetsPath
         v-for="logo in logos"
         :key="logo.src"
-      >
-        <BaseIconInAssetsPath
-          :data="logo"
-          class="partners-content"
-        />
-      </span>
+        :data="logo"
+        class="partners-content"
+      />
     </div>
   </div>
 </template>
@@ -80,5 +77,10 @@ export default {
 .partners-content {
   margin: 2rem;
   object-fit: contain;
+  @include sp {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+  }
 }
 </style>

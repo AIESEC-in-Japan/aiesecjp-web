@@ -33,5 +33,9 @@ export default {
 
 .wide-img {
   width: 22rem;
+
+  @include sp {
+    width: 90%;
+  }
 }
 </style>

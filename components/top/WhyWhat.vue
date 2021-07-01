@@ -28,6 +28,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 5rem;
+
+  @include sp {
+    flex-direction: column;
+    max-height: max-content;
+    padding: 3rem 0;
+  }
 }
 
 .video-content {
@@ -35,11 +41,23 @@
   width: 50%;
   max-width: 40rem;
   margin-right: 5rem;
+
+  @include sp {
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .description {
   width: 50%;
   max-width: 40rem;
+
+
+  @include sp {
+    width: 90%;
+    max-width: 90%;
+  }
 
   h3 {
     color: $gray;

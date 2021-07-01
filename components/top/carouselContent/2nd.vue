@@ -18,6 +18,10 @@ h1 {
   font-weight: bold;
   color: $white;
   text-align: center;
+
+  @include sp {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -27,6 +31,18 @@ p {
   line-height: 2;
   color: $white;
   font-weight: normal;
+
+  @include sp {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+
+@include sp {
+  br {
+    display: none;
+  }
 }
 
 </style>

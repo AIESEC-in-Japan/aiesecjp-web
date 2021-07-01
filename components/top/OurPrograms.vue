@@ -119,6 +119,10 @@ h2 {
 
 p {
   width: 60%;
+  @include sp {
+    width: 90%;
+    text-align: left;
+  }
 }
 
 .link-text {
@@ -128,5 +132,9 @@ p {
   border-bottom: 1px solid $blue;
   padding-bottom: 0.5rem;
   margin: auto 3rem;
+  @include sp {
+    display: block;
+    margin: 1rem auto;
+  }
 }
 </style>

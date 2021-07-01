@@ -80,6 +80,11 @@ export default {
       line-height: 2;
       padding-top: 3rem;
       max-width: 50rem;
+
+      @include sp {
+        max-width: 90%;
+        text-align: left;
+      }
     }
   }
 
@@ -102,6 +107,12 @@ export default {
       line-height: 2;
       font-weight: bold;
     }
+  }
+}
+
+@include sp {
+  br {
+    display: none;
   }
 }
 </style>
