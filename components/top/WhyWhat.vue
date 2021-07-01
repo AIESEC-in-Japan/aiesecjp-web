@@ -53,7 +53,6 @@
   width: 50%;
   max-width: 40rem;
 
-
   @include sp {
     width: 90%;
     max-width: 90%;
@@ -73,6 +72,5 @@
   p {
     text-align: left;
   }
-
 }
 </style>

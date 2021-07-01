@@ -77,6 +77,7 @@ export default {
 .partners-content {
   margin: 2rem;
   object-fit: contain;
+
   @include sp {
     width: 3rem;
     height: 3rem;

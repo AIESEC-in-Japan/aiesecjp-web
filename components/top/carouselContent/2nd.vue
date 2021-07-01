@@ -38,7 +38,6 @@ p {
   }
 }
 
-
 @include sp {
   br {
     display: none;
