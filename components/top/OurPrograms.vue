@@ -84,6 +84,7 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 4rem;
 }
 
 h1 {
