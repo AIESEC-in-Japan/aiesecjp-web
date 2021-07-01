@@ -13,38 +13,48 @@
     </p>
     <div class="about-wrapper">
       <div class="about-content">
-        <img
-          alt=""
-          src=""
-        >
+        <BaseIconInAssetsPath
+          :data="mapIcon"
+        />
         <p>
-          <span>100以上の国と地域</span>
-          <span>の支部</span>
+          100以上の国と地域<br>の支部
         </p>
       </div>
       <div class="about-content">
-        <img
-          alt=""
-          src=""
-        >
+        <BaseIconInAssetsPath
+          :data="handshakeIcon"
+        />
         <p>
-          <span>7000以上の</span>
-          <span>パートナー団体</span>
+          7000以上の<br>パートナー団体
         </p>
       </div>
       <div class="about-content">
-        <img
-          alt=""
-          src=""
-        >
+        <BaseIconInAssetsPath
+          :data="visaIcon"
+        />
         <p>
-          <span>年間30000件以上の</span>
-          <span>経験を提供</span>
+          年間30000件以上の<br>経験を提供
         </p>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      handshakeIcon:
+        {src: "images/top/handshake.svg", alt: ""},
+      mapIcon:
+        {src: "images/top/map.svg", alt: ""},
+      visaIcon:
+        {src: "images/top/visa.svg", alt: ""}
+    }
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
 
@@ -87,15 +97,8 @@
     margin: 0 2rem;
     color: $dark-gray;
 
-    img {
-      padding: 6rem;
-      margin: 2rem 0;
-      background: $gray;
-      border-radius: 10px;
-    }
-
     p {
-      max-width: 90%;
+      width: 100%;
       line-height: 2;
       font-weight: bold;
     }
