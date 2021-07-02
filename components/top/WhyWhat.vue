@@ -60,6 +60,7 @@
 
   h3 {
     color: $gray;
+    margin-top: 2rem;
   }
 
   h1 {
