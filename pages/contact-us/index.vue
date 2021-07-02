@@ -1,4 +1,4 @@
 <template>
-  <div></div>
+  <ContactUsForm />
 </template>
 
