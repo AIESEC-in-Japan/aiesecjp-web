@@ -12,4 +12,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: bold;
+
+  @include sp {
+    width: 90%;
+  }
 }
