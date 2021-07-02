@@ -13,7 +13,6 @@ h1, h2 {
   text-align: center;
 }
 
-
 @include sp {
   h1 {
     font-size: 1.5rem;
