@@ -77,7 +77,7 @@
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/about"
+            to="/contact-us"
           >
             Contact Us
           </nuxt-link>

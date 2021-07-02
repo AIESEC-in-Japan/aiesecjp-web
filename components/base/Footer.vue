@@ -38,6 +38,14 @@
             個人情報の取り扱い
           </nuxt-link>
         </li>
+        <li>
+          <nuxt-link
+            class="footer-content-link"
+            to="/contact-us"
+          >
+            お問い合わせ
+          </nuxt-link>
+        </li>
       </ul>
     </div>
     <div class="footer-content">
