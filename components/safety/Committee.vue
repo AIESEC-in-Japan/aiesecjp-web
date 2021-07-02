@@ -148,6 +148,10 @@ h2 {
   color: $mint;
   margin-left: 1.5rem;
   margin-bottom: 2rem;
+
+  @include sp {
+    margin-left: 0;
+  }
 }
 
 ul {
