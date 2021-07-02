@@ -1,6 +1,9 @@
 <template>
   <div class="aboutus-table">
-    <tr v-for="(item, index) in listdata" :key="index">
+    <tr
+      v-for="(item, index) in listdata"
+      :key="index"
+    >
       <th>{{ item.caption }}</th>
       <td>{{ item.description }}</td>
     </tr>
@@ -11,6 +14,10 @@
 export default {
   props: {
     listdata: Array,
+    listdata:{
+      type : Array,
+      required: true
+    }
   },
 };
 </script>
@@ -23,8 +30,8 @@ td {
   border-bottom-color: $gray;
   padding: 24px 16px;
 
-  @include sp{
-      padding: 15px 15px;
+  @include sp {
+    padding: 15px 15px;
   }
 }
 
@@ -32,17 +39,16 @@ th {
   width: 108px;
   text-align: left;
 
-  @include sp{
-      width: 100px;
+  @include sp {
+    width: 100px;
   }
-
 }
 
 td {
   line-height: 21px;
 
-  @include sp{
-      width: 250px;
+  @include sp {
+    width: 250px;
   }
 }
 
