@@ -50,6 +50,7 @@
 
   &-wrapper {
     width: 80%;
+    padding-top: 4rem;
     // 中央よせ
     position: absolute;
     top: 50%;
