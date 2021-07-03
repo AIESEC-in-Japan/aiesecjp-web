@@ -2,12 +2,11 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: ''
+labels: bug
 assignees: ''
 
 ---
 
-<!-- 不具合対応テンプレート -->
 ## 概要
 <!-- どのような不具合か WHAT -->
 
@@ -22,6 +21,8 @@ assignees: ''
 
 ## 修正案
 <!-- どのように修正するのか HOW -->
+
+## 対応コスト想定
 
 ## タスク
 - [ ]

@@ -1,3 +1,29 @@
-h1,h2,h3,h4,h5,h6,p,a,button {
+h1, h2, h3, h4, h5, h6, p, a, button, li {
   font-family: $fonts;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 3rem 1rem;
+  font-size: 1.5rem;
+}
+
+p {
+  color: $dark-gray;
+  font-size: 0.875rem;
+}
+
+section {
+  min-height: 80vh;
+  max-height: 50rem;
+
+  @include tab {
+    max-height: max-content;
+  }
 }

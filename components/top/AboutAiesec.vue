@@ -1,81 +1,118 @@
 <template>
-  <div class="about-container">
-    <h2 class="about-aiesec">About AIESEC</h2>
-    <p class="about-explain">
-      <span>AIESEC(アイセック)は、海外ボランティアや</span><span>海外ボランティアプログラムなどの</span><span>主観事業を通して、世界中の若者のリーダーシップを</span><span>育むことを目指している</span><span>グローバルプラットフォームです。</span><span>1948年にヨーロッパで創設されて以来、</span><span>「平和で、人々の可能性が最大限発揮された社会」の</span><span>実現を目指して活動しています。</span>
+  <section class="about-container">
+    <h2 class="about-aiesec">
+      About AIESEC
+    </h2>
+    <p class="about-aiesec-explain">
+      AIESEC(アイセック)は、海外ボランティアや
+      海外ボランティアプログラムなどの 主観事業を通して、<br>
+      世界中の若者のリーダーシップを 育むことを目指している グローバルプラットフォームです。<br>
+
+      1948年にヨーロッパで創設されて以来、<br>
+      「平和で、人々の可能性が最大限発揮された社会」の 実現を目指して活動しています。
     </p>
-    <div class="about-contents">
+    <div class="about-wrapper">
       <div class="about-content">
-        <img src="" alt="">
+        <BaseIconInAssetsPath
+          :data="mapIcon"
+        />
         <p>
-          <span>114の国と地域</span>
-          <span>の支部</span>
+          100以上の国と地域<br>の支部
         </p>
       </div>
       <div class="about-content">
-        <img src="" alt="">
+        <BaseIconInAssetsPath
+          :data="handshakeIcon"
+        />
         <p>
-          <span>7000以上の</span>
-          <span>パートナー団体</span>
+          7000以上の<br>パートナー団体
         </p>
       </div>
       <div class="about-content">
-        <img src="" alt="">
+        <BaseIconInAssetsPath
+          :data="visaIcon"
+        />
         <p>
-          <span>年間30000件以上の</span>
-          <span>経験を提供</span>
+          年間30000件以上の<br>経験を提供
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<style scoped lang="scss">
-.about-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-.about-aiesec {
-  color: $blue;
-  font-size: 24px;
-  padding-top: 100px;
-  letter-spacing: 2px;
-}
-.about-explain {
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding-top: 50px;
-  max-width: 800px;
-  span {
-    display: inline-block;
-  }
-}
-.about-contents {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 50px;
-}
-.about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 40px;
-  img {
-    padding: 100px;
-    margin: 2em 0;
-    background: $gray;
-    border-radius: 10px;
-  }
-  p {
-    max-width: 140px;
-    span {
-      display: inline-block;
+<script>
+export default {
+  data() {
+    return {
+      handshakeIcon:
+        {src: "images/top/handshake.svg", alt: ""},
+      mapIcon:
+        {src: "images/top/map.svg", alt: ""},
+      visaIcon:
+        {src: "images/top/visa.svg", alt: ""}
     }
+  }
+}
+</script>
+
+
+<style lang="scss" scoped>
+
+.about {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: $fonts;
+  }
+
+  &-aiesec {
+    color: $blue;
+    font-size: 2rem;
+    padding-top: 6rem;
+    font-style: italic;
+
+    &-explain {
+      color: $dark-gray;
+      font-size: 1rem;
+      line-height: 2;
+      padding-top: 3rem;
+      max-width: 50rem;
+
+      @include sp {
+        max-width: 90%;
+        text-align: left;
+      }
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+    color: $dark-gray;
+
+    p {
+      width: 100%;
+      line-height: 2;
+      font-weight: bold;
+    }
+  }
+}
+
+@include sp {
+  br {
+    display: none;
   }
 }
 </style>

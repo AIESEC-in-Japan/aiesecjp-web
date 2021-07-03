@@ -1,15 +1,18 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
-labels: ''
+title: 新機能追加
+labels: new feature
 assignees: ''
 
 ---
 
-<!-- 機能追加テンプレート -->
 ## 概要
 
-## 目的
+## 要件詳細
 
-## 計画
+## 対応コスト想定
+
+## タスク
+- [ ] aa
+- [ ] aa

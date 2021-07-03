@@ -1,0 +1,3 @@
+<template>
+  <SafetyFinal />
+</template>

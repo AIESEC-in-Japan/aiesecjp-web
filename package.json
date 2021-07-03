@@ -9,22 +9,36 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:es && yarn lint:css ",
+    "lint:es": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:css": "stylelint './**/*.{css,scss,vue}' ",
+    "lint:fix": "yarn lint:es --fix && yarn lint:css --fix",
+    "storybook": "yarn nuxt storybook",
     "precommit": "npm run lint"
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.15.7"
   },
   "devDependencies": {
+    "@nuxtjs/storybook": "^4.0.4",
+    "@nuxtjs/vuetify": "^1.12.1",
     "babel-eslint": "^10.0.1",
-    "eslint": "^4.19.1",
+    "css-loader": "^5.0.0",
+    "eslint": "^7.27.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^4.0.0",
+    "eslint-plugin-vue": "^7.10.0",
     "node-sass": "^4.13.1",
-    "sass-loader": "^8.0.2"
+    "postcss": "^8.1.10",
+    "postcss-import": "^13.0.0",
+    "postcss-loader": "^4.1.0",
+    "postcss-url": "^10.1.1",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.19.0"
   }
 }
