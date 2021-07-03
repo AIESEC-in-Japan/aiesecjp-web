@@ -88,15 +88,15 @@
     </div>
     <div class="footer-content">
       <h3 class="footer-content-title">
-        Press & Alumni
+        Press
       </h3>
       <ul>
         <li>
           <nuxt-link
             class="footer-content-link"
-            to=""
+            to="/press"
           >
-            sample text
+            お知らせ
           </nuxt-link>
         </li>
       </ul>
@@ -109,7 +109,7 @@
 .footer {
   &-container {
     width: 100%;
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
     background-color: $light-gray;
     display: flex;
     justify-content: space-around;
