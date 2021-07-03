@@ -52,7 +52,7 @@ export default {
 
   @include sp {
     min-height: 80vh;
-    height: max-content;.
+    height: max-content;
   }
 }
 
