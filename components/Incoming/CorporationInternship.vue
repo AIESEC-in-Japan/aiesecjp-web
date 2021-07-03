@@ -33,7 +33,8 @@ export default {
       WhiteButtonProps: {
         textColor: basic_color.white,
         baseColor: 'transparent',
-        size: 'large'
+        size: 'large',
+        url: '/contact-us'
       }
     }
   }

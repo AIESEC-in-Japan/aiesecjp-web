@@ -53,7 +53,7 @@ export default {
     mouseLeaveAction() {
       this.isHover = false;
     },
-    openExtraLink(){
+    openExtraLink() {
       window.open(this.url, '_blank');
     }
   },

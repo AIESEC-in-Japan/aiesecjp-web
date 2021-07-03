@@ -23,7 +23,8 @@ export default {
     return {
       ButtonProps: {
         textColor: basic_color.white,
-        size: 'large'
+        size: 'large',
+        url: '/contact-us'
       }
     }
   }
