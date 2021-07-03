@@ -13,5 +13,9 @@
   max-width: 40rem;
   width: 90%;
   margin: 7rem auto;
+
+  @include sp {
+    height: 90vh;
+  }
 }
 </style>
