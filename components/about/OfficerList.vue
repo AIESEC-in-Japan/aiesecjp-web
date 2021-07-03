@@ -3,7 +3,7 @@
     <h2 class="aboutus-table-title">
       役員一覧
     </h2>
-    <AboutCustomTable :listdata="items" />
+    <AboutCustomTable :list-data="items" />
   </div>
 </template>
 

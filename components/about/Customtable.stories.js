@@ -14,7 +14,7 @@ const Template = (args, { argTypes }) => ({
 
 export const SingleRow = Template.bind({});
 SingleRow.args = {
-    listdata: [{
+    listData: [{
         caption: '諮問',
         description: '田中伸男（公共財団法人笹川平和財団 会長）'
     }]
@@ -22,7 +22,7 @@ SingleRow.args = {
 
 export const ToolongRow = Template.bind({});
 ToolongRow.args = {
-    listdata: [{
+    listData: [{
         caption: 'テストです。長い文字列だったらどう反応するのかをみています',
         description: 'wertyuiolkjhgfdxcvbnm,jbvftyuiknbgyuiovklmbfgjhjokflbmgjsllsolmojihubjnkjihugyvhhugyftcgvyftcfgftrdseewaaSZdxfcgvhbjnkml,,;lppkoijhuygtfrdessxcfvgbhnjmk,l'
     },
@@ -34,7 +34,7 @@ ToolongRow.args = {
 
 export const MultiRow = Template.bind({});
 MultiRow.args = {
-    listdata: [{
+    listData: [{
         caption: '諮問',
         description: '田中伸男（公共財団法人笹川平和財団 会長）'
     },
