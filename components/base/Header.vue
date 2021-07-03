@@ -14,6 +14,7 @@
       <ul
         v-show="!this.$isMobile() || drawer"
         class="navigation-list"
+        @click.stop="drawer = !drawer"
       >
         <li
           class="navigation-item"
@@ -60,8 +61,8 @@
         </li>
         <li class="navigation-item">
           <nuxt-link
-            to="/global-youth-dialogue"
             class="navigation-link"
+            to="/global-youth-dialogue"
           >
             Events
           </nuxt-link>
@@ -83,6 +84,11 @@
           </nuxt-link>
         </li>
       </ul>
+      <div
+        v-show="!this.$isMobile() || drawer"
+        class="filter"
+        @click.stop="drawer = false"
+      />
       <v-app-bar-nav-icon
         v-show="this.$isMobile()"
         class="navigation-mobile-icon"
@@ -232,6 +238,19 @@ export default {
       }
     }
   }
+}
+
+.filter {
+  content: '';
+  position: absolute;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  z-index: $headerDrawerBackGroundIndex;
+  top: 80px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 </style>

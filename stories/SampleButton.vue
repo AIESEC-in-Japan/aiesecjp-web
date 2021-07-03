@@ -57,6 +57,7 @@ export default {
 </script>
 
 <style scoped>
+/* stylelint-disable unit-disallowed-list */
 
 .storybook-button {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
