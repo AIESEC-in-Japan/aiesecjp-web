@@ -28,11 +28,13 @@
   width: 100%;
   background-size: cover;
   background-position: center 50%;
+  margin: 2rem auto;
 }
 
 .corporation-merit {
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;

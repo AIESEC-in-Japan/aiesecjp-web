@@ -48,15 +48,18 @@ export default {
   background-size: cover;
   background-position: center 50%;
   min-height: 50vh;
+  height: max-content;
 
   @include sp {
-    height: 80vh;
+    min-height: 80vh;
+    height: max-content;.
   }
 }
 
 .corporationInternship-wrapper {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
+  height: max-content;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
