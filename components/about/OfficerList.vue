@@ -3,79 +3,69 @@
     <h2 class="aboutus-table-title">
       役員一覧
     </h2>
-    <table class="officers-table">
-      <tbody>
-        <tr>
-          <th>会長</th>
-          <td>
-            各務茂夫（東京大学 大学院工学系研究科 教授 産学協創推進本部
-            副本部長）
-          </td>
-        </tr>
-        <tr>
-          <th>専務理事</th>
-          <td>菅家周平（早稲田大学 3年）</td>
-        </tr>
-        <tr>
-          <th>副会長</th>
-          <td>松塚ゆかり（一橋大学森有礼高等教育国際流動化機構 教授）</td>
-        </tr>
-        <tr>
-          <th>副会長</th>
-          <td>菊地端夫（明治大学 経営学部 准教授）</td>
-        </tr>
-        <tr>
-          <th>常務理事</th>
-          <td>余越優（東京大学 4年）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>伊藤友章（北海学園大学 経営学部 教授）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>江夏幾太郎（神戸大学 経済経営研究所 准教授）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>椙山泰生（京都大学 経済学部 教授）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>横田一彦（早稲田大学 商学部 教授）</td>
-        </tr>
-        <tr>
-          <th>理事</th>
-          <td>米田邦彦（広島修道大学 商学部 教授）</td>
-        </tr>
-        <tr>
-          <th>監事</th>
-          <td>太田康広（慶應義塾大学ビジネス・スクール教授）</td>
-        </tr>
-      </tbody>
-    </table>
+    <AboutCustomTable :list-data="items" />
   </div>
 </template>
 
-<style scoped lang="scss">
-// TODO いずれtable componentを作ってここのstyleを消す。
-// 以下を消すと、原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
+<script>
+export default {
+  data: () => {
+    return {
+      items: [
+        {
+          caption: "会長",
+          description:
+            "各務茂夫（東京大学 大学院工学系研究科 教授 産学協創推進本部副本部長）",
+        },
+        {
+          caption: "専務理事",
+          description: "菅家周平（早稲田大学 政治経済学部 4年）",
+        },
+        {
+          caption: "副会長",
+          description:
+            "松塚ゆかり（一橋大学森有礼高等教育国際流動化機構 教授）",
+        },
+        {
+          caption: "副会長",
+          description: "菊地端夫（明治大学 経営学部 准教授）",
+        },
+        {
+          caption: "常務理事",
+          description: "余越優（東京大学 経済学部 4年）",
+        },
+        {
+          caption: "理事",
+          description: "伊藤友章（北海学園大学 経営学部 教授）",
+        },
+        {
+          caption: "理事",
+          description: "江夏幾太郎（神戸大学 経済経営研究所 准教授）",
+        },
+        {
+          caption: "理事",
+          description: "椙山泰生（椙山女学園大学 現代マネジメント学部 教授）",
+        },
+        {
+          caption: "理事",
+          description: "横田一彦（早稲田大学 商学部 教授）",
+        },
+        {
+          caption: "理事",
+          description: "米田邦彦（広島修道大学 商学部 教授）",
+        },
+        {
+          caption: "監事",
+          description: "太田康広（慶應義塾大学ビジネス・スクール教授）",
+        },
+      ],
+    };
+  },
+};
+</script>
 
-// .officers{
-//   &-container{
-//     width: 800px;
-//     margin: 50px auto;
-//   }
+<style lang="scss" scoped>
 
-//   &-title{
-//     color: $blue;
-//     font-size: 24px;
-//     font-weight: bold;
-//     letter-spacing: 2px;
-//     margin-top: 40px;
-//     margin-bottom: 20px;
-//   }
-
-// }
+// 原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
 
 </style>
