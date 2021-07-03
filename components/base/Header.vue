@@ -85,7 +85,7 @@
         </li>
       </ul>
       <div
-        v-show="!this.$isMobile() || drawer"
+        v-show="drawer"
         class="filter"
         @click.stop="drawer = false"
       />
