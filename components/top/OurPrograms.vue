@@ -52,9 +52,9 @@
         </p>
         <nuxt-link
           class="link-text"
-          to="/incoming"
+          to="/global-youth-dialogue"
         >
-          企業の方はこちらから
+          詳細はこちら
         </nuxt-link>
       </div>
     </div>
