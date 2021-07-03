@@ -85,6 +85,5 @@ footer {
     color: $blue;
     margin: 1rem auto;
   }
-
 }
 </style>

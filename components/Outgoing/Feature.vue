@@ -94,6 +94,10 @@ h1 {
   width: 25rem;
   margin-bottom: 4rem;
 
+  @include sp {
+    width: 100%;
+  }
+
   h2 {
     font-weight: bold;
     line-height: 1.5;

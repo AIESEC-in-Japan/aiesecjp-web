@@ -44,7 +44,6 @@ p {
   text-indent: 1rem;
 }
 
-
 time {
   margin-bottom: 2rem;
   display: inline-block;
