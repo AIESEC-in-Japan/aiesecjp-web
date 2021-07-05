@@ -87,7 +87,14 @@
         v-show="this.$isMobile()"
         class="navigation-mobile-icon"
         @click.stop="drawer = !drawer"
-      />
+      >
+        <v-icon v-show="!drawer">
+          mdi-menu
+        </v-icon>
+        <v-icon v-show="drawer">
+          mdi-close
+        </v-icon>
+      </v-app-bar-nav-icon>
     </nav>
   </header>
 </template>
@@ -144,6 +151,7 @@ export default {
     &-list {
       display: flex;
       justify-content: flex-end;
+      
 
       @include sp {
         z-index: $headerDrawerIndex;
@@ -155,6 +163,7 @@ export default {
         transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
         line-height: 2.5rem;
         width: 100vw;
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.3);
       }
     }
 
