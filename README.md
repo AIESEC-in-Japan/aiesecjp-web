@@ -265,6 +265,9 @@ WIP
 [創始者の思想](https://qiita.com/andmohiko/private/a461157904ee078003e0)
 
 
+プレビューはcloudflare管理ができる人のみ。
+あとで変えます。
+
 ### ディレクトリ構成
 
 ```
