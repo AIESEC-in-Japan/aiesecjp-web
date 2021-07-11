@@ -93,7 +93,14 @@
         v-show="this.$isMobile()"
         class="navigation-mobile-icon"
         @click.stop="drawer = !drawer"
-      />
+      >
+        <v-icon v-show="!drawer">
+          mdi-menu
+        </v-icon>
+        <v-icon v-show="drawer">
+          mdi-close
+        </v-icon>
+      </v-app-bar-nav-icon>
     </nav>
   </header>
 </template>
