@@ -43,11 +43,11 @@ jobs:
 
       - name: build
         if: always()
-        run: yarn build --quiet
+        run: yarn build
 
       - name: storybook
         if: always()
-        run: yarn build-storybook --quiet
+        run: yarn nuxt storybook build
 
       - name: Upload test artifact
         if: always()
