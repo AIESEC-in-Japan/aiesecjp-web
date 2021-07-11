@@ -92,6 +92,11 @@ section {
   width: 25rem;
   margin: 4rem 1rem;
 
+  @include tab {
+    width: 30%;
+    margin: 1rem;
+  }
+
   @include sp {
     width: 90%;
     margin: 1rem;
