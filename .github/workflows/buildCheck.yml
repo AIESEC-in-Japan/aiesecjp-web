@@ -10,7 +10,7 @@ on:
     types: [opened, reopened, synchronize]
 
 env:
-  NODE_VERSION: "14.15.3" # set this to the node version to use/
+  NODE_VERSION: "14.15.3"
 
 jobs:
   build:
@@ -34,7 +34,6 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-
 
       - name: Install Dependencies
         run: yarn
