@@ -1,6 +1,6 @@
 <template>
   <section class="global-youth-dialogue-container ">
-    <h1>Join Global Youth Dialogue</h1>
+    <h1>Join global youth dialogue</h1>
     <img
       alt="topics"
       src="@/assets/images/global-youth-dialogue/typing.svg"

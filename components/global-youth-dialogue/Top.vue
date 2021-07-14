@@ -35,6 +35,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 38rem;
   }
 
   /* 半透明のフィルターをかける */
