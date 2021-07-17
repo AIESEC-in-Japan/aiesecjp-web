@@ -9,7 +9,7 @@ Vue.use({
     })
 
     // SSR 時にエラーが出るかもしれないので（addEventListenerが取れない）
-    if (process.browser) {
+    if (process.client) {
       const onScroll = () => {
         $window.pageYOffset = global.pageYOffset
       }
