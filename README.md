@@ -1,3 +1,7 @@
+# status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2ee24bcb-0f1d-490f-a5b5-020db2d3cff1/deploy-status)](https://app.netlify.com/sites/mystifying-mahavira-e21c29/deploys)
+プレビューのためだけにnetlifyを使用中
+
 # AIESEC JP HP
 
 1. [環境構築手順](#環境構築手順)
@@ -6,6 +10,8 @@
 1. [ローカルでの動かし方](#ローカルでの動かし方)
 1. [使用している技術と背景](#使用している技術と背景)
 1. [参考](#参考)
+
+
 
 
 ## 環境構築手順
