@@ -94,11 +94,11 @@
         class="navigation-mobile-icon"
         @click.stop="drawer = !drawer"
       >
-        <v-icon v-show="!drawer">
-          mdi-menu
-        </v-icon>
-        <v-icon v-show="drawer">
+        <v-icon v-if="drawer">
           mdi-close
+        </v-icon>
+        <v-icon v-else>
+          mdi-menu
         </v-icon>
       </v-app-bar-nav-icon>
     </nav>
