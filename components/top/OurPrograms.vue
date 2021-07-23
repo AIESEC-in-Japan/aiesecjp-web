@@ -43,7 +43,7 @@
             :is-wide="true"
           />
         </div>
-        <h2>Global Youth Dialogue</h2>
+        <h2>global youth dialogue</h2>
         <p>
           海外の学生との様々な会話を通じて、世界をより広く、
           自分をより深く知ることのできるオンラインイベントです。
