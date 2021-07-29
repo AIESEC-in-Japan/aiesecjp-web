@@ -1,31 +1,31 @@
 
 .aboutus-table {
   &-container {
-    width: 800px;
-    margin: 50px auto;
-    font-size: 16px;
-    letter-spacing: 2px;
-    margin-top: 30px;
+    width: 50rem;
+    margin: 3.125rem auto;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
+    margin-top: 1.875rem;
 
     @include sp {
-      width: 350px;
-      font-size: 14px;
+      width: 21.875rem;
+      font-size: 0.875rem;
       letter-spacing: 0;
     }
   }
 
   &-title {
     color: $blue;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
-    letter-spacing: 2px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    letter-spacing: 0.125rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
 
     @include sp {
-      font-size: 20px;
-      margin-top: 20px;
-      margin-bottom: 15px;
+      font-size: 1.25rem;
+      margin-top: 1.25rem;
+      margin-bottom: 1rem;
     }
   }
 }

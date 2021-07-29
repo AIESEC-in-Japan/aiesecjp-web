@@ -27,29 +27,29 @@ export default {
 th,
 td {
   border-bottom-style: solid;
-  border-bottom-width: 0.5px;
+  border-bottom-width: 0.03rem;
   border-bottom-color: $gray;
-  padding: 24px 16px;
+  padding: 1.5rem 1rem;
 
   @include sp {
-    padding: 15px 15px;
+    padding: 1rem 1rem;
   }
 }
 
 th {
-  width: 108px;
+  width: 6.75rem;
   text-align: left;
 
   @include sp {
-    width: 100px;
+    width: 6.25rem;
   }
 }
 
 td {
-  line-height: 21px;
+  line-height: 1.3rem;
 
   @include sp {
-    width: 250px;
+    width: 15.6rem;
   }
 }
 
