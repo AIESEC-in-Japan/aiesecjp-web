@@ -17,7 +17,7 @@
       <div class="button__wrapper">
         <BaseRoundButton
           v-bind="this.WhiteButtonProps"
-          :label="'お問い合わせはこちら'"
+          :label="'インターンシップ実例を見る'"
         />
       </div>
     </div>
@@ -34,7 +34,7 @@ export default {
         textColor: basic_color.white,
         baseColor: 'transparent',
         size: 'large',
-        url: '/contact-us'
+        url: '/article'
       }
     }
   }
