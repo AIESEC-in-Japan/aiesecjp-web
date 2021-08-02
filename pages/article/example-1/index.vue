@@ -1,6 +1,8 @@
 <template>
   <div>
-    <IncomingArticleExample-1Top />
-    <!-- <IncomingArticleExample-1Related-articles /> -->
+    <IncomingArticleNECTop />
+    <IncomingArticleNECContentCompany />
+    <IncomingArticleNECContentTrainee />
+    <IncomingArticleNECContentMember />
   </div>
 </template>
