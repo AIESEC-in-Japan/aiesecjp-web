@@ -8,9 +8,9 @@
         </div>
         <div class="example-trainee-info">
           <img
-            src="#"
+            src="@/assets/images/icx/article/nec_trainee.png"
             class="example-trainee-info-logo"
-            alt="写真"
+            alt="インターン生の写真"
           >
           <table class="example-trainee-info-table">
             <tbody>
@@ -119,10 +119,13 @@
       flex-wrap: wrap;
       align-items: center;
       &-logo {
-        width: 240px;
-        height: 160px;
-        background-color: $white;
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: -10px 0px;
         margin-bottom: 1.5rem;
+        border: solid 4px #EF4573;
       }
       &-table {
         font-family: $fonts;

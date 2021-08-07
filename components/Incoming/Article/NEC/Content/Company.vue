@@ -7,11 +7,11 @@
           <p>受け入れ企業さまの声</p>
         </div>
         <div class="example-company-info">
-          <img
-            src="#"
+          <BaseIconInAssetsPath
+            :data="company_logo"
+            :is-wide="true"
             class="example-company-info-logo"
-            alt="ロゴ"
-          >
+          />
           <table class="example-company-info-table">
             <tbody>
               <tr class="example-company-info-table-row">
@@ -82,6 +82,17 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      company_logo:
+        {src: "2020corporation-logo/nec.jpeg", alt: "NEC株式会社のロゴ"}
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .example {
   &-container {
@@ -121,9 +132,6 @@
       align-items: center;
 
       &-logo {
-        width: 240px;
-        height: 160px;
-        background-color: $white;
         margin-bottom: 1.5rem;
       }
 

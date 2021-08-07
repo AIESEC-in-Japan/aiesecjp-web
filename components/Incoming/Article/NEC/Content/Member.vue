@@ -8,9 +8,9 @@
         </div>
         <div class="example-member-info">
           <img
-            src="#"
+            src="@/assets/images/icx/article/nec_tnm.jpg"
             class="example-member-info-logo"
-            alt="写真"
+            alt="アイセック担当者の写真"
           >
           <table class="example-member-info-table">
             <tbody>
@@ -100,10 +100,14 @@
       flex-wrap: wrap;
       align-items: center;
       &-logo {
-        width: 240px;
-        height: 160px;
-        background-color: $white;
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: 20px 0px;
         margin-bottom: 1.5rem;
+        background-color: $gray;
+        border: solid 4px $blue;
       }
       &-table {
         font-family: $fonts;

@@ -9,11 +9,6 @@
           作成日 2019年10月1日
         </p>
       </div>
-      <img
-        src="#"
-        class="example-thumbnail"
-        alt="後で画像つける"
-      >
     </div>
   </div>
 </template>
