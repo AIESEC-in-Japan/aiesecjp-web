@@ -9,7 +9,7 @@
     <div class="article-content">
       <v-card
         elevation="2"
-        href="/article/example-1"
+        href="/article/nec"
       >
         <div
           class="v-image v-responsive theme--light"
@@ -33,7 +33,7 @@
         </v-card-title>
         <v-card-subtitle>
           <span>作成日</span>
-          <span>2019年10月1日</span>
+          <span>2017年8月</span>
         </v-card-subtitle>
         <div class="article-tag">
           <v-card-text>
@@ -45,6 +45,88 @@
           <v-card-text>
             <span class="article-status-icon">インターン生</span>
             <span>Tam ThiHa さん（ベトナム）</span>
+          </v-card-text>
+        </div>
+      </v-card>
+      <v-card
+        elevation="2"
+        href="/article/inakanomado"
+      >
+        <div
+          class="v-image v-responsive theme--light"
+          style="height: 250px;"
+        >
+          <div
+            class="v-responsive__sizer"
+            style="padding-bottom: 73.9612%;"
+          /><div
+            class="v-image__image v-image__image--cover"
+            style="background-image: url(&quot;https://cdn.vuetifyjs.com/images/cards/cooking.png&quot;); background-position: center center;"
+          /><div
+            class="v-responsive__content"
+            style="width: 361px;"
+          />
+        </div>
+        <v-card-title>
+          <h2>
+            テクノロジーの力で食を変える。母国の課題と向き合うインターンシップ
+          </h2>
+        </v-card-title>
+        <v-card-subtitle>
+          <span>作成日</span>
+          <span>2017年8月</span>
+        </v-card-subtitle>
+        <div class="article-tag">
+          <v-card-text>
+            <span class="article-status-icon">受け入れ機関</span>
+            <span>株式会社いなかの窓さま</span>
+          </v-card-text>
+        </div>
+        <div class="article-tag">
+          <v-card-text>
+            <span class="article-status-icon">インターン生</span>
+            <span>Julio Anthony Leonardさん（インドネシア）</span>
+          </v-card-text>
+        </div>
+      </v-card>
+      <v-card
+        elevation="2"
+        href="/article/wellnet"
+      >
+        <div
+          class="v-image v-responsive theme--light"
+          style="height: 250px;"
+        >
+          <div
+            class="v-responsive__sizer"
+            style="padding-bottom: 73.9612%;"
+          /><div
+            class="v-image__image v-image__image--cover"
+            style="background-image: url(&quot;https://cdn.vuetifyjs.com/images/cards/cooking.png&quot;); background-position: center center;"
+          /><div
+            class="v-responsive__content"
+            style="width: 361px;"
+          />
+        </div>
+        <v-card-title>
+          <h2>
+            異なる価値観の中で「共に生きる」を実践する機会に
+          </h2>
+        </v-card-title>
+        <v-card-subtitle>
+          <span>作成日</span>
+          <span>2019年3月</span>
+        </v-card-subtitle>
+        <div class="article-tag">
+          <v-card-text>
+            <span class="article-status-icon">受け入れ機関</span>
+            <span>株式会社ウェル・ネット研究所さま</span>
+          </v-card-text>
+        </div>
+        <div class="article-tag">
+          <v-card-text>
+            <span class="article-status-icon">インターン生</span>
+            <span>Kanyalak Swangsakさん（タイ）</span>
           </v-card-text>
         </div>
       </v-card>

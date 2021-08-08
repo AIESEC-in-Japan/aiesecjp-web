@@ -3,7 +3,7 @@
     <div class="example-container">
       <div class="example-top">
         <h1 class="example-top-headline">
-          テクノロジーの力で食を変える。母国の課題と向き合うインターンシップ
+          兵庫県丹波篠山地域における外国人観光客数の誘致
         </h1>
         <p class="example-top-text">
           作成日 2017年8月

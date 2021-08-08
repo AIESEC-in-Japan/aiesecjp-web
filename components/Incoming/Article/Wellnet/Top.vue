@@ -3,10 +3,10 @@
     <div class="example-container">
       <div class="example-top">
         <h1 class="example-top-headline">
-          テクノロジーの力で食を変える。母国の課題と向き合うインターンシップ
+          異なる価値観の中で「共に生きる」を実践する機会に
         </h1>
         <p class="example-top-text">
-          作成日 2017年8月
+          作成日 2019年3月
         </p>
       </div>
     </div>
