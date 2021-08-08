@@ -95,7 +95,7 @@ export default {
   data() {
     return {
       company_logo:
-        {src: "2020corporation-logo/nec.jpeg", alt: "NEC株式会社のロゴ"}
+        {src: "2020corporation-logo/inakanomado.png", alt: "株式会社いなかの窓のロゴ"}
     }
   }
 }

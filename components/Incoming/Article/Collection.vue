@@ -11,20 +11,9 @@
         elevation="2"
         href="/article/nec"
       >
-        <div
-          class="v-image v-responsive theme--light"
-          style="height: 250px;"
-        >
-          <div
-            class="v-responsive__sizer"
-            style="padding-bottom: 73.9612%;"
-          /><div
-            class="v-image__image v-image__image--cover"
-            style="background-image: url(&quot;https://cdn.vuetifyjs.com/images/cards/cooking.png&quot;); background-position: center center;"
-          /><div
-            class="v-responsive__content"
-            style="width: 361px;"
-          />
+        <div class="v-image v-responsive">
+          <div class="v-responsive__content"/>
+          <div class="v-image__image v-image__image--cover image-nec"/>
         </div>
         <v-card-title>
           <h2>
@@ -52,24 +41,13 @@
         elevation="2"
         href="/article/inakanomado"
       >
-        <div
-          class="v-image v-responsive theme--light"
-          style="height: 250px;"
-        >
-          <div
-            class="v-responsive__sizer"
-            style="padding-bottom: 73.9612%;"
-          /><div
-            class="v-image__image v-image__image--cover"
-            style="background-image: url(&quot;https://cdn.vuetifyjs.com/images/cards/cooking.png&quot;); background-position: center center;"
-          /><div
-            class="v-responsive__content"
-            style="width: 361px;"
-          />
+        <div class="v-image v-responsive">
+          <div class="v-responsive__content"/>
+          <div class="v-image__image v-image__image--cover image-inakanomado"/>
         </div>
         <v-card-title>
           <h2>
-            テクノロジーの力で食を変える。母国の課題と向き合うインターンシップ
+            兵庫県丹波篠山地域における外国人観光客数の誘致
           </h2>
         </v-card-title>
         <v-card-subtitle>
@@ -85,7 +63,7 @@
         <div class="article-tag">
           <v-card-text>
             <span class="article-status-icon">インターン生</span>
-            <span>Julio Anthony Leonardさん（インドネシア）</span>
+            <span>Julio Anthony Leonardさん(インドネシア)</span>
           </v-card-text>
         </div>
       </v-card>
@@ -93,20 +71,9 @@
         elevation="2"
         href="/article/wellnet"
       >
-        <div
-          class="v-image v-responsive theme--light"
-          style="height: 250px;"
-        >
-          <div
-            class="v-responsive__sizer"
-            style="padding-bottom: 73.9612%;"
-          /><div
-            class="v-image__image v-image__image--cover"
-            style="background-image: url(&quot;https://cdn.vuetifyjs.com/images/cards/cooking.png&quot;); background-position: center center;"
-          /><div
-            class="v-responsive__content"
-            style="width: 361px;"
-          />
+        <div class="v-image v-responsive">
+          <div class="v-responsive__content"/>
+          <div class="v-image__image v-image__image--cover image-wellnet"/>
         </div>
         <v-card-title>
           <h2>
@@ -160,8 +127,29 @@
 
     .v-card {
       margin: 1rem;
-      padding: 0.5rem 0;
+      padding: 0 0 .5rem;
       width: 25rem;
+      
+      .v-image {
+        height: 15rem;
+      }
+
+      .v-responsive__content {
+        width: 22rem;
+      }
+
+      .image-nec {
+        background-image: url("~@/assets/images/icx/article/nec/top.png");
+        background-position: center center;
+      }
+      .image-inakanomado {
+        background-image: url("~@/assets/images/icx/article/inakanomado/top.jpg");
+        background-position: center center;
+      }
+      .image-wellnet {
+        background-image: url("~@/assets/images/icx/article/wellnet/top.png");
+        background-position: center center;
+      }
 
       h2 {
         color: $blue;

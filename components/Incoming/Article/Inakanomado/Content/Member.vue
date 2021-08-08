@@ -8,7 +8,7 @@
         </div>
         <div class="example-member-info">
           <img
-            src="@/assets/images/icx/article/nec_tnm.jpg"
+            src="@/assets/images/icx/article/inakanomado/tnm.jpg"
             class="example-member-info-logo"
             alt="アイセック担当者の写真"
           >
@@ -104,9 +104,9 @@
         height: 10rem;
         object-fit: cover;
         border-radius: 50%;
-        object-position: 20px 0px;
+        object-position: -10px 0px;
         margin-bottom: 1.5rem;
-        background-color: $gray;
+        background-color: $white;
         border: solid 4px $blue;
       }
       &-table {
