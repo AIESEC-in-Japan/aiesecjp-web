@@ -15,7 +15,7 @@
     "lint:fix": "yarn lint:es --fix && yarn lint:css --fix",
     "storybook": "yarn nuxt storybook",
     "precommit": "npm run lint",
-    "test": "jest"
+    "test": "jest --config jest.config.js"
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
@@ -27,14 +27,19 @@
     "@nuxt/test-utils": "^0.2.2",
     "@nuxtjs/storybook": "^4.0.4",
     "@nuxtjs/vuetify": "^1.12.1",
+    "@playwright/test": "^1.13.1",
+    "@types/jest": "^26.0.24",
+    "@vue/test-utils": "^1.2.2",
     "babel-eslint": "^10.0.1",
     "css-loader": "^5.0.0",
-    "eslint": "^7.27.0",
+    "eslint": "^7.32.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
+    "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-vue": "^7.10.0",
     "jest": "^27.0.6",
     "node-sass": "^4.13.1",
+    "playwright": "^1.13.1",
     "postcss": "^8.1.10",
     "postcss-import": "^13.0.0",
     "postcss-loader": "^4.1.0",
@@ -42,6 +47,7 @@
     "sass-loader": "^8.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-scss": "^3.19.0",
+    "vue-jest": "^3.0.7"
   }
 }

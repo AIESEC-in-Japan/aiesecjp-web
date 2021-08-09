@@ -14,10 +14,11 @@ module.exports = {
     // see this https://eslint.vuejs.org/user-guide/#usage
     'plugin:vue/strongly-recommended',
     "eslint:recommended",
+    'plugin:jest/recommended'
   ],
   plugins: [
-    'vue'
+    'vue',
+    'jest'
   ],
   rules: {},
 }
-
