@@ -4,5 +4,6 @@
     <IncomingArticleNECContentCompany />
     <IncomingArticleNECContentTrainee />
     <IncomingArticleNECContentMember />
+    <IncomingArticleAction />
   </div>
 </template>

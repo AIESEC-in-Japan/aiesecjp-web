@@ -17,14 +17,16 @@
 .example {
   &-container {
     max-width: 50rem;
-    margin: 4rem auto;
+    margin: 3rem auto;
+
     @include sp {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
 
   &-top {
     margin: 2rem 0;
+
     @include sp {
       margin: 2rem 1rem;
     }
@@ -33,12 +35,6 @@
       color: $blue;
       margin: 1rem 0;
     }
-  }
-
-  &-thumbnail {
-    width: 100vw;
-    height: 240px;
-    background-color: $gray;
   }
 }
 </style>

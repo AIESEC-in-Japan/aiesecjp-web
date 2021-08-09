@@ -62,15 +62,27 @@
             <h2 class="example-company-voice-paragraph-question">
               ー そもそも、海外インターン生の受け入れを決めた理由はなんですか？
             </h2>
-            <p>アイセック関⻄学院⼤学委員会の⽅が営業にきたことがきっかけです。<br>
-            海外⽬線で篠⼭地域の良さを⾒つけてもらうため、海外の⼈とのコミュニケーションを取って情報発信をしたいと考えたため受け⼊れを決めました。</p>
+            <p>
+              アイセック関⻄学院⼤学委員会の⽅が営業にきたことがきっかけです。<br>
+              海外⽬線で篠⼭地域の良さを⾒つけてもらうため、海外の⼈とのコミュニケーションを取って情報発信をしたいと考えたため受け⼊れを決めました。
+            </p>
           </div>
           <div class="example-company-voice-paragraph">
             <h2 class="example-company-voice-paragraph-question">
               ー 実際にインターン生を受け入れてみて、社内外に何か変化はありましたか？
             </h2>
-            <p>海外インターンシップを通して、インターン⽣にウェブサイトの構想、開発、コンテンツ設計までやっていただきました。
-            ウェブサイトを作りきったことが1番⼤きく⽬に⾒える変化です。ウェブサイトを通じて、海外の⽬線から篠⼭地域の魅⼒を発信できたと思います。</p>
+            <p>
+              海外インターンシップを通して、インターン⽣にウェブサイトの構想、開発、コンテンツ設計までやっていただきました。
+              ウェブサイトを作りきったことが1番⼤きく⽬に⾒える変化です。ウェブサイトを通じて、海外の⽬線から篠⼭地域の魅⼒を発信できたと思います。
+            </p>
+            <div class="example-company-voice-photo">
+              <BaseIconInAssetsPath
+                :data="internship_photo"
+                :is-wide="true"
+              />
+              <span>いなかの窓の社員さまとインターン生。<br>
+                中心がインターン生のJulioさん。</span>
+            </div>
           </div>
           <div class="example-company-voice-paragraph">
             <h2 class="example-company-voice-paragraph-question">
@@ -95,7 +107,9 @@ export default {
   data() {
     return {
       company_logo:
-        {src: "2020corporation-logo/inakanomado.png", alt: "株式会社いなかの窓のロゴ"}
+        {src: "2020corporation-logo/inakanomado.png", alt: "株式会社いなかの窓のロゴ"},
+      internship_photo:
+        {src: "images/icx/article/inakanomado/top.jpg", alt: ""}
     }
   }
 }
@@ -105,11 +119,13 @@ export default {
 .example {
   &-container {
     max-width: 50rem;
-    margin: 4rem auto;
+    margin: 3rem auto;
+
     @include sp {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
+
   &-company {
     &-title {
       text-align: center;
@@ -130,10 +146,11 @@ export default {
       font-size: 0.875rem;
     }
 
+    /* stylelint-disable unit-disallowed-list */
     &-info {
       padding: 2rem;
       margin: 1.5rem 0;
-      background: linear-gradient(25deg, rgba(48,195,158,0.2), rgba(255, 200, 69, 0.2));
+      background: linear-gradient(25deg, rgba(48, 195, 158, 0.2), rgba(255, 200, 69, 0.2));
       display: flex;
       flex-flow: column;
       flex-wrap: wrap;
@@ -166,7 +183,7 @@ export default {
 
         &-question {
           font-size: 1.25rem;
-          color: #0A8EA0;
+          color: #0a8ea0;
           margin-bottom: 0.5rem;
         }
 
@@ -174,6 +191,20 @@ export default {
           font-size: 1rem;
           line-height: 2;
           padding: 0.5rem 0;
+        }
+      }
+
+      &-photo {
+        margin: 1rem auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+
+        span {
+          font-size: 0.875rem;
+          color: $dark-gray;
+          margin-top: 0.5rem;
         }
       }
     }

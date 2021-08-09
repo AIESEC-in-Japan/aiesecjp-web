@@ -68,8 +68,10 @@
             <h2 class="example-trainee-voice-paragraph-question">
               ー インターンシップの中で印象的だった出来事があれば教えてください。
             </h2>
-            <p>受け入れ企業の代表の方から高齢化問題や介護に関する知識をインプットしてもらい、その上で現場に足を運んだことです。高齢化問題について深く知るきっかけとなりました。<br>
-            実際に高齢者がたくさん施設にいる様子や、介護製品をつかっているのをみる経験は、自分にとってとても新鮮でした。自分の国で同じようなことが今後起こるとは想像もつきませんでした。</p>
+            <p>
+              受け入れ企業の代表の方から高齢化問題や介護に関する知識をインプットしてもらい、その上で現場に足を運んだことです。高齢化問題について深く知るきっかけとなりました。<br>
+              実際に高齢者がたくさん施設にいる様子や、介護製品をつかっているのをみる経験は、自分にとってとても新鮮でした。自分の国で同じようなことが今後起こるとは想像もつきませんでした。
+            </p>
           </div>
         </div>
       </div>
@@ -81,48 +83,57 @@
 .example {
   &-container {
     max-width: 50rem;
-    margin: 4rem auto;
+    margin: 3rem auto;
+
     @include sp {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
+
   &-trainee {
     &-title {
       text-align: center;
     }
+
     h1 {
-      margin: 4rem 0 0.5rem;
+      margin: 3rem 0 0.5rem;
       font-style: italic;
       font-weight: normal;
       display: inline-block;
       padding: 0 1rem 0.5rem;
       border-bottom: solid $red;
     }
+
     p {
       margin: auto;
       display: block;
       font-size: 0.875rem;
     }
+
     &-info {
+      /* stylelint-disable unit-disallowed-list */
       padding: 2rem;
       margin: 1.5rem 0;
-      background: linear-gradient(25deg, rgba(244,137,36,0.2), rgba(239, 69, 115, 0.2));
+      background: linear-gradient(25deg, rgba(244, 137, 36, 0.2), rgba(239, 69, 115, 0.2));
       display: flex;
       flex-flow: column;
       flex-wrap: wrap;
       align-items: center;
+
       &-logo {
         width: 10rem;
         height: 10rem;
         object-fit: cover;
         border-radius: 50%;
-        object-position: -10px 0px;
+        object-position: -10px 0;
         margin-bottom: 1.5rem;
-        border: solid 4px #EF4573;
+        border: solid 4px #ef4573;
       }
+
       &-table {
         font-family: $fonts;
         color: $dark-gray;
+
         &-row {
           &-title {
             font-weight: bold;
@@ -133,15 +144,19 @@
         }
       }
     }
+
     &-voice {
       padding: 0 1.5rem 1.5rem;
+
       &-paragraph {
         margin-top: 1.5rem;
+
         &-question {
           font-size: 1.25rem;
-          color: #EF4573;
+          color: #ef4573;
           margin-bottom: 0.5rem;
         }
+
         p {
           font-size: 1rem;
           line-height: 2;

@@ -4,5 +4,6 @@
     <IncomingArticleWellnetContentCompany />
     <IncomingArticleWellnetContentTrainee />
     <IncomingArticleWellnetContentMember />
+    <IncomingArticleAction />
   </div>
 </template>

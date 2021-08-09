@@ -53,10 +53,14 @@
             <h2 class="example-member-voice-paragraph-question">
               ー 実際にインターンが実現してみての感想を教えてください。
             </h2>
-            <p>タムさんとの対話で忘れられない瞬間があります。それは、彼⼥と将来について話していた時のこと。<br>
-                「将来的にもこの⾷の安全に取り組んでいくかはわからない。興味ある課題はたくさんある。けれども、社会課題に携わって社会をよくして⾏きたいという想いは変わらない。そのためには、もっとテクノロジーの知識と、いろんな⼈から知⾒を得たり、提携していくためのコミュニケーション能⼒を⾝につけていかなければならない。」と彼⼥は語ってくれました。</p>
-            <p>「そのテクノロジーの知識が必要って感じたきっかけはなに？」と私が聞いたところ、「このNECでのインターンシップだよ！」と答えてくれました。これまで何⼗件もの海外インターンシップ受け⼊れに関わってきましたが、ここまで強くインターン⽣の変化を間近で実感できたのは今回が初めてでした。<br>
-                社会課題を変えていきたいという想いを深く共有できたのも初めてかもしれません。</p>
+            <p>
+              タムさんとの対話で忘れられない瞬間があります。それは、彼⼥と将来について話していた時のこと。<br>
+              「将来的にもこの⾷の安全に取り組んでいくかはわからない。興味ある課題はたくさんある。けれども、社会課題に携わって社会をよくして⾏きたいという想いは変わらない。そのためには、もっとテクノロジーの知識と、いろんな⼈から知⾒を得たり、提携していくためのコミュニケーション能⼒を⾝につけていかなければならない。」と彼⼥は語ってくれました。
+            </p>
+            <p>
+              「そのテクノロジーの知識が必要って感じたきっかけはなに？」と私が聞いたところ、「このNECでのインターンシップだよ！」と答えてくれました。これまで何⼗件もの海外インターンシップ受け⼊れに関わってきましたが、ここまで強くインターン⽣の変化を間近で実感できたのは今回が初めてでした。<br>
+              社会課題を変えていきたいという想いを深く共有できたのも初めてかもしれません。
+            </p>
             <p>タムさんからは、アイセックにありがとうという⾔葉と、もっといろんな⼈に参加して欲しいというメッセージをいただくことができました。私⾃⾝、このインターンシップに携われたことを⼼から感謝しています。</p>
           </div>
         </div>
@@ -69,49 +73,58 @@
 .example {
   &-container {
     max-width: 50rem;
-    margin: 4rem auto;
+    margin: 3rem auto;
+
     @include sp {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
+
   &-member {
     &-title {
       text-align: center;
     }
+
     h1 {
-      margin: 4rem 0 0.5rem;
+      margin: 3rem 0 0.5rem;
       font-style: italic;
       font-weight: normal;
       display: inline-block;
       padding: 0 1rem 0.5rem;
       border-bottom: solid $blue;
     }
+
     p {
       margin: auto;
       display: block;
       font-size: 0.875rem;
     }
+
     &-info {
+      /* stylelint-disable unit-disallowed-list */
       padding: 2rem;
       margin: 1.5rem 0;
-      background: linear-gradient(25deg, rgba(48,195,158,0.2), rgba(3,126,243,0.2));
+      background: linear-gradient(25deg, rgba(48, 195, 158, 0.2), rgba(3, 126, 243, 0.2));
       display: flex;
       flex-flow: column;
       flex-wrap: wrap;
       align-items: center;
+
       &-logo {
         width: 10rem;
         height: 10rem;
         object-fit: cover;
         border-radius: 50%;
-        object-position: 20px 0px;
+        object-position: 20px 0;
         margin-bottom: 1.5rem;
         background-color: $gray;
         border: solid 4px $blue;
       }
+
       &-table {
         font-family: $fonts;
         color: $dark-gray;
+
         &-row {
           &-title {
             font-weight: bold;
@@ -122,15 +135,19 @@
         }
       }
     }
+
     &-voice {
       padding: 0 1.5rem 1.5rem;
+
       &-paragraph {
         margin-top: 1.5rem;
+
         &-question {
           font-size: 1.25rem;
           color: $blue;
           margin-bottom: 0.5rem;
         }
+
         p {
           font-size: 1rem;
           line-height: 2;

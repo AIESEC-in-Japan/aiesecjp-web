@@ -12,8 +12,8 @@
         href="/article/nec"
       >
         <div class="v-image v-responsive">
-          <div class="v-responsive__content"/>
-          <div class="v-image__image v-image__image--cover image-nec"/>
+          <div class="v-responsive__content" />
+          <div class="v-image__image v-image__image--cover image-nec" />
         </div>
         <v-card-title>
           <h2>
@@ -42,8 +42,8 @@
         href="/article/inakanomado"
       >
         <div class="v-image v-responsive">
-          <div class="v-responsive__content"/>
-          <div class="v-image__image v-image__image--cover image-inakanomado"/>
+          <div class="v-responsive__content" />
+          <div class="v-image__image v-image__image--cover image-inakanomado" />
         </div>
         <v-card-title>
           <h2>
@@ -72,8 +72,8 @@
         href="/article/wellnet"
       >
         <div class="v-image v-responsive">
-          <div class="v-responsive__content"/>
-          <div class="v-image__image v-image__image--cover image-wellnet"/>
+          <div class="v-responsive__content" />
+          <div class="v-image__image v-image__image--cover image-wellnet" />
         </div>
         <v-card-title>
           <h2>
@@ -104,7 +104,7 @@
 <style lang="scss" scoped>
 .article {
   &-headline {
-    margin: 2rem;
+    margin: 2rem 1rem;
     text-align: center;
 
     h1 {
@@ -123,13 +123,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 1rem;
+    margin: 2rem 1rem;
 
     .v-card {
-      margin: 1rem;
-      padding: 0 0 .5rem;
+      margin: 1.5rem 1rem;
+      padding: 0 0 0.5rem;
       width: 25rem;
-      
+
       .v-image {
         height: 15rem;
       }
@@ -142,10 +142,12 @@
         background-image: url("~@/assets/images/icx/article/nec/top.png");
         background-position: center center;
       }
+
       .image-inakanomado {
         background-image: url("~@/assets/images/icx/article/inakanomado/top.jpg");
         background-position: center center;
       }
+
       .image-wellnet {
         background-image: url("~@/assets/images/icx/article/wellnet/top.png");
         background-position: center center;
