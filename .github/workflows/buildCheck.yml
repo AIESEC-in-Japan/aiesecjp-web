@@ -1,4 +1,4 @@
-name: build check
+name: build and test CI
 
 on:
   workflow_dispatch:
@@ -40,6 +40,10 @@ jobs:
 
       - name: lint
         run: yarn lint
+
+      - name: test
+        if: always()
+        run: yarn test
 
       - name: build
         if: always()
