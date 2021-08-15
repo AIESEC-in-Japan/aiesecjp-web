@@ -32,7 +32,7 @@ export default {
         textColor: basic_color.deepBlue,
         baseColor: basic_color.White,
         size: 'large',
-        url: '/article'
+        url: '/incoming/article'
       }
     }
   }

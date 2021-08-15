@@ -34,7 +34,7 @@ export default {
         textColor: basic_color.white,
         baseColor: 'transparent',
         size: 'large',
-        url: '/article'
+        url: '/incoming/article'
       }
     }
   }

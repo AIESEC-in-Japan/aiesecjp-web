@@ -9,7 +9,7 @@
     <div class="article-content">
       <v-card
         elevation="2"
-        href="/article/nec"
+        href="/incoming/article/nec"
       >
         <div class="v-image v-responsive">
           <div class="v-responsive__content" />
@@ -39,7 +39,7 @@
       </v-card>
       <v-card
         elevation="2"
-        href="/article/inakanomado"
+        href="/incoming/article/inakanomado"
       >
         <div class="v-image v-responsive">
           <div class="v-responsive__content" />
@@ -69,7 +69,7 @@
       </v-card>
       <v-card
         elevation="2"
-        href="/article/wellnet"
+        href="/incoming/article/wellnet"
       >
         <div class="v-image v-responsive">
           <div class="v-responsive__content" />

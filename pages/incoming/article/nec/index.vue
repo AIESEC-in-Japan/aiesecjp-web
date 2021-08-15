@@ -4,6 +4,6 @@
     <IncomingArticleNECContentCompany />
     <IncomingArticleNECContentTrainee />
     <IncomingArticleNECContentMember />
-    <IncomingArticleAction />
+    <IncomingArticleFooter />
   </div>
 </template>

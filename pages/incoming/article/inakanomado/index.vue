@@ -4,6 +4,6 @@
     <IncomingArticleInakanomadoContentCompany />
     <IncomingArticleInakanomadoContentTrainee />
     <IncomingArticleInakanomadoContentMember />
-    <IncomingArticleAction />
+    <IncomingArticleFooter />
   </div>
 </template>
