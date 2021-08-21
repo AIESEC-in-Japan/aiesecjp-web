@@ -1,8 +1,8 @@
 name: Build and Deploy
 on: 
-  push:
-    branches:
-      - develop
+#   push:
+#     branches:
+#       - develop
   workflow_dispatch:
     inputs:
       logLevel:
