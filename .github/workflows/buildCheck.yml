@@ -45,6 +45,14 @@ jobs:
         if: always()
         run: yarn build
 
+      - name: Upload build artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-artifacts
+          path: dist
+          retention-days: 3
+
       - name: storybook
         if: always()
         run: yarn nuxt storybook build
