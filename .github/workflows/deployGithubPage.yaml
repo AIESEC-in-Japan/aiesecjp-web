@@ -19,11 +19,11 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install
-          yarn run build
+          nuxt generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: develop
-          folder: dist
+          folder: ./dist
           clean: true
