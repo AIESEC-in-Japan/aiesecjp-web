@@ -51,4 +51,4 @@ jobs:
         with:
           branch: develop
           folder: ./dist
-          clean: true
+#           clean: true
