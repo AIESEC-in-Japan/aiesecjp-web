@@ -260,11 +260,9 @@ yarn,node module周りが壊れた時も同様に対処することができる�
 
 ## 使用している技術と背景
 
-WIP
-
-- Nuxt.js
-- eslint
-- stylelint
+- [Nuxt.js](https://nuxtjs.org/)
+- [eslint](https://eslint.org/)
+- [stylelint](https://stylelint.io/)
 - [vuetify](https://vuetifyjs.com/)
 
 状況はかわるので、この通りにはなっていないと思うけど
