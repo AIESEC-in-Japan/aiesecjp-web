@@ -10,6 +10,7 @@
       <v-card
         elevation="2"
         href="/incoming/article/nec"
+        :nuxt="true"
       >
         <div class="v-image v-responsive">
           <div class="v-responsive__content" />
@@ -40,6 +41,7 @@
       <v-card
         elevation="2"
         href="/incoming/article/inakanomado"
+        :nuxt="true"
       >
         <div class="v-image v-responsive">
           <div class="v-responsive__content" />
@@ -70,6 +72,7 @@
       <v-card
         elevation="2"
         href="/incoming/article/wellnet"
+        :nuxt="true"
       >
         <div class="v-image v-responsive">
           <div class="v-responsive__content" />
