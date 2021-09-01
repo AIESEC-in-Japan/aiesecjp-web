@@ -84,6 +84,14 @@
             海外インターン生を受け入れる
           </nuxt-link>
         </li>
+        <li>
+          <nuxt-link
+            class="footer-content-link"
+            to="/incoming/article"
+          >
+            インターンシップ実例
+          </nuxt-link>
+        </li>
       </ul>
     </div>
     <div class="footer-content">
