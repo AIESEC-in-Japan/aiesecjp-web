@@ -28,7 +28,7 @@ export default {
         },
         {
           caption: "副会長",
-          description: "菊地端夫（明治大学 経営学部 准教授）",
+          description: "菊地端夫（明治大学 経営学部 教授）",
         },
         {
           caption: "常務理事",
