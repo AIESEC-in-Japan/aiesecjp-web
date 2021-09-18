@@ -40,7 +40,7 @@ export default {
         },
         {
           caption: "理事",
-          description: "江夏幾太郎（神戸大学 経済経営研究所 准教授）",
+          description: "江夏幾多郎（神戸大学 経済経営研究所 准教授）",
         },
         {
           caption: "理事",
