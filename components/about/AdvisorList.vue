@@ -14,7 +14,7 @@
         items:[
           {
             caption : '諮問',
-            description : '田中伸男（公共財団法人笹川平和財団 会長）'
+            description : '田中伸男（タナカグローバル（株） CEO）'
           },
           {
             caption : '諮問',
@@ -26,7 +26,7 @@
           },
           {
             caption : '諮問',
-            description : '鈴木良伸（有限会社ステージ・フォー・ワン 代表取締役）'
+            description : '鈴木美伸（有限会社ステージ・フォー・ワン 代表取締役）'
           },
           {
             caption : '諮問',
