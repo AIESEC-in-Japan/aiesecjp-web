@@ -11,7 +11,7 @@
         once conversation at a time.
       </p>
       <p class="global-youth-dialogue-text">
-        知らない国に、知っている人ができら、<br>
+        知らない国に、知っている人ができたら、<br>
         どんな世界が見えるようになるんだろう。
       </p>
       <p class="global-youth-dialogue-text">

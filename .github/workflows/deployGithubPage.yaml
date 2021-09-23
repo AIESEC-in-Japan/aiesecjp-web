@@ -1,0 +1,54 @@
+name: Build and Deploy
+on: 
+#   push:
+#     branches:
+#       - develop
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+        
+env:
+  NODE_VERSION: "14.15.3"
+  
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+        
+      - name: setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          
+      # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
+      # 共有しているので別ファイルで管理すべきなのかもしれない。
+      
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+
+      - uses: actions/cache@v2
+        id: yarn-cache 
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+            
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Build 🔧
+        run: yarn generate
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: develop
+          folder: ./dist
+#           clean: true
