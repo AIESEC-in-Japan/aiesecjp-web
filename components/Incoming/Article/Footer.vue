@@ -32,7 +32,8 @@ export default {
         textColor: basic_color.deepBlue,
         baseColor: basic_color.White,
         size: 'large',
-        url: '/incoming/article'
+        url: '/incoming/article',
+        target: '_self'
       }
     }
   }
