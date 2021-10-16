@@ -1,5 +1,5 @@
 {
-  "name": "aiesecjp-web",
+  "name": "yarn",
   "version": "1.0.0",
   "description": "AIESEC in Japan official website",
   "author": "andmohiko",
@@ -23,6 +23,7 @@
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/storybook": "^4.0.4",
     "@nuxtjs/vuetify": "^1.12.1",
     "babel-eslint": "^10.0.1",
@@ -40,5 +41,8 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:AIESEC-in-Japan/aiesecjp-web.git",
+  "license": "MIT"
 }

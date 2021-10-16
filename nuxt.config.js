@@ -71,6 +71,11 @@ module.exports = {
       '~/stories/**/*.stories.js',
       "~/components/**/stories/**/*.stories.@(js|vue)"
     ],
+    buildModules: [
+      '@nuxtjs/google-analytics'
+    ],
+    googleAnalytics: {
+      id: process.env.UA-422830-6, 
+    },
   }
 }
-
