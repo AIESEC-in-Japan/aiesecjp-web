@@ -36,6 +36,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 38rem;
+    min-height: 50vw;
   }
 
   /* 半透明のフィルターをかける */
