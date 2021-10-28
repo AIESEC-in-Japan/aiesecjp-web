@@ -74,8 +74,8 @@ module.exports = {
     buildModules: [
       '@nuxtjs/google-analytics'
     ],
-    googleAnalytics: {
-      id: process.env.UA-422830-6, 
+    publicRuntimeConfig: {
+      baseURL: process.env.UA-422830-6, 
     },
   }
 }
