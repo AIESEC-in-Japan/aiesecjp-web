@@ -72,6 +72,7 @@
 
   &-logo {
     width: 60%;
+    max-width: 450px;
     margin: 0 auto 3rem;
 
     @include sp {
@@ -81,7 +82,7 @@
 
   &-text {
     text-align: center;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     font-size: 1rem;
     line-height: 2;
     color: white;
