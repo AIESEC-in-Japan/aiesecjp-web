@@ -36,7 +36,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 38rem;
-    min-height: 50vw;
   }
 
   /* 半透明のフィルターをかける */
@@ -54,7 +53,7 @@
     width: 80%;
     padding-top: 4rem;
     // 中央よせ
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
@@ -73,6 +72,7 @@
 
   &-logo {
     width: 60%;
+    max-width: 450px;
     margin: 0 auto 3rem;
 
     @include sp {
@@ -82,7 +82,7 @@
 
   &-text {
     text-align: center;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     font-size: 1rem;
     line-height: 2;
     color: white;
