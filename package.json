@@ -1,5 +1,5 @@
 {
-  "name": "yarn",
+  "name": "aiesecjp-web",
   "version": "1.0.0",
   "description": "AIESEC in Japan official website",
   "author": "andmohiko",
@@ -41,8 +41,5 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0"
-  },
-  "main": "index.js",
-  "repository": "git@github.com:AIESEC-in-Japan/aiesecjp-web.git",
-  "license": "MIT"
+  }
 }
