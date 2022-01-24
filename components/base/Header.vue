@@ -16,6 +16,14 @@
         class="navigation-list"
         @click.stop="drawer = !drawer"
       >
+        <li class="navigation-item">
+          <nuxt-link
+            class="navigation-link"
+            to="/branded-event"
+          >
+            Branded Event
+          </nuxt-link>
+        </li>
         <li
           class="navigation-item"
           @mouseleave="mouseLeaveAction"
