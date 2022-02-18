@@ -2,7 +2,7 @@
   <section class="global-youth-dialogue-container ">
     <h1>About global youth dialogue</h1>
     <p class="explain-text">
-      海外の学生との様々な会話を通じて。<br>
+      海外の学生との様々な会話を通じて、<br>
       世界をより広く、自分をより深く知ることのできる、主に大学生を対象にした５日間のオンラインイベントです。<br>
       海外の学生とペアを組み、日替わりで設定される会話のトピックに基づいて自分や世界のことを話すことができます。
     </p>
