@@ -6,13 +6,13 @@
       src="@/assets/images/global-youth-dialogue/typing.svg"
     >
     <p class="explain-text">
-      global youth dialogueについての最新情報は公式LINEから配信されています。
+      global youth dialogueは公式LINEから参加の申し込みが可能です。
     </p>
     <p class="explain-text">
-      global youth dialogueへの参加には事前説明会への参加を必須としておりますが、そちらの申し込みも公式LINEからしていただけます。
+      疑問、懸念のある方や、より詳しい話を聞きたいという方向けの事前説明会への申し込みも公式LINEにて受け付ています。
     </p>
     <p class="explain-text">
-      ご不明点などは、お気軽に公式LINEからお問い合わせください！
+      よくいただく質問や参加にあたっての注意事項をまとめたコンテンツもご用意しているので、少しでも興味をお持ちになった方はぜひ公式LINEのご登録をお願いします！
     </p>
     <BaseRoundButton
       v-bind="this.ButtonProps"
