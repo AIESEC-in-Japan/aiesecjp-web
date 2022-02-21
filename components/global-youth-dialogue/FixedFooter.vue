@@ -12,7 +12,7 @@
     >
       <BaseRoundButton
         v-bind="this.ButtonProps"
-        :label="'公式LINEから最新情報をチェック!'"
+        :label="'参加登録はこちらの公式LINEから'"
       />
     </v-row>
   </v-footer>
