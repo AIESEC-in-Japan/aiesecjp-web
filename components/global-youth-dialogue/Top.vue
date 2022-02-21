@@ -7,8 +7,8 @@
         src="@/assets/images/global-youth-dialogue/global-youth-dialogue-logo-white.png"
       >
       <p class="global-youth-dialogue-text">
-        Dive into dialogue and connect with the world, <br>
-        once conversation at a time.
+        Pursue the answer for peace. <br>
+        探求しよう、自分と世界の境界を超えて。
       </p>
       <p class="global-youth-dialogue-text">
         知らない国に、知っている人ができたら、<br>
