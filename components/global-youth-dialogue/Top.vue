@@ -4,7 +4,7 @@
       <img
         alt="global-youth-dialogue-logo"
         class="global-youth-dialogue-logo"
-        src="@/assets/images/global-youth-dialogue/global-youth-dialogue-logo-white.png"
+        src="@/assets/images/global-youth-dialogue/global-youth-dialogue-logo-white2223.png"
       >
       <p class="global-youth-dialogue-text">
         Dive into dialogue and connect with the world, <br>
