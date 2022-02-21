@@ -7,6 +7,9 @@
         src="@/assets/images/global-youth-dialogue/global-youth-dialogue-logo-white.png"
       >
       <p class="global-youth-dialogue-text">
+        申し込み締め切り：3/15 開催日時：3/20~3/24
+      </p>
+      <p class="global-youth-dialogue-text">
         Pursue the answer for peace. <br>
         探求しよう、自分と世界の境界を超えて。
       </p>
@@ -15,7 +18,7 @@
         どんな世界が見えるようになるんだろう。
       </p>
       <p class="global-youth-dialogue-text">
-        知らない国に、友達ができたら、<br v-show="this.$isMobile()">
+        知らない国に、友達ができたら、<br>
         どんな会話をするんだろう。
       </p>
       <p class="global-youth-dialogue-text">
@@ -72,7 +75,7 @@
 
   &-logo {
     width: 60%;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
 
     @include sp {
       width: 80%;
@@ -83,7 +86,7 @@
     text-align: center;
     margin: 1rem auto;
     font-size: 1rem;
-    line-height: 2;
+    line-height: 1.5;
     color: white;
     letter-spacing: 0.1rem;
 
