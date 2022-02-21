@@ -6,7 +6,7 @@
         class="global-youth-dialogue-logo"
         src="@/assets/images/global-youth-dialogue/global-youth-dialogue-logo-white.png"
       >
-       <p class="global-youth-dialogue-text">
+      <p class="global-youth-dialogue-text">
         申し込み締め切り：3/15 開催日時：3/20~3/24
       </p>
       <p class="global-youth-dialogue-text">
