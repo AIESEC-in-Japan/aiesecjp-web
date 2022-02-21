@@ -83,7 +83,7 @@
     text-align: center;
     margin: 1rem auto;
     font-size: 1rem;
-    line-height: 2;
+    line-height: 1.5;
     color: white;
     letter-spacing: 0.1rem;
 
