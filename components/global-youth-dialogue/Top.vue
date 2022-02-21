@@ -18,7 +18,7 @@
         どんな世界が見えるようになるんだろう。
       </p>
       <p class="global-youth-dialogue-text">
-        知らない国に、友達ができたら、<br v-show="this.$isMobile()">
+        知らない国に、友達ができたら、<br>
         どんな会話をするんだろう。
       </p>
       <p class="global-youth-dialogue-text">
