@@ -10,8 +10,6 @@
         申し込み締め切り：3/15 開催日時：3/20~3/24
       </p>
       <p class="global-youth-dialogue-text">
-        Dive into dialogue and connect with the world, <br>
-        once conversation at a time.<br>
         Pursue the answer for peace. <br>
         探求しよう、自分と世界の境界を超えて。
       </p>
