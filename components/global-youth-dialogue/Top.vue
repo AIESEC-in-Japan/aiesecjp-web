@@ -11,8 +11,7 @@
       </p>
       <p class="global-youth-dialogue-text">
         Dive into dialogue and connect with the world, <br>
-        once conversation at a time.
-
+        once conversation at a time.<br>
         Pursue the answer for peace. <br>
         探求しよう、自分と世界の境界を超えて。
       </p>
