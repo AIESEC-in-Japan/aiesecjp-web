@@ -40,6 +40,8 @@
     ]
   },
   "ignoreFiles": [
-    "assets/resetcss/reset.css"
+    "assets/resetcss/reset.css",
+    "static/**/*.css",
+    "coverage/**/*.css"
   ]
 }
