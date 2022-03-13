@@ -70,7 +70,10 @@ module.exports = {
     stories: [
       '~/stories/**/*.stories.js',
       "~/components/**/stories/**/*.stories.@(js|vue)",
-      "~/components/**/__stories__/**/*.stories.@(js|vue|ts)"
+      "~/components/**/*.stories.@(js|vue)",
+      "~/components/**/__stories__/**/*.stories.@(js|vue)",
+      "~/pages/**/*.stories.@(js|vue)",
+      "~/pages/**/__stories__/**/*.stories.@(js|vue)"
     ],
   }
 }

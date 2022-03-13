@@ -1,16 +1,11 @@
-
 import AboutAiesec from './AboutAiesec.vue';
 
 export default {
-  /* 👇 The title prop is optional.
-  * See https://storybook.js.org/docs/vue/configure/overview#configure-story-loading
-  * to learn how to generate automatic titles
-  */
-  title: 'Top/AboutAiesec',
+  title: 'components/top/AboutAiesec.vue',
   component: AboutAiesec,
 };
 
-export const Main = () => ({
-  components: { AboutAiesec },
+export const AboutAiesecStory = () => ({
+  components: {AboutAiesec},
   template: '<AboutAiesec />',
 });
