@@ -69,8 +69,8 @@ module.exports = {
   storybook: {
     stories: [
       '~/stories/**/*.stories.js',
-      "~/components/**/stories/**/*.stories.@(js|vue)"
+      "~/components/**/stories/**/*.stories.@(js|vue)",
+      "~/components/**/__stories__/**/*.stories.@(js|vue|ts)"
     ],
   }
 }
-
