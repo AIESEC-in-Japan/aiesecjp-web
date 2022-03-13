@@ -20,7 +20,7 @@ node v 12.15以上
 
 ```
 
-※　バージョンは適宜updateして行ってください。
+※バージョンは適宜updateして行ってください。
 
 
 
@@ -69,7 +69,10 @@ $ git --version
 $ brew install git
 ```
 
-#### もしyarn コマンドが使えなかったら（Mac編）
+#### もしyarn コマンドが使えなかったら（Mac編 bash）
+ここのコマンドはintell版のmacを基準にしています。やること自体は変わらないですが、
+M1Mac(zshを使っている場合など)では使うコマンドコマンドが異なる可能性があるため、
+自分のPCが何を使っているのかを確認してからコマンドを入力してください。
 
 ```shell
 # nodeとyarn のインストール https://classic.yarnpkg.com/en/docs/install/#mac-stable
@@ -134,7 +137,7 @@ $ yarn lint:css --fix
 ```
 
 ## UI test tool
-UIテストようのツールとして[storybook](https://storybook.js.org/docs/vue/get-started)を使用しています。
+UIテスト用のツールとして[storybook](https://storybook.js.org/docs/vue/get-started)を使用しています。
 
 ```shell
 $ yarn storybook
@@ -223,6 +226,28 @@ And here is another line that is cleanly resolved or unmodified.
 参考
 [git merge](https://git-scm.com/docs/git-merge)
 
+
+### リリース時の手順
+HPやstatic直下にあるLPをリリースする場合、手順は全く同じです。
+
+1. developからreleaseブランチを切る `release/{今日の日付}` ex `release/20220312`
+2. release からmasterに向けたPRを作る
+  1. 余計な差分が入っていないか確認
+  2. 動作確認をしておかしい挙動や表示崩れがないかを確認
+  3. 問題があれば`bugfix/{適当な名前}`でブランチを切り修正、releaseに向けてマージする。
+3. 問題なければPRを作った人以外がapproveをする
+4. masterにマージ
+5. cloudflareでビルド・デブロイが正常に進んでいるか監視
+6. 問題なく終われば本番環境( `aiesec.jp` )で修正が反映されているか確認
+7. masterからdevelopへPRを切りマージ。developは常に最新の状態にしておく
+
+#### 使用技術
+
+デプロイにはcloudFlare Pageというサービスを使っています。
+もともとDNSとしてcloudFlareを利用しており、HPには複雑なロジックやバックエンドの処理（永続化）もないので
+cloudflare 内で完結させる様にしました。
+
+こちらは招待制ですので、権限がない人はISに問い合わせをして権限をもらってください。
 
 ### yarn 
 
