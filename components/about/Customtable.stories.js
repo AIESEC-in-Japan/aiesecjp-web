@@ -1,7 +1,7 @@
 import AboutCustomTable from './CustomTable.vue';
 
 export default {
-    title: 'About/table',
+    title: 'components/about/CustomTable.vue',
     component: AboutCustomTable,
 
 };

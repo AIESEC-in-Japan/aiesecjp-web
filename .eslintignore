@@ -1,3 +1,5 @@
+static/**
+static/**/*.js
 **/stories/**/*.vue
 *.stories.js
 stories/SampleButton.vue

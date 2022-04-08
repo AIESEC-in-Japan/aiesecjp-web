@@ -14,7 +14,9 @@
     "lint:css": "stylelint './**/*.{css,scss,vue}' ",
     "lint:fix": "yarn lint:es --fix && yarn lint:css --fix",
     "storybook": "yarn nuxt storybook",
-    "precommit": "npm run lint"
+    "build-storybook": "yarn nuxt storybook build",
+    "precommit": "npm run lint",
+    "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
@@ -26,6 +28,7 @@
     "@nuxtjs/storybook": "^4.0.4",
     "@nuxtjs/vuetify": "^1.12.1",
     "babel-eslint": "^10.0.1",
+    "chromatic": "^6.5.2",
     "css-loader": "^5.0.0",
     "eslint": "^7.27.0",
     "eslint-friendly-formatter": "^4.0.1",
