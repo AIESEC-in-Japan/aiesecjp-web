@@ -22,3 +22,4 @@ dist
 # ui test tool
 .nuxt-storybook
 storybook-static
+/.idea/**
