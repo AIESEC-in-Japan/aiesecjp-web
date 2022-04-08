@@ -16,7 +16,7 @@
     </p>
     <BaseRoundButton
       v-bind="this.ButtonProps"
-      :label="'公式ラインはこちらから'"
+      :label="'公式LINEはこちらから'"
     />
   </section>
 </template>
