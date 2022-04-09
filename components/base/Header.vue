@@ -84,12 +84,14 @@
           </nuxt-link>
         </li>
         <li class="navigation-item">
-          <a
-            class="navigation-link"
-            href="https://aiesec.jp/lp/recruit2022/"
-          >
-            テスト
-          </a>
+          <div class="lp-button">
+            <a
+              class="lp-button-text"
+              href="https://aiesec.jp/lp/recruit2022/"
+            >
+              Recruit
+            </a>
+          </div>
         </li>
       </ul>
       <div
@@ -266,6 +268,33 @@ export default {
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lp-button {
+  width: 125px;
+  height: 45px;
+  background-color: rgb(0, 112, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 0;
+}
+
+.lp-button:hover {
+  opacity: 0.7;
+}
+
+.lp-button-text{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 2.5;
+  width: 100%;
 }
 
 </style>
