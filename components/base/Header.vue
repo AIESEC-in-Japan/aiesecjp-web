@@ -83,6 +83,7 @@
             Contact Us
           </nuxt-link>
         </li>
+        <!-- 外部リンク -->
         <li class="navigation-item">
           <div class="lp-button">
             <a
