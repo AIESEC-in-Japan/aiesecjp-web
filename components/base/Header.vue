@@ -272,6 +272,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* stylelint-disable */
 .lp {
   &-button {
     width: 125px;
@@ -303,3 +304,4 @@ export default {
 }
 
 </style>
+
