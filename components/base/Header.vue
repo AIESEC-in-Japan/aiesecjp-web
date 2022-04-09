@@ -83,6 +83,14 @@
             Contact Us
           </nuxt-link>
         </li>
+        <li class="navigation-item">
+          <a
+            class="navigation-link"
+            href="https://aiesec.jp/lp/recruit2022/"
+          >
+            テスト
+          </a>
+        </li>
       </ul>
       <div
         v-show="this.$isMobile() && drawer"
