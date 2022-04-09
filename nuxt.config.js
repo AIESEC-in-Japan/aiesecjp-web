@@ -1,5 +1,6 @@
 require("dotenv").config();
 const {API_KEY} = process.env;
+const {GA_KEY} = 'UA-XXX-X';
 
 module.exports = {
   /*
@@ -50,7 +51,7 @@ module.exports = {
   /*
   ** style-resources
   */
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/vuetify'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/vuetify', '@nuxtjs/google-analytics'],
   plugins: [
     './plugins/scroll.js',
     './plugins/windowSize.js',
@@ -71,6 +72,18 @@ module.exports = {
       '~/stories/**/*.stories.js',
       "~/components/**/stories/**/*.stories.@(js|vue)"
     ],
+  },
+  // see https://google-analytics.nuxtjs.org/
+  googleAnalytics: {
+    id: GA_KEY,
+    autoTracking: {
+      screenview: true
+    }
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: GA_KEY
+    }
   }
 }
 
