@@ -185,6 +185,7 @@ export default {
     &-item {
       margin-left: 3rem;
       list-style-type: none;
+      
 
       @include sp {
         padding-right: 1rem;
