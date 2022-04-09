@@ -280,6 +280,7 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
+  margin-top: 25px;
   padding: 0;
 }
 
