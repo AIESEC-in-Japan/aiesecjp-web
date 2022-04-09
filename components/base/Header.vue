@@ -272,32 +272,34 @@ export default {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.lp-button {
-  width: 125px;
-  height: 45px;
-  background-color: rgb(0, 112, 191);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  margin-top: 16px;
-  padding: 0;
-}
-
-.lp-button:hover {
-  opacity: 0.7;
-}
-
-.lp-button-text{
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  border-radius: 15px;
-  text-align: center;
-  line-height: 2.5;
-  width: 100%;
+.lp {
+  &-button {
+    width: 125px;
+    height: 45px;
+    background-color: rgb(0, 112, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 16px;
+    padding: 0;
+  }
+  
+  &-button:hover {
+    opacity: 0.7;
+  }
+  
+  &-button-text {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 2.5;
+    width: 100%;
+  }
 }
 
 </style>
