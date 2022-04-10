@@ -275,7 +275,7 @@ export default {
 /* stylelint-disable */
 .lp {
   &-button {
-    width: 150px;
+    width: 175px;
     height: 45px;
     background-color: rgb(0, 112, 191);
     display: flex;
