@@ -90,7 +90,7 @@
               class="lp-button-text"
               href="https://aiesec.jp/lp/recruit2022/"
             >
-              Recruit
+              Recruitment
             </a>
           </div>
         </li>
@@ -275,7 +275,7 @@ export default {
 /* stylelint-disable */
 .lp {
   &-button {
-    width: 125px;
+    width: 150px;
     height: 45px;
     background-color: rgb(0, 112, 191);
     display: flex;
