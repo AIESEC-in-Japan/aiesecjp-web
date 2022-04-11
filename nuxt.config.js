@@ -70,7 +70,11 @@ module.exports = {
   storybook: {
     stories: [
       '~/stories/**/*.stories.js',
-      "~/components/**/stories/**/*.stories.@(js|vue)"
+      "~/components/**/stories/**/*.stories.@(js|vue)",
+      "~/components/**/*.stories.@(js|vue)",
+      "~/components/**/__stories__/**/*.stories.@(js|vue)",
+      "~/pages/**/*.stories.@(js|vue)",
+      "~/pages/**/__stories__/**/*.stories.@(js|vue)"
     ],
   },
   // see https://google-analytics.nuxtjs.org/
@@ -86,4 +90,3 @@ module.exports = {
     }
   }
 }
-
