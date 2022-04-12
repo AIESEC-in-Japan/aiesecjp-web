@@ -1,6 +1,6 @@
 require("dotenv").config();
 const {API_KEY} = process.env;
-const {GA_KEY} = process.env.GOOGLE_ANALYTICS_ID;
+const {GA_KEY} = 'UA-222793123-1';
 
 module.exports = {
   /*
