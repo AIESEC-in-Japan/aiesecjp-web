@@ -83,6 +83,17 @@
             Contact Us
           </nuxt-link>
         </li>
+        <!-- 外部リンク -->
+        <li class="navigation-item">
+          <div class="lp-button">
+            <a
+              class="lp-button-text"
+              href="https://aiesec.jp/lp/recruit2022/"
+            >
+              Recruitment
+            </a>
+          </div>
+        </li>
       </ul>
       <div
         v-show="this.$isMobile() && drawer"
@@ -174,6 +185,7 @@ export default {
     &-item {
       margin-left: 3rem;
       list-style-type: none;
+      align-items: center;
 
       @include sp {
         padding-right: 1rem;
@@ -260,5 +272,35 @@ export default {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-</style>
+/* stylelint-disable */
+.lp {
+  &-button {
+    width: 175px;
+    height: 45px;
+    background-color: rgb(0, 112, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 16px;
+    padding: 0;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+    
+    &-text {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      border-radius: 15px;
+      text-align: center;
+      line-height: 2.5;
+      width: 100%;
+    }
+  }
+}
 
+</style>
