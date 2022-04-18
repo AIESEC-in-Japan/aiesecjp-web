@@ -19,7 +19,7 @@ export default {
         },
         {
           caption: "専務理事",
-          description: "菅家周平（早稲田大学 政治経済学部 4年）",
+          description: "高橋祐哉（東京外国語大学 国際社会学部 4年）",
         },
         {
           caption: "副会長",
@@ -32,7 +32,7 @@ export default {
         },
         {
           caption: "常務理事",
-          description: "余越優（東京大学 経済学部 4年）",
+          description: "薮上りか子（同志社大学 商学部 4年）",
         },
         {
           caption: "理事",
@@ -44,7 +44,7 @@ export default {
         },
         {
           caption: "理事",
-          description: "椙山泰生（椙山女学園大学 現代マネジメント学部 教授）",
+          description: "椙山泰生（椙山女学園大学 現代マネジメント学部 教授 / 学校法人椙山女学園 理事長 / 京都大学 名誉教授）",
         },
         {
           caption: "理事",
