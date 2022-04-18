@@ -32,7 +32,7 @@ export default {
         },
         {
           caption: "常務理事",
-          description: "薮上りか子（同志社大学 商学部 4年）",
+          description: "藪上りか子（同志社大学 商学部 4年）",
         },
         {
           caption: "理事",
