@@ -28,10 +28,10 @@ export default {
         {
           caption: "代表",
           description:
-            "各務茂夫 (東京大学 大学院工学系研究科教授 産学協創推進本部 副本部長)",
+            "各務茂夫 (東京大学 大学院工学系研究科 教授 産学協創推進本部 副本部長)",
         },
 
-        { caption: "専務理事", description: "菅家周平（早稲田大学 4年）" },
+        { caption: "専務理事", description: "高橋祐哉（東京外国語大学 4年）" },
 
         {
           caption: "所在地",
