@@ -78,9 +78,6 @@ module.exports = {
   buildModules: [
     '@nuxtjs/google-analytics'
   ],
-  googleAnalytics: {
-    id: GA_KEY,
-  },
   publicRuntimeConfig: {
     googleAnalytics: {
       id: GA_KEY
