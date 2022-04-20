@@ -7,14 +7,6 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    // see https://google-analytics.nuxtjs.org/
-    googleAnalytics: {
-      id: GA_KEY,
-      autoTracking: {
-        screenview: true
-      }
-    },
-
     title: 'aiesecjp-web',
     meta: [
       {charset: 'utf-8'},
@@ -84,9 +76,16 @@ module.exports = {
   buildModules: [
     '@nuxtjs/google-analytics'
   ],
+  // see https://google-analytics.nuxtjs.org/
   publicRuntimeConfig: {
     googleAnalytics: {
       id: GA_KEY
+    }
+  },
+  googleAnalytics: {
+    id: GA_KEY,
+    autoTracking: {
+      screenview: true
     }
   },
 }
