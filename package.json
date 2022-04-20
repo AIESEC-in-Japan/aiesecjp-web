@@ -19,14 +19,12 @@
     "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
-    "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/style-resources": "^1.0.0",
     "axios": "^0.21.2",
     "dotenv": "^8.2.0",
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/storybook": "^4.0.4",
     "@nuxtjs/vuetify": "^1.12.1",
     "babel-eslint": "^10.0.1",
