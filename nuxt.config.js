@@ -73,17 +73,21 @@ module.exports = {
       "~/components/**/stories/**/*.stories.@(js|vue)"
     ],
   },
+  
   // see https://google-analytics.nuxtjs.org/
+  buildModules: [
+    '@nuxtjs/google-analytics'
+  ],
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: GA_KEY
+    }
+  },
   googleAnalytics: {
     id: GA_KEY,
     autoTracking: {
       screenview: true
     }
   },
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: GA_KEY
-    }
-  }
 }
 
