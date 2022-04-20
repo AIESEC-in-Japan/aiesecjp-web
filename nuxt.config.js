@@ -79,7 +79,7 @@ module.exports = {
     '@nuxtjs/google-analytics'
   ],
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID,
+    id: GA_KEY,
   },
   publicRuntimeConfig: {
     googleAnalytics: {
