@@ -94,7 +94,7 @@
 
   &-text {
     text-align: center;
-    margin: 1rem auto;
+    margin: 0.7rem auto;
     font-size: 1rem;
     line-height: 1.5;
     color: white;
