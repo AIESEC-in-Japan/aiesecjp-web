@@ -14,7 +14,7 @@
       <img
         alt="global-youth-dialogue-logo"
         class="global-youth-dialogue-logo"
-        src="@/assets/images/global-youth-dialogue/global-youth-dialogue-logo-white.png"
+        src="@/assets/images/global-youth-dialogue/global-youth-dialogue-logo-white-none.png"
       >
       <p class="global-youth-dialogue-text">
         申し込み締め切り：5/18 開催日時：5/27~5/31
