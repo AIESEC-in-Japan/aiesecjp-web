@@ -84,7 +84,7 @@
   }
 
   &-logo {
-    width: 30%;
+    width: 0%;
     margin: 0 auto 2rem;
 
     @include sp {
