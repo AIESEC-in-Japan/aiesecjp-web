@@ -8,6 +8,7 @@
   gtag('config', 'G-Q12106X7XB');
 </script>
 
+
 <template>
   <section class="global-youth-dialogue-container">
     <div class="global-youth-dialogue-wrapper">
