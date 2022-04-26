@@ -1,6 +1,5 @@
 require("dotenv").config();
 const {API_KEY} = process.env;
-const {GA_KEY} = 'G-Q12106X7XB';
 
 module.exports = {
   /*
