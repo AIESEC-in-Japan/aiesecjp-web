@@ -9,6 +9,7 @@
 </template>
 
 <script>
+export default {
   head: {
     title: 'aiesecjp-web',
     meta: [
@@ -28,4 +29,5 @@
       }
     ]
   }
+}
 </script>
