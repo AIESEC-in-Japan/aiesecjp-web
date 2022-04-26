@@ -1,6 +1,5 @@
 require("dotenv").config();
 const {API_KEY} = process.env;
-const {GA_KEY} = 'G-Q12106X7XB';
 
 module.exports = {
   /*
@@ -51,7 +50,7 @@ module.exports = {
   /*
   ** style-resources
   */
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/vuetify', '@nuxtjs/google-gtag'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/vuetify'],
   plugins: [
     './plugins/scroll.js',
     './plugins/windowSize.js',
@@ -72,11 +71,5 @@ module.exports = {
       '~/stories/**/*.stories.js',
       "~/components/**/stories/**/*.stories.@(js|vue)"
     ],
-  },
-  
-  // see https://google-analytics.nuxtjs.org/
-  'google-gtag': {
-    id: GA_KEY,
-    debug: true, // Enable to track in dev mode.
-  },
+  }
 }
