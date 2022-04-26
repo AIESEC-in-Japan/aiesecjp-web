@@ -21,9 +21,10 @@
         link: [
           {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
         ],
-        script: [{
+        script: [
+          {
           async: true,
-          src: ‘https: //www.googletagmanager.com/gtag/js?id=G-F3F77C5HPD’ 
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-F3F77C5HPD' 
           },
           {
             innerHTML: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag(‘js’, new Date());gtag(‘config’, ‘G-F3F77C5HPD’);`
