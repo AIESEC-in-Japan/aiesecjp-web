@@ -2,15 +2,6 @@
   <header
     class="header-container"
   >
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3F77C5HPD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-F3F77C5HPD');
-    </script>
     <nav>
       <div class="navigation-logo">
         <nuxt-link to="/">
