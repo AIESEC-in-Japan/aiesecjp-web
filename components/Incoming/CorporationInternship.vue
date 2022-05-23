@@ -1,30 +1,33 @@
 <template>
   <section class="corporationInternship-container">
     <div class="corporationInternship-wrapper">
-      <h2>アイセックの<br v-show="this.$isMobile()">企業インターンシップ</h2>
+      <h2>受け入れによって<br v-show="this.$isMobile()">できること</h2>
       <p>
-        42⽇以上、3ヶ⽉未満の<br v-show="this.$isMobile()">
+        6～8週間の<br v-show="this.$isMobile()">
         短期インターンシップです。
       </p>
       <p>
-        豊富な知識とスキルの持った<br>
+        豊富な知識とスキルを持った<br>
         海外の若者をインターン⽣として<br>
         受け⼊れていただくことで、<br>
         企業様の課題や挑戦に<br v-show="this.$isMobile()">
         新たな視点をもたらし、<br>
         世界を舞台にした発展に寄与いたします。
       </p>
+      <!-- 実例集へのリンクを停止 2022/05/22
       <div class="button__wrapper">
         <BaseRoundButton
           v-bind="this.WhiteButtonProps"
           :label="'インターンシップ実例を見る'"
         />
       </div>
+      -->
     </div>
   </section>
 </template>
 
 <script>
+/* 実例集へのリンクを停止 2022/05/22
 import {basic_color} from "@/components/base/CommonColor";
 
 export default {
@@ -39,6 +42,7 @@ export default {
     }
   }
 }
+*/
 </script>
 
 <style lang="scss" scoped>
