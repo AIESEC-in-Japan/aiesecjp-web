@@ -84,7 +84,7 @@
             海外インターン生を受け入れる
           </nuxt-link>
         </li>
-        <!-- 実例集へのリンクを停止
+        <!-- 実例集へのリンクを停止 2022/05/22
         <li>
           <nuxt-link
             class="footer-content-link"
