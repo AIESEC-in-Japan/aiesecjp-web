@@ -1,3 +1,3 @@
 <template>
-  <IncomingArticleCollection />
+  <IncomingArticleMaintenance />
 </template>
