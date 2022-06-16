@@ -14,7 +14,6 @@
 </template>
 
 <style lang="scss" scoped>
-
 .article {
   &-headline {
     margin: 2rem 1rem;
@@ -38,6 +37,5 @@
     }
   }
 }
-
 
 </style>
