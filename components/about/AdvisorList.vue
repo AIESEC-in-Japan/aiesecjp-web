@@ -16,6 +16,7 @@
             caption : '諮問',
             description : '田中伸男（タナカグローバル（株） CEO）'
           },
+          
           {
             caption : '諮問',
             description : '根元勝則（一般社団法人日本経済団体連合会 専務理事）'
