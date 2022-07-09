@@ -12,7 +12,7 @@
   export default {
     head() {
       return{
-        title: 'aiesecjp-web',
+        title: 'global youth dialogue',
         meta: [
           {charset: 'utf-8'},
           {name: 'viewport', content: 'width=device-width, initial-scale=1'},
