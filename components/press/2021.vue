@@ -8,7 +8,6 @@
   </article>
 </template>
 
-
 <style lang="scss" scoped>
 /* 一時的な対応。今後はmarkdownで描けるようにするかも */
 
@@ -17,6 +16,7 @@ article {
   max-width: 80rem;
   margin: auto auto;
 }
+
 
 section {
   min-height: max-content;
