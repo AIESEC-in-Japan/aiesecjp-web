@@ -17,15 +17,16 @@ article {
   margin: auto auto;
 }
 
-
 section {
   min-height: max-content;
   margin: 4rem auto;
 
 }
+
 h2 {
-      margin-top: 6rem;
-      margin-bottom: 1rem;
-      color: $blue;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  color: $blue;
 }
+
 </style>
