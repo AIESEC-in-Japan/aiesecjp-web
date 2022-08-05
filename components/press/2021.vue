@@ -15,12 +15,17 @@ article {
   width: 90%;
   max-width: 80rem;
   margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section {
   min-height: max-content;
   margin: 4rem auto;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
