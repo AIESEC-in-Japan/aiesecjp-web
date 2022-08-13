@@ -66,7 +66,7 @@
             class="footer-content-link"
             to="/global-youth-dialogue"
           >
-            Global Youth Dialogue
+            global youth dialogue
           </nuxt-link>
         </li>
       </ul>
