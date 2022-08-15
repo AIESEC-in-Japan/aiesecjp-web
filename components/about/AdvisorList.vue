@@ -30,7 +30,7 @@
           },
           {
             caption : '諮問',
-            description : '渋谷 直毅（シティグループ証券株式会社 ディレクター）'
+            description : '渋谷 直毅'
           }
         ]
       }
