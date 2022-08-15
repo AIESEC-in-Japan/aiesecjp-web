@@ -33,5 +33,4 @@ h2 {
   margin-bottom: 1rem;
   color: $blue;
 }
-
 </style>
