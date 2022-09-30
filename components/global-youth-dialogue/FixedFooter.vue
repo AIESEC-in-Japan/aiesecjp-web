@@ -29,7 +29,7 @@ export default {
         textColor: basic_color.deepBlue,
         baseColor: 'transparent',
         size: 'large',
-        url: 'https://lin.ee/GaZkjsN'
+        url: 'https://lin.ee/LFvJeCM'
       }
     }
   },

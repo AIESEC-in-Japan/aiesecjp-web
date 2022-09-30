@@ -31,7 +31,7 @@ export default {
         textColor: basic_color.white,
         baseColor: basic_color.deepBlue,
         size: 'large',
-        url: 'https://lin.ee/GaZkjsN'
+        url: 'https://lin.ee/LFvJeCM'
       }
     }
   }
