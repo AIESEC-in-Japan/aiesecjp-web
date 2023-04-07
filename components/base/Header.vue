@@ -88,7 +88,7 @@
           <div class="lp-button">
             <a
               class="lp-button-text"
-              href="https://aiesec.jp/lp/recruit2022/"
+              href="https://aiesec.jp/lp/recruit2023/"
             >
               Recruitment
             </a>
