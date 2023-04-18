@@ -32,7 +32,7 @@ export default {
         },
         {
           caption: "常務理事",
-          description: "籔上りか子（同志社大学 商学部 4年）",
+          description: "飯塚創太（東京大学 法学部 3年）",
         },
         {
           caption: "理事",
@@ -56,7 +56,7 @@ export default {
         },
         {
           caption: "監事",
-          description: "太田康広（慶應義塾大学ビジネス・スクール教授）",
+          description: "太田康広（慶應義塾大学大学院経営管理研究科エーザイチェアシップ基金教授）",
         },
       ],
     };
