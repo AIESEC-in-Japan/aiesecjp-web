@@ -6,13 +6,13 @@
       src="@/assets/images/global-youth-dialogue/typing.svg"
     >
     <p class="explain-text">
-      global youth dialogueは公式LINEから参加の申し込みが可能です。
+      global youth dialogueは無料で参加可能です。参加希望の方は公式LINEのご登録お願いします。
     </p>
     <p class="explain-text">
       疑問、懸念のある方や、より詳しい話を聞きたいという方向けの事前説明会への申し込みも公式LINEにて受け付けています。
     </p>
     <p class="explain-text">
-      よくいただく質問や参加にあたっての注意事項をまとめたコンテンツもご用意しているので、少しでも興味をお持ちになった方はぜひ公式LINEのご登録をお願いします！
+      ちょっと新しい自分と世界を見に行く１週間を、私たちと過ごしてみませんか？
     </p>
     <BaseRoundButton
       v-bind="this.ButtonProps"
