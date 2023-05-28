@@ -12,8 +12,8 @@
         <br>
         レポートは、下記URLをクリックいただくとPDFファイルにてダウンロードいただけます。<br>
         なお、冊子版をご希望の方は、アイセック・ジャパン（info@aiesec.jp）までご連絡ください。<br>
-      </h2>
-      <p><a href=”https://drive.google.com/file/d/1pmkUkZ6aacReENjJvDuzsouhLFrOP7Da/view?usp=share_link”>令和３年度年次報告書</a></p>
+        <br>
+        <a href=”https://drive.google.com/file/d/1pmkUkZ6aacReENjJvDuzsouhLFrOP7Da/view?usp=share_link”>令和３年度年次報告書</a>
     </section>
   </article>
 </template>
