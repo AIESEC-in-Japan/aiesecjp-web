@@ -1,3 +1,3 @@
 <template>
-  <Press2021 />
+  <Press2022 />
 </template>
