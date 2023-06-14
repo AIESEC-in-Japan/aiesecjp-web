@@ -43,6 +43,16 @@ export default {
       openLogs: false,
       committeeLogs: [
         {
+          title: '令和四年度第二回安全管理委員会開催報告',
+          describe: '令和4年10月17日に安全管理委員会を開催いたしました。',
+          link: 'https://drive.google.com/file/d/1MYv7OuUGz0UGOcrrvOuvdhtqPySav6C7/view?usp=sharing'
+        },
+        {
+          title: '令和四年度第一回臨時書面海外安全管理委員会開催報告',
+          describe: '令和4年10月5～11日に安全管理委員会を開催いたしました。',
+          link: 'https://drive.google.com/file/d/1O_pkwv5wggIRDige56yzx4E8vyTWxt9j/view?usp=sharing'
+        },
+        {
           title: '令和四年度第一回安全管理委員会開催報告',
           describe: '令和4年5月24・25日に安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1jgH8BEp3w8BHuTE-0SHWLj2Wwyal6zQP/view?usp=sharing'
