@@ -47,6 +47,8 @@ export default {
 
         { caption: "電話番号", description: "03-6457-5806" },
 
+        { caption: "電話受付時間", description: "月・水・金 10:00-12:00, 13:00-17:00" },
+
         { caption: "FAX番号", description: "03-6457-5809" },
 
         { caption: "E-mail", description: "info@aiesec.jp" },
