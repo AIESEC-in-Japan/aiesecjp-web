@@ -43,106 +43,106 @@ export default {
       openLogs: false,
       committeeLogs: [
         {
-          title: '令和五年度第一回安全管理委員会開催報告',
-          describe: '令和5年5月31日に安全管理委員会を開催いたしました。',
+          title: '令和五年度第一回海外安全管理委員会開催報告',
+          describe: '令和5年5月31日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1Q-xnmQZgP5tovvPPObw-FoFM0BQ7hCjD/view?usp=drive_link'
         },
         {
-          title: '令和四年度第二回安全管理委員会開催報告',
-          describe: '令和4年10月17日に安全管理委員会を開催いたしました。',
+          title: '令和四年度第二回海外安全管理委員会開催報告',
+          describe: '令和4年10月17日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1MYv7OuUGz0UGOcrrvOuvdhtqPySav6C7/view?usp=sharing'
         },
         {
           title: '令和四年度第一回臨時書面海外安全管理委員会開催報告',
-          describe: '令和4年10月5～11日に安全管理委員会を開催いたしました。',
+          describe: '令和4年10月5～11日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1O_pkwv5wggIRDige56yzx4E8vyTWxt9j/view?usp=sharing'
         },
         {
-          title: '令和四年度第一回安全管理委員会開催報告',
-          describe: '令和4年5月24・25日に安全管理委員会を開催いたしました。',
+          title: '令和四年度第一回海外安全管理委員会開催報告',
+          describe: '令和4年5月24・25日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1jgH8BEp3w8BHuTE-0SHWLj2Wwyal6zQP/view?usp=sharing'
         },
         {
-          title: '令和三年度第二回安全管理委員会開催報告',
-          describe: '令和3年11月16日に安全管理委員会を開催いたしました。',
+          title: '令和三年度第二回海外安全管理委員会開催報告',
+          describe: '令和3年11月16日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1zmp8_otRYU9Bg689wE6cNfDh8_-CKrLU/view?usp=sharing'
         },
         {
-          title: '令和三年度第一回安全管理委員会開催報告',
-          describe: '令和3年5月27日に安全管理委員会を開催いたしました。',
+          title: '令和三年度第一回海外安全管理委員会開催報告',
+          describe: '令和3年5月27日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1nIld1vzD8zBt7olnIC8-D7Lcl8AO0G1i/view?usp=sharing'
         },
         {
-          title: '令和二年度第二回安全管理委員会開催報告',
-          describe: '令和2年11月11日に安全管理委員会を開催いたしました。',
+          title: '令和二年度第二回海外安全管理委員会開催報告',
+          describe: '令和2年11月11日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1368R2pHI1BZ2oKLiL1NKRntqXfTMBR-0/view?usp=sharing'
         },
         {
-          title: '令和二年度第一回安全管理委員会報告',
-          describe: '令和2年5月22日に安全管理委員会を開催いたしました。',
+          title: '令和二年度第一回海外安全管理委員会報告',
+          describe: '令和2年5月22日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/15U4qTnJQKuQrkDWRj6IKvqDSco1QPDiI/view?usp=sharing'
         },
         {
-          title: '令和元年度第二回安全管理委員会開催報告',
-          describe: '令和元年11月7日に安全管理委員会を開催いたしました。',
+          title: '令和元年度第二回海外安全管理委員会開催報告',
+          describe: '令和元年11月7日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1FxUUrbwdEphjiudVi-kcI4RCSsq7_bME/view?usp=sharing'
         },
         {
-          title: '令和元年度第一回安全管理委員会報告',
-          describe: '令和元年6月27日に安全管理委員会を開催いたしました。',
+          title: '令和元年度第一回海外安全管理委員会報告',
+          describe: '令和元年6月27日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1O9mhjwpOTeb2iQRLywKuEA3_V7NzfJ7z/view?usp=sharing'
         },
         {
-          title: '平成30年度第二回安全管理委員会報告',
-          describe: '平成30年11月5日に安全管理委員会を開催いたしました。',
+          title: '平成30年度第二回海外安全管理委員会報告',
+          describe: '平成30年11月5日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1c8mk7DK-4qbgT9VAqL7E0fC-uHGjFi5I/view?usp=sharing'
         },
         {
-          title: '平成30年度第一回安全管理委員会報告',
-          describe: '平成30年6月4日に安全管理委員会を開催いたしました。',
+          title: '平成30年度第一回海外安全管理委員会報告',
+          describe: '平成30年6月4日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/19n3xIUj_79NbEBs48xQluy25cwzoLvVA/view?usp=sharing'
         },
         {
-          title: '平成29年度第一回安全管理委員会報告',
-          describe: '平成29年4月27日に安全管理委員会を開催いたしました。',
+          title: '平成29年度第一回海外安全管理委員会報告',
+          describe: '平成29年4月27日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1AJZcZpD4ZGrcLWpeK2e9KXPFjz_Hwc1J/view?usp=sharing'
         },
         {
-          title: '平成28年度第二回安全管理委員会報告',
-          describe: '平成28年11月14日に安全管理委員会を開催いたしました。',
+          title: '平成28年度第二回海外安全管理委員会報告',
+          describe: '平成28年11月14日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1m2mUxTHva7LVV9wuM_zsaShc4_3Tzo_Z/view?usp=sharing'
         },
         {
-          title: '平成28年度第一回安全管理委員会報告',
-          describe: '平成28年5月20日に安全管理委員会を開催いたしました。',
+          title: '平成28年度第一回海外安全管理委員会報告',
+          describe: '平成28年5月20日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1cS0FXzyLzYUukqsL2uAvN7Hk3pKJ5NK0/view?usp=sharing'
         },
         {
-          title: '平成27年度第二回安全管理委員会報告',
-          describe: '平成27年11月9日に安全管理委員会を開催いたしました。',
+          title: '平成27年度第二回海外安全管理委員会報告',
+          describe: '平成27年11月9日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1Dq8FHBJXtq0AyCp4ZFb2r4iuKBAry8aJ/view?usp=sharing'
         },
         {
-          title: '平成27年度第一回安全管理委員会報告',
-          describe: '平成27年5月11日に安全管理委員会を開催いたしました。',
+          title: '平成27年度第一回海外安全管理委員会報告',
+          describe: '平成27年5月11日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1ryJ-3ipry1NsGqhWrwWzVa4wBuc3e3Le/view?usp=sharing'
         },
         {
-          title: '平成26年度第二回安全管理委員会報告',
-          describe: '平成26年11月11日に安全管理委員会を開催いたしました。',
+          title: '平成26年度第二回海外安全管理委員会報告',
+          describe: '平成26年11月11日に海外安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1tdlVlu27Dl5FOoxB8uxmPt4eM1753RTG/view?usp=sharing'
         },
         {
-          title: '平成26年度第一回安全管理委員会報告',
-          describe: '平成26年5月30日に安全管理委員会を開催いたしました。'
+          title: '平成26年度第一回海外安全管理委員会報告',
+          describe: '平成26年5月30日に海外安全管理委員会を開催いたしました。'
         },
         {
-          title: '平成25年度第二回安全管理委員会報告',
-          describe: '平成25年10月15日に安全管理委員会を開催いたしました。'
+          title: '平成25年度第二回海外安全管理委員会報告',
+          describe: '平成25年10月15日に海外安全管理委員会を開催いたしました。'
         },
         {
-          title: '平成25年度第一回安全管理委員会報告',
-          describe: '平成25年度7月3日に安全管理委員会を開催いたしました。'
+          title: '平成25年度第一回海外安全管理委員会報告',
+          describe: '平成25年度7月3日に海外安全管理委員会を開催いたしました。'
         },
         {
           title: '平成25年度 海外安全対策委員会 最終報告',
