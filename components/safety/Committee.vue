@@ -43,6 +43,11 @@ export default {
       openLogs: false,
       committeeLogs: [
         {
+          title: '令和五年度第一回安全管理委員会開催報告',
+          describe: '令和5年5月31日に安全管理委員会を開催いたしました。',
+          link: 'https://drive.google.com/file/d/1Q-xnmQZgP5tovvPPObw-FoFM0BQ7hCjD/view?usp=drive_link'
+        },
+        {
           title: '令和四年度第二回安全管理委員会開催報告',
           describe: '令和4年10月17日に安全管理委員会を開催いたしました。',
           link: 'https://drive.google.com/file/d/1MYv7OuUGz0UGOcrrvOuvdhtqPySav6C7/view?usp=sharing'
