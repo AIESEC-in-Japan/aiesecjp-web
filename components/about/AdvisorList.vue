@@ -31,6 +31,10 @@
           {
             caption : '諮問',
             description : '渋谷 直毅'
+          },
+          {
+            caption : '諮問',
+            description : '福山和貴（アンダーソン・毛利・友常法律事務所 アソシエイツ）'
           }
         ]
       }
