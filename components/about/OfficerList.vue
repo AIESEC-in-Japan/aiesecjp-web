@@ -24,11 +24,7 @@ export default {
         {
           caption: "副会長",
           description:
-            "松塚ゆかり（一橋大学森有礼高等教育国際流動化機構 教授）",
-        },
-        {
-          caption: "副会長",
-          description: "菊地端夫（明治大学 経営学部 教授）",
+            "西野史子（一橋大学 大学院社会学研究科 教授）",
         },
         {
           caption: "常務理事",
