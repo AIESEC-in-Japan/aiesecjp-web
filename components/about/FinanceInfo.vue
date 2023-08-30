@@ -4,7 +4,7 @@
       財務情報
     </h2>
     <div class="aboutus-table"
-        v-for="(item, index) in listData"
+        v-for="(item, index) in items"
         :key="index"
       >
         <h3><a :href="item.link">{{ item.title }}</a></h3>
