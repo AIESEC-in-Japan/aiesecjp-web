@@ -58,6 +58,7 @@
 <style lang="scss" scoped>
 h3 {
   padding: 0.5rem 1rem;
+  font-weight:normal;
 
   @include sp {
     padding: 0.5rem 1rem;
