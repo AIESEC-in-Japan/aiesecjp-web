@@ -56,7 +56,12 @@
 </script>
 
 <style lang="scss" scoped>
+h3 {
+  padding: 0.5rem 1rem;
 
-// 原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
+  @include sp {
+    padding: 0.5rem 1rem;
+  }
+}
 
 </style>
