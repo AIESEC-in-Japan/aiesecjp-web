@@ -4,6 +4,7 @@
       <AboutOfficerList />
       <AboutAdvisorList />
       <AboutOrganizationInfo />
+      <AboutFinanceInfo />
     </div>
   </section>
 </template>
