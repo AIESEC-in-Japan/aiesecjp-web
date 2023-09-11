@@ -1,0 +1,145 @@
+/*LP本体css*/
+img{
+    vertical-align: top;
+}
+
+iframe{
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+}
+
+.size{
+    width: 100%;
+    height: auto;
+}
+.container {
+    position: relative;
+    display: inline-block;
+}
+ 
+.overlay-link{
+    position: absolute;
+    width: 13.25vw;
+    height: 3.25vw;
+    top: 0.85vw;
+    right: 11.7vw;
+    background-color: none;
+}
+.overlay-link2{
+    position: absolute;
+    width: 22.85vw;
+    height: 4.75vw;
+    top: 28.35vw;
+    left: 11.7vw;
+    background-color: none;
+}
+
+.container2 {
+    position: relative;
+    width: 100%; /* コンテナの幅を100%に設定 */
+    padding-bottom: 56.25%; /* 16:9のアスペクト比を保つためのパディング */
+    height: 0; /* 高さを0に設定 */
+}
+
+.container2 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+ 
+.overlay-link4{
+    position: absolute;
+    width: 8.25vw;
+    height: 8.25vw;
+    top: 35.45vw;
+    left: 45.35vw;
+    border-radius: 100%;
+    background-color: none;
+    cursor: pointer;
+}
+
+/* ポップアップのスタイル */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.popup iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+}
+
+.container3 {
+    position: relative;
+    display: inline-block;
+}
+    
+.overlay-link3{
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    top: 49vw;
+    right: 31.35vw;
+    border-radius: 100%;
+    background-color: none;
+}
+
+.container4 {
+    margin-bottom: 7.2916666vw;
+}
+
+.container5 {
+    margin-bottom: 7.2916666vw;
+}
+
+.container8 {
+    margin-bottom: 7.2916666vw;
+}
+
+.scroll-container {
+    margin-bottom: 7.2916666vw;
+}
+
+.image-container {
+    display: flex; /* 画像を横並びに配置 */
+    overflow-x: auto; /* 横スクロール可能にする */
+    white-space: nowrap; /* 画像が横並びになるように改行を抑制 */
+}  
+
+.image-list {
+    max-width: 100%;
+    height: auto;
+    margin-right: 1vw; /* 画像間の余白を設定 */
+}
+
+.image-container::-webkit-scrollbar {
+    height: 5px; /* スクロールバーの幅を指定 */
+} 
+    
+.image-container::-webkit-scrollbar-thumb {
+    background-color: #037EF3; /* スクロールバーのつまみの色 */
+    border-radius: 6px; /* つまみの角を丸くする */
+} 
+
+.image-container::-webkit-scrollbar-track {
+    background-color: #D5D9DB; /* スクロールバーの背景色 */
+}
