@@ -18,7 +18,7 @@
           },
           {
             caption : '諮問',
-            description : '根元勝則（一般社団法人日本経済団体連合会 専務理事）'
+            description : '根本勝則（一般社団法人日本経済団体連合会 専務理事）'
           },
           {
             caption : '諮問',
@@ -26,11 +26,11 @@
           },
           {
             caption : '諮問',
-            description : '堅田 航平（五常・アンド・カンパニー株式会社 CFO）'
+            description : '堅田航平（五常・アンド・カンパニー株式会社 CFO）'
           },
           {
             caption : '諮問',
-            description : '渋谷 直毅'
+            description : '渋谷直毅'
           },
           {
             caption : '諮問',
