@@ -28,7 +28,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   background-color: rgba(231, 100, 75, 0.85);
 }
 header .header-container {
@@ -197,6 +197,17 @@ header .header-container .header-nav .header-nav-inner a:hover {
 .testimonials img {
   position: relative;
 }
+.testimonials .overlay-link {
+  position: absolute;
+  width: 36.7%;
+  height: 5.7%;
+  top: 92.65%;
+  left: 31.64%;
+  border-radius: 5vh;
+}
+.testimonials .overlay-link:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+}
 .testimonials .testimonials-container {
   width: 100%;
   height: 84%;
@@ -328,6 +339,19 @@ header .header-container .header-nav .header-nav-inner a:hover {
 
 .organization {
   margin-top: 6%;
+  position: relative;
+}
+.organization .overlay-link {
+  position: absolute;
+  display: block;
+  width: 3.28%;
+  height: 5.28%;
+  border-radius: 50%;
+  top: 75.32%;
+  right: 5.9%;
+}
+.organization .overlay-link:hover {
+  background-color: rgba(255, 255, 255, 0.14);
 }
 
 .faq {
@@ -406,6 +430,19 @@ header .header-container .header-nav .header-nav-inner a:hover {
 
 .cv {
   margin-top: 6%;
+  position: relative;
+}
+.cv .overlay-link {
+  position: absolute;
+  display: block;
+  width: 29.1%;
+  height: 9.7%;
+  border-radius: 30vh;
+  top: 69.3%;
+  right: 12.4%;
+}
+.cv .overlay-link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 footer .footer-container {
