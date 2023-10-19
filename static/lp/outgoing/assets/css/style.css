@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/*LP本体css*/
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Lato", YuGothic, "游ゴシック体", "Yu Gothic Medium", "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+main {
+  display: block;
+  position: relative;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  color: #2D2A29;
+}
+
+.size {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(231, 100, 75, 0.85);
+}
+header .header-container {
+  margin: 10px auto;
+  justify-content: space-around;
+  display: flex;
+  top: 10px;
+  bottom: 0;
+  left: 20px;
+}
+header .header-container .header-logo img {
+  width: 300px;
+  max-height: 60px;
+}
+header .header-container .header-nav {
+  margin-top: 20px;
+}
+header .header-container .header-nav .header-nav-inner {
+  justify-content: space-around;
+}
+header .header-container .header-nav .header-nav-inner a {
+  margin-right: 50px;
+  text-decoration-line: none;
+  color: #fff;
+  font-weight: bold;
+}
+header .header-container .header-nav .header-nav-inner a:last-child {
+  padding: 8px 10px;
+  border-radius: 10vh;
+  background-color: #fff;
+  color: #e7644b;
+}
+header .header-container .header-nav .header-nav-inner a:hover {
+  opacity: 0.6;
+}
+
+.about {
+  top: 6.4%;
+  position: absolute;
+}
+
+.feature {
+  margin-top: 68%;
+}
+
+.project {
+  margin: 7% 4.8% auto 4.8%;
+  position: relative;
+}
+.project img {
+  position: relative;
+}
+.project .project-container {
+  width: 100%;
+  height: 84%;
+  top: 16%;
+  left: 0;
+  display: inline-block;
+  position: absolute;
+}
+.project .project-container .project-item {
+  width: 32.7333333333%;
+  height: 50%;
+  display: inline-block;
+}
+.project .project-container .project-item .modal-on1 {
+  cursor: pointer;
+  position: relative;
+  width: 92.4%;
+  height: 91.9%;
+  top: 3.2%;
+  left: 4.6%;
+  border-radius: 0.02vh;
+}
+.project .project-container .project-item .modal-on2 {
+  cursor: pointer;
+  position: relative;
+  width: 92.4%;
+  height: 91.9%;
+  top: 3.2%;
+  left: 5.8%;
+  border-radius: 0.02vh;
+}
+.project .project-container .project-item .modal-on3 {
+  cursor: pointer;
+  position: relative;
+  width: 92.4%;
+  height: 91.9%;
+  top: 3.2%;
+  left: 7%;
+  border-radius: 0.02vh;
+}
+.project .project-container .project-item .modal-on4 {
+  cursor: pointer;
+  position: relative;
+  width: 92.4%;
+  height: 91.9%;
+  top: 2.9%;
+  left: 4.6%;
+  border-radius: 0.02vh;
+}
+.project .project-container .project-item .modal-on5 {
+  cursor: pointer;
+  position: relative;
+  width: 92.4%;
+  height: 91.9%;
+  top: 2.9%;
+  left: 5.8%;
+  border-radius: 0.02vh;
+}
+.project .project-container .project-item .modal-on6 {
+  cursor: pointer;
+  position: relative;
+  width: 92.4%;
+  height: 91.9%;
+  top: 2.9%;
+  left: 7%;
+  border-radius: 0.02vh;
+}
+.project .project-container .project-item .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+}
+.project .project-container .project-item .modal-content .modal-content-inner {
+  position: relative;
+  opacity: 0;
+}
+.project .project-container .project-item .is-active {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.project .project-container .project-item .is-active .modal-content-inner {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  width: 60%;
+}
+.project .project-container .project-item .is-active img {
+  position: relative;
+  width: 100%;
+  top: 1%;
+}
+.project .project-container .project-item .is-active .close {
+  width: 28.4%;
+  height: 8.8%;
+  position: absolute;
+  top: 83%;
+  left: 35.1%;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+.testimonials {
+  margin: 6% 4.8% auto 4.8%;
+  position: relative;
+}
+.testimonials img {
+  position: relative;
+}
+.testimonials .testimonials-container {
+  width: 100%;
+  height: 84%;
+  top: 6.6%;
+  left: 0;
+  display: inline-block;
+  position: absolute;
+}
+.testimonials .testimonials-container .testimonials-item {
+  width: 33.1533333333%;
+  height: 50%;
+  display: inline-block;
+}
+.testimonials .testimonials-container .testimonials-item .modal-on1 {
+  cursor: pointer;
+  position: relative;
+  width: 92%;
+  height: 93%;
+  top: 3.6%;
+  left: 4.6%;
+  border-radius: 0.02vh;
+}
+.testimonials .testimonials-container .testimonials-item .modal-on2 {
+  cursor: pointer;
+  position: relative;
+  width: 91.6%;
+  height: 93%;
+  top: 3.5%;
+  left: 4.6%;
+  border-radius: 0.02vh;
+}
+.testimonials .testimonials-container .testimonials-item .modal-on3 {
+  cursor: pointer;
+  position: relative;
+  width: 92%;
+  height: 93%;
+  top: 3.4%;
+  left: 4%;
+  border-radius: 0.02vh;
+}
+.testimonials .testimonials-container .testimonials-item .modal-on4 {
+  cursor: pointer;
+  position: relative;
+  width: 92%;
+  height: 93%;
+  top: 3.2%;
+  left: 4.6%;
+  border-radius: 0.02vh;
+}
+.testimonials .testimonials-container .testimonials-item .modal-on5 {
+  cursor: pointer;
+  position: relative;
+  width: 91.6%;
+  height: 93%;
+  top: 3.1%;
+  left: 4.6%;
+  border-radius: 0.02vh;
+}
+.testimonials .testimonials-container .testimonials-item .modal-on6 {
+  cursor: pointer;
+  position: relative;
+  width: 92%;
+  height: 93%;
+  top: 3%;
+  left: 4%;
+  border-radius: 0.02vh;
+}
+.testimonials .testimonials-container .testimonials-item .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+}
+.testimonials .testimonials-container .testimonials-item .modal-content .modal-content-inner {
+  position: relative;
+  opacity: 0;
+}
+.testimonials .testimonials-container .testimonials-item .is-active {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.testimonials .testimonials-container .testimonials-item .is-active .modal-content-inner {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  width: 60%;
+}
+.testimonials .testimonials-container .testimonials-item .is-active img {
+  position: relative;
+  width: 100%;
+  top: 1%;
+}
+.testimonials .testimonials-container .testimonials-item .is-active .note {
+  position: absolute;
+  width: 12%;
+  height: 6%;
+  top: 40%;
+  left: 58%;
+}
+.testimonials .testimonials-container .testimonials-item .is-active .close {
+  width: 28.4%;
+  height: 8.8%;
+  position: absolute;
+  top: 83%;
+  left: 35.1%;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+.safetyandapply {
+  margin-top: 6%;
+}
+
+.contact {
+  margin-top: 6%;
+}
+.contact .text_img {
+  margin: auto;
+  display: block;
+  width: 48%;
+}
+
+.organization {
+  margin-top: 6%;
+}
+
+.faq {
+  margin-top: 6%;
+}
+.faq .text_img {
+  margin: auto;
+  display: block;
+  width: 13%;
+}
+
+footer .footer-container {
+  margin-top: 10%;
+  flex: column;
+  text-align: center;
+}
+footer .footer-container .footer-logo img {
+  width: 20%;
+}
+footer .footer-container .footer-list {
+  margin: 2% auto 3% auto;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */
