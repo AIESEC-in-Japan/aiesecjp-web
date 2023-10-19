@@ -66,7 +66,7 @@ header{
 }
 
 .about{
-    top: 6.4%;
+    top: 6%;
     position: absolute;
 }
 
@@ -375,13 +375,103 @@ header{
     margin-top: 6%;
 }
 .faq{
-    margin-top: 6%;
+    margin: 6% 6.1% auto 6.1%;
     .text_img{
         margin: auto;
         display: block;
         width: 13%;
     }
+
+    &-container{
+        margin-top: 5%;
+        .faq-item{
+            border-bottom: solid 0.8px rgba(0, 0, 0, 0.3);
+
+            .content-q{
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 16px;
+                padding: 20px 100px 20px 36px;
+                position: relative;
+                line-height: 2;
+                z-index: 2;
+                transition: all .3s ease;
+
+                &::before, &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 41px;
+                    transform-origin: center center;
+                    width: 1em;
+                    height: 1em;
+                    transform: translateX(50%) translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.6);
+                    opacity: 1;
+                    transition: all .3s ease;
+                }
+
+                &::before {
+                    height: 2px;
+
+                }
+                
+                &::after {
+                    width: 2px;
+                    
+                }
+                
+                &.is-active {
+
+                    &::before, &::after{
+                        transform: translate(50%, -50%) rotate(180deg);
+                        background-color: rgba(0, 0, 0, 0.6);
+                        
+                    }
+                    
+                    &::after {
+                        opacity: 0;
+                        
+                    }
+                }
+                
+
+                img{
+                    width: 5%;
+                }
+
+                
+            }
+            .wrapper-a{
+                display: none;
+                .content-a{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 16px;
+                    padding: 20px 100px 20px 36px;
+                    .content-a-item{
+                        line-height: 1.75;
+                        margin: auto 20px;
+                    }
+                    img{
+                        width: 5%;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+.cv{
+    margin-top: 6%;  
+}
+
 
 footer{
     .footer-container{

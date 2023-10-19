@@ -66,7 +66,7 @@ header .header-container .header-nav .header-nav-inner a:hover {
 }
 
 .about {
-  top: 6.4%;
+  top: 6%;
   position: absolute;
 }
 
@@ -331,12 +331,81 @@ header .header-container .header-nav .header-nav-inner a:hover {
 }
 
 .faq {
-  margin-top: 6%;
+  margin: 6% 6.1% auto 6.1%;
 }
 .faq .text_img {
   margin: auto;
   display: block;
   width: 13%;
+}
+.faq-container {
+  margin-top: 5%;
+}
+.faq-container .faq-item {
+  border-bottom: solid 0.8px rgba(0, 0, 0, 0.3);
+}
+.faq-container .faq-item .content-q {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 100px 20px 36px;
+  position: relative;
+  line-height: 2;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+.faq-container .faq-item .content-q::before, .faq-container .faq-item .content-q::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 41px;
+  transform-origin: center center;
+  width: 1em;
+  height: 1em;
+  transform: translateX(50%) translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.faq-container .faq-item .content-q::before {
+  height: 2px;
+}
+.faq-container .faq-item .content-q::after {
+  width: 2px;
+}
+.faq-container .faq-item .content-q.is-active::before, .faq-container .faq-item .content-q.is-active::after {
+  transform: translate(50%, -50%) rotate(180deg);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.faq-container .faq-item .content-q.is-active::after {
+  opacity: 0;
+}
+.faq-container .faq-item .content-q img {
+  width: 5%;
+}
+.faq-container .faq-item .wrapper-a {
+  display: none;
+}
+.faq-container .faq-item .wrapper-a .content-a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 100px 20px 36px;
+}
+.faq-container .faq-item .wrapper-a .content-a .content-a-item {
+  line-height: 1.75;
+  margin: auto 20px;
+}
+.faq-container .faq-item .wrapper-a .content-a img {
+  width: 5%;
+}
+
+.cv {
+  margin-top: 6%;
 }
 
 footer .footer-container {

@@ -1,6 +1,7 @@
 $(function(){
     smoothScroll();
     modal();
+    faq();
   })
 //ジャンプ
 function smoothScroll(){
@@ -33,4 +34,16 @@ function modal(){
         $('.js-modal-content').removeClass('is-active');
         }
     })
+}
+
+//faq
+function faq(){
+  $('.js-faq').on('click', function(){
+    $(this).toggleClass('is-active');
+    if($(this).hasClass('is-active')){
+      $(this).next('.js-faq-anser').slideDown(300);
+    }else{
+      $(this).next('.js-faq-anser').slideUp(300);
+    }
+  })
 }
