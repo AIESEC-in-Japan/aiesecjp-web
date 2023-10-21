@@ -1,3 +1,59 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.3;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
 /*LP本体css*/
 body{
     margin: 0;
@@ -48,14 +104,18 @@ header{
                         text-decoration-line: none;
                         color: #fff;
                         font-weight: bold;
+                        transition: 0.3s;
+                        
                         &:last-child{
                             padding: 8px 10px;
                             border-radius: 10vh;
                             background-color: #fff;
                             color: #e7644b;
                         }
+
                         &:hover{
                             opacity: 0.6;
+
                         }
                     }
                     
@@ -192,6 +252,11 @@ header{
                     left: 35.1%;
                     border-radius: 5vh;
                     cursor: pointer;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.14);
+                    }
                 }
                 
             }
@@ -217,6 +282,8 @@ header{
         top: 92.65%;
         left: 31.64%;
         border-radius: 5vh;
+        transition: 0.3s;
+
         &:hover{
             background-color: rgba(255, 255, 255, 0.14);
         }
@@ -337,6 +404,11 @@ header{
                     left: 35.1%;
                     border-radius: 5vh;
                     cursor: pointer;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.14);
+                    }
                 }
                 
             }
@@ -425,6 +497,8 @@ header{
                         margin: 0 auto;
                         padding: 5px 2px;
                         text-decoration: none;
+                        transition: 0.3s;
+
                         
                         p{
                             display: table-cell;
@@ -434,6 +508,8 @@ header{
                             text-align: center;
                             vertical-align: middle;
                             letter-spacing: 0.1em;
+                            transition: 0.3s;
+
                             small{
                                 display: block;
                                 font-weight: normal;
@@ -480,6 +556,8 @@ header{
         border-radius: 50%;
         top: 75.32%;
         right: 5.9%;
+        transition: 0.3s;
+
         &:hover{
             background-color: rgba(255, 255, 255, 0.14);
         }
@@ -509,6 +587,8 @@ header{
                 line-height: 2;
                 z-index: 2;
                 transition: all .3s ease;
+                align-items: center;
+
 
                 &::before, &::after{
                     content: "";
@@ -590,6 +670,8 @@ header{
         border-radius: 30vh;
         top: 69.3%;
         right: 12.4%;
+        transition: 0.3s;
+
         &:hover{
             background-color: rgba(255, 255, 255, 0.4);
         }
