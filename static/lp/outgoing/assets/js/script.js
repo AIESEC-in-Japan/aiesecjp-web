@@ -1,8 +1,10 @@
 $(function(){
     smoothScroll();
+    headerSpMenu();
     modal();
     faq();
     GethashID();
+    worksSlider();
   })
 //ジャンプ
 function smoothScroll(){
@@ -80,3 +82,30 @@ $(window).on('load', function () {
 	var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
 	GethashID (hashName);//設定したタブの読み込み
 });
+
+//ハンバーガーメニュー
+function headerSpMenu(){
+  $('#js-header_hamburger').on('click', function(){
+    if($('#js-header_content').hasClass('is-show')){
+      $('html, body').css({'overflow':''});
+      $('#js-header_content').removeClass('is-show');
+      $('#js-header_logo').removeClass('is-white');
+    }else{
+      $('html, body').css({'overflow':'hidden'});
+      $('#js-header_content').addClass('is-show');
+      $('#js-header_logo').addClass('is-white');
+    }
+  })
+}
+
+//スライダー
+function worksSlider(){
+  const worksSlider = new Swiper('.js-swiper--works',{
+    speed: 400,
+    autoplay:true,
+    loop: true,
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+  });
+}

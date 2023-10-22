@@ -2,6 +2,8 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <title>AIESEC 海外インターンシップ</title>
         <meta name="title" content="AIESEC 海外インターンシップ">
         <meta name="description" content="アイセックは、約6週間海外に渡航して、現地のNPOや教育機関で社会課題に触れるような活動をすることで、リーダーシップを育む経験を届けています。">
@@ -11,10 +13,12 @@
         <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" crossorigin="anonymous"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
         <link href="./assets/css/style.css" rel="stylesheet">
 
     </head>
@@ -22,41 +26,46 @@
     <body>
         <header>
             <div class="header-container">
-                <a href="#kv" class="header-logo"><img src="assets/img/aiesecblue.png"></a>
+                <a href="#kv" id="js-header_logo" class="header-logo"><img src="assets/img/aiesecblue.png"></a>
                 <div id="js-header_content" class="header-content">
                   <div class="header-nav">
                     <nav class="header-nav-inner">
-                      <a href="#about" class="p-header__nav__item">インターンシップについて</a>
-                      <a href="#feature" class="p-header__nav__item">特徴</a>
-                      <a href="#project" class="p-header__nav__item">プロジェクト</a>
-                      <a href="#testimonials" class="p-header__nav__item">体験者の声</a>
-                      <a href="#safetyandapply" class="p-header__nav__item">安心サポート</a>
-                      <a href="#contact" class="p-header__nav__item">ご相談はこちら</a>
+                      <a href="#about" class="header-nav-item">インターンシップについて</a>
+                      <a href="#feature" class="header-nav-item">特徴</a>
+                      <a href="#project" class="header-nav-item">プロジェクト</a>
+                      <a href="#testimonials" class="header-nav-item">体験者の声</a>
+                      <a href="#safetyandapply" class="header-nav-item">安心サポート</a>
+                      <a href="#contact" class="header-nav-item">ご相談はこちら</a>
                     </nav>
                   </div>
                 </div>
-                <div id="js-header__hamburger" class="p-header__hamburger"><i></i></div>
-              </div>
+                <div id="js-header_hamburger" class="header-hamburger"><i></i></div>
+            </div>
         </header>
         <main>
             <!--KV-->
             <div id="kv" class="kv">
-                <img src="./assets/img/KV.png" alt="きっと変わる。自分も、世界も。" class="size">
+                <img src="./assets/img/KV.png" alt="きっと変わる。自分も、世界も。" class="std-img">
+                <img src="./assets/img/sp_KV.png" alt="きっと変わる。自分も、世界も。" class="sp-img">
+                <a href="#contact" class="sp-overlay-link"> </a>
             </div>
 
             <!--インターンシップについて-->
             <div id="about" class="about">
-                <img src="./assets/img/about.png" alt="インターンシップの説明" class="size">
+                <img src="./assets/img/about.png" alt="インターンシップの説明" class="std-img">
+                <img src="./assets/img/sp_about.png" alt="インターンシップの説明" class="sp-img">
             </div>
 
             <!--インターンシップの特徴-->
             <div id="feature" class="feature">
-                <img src="./assets/img/feature.png" alt="インターンシップの特徴" class="size">
+                <img src="./assets/img/feature.png" alt="インターンシップの特徴" class="std-img">
+                <img src="./assets/img/sp_feature.png" alt="インターンシップの特徴" class="sp-img">
             </div>
 
             <!--インターンシップ先について-->
             <div id="project" class="project">
-                <img src="./assets/img/project.png" alt="インターンシップ先について" class="size">
+                <img src="./assets/img/project.png" alt="インターンシップ先について" class="std-img">
+                <img src="./assets/img/sp_text_project.png" alt="インターンシップ先について" class="sp-text-img">
                 <div class="project-container">
                     <div class="project-item">
                         <div class="modal-on1 js-modal-trigger"> </div>
@@ -117,7 +126,8 @@
 
             <!--経験者の声-->
             <div id="testimonials" class="testimonials">
-                <img src="./assets/img/testimonials.png" alt="経験者の声" class="size">
+                <img src="./assets/img/testimonials.png" alt="経験者の声" class="std-img">
+                <img src="./assets/img/sp_text_testimonials.png" alt="経験者の声" class="sp-text-img">
                 <div class="testimonials-container">
                     <div class="testimonials-item">
                         <div class="modal-on1 js-modal-trigger"> </div>
@@ -175,22 +185,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="sp-testimonials-container">
+                    <div class="slider-content js-swiper--works">
+                        <div class="slider-inner swiper-wrapper">
+                            <a class="slider-item swiper-slide"><img src="./assets/img/sp_testimonial1.png" alt="経験者の声1"></a>
+                            <a class="slider-item swiper-slide"><img src="./assets/img/sp_testimonial2.png" alt="経験者の声2"></a>
+                            <a class="slider-item swiper-slide"><img src="./assets/img/sp_testimonial3.png" alt="経験者の声3"></a>
+                            <a class="slider-item swiper-slide"><img src="./assets/img/sp_testimonial4.png" alt="経験者の声4"></a>
+                            <a class="slider-item swiper-slide"><img src="./assets/img/sp_testimonial5.png" alt="経験者の声5"></a>
+                            <a class="slider-item swiper-slide"><img src="./assets/img/sp_testimonial6.png" alt="経験者の声6"></a>
+                        </div>
+                    </div>
+                    <img src="./assets/img/sp_button_testimonials.png" alt="経験者の声はこちら" class="sp-button-img">
+                </div>
                 <a href="#" class="overlay-link"> </a>
             </div>
 
             <!--安心サポート耐性・申し込み方法-->
             <div id="safetyandapply" class="safetyandapply">
-                <img src="./assets/img/safetyandapply.png" alt="安全サポート体制・申し込み方法" class="size">
+                <img src="./assets/img/safetyandapply.png" alt="安全サポート体制・申し込み方法" class="std-img">
+                <img src="./assets/img/sp_safetyandapply.png" alt="安全サポート体制・申し込み方法" class="sp-img">
             </div>
 
             <!--お問い合わせ方法-->
             <div id="contact" class="contact">
-                <img src="./assets/img/text_contact.png" alt="お問い合わせ方法" class="text_img">
+                <img src="./assets/img/text_contact.png" alt="お問い合わせ方法" class="text-img">
+                <img src="./assets/img/sp_text_contact.png" alt="お問い合わせ方法" class="sp-text-img">
                 <div class="contact-container">
                     <ul class="tab">
                         <li><a href="#kanto" class="selected">関 東 支 部</a></li>
                         <li><a href="#kansai" class="selected">関 西 支 部</a></li>
-                        <li><a href="#others" class="selected">中 部 / 北 海 道 / 九 州 支 部</a></li>
+                        <li><a href="#others" class="selected">そ の 他 支 部</a></li>
                     </ul>
                         
                     <div id="kanto" class="area">
@@ -224,7 +249,7 @@
                             <li><a href="https://line.me/R/ti/p/@fch2116c" target="_blank"><p>名古屋大学委員会<br><small>名古屋大学</small></p></a></li>
                             <li><a href="https://line.me/R/ti/p/@448vaqro?from=page&accountId=448vaqro" target="_blank"><p>名古屋市立大学委員会<br><small>名古屋市立大学</small></p></a></li>
                             <li><a href="https://line.me/R/ti/p/@708gxlbe?from=page&accountId=708gxlbe" target="_blank"><p>南山大学委員会<br><small>南山大学</small></p></a></li>
-                            <li><a href="https://line.me/R/ti/p/@970vggps?from=page&accountId=970vggps" target="_blank"><p class="apu">立命館アジア太平洋大学委員会<br><small>立命館アジア太平洋大学</small></p></a></li>
+                            <li class="apu"><a href="https://line.me/R/ti/p/@970vggps?from=page&accountId=970vggps" target="_blank"><p>立命館アジア太平洋大学委員会<br><small>立命館アジア太平洋大学</small></p></a></li>
                             <li><a href="https://line.me/R/ti/p/@554vrxbp" target="_blank"><p>広島委員会<br><small>広島大学</small></p></a></li>
                             <li><a class="none-link" target="_blank"><p>北海道委員会<br><small>大学</small></p></a></li>
                         </ul>
@@ -235,12 +260,14 @@
 
             <!--団体概要-->
             <div class="organization">
-                <img src="./assets/img/organization.png" alt="団体概要" class="size">
+                <img src="./assets/img/organization.png" alt="団体概要" class="std-img">
+                <img src="./assets/img/sp_organization.png" alt="団体概要" class="sp-img">
                 <a href="https://www.aiesec.jp/" class="overlay-link" target="_blank"> </a>
             </div>
             <!--よくある質問-->
             <div class="faq">
-                <img src="./assets/img/text_faq.png" alt="よくある質問" class="text_img">
+                <img src="./assets/img/text_faq.png" alt="よくある質問" class="text-img">
+                <img src="./assets/img/sp_text_faq.png" alt="よくある質問" class="sp-text-img">
                 <div class="faq-container">
                     <div class="faq-item">
                         <div class="content-q js-faq">
@@ -270,7 +297,8 @@
             </div>
             <!--ご相談はこちらから-->
             <div id="cv" class="cv">
-                <img src="assets/img/CV.png" alt="ご相談はこちらから" class="size">
+                <img src="assets/img/CV.png" alt="ご相談はこちらから" class="std-img">
+                <img src="assets/img/sp_cv.png" alt="ご相談はこちらから" class="sp-img">
                 <a href="#contact" class="overlay-link"></a> <!--お問い合わせ方法へ-->
             </div>            
         </main>
