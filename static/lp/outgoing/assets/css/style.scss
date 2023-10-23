@@ -88,10 +88,20 @@ header{
     top: 0;
     width: 100%;
     z-index: 3;
-    background-color: rgba(231, 100, 75, 0.85);
+    //background-color: rgba(231, 100, 75, 0.85);
+    .header-img{
+        width: 100%;
+        height: 92px;
+        @include sp{
+            height: 82px;
+        }
+    }
 
 
     .header-container{
+        position: absolute;
+        width: 100%;
+        top: 0;
         max-width: 1300px;
         margin: 10px 10px;
         justify-content: space-around;
@@ -184,7 +194,6 @@ header{
                     color: #2D2A29;
                 }
             }
-            
 
         }
     }
@@ -198,6 +207,7 @@ header{
     position: relative;
     z-index: 9999;
     margin-left: auto;
+    margin-right: 8px;
     display: none;
 
     i, i::before, i::after {
@@ -278,12 +288,58 @@ header{
 }
 
 .kv{
+    margin-top: 72px;
+    position: relative;
+    height: 509.33px;
+    .std-img {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        animation: change-img-anim 25s infinite;
+
+        &:nth-of-type(1) {
+            animation-delay: 0s;
+          }
+          &:nth-of-type(2) {
+            animation-delay: 5s;
+          }
+          &:nth-of-type(3) {
+            animation-delay: 10s;
+          }
+          &:nth-of-type(4) {
+            animation-delay: 15s;
+          }
+          &:nth-of-type(5) {
+            animation-delay: 20s;
+          }
+    }
+    
+    .text-img{
+        position: absolute;
+        width: 62%;
+        margin-top: 18%;
+        margin-left: 38%;
+        @include sp{
+            display: none;
+        }
+    }  
+      
+      
+      @keyframes change-img-anim {
+        0%{ opacity: 0;}
+        15%{ opacity: 1;}
+        25%{ opacity: 1;}
+        30%{ opacity: 0;}
+        100%{ opacity: 0;}
+      }
     @include sp{
+        height: 100%;
+        margin-top: 62px;
         .sp-overlay-link{
             position: absolute;
             width: 83%;
-            height: 0.72%;
-            top: 6.31%;
+            height: 8.5%;
+            top: 74.6%;
             left: 8.5%;
             border-radius: 5vh;
             z-index: 1;
@@ -297,17 +353,33 @@ header{
 }
 
 .about{
-    top: 6%;
+    top: 5%;
     position: absolute;
     @include sp{
-        top: 6.6%;
+        top: 5.98%;
+    }
+    .about-trigger{
+        position: absolute;
+        top: 17.8%;
     }
 }
 
 .feature{
-    margin-top: 68%;
+    margin-top: 85%;
+    @media (max-width:1024px) {
+        margin-top: 72%;
+    }
+    @media (max-width:768px){
+        margin-top: 56%;
+    }
     @include sp{
-        margin-top: 205%;
+        margin-top: 255%;
+    }
+    @media(max-width:412px){
+        margin-top: 190%;
+    }
+    @media(max-width:320px){
+        margin-top: 200%;
     }
 }
 
@@ -326,6 +398,21 @@ header{
             width: 94.5%;
         }
     }
+    .sp-overlay-link{
+        @include sp{
+            position: absolute;
+            width: 76.3%;
+            height: 7.6%;
+            top: 92.4%;
+            left: 11.9%;
+            border-radius: 5vh;
+            transition: 0s;
+            
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.14);
+            }
+        }
+    }
     .project-container{
         width: 100%;
         height: 84%;
@@ -333,9 +420,16 @@ header{
         left: 0;
         display: inline-block;
         position:absolute;
+        @include sp{
+            display:  none;
+        }
         .project-item{
             width:calc(100% / 3) - 0.6%;
             height:calc(100% / 2);
+
+            @include sp{
+                width:calc(100% / 2) - 0.6%;
+            }
             
             display: inline-block;
             .modal-on1{
@@ -346,6 +440,10 @@ header{
                 top: 3.2%;
                 left: 4.6%;
                 border-radius: 0.02vh;
+                @include sp{
+                    width: 90%;
+                    left: 5.7%;
+                }
             }
             .modal-on2{
                 cursor: pointer;
@@ -355,6 +453,10 @@ header{
                 top: 3.2%;
                 left: 5.8%;
                 border-radius: 0.02vh;
+                @include sp{
+                    width: 90%;
+                    left: 5.2%;
+                }
             }
             .modal-on3{
                 cursor: pointer;
@@ -362,8 +464,14 @@ header{
                 width: 92.4%;
                 height: 91.9%;
                 top: 3.2%;
-                left: 7%;
+                left: 6.6%;
                 border-radius: 0.02vh;
+
+                @include sp{
+                    width: 90%;
+                    top: 1.5%;
+                    left: 5.5%;
+                }
             }
             .modal-on4{
                 cursor: pointer;
@@ -373,6 +481,12 @@ header{
                 top: 2.9%;
                 left: 4.6%;
                 border-radius: 0.02vh;
+
+                @include sp{
+                    width: 90%;
+                    top: 1.5%;
+                    left: 5.4%;
+                }
             }
             .modal-on5{
                 cursor: pointer;
@@ -382,6 +496,10 @@ header{
                 top: 2.9%;
                 left: 5.8%;
                 border-radius: 0.02vh;
+
+                @include sp{
+                    display: none;
+                }
             }
             .modal-on6{
                 cursor: pointer;
@@ -391,11 +509,12 @@ header{
                 top: 2.9%;
                 left: 7%;
                 border-radius: 0.02vh;
+
+                @include sp{
+                    display: none;
+                }
             }
             .modal-content{
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -451,6 +570,110 @@ header{
 
         }
     }
+    .sp-project-container{
+        display: none;
+        @include sp{
+            width: 100%;
+            height: 66%;
+            top: 25%;
+            left: 0;
+            display: inline-block;
+            position:absolute;
+            .project-item{
+                width:calc(100% / 2) - 0.6%;
+                height:calc(100% / 2);
+                
+                display: inline-block;
+                .modal-on1{
+                    cursor: pointer;
+                    position: relative;
+                    width: 90%;
+                    height: 91.9%;
+                    top: 3.2%;
+                    left: 5.7%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on3{
+                    cursor: pointer;
+                    position: relative;
+                    width: 90%;
+                    height: 91.9%;
+                    top: 3.2%;
+                    left: 5.2%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on5{
+                    cursor: pointer;
+                    position: relative;
+                    width: 90%;
+                    height: 91.9%;
+                    top: 1.5%;
+                    left: 5.5%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on4{
+                    cursor: pointer;
+                    position: relative;
+                    width: 90%;
+                    height: 91.9%;
+                    top: 1.5%;
+                    left: 5.4%;
+                    border-radius: 0.02vh;
+                }
+                .modal-content{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: fixed;
+                    width: 0;
+                    height: 0;
+                    top: 0;
+                    left: 0;
+                    z-index: 50;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    visibility: hidden;
+    
+                    .modal-content-inner{
+                        position: relative;
+                        opacity: 0;
+                    }
+                    
+    
+                }
+                .is-active {
+                    visibility: visible;
+                    width: 100%;
+                    height: 100%;
+                    .modal-content-inner{
+                        transition: opacity .3s ease-in-out;
+                        opacity: 1;
+                        width: 90%;
+                    }
+                    img {
+                        position: relative;
+                        width: 100%;
+                        top: 1%;
+                        
+                    }
+                    .close{
+                        width: 8.6%;
+                        height: 4.8%;
+                        position: absolute;
+                        top: 5.6%;
+                        left: 81.4%;
+                        border-radius: 5vh;
+                        cursor: pointer;
+                        transition: 0.3s;
+    
+                        &:hover{
+                            background-color: rgba(255, 255, 255, 0.14);
+                        }
+                    }
+                    
+                }    
+            }
+        }
+    }
 }
 
 
@@ -477,14 +700,23 @@ header{
     .overlay-link{
         position: absolute;
         width: 36.7%;
-        height: 5.7%;
-        top: 92.65%;
+        height: 10%;
+        top: 87.2%;
         left: 31.64%;
         border-radius: 5vh;
         transition: 0.3s;
 
         &:hover{
             background-color: rgba(255, 255, 255, 0.14);
+        }
+
+        @include sp{
+            width: 76.3%;
+            height: 9.2%;
+            top: 91%;
+            left: 11.9%;
+            border-radius: 5vh;
+            transition: 0s;
         }
     }
     .testimonials-container{
@@ -494,63 +726,40 @@ header{
         left: 0;
         display: inline-block;
         position:absolute;
+        @include sp{
+            display: none;
+        }
         .testimonials-item{
-            width:calc(100% / 3) - 0.18%;
-            height:calc(100% / 2);
+            width:calc(100% / 3) - 0.3%;
+            height: 100%;
+            margin: auto;
             
             display: inline-block;
             .modal-on1{
                 cursor: pointer;
                 position: relative;
-                width: 92%;
-                height: 93%;
-                top: 3.6%;
+                width: 91.8%;
+                height: 80%;
+                top: 8.8%;
                 left: 4.6%;
                 border-radius: 0.02vh;
             }
             .modal-on2{
                 cursor: pointer;
                 position: relative;
-                width: 91.6%;
-                height: 93%;
-                top: 3.5%;
-                left: 4.6%;
+                width: 91.8%;
+                height: 80%;
+                top: 8.8%;
+                left: 4.5%;
                 border-radius: 0.02vh;
             }
             .modal-on3{
                 cursor: pointer;
                 position: relative;
-                width: 92%;
-                height: 93%;
-                top: 3.4%;
-                left: 4%;
-                border-radius: 0.02vh;
-            }
-            .modal-on4{
-                cursor: pointer;
-                position: relative;
-                width: 92%;
-                height: 93%;
-                top: 3.2%;
-                left: 4.6%;
-                border-radius: 0.02vh;
-            }
-            .modal-on5{
-                cursor: pointer;
-                position: relative;
-                width: 91.6%;
-                height: 93%;
-                top: 3.1%;
-                left: 4.6%;
-                border-radius: 0.02vh;
-            }
-            .modal-on6{
-                cursor: pointer;
-                position: relative;
-                width: 92%;
-                height: 93%;
-                top: 3%;
-                left: 4%;
+                width: 91.8%;
+                height: 80%;
+                top: 8.8%;
+                left: 4.4%;
                 border-radius: 0.02vh;
             }
             .modal-content{
@@ -608,59 +817,121 @@ header{
                     &:hover{
                         background-color: rgba(255, 255, 255, 0.14);
                     }
-                }
-                
+                }   
             }
-            
-            
-
         }
     }
-
     .sp-testimonials-container{
         display: none;
-    }
-
-    @include sp{
-        .testimonials-container{
-            display: none;
-        }
-        .sp-testimonials-container{
-            display: block;
-            margin-top: 3%;
-            .slider-content{
-                overflow: hidden;
-                width: 100%;
-
-                .slider-inner{
-                    width: 100%;
-                    height: auto;
-                    
-                    .slider-item{
-                        transition: opacity .3s;
-                        height: 201px;
-                        flex-shrink: 0;
-                        margin: 0 auto;
-
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            margin: auto;
-                            display: block;
-                        }
-                    }
-                    .swiper-slide {
-                        height: auto
-                    }
+        @include sp{
+            width: 100%;
+            height: 80%;
+            top: 8.5%;
+            left: 0;
+            display: inline-block;
+            position:absolute;
+            .testimonials-item{
+                width:calc(100% / 2) - 0.6%;
+                height:calc(100% / 2);
+                                
+                display: inline-block;
+                .modal-on2{
+                    cursor: pointer;
+                    position: relative;
+                    width: 91%;
+                    height: 91.9%;
+                    top: 3.2%;
+                    left: 4.7%;
+                    border-radius: 0.02vh;
                 }
-                .swiper-wrapper {
-                    align-items: stretch;
-
+                .modal-on3{
+                    cursor: pointer;
+                    position: relative;
+                    width: 91%;
+                    height: 91.9%;
+                    top: 3.2%;
+                    left: 5.2%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on5{
+                    cursor: pointer;
+                    position: relative;
+                    width: 91%;
+                    height: 91.9%;
+                    top: 1.6%;
+                    left: 5%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on6{
+                    cursor: pointer;
+                    position: relative;
+                    width: 91%;
+                    height: 91.9%;
+                    top: 1.6%;
+                    left: 5.3%;
+                    border-radius: 0.02vh;
+                }
+                .modal-content{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: fixed;
+                    width: 0;
+                    height: 0;
+                    top: 0;
+                    left: 0;
+                    z-index: 50;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    visibility: hidden;
+    
+                    .modal-content-inner{
+                        position: relative;
+                        opacity: 0;
+                    }
+                    
+    
+                }
+                .is-active {
+                    visibility: visible;
+                    width: 100%;
+                    height: 100%;
+                    .modal-content-inner{
+                        transition: opacity .3s ease-in-out;
+                        opacity: 1;
+                        width: 80%;
+                    }
+                    img {
+                        position: relative;
+                        width: 100%;
+                        top: 1%;
+                        
+                    }
+                    .note{
+                        position: absolute;
+                        width: 12%;
+                        height: 6%;
+                        top: 40%;
+                        left: 58%;
+                    }
+                    .close{
+                        width: 8.6%;
+                        height: 4.8%;
+                        position: absolute;
+                        top: 5.4%;
+                        left: 81.5%;
+                        border-radius: 5vh;
+                        cursor: pointer;
+                        transition: 0.3s;
+    
+                        &:hover{
+                            background-color: rgba(255, 255, 255, 0.14);
+                        }
+                    }   
+                
                 }
             }
         }
     }
-
 }
 
 .safetyandapply{
@@ -945,10 +1216,9 @@ header{
                 align-items: center;
                 @include sp{
                     font-size: 1.6px;
-                    padding: 5px 4px 5px 0px;
+                    padding: 5px 8px 5px 0px;
                     gap: 12px;
                 }
-
 
                 &::before, &::after{
                     content: "";
@@ -964,8 +1234,8 @@ header{
                     opacity: 1;
                     transition: all .3s ease;
                     @include sp{
-                        width: 4em;
-                        height: 4em;
+                        width: 14px;
+                        height: 14px;
                         right: 10px;
                     }
                 }
@@ -981,7 +1251,7 @@ header{
                 &::after {
                     width: 2px;
                     @include sp{
-                        width: 0.75px;
+                        width: 0.9px;
                     }   
                     
                 }
@@ -1115,6 +1385,476 @@ footer{
                 }
                 span{
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+
+//プロジェクトについてページ
+
+.project2{
+    display: none;
+    @include sp{
+        display: block;
+        margin: 28% 4.8% auto 4.8%;
+        position: relative;
+    
+        .pan{
+            display: flex;
+            position: relative;
+            @include sp{
+                font-size: 10px;
+            }
+            a{
+                padding-right: 10px;
+            }
+            span{
+                padding-right: 10px;
+            }
+        }
+        
+        img{
+            margin-top: 5%;
+            position: relative;
+        }
+        .project-wrapper{
+            position: relative;
+            .project2-container{
+                width: 100%;
+                height: 96%;
+                top: 3%;
+                bottom: 3%;
+                left: 0;
+                display: inline-block;
+                position:absolute;
+                .project2-item{
+                    width:calc(100% / 2) - 0.6%;
+                    height:calc(100% / 3);
+                    display: inline-block;
+                    position: relative;
+    
+                    .modal-on1{
+                        cursor: pointer;
+                        position: absolute;
+                        width: 90.6%;
+                        height: 93%;
+                        top: 2.2%;
+                        left: 5.4%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on3{
+                        cursor: pointer;
+                        position: relative;
+                        width: 90.2%;
+                        height: 93%;
+                        top: 2%;
+                        left: 4.7%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on4{
+                        cursor: pointer;
+                        position: relative;
+                        width: 90.2%;
+                        height: 92.6%;
+                        top: 1.8%;
+                        left: 5.4%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on5{
+                        cursor: pointer;
+                        position: absolute;
+                        width: 90.2%;
+                        height: 92.6%;
+                        top: 1.8%;
+                        left: 4.9%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on6{
+                        cursor: pointer;
+                        position:absolute;
+                        width: 90.2%;
+                        height: 93%;
+                        top: 1%;
+                        left: 5.4%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on2{
+                        cursor: pointer;
+                        position: absolute;
+                        width: 90.2%;
+                        height: 93%;
+                        top: 1%;
+                        left: 4.9%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-content{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: fixed;
+                        width: 0;
+                        height: 0;
+                        top: 0;
+                        left: 0;
+                        z-index: 50;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        visibility: hidden;
+        
+                        .modal-content-inner{
+                            position: relative;
+                            opacity: 0;
+                        }
+                        
+        
+                    }
+                    .is-active {
+                        visibility: visible;
+                        width: 100%;
+                        height: 100%;
+                        .modal-content-inner{
+                            transition: opacity .3s ease-in-out;
+                            opacity: 1;
+                            width: 90%;
+                        }
+                        img {
+                            position: relative;
+                            width: 100%;
+                            top: 1%;
+                            
+                        }
+                        .close{
+                            width: 8.6%;
+                            height: 4.8%;
+                            position: absolute;
+                            top: 7.5%;
+                            left: 81.4%;
+                            border-radius: 5vh;
+                            cursor: pointer;
+                            transition: 0.3s;
+        
+                            &:hover{
+                                background-color: rgba(255, 255, 255, 0.14);
+                            }
+                        }   
+                    }    
+                }
+    
+            }
+        }
+    }
+}
+//経験者の声ページ
+.testimonials2{
+    margin: 10% 4.8% auto 4.8%;
+    position: relative;
+    @media (max-width:768px){
+        margin-top: 15%;
+    }
+
+    @include sp{
+        margin: 28% 4.8% auto 4.8%;
+    }
+    .pan{
+        display: flex;
+        @include sp{
+            font-size: 10px;
+        }
+        a{
+            padding-right: 10px;
+        }
+        span{
+            padding-right: 10px;
+        }
+    }
+    
+    img{
+        margin-top: 2%;
+        position: relative;
+    }
+    .testimonials2-wrapper{
+        position: relative;
+
+        .testimonials2-container{
+            width: 100%;
+            height: 99%;
+            top: 2%;
+            left: 0;
+            display: block;
+            position:absolute;
+            @include sp{
+                display: none;
+            }
+            .testimonials2-item{
+                width:calc(100% / 3) - 0.5%;
+                height:calc(100% / 2);
+                
+                display: inline-block;
+                .modal-on1{
+                    cursor: pointer;
+                    position: relative;
+                    width: 92.7%;
+                    height: 92.2%;
+                    top: 3.3%;
+                    left: 4.6%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on2{
+                    cursor: pointer;
+                    position: relative;
+                    width: 92.5%;
+                    height: 92.2%;
+                    top: 3.3%;
+                    left: 5.1%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on3{
+                    cursor: pointer;
+                    position: relative;
+                    width: 93%;
+                    height: 92.2%;
+                    top: 3.3%;
+                    left: 5%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on4{
+                    cursor: pointer;
+                    position: relative;
+                    width: 92.5%;
+                    height: 92.2%;
+                    top: 1.3%;
+                    left: 4.6%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on5{
+                    cursor: pointer;
+                    position: relative;
+                    width: 92.5%;
+                    height: 92.2%;
+                    top: 1.3%;
+                    left: 4.8%;
+                    border-radius: 0.02vh;
+                }
+                .modal-on6{
+                    cursor: pointer;
+                    position: relative;
+                    width: 92.5%;
+                    height: 92.2%;
+                    top: 1.3%;
+                    left: 5.4%;
+                    border-radius: 0.02vh;
+                }
+                .modal-content{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: fixed;
+                    width: 0;
+                    height: 0;
+                    top: 0;
+                    left: 0;
+                    z-index: 50;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    visibility: hidden;
+    
+                    .modal-content-inner{
+                        position: relative;
+                        opacity: 0;
+                    }
+                    
+    
+                }
+                .is-active {
+                    visibility: visible;
+                    width: 100%;
+                    height: 100%;
+                    .modal-content-inner{
+                        transition: opacity .3s ease-in-out;
+                        opacity: 1;
+                        width: 60%;
+                    }
+                    img {
+                        position: relative;
+                        width: 100%;
+                        top: 1%;
+                        
+                    }
+                    .close{
+                        width: 28.4%;
+                        height: 8.8%;
+                        position: absolute;
+                        top: 83%;
+                        left: 35.1%;
+                        border-radius: 5vh;
+                        cursor: pointer;
+                        transition: 0.3s;
+    
+                        &:hover{
+                            background-color: rgba(255, 255, 255, 0.14);
+                        }
+                    }
+                    
+                }
+                
+                
+    
+            }
+        }
+    }
+    .sp-testimonials2-wrapper{
+        display: none;
+        @include sp{
+            position: relative;
+            display: block;
+            img{
+                position: relative;
+            }
+            .sp-testimonials2-container{            
+                margin-top: 0%;
+                width: 100%;
+                height: 97%;
+                top: 2%;
+                left: 0;
+                display: inline-block;
+                position:absolute;
+                .testimonials2-item{
+                    width:calc(100% / 2) - 0.6%;
+                    height:calc(100% / 3);
+                    
+                    display: inline-block;
+                    .modal-on1{
+                        cursor: pointer;
+                        position: relative;
+                        width: 93%;
+                        height: 96%;
+                        top: 1%;
+                        left: 4.8%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on4{
+                        cursor: pointer;
+                        position: relative;
+                        width: 93.3%;
+                        height: 96%;
+                        top: 1%;
+                        left: 3.1%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on2{
+                        cursor: pointer;
+                        position: relative;
+                        width: 93.5%;
+                        height: 96.5%;
+                        top: 0.2%;
+                        left: 4.2%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on3{
+                        cursor: pointer;
+                        position: relative;
+                        width: 94.6%;
+                        height: 96.4%;
+                        top: 0.15%;
+                        left: 2.6%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on5{
+                        cursor: pointer;
+                        position: relative;
+                        width: 94.5%;
+                        height: 96.4%;
+                        top: -0.5%;
+                        left: 4.5%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-on6{
+                        cursor: pointer;
+                        position: relative;
+                        width: 94.5%;
+                        height: 96.4%;
+                        top: -0.5%;
+                        left: 2.5%;
+                        border-radius: 0.02vh;
+                    }
+                    .modal-content{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: fixed;
+                        width: 0;
+                        height: 0;
+                        top: 0;
+                        left: 0;
+                        z-index: 50;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        visibility: hidden;
+        
+                        .modal-content-inner{
+                            position: relative;
+                            opacity: 0;
+                        }
+                        
+        
+                    }
+                    .is-active {
+                        visibility: visible;
+                        width: 100%;
+                        height: 100%;
+                        .modal-content-inner{
+                            transition: opacity .3s ease-in-out;
+                            opacity: 1;
+                            width: 90%;
+                        }
+                        img {
+                            position: relative;
+                            width: 100%;
+                            top: 1%;
+                            
+                        }
+                        .close{
+                            width: 8.4%;
+                            height: 4.7%;
+                            position: absolute;
+                            top: 6.3%;
+                            left: 81.4%;
+                            border-radius: 5vh;
+                            cursor: pointer;
+                            transition: 0.3s;
+        
+                            &:hover{
+                                background-color: rgba(255, 255, 255, 0.14);
+                            }
+                        }
+                        
+                    }
+                    &:nth-child(2){
+                        .close{
+                            top: 6.8%;
+                            left: 81.6%;
+                            height: 5.3%;
+                        }
+                       
+                    }
+                    &:nth-child(3){
+                        .close{
+                            top: 6.6%;
+                            left: 81.6%;
+                            height: 5%;
+                        }
+                       
+                    }
+                    &:nth-child(6){
+                        .close{
+                            top: 6.8%;
+                            left: 81.6%;
+                            height: 5%;
+                        }
+                       
+                    }
+                    
+                    
+        
                 }
             }
         }
