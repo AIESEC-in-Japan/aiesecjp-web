@@ -301,17 +301,6 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
 .kv .std-img:nth-of-type(5) {
   animation-delay: 20s;
 }
-.kv .text-img {
-  position: absolute;
-  width: 62%;
-  margin-top: 18%;
-  margin-left: 38%;
-}
-@media (max-width: 480px) {
-  .kv .text-img {
-    display: none;
-  }
-}
 @keyframes change-img-anim {
   0% {
     opacity: 0;
@@ -327,6 +316,17 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
   }
   100% {
     opacity: 0;
+  }
+}
+.kv .text-img {
+  position: absolute;
+  width: 62%;
+  margin-top: 18%;
+  margin-left: 38%;
+}
+@media (max-width: 480px) {
+  .kv .text-img {
+    display: none;
   }
 }
 @media (max-width: 480px) {

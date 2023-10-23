@@ -312,6 +312,14 @@ header{
         &:nth-of-type(5) {
         animation-delay: 20s;
         }
+
+        @keyframes change-img-anim {
+            0%{ opacity: 0;}
+            5%{ opacity: 1;}
+            25%{ opacity: 1;}
+            30%{ opacity: 0;}
+            100%{ opacity: 0;}
+            }
     }
     
     .text-img{
@@ -325,13 +333,7 @@ header{
     }  
       
       
-    @keyframes change-img-anim {
-    0%{ opacity: 0;}
-    5%{ opacity: 1;}
-    25%{ opacity: 1;}
-    30%{ opacity: 0;}
-    100%{ opacity: 0;}
-    }
+    
     @include sp{
         height: 100%;
         margin-top: 62px;
