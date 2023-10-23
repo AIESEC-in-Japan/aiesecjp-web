@@ -363,7 +363,12 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
 }
 
 .feature {
-  margin-top: 85%;
+  margin-top: 95%;
+}
+@media (max-width: 1440px) {
+  .feature {
+    margin-top: 85%;
+  }
 }
 @media (max-width: 1024px) {
   .feature {
@@ -975,10 +980,10 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
 }
 .contact .contact-container .tab li a {
   display: table-cell;
-  background-color: #e7644b;
+  background-color: #fff;
   outline: solid 1px #e7644b;
   border-radius: 1vh 1vh 0 0;
-  color: #fff;
+  color: #e7644b;
   font-weight: bold;
   font-size: 1.4em;
   text-decoration: none;
@@ -995,8 +1000,8 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
   }
 }
 .contact .contact-container .tab .active a {
-  background-color: #fff;
-  color: #e7644b;
+  background-color: #e7644b;
+  color: #fff;
 }
 .contact .contact-container .area {
   display: none;
