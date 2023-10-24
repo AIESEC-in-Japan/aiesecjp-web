@@ -298,20 +298,28 @@ header{
         animation: change-img-anim 25s infinite;
 
         &:nth-of-type(1) {
-            animation-delay: 0s;
-          }
-          &:nth-of-type(2) {
-            animation-delay: 5s;
-          }
-          &:nth-of-type(3) {
-            animation-delay: 10s;
-          }
-          &:nth-of-type(4) {
-            animation-delay: 15s;
-          }
-          &:nth-of-type(5) {
-            animation-delay: 20s;
-          }
+        animation-delay: 0s;
+        }
+        &:nth-of-type(2) {
+        animation-delay: 5s;
+        }
+        &:nth-of-type(3) {
+        animation-delay: 10s;
+        }
+        &:nth-of-type(4) {
+        animation-delay: 15s;
+        }
+        &:nth-of-type(5) {
+        animation-delay: 20s;
+        }
+
+        @keyframes change-img-anim {
+            0%{ opacity: 0;}
+            5%{ opacity: 1;}
+            25%{ opacity: 1;}
+            30%{ opacity: 0;}
+            100%{ opacity: 0;}
+            }
     }
     
     .text-img{
@@ -325,13 +333,7 @@ header{
     }  
       
       
-      @keyframes change-img-anim {
-        0%{ opacity: 0;}
-        15%{ opacity: 1;}
-        25%{ opacity: 1;}
-        30%{ opacity: 0;}
-        100%{ opacity: 0;}
-      }
+    
     @include sp{
         height: 100%;
         margin-top: 62px;
@@ -365,7 +367,10 @@ header{
 }
 
 .feature{
-    margin-top: 85%;
+    margin-top: 95%;
+    @media (max-width:1440px) {
+        margin-top: 85%;
+    }
     @media (max-width:1024px) {
         margin-top: 72%;
     }
@@ -819,6 +824,12 @@ header{
                     }
                 }   
             }
+
+            &:nth-child(2){
+                .note{
+                    top: 43.5%;
+                }
+            }
         }
     }
     .sp-testimonials-container{
@@ -908,9 +919,9 @@ header{
                     }
                     .note{
                         position: absolute;
-                        width: 12%;
-                        height: 6%;
-                        top: 40%;
+                        width: 20%;
+                        height: 4%;
+                        top: 47%;
                         left: 58%;
                     }
                     .close{
@@ -928,6 +939,16 @@ header{
                         }
                     }   
                 
+                }
+
+                &:nth-child(4){
+                    .note{
+                        top: 50%;
+                    }
+                    .close{
+                        top: 5.6%;
+                        height: 5.1%;
+                    }
                 }
             }
         }
@@ -977,10 +998,10 @@ header{
                 height: 55px;
                 a{  
                     display: table-cell;
-                    background-color: #e7644b;
+                    background-color: #fff;
                     outline: solid 1px #e7644b;
                     border-radius: 1vh 1vh 0 0;
-                    color: #fff;
+                    color: #e7644b;
                     font-weight: bold;
                     font-size: 1.4em;
                     text-decoration: none;
@@ -998,8 +1019,8 @@ header{
                 
             }
             .active a{
-                background-color: #fff;
-                color: #e7644b;
+                background-color: #e7644b;
+                color: #fff;
             }
         }
 
@@ -1680,11 +1701,18 @@ footer{
                         top: 1%;
                         
                     }
+                    .note{
+                        position: absolute;
+                        width: 12%;
+                        height: 6%;
+                        top: 44%;
+                        left: 58%;
+                    }
                     .close{
                         width: 28.4%;
                         height: 8.8%;
                         position: absolute;
-                        top: 83%;
+                        top: 85.2%;
                         left: 35.1%;
                         border-radius: 5vh;
                         cursor: pointer;
@@ -1695,6 +1723,38 @@ footer{
                         }
                     }
                     
+                }
+
+                &:nth-child(2){
+                    .close{
+                       top: 83.6%;
+                    }
+                }
+                &:nth-child(3){
+                    .close{
+                       top: 83.6%;
+                    }
+                }
+                &:nth-child(4){
+                    .close{
+                       top: 83.6%;
+                    }
+                    .note{
+                        top: 42%;
+                    }
+                }
+                &:nth-child(5){
+                    .close{
+                       top: 84%;
+                    }
+                }
+                &:nth-child(6){
+                    .note{
+                        top: 42%;
+                    }
+                    .close{
+                        top: 83.6%;
+                     }
                 }
                 
                 
@@ -1812,6 +1872,13 @@ footer{
                             top: 1%;
                             
                         }
+                        .note{
+                            position: absolute;
+                            width: 20%;
+                            height: 4%;
+                            top: 48%;
+                            left: 58%;
+                        }
                         .close{
                             width: 8.4%;
                             height: 4.7%;
@@ -1844,7 +1911,29 @@ footer{
                         }
                        
                     }
+                    &:nth-child(4){
+                        .note{
+                            height: 3.6%;
+                            top: 47.8%;
+                        }
+                        .close{
+                            top: 6.6%;
+                            left: 81.6%;
+                            height: 5%;
+                        }
+                       
+                    }
+                    &:nth-child(5){
+                        .note{
+                            height: 3.6%;
+                            top: 47.8%;
+                        }
+                       
+                    }
                     &:nth-child(6){
+                        .note{
+                            top: 50%;
+                        }
                         .close{
                             top: 6.8%;
                             left: 81.6%;
