@@ -1,0 +1,79 @@
+h1, h2, h3, h4, h5, h6, p, span, a, button, li {
+  font-family: "Lato", "Yu Gothic Medium", yugothic, "Yu Gothic", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 3rem 1rem;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #52565e;
+  font-size: 0.875rem;
+}
+
+section {
+  min-height: 80vh;
+  max-height: 50rem;
+}
+@media (max-width: 1100px) {
+  section {
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+}
+
+.aboutus-table-container {
+  width: 50rem;
+  margin: 3.125rem auto;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  margin-top: 1.875rem;
+}
+@media (max-width: 480px) {
+  .aboutus-table-container {
+    width: 21.875rem;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+  }
+}
+.aboutus-table-title {
+  color: #037ef3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.125rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+@media (max-width: 480px) {
+  .aboutus-table-title {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.carousel-content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .carousel-content {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */
