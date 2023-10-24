@@ -189,6 +189,11 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
     color: #2D2A29;
   }
 }
+@media sp {
+  header .header-container {
+    margin-right: 20px;
+  }
+}
 
 .header-hamburger {
   cursor: pointer;
@@ -955,11 +960,62 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
 
 .contact {
   margin: 6% 6.38% auto 6.38%;
+  position: relative;
 }
 .contact .text-img {
   margin: auto;
   display: block;
   width: 54%;
+}
+.contact .link-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+}
+.contact .link-wrapper .aj-line {
+  position: absolute;
+  display: block;
+  top: -3%;
+  left: 43%;
+  height: 2.7%;
+  width: 17.5%;
+}
+@media (max-width: 480px) {
+  .contact .link-wrapper .aj-line {
+    display: none;
+  }
+}
+.contact .link-wrapper .sp-aj-line1 {
+  display: none;
+}
+@media (max-width: 480px) {
+  .contact .link-wrapper .sp-aj-line1 {
+    position: absolute;
+    display: block;
+    top: -18.4%;
+    left: 64%;
+    height: 9.2%;
+    width: 36%;
+  }
+}
+.contact .link-wrapper .sp-aj-line2 {
+  display: none;
+}
+@media (max-width: 480px) {
+  .contact .link-wrapper .sp-aj-line2 {
+    position: absolute;
+    display: block;
+    top: -9.2%;
+    left: 21%;
+    height: 8.8%;
+    width: 16%;
+  }
+}
+@media (max-width: 480px) {
+  .contact .link-wrapper {
+    height: 30%;
+  }
 }
 @media (max-width: 480px) {
   .contact .text-img {
@@ -974,6 +1030,8 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
 .contact .contact-container {
   width: 100%;
   margin: 3% auto;
+  position: relative;
+  z-index: 1;
 }
 .contact .contact-container .tab {
   display: flex;
@@ -1000,13 +1058,18 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
   text-align: center;
   vertical-align: middle;
 }
+@media (max-width: 768px) {
+  .contact .contact-container .tab li {
+    font-size: 15px;
+  }
+}
 @media (max-width: 480px) {
   .contact .contact-container .tab li {
     height: 30px;
     width: 30%;
   }
   .contact .contact-container .tab li a {
-    font-size: 0.9px;
+    font-size: 12px;
   }
 }
 .contact .contact-container .tab .active a {
@@ -1077,6 +1140,16 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
 }
 .contact .contact-container .area ul li a:hover p {
   color: #fff;
+}
+@media (max-width: 1024px) {
+  .contact .contact-container .area ul li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .contact-container .area ul li a {
+    font-size: 12px;
+  }
 }
 @media (max-width: 480px) {
   .contact .contact-container .area ul li a {
@@ -1221,7 +1294,7 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
 }
 @media (max-width: 480px) {
   .faq-container .faq-item .content-q {
-    font-size: 1.6px;
+    font-size: 11px;
     padding: 5px 8px 5px 0px;
     gap: 12px;
   }
