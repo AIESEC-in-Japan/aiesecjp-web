@@ -196,6 +196,9 @@ header{
             }
 
         }
+        @media sp{
+            margin-right: 20px;
+        }
     }
 }
 
@@ -965,10 +968,54 @@ header{
 
 .contact{
     margin: 6% 6.38% auto 6.38%;
+    position: relative;
     .text-img{
         margin: auto;
         display: block;
         width: 54%;
+    }
+    .link-wrapper{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: inline-block;
+        .aj-line{
+            position: absolute;
+            display: block;
+            top: -3%;
+            left: 43%;
+            height: 2.7%;
+            width: 17.5%;
+            @include sp{
+                display: none;
+            }
+        }
+        .sp-aj-line1{
+            display: none;
+            @include sp{
+                position: absolute;
+                display: block;
+                top: -18.4%;
+                left: 64%;
+                height: 9.2%;
+                width: 36%;
+                
+            }
+        }
+        .sp-aj-line2{
+            display: none;
+            @include sp{
+                position: absolute;
+                display: block;
+                top: -9.2%;
+                left: 21%;
+                height: 8.8%;
+                width: 16%;
+            }
+        }
+        @include sp{
+            height: 30%;
+        }
     }
     @include sp{
         .text-img{
@@ -984,6 +1031,8 @@ header{
     .contact-container{
         width:100%;
         margin:3% auto;
+        position: relative;
+        z-index: 1;
         .tab{
             display: flex;
             list-style:none;
@@ -991,6 +1040,8 @@ header{
             justify-content: space-between;
             border-bottom:solid 1px rgba(231, 100, 75, 0.5);
             padding: 0;
+           
+            
 
             li{
                 display: table;
@@ -1007,13 +1058,17 @@ header{
                     text-decoration: none;
                     text-align: center;
                     vertical-align: middle;
+                    
 
+                }
+                @media(max-width:768px){
+                    font-size: 15px;
                 }
                 @include sp{
                     height: 30px;
                     width: 30%;
                     a{
-                        font-size: 0.9px;
+                        font-size: 12px;
                     }
                 }
                 
@@ -1087,7 +1142,12 @@ header{
                                 color: #fff;
                             }
                         }
-
+                        @media(max-width:1024px){
+                            font-size: 14px;
+                        }
+                        @media(max-width:768px){
+                            font-size: 12px;
+                        }
                         @include sp{
                             padding: 0;
                             width: 90%;
@@ -1236,7 +1296,7 @@ header{
                 transition: all .3s ease;
                 align-items: center;
                 @include sp{
-                    font-size: 1.6px;
+                    font-size: 11px;
                     padding: 5px 8px 5px 0px;
                     gap: 12px;
                 }
