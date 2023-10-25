@@ -98,10 +98,10 @@ header .header-container {
   width: 100%;
   top: 0;
   max-width: 1300px;
-  padding: 10px 10px;
   justify-content: space-around;
   display: flex;
   height: 62px;
+  margin: 10px auto;
 }
 header .header-container .header-logo {
   margin: auto 0;
@@ -118,6 +118,7 @@ header .header-container .header-logo img {
 @media (max-width: 480px) {
   header .header-container .header-logo img {
     width: 50%;
+    margin-left: 10px;
   }
 }
 header .header-container .header-content {
@@ -203,7 +204,7 @@ header .header-container .header-content .header-nav .header-nav-inner a:hover {
   position: relative;
   z-index: 9999;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 10px;
   display: none;
 }
 .header-hamburger i, .header-hamburger i::before, .header-hamburger i::after {
