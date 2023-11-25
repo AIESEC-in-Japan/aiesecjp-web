@@ -124,6 +124,7 @@ section {
 
   @include sp {
     flex-direction: column;
+    align-items: center;
   }
 }
 .detail {
@@ -139,7 +140,7 @@ section {
   }
 
   @include sp {
-    width: 90%;
+    width: 95%;
     margin: 1rem 0.2rem;
   }
 
