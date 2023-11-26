@@ -181,7 +181,7 @@ section {
         line-height: 1.5;
         color: $deep-blue;
         margin: 1rem 0;
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
 
       p {
