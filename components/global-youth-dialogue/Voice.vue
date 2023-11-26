@@ -65,13 +65,13 @@
     </div>
     <h1><span style="font-family: arial;">\</span> SNSでも情報発信中 <span style="font-family: arial;">/</span> </h1>
     <div class="sns">
-              <a class="icon" href="https://instagram.com/aiesec_gyd_official?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr">
+              <a class="icon" href="https://instagram.com/aiesec_gyd_official?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
                 <img src="@/assets/images/global-youth-dialogue/IG.png" alt="Instagram">
               </a>
-              <a class="icon" href="https://lin.ee/4lkkd3B">
+              <a class="icon" href="https://lin.ee/4lkkd3B" target="_blank">
                 <img src="@/assets/images/global-youth-dialogue/line.png" alt="LINE">
               </a>
-              <a class="icon" href="https://note.com/aiesec_japan/n/n507bb45b442a">
+              <a class="icon" href="https://note.com/aiesec_japan/n/n507bb45b442a" target="_blank">
                 <img src="@/assets/images/global-youth-dialogue/note.png" alt="note">
               </a>
             </div>
@@ -193,6 +193,7 @@ section {
   }
   .voice-text{
     padding-top: 1rem;
+    text-align: left;
   }
 }
 
