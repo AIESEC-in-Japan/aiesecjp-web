@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <BaseHeader />
+    <BaseCookieOptIn />
     <nuxt class="nuxt-with-header" />
     <BaseFooter />
   </v-app>
