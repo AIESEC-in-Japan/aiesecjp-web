@@ -24,11 +24,6 @@
         script: [
           {
             async: true,
-            src: 'https://www.google-analytics.com/analytics.js',
-            type: 'text/javascript'
-          },
-          {
-            async: true,
             src: 'https://www.googletagmanager.com/gtag/js?id=G-KTWNHJF2EJ' 
           },
           {
