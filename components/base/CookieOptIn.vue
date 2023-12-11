@@ -69,9 +69,10 @@ if (process.client) {
         //ga_cookie_opt_in が存在する場合、Cookie をチェックして ga_cookie_opt_in の値を取得
         if (cookie == 'yes') {
           //ga_cookie_opt_in = yes なら Google Analytics トラッキングコードを発行
-          console.log('ga_cookie_opt_in = yes');
+          setCookie('_ga', 'yes', { 'max-age': cookie_max_age });
+          setCookie('_gid', 'yes', { 'max-age': cookie_max_age });
           for(i = 0; i < GA_ID.length; i++){
-            window[ga_disable[i]] = false;
+            setCookie('_ga_'+ GA_ID[i].replace('G-', ''), 'yes', { 'max-age': cookie_max_age });
           }
           
         } else if (cookie == 'no') {
@@ -80,12 +81,21 @@ if (process.client) {
           for(i = 0; i < GA_ID.length; i++){
             window[ga_disable[i]] = true;
           }
-          console.log(window)//test
+          setCookie('_ga', 'no', { 'max-age': 0 });
+          setCookie('_gid', 'no', { 'max-age': 0 });
+          for(i = 0; i < GA_ID.length; i++){
+            setCookie('_ga_'+ GA_ID[i].replace('G-', ''), 'no', { 'max-age': 0 });
+          }
         } else {
           //ga_cookie_opt_in の値が yes でも no でもない場合は例外なので Google Analytics を無効に
           console.log('ga_cookie_opt_in = Unpredictable value');
           for(i = 0; i < GA_ID.length; i++){
             window[ga_disable[i]] = true;
+          }
+          setCookie('_ga', 'no', { 'max-age': 0 });
+          setCookie('_gid', 'no', { 'max-age': 0 });
+          for(i = 0; i < GA_ID.length; i++){
+            setCookie('_ga_'+ GA_ID[i].replace('G-', ''), 'no', { 'max-age': 0 });
           }
         }
       } else {
@@ -93,6 +103,11 @@ if (process.client) {
         console.log('ga_cookie_opt_in = null');
         for(i = 0; i < GA_ID.length; i++){
           window[ga_disable[i]] = true;
+        }
+        setCookie('_ga', 'no', { 'max-age': 0 });
+        setCookie('_gid', 'no', { 'max-age': 0 });
+        for(i = 0; i < GA_ID.length; i++){
+          setCookie('_ga_'+ GA_ID[i].replace('G-', ''), 'no', { 'max-age': 0 });
         }
         // クッキーの同意がない場合、同意バナーを表示
         document.getElementById('cookieBanner').style.display = 'flex';
@@ -109,6 +124,11 @@ if (process.client) {
         if (elm_accept_btn) {
           elm_accept_btn.onclick = () => {
             setCookie('ga_cookie_opt_in', 'yes', { 'max-age': cookie_max_age });
+            setCookie('_ga', 'yes', { 'max-age': cookie_max_age });
+            setCookie('_gid', 'yes', { 'max-age': cookie_max_age });
+            for(i = 0; i < GA_ID.length; i++){
+              setCookie('_ga_'+ GA_ID[i].replace('G-', ''), 'yes', { 'max-age': cookie_max_age });
+            }
             elm_accept_bar.classList.add('state-remove');
             location.reload();
           };
@@ -120,6 +140,11 @@ if (process.client) {
         if (elm_deny_btn) {
           elm_deny_btn.onclick = () => {
             setCookie('ga_cookie_opt_in', 'no', { 'max-age': cookie_max_age });
+            setCookie('_ga', 'no', { 'max-age': 0 });
+            setCookie('_gid', 'no', { 'max-age': 0 });
+            for(i = 0; i < GA_ID.length; i++){
+              setCookie('_ga_'+ GA_ID[i].replace('G-', ''), 'no', { 'max-age': 0 });
+            }
             elm_accept_bar.classList.add('state-remove');
             location.reload();
           };
