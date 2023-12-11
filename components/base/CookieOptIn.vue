@@ -19,7 +19,7 @@ if (process.client) {
 
   //設定
   //GA_ID は必ず実際に使用しているプロファイル ID に変更してください
-  const GA_ID = ['G-KTWNHJF2EJ']; // gyd, 
+  const GA_ID = ['G-KTWNHJF2EJ', 'G-1KK59RE2KP', 'G-M05GSK8635']; // gyd, lp-outgoing, lp-incoming
   //Cookie の有効期限（1年 = 31536000秒）
   const cookie_max_age = 60 * 60 * 24 * 365;
 
