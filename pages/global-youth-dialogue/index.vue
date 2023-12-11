@@ -29,10 +29,10 @@
           },
           {
             async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=UA-222793123-5' 
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-KTWNHJF2EJ' 
           },
           {
-            innerHTML: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-222793123-5');`
+            innerHTML: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-KTWNHJF2EJ');`
           },
           // Meta Pixel Code
           {
