@@ -2,7 +2,7 @@
     <div id="cookieBanner" class="cookie-banner">
       <div class="cookie-description">
         <p>当ウェブサイトでは、お客様により適したサービスの提供や、サイト改善のために、クッキーを使用しています。クッキーの使用に同意いただける場合は「同意する」を選択してください。
-        詳細については <a href="#" target="_blank">Cookieポリシー</a>をご覧ください。</p>
+        詳細については <a href="https://drive.google.com/file/d/1W-i_srZ4L0T8AOzweW-tNDiUPO-EDxjU/view?usp=drive_link" target="_blank">Cookieポリシー</a>をご覧ください。</p>
       </div>
       <div class="cookie-button">
         <button id="acceptCookie" class="button-accept">同意する</button>    
