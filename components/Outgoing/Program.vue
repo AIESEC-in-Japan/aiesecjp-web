@@ -17,7 +17,7 @@
           世界に挑戦するための、第一歩。
         </p>
       </div>
-      <div class="detail">
+      <!-- <div class="detail"> 現在はGVのみの運営のため、GTaに関する情報を不記載2023/12/24
         <img src="@/assets/images/product_GT-horizontal-white.png">
         <p>
           期間：6～7.8週間<br>
@@ -31,7 +31,7 @@
           世界で通用する専門性を武器に、<br>
           社会を変えるリーダーへ。
         </p>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
