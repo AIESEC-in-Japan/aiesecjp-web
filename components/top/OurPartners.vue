@@ -37,7 +37,7 @@ export default {
         {src: "2020corporation-logo/nissha.png", alt: "NISSHA株式会社のロゴ"},
         {src: "2020corporation-logo/panasonic.png", alt: "パナソニック株式会社のロゴ"},
         {src: "2020corporation-logo/prtable.png", alt: "株式会社PR Table のロゴ"},
-        {src: "2020corporation-logo/bizreach.png", alt: "株式会社ビズリーチのロゴ"},
+        {src: "2020corporation-logo/visional.png", alt: "ビジョナル株式会社のロゴ"},
         {src: "2020corporation-logo/florence.jpg", alt: "認定NPO法人フローレンスのロゴ"},
         {src: "2020corporation-logo/mizuho.jpg", alt: "ミズホ株式会社のロゴ"},
         {src: "2020corporation-logo/langoo.jpg", alt: "株式会社langooのロゴ"},
