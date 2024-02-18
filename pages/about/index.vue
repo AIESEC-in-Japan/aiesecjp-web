@@ -1,6 +1,7 @@
 <template>
   <section class="container">
     <div>
+      <AboutDonation />
       <AboutOfficerList />
       <AboutAdvisorList />
       <AboutOrganizationInfo />
