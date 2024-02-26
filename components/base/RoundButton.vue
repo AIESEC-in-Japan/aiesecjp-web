@@ -1,5 +1,5 @@
 <template>
-  <button
+  <a
     :class="classes"
     :style="style"
     @click="openExtraLink"
@@ -7,7 +7,7 @@
     @mouseover="mouseOverAction"
   >
     {{ label }}
-  </button>
+  </a>
 </template>
 
 <script>
@@ -75,13 +75,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-button {
+a {
+  display: block;
   padding: 1rem;
   border-radius: 40px;
   border: solid 2px;
   font-weight: bold;
   font-size: 1rem;
   transition: 0.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+  text-align:center;
 }
 
 .button {
