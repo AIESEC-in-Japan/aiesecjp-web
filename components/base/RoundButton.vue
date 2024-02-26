@@ -2,7 +2,7 @@
   <a
     :class="classes"
     :style="style"
-    @click="openExtraLink"
+    target="_blank"
     @mouseleave="mouseLeaveAction"
     @mouseover="mouseOverAction"
   >
@@ -17,10 +17,7 @@ export default {
   props: {
     // 一旦ボタンの挙動は外部への遷移とする。モーダルが開くとかも想定されるが
     // 今回は考慮せず。必要になったら実装する方針。
-    url: {
-      type: String,
-      default: '/'
-    },
+    //URLはhrefで直接記述。
     label: {
       type: String,
       required: true
@@ -52,9 +49,6 @@ export default {
     },
     mouseLeaveAction() {
       this.isHover = false;
-    },
-    openExtraLink() {
-      window.open(this.url, '_blank');
     }
   },
   computed: {
@@ -84,6 +78,7 @@ a {
   font-size: 1rem;
   transition: 0.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
   text-align:center;
+  text-decoration: none;
 }
 
 .button {
