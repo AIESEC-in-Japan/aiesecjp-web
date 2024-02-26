@@ -11,6 +11,7 @@
       justify="center"
     >
       <BaseRoundButton
+        href="https://lin.ee/LFvJeCM"
         v-bind="this.ButtonProps"
         :label="'参加登録はこちらの公式LINEから'"
       />
@@ -28,8 +29,7 @@ export default {
       ButtonProps: {
         textColor: basic_color.deepBlue,
         baseColor: 'transparent',
-        size: 'large',
-        url: 'https://lin.ee/LFvJeCM'
+        size: 'large'
       }
     }
   },

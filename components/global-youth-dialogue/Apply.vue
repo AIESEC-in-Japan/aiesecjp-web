@@ -15,6 +15,7 @@
       ちょっと新しい自分と世界を見に行く１週間を、私たちと過ごしてみませんか？
     </p>
     <BaseRoundButton
+      href="https://lin.ee/LFvJeCM"
       v-bind="this.ButtonProps"
       :label="'公式LINEはこちらから'"
     />
@@ -31,7 +32,6 @@ export default {
         textColor: basic_color.white,
         baseColor: basic_color.deepBlue,
         size: 'large',
-        url: 'https://lin.ee/LFvJeCM'
       }
     }
   }
