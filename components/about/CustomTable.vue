@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.aboutus-table{
+  font-family: $fonts;
+}
 th,
 td {
   border-bottom-style: solid;
