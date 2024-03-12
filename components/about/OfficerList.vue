@@ -28,7 +28,7 @@ export default {
         },
         {
           caption: "常務理事",
-          description: "飯塚創太（東京大学 法学部 3年）",
+          description: "佐藤夕夏（東京女子大学 現代教養学部 4年）",
         },
         {
           caption: "理事",
