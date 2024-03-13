@@ -84,16 +84,16 @@
           </nuxt-link>
         </li>
         <!-- 外部リンク -->
-        <li class="navigation-item">
+        <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
           <div class="lp-button">
             <a
               class="lp-button-text"
-              href="https://aiesec.jp/lp/recruit2023/"
+              href="https://aiesec.jp/lp/#"
             >
               Recruitment
             </a>
           </div>
-        </li>
+        </li> -->
       </ul>
       <div
         v-show="this.$isMobile() && drawer"
