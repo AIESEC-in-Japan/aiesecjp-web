@@ -21,7 +21,7 @@
         <div v-show="i <= 5 || openLogs">
           <h3>{{ item.title }}</h3>
           <p>
-            {{ item.describe }}<span v-show="!!item.link">詳細な報告につきましては <a :href="item.link">こちら</a>をご覧ください。</span>
+            {{ item.describe }}<span v-show="!!item.link">詳細な報告につきましては <a :href="item.link" target="_blank">こちら</a>をご覧ください。</span>
           </p>
         </div>
         <v-btn
@@ -42,6 +42,11 @@ export default {
     return {
       openLogs: false,
       committeeLogs: [
+        {
+          title: '令和五年度第二回海外安全管理委員会開催報告',
+          describe: '令和5年11月15日に海外安全管理委員会を開催いたしました。',
+          link: 'https://drive.google.com/file/d/1xW2J5VdO0ybeq5kCaHNfhBis0NYGLByY/view?usp=drive_link'
+        },
         {
           title: '令和五年度第一回海外安全管理委員会開催報告',
           describe: '令和5年5月31日に海外安全管理委員会を開催いたしました。',
