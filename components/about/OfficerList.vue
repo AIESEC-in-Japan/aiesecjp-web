@@ -19,7 +19,7 @@ export default {
         },
         {
           caption: "専務理事",
-          description: "高橋祐哉（東京外国語大学 国際社会学部 4年）",
+          description: "森本大貴（大阪大学 工学部 4年）",
         },
         {
           caption: "副会長",
