@@ -141,6 +141,9 @@ header{
                             border-radius: 10vh;
                             background-color: #fff;
                             color: #e7644b;
+                            @media (max-width: 1024px){
+                                background-color: transparent;
+                            }
                         }
 
                         &:hover{

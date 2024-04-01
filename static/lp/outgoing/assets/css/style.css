@@ -143,6 +143,11 @@ header .header-container .header-content .header-nav .header-nav-inner a:last-ch
   background-color: #fff;
   color: #e7644b;
 }
+@media (max-width: 1024px) {
+  header .header-container .header-content .header-nav .header-nav-inner a:last-child {
+    background-color: transparent;
+  }
+}
 header .header-container .header-content .header-nav .header-nav-inner a:hover {
   opacity: 0.6;
 }
