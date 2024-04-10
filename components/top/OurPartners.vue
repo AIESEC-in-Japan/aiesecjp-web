@@ -55,7 +55,7 @@ export default {
 }
 
 .partners-content {
-  margin: 2rem;
+  margin: 3.5rem;
   object-fit: contain;
 
   @include sp {
