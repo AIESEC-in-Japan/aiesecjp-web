@@ -18,34 +18,14 @@ export default {
     return {
       logos: [
         {src: "2020corporation-logo/accenture.png", alt: "アクセンチュア株式会社のロゴ"},
-        {src: "2020corporation-logo/enjapan.png", alt: "エン・ジャパン株式会社のロゴ"},
-        {src: "2020corporation-logo/endroll.jpg", alt: "株式会社エンドロールのロゴ"},
         {src: "2020corporation-logo/aus-be.png", alt: "株式会社オースビーのロゴ"},
-        {src: "2020corporation-logo/gaiax.png", alt: "株式会社ガイアックスのロゴ"},
-        {src: "2020corporation-logo/givery.jpg", alt: "株式会社ギブリーのロゴ"},
-        {src: "2020corporation-logo/sairu.jpg", alt: "株式会社才流のロゴ"},
-        {src: "2020corporation-logo/sansan.png", alt: "Sansan株式会社のロゴ"},
-        {src: "2020corporation-logo/sunstar.jpg", alt: "サンスター株式会社のロゴ"},
-        {src: "2020corporation-logo/cuc.png", alt: "株式会社シーユーシーのロゴ"},
-        {src: "2020corporation-logo/schneiderelectric.png", alt: "シュナイダーエレクトリック株式会社のロゴ"},
-        {src: "2020corporation-logo/johnsonandjohnson.png", alt: "ジョンソン・エンド・ジョンソン株式会社のロゴ"},
-        {src: "2020corporation-logo/spartaenglishmethod.png", alt: "株式会社スパルタ英会話のロゴ"},
-        {src: "2020corporation-logo/softbank.png", alt: "ソフトバンク株式会社のロゴ"},
-        {src: "2020corporation-logo/dentsu.gif", alt: "株式会社電通のロゴ"},
-        {src: "2020corporation-logo/toyobo.svg", alt: "東洋紡株式会社のロゴ"},
-        {src: "2020corporation-logo/nissan.png", alt: "日産自動車株式会社のロゴ"},
-        {src: "2020corporation-logo/nissha.png", alt: "NISSHA株式会社のロゴ"},
-        {src: "2020corporation-logo/panasonic.png", alt: "パナソニック株式会社のロゴ"},
-        {src: "2020corporation-logo/prtable.png", alt: "株式会社PR Table のロゴ"},
         {src: "2020corporation-logo/visional.png", alt: "ビジョナル株式会社のロゴ"},
-        {src: "2020corporation-logo/florence.jpg", alt: "認定NPO法人フローレンスのロゴ"},
-        {src: "2020corporation-logo/mizuho.jpg", alt: "ミズホ株式会社のロゴ"},
-        {src: "2020corporation-logo/langoo.jpg", alt: "株式会社langooのロゴ"},
-        {src: "2020corporation-logo/lifull.jpg", alt: "株式会社LIFULLのロゴ"},
-        {src: "2020corporation-logo/RIZAP.png", alt: "RIZAPグループ株式会社のロゴ"},
-        {src: "2020corporation-logo/recruit-ms.jpg", alt: "株式会社リクルートマネジメントソリューションズのロゴ"},
-        {src: "2020corporation-logo/legaseed.jpg", alt: "株式会社Legaseedのロゴ"},
-        {src: "2020corporation-logo/wacul.png", alt: "株式会社WACULのロゴ"},
+        {src: "2020corporation-logo/beyondcafe.png", alt: "株式会社Beyond Cafeのロゴ"},
+        {src: "2020corporation-logo/freewill.png", alt: "株式会社Freewillのロゴ"},
+        {src: "2020corporation-logo/moneyforward.png", alt: "株式会社マネーフォワードのロゴ"},
+        {src: "2020corporation-logo/rechroma.jpg", alt: "リクロマ株式会社のロゴ"},
+        {src: "2020corporation-logo/litalico.jpg", alt: "株式会社LITALICOのロゴ"},
+        {src: "2020corporation-logo/leverages.png", alt: "レバレジーズ株式会社のロゴ"}
       ]
     }
   }
@@ -75,7 +55,7 @@ export default {
 }
 
 .partners-content {
-  margin: 2rem;
+  margin: 3.5rem;
   object-fit: contain;
 
   @include sp {
