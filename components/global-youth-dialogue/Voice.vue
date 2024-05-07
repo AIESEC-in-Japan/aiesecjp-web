@@ -68,7 +68,7 @@
               <a class="icon" href="https://instagram.com/aiesec_gyd_official?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
                 <img src="@/assets/images/global-youth-dialogue/IG.png" alt="Instagram">
               </a>
-              <a class="icon" href="https://lin.ee/4lkkd3B" target="_blank">
+              <a class="icon" href="https://lin.ee/nYHSxuf" target="_blank">
                 <img src="@/assets/images/global-youth-dialogue/line.png" alt="LINE">
               </a>
               <a class="icon" href="https://note.com/aiesec_japan/n/n507bb45b442a" target="_blank">

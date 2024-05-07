@@ -11,7 +11,7 @@
       justify="center"
     >
       <BaseRoundButton
-        href="https://lin.ee/LFvJeCM"
+        href="https://lin.ee/nYHSxuf"
         v-bind="this.ButtonProps"
         :label="'参加登録はこちらの公式LINEから'"
       />
