@@ -15,7 +15,7 @@
       ちょっと新しい自分と世界を見に行く１週間を、私たちと過ごしてみませんか？
     </p>
     <BaseRoundButton
-      href="https://lin.ee/LFvJeCM"
+      href="https://lin.ee/nYHSxuf"
       v-bind="this.ButtonProps"
       :label="'公式LINEはこちらから'"
     />
