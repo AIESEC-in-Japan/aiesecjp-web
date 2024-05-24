@@ -2,7 +2,7 @@
   <section class="global-youth-dialogue-container ">
     <h1>About global youth dialogue</h1>
     <p class="explain-text">
-      １週間の中で海外の学生と4人グループで対話するビデオチャットプログラムです。<br>
+      １週間の中で海外の学生とグループで対話するビデオチャットプログラムです。<br>
       文化の話や将来の話など、様々な提示されるトピックを活用しながら自由に話すことで、<br>
       世界をより広く、自分をより深く知ることができ、自分や世界に対しての新たな気づきを得られます。
     </p>
