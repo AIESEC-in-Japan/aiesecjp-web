@@ -1,117 +1,139 @@
 <template>
   <section class="about-container">
-    <h2 class="about-aiesec">
-      About AIESEC
-    </h2>
-    <p class="about-aiesec-explain">
-      AIESEC(アイセック)は、海外インターンシップやオンラインの国際交流イベントなどを通じて<br>
-      世界中の若者のリーダーシップを育むことを目指している非営利組織です。<br>
-
-      1948年にヨーロッパで創設されて以来、<br>
-      「平和で、人々の可能性が最大限発揮された社会」の実現を目指して活動しています。
-    </p>
-    <div class="about-wrapper">
-      <div class="about-content">
-        <BaseIconInAssetsPath
-          :data="mapIcon"
-        />
-        <p>
-          100以上の国と地域<br>の支部
-        </p>
-      </div>
-      <div class="about-content">
-        <BaseIconInAssetsPath
-          :data="handshakeIcon"
-        />
-        <p>
-          7000以上の<br>パートナー団体
-        </p>
-      </div>
-      <div class="about-content">
-        <BaseIconInAssetsPath
-          :data="visaIcon"
-        />
-        <p>
-          年間30000件以上の<br>経験を提供
-        </p>
+    <div class="about-img"></div>
+    <div class="about-bg"></div>
+    <div class="about-contents">
+      <p class="about-title">
+        About AIESEC
+      </p>
+      <h3 class="about-title-sub">AIESECについて</h3>
+      <p class="about-heading">Activating Youth<br> Leadership</p>
+      <p class="about-explain">
+        アイセックは、世界100以上の国と地域に支部を持ち、約30,000人の若者が<br>
+        所属する非営利組織です。若者の異文化理解を促進することで、「平和で人々の<br>
+        可能性が最大限発揮された社会」の実現を目指しています。
+      </p>
+      <div class="button-container">
+        <p class="button-nextText">私たちの想い</p>
+        <a class="button" hred="#"></a>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      handshakeIcon:
-        {src: "images/top/handshake.svg", alt: ""},
-      mapIcon:
-        {src: "images/top/map.svg", alt: ""},
-      visaIcon:
-        {src: "images/top/visa.svg", alt: ""}
-    }
-  }
-}
-</script>
-
 
 <style lang="scss" scoped>
 
-.about {
-  &-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-family: $fonts;
+.about-container {
+  position: relative;
+  justify-content: center;
+  font-family: $fonts;
+  margin: 10rem 0 0 0;
+}
+
+
+.about-bg{
+  display: inline;
+  position: absolute;
+  background-color: $light-gray;
+  width: 84%;
+  height: 64%;
+  left: 0;
+  z-index: 0;
+  border-radius: 0 1.2rem 1.2rem 0;
+}
+
+.about-img{
+  display: block;
+  position: absolute;
+  width: 80vh;
+  height: 80vh;
+  top: 8vh;
+  right: 0;
+  z-index: 20;
+  background-image: url(@/assets/images/top/top-about.png);
+  background-size: cover;
+  border-radius: 1.04rem 0 0 1.04rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.about-contents{
+  position: relative;
+  height: 30rem;
+  width: 40rem;
+  margin: 0 5rem;
+  z-index: 30;
+}
+.about-title{
+  color: $blue;
+  font-size: 2rem;
+  padding-top: 6rem;
+  font-weight: bold;
+  margin-bottom: 0;
+
+  &-sub{
+    font-size: 1.35rem;
   }
+}
+  
+.about-heading{
+  color: $blue;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  margin-bottom: 0;
+}
 
-  &-aiesec {
-    color: $blue;
-    font-size: 2rem;
-    padding-top: 6rem;
-    font-style: italic;
-
-    &-explain {
-      color: $dark-gray;
-      font-size: 1rem;
-      line-height: 2;
-      padding-top: 3rem;
-      max-width: 50rem;
-
-      @include sp {
-        max-width: 90%;
-        text-align: left;
-      }
-    }
-  }
-
-  &-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 3rem;
-  }
-
-  &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 2rem;
-    color: $dark-gray;
-
-    p {
-      width: 100%;
-      line-height: 2;
-      font-weight: bold;
-    }
+.about-explain {
+  font-size: 1rem;
+  line-height: 2;
+  padding-top: 1rem;
+  max-width: 50rem;
+  margin-bottom: 10%;
+  
+  @include sp {
+    max-width: 90%;
+    text-align: left;
   }
 }
 
-@include sp {
-  br {
-    display: none;
-  }
+.button-container{
+  display: flex;
+  padding:px;
+}
+.button-nextText{
+  display: block;
+  font-size: 1.35rem;
+  font-weight: bold;
+  padding: 6px;
+  padding-left: 0;
+  margin: 0;
+}
+.button{
+  display: inline-block;
+  position: relative;
+  background-color: $blue;
+  width: 50px;
+  height: 50px;
+  padding: auto;
+  margin-left: 16px;
+  border-radius: 5rem;
+  border: 5px solid $blue;
+  box-shadow:  0 0 24.5px rgba(3, 126, 243,0.22);
+}
+
+.button::before { /* 矢印の表示設定 */
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border-top: 1.5px solid #fff;
+  border-right: 1.5px solid #fff;
+  transform: rotate(45deg);
 }
 </style>
