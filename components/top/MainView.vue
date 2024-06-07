@@ -1,59 +1,34 @@
 <template>
-  <v-carousel
-    :show-arrows="false"
-    class="main-view-container"
-    cycle
-    hide-delimiters
-    interval="10000"
-  >
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="require('~/assets/images/top/' + item.src)"
-    >
-      <div class="pattern" />
-      <!-- koma2 汚いけどいいやり方が思いつかなかった…Objectの中で渡せないのか… -->
-      <TopCarouselContent1st v-show="i === 0" />
-      <TopCarouselContent2nd v-show="i === 1" />
-      <TopCarouselContent3rd v-show="i === 2" />
-    </v-carousel-item>
-  </v-carousel>
+  <section>
+    <div class="kv-container">
+      <div class="kv-bg"></div>
+      <h1>
+        きっと変わる。<br>
+        自分も、世界も。
+      </h1>
+    </div>
+  </section>
 </template>
 
 
-<script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          src: 'top-1.jpg',
-        },
-        {
-          src: 'top-2.jpg',
-        },
-        {
-          src: 'top-3.jpg',
-        },
-      ],
-    }
-  },
-}
-</script>
-
 <style lang="scss" scoped>
-.main-view-container {
-  height: 80vh;
+.kv-container{
+  position: relative;
+}
+.kv-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/images/top/top-kv.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.pattern {
-  width: 100%;
-  height: 90vh;
-  background: rgba(0, 0, 0, 0.6);
+h1{
+  color: #fff;
+  font-size: 6vw;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  left: 2.6rem;
 }
 
 </style>
-
