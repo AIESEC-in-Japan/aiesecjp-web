@@ -3,7 +3,6 @@
     <TopMainView />
     <TopAboutAiesec />
     <TopOurServices />
-    <TopOurPrograms />
     <TopOurPartners />
   </div>
 </template>
