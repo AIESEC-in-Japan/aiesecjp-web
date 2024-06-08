@@ -2,6 +2,7 @@
   <div>
     <TopMainView />
     <TopAboutAiesec />
+    <TopOurServices />
     <TopOurPrograms />
     <TopOurPartners />
   </div>
