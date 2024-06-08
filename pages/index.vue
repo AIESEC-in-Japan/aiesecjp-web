@@ -4,6 +4,7 @@
     <TopAboutAiesec />
     <TopOurServices />
     <TopSlideImages />
+    <TopOurNews />
     <TopOurPartners />
   </div>
 </template>
