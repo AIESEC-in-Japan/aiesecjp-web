@@ -73,10 +73,9 @@
 <style lang="scss" scoped>
 .service-container {
   position: relative;
-  justify-content: center;
-  font-family: $fonts;
-  margin: 10rem 0 20rem 0;
+  margin: 0 0 20rem 0;
   max-height: max-content;
+  
 }
 
 .flow-text{
@@ -209,8 +208,7 @@
   border-radius: 5rem;
   border: 1.8px solid $white;
   box-shadow:  0 0 44.1px rgba(3, 126, 243, 0.22);
-  transition: all 0.3s ease 0s;
-  
+  transition: all 0.3s ease 0s;  
 }
 .button::before {
   content: "";

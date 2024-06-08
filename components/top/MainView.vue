@@ -14,6 +14,7 @@
 <style lang="scss" scoped>
 .kv-container{
   position: relative;
+  margin: 0 0 10rem 0;
 }
 .kv-bg {
   width: 100%;

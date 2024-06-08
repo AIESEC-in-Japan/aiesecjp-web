@@ -43,7 +43,7 @@
   position: relative;
   justify-content: center;
   font-family: $fonts;
-  margin: 10rem 0 10rem 0;
+  margin: 0;
   max-height: max-content;
   width: 100%;
 }

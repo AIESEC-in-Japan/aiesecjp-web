@@ -15,7 +15,7 @@
       </p>
       <div class="button-container">
         <p class="button-nextText">私たちの想い</p>
-        <a class="button" hred="#"></a>
+        <a class="button" href="#"></a>
       </div>
     </div>
   </section>
@@ -26,10 +26,8 @@
 
 .about-container {
   position: relative;
-  justify-content: center;
-  font-family: $fonts;
-  margin: 10rem 0 0 0;
-  max-height: max-content;
+  margin: 5rem 0 10rem 0;
+  width: 100%;
 }
 
 
@@ -101,7 +99,6 @@
 
 .button-container{
   display: flex;
-  padding:px;
 }
 .button-nextText{
   display: block;
