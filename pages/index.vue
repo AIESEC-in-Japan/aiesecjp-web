@@ -6,5 +6,6 @@
     <TopSlideImages />
     <TopOurNews />
     <TopOurPartners />
+    <TopContactUs />
   </div>
 </template>
