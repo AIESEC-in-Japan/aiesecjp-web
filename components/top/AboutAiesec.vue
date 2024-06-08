@@ -6,7 +6,7 @@
       <p class="about-title">
         About AIESEC
       </p>
-      <h3 class="about-title-sub">AIESECについて</h3>
+      <h2 class="about-title-sub">AIESECについて</h2>
       <p class="about-heading">Activating Youth<br> Leadership</p>
       <p class="about-explain">
         アイセックは、世界100以上の国と地域に支部を持ち、約30,000人の若者が<br>
@@ -29,15 +29,17 @@
   justify-content: center;
   font-family: $fonts;
   margin: 10rem 0 0 0;
+  max-height: max-content;
 }
+
 
 
 .about-bg{
   display: inline;
   position: absolute;
   background-color: $light-gray;
-  width: 84%;
-  height: 64%;
+  width: 94vw;
+  height: 52vh;
   left: 0;
   z-index: 0;
   border-radius: 0 1.2rem 1.2rem 0;
@@ -53,15 +55,13 @@
   z-index: 20;
   background-image: url(@/assets/images/top/top-about.png);
   background-size: cover;
-  border-radius: 1.04rem 0 0 1.04rem;
+  border-radius: 0.8rem 0 0 0.8rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   
 }
 
 .about-contents{
   position: relative;
-  height: 30rem;
-  width: 40rem;
   margin: 0 5rem;
   z-index: 30;
 }
@@ -74,6 +74,7 @@
 
   &-sub{
     font-size: 1.35rem;
+    margin-top: 0.8rem;
   }
 }
   
@@ -119,17 +120,23 @@
   padding: auto;
   margin-left: 16px;
   border-radius: 5rem;
-  border: 5px solid $blue;
+  border: 2px solid $blue;
   box-shadow:  0 0 24.5px rgba(3, 126, 243,0.22);
+  transition: all 0.3s ease 0s;
+
+  &:hover{
+    transition-duration: .3s;
+    transform: scale(1.1);
+  }
 }
 
-.button::before { /* 矢印の表示設定 */
+.button::before {
   content: "";
   position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
-  left: 12px;
+  left: 15px;
   width: 10px;
   height: 10px;
   border-top: 1.5px solid #fff;
