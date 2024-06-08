@@ -26,7 +26,7 @@
 
 h1{
   color: #fff;
-  font-size: 6vw;
+  font-size: 6rem;
   position: absolute;
   bottom: 0;
   left: 2.6rem;
