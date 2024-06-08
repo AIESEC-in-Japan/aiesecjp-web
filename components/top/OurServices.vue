@@ -75,7 +75,7 @@
   position: relative;
   justify-content: center;
   font-family: $fonts;
-  margin: 10rem 0 10rem 0;
+  margin: 10rem 0 20rem 0;
   max-height: max-content;
 }
 
@@ -85,7 +85,7 @@
   width: 100%;
   display: flex;
   overflow: hidden;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .flow-text p{
@@ -107,7 +107,7 @@
 .about-bg{
   display: inline;
   position: absolute;
-  top: 3%;
+  top: 3%;  
   background-color: #F2F8FE;
   width: 100%;
   height: 110%;
