@@ -4,7 +4,7 @@
       <p> &nbsp; Y O U T H &nbsp; L E A D E R S H I P&nbsp;</p>
       <p> &nbsp; Y O U T H &nbsp; L E A D E R S H I P&nbsp;</p>
     </div>
-    <div class="about-bg"></div>
+    <div class="service-bg"></div>
     <div class="service-contents">
       <p class="service-title">
         Our Services
@@ -103,7 +103,7 @@
   }
 }
 
-.about-bg{
+.service-bg{
   display: inline;
   position: absolute;
   top: 3%;  
@@ -112,7 +112,7 @@
   height: 110%;
   left: 0;
   z-index: 0;
-  border-radius: 11% 0 11% 0;
+  border-radius: 10rem 0 10rem 0;
   box-shadow: 0 0px 16.3px rgba(0, 0, 0, 0.1);
 }
 
