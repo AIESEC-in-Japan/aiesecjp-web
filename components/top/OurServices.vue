@@ -89,6 +89,7 @@
 
 .flow-text p{
   color:#e9e9e9;
+  font-family: $lato;
   font-size: 7rem;
   animation: flowing 18s linear infinite;
   transform: translateX(100%);
