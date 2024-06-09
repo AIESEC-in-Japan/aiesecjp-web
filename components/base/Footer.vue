@@ -1,115 +1,161 @@
 <template>
   <div class="footer-container">
-    <div class="footer-content">
-      <h3 class="footer-content-title">
-        AIESEC
-      </h3>
-      <p class="footer-description">
-        AIESEC(アイセック)は、カナダのモントリオールに本部を置く海外インターンシップの運営を主幹事業とする世界最大級の学生団体です。
-        アイセックの日本支部であるアイセック・ジャパンは1962年に創設され、現在では主に大学ごとに24の委員会が活動をしています。
-      </p>
+    <div class="footer-bg"></div>
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <h3 class="footer-content-title">
+          AIESECについて
+        </h3>
+        <ul>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              ビジョン
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              ミッション
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              バリュー
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              サービス
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-content-title">
+          学生の方へ
+        </h3>
+        <ul>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/outgoing"
+            >
+              海外インターンシップ
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/global-youth-dialogue"
+            >
+              global youth dialogue
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-content-title">
+          企業の方へ
+        </h3>
+        <ul>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/incoming"
+            >
+              海外インターンシップ受け入れ
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              協賛
+            </nuxt-link>
+          </li>
+          <!-- 実例集へのリンクを停止 2022/05/22
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/incoming/article"
+            >
+              インターンシップ実例
+            </nuxt-link>
+          </li>
+          -->
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-content-title">
+          団体概要
+        </h3>
+        <ul>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              団体情報
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              理事紹介
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              活動報告
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              委員会紹介
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              class="footer-content-link"
+              to="/#"
+            >
+              安全への取り組み
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-content">
-      <h3 class="footer-content-title">
-        About
-      </h3>
-      <ul>
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/about"
-          >
-            団体情報
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/safety"
-          >
-            安全への取り組み
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/privacy-policy"
-          >
-            個人情報の取り扱い
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/contact-us"
-          >
-            お問い合わせ
-          </nuxt-link>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-content">
-      <h3 class="footer-content-title">
-        For Students
-      </h3>
-      <ul>
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/outgoing"
-          >
-            海外インターンシップに参加する
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/global-youth-dialogue"
-          >
-            global youth dialogue
-          </nuxt-link>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-content">
-      <h3 class="footer-content-title">
-        For Companies
-      </h3>
-      <ul>
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/incoming"
-          >
-            海外インターン生を受け入れる
-          </nuxt-link>
-        </li>
-        <!-- 実例集へのリンクを停止 2022/05/22
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/incoming/article"
-          >
-            インターンシップ実例
-          </nuxt-link>
-        </li>
-        -->
-      </ul>
-    </div>
-    <div class="footer-content">
-      <h3 class="footer-content-title">
-        Press
-      </h3>
-      <ul>
-        <li>
-          <nuxt-link
-            class="footer-content-link"
-            to="/press"
-          >
-            お知らせ
-          </nuxt-link>
-        </li>
-      </ul>
+    <div class="footer-icon">
+      <div class="sns">
+        <div class="x"></div>
+        <div class="instagram"></div>
+      </div>
+      <div class="logo">
+        <img
+          alt="logo"
+          src="@/assets/images/logo/blue-logo.png"
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -117,55 +163,86 @@
 
 <style lang="scss" scoped>
 .footer {
-  &-container {
+  &-container{
+    position:relative;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+
+  }
+  &-bg{
+    display: inline;
+    position: absolute;
+    // background-image: linear-gradient(160deg,  $blue 28%, #00cb9a 100%);
+    background-image: linear-gradient(160deg,  $blue 28%, #F2F8FE 100%);
     width: 100%;
-    padding: 2.5rem 1rem;
-    background-color: $light-gray;
+    height: 100%;
+    z-index: 0;
+    border-radius: 10rem 0 0 0;
+    box-shadow: 0 -4px 29.2px rgba(0, 0, 0, 0.1);
+
+  }
+  &-wrapper {
+    width: 100%;
+    position:relative;
+    height: max-content;
+    padding: 6rem 0 1rem 5rem;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    z-index:10;
 
     @include tab {
       padding: 0.3rem;
     }
   }
 
-  &-description {
-    font-size: 0.75rem;
-    width: 11.25rem;
-    line-height: 1.5;
-    word-break: break-all;
-
-    @include tab {
-      width: 100%;
-    }
-  }
 
   &-content {
-    width: 13.75rem;
+    width: 12rem;
 
     @include tab {
       width: 80%;
       margin: 1rem auto;
     }
 
+    ul{
+      padding: 0;
+    }
+
     &-title {
       color: $blue;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
-      font-style: italic;
       margin-bottom: 1rem;
+      color: $white;
     }
 
     &-link {
-      font-size: 0.75rem;
-      color: $dark-gray;
+      font-size: 0.8rem;
+      color: $white;
+      text-decoration: none;
+      font-family: $YuGothic;
     }
 
-    li {
-      margin-bottom: 0.5rem;
-    }
   }
 }
 
+.footer-icon{
+  padding: 2rem;
+}
+.sns-container{}
+
+.logo-icon{}
+
+.logo{
+  position: relative;
+}
+
+
+.logo img{
+  width: 300px;
+  max-height: 60px;
+}
 </style>
