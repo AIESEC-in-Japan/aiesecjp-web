@@ -26,7 +26,7 @@
 
 .about-container {
   position: relative;
-  margin: 12rem 0 10rem 0;
+  margin: 5rem 0 10rem 0;
   width: 100%;
 }
 

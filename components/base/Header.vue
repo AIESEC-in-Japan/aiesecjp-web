@@ -25,9 +25,9 @@
             class="navigation-link"
             to=""
           >
-            AIESECについて
+            Services
           </nuxt-link>
-          <!-- <div
+          <div
             v-show="!this.$isMobile() ? isShowNestedItems : drawer"
             class="navigation-nested"
           >
@@ -35,9 +35,9 @@
               <li class="navigation-nested-item">
                 <nuxt-link
                   class="navigation-link"
-                  to="/#"
+                  to="/outgoing"
                 >
-                  aaaaaaaaaaaaaaa
+                  For Students
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
@@ -45,7 +45,7 @@
                   class="navigation-link"
                   to="/incoming"
                 >
-                  ミッション
+                  For Companies
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
@@ -53,75 +53,34 @@
                   class="navigation-link"
                   to="/safety"
                 >
-                  企業の方へ
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  団体概要
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  NEWS
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  お問い合わせ
+                  Safety
                 </nuxt-link>
               </li>
             </ul>
-          </div> -->
+          </div>
         </li>
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/#"
+            to="/global-youth-dialogue"
           >
-            学生の方へ
+            Events
           </nuxt-link>
         </li>
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/#"
+            to="/about"
           >
-            企業の方へ
+            About Us
           </nuxt-link>
         </li>
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/#"
+            to="/contact-us"
           >
-            団体概要
-          </nuxt-link>
-        </li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/#"
-          >
-            NEWS
-          </nuxt-link>
-        </li>
-        <li class="navigation-item">|</li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/#"
-          >
-            お問い合わせ
+            Contact Us
           </nuxt-link>
         </li>
         <!-- 外部リンク -->
@@ -180,21 +139,22 @@ export default {
 <style lang="scss" scoped>
 /* stylelint-disable unit-disallowed-list */
 // ここは細かく指定したいので、許容
+
 .header-container {
   z-index: $headerIndex;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  width: 90vw;
+  width: 100vw;
   height: 5rem;
   line-height: 5rem;
   padding: 0 5%;
-  margin: 1rem auto 0 auto;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  border-bottom-color: $gray;
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-  background-color: rgba(255, 255, 255, 0.66);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 3rem;
+  background-color: white;
 
   .navigation {
     &-mobile {
@@ -208,7 +168,6 @@ export default {
     &-list {
       display: flex;
       justify-content: flex-end;
-      flex-wrap: wrap;
 
       @include sp {
         z-index: $headerDrawerIndex;
@@ -227,7 +186,6 @@ export default {
       margin-left: 3rem;
       list-style-type: none;
       align-items: center;
-      margin-left: 2rem;
 
       @include sp {
         padding-right: 1rem;
@@ -257,8 +215,6 @@ export default {
       &-list {
         flex-flow: column;
         padding-left: 0;
-        flex-wrap: wrap;
-
 
         @include sp {
           border-left: none;
@@ -277,13 +233,10 @@ export default {
       position: absolute;
       top: 10px;
       bottom: 0;
-      left: 24px;
-      width: 14vw;
-      align-items: center;
-
+      left: 10px;
 
       img {
-        width:105%;
+        width: 300px;
         max-height: 60px;
 
         @include sp {
@@ -293,11 +246,11 @@ export default {
     }
 
     &-link {
-      color: black;
+      color: $dark-gray;
       font-weight: bold;
       text-decoration: none;
-      font-size: 0.94rem;
-      letter-spacing: 0.8px;
+      font-size: 1rem;
+      letter-spacing: 2px;
 
       &:hover {
         opacity: 0.7;
