@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-container">
+  <footer class="footer-container">
     <div class="footer-bg"></div>
     <div class="footer-wrapper">
       <div class="footer-content">
@@ -157,7 +157,7 @@
         >
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 
@@ -170,6 +170,7 @@
     justify-content: space-between;
     padding: 2rem 0;
     align-items: center;
+    width: 100%;
 
   }
   &-bg{
