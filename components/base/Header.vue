@@ -110,7 +110,7 @@
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/#"
+            to="/news"
           >
             NEWS
           </nuxt-link>
