@@ -2,10 +2,10 @@
   <section>
     <div class="kv-container">
       <div class="kv-bg"></div>
-      <h1>
+      <p class="kv-text">
         きっと変わる。<br>
         自分も、世界も。
-      </h1>
+      </p>
     </div>
   </section>
 </template>
@@ -26,13 +26,13 @@
   background-size: cover;
   background-position: center;
 }
-
-h1{
+.kv-text{
   color: #fff;
   font-size: 6rem;
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
   left: 2.6rem;
+  font-family: $TsukuGoPro;
 }
 
 </style>
