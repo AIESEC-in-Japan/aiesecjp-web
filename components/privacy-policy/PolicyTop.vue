@@ -1,76 +1,61 @@
 <template>
-  <section class="policy-container">
-    <div class="policy-wrapper">
-      <h1 class="policy-title">
-        アイセック・ジャパン<br v-show="this.$isMobile()">の<br v-show="this.$isMobile()">プライバシーポリシー
-      </h1>
-      <p class="policy-text">
-        特定非営利活動法人アイセック・ジャパンは、<br>
-        海外インターンシップに参加される<br v-show="this.$isMobile()">皆様をはじめとする 関係者の皆様の<br v-show="this.$isMobile()">プライバシーを尊重し、<br>
-        個人情報の取り扱いに関して<br v-show="this.$isMobile()">以下のような指針を定め、<br>
-        それに従って個人情報の適正な利用、その保護に努めております。
-      </p>
+  <section>
+    <div class="policy-container">
+      <div class="policy-bg"></div>
+      <div class="policy-text">
+        Privacy Policy
+      </div>
+      <h2 class="policy-text-sub">個人情報管理について</h2>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-.policy {
-  &-container {
+.policy{
+  &-container{
     position: relative;
-    background-image: url("~@/assets/images/privacy-policy-top-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  /* 半透明のフィルターをかける */
-  &-container::before {
-    content: '';
-    position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 90vh;
+    width: 100vw;
+    margin: -5rem 0 10rem 0;  
+    &::before{
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      top:0;
+      bottom: 0;
+      left: 0;
+      right:0;
+      height: 90vh;
+      width: 100vw;
+      border-radius: 0 0 0 14rem;
+    }
   }
+  &-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/images/privacy-policy-top-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 0 14rem;
+  }
+    
 
-  &-wrapper {
-    width: 80%;
-    // 中央よせ
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    // 内部を縦方向配置
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  &-text{
+    color: #fff;
+    font-size: 6rem;
     font-weight: bold;
+    position: absolute;
+    bottom: 40%;
+    left: 6rem;
 
-    @include sp {
-      width: 90%;
+    &-sub{
+      color: #fff;
+      font-size: 1.6rem;
+      position: absolute;
+      bottom: 35%;
+      left: 6rem;
     }
-  }
-
-  &-title {
-    margin: 1.5rem auto;
-    font-size: 2rem;
-    color: white;
-
-    @include sp {
-      letter-spacing: 0;
-      text-align: center;
-    }
-  }
-
-  &-text {
-    text-align: center;
-    margin: 0.5rem auto;
-    font-size: 1rem;
-    line-height: 2;
-    color: white;
   }
 }
 </style>
