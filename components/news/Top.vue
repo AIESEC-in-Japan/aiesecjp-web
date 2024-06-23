@@ -16,15 +16,15 @@
 // 原因はわからないが、scssが反映されなくなることがあるので消してはいけない。
 
 .news-container{
-  position: absolute;
+  position: relative;
   top: 0;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
-  margin: 0 0 10rem 0;  
+  margin: -5rem 0 10rem 0;  
 }
 .news-bg {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url(assets/images/top/top-kv.png);
   background-size: cover;
   background-position: center;

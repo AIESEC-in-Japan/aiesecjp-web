@@ -1,5 +1,5 @@
 <template>
-  <section class="news-container">
+  <div class="news-container">
     <div class="news-contents">
       <p class="news-categorize-text">カテゴリ</p>
       <div class="news-categorize">
@@ -17,7 +17,7 @@
         />
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -27,6 +27,7 @@ export default {
       news_data: [
         {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "/news/0001", category: "活動報告"},
         {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/News/news0002", category: "活動報告"},
+        {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/News/news0003", category: "活動報告"},
         {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/News/news0003", category: "活動報告"},
         {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/News/news0004", category: "活動報告"},
         {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/News/news0004", category: "活動報告"}
