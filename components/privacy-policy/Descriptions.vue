@@ -245,6 +245,7 @@ export default {
     scrollbar-width: none;
     padding-top: 9rem;
     margin-top: -7rem;
+    margin-bottom: 3rem;
     &-title {
       color: $dark-gray;
       font-size: 1.35rem;
