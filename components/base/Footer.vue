@@ -105,7 +105,7 @@
           <li>
             <nuxt-link
               class="footer-content-link"
-              to="/#"
+              to="/about"
             >
               団体情報
             </nuxt-link>

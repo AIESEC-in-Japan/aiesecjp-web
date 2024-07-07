@@ -32,7 +32,8 @@ td {
   border-bottom-style: solid;
   border-bottom-width: 0.03rem;
   border-bottom-color: $gray;
-  padding: 1.5rem 1rem;
+  padding: 2.5rem 0;
+  font-size: 1rem;
 
   @include sp {
     padding: 1rem 1rem;
@@ -40,8 +41,8 @@ td {
 }
 
 th {
-  width: 6.75rem;
   text-align: left;
+  width: 6.75rem;
 
   @include sp {
     width: 6.25rem;
@@ -50,6 +51,8 @@ th {
 
 td {
   line-height: 1.3rem;
+  padding-left: 6rem;
+
 
   @include sp {
     width: 15.6rem;

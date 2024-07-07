@@ -1,23 +1,25 @@
 <template>
   <section>
-    <div class="policy-container">
-      <div class="policy-bg"></div>
-      <div class="policy-text">
-        Privacy Policy
+    <div class="about-container">
+      <div class="about-bg"></div>
+      <div class="about-text">
+        Organisation
       </div>
-      <h2 class="policy-text-sub">個人情報管理について</h2>
+      <h2 class="about-text-sub">団体概要</h2>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-.policy{
+.about{
+
   &-container{
     position: relative;
     top: 0;
     height: 90vh;
     width: 100vw;
     margin: -5rem 0 10rem 0;  
+    
     &::before{
       content: "";
       position: absolute;

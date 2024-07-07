@@ -102,7 +102,7 @@
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/#"
+            to="/about"
           >
             団体概要
           </nuxt-link>
