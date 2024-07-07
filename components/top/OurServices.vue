@@ -33,7 +33,7 @@
                   あああああああああ
                 </p>
               </div>
-              <a class="button" href="#"></a>
+              <a class="button" href="/global-youth-dialogue"></a>
           </div>
         </div>
       </div>
