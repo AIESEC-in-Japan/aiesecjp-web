@@ -1,97 +1,62 @@
 <template>
-  <section class="global-youth-dialogue-container">
-    <div class="global-youth-dialogue-wrapper">
-      <img
-        alt="global-youth-dialogue-logo"
-        class="global-youth-dialogue-logo"
-        src="@/assets/images/global-youth-dialogue/global-youth-dialogue-logo-white-none.png"
-      >
-      <p class="global-youth-dialogue-text">
-        Pursue the answer for peace. <br>
-        探求しよう、自分と世界の境界を超えて。
-      </p>
-      <p class="global-youth-dialogue-text">
-        知らない国に、知っている人ができたら、<br>
-        どんな世界が見えるようになるんだろう。
-      </p>
-      <p class="global-youth-dialogue-text">
-        知らない国に、友達ができたら、<br>
-        どんな会話をするんだろう。
-      </p>
-      <p class="global-youth-dialogue-text">
-        ちょっと新しい自分と世界を見に行く１週間を、<br>
-        私たちと過ごしてみませんか？
-      </p>
+  <section class="gyd-container">
+    <div class="gyd-container">
+      <div class="gyd-bg"></div>
+      <h2 class="gyd-text">
+        global youth dialogue
+      </h2>
+      <p class="gyd-text-sub">あああああああああああああああああああああああああ</p>
     </div>
   </section>
 </template>
 
 
 <style lang="scss" scoped>
-.global-youth-dialogue {
-  &-container {
+.gyd{
+  &-container{
     position: relative;
-    background-image: url("~@/assets/images/global-youth-dialogue/GlobalYouthDialogueTop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 38rem;
-  }
-
-  /* 半透明のフィルターをかける */
-  &-container::before {
-    content: '';
-    position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 90vh;
+    width: 100vw;
+    margin: -5rem 0 10rem 0;  
+    &::before{
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.02);
+      top:0;
+      bottom: 0;
+      left: 0;
+      right:0;
+      height: 90vh;
+      width: 100vw;
+      border-radius: 0 0 0 14rem;
+    }
   }
+  &-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/images/global-youth-dialogue/GlobalYouthDialogueTop.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 0 14rem;
+  }
+    
 
-  &-wrapper {
-    width: 80%;
-    padding-top: 4rem;
-    // 中央よせ
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-
-    // 内部を縦方向配置
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  &-text{
+    color: #fff;
+    font-size: 4rem;
     font-weight: bold;
+    position: absolute;
+    bottom: 15%;
+    right: 5rem;
 
-    @include sp {
-      width: 90%;
-    }
-  }
-
-  &-logo {
-    width: 16%;
-    margin: 0 auto 2rem;
-
-    @include sp {
-      width: 40%;
-    }
-  }
-
-  &-text {
-    text-align: center;
-    margin: 0.7rem auto;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: white;
-    letter-spacing: 0.1rem;
-
-    @include sp {
-      letter-spacing: 0;
-      font-size: 0.8rem;
+    &-sub{
+      color: #fff;
+      font-size: 1rem;
+      position: absolute;
+      bottom: 6%;
+      right: 5rem;
     }
   }
 }
-
 </style>

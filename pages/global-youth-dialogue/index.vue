@@ -1,10 +1,9 @@
 <template>
   <div>
     <GlobalYouthDialogueTop />
+    <GlobalYouthDialogueMessage />
     <GlobalYouthDialogueDetail />
     <GlobalYouthDialogueVoice />
-    <GlobalYouthDialogueApply />
-    <GlobalYouthDialogueFixedFooter />
   </div>
 </template>
 

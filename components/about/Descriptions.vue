@@ -256,24 +256,6 @@ export default {
 
     }
 
-    &__underline {
-      text-decoration: underline;
-    }
-
-    p {
-      font-size: 0.875rem;
-      line-height: 2;
-    }
-
-    ul {
-      list-style: circle;
-      margin-left: 1.5rem;
-    }
-
-    li {
-      margin: 0.5rem auto;
-      color: $dark-gray;
-    }
   }
 }
 
