@@ -261,10 +261,6 @@ export default {
 
     }
 
-    &__underline {
-      text-decoration: underline;
-    }
-
     p {
       font-size: 0.875rem;
       line-height: 2;

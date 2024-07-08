@@ -1,5 +1,5 @@
 <template>
-  <section class="gyd-container">
+  <section>
     <div class="gyd-container">
       <div class="gyd-bg"></div>
       <h2 class="gyd-text">
