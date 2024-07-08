@@ -22,7 +22,7 @@
                   たことのない世界へ
                 </p>
               </div>
-              <a class="button" href="#"></a>
+              <a class="button" href="/outgoing"></a>
           </div>
           <div class="service-item">
             <div class="service-item-img"></div>
