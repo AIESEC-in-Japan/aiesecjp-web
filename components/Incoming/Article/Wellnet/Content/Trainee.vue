@@ -8,7 +8,7 @@
         </div>
         <div class="example-trainee-info">
           <img
-            src="@/assets/images/icx/article/wellnet/trainee.png"
+            src="@/assets/images/incoming/article/wellnet/trainee.png"
             class="example-trainee-info-logo"
             alt="インターン生の写真"
           >

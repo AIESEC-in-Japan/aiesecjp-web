@@ -130,7 +130,7 @@
           
 
           .note-img{
-            background-image: url(assets/images/outgoing/outgoingVoiceNote1.png);
+            background-image: url(assets/images/outgoing/outgoingVoice1.png);
             background-position: center;
             background-size: cover;
             width: 100%;

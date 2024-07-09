@@ -1,7 +1,7 @@
 import Top from './Top.vue';
 
 export default {
-  title: 'components/Incoming/Top',
+  title: 'components/Iutgoing/Top',
   component: Top,
 };
 
