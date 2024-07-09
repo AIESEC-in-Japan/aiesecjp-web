@@ -63,12 +63,12 @@
   width: 100vw;
 
   .bg-top{
-    background-image: url(assets/images/global-youth-dialogue/global-youth-dialogueDescriptionBgTop.svg);
+    background-image: url(assets/images/global-youth-dialogue/global-youth-dialogueDetailBgTop.svg);
     width: 100%;
     height: 10rem;
   }
   .bg-bottom{
-    background-image: url(assets/images/global-youth-dialogue/global-youth-dialogueDescriptionBgBottom.svg);
+    background-image: url(assets/images/global-youth-dialogue/global-youth-dialogueDetailBgBottom.svg);
     background-position: bottom;
     width: 100%;
     height: 15rem;
@@ -128,7 +128,7 @@
             
           }
         &-img{
-          background-image: url(assets/images/global-youth-dialogue/global-youth-dialogueDescriptionFeature1.png);
+          background-image: url(assets/images/global-youth-dialogue/global-youth-dialogueDetail1.png);
           background-size: cover;
           background-position: center;
           border-radius: 1.4rem;
