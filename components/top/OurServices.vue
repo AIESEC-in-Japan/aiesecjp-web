@@ -49,7 +49,7 @@
                   あああああああああ
                 </p>
               </div>
-              <a class="button" href="#"></a>
+              <a class="button" href="/incoming"></a>
           </div>
           <div class="service-item">
             <div class="service-item-img"></div>
@@ -60,7 +60,7 @@
                   あああああああああ
                 </p>
               </div>
-              <a class="button" href="#"></a>
+              <a class="button" href="/for-company"></a>
           </div>
         </div>
       </div>
