@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6, p, span, a, button, li {
   font-family: $fonts;
+  color: $dark-gray;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,7 +16,7 @@ h1 {
 }
 
 p {
-  color: black;
+  color: $dark-gray;
   font-size: 0.875rem;
 }
 
