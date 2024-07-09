@@ -1,8 +1,9 @@
 <template>
   <div class="wrapper">
     <OutgoingTop />
-    <OutgoingFeature />
-    <OutgoingProgram />
-    <OutgoingDetail />
+    <OutgoingMessage />
+    <OutgoingImages />
+    <OutgoingVoice />
+    <OutgoingContact />
   </div>
 </template>
