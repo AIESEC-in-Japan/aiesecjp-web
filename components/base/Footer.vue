@@ -80,9 +80,9 @@
           <li>
             <nuxt-link
               class="footer-content-link"
-              to="/#"
+              to="/for-company"
             >
-              協賛
+              協賛について
             </nuxt-link>
           </li>
           <!-- 実例集へのリンクを停止 2022/05/22
