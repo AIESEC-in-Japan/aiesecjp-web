@@ -6,10 +6,25 @@
         きっと変わる。<br>
         自分も、世界も。
       </p>
+      <p>
+        {{ news_data[0].title }}
+      </p>
     </div>
   </section>
 </template>
 
+<script>
+import news from '@/assets/json/news.json'
+
+export default {
+  data() {
+    return {
+      count: 1,
+      news_data: news
+    }
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .kv-container{
@@ -33,6 +48,10 @@
   bottom: 1rem;
   left: 2.6rem;
   font-family: $TsukuGoPro;
+}
+
+.news-list-item{
+  width: 60%;
 }
 
 </style>

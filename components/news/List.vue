@@ -10,19 +10,24 @@
         <a class="news-categorize-item" href="#"><p>その他</p></a>
       </div>
       <div class="news-item-wrapper">
-        <BaseNewsData
-          :count="count"
-        />
+        <BaseNewsList
+            v-for="i in count"
+            :key="news_data[i-1].url"
+            :data="news_data[i-1]"
+          />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import news from '@/assets/json/news.json'
+
 export default {
   data() {
     return {
-      count: 6
+      count: 6,
+      news_data: news
     }
   }
 };

@@ -18,8 +18,10 @@
           </div>
         </div>
         <div class="news-item-wrapper">
-          <BaseNewsData
-            :count="count"
+          <BaseNewsList
+            v-for="i in count"
+            :key="news_data[i-1].url"
+            :data="news_data[i-1]"
           />
         </div>
       </div>
@@ -28,10 +30,13 @@
 </template>
 
 <script>
+import news from '@/assets/json/news.json'
+
 export default {
   data() {
     return {
-      count: 5
+      count: 5,
+      news_data: news
     }
   }
 };
