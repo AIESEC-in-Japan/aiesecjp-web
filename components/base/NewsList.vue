@@ -1,18 +1,18 @@
 <template>
   <div
-    class="news-item"
+    class="news-list-item"
     :id="`${data.category}`">
     <p
-      class="news-date">
+      class="news-list-date">
       {{data.date}}
     </p>
-    <div class="news-category">
+    <div class="news-list-category">
       <p>
         {{data.category}}
       </p>
     </div>
     <a
-      class="news-title"
+      class="news-list-title"
       :href="data.url">
       {{data.title}}
     </a>
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.news-item {
+.news-list-item {
   width: 100%;
   margin: 0;
   padding: 2rem 0.5rem;
@@ -41,18 +41,18 @@ export default {
   align-items: center;
 }
 
-.news-date{
+.news-list-date{
   font-size: 1rem;
   margin: 0;
   flex-grow: 1;
   text-align: center;
 }
-.news-category{
+.news-list-category{
   margin: 0 2rem;
   text-align: center;
   flex-grow: 1;
 }
-.news-category p{
+.news-list-category p{
   padding: 12px 30px;  
   width: max-content;
   border: 0.8px $dark-gray  solid;
@@ -61,7 +61,7 @@ export default {
   font-size: 1rem;
   margin: 0;
 }
-.news-title{
+.news-list-title{
   color: $dark-gray;
   font-size: 1rem;
   flex-grow: 6;
