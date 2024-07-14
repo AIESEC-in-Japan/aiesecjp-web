@@ -18,10 +18,8 @@
           </div>
         </div>
         <div class="news-item-wrapper">
-          <BaseNewsList
-            v-for="news in news_data"
-            :key="news.url"
-            :data="news"
+          <BaseNewsData
+            :count="count"
           />
         </div>
       </div>
@@ -33,13 +31,7 @@
 export default {
   data() {
     return {
-      news_data: [
-        {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/top", category: "活動報告"},
-        {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/Incoming", category: "活動報告"},
-        {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/Incoming", category: "活動報告"},
-        {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/Incoming", category: "活動報告"},
-        {date: "2023年8月22日", title: "夏合宿を実施いたしました。", url: "@/Outgoing", category: "活動報告"}
-      ]
+      count: 5
     }
   }
 };
