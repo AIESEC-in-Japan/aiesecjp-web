@@ -5,5 +5,6 @@
     <OutgoingImages />
     <OutgoingVoice />
     <OutgoingContact />
+    <OutgoingOthers />
   </div>
 </template>

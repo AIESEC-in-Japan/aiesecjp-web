@@ -5,5 +5,6 @@
     <IncomingImages />
     <IncomingVoice />
     <IncomingContact />
+    <IncomingOthers />
   </div>
 </template>
