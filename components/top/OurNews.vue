@@ -7,11 +7,11 @@
       <h2 class="news-title-sub">新着情報</h2>
       <div class="news-wrapper">
         <div class="news-categorize">
-          <a class="news-categorize-item" href="#"><p>ALL</p></a>
-          <a class="news-categorize-item" href="#"><p>活動報告</p></a>
-          <a class="news-categorize-item" href="#"><p>協賛活動</p></a>
-          <a class="news-categorize-item" href="#"><p>メンバーの活動</p></a>
-          <a class="news-categorize-item" href="#"><p>その他</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('all')" :class="{ active: selectedCategory === 'all' }"><p>ALL</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selectedCategory === 'report' }"><p>活動報告</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selectedCategory === 'partner' }"><p>協賛活動</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selectedCategory === 'member' }"><p>メンバーの活動</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selectedCategory === 'others' }"><p>その他</p></a>
           <div class="button-container">
             <p class="button-nextText">一覧を見る</p>
             <a class="button" href="#"></a>
@@ -19,9 +19,9 @@
         </div>
         <div class="news-item-wrapper">
           <BaseNewsList
-            v-for="i in count"
-            :key="news_data[i-1].url"
-            :data="news_data[i-1]"
+            v-for="i in Math.min(count, filteredNews.length)"
+            :key="filteredNews[i-1].url"
+            :data="filteredNews[i-1]"
           />
         </div>
       </div>
@@ -29,18 +29,38 @@
   </section>
 </template>
 
+
 <script>
 import news from '@/assets/json/news.json'
 
 export default {
   data() {
     return {
+      selectedCategory: 'all',
       count: 5,
       news_data: news
     }
+  },
+  computed: {
+    filteredNews() {
+      
+      if (this.selectedCategory === 'all') {
+        return this.news_data;
+      }
+      const filtered = this.news_data.filter(news => {return news.categorized === this.selectedCategory});
+      console.log(filtered); // デバッグ用にコンソールに出力
+      return filtered;
+    }
+  },
+  methods: {
+    filterNews: function(category) {
+      this.selectedCategory = category;
+    }
   }
+
 };
 </script>
+
 
 <style lang="scss" scoped>
 .news-container {
@@ -101,6 +121,14 @@ export default {
   color: $blue;
   margin: 0;
   font-size: 1rem;
+}
+
+.news-categorize-item.active{
+  background-color: $blue;
+  p{
+    color: $white;
+
+  }
 }
 
 .news-item-wrapper{

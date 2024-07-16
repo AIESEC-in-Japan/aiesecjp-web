@@ -1,7 +1,9 @@
 <template>
   <div
     class="news-list-item"
-    :id="`${data.category}`">
+    :id="`${data.categorized}`"
+    v-if="data && data.url"
+    >
     <p
       class="news-list-date">
       {{data.date}}
@@ -53,8 +55,8 @@ export default {
   flex-grow: 1;
 }
 .news-list-category p{
-  padding: 12px 30px;  
-  width: max-content;
+  padding: 10px 16px;  
+  width: 150px;
   border: 0.8px $dark-gray  solid;
   border-radius: 3rem;
   text-align: center;
