@@ -10,7 +10,7 @@
         :href="news_data[0].url"
       >
         <span>NEWS&nbsp;</span>
-        &nbsp;&nbsp;{{ news_data[0].date }}
+        &nbsp;&nbsp;{{ `${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[2]}.${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[3]}`}}
         &nbsp;&nbsp;{{ news_data[0].title }}
       </a>
     </div>
@@ -59,9 +59,9 @@ export default {
   padding: 1rem 2rem;
   position: absolute;
   bottom: 3rem;
-  right: 2.6rem;
+  right: 4.8rem;
   text-decoration: none;
-  border: 0.9px #fff solid;
+  border: 1px #fff solid;
   border-radius: 3rem;
   background-color: rgba(63, 63, 63, 0.3);
 
