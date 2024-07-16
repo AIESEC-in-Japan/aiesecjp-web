@@ -3,18 +3,30 @@
     <div class="news-contents">
       <p class="news-categorize-text">カテゴリ</p>
       <div class="news-categorize">
-        <a class="news-categorize-item" v-on:click="filterNews('all')" :class="{ active: selectedCategory === 'all' }"><p>ALL</p></a>
-        <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selectedCategory === 'report' }"><p>活動報告</p></a>
-        <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selectedCategory === 'partner' }"><p>協賛活動</p></a>
-        <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selectedCategory === 'member' }"><p>メンバーの活動</p></a>
-        <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selectedCategory === 'others' }"><p>その他</p></a>
+        <a class="news-categorize-item" v-on:click="filterNews('all')" :class="{ active: selected_category === 'all' }"><p>ALL</p></a>
+        <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selected_category === 'report' }"><p>活動報告</p></a>
+        <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selected_category === 'partner' }"><p>協賛活動</p></a>
+        <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selected_category === 'member' }"><p>メンバーの活動</p></a>
+        <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selected_category === 'others' }"><p>その他</p></a>
       </div>
       <div class="news-item-wrapper">
         <BaseNewsList
-            v-for="i in Math.min(count, filteredNews.length)"
-            :key="filteredNews[i-1].url"
-            :data="filteredNews[i-1]"
+            v-for="news in paginatedNews"
+            :key="news.url"
+            :data="news"
           />
+      </div>
+      <div class="pagination">
+        <a @click="goToPage(current_page - 1)" :disabled="current_page === 1">&lt;</a>
+        <a class="pagination_item"
+          v-for="page in pageNumbers"
+          :key="page"
+          @click="goToPage(page)"
+          :class="{ active: current_page === page }"
+        >
+          {{ page }}
+        </a>
+        <a @click="goToPage(current_page + 1)" :disabled="current_page === totalPages">&gt;</a>
       </div>
     </div>
   </div>
@@ -26,25 +38,55 @@ import news from '@/assets/json/news.json'
 export default {
   data() {
     return {
-      selectedCategory: 'all',
+      selected_category: 'all',
       count: 6,
-      news_data: news
+      news_data: news,
+      current_page: 1,
+      news_per_page: 8
     }
   },
   computed: {
     filteredNews() {
-      
-      if (this.selectedCategory === 'all') {
+      if (this.selected_category === 'all') {
         return this.news_data;
       }
-      const filtered = this.news_data.filter(news => {return news.categorized === this.selectedCategory});
-      console.log(filtered); // デバッグ用にコンソールに出力
-      return filtered;
+      return this.news_data.filter(news => {return news.categorized === this.selected_category});
+    },
+    totalPages() {
+      return Math.ceil(this.filteredNews.length / this.news_per_page);
+    },  
+    paginatedNews() {
+      const start = (this.current_page - 1) * this.news_per_page;
+      const end = start + this.news_per_page;
+      return this.filteredNews.slice(start, end);
+    },
+    //ページ下部のページ番号
+    pageNumbers() {
+      const maxPages = 5;
+      const half = Math.floor(maxPages / 2);
+      let start = Math.max(1, this.current_page - half);
+      let end = Math.min(start + maxPages - 1, this.totalPages);
+
+      if (end - start + 1 < maxPages) {
+        start = Math.max(1, end - maxPages + 1);
+      }
+
+      const pages = [];
+      for (let i = start; i <= end; i++) {
+        pages.push(i);
+      }
+
+      return pages;
     }
   },
   methods: {
     filterNews: function(category) {
-      this.selectedCategory = category;
+      this.selected_category = category;
+    },
+    goToPage(page) {
+      if (page >= 1 && page <= this.totalPages) {
+        this.current_page = page;
+      }
     }
   }
 
@@ -134,4 +176,15 @@ export default {
   height: max-content;
 }
 
+.pagination{
+  display: block;
+  margin: 2rem 0;
+  text-align: center;
+
+  .pagination_item.active{
+    color: $blue;
+
+  }  
+
+}
 </style>
