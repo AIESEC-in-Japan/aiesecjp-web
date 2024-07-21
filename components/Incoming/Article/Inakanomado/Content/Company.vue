@@ -109,7 +109,7 @@ export default {
       company_logo:
         {src: "2020corporation-logo/inakanomado.png", alt: "株式会社いなかの窓のロゴ"},
       internship_photo:
-        {src: "images/icx/article/inakanomado/top.jpg", alt: ""}
+        {src: "images/incoming/article/inakanomado/top.jpg", alt: ""}
     }
   }
 }

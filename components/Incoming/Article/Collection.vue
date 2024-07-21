@@ -142,17 +142,17 @@
       }
 
       .image-nec {
-        background-image: url("~@/assets/images/icx/article/nec/top.png");
+        background-image: url("~@/assets/images/incoming/article/nec/top.png");
         background-position: center center;
       }
 
       .image-inakanomado {
-        background-image: url("~@/assets/images/icx/article/inakanomado/top.jpg");
+        background-image: url("~@/assets/images/incoming/article/inakanomado/top.jpg");
         background-position: center center;
       }
 
       .image-wellnet {
-        background-image: url("~@/assets/images/icx/article/wellnet/top.png");
+        background-image: url("~@/assets/images/incoming/article/wellnet/top.png");
         background-position: center center;
       }
 

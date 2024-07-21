@@ -170,9 +170,9 @@ export default {
   data() {
     return {
         internship_photo1:
-          {src: "images/icx/article/wellnet/photo1.png", alt: ""},
+          {src: "images/incoming/article/wellnet/photo1.png", alt: ""},
         internship_photo3:
-          {src: "images/icx/article/wellnet/photo3.png", alt: ""}
+          {src: "images/incoming/article/wellnet/photo3.png", alt: ""}
     }
   }
 }

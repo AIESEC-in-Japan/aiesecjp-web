@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "TsukuGoPro";
+  src: url("~assets/font/TsukuGo Pro-B.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 h1, h2, h3, h4, h5, h6, p, span, a, button, li {
-  font-family: "Lato", "Yu Gothic Medium", yugothic, "Yu Gothic", sans-serif;
+  font-family: "TsukuGoPro", "Lato", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,59 +1,73 @@
 <template>
-  <v-carousel
-    :show-arrows="false"
-    class="main-view-container"
-    cycle
-    hide-delimiters
-    interval="10000"
-  >
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="require('~/assets/images/top/' + item.src)"
-    >
-      <div class="pattern" />
-      <!-- koma2 汚いけどいいやり方が思いつかなかった…Objectの中で渡せないのか… -->
-      <TopCarouselContent1st v-show="i === 0" />
-      <TopCarouselContent2nd v-show="i === 1" />
-      <TopCarouselContent3rd v-show="i === 2" />
-    </v-carousel-item>
-  </v-carousel>
+  <section>
+    <div class="kv-container">
+      <div class="kv-bg"></div>
+      <p class="kv-text">
+        きっと変わる。<br>
+        自分も、世界も。
+      </p>
+      <a class="latest-news"
+        :href="news_data[0].url"
+      >
+        <span>NEWS&nbsp;</span>
+        &nbsp;&nbsp;{{ `${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[2]}.${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[3]}`}}
+        &nbsp;&nbsp;{{ news_data[0].title }}
+      </a>
+    </div>
+  </section>
 </template>
 
-
 <script>
+import news from '@/assets/json/news.json'
+
 export default {
   data() {
     return {
-      items: [
-        {
-          src: 'top-1.jpg',
-        },
-        {
-          src: 'top-2.jpg',
-        },
-        {
-          src: 'top-3.jpg',
-        },
-      ],
+      count: 1,
+      news_data: news
     }
-  },
-}
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-.main-view-container {
-  height: 80vh;
+.kv-container{
+  position: relative;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: -5rem 0 10rem 0;
+}
+.kv-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/images/top/top-kv.png);
+  background-size: cover;
+  background-position: center;
+}
+.kv-text{
+  color: #fff;
+  font-size: 6rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 2.6rem;
 }
 
-.pattern {
-  width: 100%;
-  height: 90vh;
-  background: rgba(0, 0, 0, 0.6);
+.latest-news{
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 2rem;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 3rem;
+  right: 4.8rem;
+  text-decoration: none;
+  border: 1px #fff solid;
+  border-radius: 3rem;
+  background-color: rgba(63, 63, 63, 0.3);
+
+  span{
+    color: #5CB0FF;
+  }
 }
 
 </style>
-

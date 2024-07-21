@@ -8,7 +8,7 @@
         </div>
         <div class="example-member-info">
           <img
-            src="@/assets/images/icx/article/wellnet/member.png"
+            src="@/assets/images/incoming/article/wellnet/member.png"
             class="example-member-info-logo"
             alt="アイセック担当者の写真"
           >
@@ -75,7 +75,7 @@ export default {
   data() {
     return {
         internship_photo1:
-          {src: "images/icx/article/wellnet/photo2.png", alt: ""}
+          {src: "images/incoming/article/wellnet/photo2.png", alt: ""}
     }
   }
 }

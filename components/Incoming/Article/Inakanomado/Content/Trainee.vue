@@ -8,7 +8,7 @@
         </div>
         <div class="example-trainee-info">
           <img
-            src="@/assets/images/icx/article/inakanomado/trainee.png"
+            src="@/assets/images/incoming/article/inakanomado/trainee.png"
             class="example-trainee-info-logo"
             alt="インターン生の写真"
           >

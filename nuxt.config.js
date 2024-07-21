@@ -50,7 +50,14 @@ module.exports = {
   /*
   ** style-resources
   */
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/vuetify', '@nuxtjs/google-gtag', 'cookie-universal-nuxt'],
+  modules: [
+    '@nuxtjs/style-resources',
+    '@nuxtjs/vuetify',
+    '@nuxtjs/google-gtag',
+    ['@nuxtjs/google-analytics', {
+      id: 'G-0XWZPJW27L'}
+    ],
+  'cookie-universal-nuxt'],
   plugins: [
     './plugins/scroll.js',
     './plugins/windowSize.js',
