@@ -1,5 +1,5 @@
 <template>
-  <div class="news-container">
+  <div class="news-container"  id="news-top">
     <div class="news-contents">
       <p class="news-categorize-text">カテゴリ</p>
       <div class="news-categorize">
@@ -17,16 +17,16 @@
           />
       </div>
       <div class="pagination">
-        <a @click="goToPage(current_page - 1)" :disabled="current_page === 1">&lt;</a>
+        <a class="pagination-arrow" href=#news-top @click="goToPage(current_page - 1)" :class="{nonactive: current_page === 1}" :disabled="current_page === 1"><p>＜</p></a>
         <a class="pagination_item"
           v-for="page in pageNumbers"
           :key="page"
           @click="goToPage(page)"
           :class="{ active: current_page === page }"
         >
-          {{ page }}
+          <p>{{ page }}</p>
         </a>
-        <a @click="goToPage(current_page + 1)" :disabled="current_page === totalPages">&gt;</a>
+        <a class="pagination-arrow" @click="goToPage(current_page + 1)" :class="{nonactive: current_page === totalPages}" :disabled="current_page === totalPages"><p>＞</p></a>
       </div>
     </div>
   </div>
@@ -39,7 +39,6 @@ export default {
   data() {
     return {
       selected_category: 'all',
-      count: 6,
       news_data: news,
       current_page: 1,
       news_per_page: 8
@@ -89,7 +88,6 @@ export default {
       }
     }
   }
-
 };
 </script>
 
@@ -99,7 +97,8 @@ export default {
 
 .news-container {
   position: relative;
-  margin: 10rem 0 10rem 0;
+  margin: -8rem 0 10rem 0;
+  padding-top: 8rem;
   width: 100%;
   height: max-content;
 }
@@ -132,10 +131,10 @@ export default {
   margin: 1.6rem 0 0 0;
 
 &-text{
-  font-size: 1.6rem;
-  text-align: center;
-  margin: 0;
-}
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
+  }
 }
 .news-categorize-item{
   margin: 0.8rem 2rem 0.8rem 0;
@@ -160,9 +159,9 @@ export default {
   background-color: $blue;
   p{
     color: $white;
-
   }
 }
+
 .news-categorize-item p{ 
   color: $blue;
   margin: 0;
@@ -177,12 +176,58 @@ export default {
 }
 
 .pagination{
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 2rem 0;
   text-align: center;
+  align-items: center;
+  
+  &-arrow{
+    border-radius: 5rem;
+    border: 1px $dark-gray solid;
+    height: 40px;
+    width: 40px;
+    align-content: center;
+    text-decoration: none;
 
+    &:first-child{
+      margin-right: 1rem;
+    }
+    &:last-child{
+      margin-left: 1rem;
+    }
+    
+    p{
+      margin: 0 0 0.2rem 0;
+    }
+
+    &.nonactive{
+        display: none;
+      }
+  }
+
+  .pagination_item{
+    display: block;
+    border: 1px $dark-gray solid;
+    height: 30px;
+    width: 30px;
+    margin: 0 1rem;
+    align-content: center;
+    text-decoration: none;
+
+    p{
+      margin: 0 0 0.3rem 0;
+      font-size: 0.85rem;
+    }
+  }
   .pagination_item.active{
-    color: $blue;
+    background-color: $blue;
+    border: 1px $blue solid;
+
+    p{
+      color: white; 
+
+    }
 
   }  
 

@@ -7,14 +7,14 @@
       <h2 class="news-title-sub">新着情報</h2>
       <div class="news-wrapper">
         <div class="news-categorize">
-          <a class="news-categorize-item" v-on:click="filterNews('all')" :class="{ active: selectedCategory === 'all' }"><p>ALL</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selectedCategory === 'report' }"><p>活動報告</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selectedCategory === 'partner' }"><p>協賛活動</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selectedCategory === 'member' }"><p>メンバーの活動</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selectedCategory === 'others' }"><p>その他</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('all')" :class="{ active: selected_category === 'all' }"><p>ALL</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selected_category === 'report' }"><p>活動報告</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selected_category === 'partner' }"><p>協賛活動</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selected_category === 'member' }"><p>メンバーの活動</p></a>
+          <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selected_category === 'others' }"><p>その他</p></a>
           <div class="button-container">
             <p class="button-nextText">一覧を見る</p>
-            <a class="button" href="#"></a>
+            <a class="button" href="/news"></a>
           </div>
         </div>
         <div class="news-item-wrapper">
@@ -36,28 +36,24 @@ import news from '@/assets/json/news.json'
 export default {
   data() {
     return {
-      selectedCategory: 'all',
+      selected_category: 'all',
       count: 5,
       news_data: news
     }
   },
   computed: {
     filteredNews() {
-      
-      if (this.selectedCategory === 'all') {
+      if (this.selected_category === 'all') {
         return this.news_data;
       }
-      const filtered = this.news_data.filter(news => {return news.categorized === this.selectedCategory});
-      console.log(filtered); // デバッグ用にコンソールに出力
-      return filtered;
+      return this.news_data.filter(news => {return news.categorized === this.selected_category});
     }
   },
   methods: {
     filterNews: function(category) {
-      this.selectedCategory = category;
+      this.selected_category = category;
     }
   }
-
 };
 </script>
 

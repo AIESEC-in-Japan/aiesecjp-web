@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div>
     <div class="news-container">
       <div class="news-bg"></div>
       <div class="news-text">
@@ -7,7 +7,7 @@
       </div>
       <h2 class="news-text-sub">お知らせ</h2>
     </div>
-  </section>
+  </div>
 </template>
 
 
