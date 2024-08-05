@@ -7,7 +7,7 @@
         v-for="(item, index) in items"
         :key="index"
       >
-        <h3><a :href="item.link">{{ item.title }}</a></h3>
+        <h3><a :href="item.link" target="_blank">{{ item.title }}</a></h3>
       </div>
     </div>
 </template>
@@ -17,6 +17,14 @@
     data: () =>{
       return{
         items:[
+          {
+            title : '2023年度 貸借対照表', 
+            link : 'https://drive.google.com/file/d/1wn4lZ48LAStr7R-lOaiiv3IIuIHohgAF/view?usp=drive_link'
+          },
+          {
+            title : '2023年度 活動計算書',
+            link : 'https://drive.google.com/file/d/1Vp91YI-N6NcdYsVSzupheCYU8JpYPftd/view?usp=drive_link'
+          },
           {
             title : '2022年度 貸借対照表', 
             link : 'https://drive.google.com/file/d/1pW9Cf6oG9FixUv9q007-0RfRuNNIkcQi/view?usp=drive_link'
