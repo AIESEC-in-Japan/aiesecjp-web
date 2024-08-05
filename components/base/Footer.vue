@@ -171,6 +171,13 @@
     padding: 2rem 0;
     align-items: center;
     width: 100%;
+    
+
+    @include tab{
+      flex-direction: column;
+      padding: 2rem 0;
+
+    }
 
   }
   &-bg{
@@ -231,19 +238,31 @@
 }
 
 .footer-icon{
-  padding: 2rem;
-}
-.sns-container{}
-
-.logo-icon{}
-
-.logo{
   position: relative;
+  padding-right: 14px;
+
+  .sns-container{}
+
+  .logo-icon{}
+
+  .logo{
+    position: relative;
+    width: 18rem;
+    max-height: 5rem;
+
+    img{
+      width: 100%;
+      max-height: 100%;
+    }
+
+    @include tab{
+      width: 18rem;
+
+    }
+  }
 }
 
 
-.logo img{
-  width: 300px;
-  max-height: 60px;
-}
+
+
 </style>
