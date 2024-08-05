@@ -43,14 +43,19 @@ export default {
       openLogs: false,
       committeeLogs: [
         {
+          title: '令和六年度第一回海外安全管理委員会開催報告',
+          describe: '令和6年5月22日に海外安全管理委員会を開催いたしました。',
+          link: 'https://drive.google.com/file/d/1GKaLlrTc6zFi1QimJbKJ6uodw4DF3Aa6/view?usp=sharing'
+        },
+        {
           title: '令和五年度第二回海外安全管理委員会開催報告',
           describe: '令和5年11月15日に海外安全管理委員会を開催いたしました。',
-          link: 'https://drive.google.com/file/d/1xW2J5VdO0ybeq5kCaHNfhBis0NYGLByY/view?usp=drive_link'
+          link: 'https://drive.google.com/file/d/1xW2J5VdO0ybeq5kCaHNfhBis0NYGLByY/view?usp=sharing'
         },
         {
           title: '令和五年度第一回海外安全管理委員会開催報告',
           describe: '令和5年5月31日に海外安全管理委員会を開催いたしました。',
-          link: 'https://drive.google.com/file/d/1Q-xnmQZgP5tovvPPObw-FoFM0BQ7hCjD/view?usp=drive_link'
+          link: 'https://drive.google.com/file/d/1Q-xnmQZgP5tovvPPObw-FoFM0BQ7hCjD/view?usp=sharing'
         },
         {
           title: '令和四年度第二回海外安全管理委員会開催報告',
