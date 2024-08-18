@@ -1,67 +1,113 @@
 <template>
  <div class="download-container">
     <div class="download-contents">
-      <h3 class="download-title">協賛についてのご案内</h3>
-      <p class="download-title-description">以下のような機会をご用意しています。企業様に合わせて柔軟に機会をご提案させていただきますので、お気軽にお問い合わせください</p>
+      <h3 class="download-title">資料請求</h3>
+      <p class="download-title-description">
+        この度は、アイセックにご関心をお寄せいただき、誠にありがとうございます。<br>
+        資料のダウンロードをご希望の場合は、以下のフォームにご記入の上、送信してください。<br>
+        なお、<span> *</span>印が付いている項目は必須項目となりますので、必ずご記入ください。
+      </p>
       <!--入力修正メッセージ-->
-      <div id="message">
+      <div id="errorMessages" ref="errorMessages" class="errorMessages">
+        <p>※入力に不備があります。入力内容をご確認ください。</p>
       </div>
-      <form class="download-form">
+      <form class="download-form" id="form" @submit.prevent="handleSubmit" novalidate>
         <!--企業名/団体名-->
-        <div class="item">
+        <div class="item" id="item">
           <label class="question">企業名/団体名<span> *</span></label>
-          <input type="text" id="inputName" name="" class="input" placeholder="株式会社ABC" required>
+          <input type="text" v-model="form.companyName" :class="{ 'input-error': errors.companyName }" id="companyName" name="" class="input" placeholder="株式会社ABC" required>
+          <span class="errorMessage">{{ errors.companyName }}</span>
         </div>
         <!--お名前-->
         <div class="item">
           <label class="question">お名前<span> *</span></label>
-          <input type="text" name="" class="input" placeholder="山田 太郎" required>
+          <input type="text" v-model="form.name" :class="{ 'input-error': errors.name }"  id="name" name="" class="input" placeholder="山田 太郎" required>
+          <span class="errorMessage">{{ errors.name }}</span>
         </div>
         <!--お名前（フリガナ）-->
         <div class="item">
           <label class="question">お名前（フリガナ）<span> *</span></label>
-          <input type="text" name="" class="input" placeholder="ヤマダ タロウ" required>
+          <input type="text" v-model="form.kanaName" :class="{ 'input-error': errors.kanaName }"  name="" class="input" placeholder="ヤマダ タロウ" required>
+          <span class="errorMessage">{{ errors.kanaName }}</span>
+
+        </div>
+        <!--部門-->
+        <div class="item">
+          <label class="question">部門<span> *</span></label>
+          <select name="" v-model="form.department" :class="{ 'input-error': errors.department }"  class="input pull-down" required>
+            <option value="" class="default" selected disabled><p>選択してください</p></option>
+            <option value="営業部門"><p>営業部門</p></option>
+            <option value="マーケティング部門"><p>マーケティング部門</p></option>
+            <option value="人事部門"><p>人事部門</p></option>
+            <option value="総務部門"><p>総務部門</p></option>
+            <option value="経営企画部門"><p>経営企画部門</p></option>
+            <option value="IR部門"><p>IR部門</p></option>
+            <option value="その他"><p>その他</p></option>
+          </select>
+          <span class="errorMessage">{{ errors.department }}</span>
         </div>
         <!--役職-->
         <div class="item">
           <label class="question">役職<span> *</span></label>
-          <input type="text" name="" class="input" placeholder="プロダクトマネージャー" required>
+          <select name="" v-model="form.position" :class="{ 'input-error': errors.position }"  class="input pull-down" required>
+            <option value="" class="default" selected disabled><p>選択してください</p></option>
+            <option value="社長"><p>社長</p></option>
+            <option value="取締役"><p>取締役</p></option>
+            <option value="執行役員"><p>執行役員</p></option>
+            <option value="本部長"><p>本部長</p></option>
+            <option value="部長"><p>部長</p></option>
+            <option value="課長"><p>課長</p></option>
+            <option value="社員"><p>社員</p></option>
+          </select>
+          <span class="errorMessage">{{ errors.position }}</span>
         </div>
         <!--メールアドレス-->
         <div class="item">
           <label class="question">メールアドレス<span> *</span></label>
-          <input type="email" name="" class="input" placeholder="aiesec@gmail.jp" required>
+          <input type="email" v-model="form.email" :class="{ 'input-error': errors.email }"  name="" class="input" placeholder="aiesec@gmail.jp" required>
+          <span class="errorMessage">{{ errors.email }}</span>
         </div>
         <!--電話番号-->
         <div class="item">
           <label class="question">電話番号<span> *</span></label>
-          <input type="tel" name="" class="input" placeholder="012-3456-7890" required>
+          <input type="tel" v-model="form.phone" :class="{ 'input-error': errors.phone }"  name="" class="input" placeholder="012-3456-7890" required>
+          <span class="errorMessage">{{ errors.phone }}</span>
         </div>
         <!--興味を持ったきっかけ-->
         <div class="item">
           <label class="question">弊団体のインターンシップに興味を持たれたきっかけを教えてください。<span> *</span></label>
           <div class="radio-group">
-            <label><input type="radio" name="" value="インターネット" class="radio"><p>インターネット</p></label>
-            <label><input type="radio" name="" value="メールマガジン" class="radio"><p>メールマガジン</p></label>
-            <label><input type="radio" name="" value="プレスリリース" class="radio"><p>プレスリリース</p></label>
-            <label><input type="radio" name="" value="OBOG向けmonthly newsletter" class="radio"><p>OBOG向けmonthly newsletter</p></label>
-            <label><input type="radio" name="" value="OBOG向けFacebookグループ" class="radio"><p>OBOG向けFacebookグループ</p></label>
-            <label><input type="radio" name="" value="OBOG向け記念式典" class="radio"><p>OBOG向け記念式典</p></label>
+            <label><input type="radio" v-model="form.radio1" name="radio1" value="インターネット" class="radio"><p>インターネット</p></label>
+            <label><input type="radio" v-model="form.radio1" name="radio1" value="メールマガジン" class="radio"><p>メールマガジン</p></label>
+            <label><input type="radio" v-model="form.radio1" name="radio1" value="プレスリリース" class="radio"><p>プレスリリース</p></label>
+            <label><input type="radio" v-model="form.radio1" name="radio1" value="OBOG向けmonthly newsletter" class="radio"><p>OBOG向けmonthly newsletter</p></label>
+            <label><input type="radio" v-model="form.radio1" name="radio1" value="OBOG向けFacebookグループ" class="radio"><p>OBOG向けFacebookグループ</p></label>
+            <label><input type="radio" v-model="form.radio1" name="radio1" value="OBOG向け記念式典" class="radio"><p>OBOG向け記念式典</p></label>
           </div>
+          <span class="errorMessage">{{ errors.radio1 }}</span>
         </div>
         <!--回答者について-->
         <div class="item">
           <label class="question">弊団体のインターンシップに興味を持たれたきっかけを教えてください。<span> *</span></label>
           <div class="radio-group">
-            <label><input type="radio" name="" value="アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様" class="radio"><p>アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様</p></label>
-            <label><input type="radio" name="" value="アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様" class="radio"><p>アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様</p></label>
-            <label><input type="radio" name="" value="アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様</p></label>
-            <label><input type="radio" name="" value="アイセックを介してインターンシップ生を受け入れた経験がある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験がある企業様</p></label>
-            <label><input type="radio" name="" value="アイセックOBOGの方" class="radio"><p>アイセックOBOGの方</p></label>
+            <label><input type="radio" v-model="form.radio2" name="radio2" value="アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様" class="radio"><p>アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様</p></label>
+            <label><input type="radio" v-model="form.radio2" name="radio2" value="アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様" class="radio"><p>アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様</p></label>
+            <label><input type="radio" v-model="form.radio2" name="radio2" value="アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様</p></label>
+            <label><input type="radio" v-model="form.radio2" name="radio2" value="アイセックを介してインターンシップ生を受け入れた経験がある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験がある企業様</p></label>
+            <label><input type="radio" v-model="form.radio2" name="radio2" value="アイセックOBOGの方" class="radio"><p>アイセックOBOGの方</p></label>
           </div>
+          <span class="errorMessage">{{ errors.radio2 }}</span>
         </div>
         <div class="item">
-          <input type="submit" id="btnSubmit" value="送信する" class="out">
+          <label class="question">プライバシーポリシーについて<span> *</span></label>
+          <div class="check-group">
+            <input type="checkbox" v-model="form.agree" id="agree" class="checkbox">
+            <p>同意する</p>
+          </div>
+          <span class="errorMessage">{{ errors.agree }}</span>
+        </div>
+        <div class="item">
+          <button type="submit" id="btnSubmit" value="送信する" class="out">送信する&nbsp;&nbsp;&nbsp;&nbsp;</button>
         </div>
       </form>
     </div>
@@ -69,6 +115,91 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      form: {
+        companyName: '',
+        name: '',
+        kanaName: '',
+        department: '',
+        position: '',
+        email: '',
+        phone: '',
+        radio1:'',
+        radio2:'',
+        agree: false,
+      },
+      errors: {}
+    };
+  },
+  methods: {
+    validateForm() {
+      this.errors = {};
+
+      if (!this.form.companyName) {
+        this.errors.companyName = '企業名/団体名を入力してください。';
+      }
+      if (!this.form.name) {
+        this.errors.name = 'お名前を入力してください。';
+      }
+      if (!this.form.kanaName) {
+        this.errors.kanaName = 'お名前（フリガナ）を入力してください。';
+      }
+      if (!this.form.department) {
+        this.errors.department = '部門を選択してください。';
+      }
+      if (!this.form.position) {
+        this.errors.position = '役職を選択してください。';
+      }
+      if (!this.form.email) {
+        this.errors.email = 'メールアドレスを入力してください。';
+      } else if (!this.isValidEmail(this.form.email)) {
+        this.errors.email = '正しいメールアドレスを入力してください。';
+      }
+      if (!this.form.phone) {
+        this.errors.phone = '電話番号を入力してください。';
+      } else if (!this.isValidPhone(this.form.phone)) {
+        this.errors.phone = '正しい電話番号を入力してください。';
+      }
+      if(!this.form.radio1){
+        this.errors.radio1 = '回答を選択してください。';
+      }
+      if(!this.form.radio2){
+        this.errors.radio2 = '回答を選択してください。';
+      }
+      if (!this.form.agree) {
+        this.errors.agree = 'プライバシーポリシーへの同意は必須です。';
+      }
+
+      return Object.keys(this.errors).length === 0;
+    },
+    isValidEmail(email) {
+      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      return emailPattern.test(email);
+    },
+    isValidPhone(phone) {
+      const phonePattern = /^\d{2,4}-\d{3,4}-\d{4}$/;
+      return phonePattern.test(phone);
+    },
+    handleSubmit() {
+      if (this.validateForm()) {
+        this.$router.push('/download/completed');
+      }
+      else if(Object.keys(this.errors).length > 0) {        
+        const elementId = 'errorMessages';
+        const element = this.$refs[elementId]
+        element.classList.add('active');//エラーメッセージ表示
+        const rect = element.getBoundingClientRect();
+          window.scrollTo({
+          top: window.scrollY + rect.top -200, // 10px上に調整
+          behavior: 'smooth' // スムーズスクロール
+        });
+
+      } 
+    }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -92,8 +223,30 @@
 
       &-description{
         font-size: 1rem;
+        text-align: center;
+
+        span{
+          color: $red;
+        }
       }
     }
+
+    .errorMessages{
+      width: 60%;
+      p{
+        display: none;
+       }
+    }
+    .active{
+      p{
+        text-align: center;
+        display: block;
+        color: $red;
+        font-size: 1rem;
+        margin-top: 2rem;
+      }
+    }
+
 
     .download-form{
       position: relative;
@@ -108,19 +261,25 @@
         margin-bottom: 2rem;
         text-align: center;
 
-
         .question{
           font-size: 1rem;
           display: block;
           width: 100%;
           margin-bottom: 1rem;
           text-align:left;
+          color: $dark-gray;
 
           span{
             color: $red;
           }
   
         }
+        .errorMessage {
+            display: block;
+            color: $red;
+            font-size: 0.9rem;
+            text-align: left;
+          }
         .input{
           font: $TsukuGoPro;
           width: 100%;
@@ -130,6 +289,32 @@
           box-sizing: border-box;
           margin: 0.5em 0;
           align-items: center;
+          color: $dark-gray;
+          border-radius:0.3rem;
+          &::placeholder{
+            color: $gray;
+          }
+          &:focus{
+            outline-color: $blue;
+          }
+        }
+        .input-error {
+          border:solid 1.5px $red;
+          background-color: #FDF0ED;
+        }
+        .pull-down{
+          background-image: url(../../assets/images/download/arrow_down.svg);
+          background-position: right 20px center;
+          background-repeat: no-repeat;
+          background-size: 18px 18px;
+          .default{
+            color: $gray;//プルダウン表示時の初期値
+            }
+          option{
+            p{
+              color: $dark-gray;    
+            }           
+          }
         }
         .radio-group{
           padding: 5px 0px 5px 0px;
@@ -141,13 +326,15 @@
             margin-bottom: 0.9rem;
             
             .radio{
-              appearance: none; /* デフォルトのスタイルを消す */
-              border: 1.8px solid $gray; /* 枠線 */
-              border-radius: 50%; /* 枠線を円にする */
-              height: 18px; /* ボタンの高さ */
-              margin: 0; /* デフォルトのmarginを消す */
+              // appearance: none;
+              border: 1.8px solid $gray;
+              border-radius: 50%;
+              height: 18px;
+              margin: 0;
               position: relative;
-              width: 18px; /* ボタンの幅 */
+              width: 18px;
+              cursor: pointer;
+              top: 2px;
 
               &::before {
                 background-color: $blue;
@@ -175,15 +362,69 @@
           }
         }
 
+        .check-group{
+          display: flex;
+          .checkbox{
+              appearance: none;
+              border: 1.8px solid $gray;
+              border-radius: 5%;
+              height: 18px;
+              margin: 0;
+              position: relative;
+              width: 18px;
+              cursor: pointer;
+              top: 2px;
+
+              &:checked{
+                background-image: url(../../assets/images/download/checked_box.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                border: none;
+              }
+          }
+          p{
+            margin-bottom: 0;
+            margin-left: 10px;
+          }
+        }
+
         .out{
-          width: 18rem;
-          height: 4rem;
-          margin-top: 1rem;
-          background-color: $dark-gray;
           color: white;
+          display: inline-block;
+          position: relative;
+          background-color: $blue;
+          width: 24rem;
+          height: 5.4rem;
+          padding: auto;
+          margin-top: 1rem;
+          border-radius: 5rem;
+          border: 2px solid $blue;
+          box-shadow:  0 0 24.5px rgba(3, 126, 243,0.22);
+          transition: all 0.3s ease 0s;
+          font-size: 1.1rem;
+
+          &:hover{
+            transition-duration: .3s;
+            transform: scale(1.04);
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            margin: auto;
+            top: 3px;
+            bottom: 0;
+            right: 38%;
+            width: 10px;
+            height: 10px;
+            border-top: 1.5px solid #fff;
+            border-right: 1.5px solid #fff;
+            transform: rotate(45deg);
+          }
 
         }
       }
+      
 
     }
   }

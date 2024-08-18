@@ -1,11 +1,11 @@
-import Detail from './Detail.vue';
+import Completed from './Completed.vue';
 
 export default {
-  title: 'components/download/Detail',
-  component: Detail,
+  title: 'components/download/Completed',
+  component: Completed,
 };
 
-export const DetailStory = () => ({
-  components: {Detail},
-  template: '<Detail />',
+export const CompletedStory = () => ({
+  components: {Completed},
+  template: '<Completed />',
 });
