@@ -11,7 +11,7 @@
       <div id="errorMessages" ref="errorMessages" class="errorMessages">
         <p>※入力に不備があります。入力内容をご確認ください。</p>
       </div>
-      <form class="download-form" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScViI6Ctm_K4FmRwE3vI0IPrcvmTR9vJXI9RCaxdGW5k4GjmQ/formResponse" @submit.prevent="handleSubmit" method="post" target="_self" novalidate>
+      <form class="download-form" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScViI6Ctm_K4FmRwE3vI0IPrcvmTR9vJXI9RCaxdGW5k4GjmQ/formResponse" @submit.prevent="handleSubmit" method="post" novalidate>
         <!--企業名/団体名-->
         <div class="item" id="item">
           <label class="question">企業名/団体名<span> *</span></label>
@@ -187,7 +187,6 @@ export default {
     async handleSubmit() {
       if (this.validateForm()) {
         const form = document.getElementById("form");
-        console.log(form)
         // try {
 
           // const formFields = new FormData();
@@ -215,10 +214,11 @@ export default {
               "Content-Type": "application/x-www-form-urlencoded",
             }
           }).then(() => {
+            //ダウンロード完了画面に遷移
+            // this.$router.push('/download/completed');
+            window.location.href = '/download/completed';
             // フォーム送信後にPDFをダウンロード
             this.downloadPDF();
-            //ダウンロード完了画面に遷移
-            this.$router.push('/download/completed');
             this.form = {  // フォームを初期化
               companyName: '',
               name: '',
