@@ -133,7 +133,18 @@ export default {
         radio2:'',
         agree: false,
       },
-      errors: {},
+      errors: {
+        companyName: '',
+        name: '',
+        kanaName: '',
+        department: '',
+        position: '',
+        email: '',
+        phone: '',
+        radio1:'',
+        radio2:'',
+        agree: ''
+      },
       googleFormUrl: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScViI6Ctm_K4FmRwE3vI0IPrcvmTR9vJXI9RCaxdGW5k4GjmQ/formResponse',
     };
   },
