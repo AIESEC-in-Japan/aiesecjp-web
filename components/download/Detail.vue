@@ -11,7 +11,7 @@
       <div id="errorMessages" ref="errorMessages" class="errorMessages">
         <p>※入力に不備があります。入力内容をご確認ください。</p>
       </div>
-      <form v-on:submit.prevent="handleSubmit" class="download-form" id="form" novalidate>
+      <form @submit.prevent="handleSubmit" class="download-form" id="form" novalidate>
         <!--Enterで送信されるのを防ぐ-->
         <button type="submit" disabled style="display: none;"></button>
         <!--企業名/団体名-->
@@ -138,6 +138,14 @@ export default {
     };
   },
   methods: {
+    isValidEmail(email) {
+      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      return emailPattern.test(email);
+    },
+    isValidPhone(phone) {
+      const phonePattern = /^\d{2,4}-\d{3,4}-\d{4}$/;
+      return phonePattern.test(phone);
+    },
     validateForm() {
       console.log("validation始めます。")
       this.errors = {};
@@ -179,13 +187,20 @@ export default {
 
       return Object.keys(this.errors).length === 0;
     },
-    isValidEmail(email) {
-      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-      return emailPattern.test(email);
+    provideUrlEncodedFormData(form) {
+      const formData = new FormData(form);
+      const formDataObject = {};
+
+      for (const [key, value] of formData.entries()) {
+        formDataObject[key] = value;
+      }
+      return new URLSearchParams(Object.fromEntries(formData.entries())).toString();
     },
-    isValidPhone(phone) {
-      const phonePattern = /^\d{2,4}-\d{3,4}-\d{4}$/;
-      return phonePattern.test(phone);
+    downloadPDF() {
+      const link = document.createElement('a');
+      link.href = '/pdf/test_sales_doc.pdf'; // PDFファイルのパス
+      link.download = 'test_ICX資料.pdf';  // ダウンロードされるファイル名
+      link.click();
     },
     async handleSubmit() {
       if (this.validateForm()) {
@@ -232,21 +247,6 @@ export default {
         });
 
       } 
-    },
-    provideUrlEncodedFormData(form) {
-      const formData = new FormData(form);
-      const formDataObject = {};
-
-      for (const [key, value] of formData.entries()) {
-        formDataObject[key] = value;
-      }
-      return new URLSearchParams(Object.fromEntries(formData.entries())).toString();
-    },
-    downloadPDF() {
-      const link = document.createElement('a');
-      link.href = '/pdf/test_sales_doc.pdf'; // PDFファイルのパス
-      link.download = 'test_ICX資料.pdf';  // ダウンロードされるファイル名
-      link.click();
     }
   }
 };
