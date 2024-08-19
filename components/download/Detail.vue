@@ -11,7 +11,7 @@
       <div id="errorMessages" ref="errorMessages" class="errorMessages">
         <p>※入力に不備があります。入力内容をご確認ください。</p>
       </div>
-      <form class="download-form" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScViI6Ctm_K4FmRwE3vI0IPrcvmTR9vJXI9RCaxdGW5k4GjmQ/formResponse" @submit.prevent="handleSubmit" method="post" novalidate>
+      <form class="download-form" id="form" @submit.prevent="handleSubmit" novalidate>
         <!--企業名/団体名-->
         <div class="item" id="item">
           <label class="question">企業名/団体名<span> *</span></label>
@@ -186,56 +186,37 @@ export default {
     },
     async handleSubmit() {
       if (this.validateForm()) {
-        const form = document.getElementById("form");
-        // try {
-
-          // const formFields = new FormData();
-          // formFields.append('entry.448556317', this.form.companyName); // Googleフォームで生成されるエントリーID
-          // formFields.append('entry.2031729231', this.form.name);
-          // formFields.append('entry.102832780', this.form.kanaName);
-          // formFields.append('entry.1481233185', this.form.department);
-          // formFields.append('entry.1939228692', this.form.position);
-          // formFields.append('entry.866706725', this.form.email);
-          // formFields.append('entry.1589753976', this.form.phone);
-          // formFields.append('entry.930982233', this.form.radio1);
-          // formFields.append('entry.872960953', this.form.radio2);
-          // formFields.append('entry.1484907787', this.form.agree ? '同意する' : '同意しない');
-          // console.log('FormData:');
-          // for (let [key, value] of formFields.entries()) {
-          //   console.log(`${key}: ${value}`);
-          // }        
+        const form = document.getElementById("form");   
           
-          await fetch(this.googleFormUrl, {
-            method: 'POST',
-            body: this.provideUrlEncodedFormData(form),//formFields
-            // body: formFields,
-            mode: 'no-cors',
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            }
-          }).then(() => {
-            //ダウンロード完了画面に遷移
-            // this.$router.push('/download/completed');
-            window.location.href = '/download/completed';
-            // フォーム送信後にPDFをダウンロード
-            this.downloadPDF();
-            this.form = {  // フォームを初期化
-              companyName: '',
-              name: '',
-              kanaName: '',
-              department: '',
-              position: '',
-              email: '',
-              phone: '',
-              radio1: '',
-              radio2: '',
-              agree: false,
-            };
-          }).catch (error => {
-            console.error('送信エラー:', error);
-            alert('送信に失敗しました。');
-          });
-        // }
+        await fetch(this.googleFormUrl, {
+          method: 'POST',
+          body: this.provideUrlEncodedFormData(form),
+          mode: 'no-cors',
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          }
+        }).then(() => {
+          //ダウンロード完了画面に遷移
+          // this.$router.push('/download/completed');
+          window.location.href = '/download/completed';
+          // フォーム送信後にPDFをダウンロード
+          this.downloadPDF();
+          this.form = {  // フォームを初期化
+            companyName: '',
+            name: '',
+            kanaName: '',
+            department: '',
+            position: '',
+            email: '',
+            phone: '',
+            radio1: '',
+            radio2: '',
+            agree: false,
+          };
+        }).catch (error => {
+          console.error('送信エラー:', error);
+          alert('送信に失敗しました。');
+        });
       }
       else if(Object.keys(this.errors).length > 0) {        
         const elementId = 'errorMessages';
@@ -249,8 +230,8 @@ export default {
 
       } 
     },
-    provideUrlEncodedFormData(form) {//formFields
-      const formData = new FormData(form);//formFields
+    provideUrlEncodedFormData(form) {
+      const formData = new FormData(form);
       const formDataObject = {};
 
       for (const [key, value] of formData.entries()) {
