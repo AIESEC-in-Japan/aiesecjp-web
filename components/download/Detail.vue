@@ -185,6 +185,8 @@ export default {
       return phonePattern.test(phone);
     },
     async handleSubmit() {
+       // フォーム送信を防ぐ処理
+      preventDefault();
       if (this.validateForm()) {
         const form = document.getElementById("form");   
           
