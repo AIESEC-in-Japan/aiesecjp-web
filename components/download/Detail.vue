@@ -11,7 +11,7 @@
       <div id="errorMessages" ref="errorMessages" class="errorMessages">
         <p>※入力に不備があります。入力内容をご確認ください。</p>
       </div>
-      <form class="download-form" id="form" @submit.prevent="handleSubmit" novalidate>
+      <form class="download-form" @submit.prevent="handleSubmit"  id="form" novalidate>
         <!--Enterで送信されるのを防ぐ-->
         <button type="submit" disabled style="display: none;"></button>
         <!--企業名/団体名-->
@@ -110,7 +110,7 @@
           <span class="errorMessage">{{ errors.agree }}</span>
         </div>
         <div class="item">
-          <button type="submit" id="btnSubmit" value="送信する" class="out">送信する&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <button type="submit" id="btnSubmit" class="out">送信する&nbsp;&nbsp;&nbsp;&nbsp;</button>
         </div>
       </form>
     </div>
@@ -139,6 +139,7 @@ export default {
   },
   methods: {
     validateForm() {
+      console.log("validation始めます。")
       this.errors = {};
 
       if (!this.form.companyName) {
