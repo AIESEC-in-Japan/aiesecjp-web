@@ -187,6 +187,11 @@ export default {
     async handleSubmit() {
       if (this.validateForm()) {
         try {
+          console.log(this.form.companyName);
+          console.log(this.form.name);
+          console.log(this.form.kanaName);
+          console.log(this.form.department);
+
           const formFields = new FormData();
           formFields.append('entry.448556317', this.form.companyName); // Googleフォームで生成されるエントリーID
           formFields.append('entry.2031729231', this.form.name);
