@@ -11,7 +11,7 @@
       <div id="errorMessages" ref="errorMessages" class="errorMessages">
         <p>※入力に不備があります。入力内容をご確認ください。</p>
       </div>
-      <form class="download-form" id="form" @submit.prevent="handleSubmit" novalidate>
+      <form class="download-form" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScViI6Ctm_K4FmRwE3vI0IPrcvmTR9vJXI9RCaxdGW5k4GjmQ/formResponse" method="POST" @submit.prevent="handleSubmit" target="hidden_iframe" novalidate>
         <!--企業名/団体名-->
         <div class="item" id="item">
           <label class="question">企業名/団体名<span> *</span></label>
@@ -173,9 +173,6 @@ export default {
       if (!this.form.agree) {
         this.errors.agree = 'プライバシーポリシーへの同意は必須です。';
       }
-      if (this.form.agree === true) {
-        this.form.agree = '同意する';
-      }
 
       return Object.keys(this.errors).length === 0;
     },
@@ -194,26 +191,29 @@ export default {
           formFields.append('entry.448556317', this.form.companyName); // Googleフォームで生成されるエントリーID
           formFields.append('entry.2031729231', this.form.name);
           formFields.append('entry.102832780', this.form.kanaName);
-          formFields.append('entry.866706725', this.form.department);
-          formFields.append('entry.1589753976', this.form.position);
-          formFields.append('entry.1481233185', this.form.email);
-          formFields.append('entry.1939228692', this.form.phone);
+          formFields.append('entry.1481233185', this.form.department);
+          formFields.append('entry.1939228692', this.form.position);
+          formFields.append('entry.866706725', this.form.email);
+          formFields.append('entry.1589753976', this.form.phone);
           formFields.append('entry.930982233', this.form.radio1);
           formFields.append('entry.872960953', this.form.radio2);
-          formFields.append('entry.1484907787', this.form.agree);
+          formFields.append('entry.1484907787', this.form.agree ? '同意する' : '同意しない');
           console.log('FormData:');
           for (let [key, value] of formFields.entries()) {
             console.log(`${key}: ${value}`);
-          }          
+          }        
 
           await fetch(this.googleFormUrl, {
             method: 'POST',
-            body: formFields,
-            mode: 'no-cors'
+            body: this.provideUrlEncodedFormData(formFields),
+            // body: formFields,
+            mode: 'no-cors',
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            }
           });
 
           this.$router.push('/download/completed');
-          alert('送信が完了しました！');
           this.form = {  // フォームを初期化
             companyName: '',
             name: '',
@@ -242,8 +242,17 @@ export default {
         });
 
       } 
+    },
+    provideUrlEncodedFormData(formFields) {
+      const formData = formFields;
+      const formDataObject = {};
+
+      for (const [key, value] of formData.entries()) {
+        formDataObject[key] = value;
+      }
+      return new URLSearchParams(Object.fromEntries(formData.entries())).toString();
     }
-  },
+  }
 };
 </script>
 
