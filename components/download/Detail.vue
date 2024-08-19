@@ -11,30 +11,30 @@
       <div id="errorMessages" ref="errorMessages" class="errorMessages">
         <p>※入力に不備があります。入力内容をご確認ください。</p>
       </div>
-      <form class="download-form" id="form" @submit.prevent="handleSubmit" novalidate>
+      <form class="download-form" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScViI6Ctm_K4FmRwE3vI0IPrcvmTR9vJXI9RCaxdGW5k4GjmQ/formResponse" @submit.prevent="handleSubmit" method="post" novalidate>
         <!--企業名/団体名-->
         <div class="item" id="item">
           <label class="question">企業名/団体名<span> *</span></label>
-          <input type="text" v-model="form.companyName" :class="{ 'input-error': errors.companyName }" id="companyName" class="input" placeholder="株式会社ABC" required>
+          <input type="text" name="entry.448556317" v-model="form.companyName" :class="{ 'input-error': errors.companyName }" id="companyName" class="input" placeholder="株式会社ABC" required>
           <span class="errorMessage">{{ errors.companyName }}</span>
         </div>
         <!--お名前-->
         <div class="item">
           <label class="question">お名前<span> *</span></label>
-          <input type="text" v-model="form.name" :class="{ 'input-error': errors.name }"  id="name" class="input" placeholder="山田 太郎" required>
+          <input type="text" name="entry.2031729231" v-model="form.name" :class="{ 'input-error': errors.name }"  id="name" class="input" placeholder="山田 太郎" required>
           <span class="errorMessage">{{ errors.name }}</span>
         </div>
         <!--お名前（フリガナ）-->
         <div class="item">
           <label class="question">お名前（フリガナ）<span> *</span></label>
-          <input type="text" v-model="form.kanaName" :class="{ 'input-error': errors.kanaName }" class="input" placeholder="ヤマダ タロウ" required>
+          <input type="text" name="entry.102832780" v-model="form.kanaName" :class="{ 'input-error': errors.kanaName }" class="input" placeholder="ヤマダ タロウ" required>
           <span class="errorMessage">{{ errors.kanaName }}</span>
 
         </div>
         <!--部門-->
         <div class="item">
           <label class="question">部門<span> *</span></label>
-          <select v-model="form.department" :class="{ 'input-error': errors.department }"  class="input pull-down" required>
+          <select name="entry.1481233185" v-model="form.department" :class="{ 'input-error': errors.department }"  class="input pull-down" required>
             <option value="" class="default" selected disabled><p>選択してください</p></option>
             <option value="営業部門"><p>営業部門</p></option>
             <option value="マーケティング部門"><p>マーケティング部門</p></option>
@@ -49,7 +49,7 @@
         <!--役職-->
         <div class="item">
           <label class="question">役職<span> *</span></label>
-          <select v-model="form.position" :class="{ 'input-error': errors.position }"  class="input pull-down" required>
+          <select name="entry.1939228692" v-model="form.position" :class="{ 'input-error': errors.position }"  class="input pull-down" required>
             <option value="" class="default" selected disabled><p>選択してください</p></option>
             <option value="社長"><p>社長</p></option>
             <option value="取締役"><p>取締役</p></option>
@@ -64,26 +64,26 @@
         <!--メールアドレス-->
         <div class="item">
           <label class="question">メールアドレス<span> *</span></label>
-          <input type="email" v-model="form.email" :class="{ 'input-error': errors.email }"  class="input" placeholder="aiesec@gmail.jp" required>
+          <input type="email" name="entry.866706725" v-model="form.email" :class="{ 'input-error': errors.email }"  class="input" placeholder="aiesec@gmail.jp" required>
           <span class="errorMessage">{{ errors.email }}</span>
         </div>
         <!--電話番号-->
         <div class="item">
           <label class="question">電話番号<span> *</span></label>
-          <input type="tel" v-model="form.phone" :class="{ 'input-error': errors.phone }"  class="input" placeholder="012-3456-7890" required>
+          <input type="tel" name="entry.1589753976" v-model="form.phone" :class="{ 'input-error': errors.phone }"  class="input" placeholder="012-3456-7890" required>
           <span class="errorMessage">{{ errors.phone }}</span>
         </div>
         <!--興味を持ったきっかけ-->
         <div class="item">
           <label class="question">弊団体に興味を持たれたきっかけを教えてください。<span> *</span></label>
           <div class="radio-group">
-            <label><input type="radio" v-model="form.radio1" value="インターネット" class="radio"><p>インターネット</p></label>
-            <label><input type="radio" v-model="form.radio1" value="メールマガジン" class="radio"><p>メールマガジン</p></label>
-            <label><input type="radio" v-model="form.radio1" value="プレスリリース" class="radio"><p>プレスリリース</p></label>
-            <label><input type="radio" v-model="form.radio1" value="OBOG向けmonthly newsletter" class="radio"><p>OBOG向けmonthly newsletter</p></label>
-            <label><input type="radio" v-model="form.radio1" value="OBOG向けFacebookグループ" class="radio"><p>OBOG向けFacebookグループ</p></label>
-            <label><input type="radio" v-model="form.radio1" value="OBOG向け記念式典" class="radio"><p>OBOG向け記念式典</p></label>
-            <label><input type="radio" v-model="form.radio1" value="所属メンバーからの口コミ" class="radio"><p>所属メンバーからの口コミ</p></label>
+            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="インターネット" class="radio"><p>インターネット</p></label>
+            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="メールマガジン" class="radio"><p>メールマガジン</p></label>
+            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="プレスリリース" class="radio"><p>プレスリリース</p></label>
+            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="OBOG向けmonthly newsletter" class="radio"><p>OBOG向けmonthly newsletter</p></label>
+            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="OBOG向けFacebookグループ" class="radio"><p>OBOG向けFacebookグループ</p></label>
+            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="OBOG向け記念式典" class="radio"><p>OBOG向け記念式典</p></label>
+            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="所属メンバーからの口コミ" class="radio"><p>所属メンバーからの口コミ</p></label>
           </div>
           <span class="errorMessage">{{ errors.radio1 }}</span>
         </div>
@@ -91,18 +91,18 @@
         <div class="item">
           <label class="question">以下の中で当てはまるものにチェックをつけてください。<span> *</span></label>
           <div class="radio-group">
-            <label><input type="radio" v-model="form.radio2" value="アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様" class="radio"><p>アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様</p></label>
-            <label><input type="radio" v-model="form.radio2" value="アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様" class="radio"><p>アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様</p></label>
-            <label><input type="radio" v-model="form.radio2" value="アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様</p></label>
-            <label><input type="radio" v-model="form.radio2" value="アイセックを介してインターンシップ生を受け入れた経験がある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験がある企業様</p></label>
-            <label><input type="radio" v-model="form.radio2" value="アイセックOBOGの方" class="radio"><p>アイセックOBOGの方</p></label>
+            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様" class="radio"><p>アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様</p></label>
+            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様" class="radio"><p>アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様</p></label>
+            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様</p></label>
+            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックを介してインターンシップ生を受け入れた経験がある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験がある企業様</p></label>
+            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックOBOGの方" class="radio"><p>アイセックOBOGの方</p></label>
           </div>
           <span class="errorMessage">{{ errors.radio2 }}</span>
         </div>
         <div class="item">
           <label class="question">プライバシーポリシーについて<span> *</span></label>
           <div class="check-group">
-            <input type="checkbox" v-model="form.agree"  value="同意する" id="agree" class="checkbox">
+            <input type="checkbox" name="entry.1484907787" v-model="form.agree"  value="同意する" id="agree" class="checkbox">
             <p>同意する</p>
           </div>
           <span class="errorMessage">{{ errors.agree }}</span>
@@ -186,31 +186,29 @@ export default {
     },
     async handleSubmit() {
       if (this.validateForm()) {
+        const form = document.getElementById("form");
+        console.log(form)
         try {
-          console.log(this.form.companyName);
-          console.log(this.form.name);
-          console.log(this.form.kanaName);
-          console.log(this.form.department);
 
-          const formFields = new FormData();
-          formFields.append('entry.448556317', this.form.companyName); // Googleフォームで生成されるエントリーID
-          formFields.append('entry.2031729231', this.form.name);
-          formFields.append('entry.102832780', this.form.kanaName);
-          formFields.append('entry.1481233185', this.form.department);
-          formFields.append('entry.1939228692', this.form.position);
-          formFields.append('entry.866706725', this.form.email);
-          formFields.append('entry.1589753976', this.form.phone);
-          formFields.append('entry.930982233', this.form.radio1);
-          formFields.append('entry.872960953', this.form.radio2);
-          formFields.append('entry.1484907787', this.form.agree ? '同意する' : '同意しない');
-          console.log('FormData:');
-          for (let [key, value] of formFields.entries()) {
-            console.log(`${key}: ${value}`);
-          }        
-
+          // const formFields = new FormData();
+          // formFields.append('entry.448556317', this.form.companyName); // Googleフォームで生成されるエントリーID
+          // formFields.append('entry.2031729231', this.form.name);
+          // formFields.append('entry.102832780', this.form.kanaName);
+          // formFields.append('entry.1481233185', this.form.department);
+          // formFields.append('entry.1939228692', this.form.position);
+          // formFields.append('entry.866706725', this.form.email);
+          // formFields.append('entry.1589753976', this.form.phone);
+          // formFields.append('entry.930982233', this.form.radio1);
+          // formFields.append('entry.872960953', this.form.radio2);
+          // formFields.append('entry.1484907787', this.form.agree ? '同意する' : '同意しない');
+          // console.log('FormData:');
+          // for (let [key, value] of formFields.entries()) {
+          //   console.log(`${key}: ${value}`);
+          // }        
+          
           await fetch(this.googleFormUrl, {
             method: 'POST',
-            body: this.provideUrlEncodedFormData(formFields),
+            body: this.provideUrlEncodedFormData(form),//formFields
             // body: formFields,
             mode: 'no-cors',
             headers: {
@@ -250,8 +248,8 @@ export default {
 
       } 
     },
-    provideUrlEncodedFormData(formFields) {
-      const formData = formFields;
+    provideUrlEncodedFormData(form) {//formFields
+      const formData = new FormData(form);//formFields
       const formDataObject = {};
 
       for (const [key, value] of formData.entries()) {
