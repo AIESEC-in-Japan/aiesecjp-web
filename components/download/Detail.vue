@@ -212,7 +212,9 @@ export default {
               "Content-Type": "application/x-www-form-urlencoded",
             }
           });
-
+          // フォーム送信後にPDFをダウンロード
+          this.downloadPDF();
+          //ダウンロード完了画面に遷移
           this.$router.push('/download/completed');
           this.form = {  // フォームを初期化
             companyName: '',
@@ -251,6 +253,12 @@ export default {
         formDataObject[key] = value;
       }
       return new URLSearchParams(Object.fromEntries(formData.entries())).toString();
+    },
+    downloadPDF() {
+      const link = document.createElement('a');
+      link.href = '/pdf/test_sales_doc.pdf'; // PDFファイルのパス
+      link.download = 'test_ICX資料.pdf';  // ダウンロードされるファイル名
+      link.click();
     }
   }
 };
