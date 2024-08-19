@@ -11,7 +11,7 @@
       <div id="errorMessages" ref="errorMessages" class="errorMessages">
         <p>※入力に不備があります。入力内容をご確認ください。</p>
       </div>
-      <form class="download-form" @submit.prevent="handleSubmit"  id="form" novalidate>
+      <form @submit.prevent="handleSubmit" class="download-form" id="form" novalidate>
         <!--Enterで送信されるのを防ぐ-->
         <button type="submit" disabled style="display: none;"></button>
         <!--企業名/団体名-->
@@ -187,11 +187,11 @@ export default {
       const phonePattern = /^\d{2,4}-\d{3,4}-\d{4}$/;
       return phonePattern.test(phone);
     },
-    handleSubmit() {
+    async handleSubmit() {
       if (this.validateForm()) {
         const form = document.getElementById("form");   
           
-        fetch(this.googleFormUrl, {
+        await fetch(this.googleFormUrl, {
           method: 'POST',
           body: this.provideUrlEncodedFormData(form),
           mode: 'no-cors',
