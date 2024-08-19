@@ -18,19 +18,19 @@
         <div class="item" id="item">
           <label class="question">企業名/団体名<span> *</span></label>
           <input type="text" name="entry.448556317" v-model="form.companyName" :class="{ 'input-error': errors.companyName }" id="companyName" class="input" placeholder="株式会社ABC" required>
-          <span class="errorMessage">{{ errors.companyName }}</span>
+          <!-- <span class="errorMessage">{{ errors.companyName }}</span> -->
         </div>
         <!--お名前-->
         <div class="item">
           <label class="question">お名前<span> *</span></label>
           <input type="text" name="entry.2031729231" v-model="form.name" :class="{ 'input-error': errors.name }"  id="name" class="input" placeholder="山田 太郎" required>
-          <span class="errorMessage">{{ errors.name }}</span>
+          <!-- <span class="errorMessage">{{ errors.name }}</span> -->
         </div>
         <!--お名前（フリガナ）-->
         <div class="item">
           <label class="question">お名前（フリガナ）<span> *</span></label>
           <input type="text" name="entry.102832780" v-model="form.kanaName" :class="{ 'input-error': errors.kanaName }" class="input" placeholder="ヤマダ タロウ" required>
-          <span class="errorMessage">{{ errors.kanaName }}</span>
+          <!-- <span class="errorMessage">{{ errors.kanaName }}</span> -->
 
         </div>
         <!--部門-->
@@ -46,7 +46,7 @@
             <option value="IR部門"><p>IR部門</p></option>
             <option value="その他"><p>その他</p></option>
           </select>
-          <span class="errorMessage">{{ errors.department }}</span>
+          <!-- <span class="errorMessage">{{ errors.department }}</span> -->
         </div>
         <!--役職-->
         <div class="item">
@@ -61,19 +61,19 @@
             <option value="課長"><p>課長</p></option>
             <option value="社員"><p>社員</p></option>
           </select>
-          <span class="errorMessage">{{ errors.position }}</span>
+          <!-- <span class="errorMessage">{{ errors.position }}</span> -->
         </div>
         <!--メールアドレス-->
         <div class="item">
           <label class="question">メールアドレス<span> *</span></label>
           <input type="email" name="entry.866706725" v-model="form.email" :class="{ 'input-error': errors.email }"  class="input" placeholder="aiesec@gmail.jp" required>
-          <span class="errorMessage">{{ errors.email }}</span>
+          <!-- <span class="errorMessage">{{ errors.email }}</span> -->
         </div>
         <!--電話番号-->
         <div class="item">
           <label class="question">電話番号<span> *</span></label>
           <input type="tel" name="entry.1589753976" v-model="form.phone" :class="{ 'input-error': errors.phone }"  class="input" placeholder="012-3456-7890" required>
-          <span class="errorMessage">{{ errors.phone }}</span>
+          <!-- <span class="errorMessage">{{ errors.phone }}</span> -->
         </div>
         <!--興味を持ったきっかけ-->
         <div class="item">
@@ -87,7 +87,7 @@
             <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="OBOG向け記念式典" class="radio"><p>OBOG向け記念式典</p></label>
             <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="所属メンバーからの口コミ" class="radio"><p>所属メンバーからの口コミ</p></label>
           </div>
-          <span class="errorMessage">{{ errors.radio1 }}</span>
+          <!-- <span class="errorMessage">{{ errors.radio1 }}</span> -->
         </div>
         <!--回答者について-->
         <div class="item">
@@ -99,7 +99,7 @@
             <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックを介してインターンシップ生を受け入れた経験がある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験がある企業様</p></label>
             <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックOBOGの方" class="radio"><p>アイセックOBOGの方</p></label>
           </div>
-          <span class="errorMessage">{{ errors.radio2 }}</span>
+          <!-- <span class="errorMessage">{{ errors.radio2 }}</span> -->
         </div>
         <div class="item">
           <label class="question">プライバシーポリシーについて<span> *</span></label>
@@ -107,7 +107,7 @@
             <input type="checkbox" name="entry.1484907787" v-model="form.agree"  value="同意する" id="agree" class="checkbox">
             <p>同意する</p>
           </div>
-          <span class="errorMessage">{{ errors.agree }}</span>
+          <!-- <span class="errorMessage">{{ errors.agree }}</span> -->
         </div>
         <div class="item">
           <button type="submit" id="btnSubmit" class="out">送信する&nbsp;&nbsp;&nbsp;&nbsp;</button>
