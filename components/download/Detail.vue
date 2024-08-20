@@ -218,7 +218,6 @@ export default {
         }).then(() => {
           //ダウンロード完了画面に遷移
           this.$router.push('/download/completed');
-          // window.location.href = '/download/completed';
           // フォーム送信後にPDFをダウンロード
           this.downloadPDF();
           this.form = {  // フォームを初期化
