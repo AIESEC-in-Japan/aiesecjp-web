@@ -1,4 +1,5 @@
 <template>
+<client-only>
  <div class="download-container">
     <div class="download-contents">
       <h3 class="download-title">資料請求</h3>
@@ -15,7 +16,7 @@
         <!--Enterで送信されるのを防ぐ-->
         <button type="submit" disabled style="display: none;"></button>
         <!--企業名/団体名-->
-        <div class="item" id="item">
+        <div class="item">
           <label class="question">企業名/団体名<span> *</span></label>
           <input type="text" name="entry.448556317" v-model="form.companyName" :class="{ 'input-error': errors.companyName }" id="companyName" class="input" placeholder="株式会社ABC" required>
           <span class="errorMessage" v-if="errors.companyName">{{ errors.companyName }}</span>
@@ -105,7 +106,7 @@
           <label class="question">プライバシーポリシーについて<span> *</span></label>
           <div class="check-group">
             <input type="checkbox" name="entry.1484907787" v-model="form.agree"  value="同意する" id="agree" class="checkbox">
-            <p>同意する</p>
+            <label>同意する</label>
           </div>
           <span class="errorMessage" v-if="errors.agree">{{ errors.agree }}</span>
         </div>
@@ -115,6 +116,7 @@
       </form>
     </div>
   </div>
+</client-only>
 </template>
 
 <script>
@@ -136,7 +138,7 @@ export default {
       errors:{},
       googleFormUrl: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScViI6Ctm_K4FmRwE3vI0IPrcvmTR9vJXI9RCaxdGW5k4GjmQ/formResponse',
     };
-  },
+  }, 
   methods: {
     isValidEmail(email) {
       const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -432,7 +434,7 @@ export default {
                 border: none;
               }
           }
-          p{
+          label{
             margin-bottom: 0;
             margin-left: 10px;
           }
