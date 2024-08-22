@@ -1,4 +1,4 @@
 <template>
-  <ContactUsForm />
+  <ContactAlumni />
 </template>
 

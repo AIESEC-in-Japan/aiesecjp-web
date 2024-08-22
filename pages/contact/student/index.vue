@@ -1,0 +1,4 @@
+<template>
+  <ContactStudent />
+</template>
+

@@ -1,7 +1,7 @@
 <template>
   <iframe
     class="google-form"
-    src="https://docs.google.com/forms/d/e/1FAIpQLSfn-kinSEaa8mTjjxsOaguAbIEL-W5eo1sLSexfC-RftIcYRQ/viewform?embedded=true"
+    src="https://docs.google.com/forms/d/e/1FAIpQLScDZVibtElUXdcMGRvdUhgvlLGSqGHTmkGRhAZUumBOIcR_4g/viewform"
   />
 </template>
 
@@ -10,7 +10,7 @@
 .google-form {
   border-width: 0;
   height: 100rem;
-  max-width: 40rem;
+  max-width: 50rem;
   width: 90%;
   margin: 7rem auto;
 

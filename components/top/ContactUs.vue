@@ -5,7 +5,7 @@
       <p class="contact-title">
         Contact Us
       </p>
-      <h2 class="contact-title-sub">お問合わせ</h2>
+      <h2 class="contact-title-sub">お問い合わせ</h2>
       <p class="contact-explain">
         お気軽にお問い合わせください。
       </p>
@@ -14,21 +14,21 @@
           <div class="contact-form-img"></div>
           <div class="button-container">
             <p class="button-nextText">学生の方</p>
-            <a class="button" href="#"></a>
+            <a class="button" href="/contact/student"></a>
           </div>
         </div>
         <div class="contact-form">
           <div class="contact-form-img"></div>
           <div class="button-container">
             <p class="button-nextText">企業の方</p>
-            <a class="button" href="#"></a>
+            <a class="button" href="/contact/company"></a>
           </div>
         </div>
         <div class="contact-form">
           <div class="contact-form-img"></div>
           <div class="button-container">
             <p class="button-nextText">卒業生の方</p>
-            <a class="button" href="#"></a>
+            <a class="button" href="/contact/alumni"></a>
           </div>
         </div>
       </div>
