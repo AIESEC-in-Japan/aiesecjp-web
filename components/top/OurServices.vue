@@ -18,8 +18,7 @@
               <div class="button-next-wrapper">
                 <p class="button-nextText">海外インターンシップ</p>
                 <p class="button-nextText-sub">
-                  社会課題を起点に作られたプロジェクトで今まで見<br>
-                  たことのない世界へ
+                  社会課題を起点に作られたプロジェクトで今まで見<br>たことのない世界へ
                 </p>
               </div>
               <a class="button" href="/outgoing"></a>
@@ -224,6 +223,7 @@
   position: absolute;
   bottom: 5%;
   left: 5%;
+  width: 90%;
 }
 .button-nextText{
   color: $white;
@@ -231,19 +231,25 @@
   font-size: 2rem;
   @media(max-width:680px){
     font-size: 1.25rem; 
+    margin-bottom: 0.4rem;
   }
 
 }
 .button-nextText-sub{
   color: $white;
   margin: 0;
-  max-width: 75%;
+  font-size: 1rem;
+  width:80%;
+
   @media(max-width:680px){
     font-size: 0.8rem;
     width: 65%;
     br{
       display: none;
     }
+  }
+  @include sp{
+    width: 80%;
   }
 }
 .button{
