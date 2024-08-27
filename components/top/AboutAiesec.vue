@@ -7,7 +7,7 @@
         About AIESEC
       </p>
       <h2 class="about-title-sub">AIESECについて</h2>
-      <p class="about-heading">Activating Youth<br> Leadership</p>
+      <p class="about-heading">Activating Youth <br>Leadership</p>
       <p class="about-explain">
         アイセックは、世界100以上の国と地域に支部を持ち、約30,000人の若者が<br>
         所属する非営利組織です。若者の異文化理解を促進することで、「平和で人々の<br>
@@ -28,6 +28,9 @@
   position: relative;
   margin: 8rem 0 10rem 0;
   width: 100%;
+  @include sp{
+    margin-top: 0;
+  }
 }
 
 
@@ -46,12 +49,15 @@
 .about-img{
   display: block;
   position: absolute;
-  width: 80vh;
-  height: 80vh;
+  width: 48vw;
+  height: 48vw;
+  max-width: 800px;
+  max-height: 800px;
   top: 8vh;
   right: 0;
   z-index: 20;
   background-image: url(@/assets/images/top/top-about.png);
+  opacity: 0.5;
   background-size: cover;
   border-radius: 0.8rem 0 0 0.8rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -62,6 +68,13 @@
   position: relative;
   margin: 0 5rem;
   z-index: 30;
+  @include sp{
+    margin: 0 2rem;
+  }
+  @media (min-width:1600px){
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 }
 .about-title{
   color: $blue;
@@ -74,6 +87,9 @@
     font-size: 1.35rem;
     margin-top: 0.8rem;
   }
+  @include sp{
+    padding-top: 0;
+  }
 }
   
 .about-heading{
@@ -82,6 +98,13 @@
   font-weight: bold;
   padding-top: 2rem;
   margin-bottom: 0;
+
+  @include sp{
+    font-size: 3.2rem;
+    br{
+      display: none;
+    }
+  }
 }
 
 .about-explain {
@@ -91,9 +114,15 @@
   max-width: 50rem;
   margin-bottom: 10%;
   
+  @media (max-width:730px){
+    br {
+      display: none;
+    }
+  }
   @include sp {
     max-width: 90%;
     text-align: left;
+    
   }
 }
 
