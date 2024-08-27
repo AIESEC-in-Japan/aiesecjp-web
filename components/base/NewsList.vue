@@ -41,6 +41,12 @@ export default {
   display: flex;
   border-bottom: 1px #B5BABF solid;  
   align-items: center;
+
+  @media(max-width: 580px){
+    display: grid;
+    grid-template-columns: repeat(3 ,auto);
+    padding: 1rem 0.5rem;
+  }
 }
 
 .news-list-date{
@@ -48,11 +54,22 @@ export default {
   margin: 0;
   flex-grow: 1;
   text-align: center;
+  @media(max-width: 580px){
+    grid-row: 1;
+    grid-column: 1;
+    text-align: start;
+  }
 }
 .news-list-category{
   margin: 0 2rem;
   text-align: center;
   flex-grow: 1;
+
+  @media(max-width: 580px){
+    grid-row: 1;
+    grid-column: 3;
+    margin-right: 0;
+  }
 }
 .news-list-category p{
   padding: 10px 16px;  
@@ -62,13 +79,22 @@ export default {
   text-align: center;
   font-size: 1rem;
   margin: 0;
+  @media(max-width: 580px){
+    padding: 4px 12px;  
+    width: fit-content;
+    margin-top: 1rem;
+  }
 }
 .news-list-title{
   color: $dark-gray;
   font-size: 1rem;
   flex-grow: 6;
   margin: 0;
-  text-decoration: none;
+  @media(max-width: 580px){
+    grid-row: 2;
+    grid-column: 1/ span 3;
+    margin-top: 0.2rem;
+  }
 }
 
 

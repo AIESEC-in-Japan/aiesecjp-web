@@ -68,7 +68,15 @@ export default {
 .news-contents{
   position: relative;
   margin: 0 5rem;
-  z-index: 30;
+  z-index: 30;  
+
+  @include sp{
+    margin: 0 2rem;
+  }
+  @media (min-width:1600px){
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 }
 
 .news-title{
@@ -88,11 +96,30 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
+
+  @include tab{
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .news-categorize{
   display: flex;
   flex-direction: column;
   margin: 4rem 0 0 0;
+  @include tab{
+    display: grid;
+    grid-template-columns: repeat(5 ,auto);
+    justify-content: center;
+    gap: 1rem;
+  }
+  @media (max-width:854px){
+    grid-template-columns: repeat(3 ,auto);
+    gap: 0.6rem;
+  }
+  @media (max-width:630px){
+    grid-template-columns: repeat(2 ,auto);
+    gap: 1rem;
+  }
 }
 .news-categorize-item{
   margin: 0.8rem 2rem 0.8rem 0;
@@ -104,6 +131,7 @@ export default {
   text-decoration: none;
   transition: all 0.3s ease 0s;
 
+
   &:hover{
     background-color: $blue;
     transition-duration: .3s;
@@ -112,11 +140,22 @@ export default {
 
     }
   }
+  @include tab{
+    margin: 0.8rem 0;
+    width: fit-content;
+  }
+  @media (max-width:854px){
+    margin: 0.8rem auto;
+  }
+  @include sp{
+    padding: 10px 26px;
+  }
 }
 .news-categorize-item p{ 
   color: $blue;
   margin: 0;
   font-size: 1rem;
+
 }
 
 .news-categorize-item.active{
@@ -132,12 +171,29 @@ export default {
   flex-direction: column;
   margin: 1rem 0 0 0;
   width: 76%;
+  
+  @include tab{
+    width: 100%;
+  }
 }
 
 
 .button-container{
   margin-top: 1.6rem;
   display: flex;
+  @include tab{
+    grid-row: 2;
+    grid-column: 1/ span 5;
+    justify-content: center;
+  }
+  @media (max-width:854px){
+    grid-row: 3;
+    grid-column: 1/ span 3;
+  }
+  @media (max-width:630px){
+    grid-row: 4;
+    grid-column: 1/ span 2;
+  }
 }
 .button-nextText{
   display: block;
