@@ -317,7 +317,7 @@
       color: $white;
 
       @include sp{
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
 
@@ -326,6 +326,9 @@
       color: $white;
       text-decoration: none;
       font-family: $YuGothic;
+      @include sp{
+        font-size: 0.735rem;
+      }
     }
 
   }
@@ -368,7 +371,11 @@
   font-size: 0.8rem;
   margin-top: 4rem;
   margin-bottom: 0;
-  font-family: $YuGothic;
+  font-family: $YuGothic, $TsukuGoPro;
+
+  @include sp{
+    font-size: 0.735rem;
+  }
 }
 
 
