@@ -37,7 +37,7 @@
     justify-content: center;
   }
   .partners-content {
-    margin: 3.5rem;
+    margin: 1.4rem;
     object-fit: contain;
   
     @include sp {

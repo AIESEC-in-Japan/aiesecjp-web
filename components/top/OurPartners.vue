@@ -25,6 +25,13 @@
   position: relative;
   margin: 0 5rem;
   z-index: 30;
+  @include sp{
+    margin: 0 2rem;
+  }
+  @media (min-width:1600px){
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 }
 
 .partners-title{

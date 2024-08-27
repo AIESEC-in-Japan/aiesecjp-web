@@ -265,7 +265,6 @@
   transition: all 0.3s ease 0s;  
 
   @media(max-width:680px){
-    border-radius: 10rem;
     width: 2.4rem;
     height: 2.4rem;
   }
@@ -282,8 +281,6 @@
   border-top: 1.8px solid $white;
   border-right: 1.8px solid $white;
   transform: rotate(45deg);
-  @media(max-width:680px){
-  }
 }
 
 </style>
