@@ -168,8 +168,8 @@
   position: relative;
   width: 42vw;
   height: 42vw;
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 700px;
+  max-height: 700px;
   border-radius: 0.8rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
