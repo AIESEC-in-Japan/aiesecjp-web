@@ -66,6 +66,13 @@
   position: relative;
   margin: 0 5rem;
   z-index: 30;
+  @include sp{
+    margin: 0 2rem;
+  }
+  @media (min-width:1600px){
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 }
 .contact-title{
   color: $blue;
@@ -73,6 +80,15 @@
   padding-top: 6rem;
   font-weight: bold;
   margin-bottom: 0;
+
+  @media (max-width: 690px) {
+    padding-top: 3rem;
+    font-size: 2rem;
+  }
+
+  @include sp{
+    font-size: 3.2rem;
+  }
 
   &-sub{
     font-size: 1.35rem;
@@ -90,12 +106,17 @@
   margin-top: 2.4rem;
   display: flex;
   justify-content: space-between;
+  
+  @include sp{
+    flex-direction: column;
+  }
 }
 
 .contact-form{
   position: relative;
   width: 32%;
-  height: 60vh;
+  height: 42vw;
+  max-height: 650px;
   transition: all 0.3s ease 0s;
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0.8);
@@ -111,6 +132,16 @@
       background-color: $blue;
     }
   }
+
+  @media (max-width: 690px) {
+    height: 30vw;
+  }
+
+  @include sp{
+    width: 85%;
+    height: 20vw;
+    margin: 0 auto 1rem auto;
+  }
 }
 
 .contact-form-img{
@@ -123,14 +154,21 @@
 
 .button-container{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+
+  @include sp{
+    flex-direction: row;
+    bottom:0;
+    text-align: center;
+    align-items: center;
+  }
 }
 .button-nextText{
   color: $white;
@@ -138,17 +176,30 @@
   font-size: 2rem;
   margin: 0 auto 2rem auto;
 
+  @media (max-width: 690px) {
+    font-size: 1.25rem;
+  }
+  @include sp{
+    margin-bottom: 0rem;;
+  }
+
 }
 .button{
   display: inline-block;
   position: relative;
   margin: 0 auto;
-  width: 72px;
-  height: 72px;
+  width: 6.4vw;
+  height: 6.4vw;
+  max-width: 100px;
+  max-height: 100px;
   border-radius: 5rem;
   border: 1.8px solid $white;
   box-shadow:  0 0 44.1px rgba(3, 126, 243, 0.22);
   transition: all 0.3s ease 0s;  
+  @include sp{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 .button::before {
   content: "";
@@ -156,9 +207,9 @@
   margin: auto;
   top: 0;
   bottom: 0;
-  left: 24px;
-  width: 14px;
-  height: 14px;
+  left: 30%;
+  width: 25%;
+  height: 25%;
   border-top: 1.8px solid $white;
   border-right: 1.8px solid $white;
   transform: rotate(45deg);
