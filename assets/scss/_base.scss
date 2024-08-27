@@ -22,9 +22,4 @@ p {
 
 section {
   max-height: max-content;
-
-
-  @include tab {
-    max-height: max-content;
-  }
 }
