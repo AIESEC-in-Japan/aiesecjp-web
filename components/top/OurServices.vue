@@ -122,6 +122,13 @@
   position: relative;
   margin: 0 5rem;
   z-index: 30;
+  @include sp{
+    margin: 0 2rem;
+  }
+  @media (min-width:1600px){
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 }
 .service-title{
   color: $blue;
@@ -150,12 +157,20 @@
   display: flex; 
   justify-content: space-between;
   margin-bottom: 2rem;
+
+  @include sp{
+    flex-direction: column;
+    gap: 1rem 0;
+    margin: 0 auto 2rem auto;
+  }
  
 }
 .service-item{
   position: relative;
-  width: 590px;
-  height: 580px;
+  width: 42vw;
+  height: 42vw;
+  max-width: 800px;
+  max-height: 800px;
   border-radius: 0.8rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
@@ -171,7 +186,30 @@
       background-color: $blue;
     }
   }
+  &:first-child{
+    margin-right: 1.4rem;
+  }
+  @include tab{
+    width: 38vw;
+    height: 38vw;
+  }
+  @media(max-width:680px){
+    width: 40vw;
+    height: 40vw;
+    &:first-child{
+    margin-right: 1rem;
+    }  
+  }
+  @include sp{
+    width: 76vw;
+    height: 38vw;
+    &:first-child{
+      margin-right: auto;
+    }
+    margin: 0 auto;
+  }
 }
+  
 
 .service-item-img{
   background-image: url(https://placehold.jp/580x500.png);
@@ -184,32 +222,47 @@
 
 .button-next-wrapper{
   position: absolute;
-  bottom: 24px;
-  left: 24px;
+  bottom: 5%;
+  left: 5%;
 }
 .button-nextText{
   color: $white;
   font-weight: bold;
   font-size: 2rem;
+  @media(max-width:680px){
+    font-size: 1.25rem; 
+  }
 
 }
 .button-nextText-sub{
   color: $white;
   margin: 0;
+  max-width: 75%;
+  @media(max-width:680px){
+    font-size: 0.8rem;
+    width: 65%;
+    br{
+      display: none;
+    }
+  }
 }
 .button{
   display: inline-block;
   position: absolute;
-  bottom: 24px;
-  right: 24px;
-  width: 72px;
-  height: 72px;
-  padding: auto;
-  margin-left: 16px;
+  bottom: 5%;
+  right: 5%;
+  width: 16%;
+  height: 16%;
   border-radius: 5rem;
   border: 1.8px solid $white;
   box-shadow:  0 0 44.1px rgba(3, 126, 243, 0.22);
   transition: all 0.3s ease 0s;  
+
+  @media(max-width:680px){
+    border-radius: 10rem;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 .button::before {
   content: "";
@@ -217,11 +270,14 @@
   margin: auto;
   top: 0;
   bottom: 0;
-  left: 24px;
-  width: 14px;
-  height: 14px;
+  left: 30%;
+  width: 25%;
+  height: 25%;
   border-top: 1.8px solid $white;
   border-right: 1.8px solid $white;
   transform: rotate(45deg);
+  @media(max-width:680px){
+  }
 }
+
 </style>
