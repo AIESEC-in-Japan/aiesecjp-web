@@ -32,7 +32,7 @@ td {
   border-bottom-style: solid;
   border-bottom-width: 0.03rem;
   border-bottom-color: $gray;
-  padding: 2.5rem 0;
+  padding: 2.4rem 0;
   font-size: 1rem;
 
   @include sp {
