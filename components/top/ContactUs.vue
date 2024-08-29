@@ -2,7 +2,7 @@
   <section class="contact-container">
     <div class="contact-bg"></div>
     <div class="contact-contents">
-      <p class="contact-title">
+      <p class="contact-title" id="contact">
         Contact Us
       </p>
       <h2 class="contact-title-sub">お問い合わせ</h2>
@@ -80,6 +80,8 @@
   padding-top: 6rem;
   font-weight: bold;
   margin-bottom: 0;
+  margin-top: -1rem;
+
 
   @media (max-width: 690px) {
     padding-top: 3rem;
