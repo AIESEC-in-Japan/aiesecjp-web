@@ -101,7 +101,7 @@ export default {
       font-size: 4.8rem;
       width: auto;
       bottom: 50%;
-      // margin-bottom: 1rem;
+      
     }
     .latest-news{
       position: relative;
@@ -110,6 +110,7 @@ export default {
       bottom: 6rem;
     }
   }
+  
 
   @include sp{
     .kv-text{
@@ -123,6 +124,12 @@ export default {
       padding: 0.8rem 1.6rem;
     }
 
+  }
+
+  @media(max-width:375px){
+    .kv-text{
+      font-size: 2.6rem;
+    }    
   }
 }
 
