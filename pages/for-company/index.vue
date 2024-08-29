@@ -2,7 +2,7 @@
   <div class="wrapper">
     <For-companyTop />
     <For-companyDetail />
-    <For-companyPartners />
+    <!-- <For-companyPartners /> -->
     <For-companyContact />
   </div>
 </template>
