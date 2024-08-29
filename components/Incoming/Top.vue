@@ -5,7 +5,6 @@
       <h2 class="incoming-text">
         海外インターンシップ受け入れ
       </h2>
-      <p class="incoming-text-sub">あああああああああああああああああああああああああ</p>
     </div>
   </section>
 </template>
