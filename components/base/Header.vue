@@ -458,6 +458,7 @@ export default {
       text-decoration: none;
       font-size: 0.94rem;
       letter-spacing: 0.6px;
+      color: $dark-gray;
 
       &:hover {
         opacity: 0.7;
@@ -471,23 +472,6 @@ export default {
   }
 }
 
-
-  .filter {
-    display: none;
-    content: '';
-
-    @media (max-width: 900px){
-      display: block;
-      position: absolute;
-      height: 100vh;
-      width: 100vw;
-      z-index: $headerDrawerBackGroundIndex;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.3);
-
-    }
-  }
 
 /* stylelint-disable */
 .lp {
