@@ -1,7 +1,7 @@
 <template>
-  <header
-    class="header-container"
-  >
+<client-only>
+  <header class="header-wrapper">
+  <div class="header-container">
     <nav>
       <div class="navigation-logo">
         <nuxt-link to="/">
@@ -12,11 +12,34 @@
         </nuxt-link>
       </div>
       <ul
-        v-show="!this.$isMobile() || drawer"
         class="navigation-list"
-        @click.stop="drawer = !drawer"
+        :class="{'is-show': isShow}"
+        @click.stop="drawer"
       >
-        <li
+      <li
+          class="navigation-item"
+          @mouseleave="mouseLeaveAction(index)"
+          @mouseover="mouseOverAction(index)"
+          v-for="(item, index) in navigationItems"
+          :key="index"
+        >
+          <Nuxt-link class="navigation-link" :to=item.link>
+            {{ item.title }}
+          </Nuxt-link>
+          <div v-show="(isShowNestedItems[index] && isActive)||  drawer"
+            class="navigation-nested"
+            :class="{'is-show': isShow, 'is-active': isActive}"
+            v-if="item.subItems">
+            <ul class="navigation-nested-list"> 
+              <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
+                <nuxt-link class="navigation-link" :to="subItem.link">
+                  {{ subItem.title }}
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- <li
           class="navigation-item"
           @mouseleave="mouseLeaveAction"
           @mouseover="mouseOverAction"
@@ -27,8 +50,8 @@
           >
             AIESECについて
           </nuxt-link>
-          <!-- <div
-            v-show="!this.$isMobile() ? isShowNestedItems : drawer"
+          <div
+            v-show="!this.isMobile() ? isShowNestedItems : drawer"
             class="navigation-nested"
           >
             <ul class="navigation-nested-list">
@@ -37,23 +60,7 @@
                   class="navigation-link"
                   to="/#"
                 >
-                  aaaaaaaaaaaaaaa
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/incoming"
-                >
-                  ミッション
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/safety"
-                >
-                  企業の方へ
+                  ビジョン・ミッション・バリュー
                 </nuxt-link>
               </li>
               <li class="navigation-nested-item">
@@ -61,32 +68,16 @@
                   class="navigation-link"
                   to="/#"
                 >
-                  団体概要
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  NEWS
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  お問い合わせ
+                  代表挨拶
                 </nuxt-link>
               </li>
             </ul>
-          </div> -->
+          </div>
         </li>
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/#"
+            to="/#student"
           >
             学生の方へ
           </nuxt-link>
@@ -94,18 +85,85 @@
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/#"
+            to="/#company"
           >
             企業の方へ
           </nuxt-link>
         </li>
-        <li class="navigation-item">
+        <li
+          class="navigation-item"
+          @mouseleave="mouseLeaveAction"
+          @mouseover="mouseOverAction"
+        >
           <nuxt-link
             class="navigation-link"
             to="/about"
           >
             団体概要
           </nuxt-link>
+          <div
+            v-show="!this.isMobile() ? isShowNestedItems : drawer"
+            class="navigation-nested"
+          >
+            <ul class="navigation-nested-list">
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  class="navigation-link"
+                  to="/#"
+                >
+                  役員・諮問一覧
+                </nuxt-link>
+              </li>
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  class="navigation-link"
+                  to="/incoming"
+                >
+                  団体情報
+                </nuxt-link>
+              </li>
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  class="navigation-link"
+                  to="/#"
+                >
+                  財務情報
+                </nuxt-link>
+              </li>
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  class="navigation-link"
+                  to="/#"
+                >
+                  コンプライアンス
+                </nuxt-link>
+              </li>
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  class="navigation-link"
+                  to="/#"
+                >
+                  コーポレートガバナンス
+                </nuxt-link>
+              </li>
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  class="navigation-link"
+                  to="/#"
+                >
+                  情報セキュリティ基本方針
+                </nuxt-link>
+              </li>
+              <li class="navigation-nested-item">
+                <nuxt-link
+                  class="navigation-link"
+                  to="/#"
+                >
+                  安全への取り組み
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="navigation-item">
           <nuxt-link
@@ -115,15 +173,15 @@
             NEWS
           </nuxt-link>
         </li>
-        <li class="navigation-item">|</li>
+        <li class="navigation-item hidden">|</li>
         <li class="navigation-item">
           <nuxt-link
             class="navigation-link"
-            to="/#"
+            to="/#contact"
           >
             お問い合わせ
           </nuxt-link>
-        </li>
+        </li> -->
         <!-- 外部リンク -->
         <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
           <div class="lp-button">
@@ -136,14 +194,9 @@
           </div>
         </li> -->
       </ul>
-      <div
-        v-show="this.$isMobile() && drawer"
-        class="filter"
-        @click.stop="drawer = false"
-      />
       <v-app-bar-nav-icon
-        v-show="this.$isMobile()"
         class="navigation-mobile-icon"
+        @click="isShowList"
         @click.stop="drawer = !drawer"
       >
         <v-icon v-if="drawer">
@@ -154,24 +207,74 @@
         </v-icon>
       </v-app-bar-nav-icon>
     </nav>
+  </div>
   </header>
+  </client-only>
 </template>
 
 <script>
+
 export default {
   data() {
-    return {
-      isShowNestedItems: false,
+    return { 
+      isShowNestedItems: [],
       drawer: false,
+      isShow: false,//ハンバーガー時のリスト以下の表示
+      isActive: false,//PCホバーの表示
+      navigationItems: [
+        {
+          title: "AIESECについて",
+          link: "",
+          subItems: [
+            { title: "AIESECについてトップ", link: "/#" },
+            { title: "ビジョン・ミッション・バリュー", link: "/#" },
+            { title: "代表挨拶", link: "/#" }
+          ]
+        },
+        {
+          title: "学生の方へ",
+          link: "/#student"
+        },
+        {
+          title: "企業の方へ",
+          link: "#company"
+        },
+        {
+          title: "団体概要",
+          link: "/about",
+          subItems: [
+            { title: "団体概要トップ", link: "/about" },
+            { title: "役員・諮問一覧", link: "/#" },
+            { title: "団体情報", link: "/incoming" }
+          ]
+        },
+        {
+          title: "NEWS",
+          link: "/news"
+        },
+        {
+          title: "お問い合わせ",
+          link: "/#contact"
+        }
+      ]
     }
   },
   methods: {
-    mouseOverAction() {
-      this.isShowNestedItems = true
+    beforeRouteUpdate(to, from, next) {
+            next()
+            this.hoge() // 表示用のデータを更新する処理
+        },
+    mouseOverAction(index) {
+      this.$set(this.isShowNestedItems, index, true); 
+      this.isActive = true; // クラスの追加
     },
-    mouseLeaveAction() {
-      this.isShowNestedItems = false
+    mouseLeaveAction(index) {
+      this.$set(this.isShowNestedItems, index, false);
+      this.isActive = false; // クラスの削除
     },
+    isShowList() {
+      this.isShow = !this.isShow; // クラスの追加・削除を切り替える
+    }
   }
 }
 
@@ -180,28 +283,39 @@ export default {
 <style lang="scss" scoped>
 /* stylelint-disable unit-disallowed-list */
 // ここは細かく指定したいので、許容
-.header-container {
+
+.header-wrapper{
   z-index: $headerIndex;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  width: 100vw;
+  padding: 1rem auto 0 auto;
+}
+.header-container {
   width: 90vw;
   height: 5rem;
   line-height: 5rem;
   padding: 0 5%;
-  margin: 1rem auto 0 auto;
+  margin: 1rem auto 0  auto;
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
   background-color: rgba(255, 255, 255, 0.66);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   border-radius: 3rem;
 
   .navigation {
+    position: relative;
     &-mobile {
       &-icon {
+        display: none;
         position: absolute;
-        right: 1rem;
-        top: 1.5rem;
+        right: 10vw;
+        top: 2.4rem;
+        @media (max-width: 900px){
+          display: block;
+          z-index: 99999;
+        }
       }
     }
 
@@ -210,18 +324,32 @@ export default {
       justify-content: flex-end;
       flex-wrap: wrap;
 
-      @include sp {
+      
+      @media (max-width: 900px){
+        display: none;
         z-index: $headerDrawerIndex;
         background-color: $white;
         flex-direction: column;
         position: absolute;
-        top: 4rem;
-        right: 0;
+        top: 0;
+        left: 0vw;
         transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
         line-height: 2.5rem;
         width: 100vw;
+        height: 100vh;
+        padding-top: 5rem;
+
+        .navigation-link{
+            color: $blue;
+        }
+
+        &.is-show{
+          display: block;       
+        }
       }
     }
+
+   
 
     &-item {
       margin-left: 3rem;
@@ -229,9 +357,13 @@ export default {
       align-items: center;
       margin-left: 2rem;
 
-      @include sp {
-        padding-right: 1rem;
-        border-top: $gray dashed 1px;
+      @media(max-width:1200px){
+        margin-left: 1.2rem;
+      }
+
+      @media (max-width: 900px){
+        padding:0.3rem 1rem 0.3rem 0;
+        border-top: $light-gray solid 0.8px;
         line-height: 2.5rem;
 
         &:first-child {
@@ -239,19 +371,37 @@ export default {
         }
       }
     }
+   
 
     &-nested {
+      display: none;
       position: absolute;
-      top: 5rem;
+      top: 6rem;
       padding: 1rem;
       background-color: $white;
-      box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+      border-top: $light-gray 0.3px solid;
+      border-radius: 0 0 1rem 1rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      
+      &.is-active{
+        display: block;
+      }
 
-      @include sp {
+      @media (max-width: 900px){
+        display: none;
         position: relative;
         top: 0;
         padding: 0.5rem;
         box-shadow: none;
+        border: none;
+        
+        .navigation-link{
+            color: $dark-gray;
+        }
+
+        &.is-show{
+          display: block;
+        }
       }
 
       &-list {
@@ -260,7 +410,7 @@ export default {
         flex-wrap: wrap;
 
 
-        @include sp {
+        @media (max-width: 900px){
           border-left: none;
           margin-top: 0;
         }
@@ -270,54 +420,74 @@ export default {
         padding: 0.5rem;
         list-style-type: none;
         line-height: 2rem;
+
+        @media (max-width: 900px){
+          padding-top: 0;
+        }
       }
     }
 
     &-logo {
       position: absolute;
-      top: 10px;
+      text-align: left;
       bottom: 0;
-      left: 24px;
-      width: 14vw;
-      align-items: center;
+      left: 7vw;
+      width: 14rem;
 
 
       img {
-        width:105%;
+        width:100%;
         max-height: 60px;
-
-        @include sp {
-          width: 40vw;
-        }
+        vertical-align: middle;
       }
+      
+      @media(max-width:1200px){
+        width: 12rem;
+      }
+
+      @include tab {
+        width: 10rem;
+      }
+      @include sp {
+          width: 10rem;
+        }
     }
 
     &-link {
-      color: black;
       font-weight: bold;
       text-decoration: none;
       font-size: 0.94rem;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.6px;
 
       &:hover {
         opacity: 0.7;
+      }
+
+      @include tab {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
       }
     }
   }
 }
 
-.filter {
-  content: '';
-  position: absolute;
-  height: calc(100vh - 80px);
-  width: 100vw;
-  z-index: $headerDrawerBackGroundIndex;
-  top: 80px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-}
+
+  .filter {
+    display: none;
+    content: '';
+
+    @media (max-width: 900px){
+      display: block;
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      z-index: $headerDrawerBackGroundIndex;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+
+    }
+  }
 
 /* stylelint-disable */
 .lp {
