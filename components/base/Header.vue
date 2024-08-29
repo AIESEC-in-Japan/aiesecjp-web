@@ -39,62 +39,8 @@
             </ul>
           </div>
         </li>
-        <!-- <li
-          class="navigation-item"
-          @mouseleave="mouseLeaveAction"
-          @mouseover="mouseOverAction"
-        >
-          <nuxt-link
-            class="navigation-link"
-            to=""
-          >
-            AIESECについて
-          </nuxt-link>
-          <div
-            v-show="!this.isMobile() ? isShowNestedItems : drawer"
-            class="navigation-nested"
-          >
-            <ul class="navigation-nested-list">
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  ビジョン・ミッション・バリュー
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  代表挨拶
-                </nuxt-link>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/#student"
-          >
-            学生の方へ
-          </nuxt-link>
-        </li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/#company"
-          >
-            企業の方へ
-          </nuxt-link>
-        </li>
-        <li
-          class="navigation-item"
-          @mouseleave="mouseLeaveAction"
-          @mouseover="mouseOverAction"
-        >
+        <!-- 
+        
           <nuxt-link
             class="navigation-link"
             to="/about"
@@ -233,11 +179,19 @@ export default {
         },
         {
           title: "学生の方へ",
-          link: "/#student"
+          link: "/#student",
+          subItems: [
+            { title: "海外インターンシップ", link: "/outgoing" },
+            { title: "global youth dialogue", link: "/global-youth-dialogue" }
+          ]
         },
         {
           title: "企業の方へ",
-          link: "#company"
+          link: "#company",
+          subItems: [
+            { title: "海外インターンシップ受け入れ", link: "/incoming" },
+            { title: "協賛について", link: "/for-company" }
+          ]
         },
         {
           title: "団体概要",
@@ -245,7 +199,12 @@ export default {
           subItems: [
             { title: "団体概要トップ", link: "/about" },
             { title: "役員・諮問一覧", link: "/#" },
-            { title: "団体情報", link: "/incoming" }
+            { title: "団体情報", link: "/#" },
+            { title: "財務情報", link: "/#" },
+            { title: "コンプライアンス", link: "/#" },
+            { title: "コーポレートガバナンス", link: "/#" },
+            { title: "情報セキュリティ基本方針", link: "/#" },
+            { title: "安全への取り組み", link: "/#" }
           ]
         },
         {
