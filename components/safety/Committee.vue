@@ -1,36 +1,38 @@
 <template>
   <div class="safety-container">
-    <h2>
-      海外安全管理委員会
-    </h2>
-    <p>
-      春期と秋期の年に2回、学生の海外への送り出しインターンシップ事業における安全管理体制を監査するための諮問委員会を開催しております。
-      以下の内容に関して団体外部の有識者や危機管理の専門家の方々より指摘、提言をいただいております。
-    </p>
-    <ul>
-      <li>安全管理制度の履行状況の監査</li>
-      <li>安全管理における改善</li>
-    </ul>
-
-    <div class="logs-wrapper">
-      <div
-        v-for="(item,i) in committeeLogs"
-        :key="i"
-        class="log"
-      >
-        <div v-show="i <= 5 || openLogs">
-          <h3>{{ item.title }}</h3>
-          <p>
-            {{ item.describe }}<span v-show="!!item.link">詳細な報告につきましては <a :href="item.link" target="_blank">こちら</a>をご覧ください。</span>
-          </p>
-        </div>
-        <v-btn
+    <div class="safety-content">
+      <h2 class="safety-content-title">
+        海外安全管理委員会
+      </h2>
+      <p>
+        春期と秋期の年に2回、学生の海外への送り出しインターンシップ事業における安全管理体制を監査するための諮問委員会を開催しております。
+        以下の内容に関して団体外部の有識者や危機管理の専門家の方々より指摘、提言をいただいております。
+      </p>
+      <ul>
+        <li>安全管理制度の履行状況の監査</li>
+        <li>安全管理における改善</li>
+      </ul>
+      
+      <div class="logs-wrapper">
+        <div
+          v-for="(item,i) in committeeLogs"
+          :key="i"
+          class="log"
+          >
+          <div v-show="i <= 5 || openLogs">
+            <h3>{{ item.title }}</h3>
+            <p>
+              {{ item.describe }}<span v-show="!!item.link">詳細な報告につきましては <a :href="item.link" target="_blank">こちら</a>をご覧ください。</span>
+            </p>
+          </div>
+          <v-btn
           v-show="i === 5"
           class="collapse-button"
           @click="openLogs = !openLogs"
-        >
-          過去の開催報告<span v-if="!openLogs">もみる</span><span v-else>を閉じる</span>
+          >
+          過去の開催報告<span v-if="!openLogs">も見る</span><span v-else>を閉じる</span>
         </v-btn>
+      </div>
       </div>
     </div>
   </div>
@@ -162,47 +164,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.safety-container {
-  max-width: 80%;
-  margin: 2rem auto;
-  padding-left: 7rem;
-
-  @include sp {
-    padding-left: 1rem;
+.safety{
+  &-container {
+    position: relative;
+    margin: 1rem 0 5rem 0;
+    width: 100vw;
+  
   }
-}
 
-h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: $mint;
-  margin-left: 1.5rem;
-  margin-bottom: 2rem;
+  &-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem 1rem 5rem;
 
-  @include sp {
-    margin-left: 0;
+    &-title {
+      font-size: 2rem;
+      color: $blue;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: circle;
+      margin-left: 1.5rem;
+    }
+    
+    li {
+      margin: 0.5rem auto;
+      color: $dark-gray;
+      list-style: disc
+    }
+    
+    p {
+      font-size: 1rem;
+      line-height: 2;
+    }
   }
+
 }
 
-ul {
-  list-style: circle;
-  margin-left: 1.5rem;
-}
 
-li {
-  margin: 0.5rem auto;
-  color: $dark-gray;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 2;
-}
 
 .logs-wrapper {
   margin-top: 2rem;
 
   h3 {
+    color: $blue;
+  }
+
+  a{
     color: $blue;
   }
 }
