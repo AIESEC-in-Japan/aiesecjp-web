@@ -1,7 +1,7 @@
 import Top from './Top.vue';
 
 export default {
-  title: 'components/privacy-/Top',
+  title: 'components/privacy-policy/Top',
   component: Top,
 };
 
