@@ -6,14 +6,14 @@
       </div>
       <div class="others-wrapper">
         <div class="service-item">
-          <div class="service-item-img"></div>
-            <p class="button-nextText">海外インターンシップ</p>
-            <a class="button" href="/outgoing"></a>
-        </div>
-        <div class="service-item">
-          <div class="service-item-img"></div>
+          <div class="service-item-img service-item-img-1"></div>
             <p class="button-nextText">global youth dialogue</p>
             <a class="button" href="/global-youth-dialogue"></a>
+        </div>
+        <div class="service-item">
+          <div class="service-item-img service-item-img-2"></div>
+            <p class="button-nextText">海外インターンシップ</p>
+            <a class="button" href="/outgoing"></a>
         </div>
       </div>
     </div>
@@ -81,13 +81,18 @@
   }
 
   &-img{
-    background-image: url(https://placehold.jp/580x340.png);
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
+    background-repeat: none;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+
+    &-1{
+      background-image: url(assets/images/global-youth-dialogue/GlobalYouthDialogueTop.png);
+    }
+    &-2{
+      background-image: url(assets/images/outgoing/outgoingTop.png);
+    }
     
   }
 

@@ -22,17 +22,20 @@
       .incoming-image{
         &:first-child{
           background-image: url(assets/images/incoming/incomingImages1.png);
-          background-position: center;
+          background-position: cover;
           background-size: cover;
-          width: 52rem;
-          height: 39rem;
+          background-repeat: none;
+
+          width: 64%;
+          height: 40rem;
         }
         &:last-child{
           background-image: url(assets/images/incoming/incomingImages2.png);
           background-position: center;
           background-size: cover;
-          width: 32.6rem;
-          height: 39rem;
+          background-repeat: none;
+          width: 30%;
+          height: 40rem;
 
         }
       }

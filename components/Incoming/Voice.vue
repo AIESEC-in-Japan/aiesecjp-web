@@ -9,28 +9,28 @@
       </div>
       <div class="voice-container">
         <div class="voice-item">
-          <div class="voice-img"></div>
+          <div class="voice-img voice-img-1"></div>
           <div class="voice-text">
             <p class="voice-title">
-              日常の業務では自分のタスクに集中するので、他者のことを考える余裕がなくなりがちです。しかし、インターン生を受け入れることで、社員以外の人にもケアをしないといけないということで、ホスピタリティを身につける良い機会になりました。
+              &nbsp;&nbsp;グローバル人材を育てたいという思いがある企業にとっては、社員の方たちが学ぶ機会になります。インターン生が来るまで、チュニジアという国に特に注目していませんでしたが、受け入れによって視点が広がり、気付きがありました。
             </p>
-            <p class="voice-name">ボサード株式会社様</p>
+            <p class="voice-name">株式会社システムズナカシマ様</p>
           </div>
         </div>
         <div class="voice-item">
-          <div class="voice-img"></div>
+          <div class="voice-img voice-img-2"></div>
           <div class="voice-text">
             <p class="voice-title">
-              日常の業務では自分のタスクに集中するので、他者のことを考える余裕がなくなりがちです。しかし、インターン生を受け入れることで、社員以外の人にもケアをしないといけないということで、ホスピタリティを身につける良い機会になりました。
+              &nbsp;&nbsp;インターン生が「海外に出て行く時に大事なのはcultural differenceをmanageすること」だと言っていました。海外事業を進めて行くうえで、また、日本で外国人労働者が増えている中で、海外人材と働くいい機会になり、新たな気付きを得ることができました。
             </p>
-            <p class="voice-name">ボサード株式会社様</p>
+            <p class="voice-name">ライフネット生命様</p>
           </div>
         </div>
         <div class="voice-item">
-          <div class="voice-img"></div>
+          <div class="voice-img voice-img-3"></div>
           <div class="voice-text">
             <p class="voice-title">
-              日常の業務では自分のタスクに集中するので、他者のことを考える余裕がなくなりがちです。しかし、インターン生を受け入れることで、社員以外の人にもケアをしないといけないということで、ホスピタリティを身につける良い機会になりました。
+              &nbsp;&nbsp;日常の業務では自分のタスクに集中するので、他者のことを考える余裕がなくなりがちです。しかし、インターン生を受け入れることで、社員以外の人にもケアをしないといけないということで、ホスピタリティを身につける良い機会になりました。
             </p>
             <p class="voice-name">ボサード株式会社様</p>
           </div>
@@ -93,12 +93,22 @@
           
 
           .voice-img{
-            background-image: url(assets/images/incoming/incomingVoice1.png);   
             background-position: center;
             background-size: cover;
+            background-repeat: none;
             width: 100%;
             height: 15rem;
             border-radius: 0.6rem 0.6rem 0 0;
+
+            &-1{
+              background-image: url(assets/images/incoming/incomingVoice1.png);   
+            }
+            &-2{
+              background-image: url(assets/images/incoming/incomingVoice2.png);   
+            }
+            &-3{
+              background-image: url(assets/images/incoming/incomingVoice3.png);   
+            }
           }
           .voice-text{
             padding: 1.4rem;
