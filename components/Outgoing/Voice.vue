@@ -8,70 +8,70 @@
         </div>
         <div class="button-container">
           <p class="button-nextText">noteを見る</p>
-          <a class="button" href="#" target="_blank"></a>
+          <a class="button" href="https://note.com/aiesec_japan/m/mf02965e1ff1e" target="_blank"></a>
         </div>
       </div>
       <div class="note-container">
-        <div class="note-item">
-          <div class="note-img"></div>
+        <a class="note-item" target="_blank">
+          <div class="note-img note-img-1"></div>
           <div class="note-text">
             <p class="note-title">
-              カンボジアで見つけた。自分を、世界を変える<br>
-              原点 - 海外インターンシップ体験記 -
+              毎日が刺激！カオスを原体験に。<br>
+              &nbsp;
             </p>
-            <p class="note-name">池田泰樹</p>
+            <p class="note-name">檜垣るか</p>
           </div>
-        </div>
-        <div class="note-item">
-          <div class="note-img"></div>
+        </a>
+        <a class="note-item" href="https://note.com/aiesec_japan/n/na582b6214096?sub_rt=share_pw"  target="_blank">
+          <div class="note-img note-img-2"></div>
           <div class="note-text">
             <p class="note-title">
-              カンボジアで見つけた。自分を、世界を変える<br>
-              原点 - 海外インターンシップ体験記 -
+              常識が通用しない環境で身に着いた<br>
+              柔軟性と、やり切る力。
             </p>
-            <p class="note-name">池田泰樹</p>
+            <p class="note-name">風間世那</p>
           </div>
-        </div>
-        <div class="note-item">
-          <div class="note-img"></div>
+        </a>
+        <a class="note-item" href="https://note.com/aiesec_japan/n/n8ad6436f2eb0?sub_rt=share_pw" target="_blank">
+          <div class="note-img note-img-3"></div>
           <div class="note-text">
             <p class="note-title">
-              カンボジアで見つけた。自分を、世界を変える<br>
-              原点 - 海外インターンシップ体験記 -
+              人生最大の挑戦を。<br>
+              現地の孤児院で学んだこと。
             </p>
-            <p class="note-name">池田泰樹</p>
+            <p class="note-name">浅野晴人</p>
           </div>
-        </div>
-        <div class="note-item">
-          <div class="note-img"></div>
+        </a>
+        <a class="note-item" href="https://note.com/aiesec_japan/n/n27814166d26f?sub_rt=share_pw" target="_blank">
+          <div class="note-img note-img-4"></div>
           <div class="note-text">
             <p class="note-title">
-              カンボジアで見つけた。自分を、世界を変える<br>
-              原点 - 海外インターンシップ体験記 -
+              自分の価値を測りにいく。<br>
+              飛び込んだカオスな世界。
             </p>
-            <p class="note-name">池田泰樹</p>
+            <p class="note-name">海老原桂介</p>
           </div>
-        </div>
-        <div class="note-item">
-          <div class="note-img"></div>
+        </a>
+        <a class="note-item" href="https://note.com/aiesec_japan/n/n54621f4f62f2?sub_rt=share_pw" target="_blank">
+          <div class="note-img note-img-5"></div>
           <div class="note-text">
             <p class="note-title">
-              カンボジアで見つけた。自分を、世界を変える<br>
-              原点 - 海外インターンシップ体験記 -
+              初めて向き合う。社会課題と現実。<br>
+              &nbsp;
             </p>
-            <p class="note-name">池田泰樹</p>
+            <p class="note-name">嶋津怜奈</p>
           </div>
-        </div>
-        <div class="note-item">
-          <div class="note-img"></div>
+        </a>
+        <a class="note-item" target="_blank">
+          <div class="note-img note-img-6"></div>
           <div class="note-text">
             <p class="note-title">
-              カンボジアで見つけた。自分を、世界を変える<br>
-              原点 - 海外インターンシップ体験記 -
+              自分で実際に体験したことだけが<br>
+              自分を形作っていく。
             </p>
-            <p class="note-name">池田泰樹</p>
+            <p class="note-name">西嶋駿</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -127,15 +127,34 @@
           box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
           margin-bottom: 3.5rem;
           border-radius: 0.6rem;
+          text-decoration: none;
           
 
           .note-img{
-            background-image: url(assets/images/outgoing/outgoingVoice1.png);
             background-position: center;
             background-size: cover;
             width: 100%;
             height: 15rem;
             border-radius: 0.6rem 0.6rem 0 0;
+
+            &-1{
+              background-image: url(assets/images/outgoing/outgoingVoice1.png);
+            }
+            &-2{
+              background-image: url(assets/images/outgoing/outgoingVoice2.png);
+            }
+            &-3{
+              background-image: url(assets/images/outgoing/outgoingVoice3.png);
+            }
+            &-4{
+              background-image: url(assets/images/outgoing/outgoingVoice4.png);
+            }
+            &-5{
+              background-image: url(assets/images/outgoing/outgoingVoice5.png);
+            }
+            &-6{
+              background-image: url(assets/images/outgoing/outgoingVoice6.png);
+            }
           }
           .note-text{
             padding: 0.9rem 0.9rem 0.6rem 0.9rem;
