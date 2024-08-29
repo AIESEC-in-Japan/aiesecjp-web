@@ -39,6 +39,24 @@
       >
         <h3><a :href="item.link">{{ item.title }}</a></h3>
       </div>
+      <h2 id="p5" class="aboutus-table-title">
+        コンプライアンス
+      </h2>
+      <p class="compliance">
+        アイセックでは、「コンプライアンス規程」を定め、組織・構成員法令及び社会規範の遵守を図っております。また、「コンプライアンス小委員会」を設け、各種制度の設計・改善施策の実施を行なっています。加えて、外部有識者を委員に含む「ハラスメント対策委員会・倫理小委員会等」も設け、内部通報や労務・ハラスメント対策の対応を行なっています。
+      </p>
+      <h2 id="p6" class="aboutus-table-title">
+        情報セキュリティ基本方針
+      </h2>
+      <p class="info-security">
+        アイセックは、関係者の皆様の個人情報を厳重に保護するために、以下のような取り組みを行っています。<br>
+        （1）個人情報保護規程の制定<br>
+        &nbsp;&nbsp;・アイセックは、個人情報保護規程を定め、それに基づいて関係者の方々の個人情報を取り扱います。<br>
+        （2）個人情報保護責任者の設置<br>
+        &nbsp;&nbsp;・個人情報保護責任者を任命し、全ての情報発信および情報保護が各種ガイドラインに準拠するよう管理しています。<br>
+        （3）定期的な内部監査の実施<br>
+        &nbsp;&nbsp;・内部監査機関による定期的な監査を実施し、情報セキュリティ対策の有効性を確認し、継続的な改善を図っています。
+      </p>
     </div>
   </div>
 </template>
@@ -51,7 +69,9 @@ export default {
         { href: "#p1", text: "01", nextText: "役員一覧" },
         { href: "#p2", text: "02", nextText: "諮問一覧" },
         { href: "#p3", text: "03", nextText: "団体情報" },
-        { href: "#p4", text: "04", nextText: "財務情報" }
+        { href: "#p4", text: "04", nextText: "財務情報" },
+        { href: "#p5", text: "05", nextText: "コンプライアンス" },
+        { href: "#p6", text: "06", nextText: "情報セキュリティ基本方針" }
       ],
       officers: [
         {
@@ -241,6 +261,7 @@ export default {
     padding-top: 9rem;
     margin-top: -7rem;
     margin-bottom: 3rem;
+    color: $dark-gray;
 
     .aboutus-table-title {
       font-size: 1.35rem;
@@ -253,6 +274,10 @@ export default {
         margin-top: -9rem;
         content: "";
       }
+
+    }
+    p{
+      line-height: 2;
 
     }
 
