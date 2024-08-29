@@ -11,7 +11,7 @@
       </p>
       <h2 class="service-title-sub">私たちの事業</h2>
       <div class="service-target-container">
-        <h3 class="service-target-title">学生の方へ</h3>
+        <h3 class="service-target-title" id="student">学生の方へ</h3>
         <div class="service-item-container">
           <div class="service-item">
             <div class="service-item-img"></div>
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="service-target-container">
-        <h3 class="service-target-title">企業の方へ</h3>
+        <h3 class="service-target-title" id="company">企業の方へ</h3>
         <div class="service-item-container">
           <div class="service-item">
             <div class="service-item-img"></div>
@@ -150,7 +150,8 @@
 .service-target-title{
   font-weight: bold;
   font-size: 3rem;
-  padding: 2rem 0;
+  padding: 6rem 0 2rem 0;
+  margin-top: -4rem;
 }
 .service-item-container{
   display: flex; 
