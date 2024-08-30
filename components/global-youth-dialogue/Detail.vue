@@ -6,45 +6,45 @@
         <h3 class="gyd-title">global youth dialogue の特徴</h3>
         <div class="gyd-features">
           <div class="gyd-features-item">
-            <div class="gyd-features-item-img"></div>
+            <div class="gyd-features-item-img gyd-features-item-img-1"></div>
             <div class="gyd-features-item-text">
               <p class="gyd-features-item-text-title">
-                対話を通して、自分や世界に対しての<br>
+                対話を通じて、自分や世界に対しての<br>
                 新たな気づきを得られます。
               </p>
               <p class="gyd-features-item-text-description">
-                留学のような「渡航」を手段とする国際交流ではなく、<br>
-                global youth dialogueでは海外の大学生との「対話」を通して<br>
-                日常を飛び出した思いがけない気づきを得ることができます。 
+                留学のように「渡航」を伴う国際交流とは異なり、<br>
+                オンラインで海外の大学生と「対話」することで、インターネットだけ<br>
+                では得られない視点や価値観を知ることができます。
               </p>
             </div>
           </div>
           <div class="gyd-features-item">
-            <div class="gyd-features-item-img"></div>
+            <div class="gyd-features-item-img gyd-features-item-img-2"></div>
             <div class="gyd-features-item-text li2">
               <p class="gyd-features-item-text-title">
-                ご自身の興味関心や都合のいい時間に<br>
-                基づいて、海外の学生とグループが組まれます。
+                ご自身の興味や都合に合わせて、<br>
+                海外の学生とグループが組まれます。
               </p>
               <p class="gyd-features-item-text-description">
-                １週間の期間中の好きな時間に、ビデオ通話やチャット等で<br>
-                会話をすることができます。短い期間中でも濃密な会話が生まれ、<br>
-                過去の参加者にはグループのメンバーとイベント後も連絡を取り<br>
-                続けている方も多くいらっしゃいます。
+                １週間の期間中の自由なタイミングで、ビデオ通話やチャット等で交流を<br>
+                深めることができます。短い期間中でも濃密な対話が生まれ、<br>
+                過去の参加者の中には、イベント後もグループのメンバーと連絡を<br>
+                取り続けている方も多くいらっしゃいます。
               </p>
             </div>
           </div>
           <div class="gyd-features-item">
-            <div class="gyd-features-item-img"></div>
+            <div class="gyd-features-item-img gyd-features-item-img-3"></div>
             <div class="gyd-features-item-text">
               <p class="gyd-features-item-text-title">
                 毎日設定されるトピックをもとに、<br>
                 英語で様々な会話ができます。
               </p>
               <p class="gyd-features-item-text-description">
-                お互いの文化や価値観が知れるようなトピックが<br>
-                用意されています。「海外の学生と何を話したらいいのか<br>
-                わからない...」という方も気軽に参加ください！
+                お互いの文化や価値観が知れるようなトピックが用意されています。<br>
+                「海外の学生と何を話せばいいのかわからない...」<br>
+                という方も気軽に参加できます！
               </p>
             </div>
           </div>
@@ -111,7 +111,8 @@
 
           &-title{
             font-size: 2rem;
-            color: white;
+            color: #FAEAA8 ;
+
             line-height: 4rem;
             
          
@@ -119,6 +120,7 @@
           &-description{
             font-size:1rem;
             line-height: 2rem;
+            color: white;
 
           }
         }
@@ -128,12 +130,29 @@
             
           }
         &-img{
-          background-image: url(assets/images/global-youth-dialogue/global-youth-dialogueDetail1.png);
           background-size: cover;
           background-position: center;
-          border-radius: 1.4rem;
-          width: 44rem;
-          height: 28rem;
+          background-repeat: none;
+          border-radius: 2rem;
+          width: 24rem;
+          height: 24rem;
+          background-color:white;
+
+          &-1{
+            background-image: url(assets/images/global-youth-dialogue/notification.svg);
+            margin-left:4rem;
+
+          }
+          &-2{
+            background-image: url(assets/images/global-youth-dialogue/typing.svg);
+            margin-right:4rem;
+          }
+          &-3{
+            background-image: url(assets/images/global-youth-dialogue/message.svg);
+            margin-left:4rem;
+
+          }
+
         }
       }
     }

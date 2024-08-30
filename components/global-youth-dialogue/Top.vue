@@ -5,7 +5,6 @@
       <h2 class="gyd-text">
         global youth dialogue
       </h2>
-      <p class="gyd-text-sub">あああああああああああああああああああああああああ</p>
     </div>
   </section>
 </template>
