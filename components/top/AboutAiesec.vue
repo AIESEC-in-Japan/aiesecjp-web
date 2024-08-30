@@ -66,7 +66,7 @@
 
 .about-contents{
   position: relative;
-  margin: 0 5rem;
+  margin: 0 5%;
   z-index: 30;
   @include sp{
     margin: 0 2rem;
