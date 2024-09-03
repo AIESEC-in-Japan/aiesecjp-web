@@ -4,7 +4,7 @@
       <p class="message-title">
         Message
       </p>
-      <h2 class="message-title-sub">代表挨拶</h2>
+      <h2 class="message-title-sub">代表メッセージ</h2>
       
       <div class="message-wrapper">
         <div class="image" alt="代表者"></div>
