@@ -1,62 +1,64 @@
 <template>
   <div class="about-container">
-    <div class="about-outline">
-      <a
-        class="button-container" 
-        v-for="(button, index) in buttons" 
-        :key="index"
-        :href="button.href" 
-        @click="handleClick(index)"
-          :class="{ active: activeButtonIndex === index }" 
-      >
+    <div class="about-contents">
+      <div class="about-outline" id="outline"> 
         <a
-          class="button"
+          class="button-container" 
+          v-for="(button, index) in buttons" 
+          :key="index"
+          :href="button.href" 
+          @click="handleClick(index)"
+            :class="{ active: activeButtonIndex === index }" 
         >
-          <p>{{ button.text }}</p>
+          <a
+            class="button"
+          >
+            <p>{{ button.text }}</p>
+          </a>
+          <p class="button-nextText">{{ button.nextText }}</p>
         </a>
-        <p class="button-nextText">{{ button.nextText }}</p>
-      </a>
-    </div>
-    <div class="about-content">
-      <h2 id="p1" class="aboutus-table-title">
-        役員一覧
-      </h2>
-      <AboutCustomTable :list-data="officers" />
-      <h2 id="p2" class="aboutus-table-title">
-        諮問一覧
-      </h2>
-      <AboutCustomTable :list-data="advisers" />
-      <h2 id="p3" class="aboutus-table-title">
-        団体情報
-      </h2>
-      <AboutCustomTable :list-data="organization" />
-      <h2 id="p4" class="aboutus-table-title">
-        財務情報
-      </h2>
-      <div class="aboutus-table"
-        v-for="(item, index) in items"
-        :key="index"
-      >
-        <h3><a :href="item.link">{{ item.title }}</a></h3>
       </div>
-      <h2 id="p5" class="aboutus-table-title">
-        コンプライアンス
-      </h2>
-      <p class="compliance">
-        アイセックでは、「コンプライアンス規程」を定め、組織・構成員法令及び社会規範の遵守を図っております。また、「コンプライアンス小委員会」を設け、各種制度の設計・改善施策の実施を行なっています。加えて、外部有識者を委員に含む「ハラスメント対策委員会・倫理小委員会等」も設け、内部通報や労務・ハラスメント対策の対応を行なっています。
-      </p>
-      <h2 id="p6" class="aboutus-table-title">
-        情報セキュリティ基本方針
-      </h2>
-      <p class="info-security">
-        アイセックは、関係者の皆様の個人情報を厳重に保護するために、以下のような取り組みを行っています。<br>
-        （1）個人情報保護規程の制定<br>
-        &nbsp;&nbsp;・アイセックは、個人情報保護規程を定め、それに基づいて関係者の方々の個人情報を取り扱います。<br>
-        （2）個人情報保護責任者の設置<br>
-        &nbsp;&nbsp;・個人情報保護責任者を任命し、全ての情報発信および情報保護が各種ガイドラインに準拠するよう管理しています。<br>
-        （3）定期的な内部監査の実施<br>
-        &nbsp;&nbsp;・内部監査機関による定期的な監査を実施し、情報セキュリティ対策の有効性を確認し、継続的な改善を図っています。
-      </p>
+      <div class="about-content">
+        <h2 id="p1" class="aboutus-table-title">
+          役員一覧
+        </h2>
+        <AboutCustomTable :list-data="officers" />
+        <h2 id="p2" class="aboutus-table-title">
+          諮問一覧
+        </h2>
+        <AboutCustomTable :list-data="advisers" />
+        <h2 id="p3" class="aboutus-table-title">
+          団体情報
+        </h2>
+        <AboutCustomTable :list-data="organization" />
+        <h2 id="p4" class="aboutus-table-title">
+          財務情報
+        </h2>
+        <div class="aboutus-table"
+          v-for="(item, index) in items"
+          :key="index"
+        >
+          <h3><a :href="item.link">{{ item.title }}</a></h3>
+        </div>
+        <h2 id="p5" class="aboutus-table-title">
+          コンプライアンス
+        </h2>
+        <p class="compliance">
+          アイセックでは、「コンプライアンス規程」を定め、組織・構成員法令及び社会規範の遵守を図っております。また、「コンプライアンス小委員会」を設け、各種制度の設計・改善施策の実施を行なっています。加えて、外部有識者を委員に含む「ハラスメント対策委員会・倫理小委員会等」も設け、内部通報や労務・ハラスメント対策の対応を行なっています。
+        </p>
+        <h2 id="p6" class="aboutus-table-title">
+          情報セキュリティ基本方針
+        </h2>
+        <p class="info-security">
+          アイセックは、関係者の皆様の個人情報を厳重に保護するために、以下のような取り組みを行っています。<br>
+          （1）個人情報保護規程の制定<br>
+          &nbsp;&nbsp;・アイセックは、個人情報保護規程を定め、それに基づいて関係者の方々の個人情報を取り扱います。<br>
+          （2）個人情報保護責任者の設置<br>
+          &nbsp;&nbsp;・個人情報保護責任者を任命し、全ての情報発信および情報保護が各種ガイドラインに準拠するよう管理しています。<br>
+          （3）定期的な内部監査の実施<br>
+          &nbsp;&nbsp;・内部監査機関による定期的な監査を実施し、情報セキュリティ対策の有効性を確認し、継続的な改善を図っています。
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -242,13 +244,33 @@ export default {
 
   &-container {
     position: relative;
-    margin: 1.5rem 2rem;
-    display: flex;
+    margin: 5rem 0;
 
+  }
+
+  &-contents{
+    position: relative;
+    display: flex;
+    margin: 0 5%;
+
+    @media (min-width:1600px){
+      margin: 0 auto;
+      max-width: 1440px;
+    }
+
+    @media(max-width:959px){
+      flex-direction: column;
+    }
   }
 
   &-outline{
     width: 30%;
+    @media(max-width:959px){
+      width: 100%;
+      padding-top: 8rem;
+      margin-top: -8rem;
+      
+    }
   }
 
   &-content {
@@ -257,14 +279,21 @@ export default {
     overflow: scroll;
     scroll-behavior: smooth;
     padding-bottom: 10rem;
+    padding-left: 1rem;
     scrollbar-width: none;
     padding-top: 9rem;
     margin-top: -7rem;
     margin-bottom: 3rem;
     color: $dark-gray;
 
+    @media(max-width:959px){
+      width: 100%;
+      height: auto;
+      overflow:visible;
+    }
+
     .aboutus-table-title {
-      font-size: 1.35rem;
+      font-size: 1.5rem;
       margin-top: 2.5rem;
       margin-bottom: 1.5rem;
 
@@ -287,7 +316,7 @@ export default {
 .button-container{
   display: flex;
   margin-bottom: 0.8rem;
-  margin-left: 3rem;
+  margin-left: 0rem;
   transition: all 0.3s ease 0s;
   text-decoration: none;
 

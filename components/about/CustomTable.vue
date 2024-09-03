@@ -37,25 +37,32 @@ td {
 
   @include sp {
     padding: 1rem 1rem;
+    font-size: 0.85rem;
   }
 }
 
 th {
   text-align: left;
-  width: 6.75rem;
+  width: 6.75vw;
+
+  @media(max-width:959px){
+    width: 14vw;
+  }
 
   @include sp {
-    width: 6.25rem;
+    width: 20%;
+    padding: 1rem 0;
   }
 }
 
 td {
   line-height: 1.3rem;
-  padding-left: 6rem;
+  padding-left: 6vw;
 
 
   @include sp {
-    width: 15.6rem;
+    width: 80%;
+    padding: 1rem;
   }
 }
 
