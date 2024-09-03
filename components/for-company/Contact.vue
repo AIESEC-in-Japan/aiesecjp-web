@@ -10,7 +10,6 @@
           <a class="button" href="#" target="_blank"></a>
         </div>
       </div>
-      <div class="fcompany-img"></div>
     </div>
   </div>
 </template>
@@ -22,16 +21,30 @@
     margin: 8rem 0;
     width: 100vw;
 
+    @include sp{
+      margin: 4rem 0;
+    }
+
     .fcompany-contents{
       position: relative;
       display: flex;
       justify-content: space-between;
-      margin: 0 0 0 5rem;
+      margin: 0 0 0 5%;
+
+      @media (min-width:1600px){
+        margin: 0 auto;
+        max-width: 1440px;
+      }
+
       .fcompany-wrapper{
         margin: auto 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
+
+        @media(max-width:425px){
+          flex-direction: column;
+        }
 
         .title-wrapper{
           .fcompany-title{
@@ -49,16 +62,6 @@
 
       }
 
-      .fcompany-img{
-        background-image: url(assets/images/for-company/for-companyContact.png);
-        background-position: center;
-        background-size: cover;
-        width: 120%;
-        height: 30rem;
-        margin-left: 2rem;
-        border-radius: 1rem;
-      }
-
 
     }
   }
@@ -69,6 +72,16 @@
   display: flex;
   margin-top: auto;
   margin-right: auto;
+
+  @media(max-width:660px){
+    margin-left: auto;
+    margin-right: 10%;
+  }
+  @media(max-width:425px){
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
 }
 .button{
   display: inline-block;
@@ -87,6 +100,14 @@
     transition-duration: .3s;
     transform: scale(1.1);
   }
+
+  @media(max-width:860px){
+    width: 50px;
+    height: 50px;
+  }
+  @media(max-width:660px){
+    margin-left: 0;
+  }
 }
 
 .button::before {
@@ -101,6 +122,15 @@
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
   transform: rotate(45deg);
+
+  @media(max-width:860px){
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+
+  }
 }
 
 </style>
