@@ -3,5 +3,6 @@
     <AboutTop />
     <AboutDonation />
     <AboutDescriptions />
+    <AboutScrolltoTop />
   </div>
 </template>
