@@ -3,7 +3,7 @@
     <div class="incoming-container">
       <div class="incoming-bg"></div>
       <h2 class="incoming-text">
-        海外インターンシップ受け入れ
+        海外<wbr>インターンシップ<wbr>受け入れ
       </h2>
     </div>
   </section>
@@ -16,6 +16,13 @@
     height: 90vh;
     width: 100vw;
     margin: -5rem 0 10rem 0;  
+
+    @include sp{
+      margin-bottom: 5rem;
+      height: 65vh;
+    }
+
+
     &::before{
       content: "";
       position: absolute;
@@ -27,7 +34,14 @@
       height: 90vh;
       width: 100vw;
       border-radius: 0 0 0 14rem;
+
+      @include sp{
+        margin-bottom: 5rem;
+        height: 65vh;
+      }
     }
+
+   
   }
   &-bg {
     width: 100%;
@@ -54,6 +68,35 @@
       bottom: 6%;
       right: 5rem;
     }
+
+    @include tab{
+      font-size: 3rem;
+      margin-left: 3rem;
+      right: 3rem;
+      width: fit-content;
+    }
+
+    @media(max-width:600px){
+      right:auto;
+      top: 50%;
+      margin: 0 auto;
+      padding: 0 auto;
+      word-break: keep-all;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+
+    }
+    @include sp{
+      font-size: 2.6rem;
+      top: 40%;
+    }
+
+    @media(max-width:375px){
+      font-size: 2.4rem;
+    }
   }
+
 }
 </style>

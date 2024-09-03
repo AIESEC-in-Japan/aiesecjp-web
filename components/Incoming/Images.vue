@@ -25,17 +25,29 @@
           background-position: cover;
           background-size: cover;
           background-repeat: none;
+          width: 64vw;
+          height: 46vw;
 
-          width: 64%;
-          height: 40rem;
+
+          @media (max-width:765px){
+            width: 64vw;
+            height: 50vw;
+          }
+
         }
         &:last-child{
           background-image: url(assets/images/incoming/incomingImages2.png);
           background-position: center;
           background-size: cover;
           background-repeat: none;
-          width: 30%;
-          height: 40rem;
+          width: 30vw;
+          height: 46vw;
+
+          @media (max-width:765px){
+            width: 30vw;
+            height: 50vw;
+          }
+
 
         }
       }

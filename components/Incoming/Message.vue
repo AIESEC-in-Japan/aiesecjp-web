@@ -1,13 +1,13 @@
 <template>
   <div class="incoming-container">
     <div class="incoming-contents">
-      <div class="incoming-wrapper">
+      <div class="title-wrapper">
         <p class="incoming-title">Our Services</p>
         <h2 class="incoming-title-sub">海外インターンシップ受け入れ</h2>
-        <div class="button-container">
-          <p class="button-nextText">詳しくはこちら</p>
-          <a class="button" href="/lp/incoming" target="_blank"></a>
-        </div>
+      </div>
+      <div class="button-container">
+        <p class="button-nextText">詳しくはこちら</p>
+        <a class="button" href="/lp/incoming" target="_blank"></a>
       </div>
       <div class="message-container">
         <h3 class="message-title">
@@ -15,7 +15,7 @@
           会社の可能性を広げる。
         </h3>
         <p class="message-text">
-          若者に異なる文化/環境において挑戦する経験を提供することで、海外学生の日本におけるキャリア選択<br>
+          若者に異なる文化/環境において挑戦する経験を提供することで、海外学生の日本におけるキャリア選択<wbr>
           の幅を広げ、将来の国際社会で活躍するリーダーを輩出することを目指しています。
         </p>
       </div>
@@ -32,13 +32,30 @@
 
   .incoming-contents{
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 35% 65%;
     justify-content: space-between;
-    margin: 0 5rem;
+    margin: 0 5%;
+    width: 90%;
     align-items: center;
 
-    .incoming-wrapper{
-      margin: auto 0;
+    @media (min-width:1600px){
+      margin: 0 auto;
+      max-width: 1440px;
+    }
+
+    @include tab{
+      grid-template-columns: 100%;
+    }
+
+    .title-wrapper{
+        grid-row: 1;
+        grid-column: 1;
+        
+        @include tab{
+          grid-row: 1;
+          grid-column: 1;
+        }
       .incoming-title{
           color: $mint;
           font-size: 2rem;
@@ -55,15 +72,63 @@
     .message{
       &-container{
         text-align: right;
+        grid-row: 1/ span 2;
+        grid-column: 2/  3;
+        margin-left: auto;
+        width: fit-content;
+
+        @include tab{
+          grid-row: 2;  
+          grid-column: 1;
+          text-align: start;
+          margin-top: 1rem;
+        }
+
       }
       &-title{
         font-size: 2.6rem;
         line-height: 5rem;
         margin-bottom: 1.4rem;
+        text-align: right;
+        word-break: keep-all;
+        width: fit-content;
+        margin-left: auto;
+
+        @include tab{
+          font-size: 2.4rem;
+          text-align: left;
+          max-width: auto;
+          margin: 0 0 1.2rem 0;
+        }
+
+        @media(max-width: 600px){
+          font-size: 2rem;
+          line-height: 4rem;
+        }
+
+        @include sp{
+          font-size: 1.5rem;
+          line-height: 3rem;
+          margin: 0 0 0.8rem 0;
+        }
+
+        @media (max-width:375px){
+          font-size: 1.35rem;
+        }
       }
+      
       &-text{
+        max-width: 98%;
         font-size: 1rem;
         line-height: 2rem;
+        word-break: break-all;
+        margin-left :auto; 
+        width: fit-content;
+
+        @include tab{
+          max-width: auto;
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -74,6 +139,20 @@
   display: flex;
   align-items: center;
   margin-top: 1.4rem;
+  grid-row: 2;
+  grid-column: 1 / 2;
+
+  @include tab{
+    grid-row: 3;
+    grid-column: 1;
+    margin-left: auto;
+  }
+
+  @include sp{
+    margin: 0;
+    justify-content: center;
+  }
+
 
 }
 .button-nextText{
@@ -84,6 +163,10 @@
   padding: 6px;
   padding-left: 0;
   margin: 0;
+   
+  @include sp{
+    font-size: 1.5rem;
+  }
 }
 .button{
   display: inline-block;
