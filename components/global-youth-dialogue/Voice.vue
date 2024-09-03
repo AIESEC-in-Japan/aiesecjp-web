@@ -6,18 +6,18 @@
       
       <div class="voice">
         <div class="detail">
-          <div class="person">
-            <img
-              alt="topics"
-              src="@/assets/images/global-youth-dialogue/voice1.png"
-            >
-            <div class="topic">
-              <h2>
-                深い部分まで話せる<br>
-                トピックが魅力的
-              </h2>
+          <div class="topic">
+            <h2>
+              深い部分まで話せる<wbr>
+              トピックが魅力的
+            </h2>
+            <div class="person">
+              <img
+                alt="topics"
+                src="@/assets/images/global-youth-dialogue/voice1.png"
+              >
               <p>
-                日本｜筑波大学2年 島大翔さん
+                日本｜筑波大学<wbr>2年<br>島大翔さん
               </p>
             </div>
           </div>
@@ -26,18 +26,18 @@
           </p>
         </div>
         <div class="detail">
-          <div class="person">
-            <img
-              alt="conversation"
-              src="@/assets/images/global-youth-dialogue/voice2.png"
-            >
-            <div class="topic">
-              <h2>
-                1人の人間として向き<br>
-                合うことの大切さ
-              </h2>
+          <div class="topic">
+            <h2>
+              1人の人間として向き<wbr>
+              合うことの大切さ
+            </h2>
+            <div class="person">
+              <img
+                alt="conversation"
+                src="@/assets/images/global-youth-dialogue/voice2.png"
+              >
               <p>
-                日本｜立命館大学3年 諸我菜摘さん
+                日本｜立命館大学<wbr>3年<br>諸我菜摘さん
               </p>
             </div>
           </div>
@@ -46,18 +46,18 @@
           </p>
         </div>
         <div class="detail">
-          <div class="person">
-            <img
-              alt="global"
-              src="@/assets/images/global-youth-dialogue/voice3.png"
-            >
-            <div class="topic">
-              <h2>
-                私の知らない世界を<br>
-                のぞけました
-              </h2>
+          <div class="topic">
+            <h2>
+              私の知らない世界を<wbr>
+              のぞけました
+            </h2>
+            <div class="person">
+              <img
+                alt="global"
+                src="@/assets/images/global-youth-dialogue/voice3.png"
+              >
               <p>
-                日本｜神戸大学2年 呉未歌さん
+                日本｜神戸大学<wbr>2年<br>呉未歌さん
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@
           </p>
         </div>
       </div>
-      <h1><span style="font-family: arial;">\</span> SNSでも情報発信中 <span style="font-family: arial;">/</span> </h1>
+      <h3><span style="font-family: arial;">\</span> SNSでも情報発信中 <span style="font-family: arial;">/</span> </h3>
       <div class="sns">
         <a class="icon" href="https://instagram.com/aiesec_gyd_official?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
           <img src="@/assets/images/global-youth-dialogue/IG.png" alt="Instagram">
@@ -114,9 +114,21 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 5rem;
+    margin: 0 5%;
+
+    @media (min-width:1600px){
+      margin: 0 auto;
+      max-width: 1440px;
+    }
+
+    h3{
+      @include sp{
+        font-size: 1.35rem;
+      }
+    }
   }
 }
+
 
 .gyd-title {
   font-size: 1.35rem;
@@ -126,87 +138,144 @@ export default {
   border-bottom: $deep-blue 3px solid;
 }
 .voice {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
   
 
-  @include sp {
+  @include tab {
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+
   }
 }
 .detail {
-  width: 24rem;
+  width: 28vw;
+  max-width: 403px;
   padding: 1.7rem;
-  margin-right: 2rem;
   border-radius: 1.2em 1.2em 1.2em 0em;  
   box-shadow: 0.1rem  0.1rem 1rem rgba(164, 162, 162, 0.4), -0.02rem  -0.02rem 1rem rgba(164, 162, 162, 0.1);
   
 
   @include tab {
-    width: 30%;
-    margin: 1rem;
+    width: 430px;
+    max-width: none;
+    margin: 0 auto 2rem auto;
+
   }
 
   @include sp {
-    width: 95%;
-    margin: 1rem 0.2rem;
+    width: 90%;
+    margin-bottom: 1.4rem;
   }
 
-  .person{
+  .topic{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-    align-items: center;
 
     @include tab {
-        width: 14rem;
+      flex-direction: row;
     }
     @include sp {
-        width: 100%;
+      flex-direction: column;
     }
     @media (max-width:320px) {
       flex-direction: column;
       align-items: center;
     }
 
-    img {
-      width: 32%;
-      height: 100%;
-      margin-left: 0rem;
+    
+    h2{
+      font-weight: bold;
+      line-height: 1.5;
+      color: $deep-blue;
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      word-break: break-all;
 
-      @include sp {
-        width: 6rem;
+      @media (max-width:1350px){
+        word-break: keep-all;
       }
+      @include sp {
+        word-break: break-all;
+      }
+      @media (max-width:320px) {
+          text-align: center;
+        }
     }
 
-    .topic{
+    .person{
       display: flex;
-      flex-direction: column;
-      width: 62%;
+      justify-content: space-between;
+      width: 100%;
       text-align: right;
-      @media (max-width:320px) {
-          width: 80%;
+
+      @include tab{
+        flex-direction: column;
       }
-      h2{
-        font-weight: bold;
-        line-height: 1.5;
-        color: $deep-blue;
-        margin: 1rem 0;
-        font-size: 1.2rem;
+      @include sp {
+        flex-direction: row;
+      }
+
+      @media (max-width:320px) {
+        flex-direction: column;
+      }
+
+      img {
+        width: 6rem;
+        height: 6rem;
+        margin-left: 0.6vw;
+
+        @include tab {
+          margin-left: auto;
+        }
+        @include sp {
+          margin-left: 0.4rem;
+        }
+        @media (max-width:320px) {
+          margin:0 auto;
+        }
       }
 
       p {
         letter-spacing: 0.5px;
         line-height: 1.5;
-        font-size: 0.75rem;
+        font-size: 0.85rem;
+        margin-right: 1vw;
+        align-self: center;
+        text-align: right;
+
+        @include tab{
+          word-break: keep-all;
+          margin-right: 0;
+          margin-top: 0.6rem;
+
+        }
+
+        @include sp {
+          margin-right: 0.8rem;
+        }
+
+        @media (max-width:320px) {
+          margin:0 auto;
+          text-align: center;
+        }
+
       }
     }
   }
   .voice-text{
     padding-top: 1rem;
     text-align: left;
+    @include tab{
+      padding-top: 0;
+    }
+    @include sp {
+      padding-top: 0.6rem;
+    }
   }
 }
 

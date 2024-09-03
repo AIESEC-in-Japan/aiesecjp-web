@@ -1,8 +1,8 @@
 <template>
-  <div class="outgoing-container">
-    <div class="outgoing-contents">
-      <div class="outgoing-wrapper">
-        <h2 class="outgoing-title-sub">その他の事業</h2>
+  <div class="gyd-container">
+    <div class="gyd-contents">
+      <div class="gyd-wrapper">
+        <h2 class="gyd-title-sub">その他の事業</h2>
       </div>
       <div class="others-wrapper">
         <div class="service-item">
@@ -21,23 +21,28 @@
 </template>
 
 <style lang="scss" scoped>
-.outgoing{
+.gyd{
   &-container{
     position: relative;
     margin: 8rem 0;
     width: 100vw;
 
-    .outgoing-contents{
+    .gyd-contents{
       position: relative;
       display: flex;
       flex-direction: column;
-      margin: 0 5rem;
+      margin: 0 5%;
 
-      .outgoing-wrapper{
+      @media (min-width:1600px){
+        margin: 0 auto;
+        max-width: 1440px;
+      }
+
+      .gyd-wrapper{
         margin: auto 0;
         width: 100%;
         
-        .outgoing-title{
+        .gyd-title{
           display: none;
     
           &-sub{
@@ -53,6 +58,10 @@
         margin-top: 4rem;
         justify-content: space-between;
         width: 100%;
+
+        @media (max-width:660px){
+          flex-direction: column;
+        }
       }
 
 
@@ -62,12 +71,21 @@
 
 .service-item{
   position: relative;
-  width: 580px;
-  height: 340px;
+  width: 42vw;
+  height: 26vw;
+  max-width: 604px;
+  max-height: 374px;
   border-radius: 0.8rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
   overflow: hidden;
+
+  @media (max-width:660px){
+    width: 76vw;
+    margin: 0 auto 2rem auto;
+    height: 36vw;
+  }
+
   &:hover{
     .service-item-img{
       transition-duration: .3s;
@@ -88,10 +106,10 @@
     height: 100%;
 
     &-1{
-      background-image: url(assets/images/outgoing/outgoingTop.png);
+      background-image: url(assets/images/global-youth-dialogue/GlobalYouthDialogueTop.png);
     }
     &-2{
-      background-image: url(assets/images/incoming/incomingTop.png);
+      background-image: url(assets/images/outgoing/outgoingTop.png);
     }
     
   }
@@ -106,6 +124,11 @@
   top: 50%;
   transform: translateY(-50%);
   margin-left: 36px;
+
+  @include tab{
+    top: 40%;
+  }
+
 
 }
 .button{
@@ -123,6 +146,11 @@
   border: 1.8px solid $white;
   box-shadow:  0 0 44.1px rgba(3, 126, 243, 0.22);
   transition: all 0.3s ease 0s;  
+  @include tab{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+  }
 }
 .button::before {
   content: "";
@@ -136,6 +164,15 @@
   border-top: 1.8px solid $white;
   border-right: 1.8px solid $white;
   transform: rotate(45deg);
+
+  @include tab{
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+
+  }
 }
 </style>
 
