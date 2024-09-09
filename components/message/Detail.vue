@@ -46,7 +46,12 @@
   &-contents {
     display: flex;
     flex-direction: column;
-    margin: 0 5rem;
+    margin: 0 5%;
+
+    @media (min-width:1600px){
+      margin: 0 auto;
+      max-width: 1440px;
+    }
   }
 
   &-title{
@@ -78,6 +83,7 @@
           font-size: 2rem;
       }
       .contents{
+        font-size: 1rem;
         margin-top: 1rem;
         line-height: 1.9;
       }
