@@ -137,13 +137,18 @@
   &-container {
     position: relative;
     margin: 5rem 0 0 0;
-    width: 100vw;
   }
 
   &-content {
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0 5rem 1rem 5rem;
+    margin: 0 5%;
+
+    @media (min-width:1600px){
+      margin: 0 auto;
+      max-width: 1440px;
+    }
 
     &-title {
       color: $blue;
