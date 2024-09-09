@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutus-table">
+  <div class="organization-table">
     <table>
       <tr
         v-for="(item, index) in listData"
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.aboutus-table{
+.organization-table{
   font-family: $fonts;
 }
 th,

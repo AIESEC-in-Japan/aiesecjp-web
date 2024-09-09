@@ -1,7 +1,7 @@
 <template>
-  <div class="about-container">
-    <div class="about-contents">
-      <div class="about-outline" id="outline"> 
+  <div class="organization-container">
+    <div class="organization-contents">
+      <div class="organization-outline" id="outline"> 
         <a
           class="button-container" 
           v-for="(button, index) in buttons" 
@@ -18,35 +18,35 @@
           <p class="button-nextText">{{ button.nextText }}</p>
         </a>
       </div>
-      <div class="about-content">
-        <h2 id="p1" class="aboutus-table-title">
+      <div class="organization-content">
+        <h2 id="p1" class="organization-table-title">
           役員一覧
         </h2>
-        <AboutCustomTable :list-data="officers" />
-        <h2 id="p2" class="aboutus-table-title">
+        <OrganizationCustomTable :list-data="officers" />
+        <h2 id="p2" class="organization-table-title">
           諮問一覧
         </h2>
-        <AboutCustomTable :list-data="advisers" />
-        <h2 id="p3" class="aboutus-table-title">
+        <OrganizationCustomTable :list-data="advisers" />
+        <h2 id="p3" class="organization-table-title">
           団体情報
         </h2>
-        <AboutCustomTable :list-data="organization" />
-        <h2 id="p4" class="aboutus-table-title">
+        <OrganizationCustomTable :list-data="organization" />
+        <h2 id="p4" class="organization-table-title">
           財務情報
         </h2>
-        <div class="aboutus-table"
+        <div class="organization-table"
           v-for="(item, index) in items"
           :key="index"
         >
           <h3><a :href="item.link">{{ item.title }}</a></h3>
         </div>
-        <h2 id="p5" class="aboutus-table-title">
+        <h2 id="p5" class="organization-table-title">
           コンプライアンス
         </h2>
         <p class="compliance">
           アイセックでは、「コンプライアンス規程」を定め、組織・構成員法令及び社会規範の遵守を図っております。また、「コンプライアンス小委員会」を設け、各種制度の設計・改善施策の実施を行なっています。加えて、外部有識者を委員に含む「ハラスメント対策委員会・倫理小委員会等」も設け、内部通報や労務・ハラスメント対策の対応を行なっています。
         </p>
-        <h2 id="p6" class="aboutus-table-title">
+        <h2 id="p6" class="organization-table-title">
           情報セキュリティ基本方針
         </h2>
         <p class="info-security">
@@ -239,7 +239,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.about {
+.organization {
   height: max-content;
 
   &-container {
@@ -292,10 +292,11 @@ export default {
       overflow:visible;
     }
 
-    .aboutus-table-title {
+    .organization-table-title {
       font-size: 1.5rem;
       margin-top: 2.5rem;
       margin-bottom: 1.5rem;
+      color: $blue;
 
       &::before{
         display: block;
