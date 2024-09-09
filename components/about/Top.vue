@@ -2,14 +2,12 @@
   <section>
     <div class="about-container">
       <div class="about-bg"></div>
-      <div class="about-text">
-        Organisation
-      </div>
-      <h2 class="about-text-sub">団体概要</h2>
+      <h2 class="about-text">
+        AIESECについて
+      </h2>
     </div>
   </section>
 </template>
-
 <style lang="scss" scoped>
 .about{
 
@@ -24,19 +22,18 @@
       margin-bottom: 5rem;
       height: 65vh;
     }
-    
+
     &::before{
       content: "";
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.14);
       top:0;
       bottom: 0;
       left: 0;
       right:0;
       height: 90vh;
       width: 100vw;
-      border-radius: 0 0 14rem 0;
-
+      border-radius: 0 0 0 14rem;
       @include sp{
         margin-bottom: 5rem;
         height: 65vh;
@@ -49,40 +46,29 @@
     background-image: url(assets/images/privacy-policy/privacy-policyTop.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 0 0 14rem 0;
+    border-radius: 0 0 0 14rem;
   }
     
 
   &-text{
     color: #fff;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: bold;
     position: absolute;
-    bottom: 40%;
-    left: 6rem;
+    bottom: 15%;
+    right: 5rem;
 
     &-sub{
       color: #fff;
-      font-size: 1.6rem;
+      font-size: 1rem;
       position: absolute;
-      bottom: 35%;
-      left: 6rem;
-
-      @media(max-width:600px){
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        font-size: 1.35rem;
-
-      }
-
-
+      bottom: 6%;
+      right: 5rem;
     }
 
     @include tab{
       font-size: 3rem;
-      margin-left: 0rem;
+      margin-left: 3rem;
       right: 3rem;
       width: fit-content;
     }
