@@ -23,7 +23,7 @@
           v-for="(item, index) in navigationItems"
           :key="index"
         >
-          <Nuxt-link class="navigation-link" :to=item.link>
+          <Nuxt-link class="navigation-link" :to=item.link @click.native="isShowList(); drawer = !drawer">
             {{ item.title }}
           </Nuxt-link>
           <div v-show="(isShowNestedItems[index] && isActive)||  drawer"
@@ -32,7 +32,7 @@
             v-if="item.subItems">
             <ul class="navigation-nested-list"> 
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
-                <nuxt-link class="navigation-link" :to="subItem.link">
+                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList(); drawer = !drawer">
                   {{ subItem.title }}
                 </nuxt-link>
               </li>
@@ -174,7 +174,7 @@ export default {
           subItems: [
             { title: "AIESECについてトップ", link: "/#" },
             { title: "ビジョン・ミッション・バリュー", link: "/#" },
-            { title: "代表挨拶", link: "/#" }
+            { title: "代表メッセージ", link: "/message" }
           ]
         },
         {
