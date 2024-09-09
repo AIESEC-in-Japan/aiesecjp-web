@@ -53,7 +53,7 @@
         class="navigation-list-sp"
         :class="{'is-show': isShow}"
       >
-      <li
+        <li
           class="navigation-item"
           v-for="(item, index) in navigationItems"
           :key="index"
@@ -111,9 +111,9 @@ export default {
       navigationItems: [
         {
           title: "AIESECについて",
-          link: "/#aiesec",
+          link: "/about",
           subItems: [
-            { title: "ビジョン・ミッション・バリュー", link: "/#" },
+            { title: "ビジョン・ミッション", link: "/about" },
             { title: "代表メッセージ", link: "/message" }
           ]
         },
@@ -127,7 +127,7 @@ export default {
         },
         {
           title: "企業の方へ",
-          link: "#company",
+          link: "/#company",
           subItems: [
             { title: "海外インターンシップ受け入れ", link: "/incoming" },
             { title: "協賛について", link: "/for-company" }
@@ -135,16 +135,16 @@ export default {
         },
         {
           title: "団体概要",
-          link: "/about",
+          link: "/organization",
           subItems: [
-            { title: "団体概要トップ", link: "/about" },
+            { title: "団体概要トップ", link: "/organization" },
             { title: "役員・諮問一覧", link: "/#" },
             { title: "団体情報", link: "/#" },
             { title: "財務情報", link: "/#" },
             { title: "コンプライアンス", link: "/#" },
             { title: "コーポレートガバナンス", link: "/#" },
             { title: "情報セキュリティ基本方針", link: "/#" },
-            { title: "安全への取り組み", link: "/#" }
+            { title: "安全への取り組み", link: "/safety" }
           ]
         },
         {

@@ -13,7 +13,7 @@
                 class="footer-content-link"
                 to="/#"
                 >
-                ビジョン・ミッション・バリュー
+                ビジョン・ミッション
               </nuxt-link>
             </li>
             <li>
@@ -22,14 +22,6 @@
                 to="/message"
               >
                 代表メッセージ
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link
-                class="footer-content-link"
-                to="/#"
-              >
-                サービス
               </nuxt-link>
             </li>
           </ul>
@@ -98,7 +90,7 @@
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/about"
+                to="/organization"
               >
                 協賛について
               </nuxt-link>
@@ -106,7 +98,7 @@
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/about"
+                to="/organization"
               >
                 ディスクロージャーポリシー
               </nuxt-link>
@@ -129,7 +121,7 @@
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/about"
+                to="/organization"
               >
                 団体情報
               </nuxt-link>
@@ -148,14 +140,6 @@
                 to="/#"
               >
                 活動報告
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link
-                class="footer-content-link"
-                to="/#"
-              >
-                委員会紹介
               </nuxt-link>
             </li>
             <li>
