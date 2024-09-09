@@ -1,8 +1,7 @@
 <template>
   <div>
-    <AboutTop />
-    <AboutDonation />
-    <AboutDescriptions />
-    <AboutScrolltoTop />
+    <!-- <AboutTop /> -->
+    <AboutVision />
+    <AboutMission />
   </div>
 </template>
