@@ -12,24 +12,16 @@
               <nuxt-link
                 class="footer-content-link"
                 to="/#"
-              >
-                ビジョン
+                >
+                ビジョン・ミッション・バリュー
               </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/#"
+                to="/message"
               >
-                ミッション
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link
-                class="footer-content-link"
-                to="/#"
-              >
-                バリュー
+                代表メッセージ
               </nuxt-link>
             </li>
             <li>
@@ -218,7 +210,7 @@
     display: inline;
     position: absolute;
     // background-image: linear-gradient(160deg,  $blue 28%, #00cb9a 100%);
-    background-image: linear-gradient(160deg,  $blue 28%, #F2F8FE 100%);
+    background-image: linear-gradient(160deg,  $blue 28%, $green 100%);
     width: 100%;
     height: 100%;
     z-index: 0;

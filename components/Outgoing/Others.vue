@@ -31,7 +31,12 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      margin: 0 5rem;
+      margin: 0 5%;
+
+      @media (min-width:1600px){
+        margin: 0 auto;
+        max-width: 1440px;
+      }
 
       .outgoing-wrapper{
         margin: auto 0;
@@ -53,6 +58,10 @@
         margin-top: 4rem;
         justify-content: space-between;
         width: 100%;
+
+        @media (max-width:660px){
+          flex-direction: column;
+        }
       }
 
 
@@ -62,12 +71,21 @@
 
 .service-item{
   position: relative;
-  width: 580px;
-  height: 340px;
+  width: 42vw;
+  height: 26vw;
+  max-width: 604px;
+  max-height: 374px;
   border-radius: 0.8rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
   overflow: hidden;
+
+  @media (max-width:660px){
+    width: 76vw;
+    margin: 0 auto 2rem auto;
+    height: 36vw;
+  }
+
   &:hover{
     .service-item-img{
       transition-duration: .3s;
@@ -106,6 +124,10 @@
   transform: translateY(-50%);
   margin-left: 36px;
 
+  @include tab{
+    top: 40%;
+  }
+
 }
 .button{
   display: inline-block;
@@ -122,6 +144,12 @@
   border: 1.8px solid $white;
   box-shadow:  0 0 44.1px rgba(3, 126, 243, 0.22);
   transition: all 0.3s ease 0s;  
+
+  @include tab{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+  }
 }
 .button::before {
   content: "";
@@ -135,6 +163,15 @@
   border-top: 1.8px solid $white;
   border-right: 1.8px solid $white;
   transform: rotate(45deg);
+
+  @include tab{
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+
+  }
 }
 </style>
 

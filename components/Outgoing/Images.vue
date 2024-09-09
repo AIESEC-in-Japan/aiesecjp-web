@@ -24,15 +24,23 @@
           background-image: url(assets/images/outgoing/outgoingImages1.png);
           background-position: center;
           background-size: cover;
-          width: 52rem;
-          height: 39rem;
+          width: 60vw;
+          height: 40vw;
+
+          @media (max-width:765px){
+            height: 50vw;
+          }
         }
         &:last-child{
           background-image: url(assets/images/outgoing/outgoingImages2.png);
           background-position: center;
           background-size: cover;
-          width: 32.6rem;
-          height: 39rem;
+          width: 36vw;
+          height: 40vw;
+
+          @media (max-width:765px){
+            height: 50vw;
+          }
 
         }
       }

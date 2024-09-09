@@ -12,9 +12,7 @@
         </nuxt-link>
       </div>
       <ul
-        class="navigation-list"
-        :class="{'is-show': isShow}"
-        @click.stop="drawer"
+        class="navigation-list-pc"
       >
       <li
           class="navigation-item"
@@ -23,111 +21,56 @@
           v-for="(item, index) in navigationItems"
           :key="index"
         >
-          <Nuxt-link class="navigation-link" :to=item.link @click.native="isShowList(); drawer = !drawer">
+          <Nuxt-link class="navigation-link" :to=item.link>
             {{ item.title }}
           </Nuxt-link>
-          <div v-show="(isShowNestedItems[index] && isActive)||  drawer"
+          <div v-show="isShowNestedItems[index] && isActive"
             class="navigation-nested"
-            :class="{'is-show': isShow, 'is-active': isActive}"
+            :class="{'is-active': isActive}"
             v-if="item.subItems">
             <ul class="navigation-nested-list"> 
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
-                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList(); drawer = !drawer">
+                <nuxt-link class="navigation-link" :to="subItem.link">
                   {{ subItem.title }}
                 </nuxt-link>
               </li>
             </ul>
           </div>
         </li>
-        <!-- 
-        
-          <nuxt-link
-            class="navigation-link"
-            to="/about"
-          >
-            団体概要
-          </nuxt-link>
-          <div
-            v-show="!this.isMobile() ? isShowNestedItems : drawer"
-            class="navigation-nested"
-          >
-            <ul class="navigation-nested-list">
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  役員・諮問一覧
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/incoming"
-                >
-                  団体情報
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  財務情報
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  コンプライアンス
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  コーポレートガバナンス
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  情報セキュリティ基本方針
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/#"
-                >
-                  安全への取り組み
+        <!-- 外部リンク -->
+        <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
+          <div class="lp-button">
+            <a
+              class="lp-button-text"
+              href="https://aiesec.jp/lp/#"
+            >
+              Recruitment
+            </a>
+          </div>
+        </li> -->
+      </ul>
+      <ul
+        class="navigation-list-sp"
+        :class="{'is-show': isShow}"
+      >
+      <li
+          class="navigation-item"
+          v-for="(item, index) in navigationItems"
+          :key="index"
+        >
+          <Nuxt-link class="navigation-link" :to=item.link @click.native="isShowList">
+            {{ item.title }}
+          </Nuxt-link>
+          <div>
+            <ul class="navigation-nested-list"> 
+              <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
+                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList">
+                  {{ subItem.title }}
                 </nuxt-link>
               </li>
             </ul>
           </div>
         </li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/news"
-          >
-            NEWS
-          </nuxt-link>
-        </li>
-        <li class="navigation-item hidden">|</li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/#contact"
-          >
-            お問い合わせ
-          </nuxt-link>
-        </li> -->
         <!-- 外部リンク -->
         <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
           <div class="lp-button">
@@ -143,9 +86,8 @@
       <v-app-bar-nav-icon
         class="navigation-mobile-icon"
         @click="isShowList"
-        @click.stop="drawer = !drawer"
       >
-        <v-icon v-if="drawer">
+        <v-icon v-if="isShow">
           mdi-close
         </v-icon>
         <v-icon v-else>
@@ -164,15 +106,13 @@ export default {
   data() {
     return { 
       isShowNestedItems: [],
-      drawer: false,
       isShow: false,//ハンバーガー時のリスト以下の表示
       isActive: false,//PCホバーの表示
       navigationItems: [
         {
           title: "AIESECについて",
-          link: "",
+          link: "/#aiesec",
           subItems: [
-            { title: "AIESECについてトップ", link: "/#" },
             { title: "ビジョン・ミッション・バリュー", link: "/#" },
             { title: "代表メッセージ", link: "/message" }
           ]
@@ -219,10 +159,6 @@ export default {
     }
   },
   methods: {
-    beforeRouteUpdate(to, from, next) {
-            next()
-            this.hoge() // 表示用のデータを更新する処理
-        },
     mouseOverAction(index) {
       this.$set(this.isShowNestedItems, index, true); 
       this.isActive = true; // クラスの追加
@@ -278,35 +214,40 @@ export default {
       }
     }
 
-    &-list {
+    &-list-pc{
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap;
 
-      
       @media (max-width: 900px){
         display: none;
-        z-index: $headerDrawerIndex;
-        background-color: $white;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 0vw;
-        transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-        line-height: 2.5rem;
-        width: 100vw;
-        height: 100vh;
-        padding-top: 5rem;
-
-        .navigation-link{
-            color: $blue;
-        }
-
-        &.is-show{
-          display: block;       
-        }
       }
     }
+    &-list-sp{
+        display: none;
+        @media (max-width: 900px){
+          z-index: $headerDrawerIndex;
+          background-color: $white;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0vw;
+          transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+          line-height: 2.5rem;
+          width: 100vw;
+          height: 100vh;
+          padding-top: 5rem;
+
+          .navigation-link{
+            color: $blue;
+          }
+
+          &.is-show{
+            display: block;       
+          }
+
+        }
+      }
 
    
 
@@ -353,10 +294,6 @@ export default {
         padding: 0.5rem;
         box-shadow: none;
         border: none;
-        
-        .navigation-link{
-            color: $dark-gray;
-        }
 
         &.is-show{
           display: block;
@@ -382,6 +319,9 @@ export default {
 
         @media (max-width: 900px){
           padding-top: 0;
+          .navigation-link{
+              color: $dark-gray;
+          }
         }
       }
     }

@@ -3,7 +3,7 @@
     <div class="about-img"></div>
     <div class="about-bg"></div>
     <div class="about-contents">
-      <p class="about-title">
+      <p class="about-title" id="aiesec">
         About AIESEC
       </p>
       <h2 class="about-title-sub">AIESECについて</h2>
