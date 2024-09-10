@@ -101,9 +101,9 @@
 </template>
 
 <script>
-function scroll_control(event) {
-  event.preventDefault();
-}
+// function scroll_control(event) {
+//   event.preventDefault();
+// }
 export default {
   data() {
     return { 
@@ -172,20 +172,19 @@ export default {
       this.isShow = !this.isShow; // クラスの追加・削除を切り替える
     },
     toggleScroll() {
+      const bodyElement = document.body;
+      const menuElement = document.querySelector('.navigation-list-sp');
     if (this.isShow === true) {
-      document.addEventListener("mousewheel", scroll_control, {
-        passive: false,
-      });
-      document.addEventListener("touchmove", scroll_control, {
-        passive: false,
-      });
+      bodyElement.style.position = 'fixed';  // ページ全体のスクロールを完全に無効化
+      bodyElement.style.overflow = 'hidden'; // ページ全体のスクロールを無効化
+      menuElement.style.overflowY = 'auto';  // ハンバーガーメニューの内部でスクロールを有効化
+      bodyElement.style.top = `-${window.scrollY}px`;
     } else {
-      document.removeEventListener("mousewheel", scroll_control, {
-        passive: false,
-      });
-      document.removeEventListener("touchmove", scroll_control, {
-        passive: false,
-      });
+      const scrollY = bodyElement.style.top;
+      bodyElement.style.position = '';
+      bodyElement.style.overflow = '';  // ページ全体のスクロールを再有効化
+      menuElement.style.overflowY = ''; // メニューのスクロールを無効化
+      window.scrollTo(0, parseInt(scrollY || '0') * -1); // スクロール位置を元に戻す
     }
   },
   }
@@ -251,10 +250,12 @@ export default {
           top: 0;
           left: 0vw;
           transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-          line-height: 1rem;
+          line-height: 0.6rem;
           width: 100vw;
           height: 100vh;
           padding-top: 1rem;
+          overflow-y: auto; // ハンバーガーメニュー内部でスクロール可能
+          overscroll-behavior: contain; // メニュー外へのスクロールを防ぐ
 
           .navigation-link{
             color: $blue;
@@ -287,6 +288,7 @@ export default {
         &:first-child {
           border-top: none;
         }
+        
       }
     }
    
