@@ -90,25 +90,17 @@
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/organization"
+                to="/annual-report"
               >
-                協賛について
+                アニュアルレポート
               </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/organization"
+                to="/annual-report"
               >
-                ディスクロージャーポリシー
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link
-                class="footer-content-link"
-                to="/#"
-              >
-                アニュアルレポート / 財務報告
+                財務報告
               </nuxt-link>
             </li>
           </ul>
@@ -123,31 +115,54 @@
                 class="footer-content-link"
                 to="/organization"
               >
-                団体情報
+                団体概要
               </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/#"
+                to="/organization#p5"
               >
-                理事紹介
+                コンプライアンス
               </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/#"
+                to="/organization#p6"
               >
-                活動報告
+                情報セキュリティ基本方針
               </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/#"
+                to="/safety"
               >
                 安全への取り組み
+              </nuxt-link>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-content-title">
+            &nbsp;
+          </h3>
+          <ul>
+            <li>
+              <nuxt-link
+                class="footer-content-link"
+                to="/organization"
+              >
+                プライバシーポリシー
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                class="footer-content-link"
+                to="/organization#p5"
+              >
+                サイトポリシー
               </nuxt-link>
             </li>
           </ul>
@@ -212,6 +227,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 5rem 1rem 0 1rem;
+      width: 100%;
     }
 
   }
@@ -231,13 +247,16 @@
       grid-template-columns: repeat(3,35%);
     }
     @include tab {
-      width: auto;
+      width: 100%;
       margin-bottom: 3rem;
-      grid-template-columns: repeat(3,45%);
-      margin-left: 4rem;
+      grid-template-columns: repeat(3,30%);
+      padding-left: 5vw;
     }
     @media (max-width:710px) {
-      grid-template-columns: repeat(2,48%);
+      grid-template-columns: repeat(2,50%);
+      padding-left: 6vw;
+      width: 100%;
+
     }
     @include sp{
       margin-left: 1rem;
@@ -334,6 +353,9 @@
     img{
       width: 100%;
       max-height: 100%;
+      @media (max-width:425px) {
+          width: 80%;
+      }
     }
     
   }

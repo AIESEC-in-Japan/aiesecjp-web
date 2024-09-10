@@ -15,7 +15,7 @@
       </p>
       <div class="button-container">
         <p class="button-nextText">私たちの想い</p>
-        <a class="button" href="#"></a>
+        <a class="button" href="/about"></a>
       </div>
     </div>
   </section>

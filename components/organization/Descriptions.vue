@@ -38,7 +38,7 @@
           v-for="(item, index) in items"
           :key="index"
         >
-          <h3><a :href="item.link">{{ item.title }}</a></h3>
+          <p><a :href="item.link">{{ item.title }}</a></p>
         </div>
         <h2 id="p5" class="organization-table-title">
           コンプライアンス
@@ -310,7 +310,6 @@ export default {
       line-height: 2;
 
     }
-
   }
 }
 
