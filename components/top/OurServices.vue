@@ -41,7 +41,7 @@
           <div class="service-item">
             <div class="service-item-img"></div>
               <div class="button-next-wrapper">
-                <p class="button-nextText">海外インターンシップ<span><br></span>受け入れ</p>
+                <p class="button-nextText">海外インターンシップ<span>&nbsp;<br></span>受け入れ</p>
                 <p class="button-nextText-sub">
                   あああああああああああああああああああああああ
                 </p>
@@ -234,8 +234,11 @@
   
   span{
     display:none;
-    @media(min-width:1220px){
+    @media(max-width:1470px){
       display: inline;
+    }
+    @media(max-width:860px){
+      display: none;
     }
   }
   @media(max-width:680px){

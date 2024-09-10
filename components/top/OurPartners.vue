@@ -8,7 +8,7 @@
       <BasePartners/>
       <div class="button-container">
         <p class="button-nextText">協賛についてはこちら</p>
-        <a class="button" href="#"></a>
+        <a class="button" href="/for-company"></a>
       </div>
     </div>
   </section>

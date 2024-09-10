@@ -7,7 +7,7 @@
           <h2 class="outgoing-title-sub">お気軽にお問い合わせください。</h2>
         </div>
         <div class="button-container">
-          <a class="button" href="#" target="_blank"></a>
+          <a class="button" href="/#contact"></a>
         </div>
       </div>
       <div class="outgoing-img"></div>

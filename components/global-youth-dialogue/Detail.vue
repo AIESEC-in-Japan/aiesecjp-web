@@ -166,7 +166,6 @@
               }
             }
             @media(max-width:365px){
-              text-align: start;
               word-break: break-all;
             }
          
@@ -189,7 +188,6 @@
               }
             }
             @media(max-width:365px){
-              text-align: start;
               white-space: nowrap;
             }
 

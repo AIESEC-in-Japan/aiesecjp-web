@@ -9,7 +9,7 @@
 <style lang="scss" scoped>
 .google-form {
   border-width: 0;
-  height: 100rem;
+  height: 82vh;
   max-width: 50rem;
   width: 90%;
   margin: 7rem auto;
