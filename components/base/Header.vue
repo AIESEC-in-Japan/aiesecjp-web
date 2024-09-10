@@ -254,7 +254,7 @@ export default {
           line-height: 1rem;
           width: 100vw;
           height: 100vh;
-          padding-top: 3rem;
+          padding-top: 1rem;
 
           .navigation-link{
             color: $blue;
