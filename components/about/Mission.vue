@@ -55,6 +55,8 @@
     .image{
         width: 62vw;
         height: 25vw;
+        max-width: 892px;
+        max-height: 360px;
         background-image: url(./assets/images/about/mission.png);
         background-position: center;
         background-repeat: none;

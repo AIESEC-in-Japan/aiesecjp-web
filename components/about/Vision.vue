@@ -63,16 +63,19 @@
     }
 
     .image{
-        width: 30vw;
-        height: 30vw;
+        width: 34vw;
+        height: 25vw;
+        max-width: 480px;
+        max-height: 360px;
         background-image: url(./assets/images/about/vision.png);
         background-position: center;
         background-repeat: none;
         background-size: cover;
 
         @include sp{
-          width: 60vw;
-          height: 60vw;
+          width: 66vw;
+          height: 50vw;
+          margin-bottom: 2rem;
         }
 
       }
