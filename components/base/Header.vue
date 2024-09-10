@@ -58,13 +58,13 @@
           v-for="(item, index) in navigationItems"
           :key="index"
         >
-          <Nuxt-link class="navigation-link" :to=item.link @click.native="isShowList">
+          <Nuxt-link class="navigation-link" :to=item.link @click.native="isShowList(); toggleScroll()">
             {{ item.title }}
           </Nuxt-link>
           <div>
             <ul class="navigation-nested-list"> 
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
-                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList">
+                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList(); toggleScroll()">
                   {{ subItem.title }}
                 </nuxt-link>
               </li>
@@ -85,7 +85,7 @@
       </ul>
       <v-app-bar-nav-icon
         class="navigation-mobile-icon"
-        @click="isShowList"
+        @click="isShowList(); toggleScroll()"
       >
         <v-icon v-if="isShow">
           mdi-close
@@ -101,7 +101,9 @@
 </template>
 
 <script>
-
+function scroll_control(event) {
+  event.preventDefault();
+}
 export default {
   data() {
     return { 
@@ -168,7 +170,24 @@ export default {
     },
     isShowList() {
       this.isShow = !this.isShow; // クラスの追加・削除を切り替える
+    },
+    toggleScroll() {
+    if (this.isShow === true) {
+      document.addEventListener("mousewheel", scroll_control, {
+        passive: false,
+      });
+      document.addEventListener("touchmove", scroll_control, {
+        passive: false,
+      });
+    } else {
+      document.removeEventListener("mousewheel", scroll_control, {
+        passive: false,
+      });
+      document.removeEventListener("touchmove", scroll_control, {
+        passive: false,
+      });
     }
+  },
   }
 }
 
@@ -232,10 +251,10 @@ export default {
           top: 0;
           left: 0vw;
           transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-          line-height: 2.5rem;
+          line-height: 1rem;
           width: 100vw;
           height: 100vh;
-          padding-top: 5rem;
+          padding-top: 3rem;
 
           .navigation-link{
             color: $blue;
@@ -261,7 +280,7 @@ export default {
       }
 
       @media (max-width: 900px){
-        padding:0.3rem 1rem 0.3rem 0;
+        padding:0 0 0.2rem 0;
         border-top: $light-gray solid 0.8px;
         line-height: 2.5rem;
 
@@ -308,6 +327,7 @@ export default {
         @media (max-width: 900px){
           border-left: none;
           margin-top: 0;
+          padding-left: 0.5rem;
         }
       }
 
@@ -317,7 +337,8 @@ export default {
         line-height: 2rem;
 
         @media (max-width: 900px){
-          padding-top: 0;
+          padding:  0;
+          line-height: 1.4rem;
           .navigation-link{
               color: $dark-gray;
           }
@@ -365,6 +386,7 @@ export default {
         font-size: 0.9rem;
         letter-spacing: 0.5px;
       }
+      
     }
   }
 }
