@@ -11,7 +11,7 @@
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/#"
+                to="/aiesec"
                 >
                 ビジョン・ミッション
               </nuxt-link>
@@ -98,7 +98,7 @@
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/annual-report"
+                to="/organization#p4"
               >
                 財務報告
               </nuxt-link>
@@ -115,7 +115,23 @@
                 class="footer-content-link"
                 to="/organization"
               >
-                団体概要
+                団体概要トップ
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                class="footer-content-link"
+                to="/organization#p1"
+              >
+                役員・諮問一覧
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                class="footer-content-link"
+                to="/organization#p3"
+              >
+                団体情報
               </nuxt-link>
             </li>
             <li>
@@ -152,7 +168,7 @@
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/organization"
+                to="/privacy-policy"
               >
                 プライバシーポリシー
               </nuxt-link>
@@ -160,7 +176,7 @@
             <li>
               <nuxt-link
                 class="footer-content-link"
-                to="/organization#p5"
+                to="/site-policy"
               >
                 サイトポリシー
               </nuxt-link>
