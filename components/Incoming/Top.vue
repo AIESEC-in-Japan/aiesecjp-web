@@ -62,7 +62,6 @@
   &-text{
     color: #fff;
     font-size: 4rem;
-    font-weight: bold;
     position: absolute;
     bottom: 15%;
     right: 5rem;
