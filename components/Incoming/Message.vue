@@ -59,7 +59,6 @@
       .incoming-title{
           color: $mint;
           font-size: 2rem;
-          font-weight: bold;
           margin-bottom: 0;
     
           &-sub{
@@ -158,7 +157,6 @@
 .button-nextText{
   display: block;
   font-size: 2rem;
-  font-weight: bold;
   color: $mint;
   padding: 6px;
   padding-left: 0;

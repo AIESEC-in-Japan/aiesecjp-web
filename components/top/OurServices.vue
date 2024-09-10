@@ -133,7 +133,6 @@
   color: $blue;
   font-size: 2rem;
   padding-top: 6rem;
-  font-weight: bold;
   margin-bottom: 0;
 
   &-sub{
@@ -148,7 +147,6 @@
 }
 
 .service-target-title{
-  font-weight: bold;
   font-size: 3rem;
   padding: 6rem 0 2rem 0;
   margin-top: -4rem;
@@ -228,7 +226,6 @@
 }
 .button-nextText{
   color: $white;
-  font-weight: bold;
   font-size: 2rem;
   @media(max-width:680px){
     font-size: 1.25rem; 

@@ -50,7 +50,6 @@
       display: inline-block;
         color: $blue;
         font-size: 1.5rem;
-        font-weight: bold;
         letter-spacing: 0.125rem;
         margin-top: 2.5rem;
         margin-bottom: 1.25rem;

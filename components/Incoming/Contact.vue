@@ -51,7 +51,6 @@
           .incoming-title{
             color: $mint;
             font-size: 2rem;
-            font-weight: bold;
             margin-bottom: 0;
       
             &-sub{

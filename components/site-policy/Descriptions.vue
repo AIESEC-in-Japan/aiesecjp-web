@@ -185,7 +185,6 @@ export default {
   .button-nextText{
     display: block;
     font-size: 0.875rem;
-    font-weight: bold;
     padding: 6px;
     padding-left: 18px;
     margin: auto 0;

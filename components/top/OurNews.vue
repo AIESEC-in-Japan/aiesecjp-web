@@ -83,7 +83,6 @@ export default {
   color: $blue;
   font-size: 2rem;
   padding-top: 6rem;
-  font-weight: bold;
   margin-bottom: 0;
 
   &-sub{
@@ -211,7 +210,6 @@ export default {
 .button-nextText{
   display: block;
   font-size: 1.35rem;
-  font-weight: bold;
   padding: 6px;
   padding-left: 0;
   margin: 0;

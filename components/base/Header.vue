@@ -352,7 +352,6 @@ export default {
     }
 
     &-link {
-      font-weight: bold;
       text-decoration: none;
       font-size: 0.94rem;
       letter-spacing: 0.6px;
@@ -391,7 +390,6 @@ export default {
     &-text {
       color: #ffffff;
       text-decoration: none;
-      font-weight: bold;
       font-size: 1rem;
       letter-spacing: 2px;
       border-radius: 15px;

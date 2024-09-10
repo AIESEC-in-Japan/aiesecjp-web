@@ -63,7 +63,6 @@
         .outgoing-title{
           color: $red;
           font-size: 2rem;
-          font-weight: bold;
           margin-bottom: 0;
     
           &-sub{
@@ -164,7 +163,6 @@
 .button-nextText{
   display: block;
   font-size: 2rem;
-  font-weight: bold;
   color: $red;
   padding: 6px;
   padding-left: 0;

@@ -121,7 +121,6 @@ export default {
   color: $blue;
   font-size: 2rem;
   padding-top: 6rem;
-  font-weight: bold;
   margin-bottom: 0;
 
   &-sub{

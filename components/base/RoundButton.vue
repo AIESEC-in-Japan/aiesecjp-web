@@ -74,7 +74,6 @@ a {
   padding: 1rem;
   border-radius: 40px;
   border: solid 2px;
-  font-weight: bold;
   font-size: 1rem;
   transition: 0.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
   text-align:center;

@@ -78,7 +78,6 @@
   color: $blue;
   font-size: 6rem;
   padding-top: 6rem;
-  font-weight: bold;
   margin-bottom: 0;
   margin-top: -1rem;
 
@@ -174,7 +173,6 @@
 }
 .button-nextText{
   color: $white;
-  font-weight: bold;
   font-size: 2rem;
   margin: 0 auto 2rem auto;
 

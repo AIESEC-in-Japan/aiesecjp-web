@@ -50,7 +50,6 @@
           .fcompany-title{
             color: $blue;
             font-size: 2rem;
-            font-weight: bold;
             margin-bottom: 0;
       
             &-sub{
