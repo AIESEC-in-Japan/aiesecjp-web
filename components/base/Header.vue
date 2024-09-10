@@ -254,7 +254,7 @@ export default {
           width: 100vw;
           height: 100vh;
           padding-top: 3rem;
-          padding-bottom: 3rem;
+          padding-bottom: 6rem;
           overflow-y: auto; // ハンバーガーメニュー内部でスクロール可能
           overscroll-behavior: contain; // メニュー外へのスクロールを防ぐ
 
