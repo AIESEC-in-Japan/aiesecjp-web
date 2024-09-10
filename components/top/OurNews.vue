@@ -120,10 +120,13 @@ export default {
     grid-template-columns: repeat(2 ,auto);
     gap: 1rem;
   }
-
   @include sp{
-    gap: 0.4rem;
+    display: block;
+    grid-template-columns: none;
+    margin-top: 1rem;
   }
+
+ 
 }
 .news-categorize-item{
   margin: 0.8rem 2rem 0.8rem 0;
@@ -154,9 +157,7 @@ export default {
     margin: 0.8rem auto;
   }
   @include sp{
-    padding: 10px 26px;
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
+    display: none;
   }
 }
 .news-categorize-item p{ 
@@ -201,6 +202,10 @@ export default {
   @media (max-width:630px){
     grid-row: 4;
     grid-column: 1/ span 2;
+  }
+  @include sp{
+    grid-row: none;
+    grid-column: none;
   }
 }
 .button-nextText{
