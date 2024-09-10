@@ -105,11 +105,16 @@ export default {
 
 .news-contents{
   position: relative;
-  margin: 0 5rem;
+  margin: 0 5%;
   height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width:1600px){
+      margin: 0 auto;
+      max-width: 1440px;
+    }
 }
 
 .news-title{
@@ -129,6 +134,14 @@ export default {
   display: flex;
   justify-content:center;
   margin: 1.6rem 0 0 0;
+  width: 100%;
+
+  @media(max-width:890px){
+    display: grid;
+    grid-template-columns: repeat(3 ,auto);
+    justify-content: center;
+    gap: 0.6rem;
+  }
 
 &-text{
     font-size: 1.6rem;
@@ -145,6 +158,8 @@ export default {
   border-radius: 3rem;
   text-decoration: none;
   transition: all 0.3s ease 0s;
+  align-self: center;
+
 
   &:hover{
     background-color: $blue;
@@ -152,6 +167,32 @@ export default {
     p{
       color: $white;
 
+    }
+  }
+
+  @media(max-width:890px){
+    margin: 0.8rem auto;
+    width: fit-content;
+  }
+
+  @include sp{
+    padding: 8px 20px;  
+  }
+
+  @media(max-width:340px){
+    padding: 6px 14px;  
+  }
+
+  &:nth-child(4){
+    @media(max-width:890px){
+      grid-row: 2;
+      grid-column: 1/span 2;
+    }
+  }
+  &:nth-child(5){
+    @media(max-width:890px){
+      grid-row: 2;
+      grid-column: 3;
     }
   }
 }

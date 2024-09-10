@@ -83,7 +83,11 @@ export default {
     padding: 4px 12px;  
     width: fit-content;
     margin-top: 1rem;
+    margin-left: auto;
   }
+  @media(max-width:320px){
+      font-size: 0.865px;
+    }
 }
 .news-list-title{
   color: $dark-gray;

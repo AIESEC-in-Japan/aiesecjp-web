@@ -134,6 +134,8 @@ export default {
   border-radius: 3rem;
   text-decoration: none;
   transition: all 0.3s ease 0s;
+  align-self: center;
+
 
 
   &:hover{
