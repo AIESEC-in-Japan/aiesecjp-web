@@ -204,6 +204,8 @@
 
     }
 
+   
+
   }
   &-bg{
     display: inline;
@@ -230,19 +232,21 @@
       width: 100%;
     }
 
+    @media (min-width:1600px){
+      margin: 0 auto;
+      max-width: 1440px;
+    }
+
   }
   &-items {
     width: 66%;
     position:relative;
     height: max-content;
-    display: flex;
     justify-content: center;    
     z-index:10;
-
-    @media (max-width:1440px) {
-      display: grid;
-      grid-template-columns: repeat(4,25%);
-    }
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    
     @media (max-width:1100px) {
       grid-template-columns: repeat(3,35%);
     }
