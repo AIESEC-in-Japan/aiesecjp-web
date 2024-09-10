@@ -1,0 +1,3 @@
+<template>
+  <Annual-reportDescription />
+</template>
