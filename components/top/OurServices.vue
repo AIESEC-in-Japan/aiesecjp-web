@@ -28,8 +28,7 @@
               <div class="button-next-wrapper">
                 <p class="button-nextText">global youth dialogue</p>
                 <p class="button-nextText-sub">
-                  あああああああああああああああああああああああ<br>
-                  あああああああああ
+                  あああああああああああああああああああああああ
                 </p>
               </div>
               <a class="button" href="/global-youth-dialogue"></a>
@@ -44,8 +43,7 @@
               <div class="button-next-wrapper">
                 <p class="button-nextText">海外インターンシップ受け入れ</p>
                 <p class="button-nextText-sub">
-                  あああああああああああああああああああああああ<br>
-                  あああああああああ
+                  あああああああああああああああああああああああ
                 </p>
               </div>
               <a class="button" href="/incoming"></a>
@@ -53,10 +51,8 @@
           <div class="service-item">
             <div class="service-item-img"></div>
               <div class="button-next-wrapper">
-                <p class="button-nextText">協賛</p>
+                <p class="button-nextText">協賛について</p>
                 <p class="button-nextText-sub">
-                  あああああああああああああああああああああああ<br>
-                  あああああああああ
                 </p>
               </div>
               <a class="button" href="/for-company"></a>
@@ -88,7 +84,7 @@
 
 .flow-text p{
   color:#e9e9e9;
-  font-family: $lato;
+  font-family: $lato,$YuGothic;
   font-size: 7rem;
   animation: flowing 18s linear infinite;
   transform: translateX(100%);
@@ -150,6 +146,10 @@
   font-size: 3rem;
   padding: 6rem 0 2rem 0;
   margin-top: -4rem;
+
+  @include sp{
+    font-size: 2rem;
+  }
 }
 .service-item-container{
   display: flex; 
@@ -188,19 +188,19 @@
     margin-right: 1.4rem;
   }
   @include tab{
-    width: 38vw;
-    height: 38vw;
+    width: 42vw;
+    height: 42vw;
   }
   @media(max-width:680px){
-    width: 40vw;
-    height: 40vw;
+    width: 42vw;
+    height: 42vw;
     &:first-child{
     margin-right: 1rem;
     }  
   }
   @include sp{
-    width: 76vw;
-    height: 38vw;
+    width: 100%;
+    height: 40vw;
     &:first-child{
       margin-right: auto;
     }

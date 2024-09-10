@@ -112,6 +112,12 @@ export default {
   }
   
 
+  @media(max-width:550px){
+    .kv-text{
+      font-size: 4rem;
+    }    
+  }
+
   @include sp{
     .kv-text{
       font-size: 3.2rem; 

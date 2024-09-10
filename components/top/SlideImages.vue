@@ -60,7 +60,7 @@
   animation: flowing 10s linear infinite;
   display: flex;
   width: 100%;
-  height: 550px;
+  height: 60vw;
 }
 @keyframes flowing {
   from {
@@ -81,7 +81,7 @@
 .slide-content{
   display: block;
   width: 100%;
-  height: 600px;
+  height: 54vw;
   background-position: center;
   background-size: cover;
   margin: 1rem 1rem;
