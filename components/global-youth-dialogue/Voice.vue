@@ -66,7 +66,7 @@
           </p>
         </div>
       </div>
-      <h3><span style="font-family: arial;">\</span> SNSでも情報発信中 <span style="font-family: arial;">/</span> </h3>
+      <!-- <h3><span style="font-family: arial;">\</span> SNSでも情報発信中 <span style="font-family: arial;">/</span> </h3>
       <div class="sns">
         <a class="icon" href="https://instagram.com/aiesec_gyd_official?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
           <img src="@/assets/images/global-youth-dialogue/IG.png" alt="Instagram">
@@ -77,7 +77,7 @@
         <a class="icon" href="https://note.com/aiesec_japan/n/n507bb45b442a" target="_blank">
           <img src="@/assets/images/global-youth-dialogue/note.png" alt="note">
         </a>
-      </div>
+      </div> -->
       <!-- <BaseRoundButton
         v-bind="this.ButtonProps"
         :label="'参加者の声はこちら'"
