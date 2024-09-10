@@ -18,7 +18,7 @@
               <div class="button-next-wrapper">
                 <p class="button-nextText">海外インターンシップ</p>
                 <p class="button-nextText-sub">
-                  社会課題を起点に作られたプロジェクトで今まで見<br>たことのない世界へ
+                  社会課題を起点に作られたプロジェクトで今まで見たことのない世界へ
                 </p>
               </div>
               <a class="button" href="/outgoing"></a>
@@ -41,7 +41,7 @@
           <div class="service-item">
             <div class="service-item-img"></div>
               <div class="button-next-wrapper">
-                <p class="button-nextText">海外インターンシップ受け入れ</p>
+                <p class="button-nextText">海外インターンシップ<span><br></span>受け入れ</p>
                 <p class="button-nextText-sub">
                   あああああああああああああああああああああああ
                 </p>
@@ -110,6 +110,10 @@
   z-index: 0;
   border-radius: 10rem 0 10rem 0;
   box-shadow: 0 0px 16.3px rgba(0, 0, 0, 0.1);
+
+  @include sp{
+    border-radius: 6rem 0 6rem 0;
+  }
 }
 
 
@@ -227,6 +231,13 @@
 .button-nextText{
   color: $white;
   font-size: 2rem;
+  
+  span{
+    display:none;
+    @media(min-width:1220px){
+      display: inline;
+    }
+  }
   @media(max-width:680px){
     font-size: 1.25rem; 
     margin-bottom: 0.4rem;
@@ -265,6 +276,12 @@
   @media(max-width:680px){
     width: 2.4rem;
     height: 2.4rem;
+  }
+  @include sp{
+    background-color: $blue;
+    border: none;
+    box-shadow:  0 0 24.5px rgba(3, 126, 243,0.22);
+
   }
 }
 .button::before {

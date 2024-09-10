@@ -218,6 +218,10 @@
     border-radius: 10rem 0 0 0;
     box-shadow: 0 -4px 29.2px rgba(0, 0, 0, 0.1);
 
+    @include sp{
+      border-radius: 6rem 0 0 0;
+    }
+
   }
 
   &-wrapper{

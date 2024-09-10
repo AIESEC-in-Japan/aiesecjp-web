@@ -40,6 +40,8 @@
       @include sp{
         margin-bottom: 5rem;
         height: 65vh;
+        border-radius: 0 0 6rem 0;
+
       }
     }
   }
@@ -50,6 +52,9 @@
     background-size: cover;
     background-position: center;
     border-radius: 0 0 14rem 0;
+    @include sp{
+      border-radius: 0 0 6rem 0;
+    }
   }
     
 

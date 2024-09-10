@@ -41,9 +41,9 @@
     object-fit: contain;
   
     @include sp {
-      width: 3rem;
-      height: 3rem;
-      margin: 1rem;
+      width: 20vw;
+      height: 20vw;
+      margin: 0.8rem;
     }
   }
 

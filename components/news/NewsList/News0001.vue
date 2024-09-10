@@ -10,7 +10,7 @@
         </div>
       </div>
       <h2 class="news-title">
-        夏の合宿開催について
+        <span>夏の合宿開催について</span>
       </h2>
       <p class="news-text">
         夏の合宿を開催いたしました。<br>
@@ -48,12 +48,16 @@
 
 .news-contents{
   position: relative;
-  margin: 0 auto;
-  width: 866px;
+  margin: 0 5%;
+  width: 90%;
   height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (min-width:1600px){
+      margin: 0 auto;
+      max-width: 1440px;
+    }
 }
 
 .news-header{
@@ -74,7 +78,7 @@
 }
 
 .news-category{
-  margin: 0 2rem;
+  margin: 0 0 0 auto;
   text-align: center;
 }
 .news-category p{
@@ -85,27 +89,36 @@
   text-align: center;
   font-size: 1rem;
   margin: 0;
+  @media(max-width: 580px){
+    padding: 4px 12px;  
+    width: fit-content;
+    margin-top: 1rem;
+    margin-left: auto;
+  }
 }
 
 .news-title{
   font-size: 2rem;
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  line-height: 4rem;
+  border-bottom: solid 3px $blue;
+  width: fit-content;
 }
 
 .news-text{
   font-size: 1rem;
   margin: 0;
-  //テキストの幅
+  width: 100%;
 }
 
 .img{
   background-image: url(assets/images/top/top-kv.png);
   background-size: cover;
   background-position: center;
-  width: 866px;
-  height: 300px;
-  margin: 3rem 0;
+  width: 80vw;
+  height: 44vw;
+  margin: 3rem auto;
 }
 
 .button-container{

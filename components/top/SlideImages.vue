@@ -11,13 +11,9 @@
           </div>
           <div class="slide-wrapper">
             <div class="slide-content" style="background-image: url(https://placehold.jp/400x450.png);"></div>
-            <div class="slide-content" style="background-image: url(https://placehold.jp/400x250.png);"></div>
           </div>
-          <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(https://placehold.jp/500x740.png);"></div>
-          </div>
-      </div>
-      <div class="slide-group">
+        </div>
+        <div class="slide-group">
           <div class="slide-wrapper">
             <div class="slide-content" style="background-image: url(https://placehold.jp/400x450.png);"></div>
             <div class="slide-content" style="background-image: url(https://placehold.jp/400x250.png);"></div>
@@ -27,10 +23,6 @@
           </div>
           <div class="slide-wrapper">
             <div class="slide-content" style="background-image: url(https://placehold.jp/400x450.png);"></div>
-            <div class="slide-content" style="background-image: url(https://placehold.jp/400x250.png);"></div>
-          </div>
-          <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(https://placehold.jp/500x740.png);"></div>
           </div>
       </div>
     </div>
@@ -59,7 +51,7 @@
 .slide-group{
   animation: flowing 10s linear infinite;
   display: flex;
-  width: 100%;
+  width: 120vw;
   height: 60vw;
 }
 @keyframes flowing {
@@ -74,8 +66,13 @@
 .slide-wrapper{
   display: flex;
   flex-direction: column;
-  width: calc(100vw / 4);
+  width: calc(120vw / 4);
   padding: 10px;
+  @include sp{
+    width: calc(120vw / 3);
+    padding: 5px;
+
+  }
 }
 
 .slide-content{
@@ -85,5 +82,8 @@
   background-position: center;
   background-size: cover;
   margin: 1rem 1rem;
+  @include sp{
+    margin: 1rem 0.5rem;
+  }
 }
 </style>

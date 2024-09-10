@@ -44,6 +44,10 @@
   position: relative;
   margin: 5rem 0 10rem 0;
   width: 100%;
+
+  @include sp{
+    margin-bottom: 5rem;
+  }
 }
 
 
@@ -166,6 +170,7 @@
 
   @include sp{
     flex-direction: row;
+    justify-content: space-between;
     bottom:0;
     text-align: center;
     align-items: center;
@@ -180,7 +185,7 @@
     font-size: 1.25rem;
   }
   @include sp{
-    margin-bottom: 0rem;;
+    margin: 0 0 0 8vw;
   }
 
 }
@@ -199,6 +204,10 @@
   @include sp{
     width: 2.4rem;
     height: 2.4rem;
+    background-color: $blue;
+    border: none;
+    box-shadow:  0 0 24.5px rgba(3, 126, 243,0.22);
+    margin: 0 8vw 0 0;
   }
 }
 .button::before {

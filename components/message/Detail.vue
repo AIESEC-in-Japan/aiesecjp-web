@@ -103,6 +103,10 @@
           width: 60vw;
           height: 38vw;
         }
+        @include sp{
+          width: 80vw;
+          height: 44vw;
+        }
 
       }
     .text-wrapper{

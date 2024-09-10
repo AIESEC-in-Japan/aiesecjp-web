@@ -30,6 +30,9 @@
   @include tab{
     margin-bottom: 0rem;
   }
+  @include sp{
+    margin-top: 0rem;
+  }
 
   .donation-contents{
     position: relative;

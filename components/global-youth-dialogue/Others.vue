@@ -12,7 +12,7 @@
         </div>
         <div class="service-item">
           <div class="service-item-img service-item-img-2"></div>
-            <p class="button-nextText">海外インターンシップ受け入れ</p>
+            <p class="button-nextText">海外インターンシップ<br>受け入れ事業</p>
             <a class="button" href="/incoming"></a>
         </div>
       </div>
@@ -81,9 +81,13 @@
   overflow: hidden;
 
   @media (max-width:660px){
-    width: 76vw;
+    width: 100%;
     margin: 0 auto 2rem auto;
     height: 36vw;
+  }
+  @include sp{
+    width: 100%;
+    height: 40vw;
   }
 
   &:hover{
@@ -106,10 +110,10 @@
     height: 100%;
 
     &-1{
-      background-image: url(assets/images/global-youth-dialogue/GlobalYouthDialogueTop.png);
+      background-image: url(assets/images/outgoing/outgoingTop.png);
     }
     &-2{
-      background-image: url(assets/images/outgoing/outgoingTop.png);
+      background-image: url(assets/images/incoming/incomingTop.png);
     }
     
   }
@@ -151,6 +155,11 @@
     height: 50px;
     top: 50%;
   }
+  @include sp{
+    background-color: $blue;
+    border: none;
+    box-shadow:  0 0 24.5px rgba(3, 126, 243,0.22);
+  }
 }
 .button::before {
   content: "";
@@ -166,12 +175,14 @@
   transform: rotate(45deg);
 
   @include tab{
-    left: 15px;
+    left: 16px;
     width: 10px;
     height: 10px;
     border-top: 1.5px solid #fff;
     border-right: 1.5px solid #fff;
-
+  }
+  @include sp{
+    left: 17px;
   }
 }
 </style>
