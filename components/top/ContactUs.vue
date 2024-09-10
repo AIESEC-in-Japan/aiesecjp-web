@@ -139,8 +139,8 @@
   }
 
   @include sp{
-    width: 85%;
-    height: 20vw;
+    width: 100%;
+    height: 24vw;
     margin: 0 auto 1rem auto;
   }
 }
