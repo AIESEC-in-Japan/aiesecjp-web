@@ -253,7 +253,7 @@ export default {
           line-height: 0.6rem;
           width: 100vw;
           height: 100vh;
-          padding-top: 1rem;
+          padding-top: 3rem;
           overflow-y: auto; // ハンバーガーメニュー内部でスクロール可能
           overscroll-behavior: contain; // メニュー外へのスクロールを防ぐ
 
