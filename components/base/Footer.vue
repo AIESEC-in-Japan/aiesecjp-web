@@ -328,7 +328,7 @@
       font-size: 0.8rem;
       color: $white;
       text-decoration: none;
-      font-family: $YuGothic;
+      font-family:  "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
       @include sp{
         font-size: 0.735rem;
       }
