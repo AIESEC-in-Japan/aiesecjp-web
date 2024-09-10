@@ -84,7 +84,7 @@
 
 .flow-text p{
   color:#e9e9e9;
-  font-family: $lato,$YuGothic;
+  font-family:  Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
   font-size: 7rem;
   animation: flowing 18s linear infinite;
   transform: translateX(100%);
