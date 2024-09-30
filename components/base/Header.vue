@@ -115,7 +115,7 @@ export default {
           title: "AIESECについて",
           link: "/#about",
           subItems: [
-            { title: "ビジョン・ミッション", link: "/about" },
+            { title: "AIESECについてトップ", link: "/about" },
             { title: "代表メッセージ", link: "/message" }
           ]
         },

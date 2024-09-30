@@ -13,7 +13,7 @@
                 class="footer-content-link"
                 to="/aiesec"
                 >
-                ビジョン・ミッション
+                AIESECについてトップ  
               </nuxt-link>
             </li>
             <li>
@@ -241,7 +241,7 @@
   }
 
   &-wrapper{
-    width: auto;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding: 5rem 1rem 0 5rem;
