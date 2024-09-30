@@ -126,7 +126,7 @@ export default {
         },
         {
           caption : '諮問',
-          description : '根本勝則（一般社団法人日本経済団体連合会 専務理事）'
+          description : '根本勝則（一般社団法人 東京経営者協会 専務理事）'
         },
         {
           caption : '諮問',
@@ -194,6 +194,14 @@ export default {
         },
       ],
       items:[
+        {
+          title : '2023年度 貸借対照表', 
+          link : 'https://drive.google.com/file/d/1wn4lZ48LAStr7R-lOaiiv3IIuIHohgAF/view?usp=sharing'
+        },
+        {
+          title : '2023年度 活動計算書',
+          link : 'https://drive.google.com/file/d/1Vp91YI-N6NcdYsVSzupheCYU8JpYPftd/view?usp=drive_link'
+        },
         {
           title : '2022年度 貸借対照表', 
           link : 'https://drive.google.com/file/d/1pW9Cf6oG9FixUv9q007-0RfRuNNIkcQi/view?usp=drive_link'
