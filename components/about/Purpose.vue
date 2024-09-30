@@ -38,7 +38,7 @@
 .purpose{
   &-container {
     position: relative;
-    margin: 5rem 0 0 0;
+    margin: 5rem 0 5rem 0;
     width: 100vw;
 
     .purpose-contents{
