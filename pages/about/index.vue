@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <AboutTop /> -->
-    <AboutVision />
-    <AboutMission />
+    <AboutWho />
+    <AboutPurpose />
   </div>
 </template>
