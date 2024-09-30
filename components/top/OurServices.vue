@@ -14,22 +14,16 @@
         <h3 class="service-target-title" id="student">学生の方へ</h3>
         <div class="service-item-container">
           <div class="service-item">
-            <div class="service-item-img"></div>
+            <div class="service-item-img img1"></div>
               <div class="button-next-wrapper">
                 <p class="button-nextText">海外インターンシップ</p>
-                <p class="button-nextText-sub">
-                  社会課題を起点に作られたプロジェクトで今まで見たことのない世界へ
-                </p>
               </div>
               <a class="button" href="/outgoing"></a>
           </div>
           <div class="service-item">
-            <div class="service-item-img"></div>
+            <div class="service-item-img img2"></div>
               <div class="button-next-wrapper">
                 <p class="button-nextText">global youth dialogue</p>
-                <p class="button-nextText-sub">
-                  あああああああああああああああああああああああ
-                </p>
               </div>
               <a class="button" href="/global-youth-dialogue"></a>
           </div>
@@ -39,17 +33,14 @@
         <h3 class="service-target-title" id="company">企業の方へ</h3>
         <div class="service-item-container">
           <div class="service-item">
-            <div class="service-item-img"></div>
+            <div class="service-item-img img3"></div>
               <div class="button-next-wrapper">
                 <p class="button-nextText">海外インターンシップ<span>&nbsp;<br></span>受け入れ</p>
-                <p class="button-nextText-sub">
-                  あああああああああああああああああああああああ
-                </p>
               </div>
               <a class="button" href="/incoming"></a>
           </div>
           <div class="service-item">
-            <div class="service-item-img"></div>
+            <div class="service-item-img img4"></div>
               <div class="button-next-wrapper">
                 <p class="button-nextText">協賛について</p>
                 <p class="button-nextText-sub">
@@ -84,7 +75,7 @@
 
 .flow-text p{
   color:#e9e9e9;
-  font-family:  Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "MS Ｐゴシック", sans-serif;
+  font-family:  Lato,Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "MS Ｐゴシック", sans-serif;
   font-size: 7rem;
   animation: flowing 18s linear infinite;
   transform: translateX(100%);
@@ -214,12 +205,22 @@
   
 
 .service-item-img{
-  background-image: url(https://placehold.jp/580x500.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  
+}
+.img1{
+  background-image: url(./assets/images/outgoing/outgoingTop.png);
+}
+.img2{
+  background-image: url(./assets/images/global-youth-dialogue/GlobalYouthDialogueTop.png);
+}
+.img3{
+  background-image: url(./assets/images/incoming/incomingTop.png);
+}
+.img4{
+  background-image: url(./assets/images/for-company/for-companyTop.png);
 }
 
 .button-next-wrapper{

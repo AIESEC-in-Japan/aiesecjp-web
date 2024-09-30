@@ -3,26 +3,26 @@
     <div class="slide-images">
       <div class="slide-group">
           <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(https://placehold.jp/400x450.png);"></div>
-            <div class="slide-content" style="background-image: url(https://placehold.jp/400x250.png);"></div>
+            <div class="slide-content" style="background-image: url(.assets/images/top/slide2.jpg);"></div>
+            <div class="slide-content" style="background-image: url(.assets/images/top/slide3.jpg);"></div>
           </div>
           <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(https://placehold.jp/600x500.png);"></div>
+            <div class="slide-content" style="background-image: url(.assets/images/top/slide1.jpg);"></div>
           </div>
           <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(https://placehold.jp/400x450.png);"></div>
+            <div class="slide-content" style="background-image: url(.assets/images/top/slide5.jpg);"></div>
           </div>
         </div>
         <div class="slide-group">
           <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(https://placehold.jp/400x450.png);"></div>
-            <div class="slide-content" style="background-image: url(https://placehold.jp/400x250.png);"></div>
+            <div class="slide-content" style="background-image: url(.assets/images/top/slide2.jpg);"></div>
+            <div class="slide-content" style="background-image: url(.assets/images/top/slide3.jpg);"></div>
           </div>
           <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(https://placehold.jp/600x500.png);"></div>
+            <div class="slide-content" style="background-image: url(.assets/images/top/slide1.jpg);"></div>
           </div>
           <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(https://placehold.jp/400x450.png);"></div>
+            <div class="slide-content" style="background-image: url(.assets/images/top/slide5.jpg);"></div>
           </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
 
 .slide-content{
   display: block;
-  width: 100%;
+  width: 30vw;
   height: 54vw;
   background-position: center;
   background-size: cover;

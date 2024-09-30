@@ -57,7 +57,7 @@
   right: 0;
   z-index: 20;
   background-image: url(@/assets/images/top/top-about.png);
-  opacity: 0.5;
+  opacity: 0.78;
   background-size: cover;
   border-radius: 0.8rem 0 0 0.8rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -96,7 +96,6 @@
   font-size: 4rem;
   padding-top: 2rem;
   margin-bottom: 0;
-
   @include sp{
     font-size: 3.2rem;
     br{
@@ -111,11 +110,17 @@
   padding-top: 1rem;
   max-width: 50rem;
   margin-bottom: 10%;
+  @media(max-width:1200px){
+    width: 46vw;
+  }
   
-  @media (max-width:730px){
+  @media (max-width:1204px){
     br {
       display: none;
     }
+  }
+  @media(max-width:680px){
+    width: auto;
   }
   @include sp {
     max-width: 90%;

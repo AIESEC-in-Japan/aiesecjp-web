@@ -1,5 +1,5 @@
 <template>
   <div class="wrapper">
-    <DownloadDetail />
+    <!-- <DownloadDetail /> -->
   </div>
 </template>

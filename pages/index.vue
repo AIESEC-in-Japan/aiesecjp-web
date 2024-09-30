@@ -3,7 +3,7 @@
     <TopMainView />
     <TopAboutAiesec />
     <TopOurServices />
-    <TopSlideImages />
+    <!-- <TopSlideImages /> -->
     <TopOurNews />
     <TopOurPartners />
     <TopContactUs />

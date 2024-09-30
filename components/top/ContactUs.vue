@@ -11,21 +11,21 @@
       </p>
       <div class="contact-wrapper">
         <div class="contact-form">
-          <div class="contact-form-img"></div>
+          <div class="contact-form-img img1"></div>
           <div class="button-container">
             <p class="button-nextText">学生の方</p>
             <a class="button" href="/contact/student"></a>
           </div>
         </div>
         <div class="contact-form">
-          <div class="contact-form-img"></div>
+          <div class="contact-form-img img2"></div>
           <div class="button-container">
             <p class="button-nextText">企業の方</p>
             <a class="button" href="/contact/company"></a>
           </div>
         </div>
         <div class="contact-form">
-          <div class="contact-form-img"></div>
+          <div class="contact-form-img img3"></div>
           <div class="button-container">
             <p class="button-nextText">卒業生の方</p>
             <a class="button" href="/contact/alumni"></a>
@@ -150,11 +150,20 @@
 }
 
 .contact-form-img{
-  background-image: url(https://placehold.jp/500x600.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
+  opacity: 0.6;
+}
+.img1{
+  background-image: url(./assets/images/top/slide1.jpg);
+}
+.img2{
+  background-image: url(./assets/images/top/slide6.jpg);
+}
+.img3{
+  background-image: url(./assets/images/top/slide3.jpg);
 }
 
 .button-container{
