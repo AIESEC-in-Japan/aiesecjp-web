@@ -205,7 +205,7 @@ export default {
     
     p {
       font-size: 1rem;
-      line-height: 2;
+      line-height: 1.6;
     }
   }
 
