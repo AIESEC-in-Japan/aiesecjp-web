@@ -192,7 +192,7 @@
         <div class="logo">
           <img
             alt="logo"
-            src="@/assets/images/logo/logo-white.png"
+            src="@/assets/images/logo/white-blue-logo.svg"
           >
         </div>
       </div>

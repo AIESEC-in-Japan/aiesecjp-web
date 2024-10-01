@@ -21,9 +21,9 @@
           v-for="(item, index) in navigationItems"
           :key="index"
         >
-          <Nuxt-link class="navigation-link" :to=item.link>
+          <nuxt-link class="navigation-link" :to=item.link>
             {{ item.title }}
-          </Nuxt-link>
+          </nuxt-link>
           <div v-show="isShowNestedItems[index] && isActive"
             class="navigation-nested"
             :class="{'is-active': isActive}"
@@ -58,9 +58,9 @@
           v-for="(item, index) in navigationItems"
           :key="index"
         >
-          <Nuxt-link class="navigation-link" :to=item.link @click.native="isShowList(); toggleScroll()">
+          <nuxt-link class="navigation-link" :to=item.link @click.native="isShowList(); toggleScroll()">
             {{ item.title }}
-          </Nuxt-link>
+          </nuxt-link>
           <div>
             <ul class="navigation-nested-list"> 
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
@@ -140,11 +140,11 @@ export default {
           link: "/organization",
           subItems: [
             { title: "団体概要トップ", link: "/organization" },
-            { title: "役員・諮問一覧", link: "/organization#p1" },
-            { title: "団体情報", link: "/organization#p3" },
-            { title: "財務情報", link: "/organization#p4" },
-            { title: "コンプライアンス", link: "/organization#p5" },
-            { title: "情報セキュリティ基本方針", link: "/organization#p6" },
+            // { title: "役員・諮問一覧", link: "/organization#p1" },
+            // { title: "団体情報", link: "/organization#p3" },
+            // { title: "財務情報", link: "/organization#p4" },
+            // { title: "コンプライアンス", link: "/organization#p5" },
+            // { title: "情報セキュリティ基本方針", link: "/organization#p6" },
             { title: "安全への取り組み", link: "/safety" }
           ]
         },
