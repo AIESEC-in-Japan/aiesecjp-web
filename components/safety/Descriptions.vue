@@ -167,6 +167,7 @@
       &-title {
         color: $dark-gray;
         font-size: 1.35rem;
+        padding-bottom: 1rem;
       }
 
       ul {
@@ -182,7 +183,7 @@
     }
     p {
       font-size: 1rem;
-      line-height: 2;
+      line-height: 1.6;
       margin-bottom: 2rem;
 
      

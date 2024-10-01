@@ -2,10 +2,12 @@
   <div>
     <div class="news-container">
       <div class="news-bg"></div>
-      <div class="news-text">
-        NEWS
+      <div class="news-text-wrapper">
+        <div class="news-text">
+          NEWS
+        </div>
+        <h2 class="news-text-sub">お知らせ</h2>
       </div>
-      <h2 class="news-text-sub">お知らせ</h2>
     </div>
   </div>
 </template>
@@ -44,6 +46,7 @@
       @include sp{
         margin-bottom: 5rem;
         height: 65vh;
+        border-radius: 0 0 0 6rem;
       }
     }
 }
@@ -58,57 +61,45 @@
     border-radius: 0 0 0 6rem;
   }
 }
-.news-text{
-  color: #fff;
-  font-size: 6rem;
-  font-weight: bold;
+
+.news-text-wrapper{
   position: absolute;
   bottom: 40%;
   left: 6rem;
 
-  &-sub{
-    color: #fff;
-    font-size: 1.6rem;
-    position: absolute;
-    bottom: 35%;
-    left: 6rem;
-
-    @media(max-width:600px){
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        font-size: 1.35rem;
-
-      }
+  @include sp{
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    text-align: center;
+    bottom: 50%;
   }
-  @include tab{
+
+}
+
+.news-text{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+
+    &-sub{
+      color: #fff;
+      font-size: 1.6rem;
+    }
+    @include tab{
       font-size: 3rem;
-      margin-left: 0rem;
-      right: 3rem;
-      width: fit-content;
     }
 
     @media(max-width:600px){
-      right:auto;
-      top: 50%;
-      margin: 0 auto;
-      padding: 0 auto;
       word-break: keep-all;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-
     }
     @include sp{
       font-size: 2.6rem;
-      top: 40%;
     }
 
     @media(max-width:375px){
       font-size: 2.4rem;
     }
-}
+  }
 
 </style>

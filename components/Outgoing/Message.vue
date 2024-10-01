@@ -134,6 +134,10 @@
           max-width: auto;
           margin: 0 auto;
         }
+        @include sp{
+          line-height: 1.6;
+          margin-bottom: 1rem;
+        }
       }
     }
   }

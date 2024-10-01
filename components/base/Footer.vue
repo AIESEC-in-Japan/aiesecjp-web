@@ -95,14 +95,14 @@
                 アニュアルレポート
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a
                 class="footer-content-link"
                 href="/organization#p4"
               >
                 財務報告
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="footer-content">
