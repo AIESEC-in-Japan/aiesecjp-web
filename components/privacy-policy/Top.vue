@@ -76,7 +76,9 @@
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         font-size: 1.35rem;
-
+      }
+      @include sp{
+        margin-top:1rem;
       }
     }
     @include tab{
