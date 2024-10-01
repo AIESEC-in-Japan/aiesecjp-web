@@ -67,33 +67,24 @@
     &-sub{
       color: #fff;
       font-size: 1rem;
-      position: absolute;
-      bottom: 6%;
-      right: 5rem;
     }
 
     @include tab{
       font-size: 3rem;
-      margin-left: 3rem;
-      right: 3rem;
-      width: fit-content;
     }
 
     @media(max-width:600px){
-      right:auto;
-      top: 50%;
-      margin: 0 auto;
-      padding: 0 auto;
       word-break: keep-all;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
+      position: relative;
+      bottom: 50%;
+      right: 0;
+      text-align: center;
+      width: 90vw;
+      margin: 0 auto;
 
     }
     @include sp{
       font-size: 2.6rem;
-      top: 40%;
     }
 
     @media(max-width:375px){

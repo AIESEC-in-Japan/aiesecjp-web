@@ -190,6 +190,10 @@
             @media(max-width:365px){
               white-space: nowrap;
             }
+            @include sp{
+              line-height: 1.6rem;
+
+            }
 
           }
         }

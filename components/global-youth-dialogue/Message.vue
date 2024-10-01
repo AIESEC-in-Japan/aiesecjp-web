@@ -98,6 +98,10 @@
         margin:2rem auto 0 auto; 
       }
 
+      @include sp{
+        line-height: 1.5rem;
+      }
+
     }
   }
 }
