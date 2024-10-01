@@ -30,7 +30,7 @@
             v-if="item.subItems">
             <ul class="navigation-nested-list"> 
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
-                <nuxt-link class="navigation-link" :to="subItem.link">
+                <nuxt-link class="navigation-link" :to="subItem.link" >
                   {{ subItem.title }}
                 </nuxt-link>
               </li>
@@ -64,7 +64,7 @@
           <div>
             <ul class="navigation-nested-list"> 
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
-                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList(); toggleScroll()">
+                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList(); toggleScroll();">
                   {{ subItem.title }}
                 </nuxt-link>
               </li>
@@ -101,9 +101,6 @@
 </template>
 
 <script>
-// function scroll_control(event) {
-//   event.preventDefault();
-// }
 export default {
   data() {
     return { 
@@ -138,13 +135,13 @@ export default {
         {
           title: "団体概要",
           link: "/organization",
-          subItems: [
+          subItems: [ 
             { title: "団体概要トップ", link: "/organization" },
-            // { title: "役員・諮問一覧", link: "/organization#p1" },
-            // { title: "団体情報", link: "/organization#p3" },
-            // { title: "財務情報", link: "/organization#p4" },
-            // { title: "コンプライアンス", link: "/organization#p5" },
-            // { title: "情報セキュリティ基本方針", link: "/organization#p6" },
+            // { title: "役員・諮問一覧", link: "/organization", id:"#or1" },
+            // { title: "団体情報", link: "/organization", id:"#or3" },
+            // { title: "財務情報", link: "/organization", id:"#or4" },
+            // { title: "コンプライアンス", link: "/organization", id:"#or5" },
+            // { title: "情報セキュリティ基本方針", link: "/organization", id:"#or6" },
             { title: "安全への取り組み", link: "/safety" }
           ]
         },
@@ -174,19 +171,27 @@ export default {
     toggleScroll() {
       const bodyElement = document.body;
       const menuElement = document.querySelector('.navigation-list-sp');
-    if (this.isShow === true) {
-      bodyElement.style.position = 'fixed';  // ページ全体のスクロールを完全に無効化
-      bodyElement.style.overflow = 'hidden'; // ページ全体のスクロールを無効化
-      menuElement.style.overflowY = 'auto';  // ハンバーガーメニューの内部でスクロールを有効化
-      bodyElement.style.top = `-${window.scrollY}px`;
-    } else {
-      const scrollY = bodyElement.style.top;
-      bodyElement.style.position = '';
-      bodyElement.style.overflow = '';  // ページ全体のスクロールを再有効化
-      menuElement.style.overflowY = ''; // メニューのスクロールを無効化
-      window.scrollTo(0, parseInt(scrollY || '0') * -1); // スクロール位置を元に戻す
+      if (this.isShow === true) {
+        bodyElement.style.position = 'fixed';  // ページ全体のスクロールを完全に無効化
+        bodyElement.style.overflow = 'hidden'; // ページ全体のスクロールを無効化
+        menuElement.style.overflowY = 'auto';  // ハンバーガーメニューの内部でスクロールを有効化
+        bodyElement.style.top = `-${window.scrollY}px`;
+      } else {
+        const scrollY = bodyElement.style.top;
+        bodyElement.style.position = '';
+        bodyElement.style.overflow = '';  // ページ全体のスクロールを再有効化
+        menuElement.style.overflowY = ''; // メニューのスクロールを無効化
+        window.scrollTo(0, parseInt(scrollY || '0') * -1); // スクロール位置を元に戻す
+      }
+    },
+    scrollToSection(id) {
+      this.$nextTick(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
     }
-  },
   }
 }
 

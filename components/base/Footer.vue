@@ -9,20 +9,20 @@
           </h3>
           <ul>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/aiesec"
+                href="/aiesec"
                 >
                 AIESECについてトップ  
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/message"
+                href="/message"
               >
                 代表メッセージ
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>
@@ -32,20 +32,20 @@
           </h3>
           <ul>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/outgoing"
+                href="/outgoing"
               >
                 海外インターンシップ
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/global-youth-dialogue"
+                href="/global-youth-dialogue"
               >
                 global youth dialogue
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>
@@ -55,29 +55,29 @@
           </h3>
           <ul>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/incoming"
+                href="/incoming"
               >
                 海外インターンシップ受け入れ
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/for-company"
+                href="/for-company"
               >
                 協賛について
-              </nuxt-link>
+              </a>
             </li>
             <!-- 実例集へのリンクを停止 2022/05/22
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/incoming/article"
+                href="/incoming/article"
               >
                 インターンシップ実例
-              </nuxt-link>
+              </a>
             </li>
             -->
           </ul>
@@ -88,20 +88,20 @@
           </h3>
           <ul>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/annual-report"
+                href="/annual-report"
               >
                 アニュアルレポート
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/organization#p4"
+                href="/organization#p4"
               >
                 財務報告
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>
@@ -111,52 +111,52 @@
           </h3>
           <ul>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/organization"
+                href="/organization"
               >
                 団体概要トップ
-              </nuxt-link>
+              </a>
             </li>
-            <li>
-              <nuxt-link
+            <!-- <li>
+              <a
                 class="footer-content-link"
-                to="/organization#p1"
+                href="/organization#or1"
               >
                 役員・諮問一覧
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/organization#p3"
+                href="/organization#or3"
               >
                 団体情報
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/organization#p5"
+                href="/organization#or5"
               >
                 コンプライアンス
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/organization#p6"
+                href="/organization#or6"
               >
                 情報セキュリティ基本方針
-              </nuxt-link>
-            </li>
+            </a>
+            </li> -->
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/safety"
+                href="/safety"
               >
                 安全への取り組み
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>
@@ -166,20 +166,20 @@
           </h3>
           <ul>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/privacy-policy"
+                href="/privacy-policy"
               >
                 プライバシーポリシー
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link
+              <a
                 class="footer-content-link"
-                to="/site-policy"
+                href="/site-policy"
               >
                 サイトポリシー
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>

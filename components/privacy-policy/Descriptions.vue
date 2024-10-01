@@ -19,27 +19,27 @@
         </a>
       </div>
       <div class="policy-content">
-        <h2  id="p1" class="policy-content-title">
+        <h2  id="pr1" class="policy-content-title">
           1. 個人情報保護方針
         </h2>
         <p>
           特定非営利活動法人アイセック・ジャパン(以下アイセック)は、海外インターンシップに参加される学生様をはじめとする関係者の皆様のプライバシーを尊重し、個人情報の取り扱いに関して以下のような指針を定め、それに従って個人情報の適正な利用、その保護に努めております。
         </p>
 
-        <h2  id="p2" class="policy-content-title">
+        <h2  id="pr2" class="policy-content-title">
           2. 個人情報の定義
         </h2>
         <p>
           「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報及び、当該情報単体から特定の個人を識別できる情報(個人識別情報)を指します。
         </p>
-        <h2  id="p3" class="policy-content-title">
+        <h2  id="pr3" class="policy-content-title">
           3. 個人情報の収集方法
         </h2>
         <p>
           アイセックは、皆様に海外インターンシップをご紹介するにあたり必要な範囲、またはアイセックの事業や活動を運営するにあたり必要な範囲で、適法かつ公正な手段により個人情報を収集いたします。
           個人情報を収集する際は、できる限りその目的を限定し、海外インターンシップを中心とするアイセックの事業の運営に必要な限度を超えないものとします。
         </p>
-        <h2  id="p4" class="policy-content-title">
+        <h2  id="pr4" class="policy-content-title">
           4. 個人情報の利用目的
         </h2>
         <p>収集した個人情報は、以下の目的達成のために必要な範囲に限り、ご本人の権利を損なわないように、十分配慮して利用いたします。</p>
@@ -57,13 +57,13 @@
           <li>各種法令に定める手続きのため</li>
           <li>その他、上記に付随する業務の遂行、各種リスクの把握および管理その他皆様とのお取引およびアイセックの業務運営を適切かつ円滑に履行するために行う業務の遂行のため</li>
         </ul>
-        <h2  id="p5" class="policy-content-title">
+        <h2  id="pr5" class="policy-content-title">
           5. 個人情報の管理・保護について
         </h2>
         <p>
           アイセックは、個人情報保護の責任者を置き、皆様の個人情報をお預かりするにあたり、適切な管理を行うとともに、漏えい、紛失、改ざん等の防止のために必要な安全管理措置を講じています。詳細に関しましては10.「安全管理措置」をご確認ください。また、皆様の個人情報の保護と適切な取扱いに関して、個人情報保護責任者を中心として法人および会員団体に対し内部教育を行い、利用目的を達成したときはこれを適切な方法で廃棄します。
         </p>
-        <h2  id="p6" class="policy-content-title">
+        <h2  id="pr6" class="policy-content-title">
           6. 個人情報の第三者提供
         </h2>
         <p>
@@ -71,7 +71,7 @@
           ただし、法令により開示を求められた場合、又は、裁判所、警察等の公的機関から開示を求められた場合には、ご本人の同意なく個人情報を開示・提供することがあります。
           また、個人情報を特定の者との間で共同して利用する場合であって、その旨並びに共同して利用される個人情報の項目、共同して利用する者の範囲、利用する者の利用目的および当該個人情報の管理について責任を有する者の氏名または名称について、あらかじめ本人に通知し、または本人が容易に知り得る状態に置いた場合、開示・提供することがあります。
         </p>
-        <h2  id="p7" class="policy-content-title">
+        <h2  id="pr7" class="policy-content-title">
           7. 日本国外への移転
         </h2>
         <p>
@@ -86,7 +86,7 @@
         <p>  
           なお、（2）の場合、第三者の然るべき措置の継続的な実施を確保するためにアイセックは必要かつ適切な措置を講じます。
         </p>
-        <h2  id="p8" class="policy-content-title">
+        <h2  id="pr8" class="policy-content-title">
           8. 個人情報の開示
         </h2>
         <p>
@@ -99,7 +99,7 @@
           <li>法令に違反することとなる場合</li>
         </ul>
 
-        <h2  id="p9" class="policy-content-title">
+        <h2  id="pr9" class="policy-content-title">
           9. 個人情報の訂正及び利用停止等
         </h2>
         <p>
@@ -112,7 +112,7 @@
         <p>
           （3）個人情報保護法その他の法令により、アイセックが訂正等または利用停止等の義務を負わない場合は、（１）および（2）の規定は適用されません。
         </p>
-        <h2  id="p10" class="policy-content-title">
+        <h2  id="pr10" class="policy-content-title">
           10. 安全管理措置
         </h2>
         <p>
@@ -151,7 +151,7 @@
         <ul>
           <li>アクセス制御を実施して、担当者及び取り扱う個人情報データベース等の範囲を限定しています。</li>
         </ul>
-        <h2  id="p11" class="policy-content-title">
+        <h2  id="pr11" class="policy-content-title">
           11. 仮名加工情報に関して
         </h2>
         <p>（1）利用目的</p>
@@ -169,11 +169,11 @@
           <li>④前項にある利用目的以外で仮名加工情報を利用しないこと</li>
           <li>⑤ご本人の同意がなく、第三者に仮名加工情報を提供しないこと</li>
         </ul>
-        <h2  id="p12" class="policy-content-title">
+        <h2  id="pr12" class="policy-content-title">
           12. 見直し
         </h2>
         <p>個人情報の取扱いにつきましては、事業内容や技術動向の変化にともない上記各項目の内容を適宜見直し、改善してまいります。</p>
-        <h2  id="p13" class="policy-content-title">
+        <h2  id="pr13" class="policy-content-title">
           13. お問い合わせ
         </h2>
         <p>
@@ -198,19 +198,19 @@ export default {
   data() {
     return {
       buttons: [
-        { href: "#p1", text: "01", nextText: "個人情報保護方針" },
-        { href: "#p2", text: "02", nextText: "個人情報の定義" },
-        { href: "#p3", text: "03", nextText: "個人情報の収集方法" },
-        { href: "#p4", text: "04", nextText: "個人情報の利用目的" },
-        { href: "#p5", text: "05", nextText: "個人情報の管理・保護について" },
-        { href: "#p6", text: "06", nextText: "個人情報の第三者提供" },
-        { href: "#p7", text: "07", nextText: "日本国外への移転" },
-        { href: "#p8", text: "08", nextText: "個人情報の開示" },
-        { href: "#p9", text: "09", nextText: "個人情報の訂正及び利用停止等" },
-        { href: "#p10", text: "10", nextText: "安全管理措置" },
-        { href: "#p11", text: "11", nextText: "仮名加工情報に関して" },
-        { href: "#p12", text: "12", nextText: "見直し" },
-        { href: "#p13", text: "13", nextText: "お問い合わせ" }
+        { href: "#pr1", text: "01", nextText: "個人情報保護方針" },
+        { href: "#pr2", text: "02", nextText: "個人情報の定義" },
+        { href: "#pr3", text: "03", nextText: "個人情報の収集方法" },
+        { href: "#pr4", text: "04", nextText: "個人情報の利用目的" },
+        { href: "#pr5", text: "05", nextText: "個人情報の管理・保護について" },
+        { href: "#pr6", text: "06", nextText: "個人情報の第三者提供" },
+        { href: "#pr7", text: "07", nextText: "日本国外への移転" },
+        { href: "#pr8", text: "08", nextText: "個人情報の開示" },
+        { href: "#pr9", text: "09", nextText: "個人情報の訂正及び利用停止等" },
+        { href: "#pr10", text: "10", nextText: "安全管理措置" },
+        { href: "#pr11", text: "11", nextText: "仮名加工情報に関して" },
+        { href: "#pr12", text: "12", nextText: "見直し" },
+        { href: "#pr13", text: "13", nextText: "お問い合わせ" }
       ],
       activeButtonIndex: null
     };
