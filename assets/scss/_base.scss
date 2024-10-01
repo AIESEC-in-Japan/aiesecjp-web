@@ -1,10 +1,10 @@
 h1, h2, h3, h4, h5, h6, p, span, a, button, li {
   font-family: $fonts;
+  color: $dark-gray;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
-  font-weight: bold;
 }
 
 h1 {
@@ -20,10 +20,5 @@ p {
 }
 
 section {
-  min-height: 80vh;
-  max-height: 50rem;
-
-  @include tab {
-    max-height: max-content;
-  }
+  max-height: max-content;
 }

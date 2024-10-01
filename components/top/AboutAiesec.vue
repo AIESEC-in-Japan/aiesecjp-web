@@ -1,117 +1,174 @@
 <template>
   <section class="about-container">
-    <h2 class="about-aiesec">
-      About AIESEC
-    </h2>
-    <p class="about-aiesec-explain">
-      AIESEC(アイセック)は、海外インターンシップやオンラインの国際交流イベントなどを通じて<br>
-      世界中の若者のリーダーシップを育むことを目指している非営利組織です。<br>
-
-      1948年にヨーロッパで創設されて以来、<br>
-      「平和で、人々の可能性が最大限発揮された社会」の実現を目指して活動しています。
-    </p>
-    <div class="about-wrapper">
-      <div class="about-content">
-        <BaseIconInAssetsPath
-          :data="mapIcon"
-        />
-        <p>
-          100以上の国と地域<br>の支部
-        </p>
-      </div>
-      <div class="about-content">
-        <BaseIconInAssetsPath
-          :data="handshakeIcon"
-        />
-        <p>
-          7000以上の<br>パートナー団体
-        </p>
-      </div>
-      <div class="about-content">
-        <BaseIconInAssetsPath
-          :data="visaIcon"
-        />
-        <p>
-          年間30000件以上の<br>経験を提供
-        </p>
+    <div class="about-img"></div>
+    <div class="about-bg"></div>
+    <div class="about-contents">
+      <p class="about-title" id="about">
+        About AIESEC
+      </p>
+      <h2 class="about-title-sub">AIESECについて</h2>
+      <p class="about-heading">Activating Youth <br>Leadership</p>
+      <p class="about-explain">
+        アイセックは、世界100以上の国と地域に支部を持ち、約30,000人の若者が<br>
+        所属する非営利組織です。若者の異文化理解を促進することで、「平和で人々の<br>
+        可能性が最大限発揮された社会」の実現を目指しています。
+      </p>
+      <div class="button-container">
+        <p class="button-nextText">私たちの想い</p>
+        <a class="button" href="/about"></a>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      handshakeIcon:
-        {src: "images/top/handshake.svg", alt: ""},
-      mapIcon:
-        {src: "images/top/map.svg", alt: ""},
-      visaIcon:
-        {src: "images/top/visa.svg", alt: ""}
-    }
-  }
-}
-</script>
-
 
 <style lang="scss" scoped>
 
-.about {
-  &-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-family: $fonts;
+.about-container {
+  position: relative;
+  margin: 8rem 0 10rem 0;
+  width: 100%;
+  @include sp{
+    margin-top: 0;
   }
+}
 
-  &-aiesec {
-    color: $blue;
-    font-size: 2rem;
-    padding-top: 6rem;
-    font-style: italic;
 
-    &-explain {
-      color: $dark-gray;
-      font-size: 1rem;
-      line-height: 2;
-      padding-top: 3rem;
-      max-width: 50rem;
 
-      @include sp {
-        max-width: 90%;
-        text-align: left;
-      }
-    }
-  }
+.about-bg{
+  display: inline;
+  position: absolute;
+  background-color: $light-gray;
+  width: 94vw;
+  height: 52vh;
+  left: 0;
+  z-index: 0;
+  border-radius: 0 1.2rem 1.2rem 0;
+}
 
-  &-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 3rem;
-  }
+.about-img{
+  display: block;
+  position: absolute;
+  width: 48vw;
+  height: 48vw;
+  max-width: 800px;
+  max-height: 800px;
+  top: 8vh;
+  right: 0;
+  z-index: 20;
+  background-image: url(@/assets/images/top/top-about.png);
+  opacity: 0.78;
+  background-size: cover;
+  border-radius: 0.8rem 0 0 0.8rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
 
-  &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about-contents{
+  position: relative;
+  margin: 0 5%;
+  z-index: 30;
+  @include sp{
     margin: 0 2rem;
-    color: $dark-gray;
+  }
+  @media (min-width:1600px){
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+.about-title{
+  color: $blue;
+  font-size: 2rem;
+  padding-top: 6rem;
+  margin-bottom: 0;
 
-    p {
-      width: 100%;
-      line-height: 2;
-      font-weight: bold;
+  &-sub{
+    font-size: 1.35rem;
+    margin-top: 0.8rem;
+  }
+  @include sp{
+    padding-top: 0;
+  }
+}
+  
+.about-heading{
+  color: $blue;
+  font-size: 4rem;
+  padding-top: 2rem;
+  margin-bottom: 0;
+  @include sp{
+    font-size: 3.2rem;
+    br{
+      display: none;
     }
   }
 }
 
-@include sp {
-  br {
-    display: none;
+.about-explain {
+  font-size: 1rem;
+  line-height: 2;
+  padding-top: 1rem;
+  max-width: 50rem;
+  margin-bottom: 10%;
+  @media(max-width:1200px){
+    width: 46vw;
   }
+  
+  @media (max-width:1204px){
+    br {
+      display: none;
+    }
+  }
+  @media(max-width:680px){
+    width: auto;
+  }
+  @include sp {
+    max-width: 90%;
+    text-align: left;
+    
+  }
+}
+
+.button-container{
+  display: flex;
+}
+.button-nextText{
+  display: block;
+  font-size: 1.35rem;
+  padding: 6px;
+  padding-left: 0;
+  margin: 0;
+}
+.button{
+  display: inline-block;
+  position: relative;
+  background-color: $blue;
+  width: 50px;
+  height: 50px;
+  padding: auto;
+  margin-left: 16px;
+  border-radius: 5rem;
+  border: 2px solid $blue;
+  box-shadow:  0 0 24.5px rgba(3, 126, 243,0.22);
+  transition: all 0.3s ease 0s;
+
+  &:hover{
+    transition-duration: .3s;
+    transform: scale(1.1);
+  }
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-top: 1.5px solid #fff;
+  border-right: 1.5px solid #fff;
+  transform: rotate(45deg);
 }
 </style>

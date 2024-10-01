@@ -8,7 +8,7 @@
         </div>
         <div class="example-member-info">
           <img
-            src="@/assets/images/icx/article/inakanomado/tnm.jpg"
+            src="@/assets/images/incoming/article/inakanomado/tnm.jpg"
             class="example-member-info-logo"
             alt="アイセック担当者の写真"
           >

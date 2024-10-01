@@ -14,9 +14,16 @@ $mint: #0cb9c1;
 $white: white;
 
 // fonts
+@font-face {
+    font-family: 'TsukuGoPro';
+    src: url('~assets/font/TsukuGo Pro-B.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 $lato: "Lato";
-$yu-gothic: "Yu Gothic Medium",yugothic,"Yu Gothic";
-$fonts: $lato,$yu-gothic,sans-serif;
+$TsukuGoPro: "TsukuGoPro";
+$YuGothic: "Yu Gothic";
+$fonts: $TsukuGoPro, $lato,sans-serif;
 
 // z-index
 $headerIndex : 9999;
@@ -24,4 +31,4 @@ $headerDrawerIndex : 99999;
 $headerDrawerBackGroundIndex : 99998;
 $backgroundIndex: -1;
 $mainContent: 10;
-$cookieBanner: 999999;
+$cookieBanner: 9999;

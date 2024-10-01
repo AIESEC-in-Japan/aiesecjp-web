@@ -1,9 +1,10 @@
 <template>
   <div>
     <IncomingTop />
-    <IncomingAboutIntern />
-    <IncomingCorporationInternship />
-    <IncomingCorporationMerit />
-    <IncomingDetail />
+    <IncomingMessage />
+    <IncomingImages />
+    <IncomingVoice />
+    <IncomingContact />
+    <IncomingOthers />
   </div>
 </template>

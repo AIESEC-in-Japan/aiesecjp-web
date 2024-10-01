@@ -1,7 +1,7 @@
 <template>
-  <header
-    class="header-container"
-  >
+<client-only>
+  <header class="header-wrapper">
+  <div class="header-container">
     <nav>
       <div class="navigation-logo">
         <nuxt-link to="/">
@@ -12,76 +12,30 @@
         </nuxt-link>
       </div>
       <ul
-        v-show="!this.$isMobile() || drawer"
-        class="navigation-list"
-        @click.stop="drawer = !drawer"
+        class="navigation-list-pc"
       >
-        <li
+      <li
           class="navigation-item"
-          @mouseleave="mouseLeaveAction"
-          @mouseover="mouseOverAction"
+          @mouseleave="mouseLeaveAction(index)"
+          @mouseover="mouseOverAction(index)"
+          v-for="(item, index) in navigationItems"
+          :key="index"
         >
-          <nuxt-link
-            class="navigation-link"
-            to=""
-          >
-            Services
+          <nuxt-link class="navigation-link" :to=item.link>
+            {{ item.title }}
           </nuxt-link>
-          <div
-            v-show="!this.$isMobile() ? isShowNestedItems : drawer"
+          <div v-show="isShowNestedItems[index] && isActive"
             class="navigation-nested"
-          >
-            <ul class="navigation-nested-list">
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/outgoing"
-                >
-                  For Students
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/incoming"
-                >
-                  For Companies
-                </nuxt-link>
-              </li>
-              <li class="navigation-nested-item">
-                <nuxt-link
-                  class="navigation-link"
-                  to="/safety"
-                >
-                  Safety
+            :class="{'is-active': isActive}"
+            v-if="item.subItems">
+            <ul class="navigation-nested-list"> 
+              <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
+                <nuxt-link class="navigation-link" :to="subItem.link" >
+                  {{ subItem.title }}
                 </nuxt-link>
               </li>
             </ul>
           </div>
-        </li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/global-youth-dialogue"
-          >
-            Events
-          </nuxt-link>
-        </li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/about"
-          >
-            About Us
-          </nuxt-link>
-        </li>
-        <li class="navigation-item">
-          <nuxt-link
-            class="navigation-link"
-            to="/contact-us"
-          >
-            Contact Us
-          </nuxt-link>
         </li>
         <!-- 外部リンク -->
         <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
@@ -95,17 +49,45 @@
           </div>
         </li> -->
       </ul>
-      <div
-        v-show="this.$isMobile() && drawer"
-        class="filter"
-        @click.stop="drawer = false"
-      />
-      <v-app-bar-nav-icon
-        v-show="this.$isMobile()"
-        class="navigation-mobile-icon"
-        @click.stop="drawer = !drawer"
+      <ul
+        class="navigation-list-sp"
+        :class="{'is-show': isShow}"
       >
-        <v-icon v-if="drawer">
+        <li
+          class="navigation-item"
+          v-for="(item, index) in navigationItems"
+          :key="index"
+        >
+          <nuxt-link class="navigation-link" :to=item.link @click.native="isShowList(); toggleScroll()">
+            {{ item.title }}
+          </nuxt-link>
+          <div>
+            <ul class="navigation-nested-list"> 
+              <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
+                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList(); toggleScroll();">
+                  {{ subItem.title }}
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- 外部リンク -->
+        <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
+          <div class="lp-button">
+            <a
+              class="lp-button-text"
+              href="https://aiesec.jp/lp/#"
+            >
+              Recruitment
+            </a>
+          </div>
+        </li> -->
+      </ul>
+      <v-app-bar-nav-icon
+        class="navigation-mobile-icon"
+        @click="isShowList(); toggleScroll()"
+      >
+        <v-icon v-if="isShow">
           mdi-close
         </v-icon>
         <v-icon v-else>
@@ -113,24 +95,103 @@
         </v-icon>
       </v-app-bar-nav-icon>
     </nav>
+  </div>
   </header>
+  </client-only>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      isShowNestedItems: false,
-      drawer: false,
+    return { 
+      isShowNestedItems: [],
+      isShow: false,//ハンバーガー時のリスト以下の表示
+      isActive: false,//PCホバーの表示
+      navigationItems: [
+        {
+          title: "AIESECについて",
+          link: "/#about",
+          subItems: [
+            { title: "AIESECについてトップ", link: "/about" },
+            { title: "代表メッセージ", link: "/message" }
+          ]
+        },
+        {
+          title: "学生の方へ",
+          link: "/#student",
+          subItems: [
+            { title: "海外インターンシップ", link: "/outgoing" },
+            { title: "global youth dialogue", link: "/global-youth-dialogue" }
+          ]
+        },
+        {
+          title: "企業の方へ",
+          link: "/#company",
+          subItems: [
+            { title: "海外インターンシップ受け入れ", link: "/incoming" },
+            { title: "協賛について", link: "/for-company" }
+          ]
+        },
+        {
+          title: "団体概要",
+          link: "/organization",
+          subItems: [ 
+            { title: "団体概要トップ", link: "/organization" },
+            // { title: "役員・諮問一覧", link: "/organization", id:"#or1" },
+            // { title: "団体情報", link: "/organization", id:"#or3" },
+            // { title: "財務情報", link: "/organization", id:"#or4" },
+            // { title: "コンプライアンス", link: "/organization", id:"#or5" },
+            // { title: "情報セキュリティ基本方針", link: "/organization", id:"#or6" },
+            { title: "安全への取り組み", link: "/safety" }
+          ]
+        },
+        {
+          title: "NEWS",
+          link: "/news"
+        },
+        {
+          title: "お問い合わせ",
+          link: "/#contact"
+        }
+      ]
     }
   },
   methods: {
-    mouseOverAction() {
-      this.isShowNestedItems = true
+    mouseOverAction(index) {
+      this.$set(this.isShowNestedItems, index, true); 
+      this.isActive = true; // クラスの追加
     },
-    mouseLeaveAction() {
-      this.isShowNestedItems = false
+    mouseLeaveAction(index) {
+      this.$set(this.isShowNestedItems, index, false);
+      this.isActive = false; // クラスの削除
     },
+    isShowList() {
+      this.isShow = !this.isShow; // クラスの追加・削除を切り替える
+    },
+    toggleScroll() {
+      const bodyElement = document.body;
+      const menuElement = document.querySelector('.navigation-list-sp');
+      if (this.isShow === true) {
+        bodyElement.style.position = 'fixed';  // ページ全体のスクロールを完全に無効化
+        bodyElement.style.overflow = 'hidden'; // ページ全体のスクロールを無効化
+        menuElement.style.overflowY = 'auto';  // ハンバーガーメニューの内部でスクロールを有効化
+        bodyElement.style.top = `-${window.scrollY}px`;
+      } else {
+        const scrollY = bodyElement.style.top;
+        bodyElement.style.position = '';
+        bodyElement.style.overflow = '';  // ページ全体のスクロールを再有効化
+        menuElement.style.overflowY = ''; // メニューのスクロールを無効化
+        window.scrollTo(0, parseInt(scrollY || '0') * -1); // スクロール位置を元に戻す
+      }
+    },
+    scrollToSection(id) {
+      this.$nextTick(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
   }
 }
 
@@ -140,85 +201,141 @@ export default {
 /* stylelint-disable unit-disallowed-list */
 // ここは細かく指定したいので、許容
 
-.header-container {
+.header-wrapper{
   z-index: $headerIndex;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100vw;
+  padding: 1rem auto 0 auto;
+}
+.header-container {
+  width: 90vw;
   height: 5rem;
   line-height: 5rem;
   padding: 0 5%;
-  border-bottom-style: solid;
-  border-bottom-width: 0.5px;
-  border-bottom-color: $gray;
+  margin: 1rem auto 0  auto;
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.66);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
 
   .navigation {
+    position: relative;
     &-mobile {
       &-icon {
+        display: none;
         position: absolute;
-        right: 1rem;
-        top: 1.5rem;
+        right: 10vw;
+        top: 2.4rem;
+        @media (max-width: 900px){
+          display: block;
+          z-index: 99999;
+        }
       }
     }
 
-    &-list {
+    &-list-pc{
       display: flex;
       justify-content: flex-end;
+      flex-wrap: wrap;
 
-      @include sp {
-        z-index: $headerDrawerIndex;
-        background-color: $white;
-        flex-direction: column;
-        position: absolute;
-        top: 4rem;
-        right: 0;
-        transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-        line-height: 2.5rem;
-        width: 100vw;
+      @media (max-width: 900px){
+        display: none;
       }
     }
+    &-list-sp{
+        display: none;
+        @media (max-width: 900px){
+          z-index: $headerDrawerIndex;
+          background-color: $white;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0vw;
+          transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+          line-height: 0.6rem;
+          width: 100vw;
+          height: 100vh;
+          padding-top: 3rem;
+          padding-bottom: 6rem;
+          overflow-y: auto; // ハンバーガーメニュー内部でスクロール可能
+          overscroll-behavior: contain; // メニュー外へのスクロールを防ぐ
+
+          .navigation-link{
+            color: $blue;
+          }
+
+          &.is-show{
+            display: block;       
+          }
+
+        }
+      }
+
+   
 
     &-item {
       margin-left: 3rem;
       list-style-type: none;
       align-items: center;
+      margin-left: 2rem;
 
-      @include sp {
-        padding-right: 1rem;
-        border-top: $gray dashed 1px;
+      @media(max-width:1200px){
+        margin-left: 1.2rem;
+      }
+
+      @media (max-width: 900px){
+        padding:0 0 0.2rem 0;
+        border-top: $light-gray solid 0.8px;
         line-height: 2.5rem;
 
         &:first-child {
           border-top: none;
         }
+        
       }
     }
+   
 
     &-nested {
+      display: none;
       position: absolute;
-      top: 5rem;
+      top: 6rem;
       padding: 1rem;
       background-color: $white;
-      box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+      border-top: $light-gray 0.3px solid;
+      border-radius: 0 0 1rem 1rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      
+      &.is-active{
+        display: block;
+      }
 
-      @include sp {
+      @media (max-width: 900px){
+        display: none;
         position: relative;
         top: 0;
         padding: 0.5rem;
         box-shadow: none;
+        border: none;
+
+        &.is-show{
+          display: block;
+        }
       }
 
       &-list {
         flex-flow: column;
         padding-left: 0;
+        flex-wrap: wrap;
 
-        @include sp {
+
+        @media (max-width: 900px){
           border-left: none;
           margin-top: 0;
+          padding-left: 0.5rem;
         }
       }
 
@@ -226,51 +343,62 @@ export default {
         padding: 0.5rem;
         list-style-type: none;
         line-height: 2rem;
+
+        @media (max-width: 900px){
+          padding:  0;
+          line-height: 1.4rem;
+          .navigation-link{
+              color: $dark-gray;
+          }
+        }
       }
     }
 
     &-logo {
       position: absolute;
-      top: 10px;
+      text-align: left;
       bottom: 0;
-      left: 10px;
+      left: 7vw;
+      width: 14rem;
+
 
       img {
-        width: 300px;
+        width:100%;
         max-height: 60px;
-
-        @include sp {
-          width: 40vw;
-        }
+        vertical-align: middle;
       }
+      
+      @media(max-width:1200px){
+        width: 12rem;
+      }
+
+      @include tab {
+        width: 10rem;
+      }
+      @include sp {
+          width: 10rem;
+        }
     }
 
     &-link {
-      color: $dark-gray;
-      font-weight: bold;
       text-decoration: none;
-      font-size: 1rem;
-      letter-spacing: 2px;
+      font-size: 0.94rem;
+      letter-spacing: 0.6px;
+      color: $dark-gray;
 
       &:hover {
         opacity: 0.7;
       }
+
+      @include tab {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+      }
+      
     }
   }
 }
 
-.filter {
-  content: '';
-  position: absolute;
-  height: calc(100vh - 80px);
-  width: 100vw;
-  z-index: $headerDrawerBackGroundIndex;
-  top: 80px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
 /* stylelint-disable */
 .lp {
@@ -292,7 +420,6 @@ export default {
     &-text {
       color: #ffffff;
       text-decoration: none;
-      font-weight: bold;
       font-size: 1rem;
       letter-spacing: 2px;
       border-radius: 15px;
