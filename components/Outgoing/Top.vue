@@ -1,49 +1,102 @@
 <template>
-  <div class="ogxTop-container">
-    <section class="ogx-top">
-      <h1 class="title">
-        Experience the world with AIESEC
-      </h1>
-      <p class="catchphrase">
-        <span>アイセックの海外インターンシップで、</span>
-        <span>きっと、変わる。自分も、世界も。</span>
-      </p>
-    </section>
-  </div>
+  <section>
+    <div class="outgoing-container">
+      <div class="outgoing-bg"></div>
+      <h2 class="outgoing-text">
+        海外<wbr>インターンシップ
+      </h2>
+    </div>
+  </section>
 </template>
 <style lang="scss" scoped>
-.ogxTop-container {
-  background-image: url("~@/assets/images/ogx_top_background.jpg");
-  background-position: center;
-  background-size: cover;
-}
+.outgoing{
 
-.ogx-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: $white;
-  letter-spacing: 2px;
-  background-color: rgba(0, 0, 0, 0.4);
+  &-container{
+    position: relative;
+    top: 0;
+    height: 90vh;
+    width: 100vw;
+    margin: -5rem 0 10rem 0;  
 
-  .title {
-    text-align: center;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    @include sp{
+      margin-bottom: 5rem;
+      height: 65vh;
+      border-radius: 0 0 0 6rem;
+
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.02);
+      top:0;
+      bottom: 0;
+      left: 0;
+      right:0;
+      height: 90vh;
+      width: 100vw;
+      border-radius: 0 0 0 14rem;
+      @include sp{
+        margin-bottom: 5rem;
+        height: 65vh;
+      }
+    }
   }
+  &-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/images/outgoing/outgoingTop.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 0 14rem;
 
-  .catchphrase {
-    font-size: 1rem;
-    text-align: center;
-    letter-spacing: 4px;
-    line-height: 1.5;
+    @include sp{
+      border-radius: 0 0 0 6rem;
+    }
+  }
+    
 
-    span {
-      display: block;
-      color: $white;
+  &-text{
+    color: #fff;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 15%;
+    right: 5rem;
+
+    &-sub{
+      color: #fff;
+      font-size: 1rem;
+      position: absolute;
+      bottom: 6%;
+      right: 5rem;
+    }
+
+    @include tab{
+      font-size: 3rem;
+      margin-left: 3rem;
+      right: 3rem;
+      width: fit-content;
+    }
+
+    @media(max-width:600px){
+      right:auto;
+      top: 50%;
+      margin: 0 auto;
+      padding: 0 auto;
+      word-break: keep-all;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+
+    }
+    @include sp{
+      font-size: 2.6rem;
+      top: 40%;
+    }
+
+    @media(max-width:375px){
+      font-size: 2.4rem;
     }
   }
 }

@@ -1,9 +1,11 @@
 <template>
   <div>
     <TopMainView />
-    <TopWhyWhat />
     <TopAboutAiesec />
-    <TopOurPrograms />
+    <TopOurServices />
+    <!-- <TopSlideImages /> -->
+    <TopOurNews />
     <TopOurPartners />
+    <TopContactUs />
   </div>
 </template>
