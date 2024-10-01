@@ -21,7 +21,7 @@
           v-for="(item, index) in navigationItems"
           :key="index"
         >
-          <nuxt-link class="navigation-link" :to=item.link>
+          <nuxt-link class="navigation-link" to=item.link>
             {{ item.title }}
           </nuxt-link>
           <div v-show="isShowNestedItems[index] && isActive"
@@ -30,7 +30,7 @@
             v-if="item.subItems">
             <ul class="navigation-nested-list"> 
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
-                <nuxt-link class="navigation-link" :to="subItem.link">
+                <nuxt-link class="navigation-link" to="subItem.link">
                   {{ subItem.title }}
                 </nuxt-link>
               </li>
