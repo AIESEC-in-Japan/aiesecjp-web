@@ -11,7 +11,7 @@
             <li>
               <a
                 class="footer-content-link"
-                href="/aiesec"
+                href="/about"
                 >
                 AIESECについてトップ  
               </a>

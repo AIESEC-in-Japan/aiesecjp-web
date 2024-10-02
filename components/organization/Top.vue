@@ -4,7 +4,7 @@
       <div class="organization-bg"></div>
       <div class="organization-text-wrapper">
         <div class="organization-text">
-          Organisation
+          Organization
         </div>
         <h2 class="organization-text-sub">団体概要</h2>
       </div>
