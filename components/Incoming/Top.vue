@@ -48,7 +48,7 @@
   &-bg {
     width: 100%;
     height: 100%;
-    background-image: url(assets/images/incoming/incomingTop.png);
+    background-image: url(assets/images/incoming/incomingTop.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0 0 0 14rem;
