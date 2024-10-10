@@ -113,7 +113,7 @@
       background-image: url(assets/images/outgoing/outgoingTop.png);
     }
     &-2{
-      background-image: url(assets/images/incoming/incomingTop.png);
+      background-image: url(assets/images/incoming/incomingTop.jpg);
     }
     
   }

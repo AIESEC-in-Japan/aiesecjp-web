@@ -217,7 +217,7 @@
   background-image: url(./assets/images/global-youth-dialogue/GlobalYouthDialogueTop.png);
 }
 .img3{
-  background-image: url(./assets/images/incoming/incomingTop.png);
+  background-image: url(./assets/images/incoming/incomingTop.jpg);
 }
 .img4{
   background-image: url(./assets/images/for-company/for-companyTop.png);
