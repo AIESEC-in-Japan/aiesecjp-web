@@ -4,6 +4,7 @@
     <GlobalYouthDialogueMessage />
     <GlobalYouthDialogueDetail />
     <GlobalYouthDialogueVoice />
+    <GlobalYouthDialogueContact />
     <GlobalYouthDialogueOthers />
   </div>
 </template>

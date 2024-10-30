@@ -1,22 +1,21 @@
 <template>
-  <div class="outgoing-container">
-    <div class="outgoing-contents">
-      <div class="outgoing-wrapper">
+  <div class="gyd-container">
+    <div class="gyd-contents">
+      <div class="gyd-wrapper">
         <div class="title-wrapper">
-          <p class="outgoing-title">Contact</p>
-          <h2 class="outgoing-title-sub">お気軽に公式LINEにてお問い合わせください。</h2>
+          <p class="gyd-title">Contact</p>
+          <h2 class="gyd-title-sub">お気軽に公式LINEにてお問い合わせください。</h2>
         </div>
         <div class="button-container">
           <a class="button" href="https://lin.ee/1F8Gp7R" target="_blank"></a>
         </div>
       </div>
-      <div class="outgoing-img"></div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.outgoing{
+.gyd{
   &-container{
     position: relative;
     margin: 8rem 0;
@@ -26,7 +25,7 @@
       margin: 4rem 0;
     }
 
-    .outgoing-contents{
+    .gyd-contents{
       position: relative;
       display: flex;
       justify-content: space-between;
@@ -37,7 +36,7 @@
         max-width: 1440px;
       }
 
-      .outgoing-wrapper{
+      .gyd-wrapper{
         margin: auto 0;
         width: 100%;
         display: flex;
@@ -49,8 +48,8 @@
 
 
         .title-wrapper{
-          .outgoing-title{
-            color: $red;
+          .gyd-title{
+            color: $deep-blue;
             font-size: 2rem;
             margin-bottom: 0;
       
@@ -62,21 +61,6 @@
         }
 
       }
-
-      .outgoing-img{
-        background-image: url(assets/images/outgoing/outgoingContact.png);
-        background-position: center;
-        background-size: cover;
-        width: 100vw;
-        height: 30vw;
-        margin-left: 2rem;
-        border-radius: 1rem 0 0 1rem;
-
-        @media (max-width: 660px) {
-          display: none;
-        }
-      }
-
 
     }
   }
@@ -100,13 +84,13 @@
 .button{
   display: inline-block;
   position: relative;
-  background-color: $red;
+  background-color: $deep-blue;
   width: 80px;
   height: 80px;
   margin-left: 4.6rem;
   padding: auto;
   border-radius: 5rem;
-  border: 2px solid $red;
+  border: 2px solid $deep-blue;
   box-shadow:  0 0 46px rgba(244, 137, 36, 0.22);
   transition: all 0.3s ease 0s;  
 
