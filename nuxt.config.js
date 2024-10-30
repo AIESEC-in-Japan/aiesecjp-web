@@ -53,8 +53,7 @@ module.exports = {
   modules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/vuetify',
-    '@nuxtjs/google-gtag',{
-    },
+    '@nuxtjs/google-gtag',
     '@nuxtjs/google-analytics',
   'cookie-universal-nuxt'],
   gtag: {
