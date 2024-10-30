@@ -7,7 +7,7 @@
       </div>
       <div class="button-container">
         <p class="button-nextText">詳しくはこちら</p>
-        <a class="button" href="/lp/incoming" target="_blank"></a>
+        <a class="button" href="https://aiesec.jp/lp/incoming" target="_blank"></a>
       </div>
       <div class="message-container">
         <h3 class="message-title">
