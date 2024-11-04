@@ -24,7 +24,7 @@
     "axios": "^0.21.2",
     "cookie-universal-nuxt": "^2.2.2",
     "dotenv": "^8.2.0",
-    "nuxt": "^2.15.7"
+    "nuxt": "^3.13.2"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
