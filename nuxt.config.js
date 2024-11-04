@@ -56,7 +56,7 @@ module.exports = {
     '@nuxtjs/google-gtag',
     '@nuxtjs/google-analytics',
   'cookie-universal-nuxt'],
-  google-gtag: {
+  'google-gtag': {
     id: 'G-0XWZPJW27L'
   },
   plugins: [
