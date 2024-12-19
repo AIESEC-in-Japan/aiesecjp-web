@@ -313,7 +313,7 @@ yarn,node module周りが壊れた時も同様に対処することができる�
 │   ├── 2020corporation-logo # ロゴを格納する場所らしい
 │   ├── images
 │   ├── json #newsリスト
-│   ├── resetcss # resetcss意外はおかない
+│   ├── resetcss # resetcss以外はおかない
 │   ├── scss
 │   └── videos
 ├── components
@@ -358,5 +358,5 @@ yarn,node module周りが壊れた時も同様に対処することができる�
  
 NEWSのテンプレート
 カテゴリーは以下の4つから選択してください。(categoryとcategorizedは一対一対応)
-- "category": "活動報告", "協賛事例", "メンバーの活動", "その他", 
-- "categorized": "report", "partner", "member", "others"
+- "category": "活動報告", "協賛事例", "メンバーの活動", "パートナーシップのご提案", "その他", 
+- "categorized": "report", "partner", "member", "offer", "others"
