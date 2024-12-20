@@ -6,11 +6,13 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'aiesecjp-web',
+    title: 'AIESEC in Japan',
+    titleTemplate: '%s - AIESEC in Japan',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {hid: 'description', name: 'description', content: 'AIESEC in Japan official website'}
+      {hid: 'description', name: 'description', content: 'AIESEC in Japan official website'},
+      {hid: 'keywords', name: 'keywords', content: 'AIESEC, アイセック,海外インターンシップ'}
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
