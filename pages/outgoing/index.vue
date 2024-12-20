@@ -8,12 +8,3 @@
     <OutgoingOthers />
   </div>
 </template>
-
-<script>
-export default {
-  head: {
-    titleTemplate: null,
-    title: '海外インターンシップ'
-  }
-}
-</script>
