@@ -12,7 +12,7 @@
         >
           <span>NEWS&nbsp;</span>
           &nbsp;&nbsp;{{ `${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[2]}.${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[3]}`}}
-          &nbsp;&nbsp;<wbr>{{ news_data[0].title }}
+          <p>&nbsp;&nbsp;<wbr>{{ news_data[0].title }}</p>
         </a>
       </div>
     </div>
@@ -91,6 +91,10 @@ export default {
   
     span{
       color: #5CB0FF;
+    }
+    p{
+      overflow-wrap: break-word;  
+      color: $white;
     }
   }
   @include tab{
