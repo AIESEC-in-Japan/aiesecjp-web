@@ -3,8 +3,7 @@
 import About from './index.vue';
 
 export default {
-  title: 'AIESECについて',
-  titleTemplate:null,
+  title: 'pages/about',
   component: About,
 };
 

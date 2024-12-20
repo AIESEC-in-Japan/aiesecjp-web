@@ -9,13 +9,3 @@
     <TopContactUs />
   </div>
 </template>
-
-
-<script>
-export default {
-  head: {
-    titleTemplate: null,
-    title: 'トップページ'
-  }
-}
-</script>

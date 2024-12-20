@@ -11,7 +11,6 @@
           <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selected_category === 'report' }"><p>活動報告</p></a>
           <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selected_category === 'partner' }"><p>協賛活動</p></a>
           <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selected_category === 'member' }"><p>メンバーの活動</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('offer')" :class="{ active: selected_category === 'offer' }"><p>パートナーシップのご提案</p></a>
           <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selected_category === 'others' }"><p>その他</p></a>
           <div class="button-container">
             <p class="button-nextText">一覧を見る</p>
@@ -97,7 +96,7 @@ export default {
   width: 100%;
   justify-content: space-between;
 
-  @media (max-width:1000px){
+  @include tab{
     flex-direction: column;
     justify-content: center;
   }
@@ -106,19 +105,18 @@ export default {
   display: flex;
   flex-direction: column;
   margin: 4rem 0 0 0;
-  @media (max-width:1000px){
+  @include tab{
     display: grid;
-    grid-template-columns: repeat(4 ,auto);
+    grid-template-columns: repeat(5 ,auto);
     justify-content: center;
     gap: 1rem;
-   
   }
   @media (max-width:854px){
-    grid-template-columns: repeat(4 ,auto);
+    grid-template-columns: repeat(3 ,auto);
     gap: 0.6rem;
   }
   @media (max-width:630px){
-    grid-template-columns: repeat(3 ,auto);
+    grid-template-columns: repeat(2 ,auto);
     gap: 1rem;
   }
   @include sp{
@@ -126,10 +124,11 @@ export default {
     grid-template-columns: none;
     margin-top: 1rem;
   }
-  
+
+ 
 }
 .news-categorize-item{
-  margin: 0.8rem 0.8rem 0.8rem 0;
+  margin: 0.8rem 2rem 0.8rem 0;
   padding: 12px 30px;  
   width: max-content;
   text-align: center;
@@ -149,7 +148,7 @@ export default {
 
     }
   }
-  @media (max-width:1000px){
+  @include tab{
     margin: 0.8rem 0;
     width: fit-content;
   }
@@ -159,33 +158,6 @@ export default {
   @include sp{
     display: none;
   }
-  &:nth-child(4){
-    @media (max-width:630px){
-      grid-column: 1;
-  }
-  }
-  &:nth-child(5){
-    @media (max-width:1000px){
-      grid-row: 2;
-      grid-column: 1 / span 2;
-    }
-    @media (max-width:630px){
-      grid-column: 2/span 3;
-
-  }
-  }
-    &:nth-child(6){
-      @media (max-width:1000px){
-      grid-row: 2;
-      grid-column:3;
-    }
-    @media (max-width:630px){
-      grid-row: 3;
-      grid-column: 1;
-
-  }
-  }
- 
 }
 .news-categorize-item p{ 
   color: $blue;
@@ -206,8 +178,9 @@ export default {
   display: flex;
   flex-direction: column;
   margin: 1rem 0 0 0;
+  width: 76%;
   
-  @media (max-width:1000px){
+  @include tab{
     width: 100%;
   }
 }
@@ -216,9 +189,9 @@ export default {
 .button-container{
   margin-top: 1.6rem;
   display: flex;
-  @media (max-width:1000px){
-    grid-row: 3;
-    grid-column: 1/ span 4;
+  @include tab{
+    grid-row: 2;
+    grid-column: 1/ span 5;
     justify-content: center;
   }
   @media (max-width:854px){

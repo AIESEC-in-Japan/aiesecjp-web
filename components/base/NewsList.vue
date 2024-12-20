@@ -42,7 +42,7 @@ export default {
   border-bottom: 1px #B5BABF solid;  
   align-items: center;
 
-  @media(max-width: 785px){
+  @media(max-width: 580px){
     display: grid;
     grid-template-columns: repeat(3 ,auto);
     padding: 1rem 0.5rem;
@@ -52,29 +52,23 @@ export default {
 .news-list-date{
   font-size: 1rem;
   margin: 0;
-  // flex-grow: 1;
-  width: 14%;
-
+  flex-grow: 1;
   text-align: center;
-  @media(max-width: 785px){
+  @media(max-width: 580px){
     grid-row: 1;
     grid-column: 1;
     text-align: start;
-    width: auto;
   }
 }
 .news-list-category{
-  margin: 0 auto;
+  margin: 0 2rem;
   text-align: center;
-  width: fit-content;
+  flex-grow: 1;
 
-
-  @media(max-width: 785px){
+  @media(max-width: 580px){
     grid-row: 1;
     grid-column: 3;
     margin-right: 0;
-    width: auto;
-
   }
 }
 .news-list-category p{
@@ -85,7 +79,7 @@ export default {
   text-align: center;
   font-size: 1rem;
   margin: 0;
-  @media(max-width: 785px){
+  @media(max-width: 580px){
     padding: 4px 12px;  
     width: fit-content;
     margin-top: 1rem;
@@ -98,14 +92,12 @@ export default {
 .news-list-title{
   color: $dark-gray;
   font-size: 1rem;
-  width: 60%;
-  margin: 0 0 0 auto;
-  @media(max-width: 785px){
+  flex-grow: 6;
+  margin: 0;
+  @media(max-width: 580px){
     grid-row: 2;
     grid-column: 1/ span 3;
-    margin: 0.2rem 0 0 0;
-    width: auto;
-
+    margin-top: 0.2rem;
   }
 }
 

@@ -109,7 +109,7 @@
 .news-text{
   font-size: 1rem;
   margin: 1rem;
-  width: fit-content;
+  width: 100%;
 }
 
 .img{
