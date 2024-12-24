@@ -27,10 +27,12 @@
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/storybook": "^4.0.4",
     "@nuxtjs/vuetify": "^1.12.1",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^9.2.1",
     "chromatic": "^6.5.2",
     "css-loader": "^5.0.0",
     "eslint": "^7.27.0",
@@ -45,6 +47,7 @@
     "sass-loader": "^8.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-scss": "^3.19.0",
+    "webpack": "^5.97.1"
   }
 }
