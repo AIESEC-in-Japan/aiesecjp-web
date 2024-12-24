@@ -1,12 +1,14 @@
 <template>
   <section>
     <div class="policy-container">
-      <div class="policy-bg"></div>
+      <div class="policy-bg" />
       <div class="policy-text-wrapper">
         <div class="policy-text">
           Privacy Policy
         </div>
-        <h2 class="policy-text-sub">個人情報管理について</h2>
+        <h2 class="policy-text-sub">
+          個人情報管理について
+        </h2>
       </div>
     </div>
   </section>

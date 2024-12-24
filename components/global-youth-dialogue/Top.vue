@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="gyd-container">
-      <div class="gyd-bg"></div>
+      <div class="gyd-bg" />
       <h2 class="gyd-text">
         global youth dialogue
       </h2>

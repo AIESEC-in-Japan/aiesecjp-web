@@ -3,11 +3,19 @@
     <div class="gyd-contents">
       <div class="gyd-wrapper">
         <div class="title-wrapper">
-          <p class="gyd-title">Contact</p>
-          <h2 class="gyd-title-sub">お気軽に公式LINEにてお問い合わせください。</h2>
+          <p class="gyd-title">
+            Contact
+          </p>
+          <h2 class="gyd-title-sub">
+            お気軽に公式LINEにてお問い合わせください。
+          </h2>
         </div>
         <div class="button-container">
-          <a class="button" href="https://lin.ee/1F8Gp7R" target="_blank"></a>
+          <a
+            class="button"
+            href="https://lin.ee/1F8Gp7R"
+            target="_blank"
+          />
         </div>
       </div>
     </div>

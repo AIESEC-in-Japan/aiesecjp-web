@@ -4,53 +4,83 @@
       <p> &nbsp; Y O U T H &nbsp; L E A D E R S H I P&nbsp;</p>
       <p> &nbsp; Y O U T H &nbsp; L E A D E R S H I P&nbsp;</p>
     </div>
-    <div class="service-bg"></div>
+    <div class="service-bg" />
     <div class="service-contents">
       <p class="service-title">
         Our Services
       </p>
-      <h2 class="service-title-sub">私たちの事業</h2>
+      <h2 class="service-title-sub">
+        私たちの事業
+      </h2>
       <div class="service-target-container">
-        <h3 class="service-target-title" id="student">学生の方へ</h3>
+        <h3
+          class="service-target-title"
+          id="student"
+        >
+          学生の方へ
+        </h3>
         <div class="service-item-container">
           <div class="service-item">
-            <div class="service-item-img img1"></div>
-              <div class="button-next-wrapper">
-                <p class="button-nextText">海外インターンシップ</p>
-              </div>
-              <a class="button" href="/outgoing"></a>
+            <div class="service-item-img img1" />
+            <div class="button-next-wrapper">
+              <p class="button-nextText">
+                海外インターンシップ
+              </p>
+            </div>
+            <a
+              class="button"
+              href="/outgoing"
+            />
           </div>
           <div class="service-item">
-            <div class="service-item-img img2"></div>
-              <div class="button-next-wrapper">
-                <p class="button-nextText">global youth dialogue</p>
-              </div>
-              <a class="button" href="/global-youth-dialogue"></a>
+            <div class="service-item-img img2" />
+            <div class="button-next-wrapper">
+              <p class="button-nextText">
+                global youth dialogue
+              </p>
+            </div>
+            <a
+              class="button"
+              href="/global-youth-dialogue"
+            />
           </div>
         </div>
       </div>
       <div class="service-target-container">
-        <h3 class="service-target-title" id="company">企業の方へ</h3>
+        <h3
+          class="service-target-title"
+          id="company"
+        >
+          企業の方へ
+        </h3>
         <div class="service-item-container">
           <div class="service-item">
-            <div class="service-item-img img3"></div>
-              <div class="button-next-wrapper">
-                <p class="button-nextText">海外インターンシップ<span>&nbsp;<br></span>受け入れ</p>
-              </div>
-              <a class="button" href="/incoming"></a>
+            <div class="service-item-img img3" />
+            <div class="button-next-wrapper">
+              <p class="button-nextText">
+                海外インターンシップ<span>&nbsp;<br></span>受け入れ
+              </p>
+            </div>
+            <a
+              class="button"
+              href="/incoming"
+            />
           </div>
           <div class="service-item">
-            <div class="service-item-img img4"></div>
-              <div class="button-next-wrapper">
-                <p class="button-nextText">協賛について</p>
-                <p class="button-nextText-sub">
-                </p>
-              </div>
-              <a class="button" href="/for-company"></a>
+            <div class="service-item-img img4" />
+            <div class="button-next-wrapper">
+              <p class="button-nextText">
+                協賛について
+              </p>
+              <p class="button-nextText-sub" />
+            </div>
+            <a
+              class="button"
+              href="/for-company"
+            />
           </div>
         </div>
       </div>
-      
     </div>
   </section>
 </template>

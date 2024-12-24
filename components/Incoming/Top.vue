@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="incoming-container">
-      <div class="incoming-bg"></div>
+      <div class="incoming-bg" />
       <h2 class="incoming-text">
         海外<wbr>インターンシップ<wbr>受け入れ
       </h2>

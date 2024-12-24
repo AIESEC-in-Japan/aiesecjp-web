@@ -3,17 +3,30 @@
     <div class="outgoing-contents">
       <div class="outgoing-wrapper">
         <div class="title-wrapper">
-          <p class="outgoing-title">Interview</p>
-          <h2 class="outgoing-title-sub">海外インターンシップ経験者の声</h2>
+          <p class="outgoing-title">
+            Interview
+          </p>
+          <h2 class="outgoing-title-sub">
+            海外インターンシップ経験者の声
+          </h2>
         </div>
         <div class="button-container">
-          <p class="button-nextText">noteを見る</p>
-          <a class="button" href="https://note.com/aiesec_japan/m/mf02965e1ff1e" target="_blank"></a>
+          <p class="button-nextText">
+            noteを見る
+          </p>
+          <a
+            class="button"
+            href="https://note.com/aiesec_japan/m/mf02965e1ff1e"
+            target="_blank"
+          />
         </div>
       </div>
       <div class="note-container">
-        <a class="note-item" target="_blank">
-          <div class="note-img note-img-1"></div>
+        <a
+          class="note-item"
+          target="_blank"
+        >
+          <div class="note-img note-img-1" />
           <div class="note-text">
             <p class="note-title">
               毎日が刺激！カオスを原体験に。
@@ -21,8 +34,12 @@
             <p class="note-name">檜垣るか</p>
           </div>
         </a>
-        <a class="note-item" href="https://note.com/aiesec_japan/n/na582b6214096?sub_rt=share_pw"  target="_blank">
-          <div class="note-img note-img-2"></div>
+        <a
+          class="note-item"
+          href="https://note.com/aiesec_japan/n/na582b6214096?sub_rt=share_pw"
+          target="_blank"
+        >
+          <div class="note-img note-img-2" />
           <div class="note-text">
             <p class="note-title">
               常識が通用しない環境で身に着いた<wbr>
@@ -31,8 +48,12 @@
             <p class="note-name">風間世那</p>
           </div>
         </a>
-        <a class="note-item" href="https://note.com/aiesec_japan/n/n8ad6436f2eb0?sub_rt=share_pw" target="_blank">
-          <div class="note-img note-img-3"></div>
+        <a
+          class="note-item"
+          href="https://note.com/aiesec_japan/n/n8ad6436f2eb0?sub_rt=share_pw"
+          target="_blank"
+        >
+          <div class="note-img note-img-3" />
           <div class="note-text">
             <p class="note-title">
               人生最大の挑戦を。<wbr>
@@ -41,8 +62,12 @@
             <p class="note-name">浅野晴人</p>
           </div>
         </a>
-        <a class="note-item" href="https://note.com/aiesec_japan/n/n27814166d26f?sub_rt=share_pw" target="_blank">
-          <div class="note-img note-img-4"></div>
+        <a
+          class="note-item"
+          href="https://note.com/aiesec_japan/n/n27814166d26f?sub_rt=share_pw"
+          target="_blank"
+        >
+          <div class="note-img note-img-4" />
           <div class="note-text">
             <p class="note-title">
               自分の価値を測りにいく。<wbr>
@@ -51,8 +76,12 @@
             <p class="note-name">海老原桂介</p>
           </div>
         </a>
-        <a class="note-item" href="https://note.com/aiesec_japan/n/n54621f4f62f2?sub_rt=share_pw" target="_blank">
-          <div class="note-img note-img-5"></div>
+        <a
+          class="note-item"
+          href="https://note.com/aiesec_japan/n/n54621f4f62f2?sub_rt=share_pw"
+          target="_blank"
+        >
+          <div class="note-img note-img-5" />
           <div class="note-text">
             <p class="note-title">
               初めて向き合う。社会課題と現実。
@@ -60,8 +89,11 @@
             <p class="note-name">嶋津怜奈</p>
           </div>
         </a>
-        <a class="note-item" target="_blank">
-          <div class="note-img note-img-6"></div>
+        <a
+          class="note-item"
+          target="_blank"
+        >
+          <div class="note-img note-img-6" />
           <div class="note-text">
             <p class="note-title">
               自分で実際に体験したことだけが<wbr>

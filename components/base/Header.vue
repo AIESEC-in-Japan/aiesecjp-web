@@ -1,102 +1,126 @@
 <template>
-<client-only>
-  <header class="header-wrapper">
-  <div class="header-container">
-    <nav>
-      <div class="navigation-logo">
-        <nuxt-link to="/">
-          <img
-            alt="logo"
-            src="@/assets/images/logo/blue-logo.png"
+  <client-only>
+    <header class="header-wrapper">
+      <div class="header-container">
+        <nav>
+          <div class="navigation-logo">
+            <nuxt-link to="/">
+              <img
+                alt="logo"
+                src="@/assets/images/logo/blue-logo.png"
+              >
+            </nuxt-link>
+          </div>
+          <ul
+            class="navigation-list-pc"
           >
-        </nuxt-link>
+            <li
+              class="navigation-item"
+              @mouseleave="mouseLeaveAction(index)"
+              @mouseover="mouseOverAction(index)"
+              v-for="(item, index) in navigationItems"
+              :key="index"
+            >
+              <nuxt-link
+                class="navigation-link"
+                :to="item.link"
+              >
+                {{ item.title }}
+              </nuxt-link>
+              <div
+                v-show="isShowNestedItems[index] && isActive"
+                class="navigation-nested"
+                :class="{'is-active': isActive}"
+                v-if="item.subItems"
+              >
+                <ul class="navigation-nested-list"> 
+                  <li
+                    v-for="(subItem, subIndex) in item.subItems"
+                    :key="subIndex"
+                    class="navigation-nested-item"
+                  >
+                    <nuxt-link
+                      class="navigation-link"
+                      :to="subItem.link"
+                    >
+                      {{ subItem.title }}
+                    </nuxt-link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- 外部リンク -->
+            <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
+          <div class="lp-button">
+            <a
+              class="lp-button-text"
+              href="https://aiesec.jp/lp/#"
+            >
+              Recruitment
+            </a>
+          </div>
+        </li> -->
+          </ul>
+          <ul
+            class="navigation-list-sp"
+            :class="{'is-show': isShow}"
+          >
+            <li
+              class="navigation-item"
+              v-for="(item, index) in navigationItems"
+              :key="index"
+            >
+              <nuxt-link
+                class="navigation-link"
+                :to="item.link"
+                @click.native="isShowList(); toggleScroll()"
+              >
+                {{ item.title }}
+              </nuxt-link>
+              <div>
+                <ul class="navigation-nested-list"> 
+                  <li
+                    v-for="(subItem, subIndex) in item.subItems"
+                    :key="subIndex"
+                    class="navigation-nested-item"
+                  >
+                    <nuxt-link
+                      class="navigation-link"
+                      :to="subItem.link"
+                      @click.native="isShowList(); toggleScroll();"
+                    >
+                      {{ subItem.title }}
+                    </nuxt-link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- 外部リンク -->
+            <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
+          <div class="lp-button">
+            <a
+              class="lp-button-text"
+              href="https://aiesec.jp/lp/#"
+            >
+              Recruitment
+            </a>
+          </div>
+        </li> -->
+          </ul>
+          <v-app-bar-nav-icon
+            class="navigation-mobile-icon"
+            @click="isShowList(); toggleScroll()"
+          >
+            <v-icon v-if="isShow">
+              mdi-close
+            </v-icon>
+            <v-icon v-else>
+              mdi-menu
+            </v-icon>
+          </v-app-bar-nav-icon>
+        </nav>
       </div>
-      <ul
-        class="navigation-list-pc"
-      >
-      <li
-          class="navigation-item"
-          @mouseleave="mouseLeaveAction(index)"
-          @mouseover="mouseOverAction(index)"
-          v-for="(item, index) in navigationItems"
-          :key="index"
-        >
-          <nuxt-link class="navigation-link" :to=item.link>
-            {{ item.title }}
-          </nuxt-link>
-          <div v-show="isShowNestedItems[index] && isActive"
-            class="navigation-nested"
-            :class="{'is-active': isActive}"
-            v-if="item.subItems">
-            <ul class="navigation-nested-list"> 
-              <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
-                <nuxt-link class="navigation-link" :to="subItem.link" >
-                  {{ subItem.title }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <!-- 外部リンク -->
-        <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
-          <div class="lp-button">
-            <a
-              class="lp-button-text"
-              href="https://aiesec.jp/lp/#"
-            >
-              Recruitment
-            </a>
-          </div>
-        </li> -->
-      </ul>
-      <ul
-        class="navigation-list-sp"
-        :class="{'is-show': isShow}"
-      >
-        <li
-          class="navigation-item"
-          v-for="(item, index) in navigationItems"
-          :key="index"
-        >
-          <nuxt-link class="navigation-link" :to=item.link @click.native="isShowList(); toggleScroll()">
-            {{ item.title }}
-          </nuxt-link>
-          <div>
-            <ul class="navigation-nested-list"> 
-              <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex" class="navigation-nested-item">
-                <nuxt-link class="navigation-link" :to="subItem.link" @click.native="isShowList(); toggleScroll();">
-                  {{ subItem.title }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <!-- 外部リンク -->
-        <!-- <li class="navigation-item"> 新歓専用ページ(2022, 2023のみ使用し、2024で削除)
-          <div class="lp-button">
-            <a
-              class="lp-button-text"
-              href="https://aiesec.jp/lp/#"
-            >
-              Recruitment
-            </a>
-          </div>
-        </li> -->
-      </ul>
-      <v-app-bar-nav-icon
-        class="navigation-mobile-icon"
-        @click="isShowList(); toggleScroll()"
-      >
-        <v-icon v-if="isShow">
-          mdi-close
-        </v-icon>
-        <v-icon v-else>
-          mdi-menu
-        </v-icon>
-      </v-app-bar-nav-icon>
-    </nav>
-  </div>
-  </header>
+    </header>
   </client-only>
 </template>
 

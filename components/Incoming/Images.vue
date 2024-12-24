@@ -1,8 +1,8 @@
 <template>
   <div class="incoming-container">
     <div class="incoming-contents">
-      <div class="incoming-image"></div>
-      <div class="incoming-image"></div>
+      <div class="incoming-image" />
+      <div class="incoming-image" />
     </div>
   </div>
 </template>

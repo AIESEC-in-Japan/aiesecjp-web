@@ -3,14 +3,21 @@
     <div class="incoming-contents">
       <div class="incoming-wrapper">
         <div class="title-wrapper">
-          <p class="incoming-title">Contact</p>
-          <h2 class="incoming-title-sub">お気軽にお問い合わせください。</h2>
+          <p class="incoming-title">
+            Contact
+          </p>
+          <h2 class="incoming-title-sub">
+            お気軽にお問い合わせください。
+          </h2>
         </div>
         <div class="button-container">
-          <a class="button" href="/#contact"></a>
+          <a
+            class="button"
+            href="/#contact"
+          />
         </div>
       </div>
-      <div class="incoming-img"></div>
+      <div class="incoming-img" />
     </div>
   </div>
 </template>

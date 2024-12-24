@@ -3,11 +3,18 @@
     <div class="fcompany-contents">
       <div class="fcompany-wrapper">
         <div class="title-wrapper">
-          <p class="fcompany-title">Contact</p>
-          <h2 class="fcompany-title-sub">お気軽にお問い合わせください。</h2>
+          <p class="fcompany-title">
+            Contact
+          </p>
+          <h2 class="fcompany-title-sub">
+            お気軽にお問い合わせください。
+          </h2>
         </div>
         <div class="button-container">
-          <a class="button" href="/#contact"></a>
+          <a
+            class="button"
+            href="/#contact"
+          />
         </div>
       </div>
     </div>

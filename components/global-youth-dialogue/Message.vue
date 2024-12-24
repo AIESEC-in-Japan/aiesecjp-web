@@ -1,7 +1,7 @@
 <template>
   <div class="gyd-container">
     <div class="gyd-contents">
-      <div class="gyd-logo"></div>
+      <div class="gyd-logo" />
       <div class="message-container">
         <h3 class="message-title">
           Pursue the answer for peace.<br>

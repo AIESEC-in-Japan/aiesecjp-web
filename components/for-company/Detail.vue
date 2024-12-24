@@ -1,11 +1,15 @@
 <template>
- <div class="fcompany-container">
+  <div class="fcompany-container">
     <div class="fcompany-contents">
-      <h3 class="fcompany-title">協賛についてのご案内</h3>
-      <p class="fcompany-title-description">以下のような機会をご用意しています。企業様に合わせて柔軟に機会をご提案させていただきますので、お気軽にお問い合わせください</p>
+      <h3 class="fcompany-title">
+        協賛についてのご案内
+      </h3>
+      <p class="fcompany-title-description">
+        以下のような機会をご用意しています。企業様に合わせて柔軟に機会をご提案させていただきますので、お気軽にお問い合わせください
+      </p>
       <div class="fcompany-features">
         <div class="fcompany-features-item">
-          <div class="fcompany-features-item-img"></div>
+          <div class="fcompany-features-item-img" />
           <div class="fcompany-features-item-text">
             <p class="fcompany-features-item-text-title">
               <span>01</span><br>
@@ -17,7 +21,7 @@
           </div>
         </div>
         <div class="fcompany-features-item">
-          <div class="fcompany-features-item-img"></div>
+          <div class="fcompany-features-item-img" />
           <div class="fcompany-features-item-text li2">
             <p class="fcompany-features-item-text-title">
               <span>02</span><br>
@@ -29,7 +33,7 @@
           </div>
         </div>
         <div class="fcompany-features-item">
-          <div class="fcompany-features-item-img"></div>
+          <div class="fcompany-features-item-img" />
           <div class="fcompany-features-item-text">
             <p class="fcompany-features-item-text-title">
               <span>03</span><br>

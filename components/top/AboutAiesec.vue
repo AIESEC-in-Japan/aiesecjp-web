@@ -1,21 +1,33 @@
 <template>
   <section class="about-container">
-    <div class="about-img"></div>
-    <div class="about-bg"></div>
+    <div class="about-img" />
+    <div class="about-bg" />
     <div class="about-contents">
-      <p class="about-title" id="about">
+      <p
+        class="about-title"
+        id="about"
+      >
         About AIESEC
       </p>
-      <h2 class="about-title-sub">AIESECについて</h2>
-      <p class="about-heading">Activating Youth <br>Leadership</p>
+      <h2 class="about-title-sub">
+        AIESECについて
+      </h2>
+      <p class="about-heading">
+        Activating Youth <br>Leadership
+      </p>
       <p class="about-explain">
         アイセックは、世界100以上の国と地域に支部を持ち、約30,000人の若者が<br>
         所属する非営利組織です。若者の異文化理解を促進することで、「平和で人々の<br>
         可能性が最大限発揮された社会」の実現を目指しています。
       </p>
       <div class="button-container">
-        <p class="button-nextText">私たちの想い</p>
-        <a class="button" href="/about"></a>
+        <p class="button-nextText">
+          私たちの想い
+        </p>
+        <a
+          class="button"
+          href="/about"
+        />
       </div>
     </div>
   </section>

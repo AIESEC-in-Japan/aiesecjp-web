@@ -4,17 +4,49 @@
       <p class="news-title">
         Our News
       </p>
-      <h2 class="news-title-sub">新着情報</h2>
+      <h2 class="news-title-sub">
+        新着情報
+      </h2>
       <div class="news-wrapper">
         <div class="news-categorize">
-          <a class="news-categorize-item" v-on:click="filterNews('all')" :class="{ active: selected_category === 'all' }"><p>ALL</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selected_category === 'report' }"><p>活動報告</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selected_category === 'partner' }"><p>協賛活動</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selected_category === 'member' }"><p>メンバーの活動</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selected_category === 'others' }"><p>その他</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('all')"
+            :class="{ active: selected_category === 'all' }"
+          ><p>ALL</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('report')"
+            :class="{ active: selected_category === 'report' }"
+          ><p>活動報告</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('partner')"
+            :class="{ active: selected_category === 'partner' }"
+          ><p>協賛活動</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('member')"
+            :class="{ active: selected_category === 'member' }"
+          ><p>メンバーの活動</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('offer')"
+            :class="{ active: selected_category === 'offer' }"
+          ><p>パートナーシップのご提案</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('others')"
+            :class="{ active: selected_category === 'others' }"
+          ><p>その他</p></a>
           <div class="button-container">
-            <p class="button-nextText">一覧を見る</p>
-            <a class="button" href="/news"></a>
+            <p class="button-nextText">
+              一覧を見る
+            </p>
+            <a
+              class="button"
+              href="/news"
+            />
           </div>
         </div>
         <div class="news-item-wrapper">
@@ -96,7 +128,7 @@ export default {
   width: 100%;
   justify-content: space-between;
 
-  @include tab{
+  @media (max-width:1000px){
     flex-direction: column;
     justify-content: center;
   }
@@ -105,18 +137,19 @@ export default {
   display: flex;
   flex-direction: column;
   margin: 4rem 0 0 0;
-  @include tab{
+  @media (max-width:1000px){
     display: grid;
-    grid-template-columns: repeat(5 ,auto);
+    grid-template-columns: repeat(4 ,auto);
     justify-content: center;
     gap: 1rem;
+   
   }
   @media (max-width:854px){
-    grid-template-columns: repeat(3 ,auto);
+    grid-template-columns: repeat(4 ,auto);
     gap: 0.6rem;
   }
   @media (max-width:630px){
-    grid-template-columns: repeat(2 ,auto);
+    grid-template-columns: repeat(3 ,auto);
     gap: 1rem;
   }
   @include sp{
@@ -124,11 +157,10 @@ export default {
     grid-template-columns: none;
     margin-top: 1rem;
   }
-
- 
+  
 }
 .news-categorize-item{
-  margin: 0.8rem 2rem 0.8rem 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   padding: 12px 30px;  
   width: max-content;
   text-align: center;
@@ -148,7 +180,7 @@ export default {
 
     }
   }
-  @include tab{
+  @media (max-width:1000px){
     margin: 0.8rem 0;
     width: fit-content;
   }
@@ -158,6 +190,33 @@ export default {
   @include sp{
     display: none;
   }
+  &:nth-child(4){
+    @media (max-width:630px){
+      grid-column: 1;
+  }
+  }
+  &:nth-child(5){
+    @media (max-width:1000px){
+      grid-row: 2;
+      grid-column: 1 / span 2;
+    }
+    @media (max-width:630px){
+      grid-column: 2/span 3;
+
+  }
+  }
+    &:nth-child(6){
+      @media (max-width:1000px){
+      grid-row: 2;
+      grid-column:3;
+    }
+    @media (max-width:630px){
+      grid-row: 3;
+      grid-column: 1;
+
+  }
+  }
+ 
 }
 .news-categorize-item p{ 
   color: $blue;
@@ -178,9 +237,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin: 1rem 0 0 0;
-  width: 76%;
   
-  @include tab{
+  @media (max-width:1000px){
     width: 100%;
   }
 }
@@ -189,9 +247,9 @@ export default {
 .button-container{
   margin-top: 1.6rem;
   display: flex;
-  @include tab{
-    grid-row: 2;
-    grid-column: 1/ span 5;
+  @media (max-width:1000px){
+    grid-row: 3;
+    grid-column: 1/ span 4;
     justify-content: center;
   }
   @media (max-width:854px){

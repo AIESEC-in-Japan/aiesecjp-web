@@ -1,24 +1,61 @@
 <template>
-  <div class="news-container"  id="news-top">
+  <div
+    class="news-container"
+    id="news-top"
+  >
     <div class="news-contents">
-      <p class="news-categorize-text">カテゴリ</p>
+      <p class="news-categorize-text">
+        カテゴリ
+      </p>
       <div class="news-categorize">
-        <a class="news-categorize-item" v-on:click="filterNews('all')" :class="{ active: selected_category === 'all' }"><p>ALL</p></a>
-        <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selected_category === 'report' }"><p>活動報告</p></a>
-        <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selected_category === 'partner' }"><p>協賛活動</p></a>
-        <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selected_category === 'member' }"><p>メンバーの活動</p></a>
-        <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selected_category === 'others' }"><p>その他</p></a>
+        <a
+          class="news-categorize-item"
+          @click="filterNews('all')"
+          :class="{ active: selected_category === 'all' }"
+        ><p>ALL</p></a>
+        <a
+          class="news-categorize-item"
+          @click="filterNews('report')"
+          :class="{ active: selected_category === 'report' }"
+        ><p>活動報告</p></a>
+        <a
+          class="news-categorize-item"
+          @click="filterNews('partner')"
+          :class="{ active: selected_category === 'partner' }"
+        ><p>協賛活動</p></a>
+        <a
+          class="news-categorize-item"
+          @click="filterNews('member')"
+          :class="{ active: selected_category === 'member' }"
+        ><p>メンバーの活動</p></a>
+        <a
+          class="news-categorize-item"
+          @click="filterNews('offer')"
+          :class="{ active: selected_category === 'offer' }"
+        ><p>パートナーシップのご提案</p></a>
+        <a
+          class="news-categorize-item"
+          @click="filterNews('others')"
+          :class="{ active: selected_category === 'others' }"
+        ><p>その他</p></a>
       </div>
       <div class="news-item-wrapper">
         <BaseNewsList
-            v-for="news in paginatedNews"
-            :key="news.url"
-            :data="news"
-          />
+          v-for="news in paginatedNews"
+          :key="news.url"
+          :data="news"
+        />
       </div>
       <div class="pagination">
-        <a class="pagination-arrow" href=#news-top @click="goToPage(current_page - 1)" :class="{nonactive: current_page === 1}" :disabled="current_page === 1"><p>＜</p></a>
-        <a class="pagination_item"
+        <a
+          class="pagination-arrow"
+          href="#news-top"
+          @click="goToPage(current_page - 1)"
+          :class="{nonactive: current_page === 1}"
+          :disabled="current_page === 1"
+        ><p>＜</p></a>
+        <a
+          class="pagination_item"
           v-for="page in pageNumbers"
           :key="page"
           @click="goToPage(page)"
@@ -26,7 +63,12 @@
         >
           <p>{{ page }}</p>
         </a>
-        <a class="pagination-arrow" @click="goToPage(current_page + 1)" :class="{nonactive: current_page === totalPages}" :disabled="current_page === totalPages"><p>＞</p></a>
+        <a
+          class="pagination-arrow"
+          @click="goToPage(current_page + 1)"
+          :class="{nonactive: current_page === totalPages}"
+          :disabled="current_page === totalPages"
+        ><p>＞</p></a>
       </div>
     </div>
   </div>
@@ -135,7 +177,7 @@ export default {
   margin: 1.6rem 0 0 0;
   width: 100%;
 
-  @media(max-width:890px){
+  @media(max-width:1024px){
     display: grid;
     grid-template-columns: repeat(3 ,auto);
     justify-content: center;
@@ -169,7 +211,7 @@ export default {
     }
   }
 
-  @media(max-width:890px){
+  @media(max-width:1024px){
     margin: 0.8rem auto;
     width: fit-content;
   }
@@ -183,13 +225,19 @@ export default {
   }
 
   &:nth-child(4){
-    @media(max-width:890px){
+    @media(max-width:1024px){
       grid-row: 2;
-      grid-column: 1/span 2;
+      grid-column: 1;
     }
   }
   &:nth-child(5){
-    @media(max-width:890px){
+    @media(max-width:1024px){
+      grid-row: 2;
+      grid-column: 2;
+    }
+  }
+  &:nth-child(6){
+    @media(max-width:1024px){
       grid-row: 2;
       grid-column: 3;
     }

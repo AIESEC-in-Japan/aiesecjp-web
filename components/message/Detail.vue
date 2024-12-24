@@ -4,12 +4,17 @@
       <p class="message-title">
         Message
       </p>
-      <h2 class="message-title-sub">代表メッセージ</h2>
+      <h2 class="message-title-sub">
+        代表メッセージ
+      </h2>
       <div class="message-wrapper">
         <p class="text-title-tab">
-            グローバルに活躍する若者のリーダーシップを育んでいきます
-          </p>
-        <div class="image" alt="代表者"></div>
+          グローバルに活躍する若者のリーダーシップを育んでいきます
+        </p>
+        <div
+          class="image"
+          alt="代表者"
+        />
         <div class="text-wrapper">
           <p class="text-title">
             グローバルに活躍する<br>
@@ -22,8 +27,12 @@
             アイセック・ジャパンとして、新たなステージを迎えるにあたって、アイセックメンバー一同、最大限の努力をして参りますので、これからアイセックの更なる発展を応援していただくと共に、引き続きご指導、ご鞭撻をお願いする所存でございます。
           </p>
           <div class="name-wrapper">
-            <p class="role">2024年度専務理事</p>
-            <p class="name">森本大貴</p>
+            <p class="role">
+              2024年度専務理事
+            </p>
+            <p class="name">
+              森本大貴
+            </p>
           </div>
         </div>
       </div>

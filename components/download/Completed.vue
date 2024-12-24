@@ -1,12 +1,17 @@
 <template>
- <div class="download-container">
+  <div class="download-container">
     <div class="download-contents">
-      <p class="download-title">資料ダウンロードが完了しました</p>
+      <p class="download-title">
+        資料ダウンロードが完了しました
+      </p>
       <p class="download-title-description">
         この度は、アイセックにご関心をお寄せいただき、誠にありがとうございます。<br>
         ご不明点・ご質問などございましたら、お気軽にお問い合わせください。
       </p>
-      <a class="button" href="../">トップページへ戻る&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a
+        class="button"
+        href="../"
+      >トップページへ戻る&nbsp;&nbsp;&nbsp;&nbsp;</a>
     </div>
   </div>
 </template>

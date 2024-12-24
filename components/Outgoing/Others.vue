@@ -2,18 +2,30 @@
   <div class="outgoing-container">
     <div class="outgoing-contents">
       <div class="outgoing-wrapper">
-        <h2 class="outgoing-title-sub">その他の事業</h2>
+        <h2 class="outgoing-title-sub">
+          その他の事業
+        </h2>
       </div>
       <div class="others-wrapper">
         <div class="service-item">
-          <div class="service-item-img service-item-img-1"></div>
-          <p class="button-nextText">global youth dialogue</p>
-          <a class="button" href="/global-youth-dialogue"></a>
+          <div class="service-item-img service-item-img-1" />
+          <p class="button-nextText">
+            global youth dialogue
+          </p>
+          <a
+            class="button"
+            href="/global-youth-dialogue"
+          />
         </div>
         <div class="service-item">
-          <div class="service-item-img service-item-img-2"></div>
-          <p class="button-nextText">海外インターンシップ<br>受け入れ事業</p>
-          <a class="button" href="/incoming"></a>
+          <div class="service-item-img service-item-img-2" />
+          <p class="button-nextText">
+            海外インターンシップ<br>受け入れ事業
+          </p>
+          <a
+            class="button"
+            href="/incoming"
+          />
         </div>
       </div>
     </div>

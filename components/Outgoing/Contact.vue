@@ -3,14 +3,22 @@
     <div class="outgoing-contents">
       <div class="outgoing-wrapper">
         <div class="title-wrapper">
-          <p class="outgoing-title">Contact</p>
-          <h2 class="outgoing-title-sub">お気軽に公式LINEにてお問い合わせください。</h2>
+          <p class="outgoing-title">
+            Contact
+          </p>
+          <h2 class="outgoing-title-sub">
+            お気軽に公式LINEにてお問い合わせください。
+          </h2>
         </div>
         <div class="button-container">
-          <a class="button" href="https://lin.ee/1F8Gp7R" target="_blank"></a>
+          <a
+            class="button"
+            href="https://lin.ee/1F8Gp7R"
+            target="_blank"
+          />
         </div>
       </div>
-      <div class="outgoing-img"></div>
+      <div class="outgoing-img" />
     </div>
   </div>
 </template>

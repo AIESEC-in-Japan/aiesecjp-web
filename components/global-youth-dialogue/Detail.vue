@@ -1,12 +1,14 @@
 <template>
   <div class="gyd-container">
-    <div class="bg-top"></div>
+    <div class="bg-top" />
     <div class="gyd-bg">
       <div class="gyd-contents">
-        <h3 class="gyd-title">global youth dialogue<wbr>の特徴</h3>
+        <h3 class="gyd-title">
+          global youth dialogue<wbr>の特徴
+        </h3>
         <div class="gyd-features">
           <div class="gyd-features-item">
-            <div class="gyd-features-item-img gyd-features-item-img-1"></div>
+            <div class="gyd-features-item-img gyd-features-item-img-1" />
             <div class="gyd-features-item-text">
               <p class="gyd-features-item-text-title">
                 対話を通じて、<span class="show"><br></span>自分や世界に対しての<br>
@@ -20,7 +22,7 @@
             </div>
           </div>
           <div class="gyd-features-item">
-            <div class="gyd-features-item-img gyd-features-item-img-2"></div>
+            <div class="gyd-features-item-img gyd-features-item-img-2" />
             <div class="gyd-features-item-text li2">
               <p class="gyd-features-item-text-title">
                 ご自身の<span class="show"><br></span>興味や都合に合わせて、<br>
@@ -35,7 +37,7 @@
             </div>
           </div>
           <div class="gyd-features-item">
-            <div class="gyd-features-item-img gyd-features-item-img-3"></div>
+            <div class="gyd-features-item-img gyd-features-item-img-3" />
             <div class="gyd-features-item-text">
               <p class="gyd-features-item-text-title">
                 毎日設定されるトピックをもとに、<br>
@@ -51,7 +53,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-bottom"></div>
+    <div class="bg-bottom" />
   </div>
 </template>
 

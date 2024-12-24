@@ -24,7 +24,8 @@
     "axios": "^0.21.2",
     "cookie-universal-nuxt": "^2.2.2",
     "dotenv": "^8.2.0",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "sass-loader": "8.0.2"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
@@ -42,7 +43,6 @@
     "postcss-import": "^13.0.0",
     "postcss-loader": "^4.1.0",
     "postcss-url": "^10.1.1",
-    "sass-loader": "^8.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0"

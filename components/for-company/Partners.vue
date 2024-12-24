@@ -1,8 +1,10 @@
 <template>
   <div class="fcompany-container">
     <div class="fcompany-contents">
-      <h3 class="fcompany-title">私たちのパートナー</h3>
-      <BasePartners/>
+      <h3 class="fcompany-title">
+        私たちのパートナー
+      </h3>
+      <BasePartners />
     </div>
   </div>
 </template>
