@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="about-container">
-      <div class="about-bg"></div>
+      <div class="about-bg" />
       <h2 class="about-text">
         AIESECについて
       </h2>

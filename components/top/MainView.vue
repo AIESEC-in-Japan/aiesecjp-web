@@ -1,17 +1,18 @@
 <template>
   <section>
     <div class="kv-container">
-      <div class="kv-bg"></div>
+      <div class="kv-bg" />
       <div class="kv-wrapper">
         <p class="kv-text">
           きっと変わる。<br>
           自分も、世界も。
         </p>
-        <a class="latest-news"
+        <a
+          class="latest-news"
           :href="news_data[0].url"
         >
           <span>NEWS&nbsp;</span>
-          &nbsp;&nbsp;{{ `${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[2]}.${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[3]}`}}
+          &nbsp;&nbsp;{{ `${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[2]}.${news_data[0].date.match(/(\d+)年(\d+)月(\d+)日/)[3]}` }}
           <p>&nbsp;&nbsp;<wbr>{{ news_data[0].title }}</p>
         </a>
       </div>

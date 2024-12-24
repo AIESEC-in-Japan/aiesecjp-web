@@ -4,11 +4,18 @@
       <p class="partners-title">
         Our Partners
       </p>
-      <h2 class="partners-title-sub">私たちのパートナー</h2>
-      <BasePartners/>
+      <h2 class="partners-title-sub">
+        私たちのパートナー
+      </h2>
+      <BasePartners />
       <div class="button-container">
-        <p class="button-nextText">協賛についてはこちら</p>
-        <a class="button" href="/for-company"></a>
+        <p class="button-nextText">
+          協賛についてはこちら
+        </p>
+        <a
+          class="button"
+          href="/for-company"
+        />
       </div>
     </div>
   </section>

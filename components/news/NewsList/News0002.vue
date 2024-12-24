@@ -84,13 +84,18 @@
         ご興味のある企業様はinfo@aiesec.jp又はHPの<a href="/#contact">お問い合わせフォーム</a>よりご連絡ください。<br>
       </p>
       <div class="img-wrapper">
-        <div class="img1"></div>
-        <div class="img2"></div>        
+        <div class="img1" />
+        <div class="img2" />        
       </div>
-      <div class="img3"></div>
+      <div class="img3" />
       <div class="button-container">
-        <p class="button-nextText">お知らせ一覧に戻る</p>
-        <a class="button" href="/news"></a>
+        <p class="button-nextText">
+          お知らせ一覧に戻る
+        </p>
+        <a
+          class="button"
+          href="/news"
+        />
       </div>
     </div>
   </div>

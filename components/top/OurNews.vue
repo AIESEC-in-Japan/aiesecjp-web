@@ -4,18 +4,49 @@
       <p class="news-title">
         Our News
       </p>
-      <h2 class="news-title-sub">新着情報</h2>
+      <h2 class="news-title-sub">
+        新着情報
+      </h2>
       <div class="news-wrapper">
         <div class="news-categorize">
-          <a class="news-categorize-item" v-on:click="filterNews('all')" :class="{ active: selected_category === 'all' }"><p>ALL</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('report')" :class="{ active: selected_category === 'report' }"><p>活動報告</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('partner')" :class="{ active: selected_category === 'partner' }"><p>協賛活動</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('member')" :class="{ active: selected_category === 'member' }"><p>メンバーの活動</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('offer')" :class="{ active: selected_category === 'offer' }"><p>パートナーシップのご提案</p></a>
-          <a class="news-categorize-item" v-on:click="filterNews('others')" :class="{ active: selected_category === 'others' }"><p>その他</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('all')"
+            :class="{ active: selected_category === 'all' }"
+          ><p>ALL</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('report')"
+            :class="{ active: selected_category === 'report' }"
+          ><p>活動報告</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('partner')"
+            :class="{ active: selected_category === 'partner' }"
+          ><p>協賛活動</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('member')"
+            :class="{ active: selected_category === 'member' }"
+          ><p>メンバーの活動</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('offer')"
+            :class="{ active: selected_category === 'offer' }"
+          ><p>パートナーシップのご提案</p></a>
+          <a
+            class="news-categorize-item"
+            @click="filterNews('others')"
+            :class="{ active: selected_category === 'others' }"
+          ><p>その他</p></a>
           <div class="button-container">
-            <p class="button-nextText">一覧を見る</p>
-            <a class="button" href="/news"></a>
+            <p class="button-nextText">
+              一覧を見る
+            </p>
+            <a
+              class="button"
+              href="/news"
+            />
           </div>
         </div>
         <div class="news-item-wrapper">

@@ -1,12 +1,14 @@
 <template>
   <section>
     <div class="policy-container">
-      <div class="policy-bg"></div>
+      <div class="policy-bg" />
       <div class="policy-text-wrapper">
         <div class="policy-text">
           Site Policy
         </div>
-        <h2 class="policy-text-sub">サイトポリシー</h2>
+        <h2 class="policy-text-sub">
+          サイトポリシー
+        </h2>
       </div>
     </div>
   </section>

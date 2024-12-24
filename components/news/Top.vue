@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="news-container">
-      <div class="news-bg"></div>
+      <div class="news-bg" />
       <div class="news-text-wrapper">
         <div class="news-text">
           NEWS
         </div>
-        <h2 class="news-text-sub">お知らせ</h2>
+        <h2 class="news-text-sub">
+          お知らせ
+        </h2>
       </div>
     </div>
   </div>

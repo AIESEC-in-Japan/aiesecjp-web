@@ -1,6 +1,6 @@
 <template>
   <footer class="footer-container">
-    <div class="footer-bg"></div>
+    <div class="footer-bg" />
     <div class="footer-wrapper">
       <div class="footer-items">
         <div class="footer-content">
@@ -12,7 +12,7 @@
               <a
                 class="footer-content-link"
                 href="/about"
-                >
+              >
                 AIESECについてトップ  
               </a>
             </li>
@@ -186,8 +186,8 @@
       </div>
       <div class="footer-icon">
         <div class="sns">
-          <div class="x"></div>
-          <div class="instagram"></div>
+          <div class="x" />
+          <div class="instagram" />
         </div>
         <div class="logo">
           <img
@@ -197,7 +197,9 @@
         </div>
       </div>
     </div>
-    <p class="copy-right">© 2024 AIESEC in Japan</p>
+    <p class="copy-right">
+      © 2024 AIESEC in Japan
+    </p>
   </footer>
 </template>
 

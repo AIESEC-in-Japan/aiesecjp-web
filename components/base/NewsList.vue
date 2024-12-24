@@ -3,20 +3,22 @@
     class="news-list-item"
     :id="`${data.categorized}`"
     v-if="data && data.url"
-    >
+  >
     <p
-      class="news-list-date">
-      {{data.date}}
+      class="news-list-date"
+    >
+      {{ data.date }}
     </p>
     <div class="news-list-category">
       <p>
-        {{data.category}}
+        {{ data.category }}
       </p>
     </div>
     <a
       class="news-list-title"
-      :href="data.url">
-      {{data.title}}
+      :href="data.url"
+    >
+      {{ data.title }}
     </a>
   </div>
 </template>

@@ -1,14 +1,17 @@
 <template>
   <div class="policy-container">
     <div class="policy-contents">
-      <div class="policy-outline" id="outline">
+      <div
+        class="policy-outline"
+        id="outline"
+      >
         <a
           class="button-container" 
           v-for="(button, index) in buttons" 
           :key="index"
           :href="button.href" 
           @click="handleClick(index)"
-            :class="{ active: activeButtonIndex === index }" 
+          :class="{ active: activeButtonIndex === index }" 
         >
           <a
             class="button"
@@ -19,20 +22,29 @@
         </a>
       </div>
       <div class="policy-content">
-        <h2  id="p1" class="policy-content-title">
+        <h2
+          id="p1"
+          class="policy-content-title"
+        >
           1. 免責事項
         </h2>
         <p>
           アイセック・ジャパンは、細心の注意を払って当ウェブサイトに情報を掲載しておりますが、この情報の正確性および完全性、有用性を保証するものではありません。また、予告なしに、当ウェブサイトに掲載されている情報を変更・中止することがあります。関係者の皆様が当ウェブサイトに記載された情報をご利用になる場合は、ご利用目的に応じ各自のご判断と責任において行ってください。また、アイセック・ジャパンは、皆様が当ウェブサイトに含まれる情報もしくは内容をご利用されたことで直接・間接的に生じた損失に関し一切責任を負うものではありません。さらに、当ウェブサイトのご利用に起因するソフトウェア、ハードウェア上の事故その他の損害についても責任を負いかねます。なお、予告なしに当ウェブサイトの運営を中断または中止することがありますので、あらかじめご了承ください。
         </p>
 
-        <h2  id="p2" class="policy-content-title">
+        <h2
+          id="p2"
+          class="policy-content-title"
+        >
           2. 準拠法および管轄裁判所
         </h2>
         <p>
           当ウェブサイトの内容および当サイトポリシー、免責事項の解釈および適用は、別段の定めのない限り、日本国の法律に準拠します。当ウェブサイトへのアクセスはアクセスされた方の皆様の自由意志によるものとし、当ウェブサイトの利用に関しての責任はアクセスされた方にあります。また、当ウェブサイトの利用に関わる全ての紛争については、別段の定めのない限り、東京地方裁判所を第一審の専属管轄裁判所とします。
         </p>
-        <h2  id="p3" class="policy-content-title">
+        <h2
+          id="p3"
+          class="policy-content-title"
+        >
           3. 当ウェブサイトへのリンクについて
         </h2>
         <p>
@@ -49,7 +61,10 @@
           上記に該当しない場合であっても、アイセック・ジャパンの判断によりリンクの変更または削除をお願いする場合がございます。<br>
           なお、当ウェブサイトのURLは、予告なく変更される場合がございます。あらかじめご了承ください。
         </p>
-        <h2  id="p4" class="policy-content-title">
+        <h2
+          id="p4"
+          class="policy-content-title"
+        >
           4. 個人情報の扱い
         </h2>
         <p>
