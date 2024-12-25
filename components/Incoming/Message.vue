@@ -2,12 +2,22 @@
   <div class="incoming-container">
     <div class="incoming-contents">
       <div class="title-wrapper">
-        <p class="incoming-title">Our Services</p>
-        <h2 class="incoming-title-sub">海外インターンシップ受け入れ</h2>
+        <p class="incoming-title">
+          Our Services
+        </p>
+        <h2 class="incoming-title-sub">
+          海外インターンシップ受け入れ
+        </h2>
       </div>
       <div class="button-container">
-        <p class="button-nextText">詳しくはこちら</p>
-        <a class="button" href="https://aiesec.jp/lp/incoming" target="_blank"></a>
+        <p class="button-nextText">
+          詳しくはこちら
+        </p>
+        <a
+          class="button"
+          href="https://aiesec.jp/lp/incoming"
+          target="_blank"
+        />
       </div>
       <div class="message-container">
         <h3 class="message-title">

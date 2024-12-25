@@ -3,36 +3,46 @@
     <div class="incoming-contents">
       <div class="incoming-wrapper">
         <div class="title-wrapper">
-          <p class="incoming-title">Interview</p>
-          <h2 class="incoming-title-sub">海外インターンシップ受け入れ企業の声</h2>
+          <p class="incoming-title">
+            Interview
+          </p>
+          <h2 class="incoming-title-sub">
+            海外インターンシップ受け入れ企業の声
+          </h2>
         </div>
       </div>
       <div class="voice-container">
         <div class="voice-item">
-          <div class="voice-img voice-img-1"></div>
+          <div class="voice-img voice-img-1" />
           <div class="voice-text">
             <p class="voice-title">
               &nbsp;&nbsp;グローバル人材を育てたいという思いがある企業にとっては、社員の方たちが学ぶ機会になります。インターン生が来るまで、チュニジアという国に特に注目していませんでしたが、受け入れによって視点が広がり、気付きがありました。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             </p>
-            <p class="voice-name">株式会社<wbr>システムズナカシマ様</p>
+            <p class="voice-name">
+              株式会社<wbr>システムズナカシマ様
+            </p>
           </div>
         </div>
         <div class="voice-item">
-          <div class="voice-img voice-img-2"></div>
+          <div class="voice-img voice-img-2" />
           <div class="voice-text">
             <p class="voice-title">
               &nbsp;&nbsp;インターン生が「海外に出て行く時に大事なのはcultural differenceをmanageすること」だと言っていました。海外事業を進めて行くうえで、また、日本で外国人労働者が増えている中で、海外人材と働くいい機会になり、新たな気付きを得ることができました。
             </p>
-            <p class="voice-name">ライフネット生命様</p>
+            <p class="voice-name">
+              ライフネット生命様
+            </p>
           </div>
         </div>
         <div class="voice-item">
-          <div class="voice-img voice-img-3"></div>
+          <div class="voice-img voice-img-3" />
           <div class="voice-text">
             <p class="voice-title">
               &nbsp;&nbsp;日常の業務では自分のタスクに集中するので、他者のことを考える余裕がなくなりがちです。しかし、インターン生を受け入れることで、社員以外の人にもケアをしないといけないということで、ホスピタリティを身につける良い機会になりました。 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
             </p>
-            <p class="voice-name">ボサード株式会社様</p>
+            <p class="voice-name">
+              ボサード株式会社様
+            </p>
           </div>
         </div>
       </div>

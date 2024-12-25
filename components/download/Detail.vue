@@ -1,122 +1,347 @@
 <template>
-<client-only>
- <div class="download-container">
-    <div class="download-contents">
-      <h3 class="download-title">資料請求</h3>
-      <p class="download-title-description">
-        この度は、アイセックにご関心をお寄せいただき、誠にありがとうございます。<br>
-        資料のダウンロードをご希望の場合は、以下のフォームにご記入の上、送信してください。<br>
-        なお、<span> *</span>印が付いている項目は必須項目となりますので、必ずご記入ください。
-      </p>
-      <!--入力修正メッセージ-->
-      <div id="errorMessages" ref="errorMessages" class="errorMessages">
-        <p>※入力に不備があります。入力内容をご確認ください。</p>
+  <client-only>
+    <div class="download-container">
+      <div class="download-contents">
+        <h3 class="download-title">
+          資料請求
+        </h3>
+        <p class="download-title-description">
+          この度は、アイセックにご関心をお寄せいただき、誠にありがとうございます。<br>
+          資料のダウンロードをご希望の場合は、以下のフォームにご記入の上、送信してください。<br>
+          なお、<span> *</span>印が付いている項目は必須項目となりますので、必ずご記入ください。
+        </p>
+        <!--入力修正メッセージ-->
+        <div
+          id="errorMessages"
+          ref="errorMessages"
+          class="errorMessages"
+        >
+          <p>※入力に不備があります。入力内容をご確認ください。</p>
+        </div>
+        <form
+          @submit.prevent="handleSubmit"
+          class="download-form"
+          id="form"
+          novalidate
+        >
+          <!--Enterで送信されるのを防ぐ-->
+          <button
+            type="submit"
+            disabled
+            style="display: none;"
+          />
+          <!--企業名/団体名-->
+          <div class="item">
+            <label class="question">企業名/団体名<span> *</span></label>
+            <input
+              type="text"
+              name="entry.448556317"
+              v-model="form.companyName"
+              :class="{ 'input-error': errors.companyName }"
+              id="companyName"
+              class="input"
+              placeholder="株式会社ABC"
+              required
+            >
+            <span
+              class="errorMessage"
+              v-if="errors.companyName"
+            >{{ errors.companyName }}</span>
+          </div>
+          <!--お名前-->
+          <div class="item">
+            <label class="question">お名前<span> *</span></label>
+            <input
+              type="text"
+              name="entry.2031729231"
+              v-model="form.name"
+              :class="{ 'input-error': errors.name }"
+              id="name"
+              class="input"
+              placeholder="山田 太郎"
+              required
+            >
+            <span
+              class="errorMessage"
+              v-if="errors.name"
+            >{{ errors.name }}</span>
+          </div>
+          <!--お名前（フリガナ）-->
+          <div class="item">
+            <label class="question">お名前（フリガナ）<span> *</span></label>
+            <input
+              type="text"
+              name="entry.102832780"
+              v-model="form.kanaName"
+              :class="{ 'input-error': errors.kanaName }"
+              class="input"
+              placeholder="ヤマダ タロウ"
+              required
+            >
+            <span
+              class="errorMessage"
+              v-if="errors.kanaName"
+            >{{ errors.kanaName }}</span>
+          </div>
+          <!--部門-->
+          <div class="item">
+            <label class="question">部門<span> *</span></label>
+            <select
+              name="entry.1481233185"
+              v-model="form.department"
+              :class="{ 'input-error': errors.department }"
+              class="input pull-down"
+              required
+            >
+              <option
+                value=""
+                class="default"
+                selected
+                disabled
+              >
+                <p>選択してください</p>
+              </option>
+              <option value="営業部門">
+                <p>営業部門</p>
+              </option>
+              <option value="マーケティング部門">
+                <p>マーケティング部門</p>
+              </option>
+              <option value="人事部門">
+                <p>人事部門</p>
+              </option>
+              <option value="総務部門">
+                <p>総務部門</p>
+              </option>
+              <option value="経営企画部門">
+                <p>経営企画部門</p>
+              </option>
+              <option value="IR部門">
+                <p>IR部門</p>
+              </option>
+              <option value="その他">
+                <p>その他</p>
+              </option>
+            </select>
+            <span
+              class="errorMessage"
+              v-if="errors.department"
+            >{{ errors.department }}</span>
+          </div>
+          <!--役職-->
+          <div class="item">
+            <label class="question">役職<span> *</span></label>
+            <select
+              name="entry.1939228692"
+              v-model="form.position"
+              :class="{ 'input-error': errors.position }"
+              class="input pull-down"
+              required
+            >
+              <option
+                value=""
+                class="default"
+                selected
+                disabled
+              >
+                <p>選択してください</p>
+              </option>
+              <option value="社長">
+                <p>社長</p>
+              </option>
+              <option value="取締役">
+                <p>取締役</p>
+              </option>
+              <option value="執行役員">
+                <p>執行役員</p>
+              </option>
+              <option value="本部長">
+                <p>本部長</p>
+              </option>
+              <option value="部長">
+                <p>部長</p>
+              </option>
+              <option value="課長">
+                <p>課長</p>
+              </option>
+              <option value="社員">
+                <p>社員</p>
+              </option>
+            </select>
+            <span
+              class="errorMessage"
+              v-if="errors.position"
+            >{{ errors.position }}</span>
+          </div>
+          <!--メールアドレス-->
+          <div class="item">
+            <label class="question">メールアドレス<span> *</span></label>
+            <input
+              type="email"
+              name="entry.866706725"
+              v-model="form.email"
+              :class="{ 'input-error': errors.email }"
+              class="input"
+              placeholder="aiesec@gmail.jp"
+              required
+            >
+            <span
+              class="errorMessage"
+              v-if="errors.email"
+            >{{ errors.email }}</span>
+          </div>
+          <!--電話番号-->
+          <div class="item">
+            <label class="question">電話番号<span> *</span></label>
+            <input
+              type="tel"
+              name="entry.1589753976"
+              v-model="form.phone"
+              :class="{ 'input-error': errors.phone }"
+              class="input"
+              placeholder="012-3456-7890"
+              required
+            >
+            <span
+              class="errorMessage"
+              v-if="errors.phone"
+            >{{ errors.phone }}</span>
+          </div>
+          <!--興味を持ったきっかけ-->
+          <div class="item">
+            <label class="question">弊団体に興味を持たれたきっかけを教えてください。<span> *</span></label>
+            <div class="radio-group">
+              <label><input
+                type="radio"
+                name="entry.930982233"
+                v-model="form.radio1"
+                value="インターネット"
+                class="radio"
+              ><p>インターネット</p></label>
+              <label><input
+                type="radio"
+                name="entry.930982233"
+                v-model="form.radio1"
+                value="メールマガジン"
+                class="radio"
+              ><p>メールマガジン</p></label>
+              <label><input
+                type="radio"
+                name="entry.930982233"
+                v-model="form.radio1"
+                value="プレスリリース"
+                class="radio"
+              ><p>プレスリリース</p></label>
+              <label><input
+                type="radio"
+                name="entry.930982233"
+                v-model="form.radio1"
+                value="OBOG向けmonthly newsletter"
+                class="radio"
+              ><p>OBOG向けmonthly newsletter</p></label>
+              <label><input
+                type="radio"
+                name="entry.930982233"
+                v-model="form.radio1"
+                value="OBOG向けFacebookグループ"
+                class="radio"
+              ><p>OBOG向けFacebookグループ</p></label>
+              <label><input
+                type="radio"
+                name="entry.930982233"
+                v-model="form.radio1"
+                value="OBOG向け記念式典"
+                class="radio"
+              ><p>OBOG向け記念式典</p></label>
+              <label><input
+                type="radio"
+                name="entry.930982233"
+                v-model="form.radio1"
+                value="所属メンバーからの口コミ"
+                class="radio"
+              ><p>所属メンバーからの口コミ</p></label>
+            </div>
+            <span
+              class="errorMessage"
+              v-if="errors.radio1"
+            >{{ errors.radio1 }}</span>
+          </div>
+          <!--回答者について-->
+          <div class="item">
+            <label class="question">以下の中で当てはまるものにチェックをつけてください。<span> *</span></label>
+            <div class="radio-group">
+              <label><input
+                type="radio"
+                name="entry.872960953"
+                v-model="form.radio2"
+                value="アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様"
+                class="radio"
+              ><p>アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様</p></label>
+              <label><input
+                type="radio"
+                name="entry.872960953"
+                v-model="form.radio2"
+                value="アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様"
+                class="radio"
+              ><p>アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様</p></label>
+              <label><input
+                type="radio"
+                name="entry.872960953"
+                v-model="form.radio2"
+                value="アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様"
+                class="radio"
+              ><p>アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様</p></label>
+              <label><input
+                type="radio"
+                name="entry.872960953"
+                v-model="form.radio2"
+                value="アイセックを介してインターンシップ生を受け入れた経験がある企業様"
+                class="radio"
+              ><p>アイセックを介してインターンシップ生を受け入れた経験がある企業様</p></label>
+              <label><input
+                type="radio"
+                name="entry.872960953"
+                v-model="form.radio2"
+                value="アイセックOBOGの方"
+                class="radio"
+              ><p>アイセックOBOGの方</p></label>
+            </div>
+            <span
+              class="errorMessage"
+              v-if="errors.radio2"
+            >{{ errors.radio2 }}</span>
+          </div>
+          <div class="item">
+            <label class="question">プライバシーポリシーについて<span> *</span></label>
+            <div class="check-group">
+              <input
+                type="checkbox"
+                name="entry.1484907787"
+                v-model="form.agree"
+                value="同意する"
+                id="agree"
+                class="checkbox"
+              >
+              <label>同意する</label>
+            </div>
+            <span
+              class="errorMessage"
+              v-if="errors.agree"
+            >{{ errors.agree }}</span>
+          </div>
+          <div class="item">
+            <button
+              type="submit"
+              id="btnSubmit"
+              class="out"
+            >
+              送信する&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+          </div>
+        </form>
       </div>
-      <form @submit.prevent="handleSubmit" class="download-form" id="form" novalidate>
-        <!--Enterで送信されるのを防ぐ-->
-        <button type="submit" disabled style="display: none;"></button>
-        <!--企業名/団体名-->
-        <div class="item">
-          <label class="question">企業名/団体名<span> *</span></label>
-          <input type="text" name="entry.448556317" v-model="form.companyName" :class="{ 'input-error': errors.companyName }" id="companyName" class="input" placeholder="株式会社ABC" required>
-          <span class="errorMessage" v-if="errors.companyName">{{ errors.companyName }}</span>
-        </div>
-        <!--お名前-->
-        <div class="item">
-          <label class="question">お名前<span> *</span></label>
-          <input type="text" name="entry.2031729231" v-model="form.name" :class="{ 'input-error': errors.name }"  id="name" class="input" placeholder="山田 太郎" required>
-          <span class="errorMessage" v-if="errors.name">{{ errors.name }}</span>
-        </div>
-        <!--お名前（フリガナ）-->
-        <div class="item">
-          <label class="question">お名前（フリガナ）<span> *</span></label>
-          <input type="text" name="entry.102832780" v-model="form.kanaName" :class="{ 'input-error': errors.kanaName }" class="input" placeholder="ヤマダ タロウ" required>
-          <span class="errorMessage" v-if="errors.kanaName">{{ errors.kanaName }}</span>
-
-        </div>
-        <!--部門-->
-        <div class="item">
-          <label class="question">部門<span> *</span></label>
-          <select name="entry.1481233185" v-model="form.department" :class="{ 'input-error': errors.department }"  class="input pull-down" required>
-            <option value="" class="default" selected disabled><p>選択してください</p></option>
-            <option value="営業部門"><p>営業部門</p></option>
-            <option value="マーケティング部門"><p>マーケティング部門</p></option>
-            <option value="人事部門"><p>人事部門</p></option>
-            <option value="総務部門"><p>総務部門</p></option>
-            <option value="経営企画部門"><p>経営企画部門</p></option>
-            <option value="IR部門"><p>IR部門</p></option>
-            <option value="その他"><p>その他</p></option>
-          </select>
-          <span class="errorMessage" v-if="errors.department">{{ errors.department }}</span>
-        </div>
-        <!--役職-->
-        <div class="item">
-          <label class="question">役職<span> *</span></label>
-          <select name="entry.1939228692" v-model="form.position" :class="{ 'input-error': errors.position }"  class="input pull-down" required>
-            <option value="" class="default" selected disabled><p>選択してください</p></option>
-            <option value="社長"><p>社長</p></option>
-            <option value="取締役"><p>取締役</p></option>
-            <option value="執行役員"><p>執行役員</p></option>
-            <option value="本部長"><p>本部長</p></option>
-            <option value="部長"><p>部長</p></option>
-            <option value="課長"><p>課長</p></option>
-            <option value="社員"><p>社員</p></option>
-          </select>
-          <span class="errorMessage" v-if="errors.position">{{ errors.position }}</span>
-        </div>
-        <!--メールアドレス-->
-        <div class="item">
-          <label class="question">メールアドレス<span> *</span></label>
-          <input type="email" name="entry.866706725" v-model="form.email" :class="{ 'input-error': errors.email }"  class="input" placeholder="aiesec@gmail.jp" required>
-          <span class="errorMessage" v-if="errors.email">{{ errors.email }}</span>
-        </div>
-        <!--電話番号-->
-        <div class="item">
-          <label class="question">電話番号<span> *</span></label>
-          <input type="tel" name="entry.1589753976" v-model="form.phone" :class="{ 'input-error': errors.phone }"  class="input" placeholder="012-3456-7890" required>
-          <span class="errorMessage" v-if="errors.phone">{{ errors.phone }}</span>
-        </div>
-        <!--興味を持ったきっかけ-->
-        <div class="item">
-          <label class="question">弊団体に興味を持たれたきっかけを教えてください。<span> *</span></label>
-          <div class="radio-group">
-            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="インターネット" class="radio"><p>インターネット</p></label>
-            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="メールマガジン" class="radio"><p>メールマガジン</p></label>
-            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="プレスリリース" class="radio"><p>プレスリリース</p></label>
-            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="OBOG向けmonthly newsletter" class="radio"><p>OBOG向けmonthly newsletter</p></label>
-            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="OBOG向けFacebookグループ" class="radio"><p>OBOG向けFacebookグループ</p></label>
-            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="OBOG向け記念式典" class="radio"><p>OBOG向け記念式典</p></label>
-            <label><input type="radio" name="entry.930982233" v-model="form.radio1" value="所属メンバーからの口コミ" class="radio"><p>所属メンバーからの口コミ</p></label>
-          </div>
-          <span class="errorMessage" v-if="errors.radio1">{{ errors.radio1 }}</span>
-        </div>
-        <!--回答者について-->
-        <div class="item">
-          <label class="question">以下の中で当てはまるものにチェックをつけてください。<span> *</span></label>
-          <div class="radio-group">
-            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様" class="radio"><p>アイセックとはこれまで関わりがなく、これまでアイセックを知らなかった企業様</p></label>
-            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様" class="radio"><p>アイセックとはこれまで関わりがなかったが、アイセックを知っていた企業様</p></label>
-            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験はないが、過去にアイセックと関わりがある企業様</p></label>
-            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックを介してインターンシップ生を受け入れた経験がある企業様" class="radio"><p>アイセックを介してインターンシップ生を受け入れた経験がある企業様</p></label>
-            <label><input type="radio" name="entry.872960953" v-model="form.radio2" value="アイセックOBOGの方" class="radio"><p>アイセックOBOGの方</p></label>
-          </div>
-          <span class="errorMessage" v-if="errors.radio2">{{ errors.radio2 }}</span>
-        </div>
-        <div class="item">
-          <label class="question">プライバシーポリシーについて<span> *</span></label>
-          <div class="check-group">
-            <input type="checkbox" name="entry.1484907787" v-model="form.agree"  value="同意する" id="agree" class="checkbox">
-            <label>同意する</label>
-          </div>
-          <span class="errorMessage" v-if="errors.agree">{{ errors.agree }}</span>
-        </div>
-        <div class="item">
-          <button type="submit" id="btnSubmit" class="out">送信する&nbsp;&nbsp;&nbsp;&nbsp;</button>
-        </div>
-      </form>
     </div>
-  </div>
-</client-only>
+  </client-only>
 </template>
 
 <script>

@@ -1,13 +1,13 @@
 <template>
-    <div class="partners-wrapper">
-        <BaseIconInAssetsPath
-        v-for="logo in logos"
-        :key="logo.src"
-        :data="logo"
-        class="partners-content"
-        />
-    </div>
-  </template>
+  <div class="partners-wrapper">
+    <BaseIconInAssetsPath
+      v-for="logo in logos"
+      :key="logo.src"
+      :data="logo"
+      class="partners-content"
+    />
+  </div>
+</template>
   
   <script>
   export default {

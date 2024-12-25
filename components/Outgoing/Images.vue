@@ -1,8 +1,8 @@
 <template>
   <div class="outgoing-container">
     <div class="outgoing-contents">
-      <div class="outgoing-image"></div>
-      <div class="outgoing-image"></div>
+      <div class="outgoing-image" />
+      <div class="outgoing-image" />
     </div>
   </div>
 </template>

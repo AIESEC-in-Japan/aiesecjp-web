@@ -1,12 +1,14 @@
 <template>
   <section class="safety-container">
     <div class="safety-container">
-      <div class="safety-bg"></div>
+      <div class="safety-bg" />
       <div class="safety-text-wrapper">
         <div class="safety-text">
           Safety
         </div>
-        <h2 class="safety-text-sub">安全への取り組み</h2>
+        <h2 class="safety-text-sub">
+          安全への取り組み
+        </h2>
       </div>
     </div>
   </section>

@@ -18,21 +18,24 @@
           v-for="(item,i) in committeeLogs"
           :key="i"
           class="log"
-          >
+        >
           <div v-show="i <= 5 || openLogs">
             <h3>{{ item.title }}</h3>
             <p>
-              {{ item.describe }}<span v-show="!!item.link">詳細な報告につきましては <a :href="item.link" target="_blank">こちら</a>をご覧ください。</span>
+              {{ item.describe }}<span v-show="!!item.link">詳細な報告につきましては <a
+                :href="item.link"
+                target="_blank"
+              >こちら</a>をご覧ください。</span>
             </p>
           </div>
           <v-btn
-          v-show="i === 5"
-          class="collapse-button"
-          @click="openLogs = !openLogs"
+            v-show="i === 5"
+            class="collapse-button"
+            @click="openLogs = !openLogs"
           >
-          過去の開催報告<span v-if="!openLogs">も見る</span><span v-else>を閉じる</span>
-        </v-btn>
-      </div>
+            過去の開催報告<span v-if="!openLogs">も見る</span><span v-else>を閉じる</span>
+          </v-btn>
+        </div>
       </div>
     </div>
   </div>

@@ -1,38 +1,57 @@
 <template>
   <section class="contact-container">
-    <div class="contact-bg"></div>
+    <div class="contact-bg" />
     <div class="contact-contents">
-      <p class="contact-title" id="contact">
+      <p
+        class="contact-title"
+        id="contact"
+      >
         Contact Us
       </p>
-      <h2 class="contact-title-sub">お問い合わせ</h2>
+      <h2 class="contact-title-sub">
+        お問い合わせ
+      </h2>
       <p class="contact-explain">
         お気軽にお問い合わせください。
       </p>
       <div class="contact-wrapper">
         <div class="contact-form">
-          <div class="contact-form-img img1"></div>
+          <div class="contact-form-img img1" />
           <div class="button-container">
-            <p class="button-nextText">学生の方</p>
-            <a class="button" href="/contact/student"></a>
+            <p class="button-nextText">
+              学生の方
+            </p>
+            <a
+              class="button"
+              href="/contact/student"
+            />
           </div>
         </div>
         <div class="contact-form">
-          <div class="contact-form-img img2"></div>
+          <div class="contact-form-img img2" />
           <div class="button-container">
-            <p class="button-nextText">企業の方</p>
-            <a class="button" href="/contact/company"></a>
+            <p class="button-nextText">
+              企業の方
+            </p>
+            <a
+              class="button"
+              href="/contact/company"
+            />
           </div>
         </div>
         <div class="contact-form">
-          <div class="contact-form-img img3"></div>
+          <div class="contact-form-img img3" />
           <div class="button-container">
-            <p class="button-nextText">卒業生の方</p>
-            <a class="button" href="/contact/alumni"></a>
+            <p class="button-nextText">
+              卒業生の方
+            </p>
+            <a
+              class="button"
+              href="/contact/alumni"
+            />
           </div>
         </div>
       </div>
-      
     </div>
   </section>
 </template>
