@@ -2,28 +2,52 @@
   <section class="slide-container">
     <div class="slide-images">
       <div class="slide-group">
-          <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(.assets/images/top/slide2.jpg);"></div>
-            <div class="slide-content" style="background-image: url(.assets/images/top/slide3.jpg);"></div>
-          </div>
-          <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(.assets/images/top/slide1.jpg);"></div>
-          </div>
-          <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(.assets/images/top/slide5.jpg);"></div>
-          </div>
+        <div class="slide-wrapper">
+          <div
+            class="slide-content"
+            style="background-image: url(.assets/images/top/slide2.jpg);"
+          />
+          <div
+            class="slide-content"
+            style="background-image: url(.assets/images/top/slide3.jpg);"
+          />
         </div>
-        <div class="slide-group">
-          <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(.assets/images/top/slide2.jpg);"></div>
-            <div class="slide-content" style="background-image: url(.assets/images/top/slide3.jpg);"></div>
-          </div>
-          <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(.assets/images/top/slide1.jpg);"></div>
-          </div>
-          <div class="slide-wrapper">
-            <div class="slide-content" style="background-image: url(.assets/images/top/slide5.jpg);"></div>
-          </div>
+        <div class="slide-wrapper">
+          <div
+            class="slide-content"
+            style="background-image: url(.assets/images/top/slide1.jpg);"
+          />
+        </div>
+        <div class="slide-wrapper">
+          <div
+            class="slide-content"
+            style="background-image: url(.assets/images/top/slide5.jpg);"
+          />
+        </div>
+      </div>
+      <div class="slide-group">
+        <div class="slide-wrapper">
+          <div
+            class="slide-content"
+            style="background-image: url(.assets/images/top/slide2.jpg);"
+          />
+          <div
+            class="slide-content"
+            style="background-image: url(.assets/images/top/slide3.jpg);"
+          />
+        </div>
+        <div class="slide-wrapper">
+          <div
+            class="slide-content"
+            style="background-image: url(.assets/images/top/slide1.jpg);"
+          />
+        </div>
+        <div class="slide-wrapper">
+          <div
+            class="slide-content"
+            style="background-image: url(.assets/images/top/slide5.jpg);"
+          />
+        </div>
       </div>
     </div>
   </section>

@@ -1,7 +1,10 @@
 <template>
   <section>
     <div class="scroll-container">
-      <a class="button" href="#outline"></a>
+      <a
+        class="button"
+        href="#outline"
+      />
     </div>
   </section>
 </template>

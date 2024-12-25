@@ -15,12 +15,15 @@
       <p class="news-text">
         この度、ホームページを全面リニューアルいたしました。新しいデザインや操作性の向上を図り、コンテンツもさらに充実させております。ぜひご覧ください。<br>
         今後も皆さまに弊団体の情報をお届けできるよう内容の充実に努めてまいりますので、よろしくお願いいたします。
-
-
       </p>
       <div class="button-container">
-        <p class="button-nextText">お知らせ一覧に戻る</p>
-        <a class="button" href="/news"></a>
+        <p class="button-nextText">
+          お知らせ一覧に戻る
+        </p>
+        <a
+          class="button"
+          href="/news"
+        />
       </div>
     </div>
   </div>
@@ -100,7 +103,7 @@
 .news-text{
   font-size: 1rem;
   margin: 1rem;
-  width: 100%;
+  width: fit-content;
 }
 
 .button-container{

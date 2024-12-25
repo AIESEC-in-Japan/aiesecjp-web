@@ -1,12 +1,14 @@
 <template>
   <section>
     <div class="organization-container">
-      <div class="organization-bg"></div>
+      <div class="organization-bg" />
       <div class="organization-text-wrapper">
         <div class="organization-text">
           Organization
         </div>
-        <h2 class="organization-text-sub">団体概要</h2>
+        <h2 class="organization-text-sub">
+          団体概要
+        </h2>
       </div>
     </div>
   </section>

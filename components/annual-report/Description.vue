@@ -4,7 +4,9 @@
       <p class="ar-title">
         Annual Report
       </p>
-      <h2 class="ar-title-sub">アニュアルレポート</h2>
+      <h2 class="ar-title-sub">
+        アニュアルレポート
+      </h2>
       <div class="text-wrapper">
         <p>
           アイセック・ジャパンは、「令和４年度年次報告書」（アニュアルレポート）を発行しました。<br>
@@ -17,7 +19,12 @@
           レポートは、下記URLをクリックいただくとPDFファイルにてダウンロードいただけます。<br>
           なお、冊子版をご希望の方は、<a href="/#contact">お問い合わせフォーム</a>までご連絡ください。<br>
         </p>
-        <p><a href="https://drive.google.com/file/d/12q7_The2zjM_w7rnsCbzimGxQmYGTYfd/view?usp=drive_link" target="_blank">令和４年度年次報告書</a></p>
+        <p>
+          <a
+            href="https://drive.google.com/file/d/12q7_The2zjM_w7rnsCbzimGxQmYGTYfd/view?usp=drive_link"
+            target="_blank"
+          >令和４年度年次報告書</a>
+        </p>
       </div>
     </div>
   </div>

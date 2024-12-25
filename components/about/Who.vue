@@ -6,19 +6,40 @@
       </p>
       <div class="image-wrapper">
         <div class="item">
-          <div class="image1 img" alt="100+nations"></div>
-          <p class="text">100+</p>
-          <p class="sub-text">国と地域</p>
+          <div
+            class="image1 img"
+            alt="100+nations"
+          />
+          <p class="text">
+            100+
+          </p>
+          <p class="sub-text">
+            国と地域
+          </p>
         </div>
         <div class="item">
-          <div class="image2 img" alt="70000+partners"></div>
-          <p class="text">70000+</p>
-          <p class="sub-text">パートナー団体</p>
+          <div
+            class="image2 img"
+            alt="70000+partners"
+          />
+          <p class="text">
+            70000+
+          </p>
+          <p class="sub-text">
+            パートナー団体
+          </p>
         </div>
         <div class="item">
-          <div class="image3 img" alt="30000+experiences"></div>
-          <p class="text">30000+</p>
-          <p class="sub-text">1年間で提供した経験</p>
+          <div
+            class="image3 img"
+            alt="30000+experiences"
+          />
+          <p class="text">
+            30000+
+          </p>
+          <p class="sub-text">
+            1年間で提供した経験
+          </p>
         </div>
       </div>
     </div>

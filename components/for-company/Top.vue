@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="fcompany-container">
-      <div class="fcompany-bg"></div>
+      <div class="fcompany-bg" />
       <h2 class="fcompany-text">
         協賛について
       </h2>

@@ -1,8 +1,9 @@
 <template>
   <div class="gyd-container">
     <div class="gyd-contents">
-
-      <h3 class="gyd-title">過去参加者の声</h3>
+      <h3 class="gyd-title">
+        過去参加者の声
+      </h3>
       
       <div class="voice">
         <div class="detail">

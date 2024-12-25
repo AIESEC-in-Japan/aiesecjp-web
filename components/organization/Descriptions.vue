@@ -1,14 +1,17 @@
 <template>
   <div class="organization-container">
     <div class="organization-contents">
-      <div class="organization-outline" id="outline"> 
+      <div
+        class="organization-outline"
+        id="outline"
+      > 
         <a
           class="button-container" 
           v-for="(button, index) in buttons" 
           :key="index"
           :href="button.href" 
           @click="handleClick(index)"
-            :class="{ active: activeButtonIndex === index }" 
+          :class="{ active: activeButtonIndex === index }" 
         >
           <a
             class="button"
@@ -19,34 +22,53 @@
         </a>
       </div>
       <div class="organization-content">
-        <h2 id="or1" class="organization-table-title">
+        <h2
+          id="or1"
+          class="organization-table-title"
+        >
           役員一覧
         </h2>
         <OrganizationCustomTable :list-data="officers" />
-        <h2 id="or2" class="organization-table-title">
+        <h2
+          id="or2"
+          class="organization-table-title"
+        >
           諮問一覧
         </h2>
         <OrganizationCustomTable :list-data="advisers" />
-        <h2 id="or3" class="organization-table-title">
+        <h2
+          id="or3"
+          class="organization-table-title"
+        >
           団体情報
         </h2>
         <OrganizationCustomTable :list-data="organization" />
-        <h2 id="or4" class="organization-table-title">
+        <h2
+          id="or4"
+          class="organization-table-title"
+        >
           財務情報
         </h2>
-        <div class="organization-table"
+        <div
+          class="organization-table"
           v-for="(item, index) in items"
           :key="index"
         >
           <p><a :href="item.link">{{ item.title }}</a></p>
         </div>
-        <h2 id="or5" class="organization-table-title">
+        <h2
+          id="or5"
+          class="organization-table-title"
+        >
           コンプライアンス
         </h2>
         <p class="compliance">
           アイセックでは、「コンプライアンス規程」を定め、組織・構成員法令及び社会規範の遵守を図っております。また、「コンプライアンス小委員会」を設け、各種制度の設計・改善施策の実施を行なっています。加えて、外部有識者を委員に含む「ハラスメント対策委員会・倫理小委員会等」も設け、内部通報や労務・ハラスメント対策の対応を行なっています。
         </p>
-        <h2 id="or6" class="organization-table-title">
+        <h2
+          id="or6"
+          class="organization-table-title"
+        >
           情報セキュリティ基本方針
         </h2>
         <p class="info-security">
