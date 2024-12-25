@@ -202,7 +202,7 @@
   margin: 3rem auto;
 }
 .img2{
-  background-image: url(assets/images/news/news0002_2.jpg);
+  background-image: url(~/assets/images/news/news0002_2.jpg);
   background-size: cover;
   background-position: center;
   height: 30vw;
@@ -211,7 +211,7 @@
 
 }
 .img3{
-  background-image: url(././assets/images/news/news0002_3.jpg);
+  background-image: url(~/assets/images/news/news0002_3.jpg);
   background-size: cover;
   background-position: center;
   height: 70.5vw;
