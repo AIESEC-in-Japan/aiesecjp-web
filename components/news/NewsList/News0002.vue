@@ -3,7 +3,7 @@
     <div class="news-contents">
       <div class="news-header">
         <div class="news-date">
-          <p>24.12.20</p>
+          <p>24.12.25</p>
         </div>
         <div class="news-category">
           <p>パートナーシップのご提案</p>
