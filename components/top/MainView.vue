@@ -89,6 +89,7 @@ export default {
     background-color: rgba(63, 63, 63, 0.3);
     height: fit-content;
     max-width: 32rem;
+    min-width: 24vw;
   
     span{
       color: #5CB0FF;
