@@ -178,21 +178,24 @@
           border-radius: 3rem;
           text-decoration: none;
           transition: all 0.3s ease 0s;
-          background-color: $blue;
+          background-color: $white;
 
           @media(max-width:375px) {
               min-width: max-content;
               width: 64%;
             }
           p{
-            color: $white;
+            color: $blue;
             margin: 0;
             font-size: 0.85rem;
           }
 
           &:hover{
+            background-color: $blue;
             transition-duration: .3s;
-            transform: scale(1.1);
+            p{
+              color: $white;
+            }
           }
         }
 
