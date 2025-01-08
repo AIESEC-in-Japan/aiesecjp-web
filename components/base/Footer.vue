@@ -70,6 +70,14 @@
                 協賛について
               </a>
             </li>
+            <li>
+              <a
+                class="footer-content-link"
+                href="/donation"
+              >
+                寄付について
+              </a>
+            </li>
             <!-- 実例集へのリンクを停止 2022/05/22
             <li>
               <a
