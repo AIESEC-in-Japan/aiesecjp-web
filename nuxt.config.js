@@ -6,11 +6,15 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'aiesecjp-web',
+    htmlAttrs: {
+      prefix: 'og: http://ogp.me/ns#'
+    },
+    titleTemplate: '%s - ' + 'AIESEC in Japan',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {hid: 'description', name: 'description', content: 'AIESEC in Japan official website'}
+      {hid: 'description', name: 'description', content: 'アイセックは、世界100以上の国と地域​に​支部を持ち​、​約30,000人の若者が所属する非営利組織です。海外インターンシップやオンラインの国際交流プログラムなどの運営と参加を通じて、平和で人々の可能性が最大限発揮された社会の実現を目指しています。'},
+  
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}

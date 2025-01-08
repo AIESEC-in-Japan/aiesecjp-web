@@ -6,3 +6,14 @@
     <For-companyContact />
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return{
+      title: '協賛について'
+    }
+  }
+  
+}
+</script>
