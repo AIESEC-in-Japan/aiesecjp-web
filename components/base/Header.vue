@@ -153,7 +153,8 @@ export default {
           link: "/#company",
           subItems: [
             { title: "海外インターンシップ受け入れ", link: "/incoming" },
-            { title: "協賛について", link: "/for-company" }
+            { title: "協賛について", link: "/for-company" },
+            { title: "寄付について", link: "/donation" }
           ]
         },
         {
