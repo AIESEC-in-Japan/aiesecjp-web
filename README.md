@@ -312,6 +312,7 @@ yarn,node module周りが壊れた時も同様に対処することができる�
 ├── assets
 │   ├── 2020corporation-logo # ロゴを格納する場所らしい
 │   ├── images
+│   ├── json #newsリスト
 │   ├── resetcss # resetcss意外はおかない
 │   ├── scss
 │   └── videos
@@ -351,3 +352,10 @@ yarn,node module周りが壊れた時も同様に対処することができる�
 - [Nuxt 公式ドキュメント](https://ja.nuxtjs.org/)
 - [CSSやJavaScriptなどの詳しい情報が書いてあるサイト](https://developer.mozilla.org/ja/docs/Web)
 - [lintについて](https://zenn.dev/yukikoma/articles/bf02bb407a878e)
+
+## 運用
+ 
+NEWSのテンプレート
+カテゴリーは以下の4つから選択してください。(categoryとcategorizedは一対一対応)
+- "category": "活動報告", "協賛事例", "メンバーの活動", "パートナーシップのご提案", "その他", 
+- "categorized": "report", "partner", "member", "offer", "others"
