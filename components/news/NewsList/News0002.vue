@@ -81,7 +81,7 @@
         お問い合わせ<br>
       </p>
       <p class="news-text">
-        ご興味のある企業様はinfo@aiesec.jp又はHPの<a href="/#contact">お問い合わせフォーム</a>よりご連絡ください。<br>
+        ご興味のある企業様はinfo@aiesec.jp又はHPの<a href="/contact/company">お問い合わせフォーム</a>よりご連絡ください。<br>
       </p>
       <div class="img-wrapper">
         <div class="img1" />
