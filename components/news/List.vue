@@ -32,7 +32,7 @@
           class="news-categorize-item"
           @click="filterNews('offer')"
           :class="{ active: selected_category === 'offer' }"
-        ><p>パートナーシップのご提案</p></a>
+        ><p>パートナーシップの<wbr>ご提案</p></a>
         <a
           class="news-categorize-item"
           @click="filterNews('others')"
@@ -181,7 +181,11 @@ export default {
     display: grid;
     grid-template-columns: repeat(3 ,auto);
     justify-content: center;
-    gap: 0.6rem;
+    gap: 0.3rem 2rem;
+  }
+  @include sp{
+    grid-template-columns: repeat(2 ,auto);
+    grid-template-rows: repeat(3,auto);
   }
 
 &-text{
@@ -191,15 +195,17 @@ export default {
   }
 }
 .news-categorize-item{
-  margin: 0.8rem 2rem 0.8rem 0;
+  margin: 0.8rem 1rem 0.8rem 0;
   padding: 12px 30px;  
-  width: max-content;
+  width: fit-content;
   text-align: center;
   border: 1px $blue  solid;
   border-radius: 3rem;
   text-decoration: none;
   transition: all 0.3s ease 0s;
   align-self: center;
+  line-height: 1.25rem;
+
 
 
   &:hover{
@@ -213,11 +219,13 @@ export default {
 
   @media(max-width:1024px){
     margin: 0.8rem auto;
-    width: fit-content;
+    max-width: 12rem;
+    width: 26vw
   }
 
   @include sp{
     padding: 8px 20px;  
+    width: 40vw;
   }
 
   @media(max-width:340px){
@@ -229,11 +237,19 @@ export default {
       grid-row: 2;
       grid-column: 1;
     }
+    @include sp{
+      grid-row: 2;
+      grid-column: 2;
+    }
   }
   &:nth-child(5){
     @media(max-width:1024px){
       grid-row: 2;
       grid-column: 2;
+    }
+    @include sp{
+      grid-row: 3;
+      grid-column: 1;
     }
   }
   &:nth-child(6){
@@ -241,7 +257,12 @@ export default {
       grid-row: 2;
       grid-column: 3;
     }
+    @include sp{
+      grid-row: 3;
+      grid-column: 2;
+    }
   }
+  
 }
 .news-categorize-item.active{
   background-color: $blue;
@@ -254,6 +275,16 @@ export default {
   color: $blue;
   margin: 0;
   font-size: 1rem;
+  word-break: keep-all;
+  @media(max-width:768px){
+    word-break:break-all;
+
+  }
+  @media(max-width:320px){
+      font-size: 0.865px;
+      line-height: 1.05rem;
+      
+    }
 }
 
 .news-item-wrapper{
