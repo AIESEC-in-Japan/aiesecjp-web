@@ -117,6 +117,9 @@
   margin: 1rem;
   width: fit-content;
 }
+a{
+  color: $blue;
+}
 .button-container{
   display: flex;
   justify-content: center;
