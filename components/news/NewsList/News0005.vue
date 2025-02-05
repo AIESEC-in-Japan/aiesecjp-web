@@ -6,7 +6,7 @@
           <p>25.02.05</p>
         </div>
         <div class="news-category">
-          <p>パートナーシップのご提案</p>
+          <p>その他</p>
         </div>
       </div>
       <h2 class="news-title">
