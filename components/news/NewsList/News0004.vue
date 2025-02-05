@@ -154,10 +154,8 @@
     color: $blue;
   }
 }
-.news-text{
-  font-size: 1rem;
-  margin: 1rem;
-  width: fit-content;
+a{
+  color: $blue;
 }
 
 .img-wrapper{

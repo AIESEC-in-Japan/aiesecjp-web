@@ -68,7 +68,7 @@ export default {
 .news-list-category{
   margin: 0 auto;
   text-align: center;
-  width: fit-content;
+  width: 10rem;
 
 
   @media(max-width: 785px){
@@ -87,14 +87,23 @@ export default {
   text-align: center;
   font-size: 1rem;
   margin: 0;
+  line-height: 1.25rem;
+  
+
   @media(max-width: 785px){
-    padding: 4px 12px;  
-    width: fit-content;
+    padding: 0.5rem 12px;  
+    width: 12rem;
     margin-top: 1rem;
     margin-left: auto;
   }
+  @include sp{
+    width: 10rem;
+    padding: 0.4rem 12px;  
+  }
   @media(max-width:320px){
       font-size: 0.865px;
+      line-height: 1.05rem;
+      
     }
 }
 .news-list-title{
